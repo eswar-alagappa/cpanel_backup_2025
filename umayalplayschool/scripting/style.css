@@ -1,0 +1,225 @@
+HTML {
+	OVERFLOW-Y: scroll; OVERFLOW-X: hidden
+}
+BODY {
+	BACKGROUND-POSITION: center top; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(3C.jpg); MARGIN: 0px; BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: Georgia,Times, serif, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #e0dfdf
+}
+.mattblacktabs {
+	FLOAT: right; OVERFLOW: hidden; WIDTH: 100%
+}
+.mattblacktabs UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 12px Georgia, Verdana; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.mattblacktabs LI {
+	DISPLAY: inline; MARGIN: 0px
+}
+.mattblacktabs LI A {
+	PADDING-RIGHT: 15px; DISPLAY: block; PADDING-LEFT: 15px; BACKGROUND: #fff; FLOAT: right; PADDING-BOTTOM: 8px; MARGIN: 0px; COLOR: #143050; PADDING-TOP: 8px; TEXT-DECORATION: none
+}
+.mattblacktabs LI A:visited {
+	COLOR: #000
+}
+.mattblacktabs LI.selected A {
+	BACKGROUND: #8f8c8c; COLOR: #fff
+}
+.mattblacktabs LI A:hover {
+	BACKGROUND: #fe6903; COLOR: #fff
+}
+.bodytext {
+	FONT-SIZE: 12px; LINE-HEIGHT: 26px; FONT-FAMILY: Georgia, Arial, Helvetica, sans-serif; TEXT-ALIGN: justify
+}
+.bodytextpoem {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; FONT-SIZE: 12px; PADDING-BOTTOM: 20px; LINE-HEIGHT: 26px; PADDING-TOP: 20px; FONT-FAMILY: Georgia, Arial, Helvetica, sans-serif; TEXT-ALIGN: center
+}
+.background {
+	BACKGROUND-IMAGE: url(bannerbg.png); BACKGROUND-REPEAT: no-repeat
+}
+.box {
+	FLOAT: left; BACKGROUND-IMAGE: url(boxbg.png); WIDTH: 216px; CURSOR: hand; BACKGROUND-REPEAT: no-repeat; HEIGHT: 116px
+}
+.boxcontent {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 11px; PADDING-BOTTOM: 5px; LINE-HEIGHT: 22px; PADDING-TOP: 5px
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.footertext {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; COLOR: #999; PADDING-TOP: 0px; FONT-FAMILY: Georgia,Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.footermenutext {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 45px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; COLOR: #666; PADDING-TOP: 0px; FONT-FAMILY: Georgia,Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.footermenutext A:link {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; COLOR: #666; PADDING-TOP: 0px; FONT-FAMILY: Georgia,Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.footermenutext A:hover {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; COLOR: #000; PADDING-TOP: 0px; FONT-FAMILY: Georgia,Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.footermenutext A:visited {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; COLOR: #666; PADDING-TOP: 0px; FONT-FAMILY: Georgia,Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.footermenutext A:active {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; COLOR: #666; PADDING-TOP: 0px; FONT-FAMILY: Georgia,Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.bannerbg {
+	BACKGROUND-IMAGE: url(bannerbg.png); BACKGROUND-REPEAT: no-repeat
+}
+.orangeheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #973836; FONT-FAMILY: Georgia,Arial, Helvetica, sans-serif
+}
+.border {
+	BORDER-RIGHT: #fff 2px solid; BORDER-TOP: #fff 2px solid; BORDER-LEFT: #fff 2px solid; BORDER-BOTTOM: #fff 2px solid
+}
+.textbox1 {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND-IMAGE: url(searchbg.gif); BORDER-BOTTOM-WIDTH: 0px; WIDTH: 253px; HEIGHT: 35px; BORDER-RIGHT-WIDTH: 0px
+}
+.textbox {
+	BORDER-RIGHT: #d1dbea 0px solid; BORDER-TOP: #d1dbea 0px solid; MARGIN: 6px 0px 0px 8px; BORDER-LEFT: #d1dbea 0px solid; WIDTH: 236px; COLOR: #000; BORDER-BOTTOM: #d1dbea 0px solid; HEIGHT: 18px; BACKGROUND-COLOR: #dad5d5
+}
+.messagebox {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND-IMAGE: url(messagebox.gif); BORDER-BOTTOM-WIDTH: 0px; MARGIN: 0px 0px 0px 6px; WIDTH: 248px; HEIGHT: 191px; BORDER-RIGHT-WIDTH: 0px
+}
+.messagebox1 {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 6px 0px 0px 6px; WIDTH: 225px; HEIGHT: 175px; BACKGROUND-COLOR: #dad5d5; BORDER-RIGHT-WIDTH: 0px
+}
+.clear {
+	OVERFLOW: hidden; WIDTH: 100%
+}
+A.button {
+	PADDING-RIGHT: 18px; DISPLAY: block; BACKGROUND: url(bg_button_a.gif) no-repeat right top; FLOAT: left; FONT: 12px arial, sans-serif; COLOR: #444; MARGIN-RIGHT: 14px; HEIGHT: 24px; TEXT-DECORATION: none
+}
+A.button SPAN {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 18px; BACKGROUND: url(bg_button_span.gif) no-repeat; PADDING-BOTTOM: 5px; LINE-HEIGHT: 14px; PADDING-TOP: 5px
+}
+A.button:active {
+	BACKGROUND-POSITION: right bottom; COLOR: #000; outline: none
+}
+A.button:active SPAN {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: left bottom; PADDING-LEFT: 18px; PADDING-BOTTOM: 4px; PADDING-TOP: 6px
+}
+.headimg {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 40px; PADDING-BOTTOM: 0px; PADDING-TOP: 20px
+}
+.feedbg {
+	BACKGROUND-IMAGE: url(feedbg.png); BACKGROUND-REPEAT: no-repeat
+}
+.redheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #923837; FONT-FAMILY: Georgia, Tahoma, Arial, Helvetica, sans-serif
+}
+.bodycontent {
+	FONT-SIZE: 12px; FONT-FAMILY: Georgia, Tahoma, Arial, Helvetica, sans-serif; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.sitemap {
+	FONT-SIZE: 12px; FONT-FAMILY: Georgia, Tahoma, Arial, Helvetica, sans-serif; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.sitemap A:link {
+	FONT-SIZE: 12px; FONT-FAMILY: Georgia, Tahoma, Arial, Helvetica, sans-serif; TEXT-ALIGN: justify; TEXT-DECORATION: underline
+}
+.sitemap {
+	FONT-SIZE: 12px; FONT-FAMILY: Georgia, Tahoma, Arial, Helvetica, sans-serif; TEXT-ALIGN: justify; TEXT-DECORATION: underline
+}
+.contentbold {
+	FONT-SIZE: 11px; COLOR: #000; FONT-FAMILY: Georgia, Tahoma, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.contentbold1 {
+	PADDING-RIGHT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 11px; TEXT-TRANSFORM: uppercase; COLOR: #000; FONT-FAMILY: Georgia,  Tahoma, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.contentbold2 {
+	FONT-SIZE: 11px; TEXT-TRANSFORM: uppercase; COLOR: #923837; FONT-FAMILY: Georgia, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.product-list-02 {
+	PADDING-RIGHT: 4px; MARGIN-TOP: 10px; FLOAT: left; MARGIN-LEFT: 4px; POSITION: relative
+}
+.next {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; COLOR: #666; PADDING-TOP: 5px; TEXT-DECORATION: none
+}
+TR.c9 {
+	BACKGROUND-COLOR: #e1dfe0
+}
+.c8 {
+	FONT-FAMILY: Georgia,; BACKGROUND-COLOR: #e1dfe0
+}
+DIV.c7 {
+	POSITION: relative; TOP: 0px
+}
+A.c6 {
+	POSITION: relative
+}
+IMG.c5 {
+	DISPLAY: block
+}
+DIV.c4 {
+	DISPLAY: none; WIDTH: 200px; TEXT-ALIGN: center
+}
+DIV.c3 {
+	WIDTH: 200px; TEXT-ALIGN: center
+}
+TD.c2 {
+	BACKGROUND-COLOR: #8f8c8c
+}
+TD.c1 {
+	BACKGROUND-COLOR: #7a7a7a
+}
+UL {
+	LIST-STYLE-IMAGE: url(../img/products/star_bullet.png)
+}
+.qualitybg {
+	BACKGROUND-IMAGE: url(quality.png); WIDTH: 209px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 116px
+}
+#pscroller1 {
+	BORDER-RIGHT: black 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: black 0px solid; PADDING-LEFT: 60px; FONT-WEIGHT: bold; FONT-SIZE: 16px; PADDING-BOTTOM: 0px; BORDER-LEFT: black 0px solid; WIDTH: 165px; COLOR: #666; PADDING-TOP: 0px; BORDER-BOTTOM: black 0px solid; HEIGHT: 25px
+}
+#pscroller2 {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 20px; BORDER-TOP: black 1px solid; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; BORDER-LEFT: black 1px solid; WIDTH: 350px; PADDING-TOP: 20px; BORDER-BOTTOM: black 1px solid; HEIGHT: 20px; BACKGROUND-COLOR: lightyellow
+}
+#pscroller2 A {
+	TEXT-DECORATION: none
+}
+.someclass {
+	
+}
+#video {
+	DISPLAY: block; FLOAT: left; WIDTH: 335px; HEIGHT: 151px
+}
+.thumb_pro_bg {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: auto; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; POSITION: relative; HEIGHT: 181px
+}
+.thumb_pro_bg {
+	DISPLAY: block; FLOAT: left; BACKGROUND-IMAGE: url(bg_thumb.png); WIDTH: 239px; PADDING-TOP: 10px; BACKGROUND-REPEAT: no-repeat; LIST-STYLE-TYPE: none; HEIGHT: 181px; TEXT-ALIGN: center
+}
+.thumb_text {
+	DISPLAY: block; FONT-SIZE: 12px; TEXT-TRANSFORM: uppercase; WIDTH: 239px; COLOR: #6d6363; PADDING-TOP: 10px; FONT-FAMILY: Tahoma, Geneva, sans-serif; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.video-heading {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; PADDING-BOTTOM: 5px; COLOR: #ff6704; FONT-FAMILY: Georgia,Times, serif, Arial, Helvetica, sans-serif
+}
+.bg-bac {
+	FLOAT: left; BACKGROUND-IMAGE: url(../images/bg_thumb.png); MARGIN: 0px 20px; WIDTH: 239px; BACKGROUND-REPEAT: no-repeat; POSITION: relative; HEIGHT: 181px
+}
+#prd-img {
+	MARGIN-TOP: 10px; MARGIN-LEFT: 10px; WIDTH: 218px; HEIGHT: 140px
+}
+#prd-info {
+	DISPLAY: block; FONT-SIZE: 12px; TEXT-TRANSFORM: uppercase; WIDTH: 239px; COLOR: #6d6363; PADDING-TOP: 10px; FONT-FAMILY: Tahoma, Geneva, sans-serif; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.scroll_pro {
+	MARGIN-TOP: 15px; BACKGROUND: url(../images/scroll_bk2.jpg) #fff no-repeat; MARGIN-LEFT: 20px; WIDTH: 930px; HEIGHT: 133px
+}
+.stepcarousel {
+	BORDER-RIGHT: #000 0px solid; BORDER-TOP: #000 0px solid; LEFT: 32px; OVERFLOW: scroll; BORDER-LEFT: #000 0px solid; WIDTH: 860px; BORDER-BOTTOM: #000 0px solid; POSITION: relative; HEIGHT: 190px
+}
+.stepcarousel .belt {
+	LEFT: 0px; WIDTH: 239px; POSITION: absolute; TOP: 0px; TEXT-ALIGN: center
+}
+.belt IMG {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 8px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; WIDTH: 190px; CURSOR: pointer; PADDING-TOP: 0px; HEIGHT: 120px
+}
+.stepcarousel .panel {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; BACKGROUND-IMAGE: url(../images/bg_thumb.png); PADDING-BOTTOM: 0px; MARGIN: 1px; OVERFLOW: hidden; WIDTH: 239px; PADDING-TOP: 0px; HEIGHT: 181px
+}
+.product_red_top {
+	PADDING-RIGHT: 10px; FONT-WEIGHT: 700; FONT-SIZE: 12px; BACKGROUND: url(../images/prod-top-red.jpg) no-repeat; WIDTH: 251px; HEIGHT: 39px; TEXT-ALIGN: right
+}
+.product_box_cent {
+	PADDING-RIGHT: 17px; PADDING-LEFT: 17px; BACKGROUND: url(../images/prod-box-cent.jpg) no-repeat
+}
