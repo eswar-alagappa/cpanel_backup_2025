@@ -1,0 +1,146 @@
+#contactform {  
+  width: 400px;
+  /*left: -405px;*/
+  height: 550px;
+margin: 80px 0;
+  position: fixed;
+  box-shadow: 0 0 12px 0 #333;  
+  top:0;
+  right: -405px;
+}
+.submit_btn{
+cursor: pointer;
+background: #d60000;
+color: #fff;
+text-transform: uppercase;
+width: 100px;
+float: right;
+margin:15px 69px 0 0px;
+padding: 0;
+}
+#contactform h2 {
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0 0 0 27px;
+}
+
+#contact-button { 
+  width: 12%;  
+  padding: 7% 3%;  
+  cursor: pointer;
+  margin-left: -48px;
+  margin-top: 40px;
+  font-size: 23px; 
+  color: white;  
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+#contactform, #contact-button {
+  background-color: #004c9a;
+  border-radius: 0 15px 15px 0; 
+  border: 5px solid #e8eff6; 
+  border-left: none;
+  z-index: 10001;
+}
+
+.rotated-text {
+    display: inline-block;
+    white-space: nowrap;
+    /* this is for shity "non IE" browsers
+       that dosn't support writing-mode */
+    -webkit-transform: translate(1.1em,0) rotate(90deg);
+       -moz-transform: translate(1.1em,0) rotate(90deg);
+         -o-transform: translate(1.1em,0) rotate(90deg);
+            transform: translate(1.1em,0) rotate(90deg);
+    -webkit-transform-origin: 0 0;
+       -moz-transform-origin: 0 0;
+         -o-transform-origin: 0 0;
+            transform-origin: 0 0;*/
+   /* IE9+ */
+   -ms-transform: none;
+   -ms-transform-origin: none;
+   /* IE8+ */
+   -ms-writing-mode: tb-rl;
+   /* IE7 and below */
+   *writing-mode: tb-rl;
+}
+
+.rotated-text:before {
+    content: "";
+    float: left;
+    margin-top: 100%;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+}
+
+form input {
+    display: block;
+    border: none;
+    width: 292px;
+    height: 29px;
+    margin: 6px 26px;
+    padding: 0 0 0 10px;
+}
+form select {
+display: block;
+border: none;
+width: 304px;
+height: 29px;
+margin: 6px 0px 0 27px;
+padding: 0 0 0 10px;
+}
+
+form textarea {
+ width: 293px;
+margin: 6px 26px;
+height: 100px;
+padding: 10px 0 0 10px;
+}
+
+form textarea, form input { 
+  border:1px solid #b4a2a2;
+  border-radius: 5px;
+  background: #f2f2f2;  
+}
+.radio {
+    width: 100%;
+    padding: 16px 0;
+}
+
+.radio lable {
+   color: #fff;
+float: left;
+font-size: 15px;
+}
+.form_part lable {
+  margin: 5px 0 0 31px;
+}
+.form_part input {
+ width: auto;
+float: left;
+margin: 0 0 0 12px;
+padding: 0;
+}
+.radio > lable {
+    width: 163px;
+    margin: 5px 0 0 0;
+}
+.error_msg_sign {
+    margin: 0;
+    width: 95%;
+    font-size: 12px;
+    line-height: 13px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    	#contactform{
+    	    margin: 0px 0px 80px 0px;  
+    	}
+    	#contact-button{
+    	    top:10%;
+    	}
+}
