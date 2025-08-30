@@ -1,0 +1,195 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dr.Umayal Ramanathan College for Women</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" media="all" href="css/jquery.datepick.css"/>
+<link rel="stylesheet" type="text/css" media="all" href="css/ui.datepick.css"/> 
+
+<script type="text/javascript"  src="script/jquery-latest.js"></script>
+<script type="text/javascript" src="script/jquery.validate.js"></script>
+<script type="text/javascript"  src="script/jquery_002.js"></script>
+<script type="text/javascript"  src="script/jquery_003.js"></script>
+<script type="text/javascript" src="script/datetimepicker/jquery.datepick.js"></script>
+<script type="text/javascript" src="script/datetimepicker/jquery.datepick.min.js"></script>
+<script type="text/javascript" src="script/datetimepicker/jquery.datepick.pack.js"></script>
+<script type="text/javascript" src="script/script-menu.js"></script>
+<script type="text/javascript"  src="script/applicationvalidate.js"></script>
+<script type="text/javascript"  src="script/alumnaevalidate.js"></script>
+<script type="text/javascript"  src="script/newscript.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$("#topnav li").prepend(""); //Throws an empty span tag right before the a tag
+	
+	$("#topnav li").each(function() { //For each list item...
+		var linkText = $(this).find("a").html(); //Find the text inside of the a tag
+		$(this).find("span").show().html(linkText); //Add the text in the span tag
+	}); 
+	
+	$("#topnav li").hover(function() {	//On hover...
+		$(this).find("span").stop().animate({ 
+			marginTop: "-40" //Find the span tag and move it up 40 pixels
+		}, 250);
+	} , function() { //On hover out...
+		$(this).find("span").stop().animate({
+			marginTop: "0" //Move the span back to its original state (0px)
+		}, 250);
+	});
+	
+/* Menu Onload Start*/	 
+	var tabID = location.search.substring(1); 
+	if(!tabID)
+	{
+		$('#'+1).addClass('activebtn');
+		$(".content"+1).show();
+	}
+	else
+	{
+	for (var i=1;i<=5;i++)
+	{
+		if(tabID == i)
+		{
+			 $('#lblPageTitle').text($('#'+tabID+' a span').text());
+
+			$('#'+tabID).addClass('activebtn');
+			$(".content"+i).show();
+		}
+		else
+		{
+			$(".content"+i).hide();
+		}
+	}
+	
+	}
+	/* Menu Onload End */
+
+      $("#navigation ul li").click(function(){
+    $('#lblPageTitle').text($(this).text());
+	var currentid=(this.id);
+	if(currentid == 5)
+	{
+		$('.homeContentBottomRight').hide();
+	}
+	else
+	$('.homeContentBottomRight').show();
+	for (var i=1;i<=10;i++)
+	{
+		if (currentid==i)
+		{
+        $(".content"+i).slideDown(500);
+			
+				$('#'+i).addClass('activebtn');
+	
+		}
+		else
+		{
+				$(".content"+i).slideUp(500);
+		
+					$('#'+i).removeClass('activebtn');
+				
+    	}
+	
+	}
+	});
+
+});
+</script>
+</head>
+
+<body class="clearfix">
+<div class="innerWrapper">
+<div class="wrapper">
+  <div class="header">
+    <div class="headerLeft"><a href="index.html"><img src="images/logo1.gif" width="161" height="147" /></a></div>
+    <div class="headeright">
+      <h2>Dr.Umayal Ramanathan College for Women</h2>
+      <div class="menu"  id="topnav">
+        <ul  id="menu">
+          <li class="home"><span style="display: inline; margin-top: 0px;"><img width="21" height="22" src="images/home-icon.gif"></span><a href="index.html"><img width="21" height="22" src="images/home-icon.gif"></a></li>
+         <li><span style="display: inline; margin-top: 0px;  ">about&nbsp;us</span> <a href="academics.html">about&nbsp;us </a><ul ><li><a href="about-us.html?1">About URCW</a></li><li><a href="about-us.html?2">Mission</a></li><li><a href="about-us.html?3">Principal's  Desk</a></li><li><a href="about-us.html?4">Management</a></li></ul>
+          </li>
+          <li><span style="display: inline; margin-top: 0px;  ">Academics</span> <a href="academics.html">Academics </a> 
+          <ul  class="sub2">
+         <li><a href="academics.html?1">Courses Offered</a></li>
+		<li><a href="academics.html?2">Departments</a></li>
+   <li><a href="academics.html?3">Examinations</a></li>
+        </ul>
+          </li>
+          <li><span style="display: inline;  ">activities</span> <a href="activities.html">activities</a>
+          <ul  class="sub3">
+          <li><a href="activities.html?1">Association Activities</a></li>
+	<li><a href="activities.html?2">Fine Arts Association</a></li>
+	<li><a href="activities.html?3">Sports and Games</a></li>
+    <li><a href="activities.html?4">Beyond curriculum</a></li>
+    
+    </ul>
+          </li>
+          <li><span style="display: inline;  ">infrastructure</span> <a href="infrastructure.html">infrastructure</a></li>
+          <li><span style="display: inline;  ">Gallery</span> <a href="gallery.html">Gallery</a></li>
+          <li class="active"><span style="display: inline;  ">Admission</span> <a href="admissions.html">Admission</a>
+          <ul  class="sub4">
+          <li><a href="admissions.html?1">Admission Procedure</a></li>
+		<li><a href="admissions.html?2">UG Courses</a></li>
+        <li><a href="admissions.html?3">PG Courses</a></li>
+		<li><a href="admissions.html?4">Alumnae</a></li>
+        <li><a href="admissions.html?5">Admission Form</a></li>
+        </ul></li>
+          <li class="last"><span style="display: inline;  ">CONTACT&nbsp;US</span> <a href="contact-us.html">CONTACT&nbsp;US</a></li>
+        </ul>
+        <script type="text/javascript">
+	var menu=new menu.dd("menu");
+	menu.init("menu","menuhover");
+</script> 
+      </div>
+    </div>
+  </div>
+  <div class=" admissionsBanner">
+  <h2>
+ admissions
+  </h2>
+    
+  </div>
+   <div class="content">
+  <div class="contentInner">
+  <div class="contentLeft">
+      
+  <div id="navigation"class="navi">
+
+<ul>
+<li class="last active" id="1"><a href="javascript:;"><span>Admission Procedure </span></a></li>
+<li id="2"><a href="javascript:;"><span>UG Courses </span></a></li>
+<li id="3"><a href="javascript:;"><span>PG Courses </span></a></li>
+<li id="4"><a href="javascript:;"><span>ALUMNAE</span></a></li>
+<li id="5"><a href="javascript:;"><span>Admission Form </span></a></li>
+</ul>
+</div>
+<div class="contentLeftTop">
+<div class="content1"   style="display:none;"  >
+	<p>Application for admission must be made in the prescribed form which can be obtained with the prospectus from the college office on payment of Rs.100/- in person or through post by sending a crossed bank draft drawn in favour of the Secretary along with a self addressed and stamped (Rs.10) 23x15 cm envelope. The last date for submitting the filled in application form in the college office will be the 10th day from the date of publication of Higher Secondary Examination results.</p>
+	<p>Candidates who are selected provisionally will be intimated by post to appear for an interview along with their parent and original certificates. They have to remit the fees on the day of interview without fail. The provisional admission will be cancelled if the candidate fails to turn up for the interview on the day specified. The admission is provisional and must be approved by the University.</p>
+<span> NOTE: Fees once paid will not be refunded under any circumstances.</span>
+
+
+</div>
+
+<div class="content2" style="display:none;" >
+
+<span> B.A (English Literature)</span>
+<p>Eligibility :	A pass in Higher Secondary Examination.</p>
+<span> B.B.A</span>
+<p>Eligibility :	A pass in Higher Secondary Examination.</p>
+<span> B.Com (Computer Applications)</span>
+<p>Eligibility :	A pass in Higher Secondary Examination with Commerce or Computer Science as one of the subjects.</p>
+<span> B.Sc (Physics)</span>
+<p>Eligibility :	A pass in Higher Secondary Examination with Mathematics or Physics as one of the subjects. </p>
+<span> B.Sc (Mathematics)</span>
+<p>Eligibility :	A pass in Higher Secondary Examination with Mathematics as one of the subjects.</p> 
+<span> B.Sc (Computer Science)</span>
+<p>Eligibility :	A pass in Higher Secondary Examination with Mathematics or Computer Science as one of the subjects. </p> 
+<span> B.Sc (Information Technology)</span>
+<p>Eligibility :	A pass in Higher Secondary Examination with Mathematics or Computer Science as one of the subjects. </p>
+<span> B.Sc (Bio-Technology) </span>
+<p>Eligibility :	A pass in Higher Secondary Examination with Biology/Botany/Zoology/Bio-Technology /Microbiology  / Biochemistry as one of the subjects.</p> 
+<span> B.Sc (Microbiology &Clinical Lab Tech

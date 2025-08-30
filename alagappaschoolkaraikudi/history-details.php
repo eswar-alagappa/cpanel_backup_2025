@@ -1,0 +1,262 @@
+<?php include "header1.php" ?>
+
+ <div class="banner"> <img src="images/history-banner-left.jpg" width="644" height="183" /><img src="images/history-banner-right.jpg" width="327" height="183" /></div>
+
+  <div class="content">
+
+    <div class="historyContent">
+
+      <div id="content1" >
+
+        <h2>Padmabhushan, Dr. RM. Alagappa Chettiar</h2>
+
+        <img src="images/alagappa-chettiar-img2.jpg" width="155" height="231" /><br />
+
+        <p>My happiness is limitless because it does not consist naturally in my own happiness, but my happiness consists in the happiness of the thousands of students young and old, boy and girl that received education in our vast campus.</p>
+
+        <p>Padmabushan Dr.Alagappa Chettiar was a great Philanthropist, eminent educationist and a multi faced versatile personality. Born in 6th April of 1909 as second son of ShriK.V.AL.Ramanathan Chettiar and Umayal Achi at Kottaiyur of Sivagangai District, in Tamilnadu.</p>
+
+        <br />
+
+        <span>EARLY LIFE & EDUCATION</span>
+
+        <p>Dr. RM. Alagappa Chettiar had his primary education at the SMS Vidyasala in Karaikudi and went on to obtain his M.A. from the Presidency College in Madras. He obtained Post  Graduate (M.A.) Degree in English literature in 1930 from Presidency College, Madras at the age of 21. He had the fortune of befriending Dr. S. Radhakrishnan, a model teacher who later on became the President of India. At the age of 21, he became the first Indian trainee at the Chartered bank in London. Thereafter he qualified for the bar at Middle Temple in England and became a ' bar-at-law ' to be cherished by the people of Chettinad. He was conferred a doctoral degree (D.Litt) by Annamalai University in 1943 and by the Madras University (LL.D.) in 1944. The British Government knighted him in 1945. He was conferred the distinction of Padma Bhushan by the President of India on January 26, 1957. His stellar record as a business entrepreneur was acknowledged by the British government when he was knighted in 1945 at the age of 37. He renounced the prestigious knighthood when India attained independence. The distinction of Padma Bushan was conferred by the president of India on January 26, 1956. </p>
+
+        <span>BUSINESS ACUMEN</span>
+
+        <p>His stellar record as a business entrepreneur was acknowledged by the British Government when he was knighted in 1945 at the age of 37. He renounced the prestigious knighthood when India attained independence. The distinction of Padmabushan was conferred by the President of India on January 26, 1957. Within a span of 2 decades he demonstrated his versatility as a successful business tycoon, an intrepid academician with a vision to change the mere scrub jungle of Karaikudi to an educational Mecca. When he passed away prematurely at the age of 48, Dr. Alagappa Chettiar had redefined philanthropy and contributed more to the betterment of education in Tamil Nadu than any other person of eminence had done until then.</p>
+
+        <p>He launched his career by pioneering in textiles. As a business savvy and a model employer he practiced then, what the Harvard Business School preaches today - diversification of portfolios with rubber plantations in Malaya, Tin mines in Burma, Textile Mills in Kerala, Insurance companies in Calcutta, Hotels in Bombay, Theatres in Madras, a flourishing stock broking company and a private airline and has been referred to as the unsung business maharaja of South India in the thirties and forties. His business interests were however short lived as he changed his focus to education.</p>
+
+        <p>Dr. Alagappa in 1937 started Cochin textiles at Pudhukaddu near Thiruchur in Kerala. Cochin textiles were converted as Alagappa Textiles. The Township of Cochin textile's staff was named Alagappa Nagar. Alagappa Nagar is the first and only township named of a Nagarathar in other state. He took charge the Managing responsibilities of "Jupiter general insurance company", "East and west insurance company' and "Rich Hotels". He also functioned as Air Transport Company known as "Jupiter Airways".</p>
+
+        <span>SERVICE TO  EDUCATION</span>
+
+        <p> He harboured a firm conviction that education is an absolute must for a human being to become productive, wholesome and humane. In 1947 at the Dr. Annie Besant centenary celebrations the Vice-Chancellor of Madras University called industrialists to start colleges to educate India. Spontaneously Dr.Chettiar answered the call in the same function and within three days Alagappa Arts College started functioning at Gandhi Malighai in Karaikudi. His generous donations led to the establishment of a string of educational institutions, which formed the basis for the establishment of the Alagappa University in 1985 by the Government of Tamil Nadu.</p>
+
+        <p>The Alagappa University was established in 1985 fulfilling the dream of Dr.Alagappa. Alagappa Educational intuitions is providing a continuum in education for children of the community to start from kindergarten and pursue studies right up to post doctoral studies in a wide array of subjects.</p>
+
+        <p>To bring prominence to the educational institutions he had the vision to convince Prime Minister Nehru to house one of the Government's National Research Institutes in the heart of the Alagappa campus. Dr. Radhakrishnan, the Vice President of India surmised at the opening of the Central Electro Chemical Research Institute (CECRI) on 14 Jan 1953. " The magnificent gift of 300 acres of land 1.5 million of Rupees by Dr. Alagappa Chettiar helped the Government of India to select Karaikudi as the seat of Electro Chemical Research Institute. Being a businessman himself, Dr. Alagappa Chettiar is aware of the industrial possibilities of our country and the need for scientific, technical and technological education in his lifetime he has built a monument for himself you have only to look around."</p>
+
+        <p>At the tender age of 48, in the midst of single handedly revolutionizing his native place and changing the course of history he succumbed to his illness. Perhaps his crowning piece of philanthropy was giving away his own palatial residence in Kottaiyur to found the Women's college. Rajaji has remarked, "Dr. Alagappa Chettiar had given away freely. Students should develop that quality namely giving money earned for charity. Dr.Alagappa is one who can give to good cause, cultivate courage and emulate the spirit".
+
+          The Trusts that have been established by the Founder viz. the Asoka Charitable Trust and the Dr.Alagappa Chettiar Educational Trust are managing the Schools and have aggressive plans for expanding, to upgrade the quality of education and provide an opportunity for the youth of the country, to fulfill their dreams.</p>
+
+        <span>Dr.  Alagappa Chettiar's Philanthrophy</span>
+
+        <ul>
+
+          <li> In 1943 Dr. Alagappa Chettiar  donated  Rupees One Lakh for the installation &amp; development of Tamil Department of  Travancore University.</li>
+
+          <li>Rupees Eleven thousand for  instituting higher secondary school at his birth place Kottaiyur, Tamilnadu.</li>
+
+          <li>Rupees Seventy five  Thousand to build a Ladies hostel at Vepery, Chennai.</li>
+
+          <li>Rupees One hundred thousand  for the development of the township infrastructure of Kottaiyur, Tamilnadu.</li>
+
+          <li>Rupees Thirty Thousand for  Meenakshi club at Kandanur, Tamilnadu.</li>
+
+          <li> Rupees Ten thousand for  H.M.I.S Fund.</li>
+
+          <li>Rupees Five hundred  thousand to establish an Engineering College at Annamalai University,  Chidambaram, Tamilnadu.</li>
+
+          <li> Rupees Five hundred  thousand to establish a College of   Technology at Madras University, To  acknowledge this donation the   Madras University named the institution  &quot;Alagappa Chettiar College of   Technology&quot; Guindy, Chennai.</li>
+
+          <li>He was instrumental in  persuading the Central   Government to establish the one and only Central Electro  Chemical   Research Institute (CECRI), one of the premier Research Organizations    under CSIR, at Karaikudi. He donated 300 acres of land worth Rupees 1.5   million. This  gesture, earned for him the title of 'Socialistic   Capitalist' from Pandit  Jawaharlal Nehru.</li>
+
+          <li>Rupees Five hundred  thousand to establish Higher studies at Malaysia.</li>
+
+          <li>Rupees Twenty Thousand to  establish the South Indian Educational Society at New Delhi in 1948.</li>
+
+          <li>Rupees Twenty Five thousand  to the Lady Deck College at Madurai.</li>
+
+          <li>Rupees One hundred and  Seventeen Thousand for   Constructing &quot;Alagappa Mandapam&quot; at Thakkar  Baba Vidyalaya in 1946, The   Foundation Stone was laid by Mohandas  Karamchand Gandhi (Father of the   Nation).</li>
+
+          <li>Rupees ten thousand and  Five for publishing &quot;TAMIL KALANGIYAM&quot;.</li>
+
+          <li>Rupees ten thousand and one  for Cochin Cyclone Relief fund.</li>
+
+          <li>Rupees Twenty thousand for  Geological research by Travancore government.</li>
+
+          <li>Rupees One Lakh for  establishing maternity Hospital and Child care Center in Cochin.</li>
+
+          <li>Rupees Thirty thousand for  the Indigenous medicine Research by Ernakulum Maharaja College. </li>
+
+          <li>Rupees One hundred thousand  to fund Students of Cochin to study abroad.</li>
+
+          <li>Rupees One hundred and  fifty thousand for the Morning food scheme of Cochin Children.</li>
+
+          <li>Rupees One hundred thousand  to establish South Indian chamber of commerce in Cochin.</li>
+
+        </ul>
+
+        <p>Dr. Chettiar was full of compassion and gave whatever he had at the moment to the various causes. So the above list is just a small sampling of his generosity. His donation to this society is immeasurable. </p>
+
+        <span>Alagappa Educational Trust</span>
+
+        <p>Dr. Alagappa Chettiar Educational Trust is the Governing body of the Alagappa Group of Schools at Karaikudi. The Trust was started by the great Philanthropist of South India Dr.RM.Alagappa Chettiar. The intention of starting this Trust is to educate all the children who are residing in and around Karaikudi. The Trust is headed by the able leadership of                    Dr.(Mrs.) Umayal Ramanathan, the Secretary and Correspondent, who is the daughter of the founder Vallal Dr. RM. Alagappa Chettiar. To follow the vision of Dr. Alagappa Chettiar at present the Trust has the following as Trustees.</p>
+
+        <table width="100" border="0">
+
+  <tr>
+
+    <td>Late Dr. (Mrs) UMAYAL RAMANATHAN	:</td>
+
+    <td>Secretary and Correspondent</td>
+
+  </tr>
+
+  <tr>
+
+    <td>Mr. R. VAIRAVAN</td>
+
+    <td>Chairman</td>
+
+  </tr>
+
+  <tr>
+
+    <td>Dr. M. ROBSON</td>
+
+    <td>Trustee</td>
+
+  </tr>
+
+  <tr>
+
+    <td>Dr. R. SWAMINATHAN	</td>
+
+    <td>Trustee</td>
+
+  </tr>
+
+  <tr>
+
+    <td>Mr. G. NARESH KUMAR</td>
+
+    <td>Trustee</td>
+
+  </tr>
+
+  <tr>
+
+    <td>Dr. S. RAMAKRISHNAN</td>
+
+    <td>Trustee</td>
+
+  </tr>
+
+  <tr>
+
+    <td>Dr. R. DHANDAPANI</td>
+
+    <td>Trustee</td>
+
+  </tr>
+
+</table>
+
+<p>The Newly built Trust Office was inaugurated by our beloved Aachi Dr. (Mrs.) UMAYAL RAMANATHAN on 30th November, 2013 with spacious rooms. This Trust Office is well equipped with latest technology.</p> 
+
+<p>The Office is headed by Mr. Kasi Viswanathan, the Manager of the Trust. The office has five staff members. </p>
+
+
+
+      </div>
+
+      <div id="content2" style="display:none;">
+
+        <h2>Late Dr.Mrs. Umayal Ramanathan </h2>
+
+        <img src="images/amayal-img-2.jpg" width="155" height="195" /><br />
+
+        <span>EARLY LIFE </span>
+
+        <p> Born in 1928, she had her schooling at Ewart School in Madras. Docile and soft spoken, she showed great interest in fine arts like dance and was particularly fond of Geography as a subject. During most of her childhood she was deprived of her father's presence, who was preoccupied with business, but she fondly remembers his affectionate letters which were a source of encouragement to the little girl. He evinced great interest in his daughter's upbringing as a good human being and was instrumental in getting her engaged in social activities.</p>
+
+        <span>A FAIRY TALE  WEDDING</span>
+
+        <p> Dr. Alagappa Chettiar had a passion for extravagance and grandeur. It was with this trait that he went on to celebrate the wedding of his daughter Umayal with Ramanathan on 10th September, 1943 with pomp and splendor. With open invitations to the inhabitants of Chettinad, thousands lined the streets and dignitaries included the rulers of Princely states like Mysore, Travancore and Pudukottai. The bride and groom, postured in a chariot draped with flowers, were in the midst of more than 20,000 people assembled to witness the festivities. Specially chartered trains and buses plied guests from various parts of Madras Presidency to the venue of the marriage at Kottaiyur. The wedding celebrations were interlaced with festive entertainment featuring the famous exponents of Carnatic music such as G.N. Balasubramaniam, M.S. Subbulakshmi M.L. Vasanthakumari, M.M. DhandapaniDesigar and M.K. Thiagaraja Bhagavadar as they regaled the crowd with their concerts. The up and coming Travancore sisters, Padmini, Raghini and Lalitha enthralled the audience to their hearts' content. An array of stupendous gifts valued at crores of rupees demonstrated the magnanimity of RM. Alagappa Chettiar. The dowry spread over many halls ranged from household items to engraved rosewood furniture from imported cutlery to gold ornaments studded with diamonds and other valuable gems.</p>
+
+        <span> SERVICE TO  SOCIETY</span>
+
+        <p> She has been a syndicate member of Coimbatore Agricultural University and a senate member of the Madurai Kamaraj University. Currently she is the managing trustee of the Alagappa Charitable Trust and the Asoka Charitable Trust. Her concern for the society is evident in the various posts that she has held. She was a member of the Social Welfare Board of Ramnad District and the Chairperson of Gangadeeswarar Temple. People fondly recollect her giving away in charity to the poor and partaking in the inter-caste meals programme. Following the footsteps of her father, she founded two higher secondary schools in his name - one at Karaikudi and another in Chennai, besides running a Montessori school, and a music school at Karaikudi.</p>
+
+        <span>AWARDS</span>
+
+        <p> Her service to the cause of education and society was duly given recognition when she was accorded the Doctor of letters Degree by the Honorable Governor Dr.Chenna Reddy. The prestigious Indira Priyadarshini award was conferred on her as a fitting tribute to her achievements. No doubt she is even today a 'Priyadarshini' not only to her children but also to all who are acquainted with her.</p>
+
+        <br />
+
+      </div>
+
+      <div id="content3" style="display:none;">
+
+        <h2>Profile of DR.RAMANATHAN VAIRAVAN</h2>
+
+        <img src="images/vairavan-img.jpg" width="155" height="195" alt="Ram Vairavan" /><br />
+
+        <p>Dr.Ramanathan Vairavan, an entrepreneur and educationalist is the grandson of the late Philanthropist Dr. RM. Alagappa Chettiar. With more than 40 years’ experience in the health care industry, his experience working in executive management for the multinational German company Hoechst AG in the US, Germany & Singapore provided him a wealth of experience in various facets of the industry. This led him to be a co-founder of a biotechnology company based in Carlsbad, CA, that used novel biofilm chip technology to perform disease signatures through genomic and proteomic profiling with tests in genetic disorders, and oncology. Initially planned for an IPO the attractive technology garnered significant interests from healthcare firms and was sold.  His focus now is with DiaCarta, a molecular diagnostics company that has developed a revolutionary approach to transform care for patients undergoing chemo and radiation therapy by providing effective precision diagnostics, mitigate adverse events and enhance patient care.</p>
+
+        <p>As the Chairman/ Secretary of the Dr. Alagappa Chettiar Educational Trust in Karaikudi and the Asoka Charitable Trust in Chennai, he manages over 8000 students in primary, secondary, and collegiate education. He has been actively involved in enhancing the quality of education and the infrastructure of the schools, both in Chennai and Karaikudi.</p>
+
+        <p>As students of Bharatanatyam, spend considerable time to learn and perform their Arangetram and are not rewarded with a degree for their years of learning, he pioneered in designing a first of its kind novel academic curriculum in 2005 to preserve the repertoire of Tamil culture that is embedded in the dance and founded Alagappa Performing Arts Academy by collaborating with leading artistes and Alagappa University. Today more than 35 dance centers offer this program in the US. The Academy boasts of almost 1000 enrolled students who get college credit from US Universities for enrolling in the program.</p>
+		<p>He established several institutions, including Alagappa Institute of Information Technology in Chennai (1999), Alagappa Foundation Inc. California, USA (2001), Alagappa Performing Arts Academy, Dance Program (2005), Alagappa Performing Arts Academy, Music Program (2008), Alagappa Performing Arts Academy, Vasthu Science (2012), Alagappa Academy (CBSE Program), Karaikudi (2014), Alagappa Girls School, Karaikudi (2015), the only all-girls school in Karaikudi, and the Alagappa College of Nursing (2018) Plans are underway to set up an Ayurvedic College in Karaikudi. and a defined mission to build a Medical College in Karaikudi.</p>
+		<p>He obtained a BS degree in Chemical Engineering from AC Tech in Madras, an MS degree in Biomedical Engineering from Washington University, St. Louis, and an MBA from Fairleigh Dickinson University. He was awarded a doctorate degree by Alagappa University, Tamil Nadu, India in 2018</p>
+		<p><b>Awards and Honors</b></p>
+		<ul>		
+		<li>Syndicate Member, Alagappa University</li>
+		<li>Distinguished Alumni Awardee 2019 – AC Tech, Anna University</li>
+		<li>President, Tamil Isai Sangam, Karaikudi</li>	
+			
+		</ul>		
+	
+
+      </div>
+
+    </div>
+
+    <div class="contentRight">
+
+      <div class="rightMenuOuter"    >
+
+        <div class="rightMenu  menu_list" id="firstpane">
+
+          <div class="rightMenuTitle">Our rich heritage</div>
+
+          <div id="firstpane" class="menu_list" >
+
+            <div class="menu_body" id="navigation7">
+
+              <ul>
+
+                <li id="1"><a>Dr. RM.Alagappa Chettiar</a></li>
+
+                <li id="2"><a>Dr. Mrs.Umayal Ramanathan </a></li>
+
+                <li id="3"><a>Mr. Ram Vairavan</a></li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+     <?php include "latestnews.php" ?>
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+
+ 
+
+<?php include "footer.php"; ?>

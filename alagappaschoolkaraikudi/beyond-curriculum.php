@@ -1,0 +1,814 @@
+<?php include "header1.php" ?>
+
+ <div class="banner"> <img src="images/curriculum-banner-left.jpg" width="644" height="183" /><img src="images/curriculum-banner-right.jpg" width="326" height="183" /></div>
+  <div class="content">
+    <div class="contentLeft">
+      <div id="content2"  >
+        <h2 style="text-transform:uppercase;"><strong>Clubs & Association</strong></h2>
+        <h2>Interact club</h2>
+        <p> Interact is a club for young people ages 12-18 who want to join together to tackle the issues in their community that they care most about. Through Interact, our student </p>
+        <ul>
+          <li> Carry out hands-on service projects </li>
+          <li> Make international connections </li>
+          <li> Develop leadership skills </li>
+          <li> Have fun! <strong> "Service to humanity, is service to God" </strong> </li>
+          <li> We have nearly 425 student members from our school. These interactors render their valuable services to the needy people irrespective of caste, community and religion in and around Karaikudi. </li>
+          <li> <span> Some of the projects done by our student Interactors are as follows – </span>
+            <ul>
+              <li> Donating school uniforms to the needy school children </li>
+              <li> Donating notebooks & books and other stationeries </li>
+              <li> Providing Lunch to orphanage </li>
+              <li> Helping people at old age homage </li>
+              <li> Free medical check up camps. </li>
+            </ul>
+          </li>
+          <li> <span> Celebration and Fun </span> </li>
+          <li> Honouring the Teachers on Teacher's Day </li>
+          <li> Celebrating various festivals like – Aadi Perukku, Krishna Jayanthi, Ganesh Chaturthi, Ramzaan, Id – ul – Fitr, Chiristmas etc., </li>
+          <li> Conducting all faith prayer for the students of our school who are going to appear for X and XII Public Examinations </li>
+        </ul>
+        <br />
+        
+        <!--<h2> ECO CLUB </h2>-->
+        
+        <h2> NSS </h2>
+        <p> Our school has NSS which is doing its duty in full fledged manner. The volunteers of NSS help in all school activities like maintaining discipline, organizing various inter school and intra school events. Various services and rallies are organized by NSS Volunteers. Here are some of the projects taken up by our NSS Volunteers – </p>
+        <ul>
+          <li> Cleaning Temples in and around Karaikudi town. </li>
+          <li> Every year NSS volunteers choose an area and perform cleaning work like, cutting grasses and shrubs, leveling the area by hiring JCB. </li>
+          <li> Planting saplings is done by NSS Volunteers in some of the areas. </li>
+          <li> NSS volunteers organize rallies every year to create awareness among people. Some of the rallies organized are as follows
+            <ul>
+              <li> Dengue Fever </li>
+              <li> Chikun Guniea </li>
+              <li> Road safety and traffic measures </li>
+            </ul>
+          </li>
+        </ul>
+        <br />
+        <h2> Scouts and Guides </h2>
+        <p> The purpose of Scouting Guiding is to develop the inherent potential of the young people by providing them a number of structured activities in order to make them physically, mentally, socially, spiritually and emotionally strong and useful citizens of the Nation. </p>
+        <p> The aim is achieved through a combination of activities and programmes offered at the Unit level and a structured syllabus which offers programmes and activities through progressive Advancement Scheme. </p>
+        <p> The Progressive Advancement is designed to satisfy the needs of each age group and is contained in APRO Part II for Scout Wing  and in APRO Part III for Guide Wing. </p>
+        <p> The scouts & guide activities play a vital role in molding and developing the entire person i.e. mind and heart, body and soul of the students. These activities are regularly being conducted in our School with utmost sincerity and integrity since the beginning of the session. The current session has an enrollment of34 scouts, 22 guides, ___ cubs and ___ bulbuls with a staff of two guide captains, three scout Masters and one Flock leader. </p>
+        <p> Tree plantation, Community work and sanitation, trekking, and hiking etc. are the salient features of these activities .Bharat Scout and Guide Foundation day, cubs and bulbuls utsav etc. were observed in a benifitting manner. </p>
+      </div>
+      <div id="content3" style="display:none;" >
+        <h2>Sports</h2>
+        <div class="sports"> 
+        <img src="images/gallery/zonalsports/img4.jpg" width="190" height="141" />
+          <div class="sport">
+            <p>"Lack of activity destroys the good condition of every human being while movement and methodical physical exercise save and preserve it".</p>
+            <p> We are not only specialized in Academics but also we give equal importance to the Physical Education. Our school provides good physical education which encompasses the mental, social, emotional and physical dimensions of heath for the all round development in children which in turn would pave way for the development of healthy society. </p>
+          </div>
+          <p> Our school has conducted intra mural and also organizes inter mural. The success of any program is based on planning and preparation. We have successfully organized sports meet The victory ceremony is conducted as soon as final of each event is over. The presentation of the trophies, certificates and distribution of prizes takes place in the closing ceremony. </p>
+        </div>
+        <div class="contentbottom">
+          <h2> Out Door </h2>
+          <ul>
+            <li> Football </li>
+            <li> Cricket Pitch </li>
+            <li> Volleyball court </li>
+            <li> Badminton court </li>
+            <li> Beach Volleyball </li>
+            <li> Track for Athletics </li>
+            <li> Kho – Kho </li>
+            <li> Lawn Tennis </li>
+			<div class="">
+              <h2> HANDBALL </h2>			  
+			   <h3>7th National Rural Games & 1st South Zone Rural Games – 2017</h3>
+			  <h3>National Level Handball Match</h3>
+              <img src="images/sports/handball_2018.png" width="190" height="141" />			 
+              <p><strong>Venue:</strong> Gnanamani College of Technology, Pachal, Namakkal District.</br>
+			  <strong>Date:</strong> 24th November to 26th November 2017</br>
+			  Organized by RGFI (Rural Games Federation of India) and TRGA (Tamilnadu Rural Games Association)</br>
+			  Teams participated from various states – Haryana, Telengana, Kerala, Tamilnadu, Pondicherry, Karnataka, Andhra Pradesh.</br></br>
+			  Our students Vishnu Prakash of XII standard, Ravichandran and Logesh of XI standard under category 19 year boys, represented Tamilnadu and won Gold Medal in the 7th <strong>National Handball Match.</strong></br>
+			  Our students Mohammed Wajid of VIII std, Udhaya Kumar and Vignesh of IX standard under category 14 years and 17 years boys, represented Tamilnadu and won Gold Medal in the <strong>1<sup>st</sup> South Zone Handball Match.</strong> </p>
+            </div>
+			<div class="">
+              <h2> HOCKEY </h2>			  
+			  <h3>SGFI  - SCHOOL GAMES FEDERATION OF INDIA</h3>		
+			  <img src="images/sports/hockey_2018.png" width="190" height="141" />				  
+              <p>In under 14 boys Hockey Team Selection, our student Kamalesh Kannan of VIII standard was selected by SGFI to represent Tamilnadu Team in National Level Hockey Tournament. This match was held at Chattishgarh.</p><br/><br/><br/>
+			  <h3>KT Singh Babu Memorial Tournament, Lucknow</h3>
+			  <p>In the above said tournament, which is known to be a very prestigious tournament for school students at National Level under 14 years, our student R.Priyadharshan of VII standard is playing match representing South Tamilnadu Hockey Team at Lucknow.</p>
+			  <h3>Inter District Level Hockey </h3>			 		
+			  <p>In Inter District Level Hockey Tournament under 17 boys, Senior Level, 6 students from our school M. Arvind of X Std, CM. Dinesh Muthu,    AL.Sudarshan, AR. Manikandan, G. Jai Pranesh, K. Arun Abishek represented Sivagangai District at Sivakasi.</p>
+			  <h3>Veerapandian Memorial Trophy </h3>
+			  <p>Veerapandian Memorial Hockey Club, Karaikudi organized Hockey Tournament for school students under 17 boys at Alagappa University College of Physical Education Grounds. Teams from Sivagangai District participated in this tournament and our school team won the final match and bagged the overall trophy. </p>
+            </div>
+          </ul>
+          <h2> Indoor Games </h2>
+          <ul>
+            <li> Table Tennis </li>			
+            <div class="">
+              <h2> Yoga </h2>
+              <h3> Indian Association of Yoga </h3>
+              <img src="images/sports/yoga_2018.png" width="190" height="141" />
+              <p>Indian Association of Yoga, New Delhi organized State Level Yoga Competition for school students at Annamalaiyar Matriculation Higher Secondary School, Madurai.<br/><br/>
+			  In this more than 100 schools participated in the competition. From our school a team of students from various levels participated in the competition and won many prizes.<br/><br/>
+			  South India Level Selection for Yoga Competition for school children was held at Tiruchendur. This competition was conducted by Yoga Sports Development Association, Tamilnadu. In this more than 100 schools took part and our students brought laurels to our Institution by winning many prizes at different levels. Our school was declared overall champion for scoring maximum points. Our school children won 93 prizes in the  competition and bagged the overall championship. </p>
+			  <h3>Tamilnadu State Yoga Federation, Ramnad </h3>
+			  <p>State Level Yoga competition was conducted by Ramanathapuram District Sports Development Authority in which many school took part in the competition. Our students performed extremely well and brought laurels to our Institution. Total number of prizes won was 7 out of which 3 were first prizes, 2 second prizes and 2 third prizes.</p>
+            </div>			
+            <div class="karate">
+              <h2> Karate / Kung Fu </h2>
+              <img src="images/karate.jpg" width="190" height="141" />
+              <p>Karate is a martial art, developed in the Ryukyu Islands in what is now Okinawa, Japan. It was developed partially from the Indigenous Martial Arts of Ryukyu Islands. Karate is a striking art using punching, Kicking, Knee strikes and open hand techniques such as knife hands, Spear-hands and palm – heel strikes. In some styles, grappling, throws, joint locks, restraints and vital point strikes are also taught. The Karate practitioner is called a Karateka. Our  students were given training in karate by our well trained karateMaaster. Our students have brought many laurels by winning the State Level, National Level and the International Level, Karate Tournament.</p>
+            </div>
+            <div class="">
+              <h2> Arts and crafts </h2>
+              <p> The purpose of all art is sacramental. In ancient times art was used not as a means for public enjoyment but as an accessory of worship. Our students are given practice in art, pencil shading, postal colours, water colours, glass colours, theme painting, emboss, coffee painting, soap carving, fur toys etc. Apart from these, students are trained to put Rangoli. During the festival celebrations students are encouraged to put Rangoli in our school campus. </p>
+            </div>
+          </ul>
+        </div>
+                <div class="sports">
+                <h2>District Level Sports was held in TRVA School</h2>
+        <p>The District Level Sports and Games 2015 -16 was held in TRVA School, Pattamangalam, Sivagangai District.</p>
+        <p>The Girls volley Ball Beach under 17 and under 19 category were held in TRVA School</p>
+        <p>Our School students Miss M. Thanganachiya and Miss S. Sangeeths of Std X won the district level match under category 17. They will be representing our school in the Divisional level match, which was going to be held at Ramnad. <br /> <a class="sports-link" href="gallery-details.php?22">View Image</a></p>
+        <p>Under 19 Category, our student Miss C. Kirthika Priya of Std XII and Miss Subbalakshmi BV of Std XI won the district level match and they will be representing our school in the Divisional level match, which is going to beheld at Ramnad. <a class="sports-link" href="gallery-details.php?22">View Image</a></p>
+        <p>In tennikoit – doubles, under 19 category. Our Students Miss B. Priyadharshini and Miss A. Deepa of Std XII won the District level match, and they will be representing our school in the Divisional level matches which is going to be held at Ramnad.</p>
+        <p>In Carrom Board – doubles, under 17 category. Our students Miss G. Sweety Nivetha and Miss I. Shalmika of Std X won the District level matches and they will representing  our school in the  Divisional level match which is going to be held at Ramnad.</p>
+        <p>The Zonal level sports meet 2015 -16 was held at Alagappa University College of Physical Education, Karaikudi. About 45 schools in and around karaikudi ( both Government and Matriculation ) Schools participated in this meet. Our School students participated in many events and secured many prizes. The highlight of this event , Miss R. Jayabharathi of standard XI was declared champion in the super senior level. All these students were selected for the District Level Sports Meet.</p>
+        <p> <strong>The following are the students selected for the Divisional level Athletic Sports meet, which was going to beheld at Ramnad.</strong></p>
+        <ul>
+        <li>R. Jeyabharathi	- XI</li>
+        <li>A. Kanaga Abinesh	- IX</li>
+        <li>P. Fredrick Samuel	- VIII</li>
+        <li>NS. Bhaghyalakshmi	- XII</li>
+        <li>AR. Deivapriya	- VIII</li>
+        </ul>
+        </div>
+      </div>
+      <div id="content4" style="display:none;" class="gallery" >
+        <h2>Painting</h2>
+        <img src="images/painting1.jpg" width="190" height="141"/> <img src="images/painting2.jpg" width="190" height="141" /> <img src="images/painting3.jpg" width="190" height="141" /> <img src="images/painting4.jpg" width="190" height="141" /> <img src="images/painting5.jpg" width="190" height="141" /> <img src="images/painting6.jpg" width="190" height="141" /> <img src="images/painting7.jpg" width="190" height="141" /> <img src="images/painting8.jpg" width="190" height="141" /> <img src="images/painting9.jpg" width="190" height="141" /> <img src="images/painting10.jpg" width="190" height="141" /> <img src="images/painting11.jpg" width="190" height="141" /> </div>
+      <div id="content5" style="display:none;"  >
+        <h2>Achievements</h2>
+        <span>AGNI IGNITE 2015 – 16 </span>
+        <p>Agni’s Centre for Research and Development, Chennai (A Unit of Agni Institute of Engineering and Technology, Chennai) organized District Level Science Exhibition among the school students for creating awareness for Science subject among the students. This competition is held every year for school students. The competition was held at S.M.S.V Higher Secondary School, Karaikudi. </p>
+        <p>Various topics were given by the organizers from Physics, Chemistry, Computer Science, and Biology. Our students chose the topic<strong> AGRICULTURE ORGANIC MANURE</strong> from Biology.</p>
+        <p>240 exhibits were displayed in this competition. Our students bagged the First Place. The team consisted of Rabindranath Tagore and Sheik Mohammed of XI Standard. They were awarded with Gold Medal and Cash prize of Rs. 5000/- and they are selected for State Level Science Exhibition. </p>
+        <p>Dr. Senthivel Murugan, Chief Educational Officer, Sivaganga, District Educational Officer, Devakottai, Rotarians of Rotary Club of Karaikudi and dignitaries were present on this occasion. </p>
+        <p>Our students got lots of appreciation from the judge and were congratulated by the dignitaries. </p>
+        
+        <span>YEAR OF SOIL CONSERVATION</span>
+        <p>Every year Muthiah Alagappa Matriculation Hr. Sec. School organizes an Inter School Competition choosing one of the topic. This year was <strong>“YEAR OF SOIL CONSERVATION”</strong>. 22 schools took part in this competition. Many competitions were organized viz., Exhibition relating to soil conservation, dance drama, quiz programme, Ad and Act, Vaarthai Villaiyatu, Drawing etc.. </p>
+        <p>Our Alagappa Matriculation Higher Secondary School was declared the overall champion this year also. This is the sixth consecutive victory in this inter school event. </p>
+        <table border="1" cellspacing="0" cellpadding="0" width="100%" class="full-table-view">
+          <tr>
+            <th>Sl.No</th>
+            <th>Name of the Event</th>
+            <th>Participant's Name</th>
+            <th>Standard</th>
+            <th>Prize</th>
+          </tr>
+          <tr>
+            <td rowspan="5">1</td>
+            <td rowspan="5">Exhibition</td>
+            <td>Vidhya     R</td>
+            <td>XII</td>
+            <td rowspan="5">FIRST PRIZE</td>
+          </tr>
+          <tr>
+            <td>Deepa     A</td>
+            <td>XII</td>
+          </tr>
+          <tr>
+            <td>Kaviya     T</td>
+            <td>XII</td>
+          </tr>
+          <tr>
+            <td>Vinitha     S</td>
+            <td>XI</td>
+          </tr>
+          <tr>
+            <td>Sheik Abdullah</td>
+            <td>XI</td>
+          </tr>
+          <tr>
+            <td rowspan="6">2</td>
+            <td rowspan="6">Quiz</td>
+            <td><strong>Level    – 1</strong></td>
+            <td>&nbsp;</td>
+            <td rowspan="6" >SECOND PRIZE</td>
+          </tr>
+          <tr>
+            <td>Uvaraj</td>
+            <td>VIII</td>
+          </tr>
+          <tr>
+            <td>Subhashri</td>
+            <td>VIII</td>
+          </tr>
+          <tr>
+            <td><strong>Level    – II</strong></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Ariharan     V</td>
+            <td>XII</td>
+          </tr>
+          <tr>
+            <td>Ponraj</td>
+            <td>IX</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Paper Presentation</td>
+            <td>Portia Darani P</td>
+            <td>XII</td>
+            <td>FIRST PRIZE</td>
+          </tr>
+          <tr>
+            <td rowspan="2">4</td>
+            <td rowspan="2">Vaarthai Vilayattu</td>
+            <td>Susila     R</td>
+            <td>XII</td>
+            <td rowspan="2" >FIRST PRIZE</td>
+          </tr>
+          <tr>
+            <td>Shirin Shifana</td>
+            <td>XII</td>
+          </tr>
+          <tr>
+            <td rowspan="4">5</td>
+            <td rowspan="4">Drawing</td>
+            <td ><strong>Level    I</strong></td>
+            <td>&nbsp;</td>
+            <td rowspan="4">FIRST PRIZE</td>
+          </tr>
+          <tr>
+            <td>Sabari     Palaniappan  V</td>
+            <td>VIII</td>
+          </tr>
+          <tr>
+            <td><strong>Level    II</strong></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Venisha     P</td>
+            <td>IX</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Best Mother and Child</td>
+            <td>Dhivya Dharshini  V</td>
+            <td>XII</td>
+            <td>FIRST PRIZE</td>
+          </tr>
+          <tr>
+            <td rowspan="8">7</td>
+            <td rowspan="8">Dance Drama</td>
+            <td>Alagu Raja  R</td>
+            <td>XII</td>
+            <td rowspan="8" >Participation    Certificate</td>
+          </tr>
+          <tr>
+            <td>Abul Hussain  B</td>
+            <td>XII</td>
+          </tr>
+          <tr>
+            <td>Lakshman     Raj  R</td>
+            <td>XII</td>
+          </tr>
+          <tr>
+            <td>Alan Ronaldo  T</td>
+            <td>XII</td>
+          </tr>
+          <tr>
+            <td>Aravindan     S</td>
+            <td>XII</td>
+          </tr>
+          <tr>
+            <td>Suradhan</td>
+            <td>XII</td>
+          </tr>
+          <tr>
+            <td>Pavithran</td>
+            <td>XII</td>
+          </tr>
+          <tr>
+            <td>Ajith</td>
+            <td>XII</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Poetry Writing</td>
+            <td>Keerthana</td>
+            <td>XII</td>
+            <td>Participation    Certificate</td>
+          </tr>
+          <tr>
+            <td rowspan="2">9</td>
+            <td rowspan="2">Paatukku Paatu</td>
+            <td>Thavamani     S</td>
+            <td>XI</td>
+            <td rowspan="2" >SECOND PRIZE</td>
+          </tr>
+          <tr>
+            <td>Meenakshi     M</td>
+            <td>XI</td>
+          </tr>
+          <tr>
+            <td rowspan="5">10</td>
+            <td rowspan="5">Ad Act</td>
+            <td>Alagu Raja  R</td>
+            <td>XII</td>
+            <td rowspan="5" > SECOND PRIZE</td>
+          </tr>
+          <tr>
+            <td>Abul Hussain  B</td>
+            <td>XII</td>
+          </tr>
+          <tr>
+            <td>Lakshman     Raj  R</td>
+            <td>XII</td>
+          </tr>
+          <tr>
+            <td>Alan Ronaldo  T</td>
+            <td>XII</td>
+          </tr>
+          <tr>
+            <td>Aravindan     S</td>
+            <td>XII</td>
+          </tr>
+        </table>
+        <span> Bharat scouts and guides Thrithya shoban award – 2014 </span>
+        <p>The following students of our school from Scouts and Guides have got Thrithya Shoban Award 2014.</p>
+        <table>
+          <tr>
+            <th> Sl.No </th>
+            <th> Name of the student </th>
+            <th> Standard </th>
+          </tr>
+          <tr>
+            <td> 1 </td>
+            <td> Ilaya Bharathi  N </td>
+            <td> VIII </td>
+          </tr>
+          <tr>
+            <td> 2 </td>
+            <td> Antonym Selvam  B </td>
+            <td> VIII </td>
+          </tr>
+          <tr>
+            <td> 3 </td>
+            <td> Antonym Selvam  B </td>
+            <td> VIII </td>
+          </tr>
+          <tr>
+            <td> 4 </td>
+            <td> Ajay Kumar  M </td>
+            <td> VIII </td>
+          </tr>
+          <tr>
+            <td> 5 </td>
+            <td> Vinoth Kumar  U </td>
+            <td> VIII </td>
+          </tr>
+          <tr>
+            <td> 6 </td>
+            <td> Anbanandhan N </td>
+            <td> VIII </td>
+          </tr>
+          <tr>
+            <td> 7 </td>
+            <td> Harishwan M </td>
+            <td> VIII </td>
+          </tr>
+          <tr>
+            <td> 8 </td>
+            <td> PUrushothama Sethupathy VP </td>
+            <td> VIII </td>
+          </tr>
+          <tr>
+            <td> 9 </td>
+            <td> Bala Subramani M </td>
+            <td> VIII </td>
+          </tr>
+          <tr>
+            <td> 10 </td>
+            <td> Pandimeenal A </td>
+            <td> VIII </td>
+          </tr>
+          <tr>
+            <td> 11 </td>
+            <td> Saji  M </td>
+            <td> VIII </td>
+          </tr>
+          <tr>
+            <td> 12 </td>
+            <td> Kaushik  M </td>
+            <td> IX </td>
+          </tr>
+        </table>
+        <span> Bharat scouts and guides Rajya purashkar award – 2014 </span>
+        <p> The following students of our school from Scouts and Guides have received Governor Award. </p>
+        <table>
+          <tr>
+            <th> Sl.No </th>
+            <th> Name of the Year </th>
+            <th> Standard </th>
+          </tr>
+          <tr>
+            <td> 1 </td>
+            <td> Ramya R </td>
+            <td> 2009 </td>
+          </tr>
+          <tr>
+            <td> 2 </td>
+            <td> Janani  U </td>
+            <td> 2009 </td>
+          </tr>
+          <tr>
+            <td> 3 </td>
+            <td> Muthukesavan  M </td>
+            <td> 2009 </td>
+          </tr>
+          <tr>
+            <td> 4 </td>
+            <td> Prithivi Rajan  M </td>
+            <td> 2009 </td>
+          </tr>
+          <tr>
+            <td> 5 </td>
+            <td> Vinoth Kumar  S </td>
+            <td> 2009 </td>
+          </tr>
+          <tr>
+            <td> 6 </td>
+            <td> Ram Kumar  S </td>
+            <td> 2010 </td>
+          </tr>
+          <tr>
+            <td> 7 </td>
+            <td> Rajesh Kannan P.L </td>
+            <td> 2010 </td>
+          </tr>
+          <tr>
+            <td> 8 </td>
+            <td> Alagu Sundaram M </td>
+            <td> 2010 </td>
+          </tr>
+          <tr>
+            <td> 9 </td>
+            <td> Raja Sekaran  S </td>
+            <td> 2010 </td>
+          </tr>
+          <tr>
+            <td> 10 </td>
+            <td> Veerappan S </td>
+            <td> 2010 </td>
+          </tr>
+          <tr>
+            <td> 11 </td>
+            <td> Mohammed Aesar Meera  S </td>
+            <td> 2010 </td>
+          </tr>
+          <tr>
+            <td> 12 </td>
+            <td> Gauathri B </td>
+            <td> 2009 </td>
+          </tr>
+          <tr>
+            <td> 13 </td>
+            <td> Sahana  G </td>
+            <td> 2008 </td>
+          </tr>
+          <tr>
+            <td> 14 </td>
+            <td> Achaya  Balan  P </td>
+            <td> 2009 </td>
+          </tr>
+          <tr>
+            <td> 15 </td>
+            <td> Mathanagopal  VK </td>
+            <td> 2010 </td>
+          </tr>
+          <tr>
+            <td> 16 </td>
+            <td> Karthikeyan  M </td>
+            <td> 2011 </td>
+          </tr>
+          <tr>
+            <td> 17 </td>
+            <td> Krishnakumar  S </td>
+            <td> 2012 </td>
+          </tr>
+          <tr>
+            <td> 18 </td>
+            <td> Raveendar  K </td>
+            <td> 2012 </td>
+          </tr>
+        </table>
+        <span>Pudukkottai Open District Teakwendo Championship - 2014 </span>
+        <p>The following students took part in the Karate Kumite competition and won medals. </p>
+        <table>
+          <tr>
+            <th> Sl.No </th>
+            <th> Name of the Student </th>
+            <th> Std </th>
+            <th> Place</th>
+            <th> Medal </th>
+          </tr>
+          <tr>
+            <td> 1 </td>
+            <td> Mohammed Ismail  K</td>
+            <td> VIII </td>
+            <td> I</td>
+            <td> Gold </td>
+          </tr>
+          <tr>
+            <td> 2 </td>
+            <td>Ravichandran S</td>
+            <td> VII </td>
+            <td> I</td>
+            <td> Gold </td>
+          </tr>
+          <tr>
+            <td> 3</td>
+            <td>Prem Kumar  P</td>
+            <td> VIII </td>
+            <td> III</td>
+            <td> Bronze </td>
+          </tr>
+          <tr>
+            <td>4 </td>
+            <td> Manoj  A</td>
+            <td> VII </td>
+            <td> II</td>
+            <td> Silver </td>
+          </tr>
+          <tr>
+            <td>5 </td>
+            <td> Thennappan  B</td>
+            <td> VIII </td>
+            <td> I</td>
+            <td> Gold </td>
+          </tr>
+          <tr>
+            <td> 6 </td>
+            <td> Ramannar  R</td>
+            <td> VIII </td>
+            <td> II</td>
+            <td> Silver</td>
+          </tr>
+          <tr>
+            <td> 7 </td>
+            <td> Amarnath  A</td>
+            <td> VIII </td>
+            <td> I</td>
+            <td> Gold </td>
+          </tr>
+          <tr>
+            <td> 8</td>
+            <td> Arjunar  M</td>
+            <td> VIII </td>
+            <td> I</td>
+            <td> Gold </td>
+          </tr>
+          <tr>
+            <td> 9 </td>
+            <td> Karuppiah  G</td>
+            <td> VIII </td>
+            <td> II</td>
+            <td> Silver </td>
+          </tr>
+          <tr>
+            <td> 10 </td>
+            <td> Mohammed Faud  M</td>
+            <td> VIII </td>
+            <td> I</td>
+            <td> Gold </td>
+          </tr>
+        </table>
+        <span>Sivagangai District Teakewendo Championship – 2014 </span>
+        <table>
+          <tr>
+            <th> Sl.No </th>
+            <th> Name of the Student </th>
+            <th> Std </th>
+            <th> Place</th>
+            <th> Medal </th>
+          </tr>
+          <tr>
+            <td> 1 </td>
+            <td> Muthukumar  M</td>
+            <td> XII </td>
+            <td> III</td>
+            <td> Bronze</td>
+          </tr>
+          <tr>
+            <td> 2 </td>
+            <td>Sasidharan  R</td>
+            <td> IX </td>
+            <td> III</td>
+            <td> Bronze </td>
+          </tr>
+        </table>
+        <span>Sivagangai District Zonal Meet – 2013 </span>
+        <table>
+          <tr>
+            <th> Sl.No </th>
+            <th> Name of the Student </th>
+            <th> Std </th>
+            <th> Event </th>
+            <th> Place</th>
+            <th> Medal </th>
+          </tr>
+          <tr>
+            <td> 1 </td>
+            <td>Ravi Chandran  S</td>
+            <td> VII </td>
+            <td> Kumite</td>
+            <td>I</td>
+            <td>Gold</td>
+          </tr>
+          <tr>
+            <td> 2 </td>
+            <td>Mohammed Ismail  K</td>
+            <td> VIII</td>
+            <td> Kumite</td>
+            <td>I</td>
+            <td>Gold</td>
+          </tr>
+          <tr>
+            <td> 3 </td>
+            <td>Prem Kumar  P</td>
+            <td> VIII</td>
+            <td> Kumite</td>
+            <td>I</td>
+            <td>Gold</td>
+          </tr>
+          <tr>
+            <td> 4 </td>
+            <td>Karuppiah  G</td>
+            <td> VIII</td>
+            <td> Kata</td>
+            <td>III</td>
+            <td>Bronze</td>
+          </tr>
+          <tr>
+            <td> 5 </td>
+            <td>Hariharan  U</td>
+            <td> VIII</td>
+            <td> Kata</td>
+            <td>III</td>
+            <td>Bronze</td>
+          </tr>
+          <tr>
+            <td> 6 </td>
+            <td>Sasidharan  R</td>
+            <td>IX</td>
+            <td> Kata</td>
+            <td>II</td>
+            <td>Silver</td>
+          </tr>
+          
+            <td> 7 </td>
+            <td>Logesh  R</td>
+            <td>VII</td>
+            <td> Kumite</td>
+            <td>II</td>
+            <td>Silver</td>
+          </tr>
+        </table>
+        <span>Aruppukottai Yoshukan Karate School Karate Tournament Championship – 2014 </span>
+        <p>The following students took part in various Karate tournament championship and won medals. </p>
+        <table>
+          <tr>
+            <th> Sl.No </th>
+            <th> Name of the Student </th>
+            <th> Std </th>
+            <th> Event </th>
+            <th> Place</th>
+            <th> Medal </th>
+          </tr>
+          <tr>
+            <td> 1 </td>
+            <td>Ravi Chandran  S</td>
+            <td> VII </td>
+            <td> Kata</td>
+            <td>I</td>
+            <td>Gold</td>
+          </tr>
+          <tr>
+            <td> 2 </td>
+            <td>Ravi Chandran  S</td>
+            <td> VII</td>
+            <td> Kumite</td>
+            <td>I</td>
+            <td>Gold</td>
+          </tr>
+          <tr>
+            <td> 3 </td>
+            <td>Karuppiah G</td>
+            <td> VIII</td>
+            <td> Kata</td>
+            <td>III</td>
+            <td>Silver</td>
+          </tr>
+          <tr>
+            <td> 4 </td>
+            <td>Karuppiah  G</td>
+            <td> VIII</td>
+            <td>Kumite</td>
+            <td>I</td>
+            <td>Gold</td>
+          </tr>
+          <tr>
+            <td> 5 </td>
+            <td>Manoj  A</td>
+            <td> VIII</td>
+            <td> Kata</td>
+            <td>III</td>
+            <td>Silver</td>
+          </tr>
+          <tr>
+            <td> 6 </td>
+            <td>Manoj  A</td>
+            <td> VIII</td>
+            <td> Kumite</td>
+            <td>I</td>
+            <td>Gold</td>
+          </tr>
+          <tr>
+            <td> 7 </td>
+            <td>Hariharan  U</td>
+            <td>VIII</td>
+            <td> Kata</td>
+            <td>II</td>
+            <td>Silver</td>
+          </tr>
+          <tr>
+            <td> 8 </td>
+            <td>Hariharan  U</td>
+            <td>VIII</td>
+            <td>Kumite</td>
+            <td>III</td>
+            <td>Bronze</td>
+          </tr>
+          <tr>
+            <td> 9 </td>
+            <td>Ramanan  R</td>
+            <td>VIII</td>
+            <td>Kata</td>
+            <td>I</td>
+            <td>Gold</td>
+          </tr>
+          <tr>
+            <td> 10 </td>
+            <td>Thenappan  B</td>
+            <td>VII</td>
+            <td>Kata</td>
+            <td>III</td>
+            <td>Bronze</td>
+          </tr>
+        </table>
+        <p> 134 children took part in Literary competition conducted by Manavar Mandram. Mathiyarasan of VII Standard got third prize in Essay Writing. </p>
+        <p>Selvi Saiyuja who is a great asset to this prestigious Institution received YUVASRI  KALA  BHARATHI Award Yuva Kala Bharathi Trust. </p>
+        <p>V. Kumaravel of XI A received third prize in elocution conducted by Aptech Computers.   
+          
+          28 Medals and 3 shields were received by our children on the occasion of Children's Day Celebration Literary Competition conducted by Viveka Educational Trust. </p>
+        <p>Sri Gayatri and Jaba dharsana received 1st prize in essay writing competition and turn coat competition conducted by Rotary Club of Karaikudi.</p>
+        <p>Children received many prizes from various competitions a beautiful shield was presented to our School by Alagappa University on the eve of Children's Day celebration for their best performance.</p>
+        <span>Scout Camp</span>
+        <p>We have a great Scout & Guides which was started in the year 2004  6 children attended the Governor's Award Camp conducted at Vidyagiri. 2 girls were selected for the same for the year 2013-2014   6 boys and 3 girls were selected for Governor's Award 2014-2015. Budding Scouts and Guides inauguration camp was held in our School campus for 2 days. This was conducted by the State Trainer Mr. Ebenezer. The Governor awards till 2012 were received by The Principal and Mr. Sukumar our School trainer in the Executive </p>
+        <span>Martial Arts</span>
+        <p>Special training is being imparted to our Children in Karate, Taken Do, Sillambam by Mr. Sukumar where the children demonstrated many art forms on the occasion of our sports day. Our children brought many laurels and accolades in this art forms. Maduvinodan and Muthukumar are the state awardees in Karate. We are proud to have AjithKumar who is going to attend the international level competition in Singapore. </p>
+        <span>Year of Chemistry and other Prizes</span>
+        <p>We won the overall championship and received a cash award of Rs 5000 this is a great achievement am proud to say that we have been winning this for the past 5 years .Our children secured commendable prizes for Skit, Antharakshari quiz, Paper Presentations Projects, Exhibition fun experiments Drawing. We received the 3rd prize for Science exhibition organized by the Rotary club. In co-curricular activities prizes were won by our children Turn coat 1st, Rangoli 2nd Pencil shading 3rd and Just a minute 1st.</p>
+        <p>Junior girl's beach volley ball won their games and qualified for the state level competitions.2 of our girls Praveena of 8th and R Salini of 10th qualified in Silambam State level competition.</p>
+        <p>We were the divisional runners in shuttle under 19.</p>
+      </div>
+    </div>
+    <div class="contentRight">
+      <div class="rightMenuOuter"    >
+        <div class="rightMenu  menu_list" id="firstpane">
+          <div class="rightMenuTitle">Beyond Curriculum</div>
+          <div id="firstpane" class="menu_list" >
+            <div class="menu_body" id="navigation7">
+              <ul>
+                <li  class="activebtn" id="2"><a>Clubs & Association</a></li>
+                <li id="3"><a>Sports</a></li>
+                <li id="4"><a>Painting</a></li>
+                <li id="5"><a>Achievements</a></li>
+                <li><a href="summer-camp.php">Summer Camp</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+     <?php include "latestnews.php" ?>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+ 
+
+<?php include "footer.php"; ?>

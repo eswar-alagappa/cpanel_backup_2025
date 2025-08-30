@@ -1,0 +1,331 @@
+<?php 
+session_start();
+if(isset($_SESSION['msg'])){
+      echo '<p class="success">'.$_SESSION['msg'].'</p>';
+  }
+  unset($_SESSION['msg']);
+  ?>
+<style>
+    .success {
+    background: #7ae07a;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 17px;
+}
+    </style>
+<?php include "header.php"; ?>
+<div class="indexBanner">
+      <div id="ftHolder">
+        <div style="width:846px;">
+          <div style="background-image:url(images/bg1.jpg); width:856px; z-index:-0.9; height:251px; position: relative; background-position: left top;" id="ft">
+			<img style="display: none;" src="images/bg1.jpg"/>
+			<img style="display: none;" src="images/banner/banner3.png"/>
+			<img style="display: none;" src="images/banner/banner2.png"/>
+			<img style="display: none;" src="images/founder.jpg" /> 
+			<img style="display: none;" src="images/sslc-topper.png" /> 
+			<img style="display: none;" src="images/bg1.png" /> 			
+			<img style="display: none;" src="images/banner4.jpg"/>
+<!--<img style="display: none;" src="images/banner5.jpg"/>
+<img style="display: none;" src="images/bigquiz.jpg"/>
+<img style="display: none;" src="images/school-tour.png"/>
+<img style="display: none;" src="images/bg7.jpg"/>-->
+</div>
+        </div>
+      </div>
+    </div>
+	
+  <!--<a href="support/register_form.pdf" target="_blank"><div class="important_note"><marquee>XI STANDARD REGISTRATION FORM download here</marquee></div></a>-->
+    <div class="indexContent">
+      <div class="indexContentLeft">
+        <div class="alagappa-chettiar"> <img class="chettiar-img" src="images/alagappa1.jpg" width="163" height="210"/>
+          <p class="quote">"My happiness is limitless because it does not consist naturally in my own happiness, but my happiness consists in the happiness of the thousands of students young and old, boy and girl that received education in our vast campus."<span>- Padmabhushan, Dr. RM. Alagappa Chettiar</span></p>
+        </div>
+		<p class="awesome"><a href="https://alagappa.org/online-registration" target="_blank"><span>ALUMNI REGISTRATION FORM</span></a></p>
+		<?php include "latestnews.php"; ?>
+		<div class="newsUpdate"> 
+          <!--<audio src="images/vallal_vazthu.mp3" controls> <embed src="images/vallal_vazthu.mp3" loop="false" autostart="true" /> </audio>-->
+          <div class="newsUpdateTitle1"> Listen Vallal Vazthu <a href="images/vallal_vazthu_new.mp3" target="_blank"> Play </a> </div>
+        </div>
+		 <div class="contactUs">
+          <div class="contactTitle">Contact</div>
+          <div class="contactContent"> <span>ALAGAPPA MATRIC <br />
+            HR. SEC. SCHOOL </span>
+            <p>Alagappapuram<br />
+              Karaikudi<br />
+              Ph: 04565 - 225352 / 04565-226532</p>
+            <p>Mail:<br />
+              <a href="mailto:highersecondary@alagappa.org" style="font-size:11px;">highersecondary@alagappa.org</a></p>
+          </div>
+        </div>
+         
+      </div>	  
+      <div class="indexContentRight">
+        <h2>Welcome to Our School</h2>
+        <p>Teaching is the noblest of all professions. Education is the most valuable ornament. The success and downfall of a society depends greatly on the extent of literacy in that society. Thus to put in a nutshell, the world would have been in a state of utter pandemonium if the proper cropping tool of education had not been there. One of the greatest souls in this very nation has helped millions of people to break away from the evil clutches of illiteracy and be a respectable and dignified citizen of our beloved nation. Because of this great man, today millions of homes are bright and happy. He was none other than Dr. Alagappa Chettiar, the greatest philanthropist of the contemporary history. Presently his daughter Dr. Mrs. Umayal Ramanathan, the Secretary of Dr. Alagappa Chettiar Educational Trust is carrying out the legacy left by him. </p>
+        <ul>
+          Today Alagappa Institutions include -
+          <li>Alagappa Montessori School</li>
+          <li>Alagappa Montessori School Hostel</li>
+          <li>Alagappa Primary School</li>
+          <li>Alagappa Preparatory Nursery and Primary School</li>
+          <li>Alagappa Matriculation Higher Secondary School</li>
+		  <li>Dr.Alagappa Academy (CBSE Program), Karaikudi</li>
+		  <li>Alagappa Girls Matriculation Higher secondary School, Karaikudi</li>
+          <li>Dr. UmayalRamanathan College for Women.</li>
+          <li>Alagappa Chettiar Polytechnic College</li>
+          <li>Dr. Alagappa Chettiar College of Engineering and Technology</li>
+          <li>Alagappa Arts College</li>
+          <li>Alagappa University.</li>
+        </ul>
+        <p><br />
+        </p>
+        <h2 class="spot_heading">In the SpotLight</h2>
+        <div class="block-section">	
+		
+		<div class="SplSection">
+            <div class="sectionImg"><img src="images/spotlight/sports_2018.png" width="195" height="169" /> </div>
+            <div class="sectionContent">
+              <h3>ALAGAPPA SPORTS OLYMPIAD</h3>
+              <p>Alagappa Sports Olympiad (Annual Sports Meet) of Alagappa Group of Educational Institutions, Karaikudi was held on <strong>5th and 6th January 2018.  </strong></p>
+              <a href="alagapp_sports_2018.php">Read More</a> </div>
+		</div>
+		
+		<div class="SplSection">
+            <div class="sectionImg"><img src="images/spotlight/kamaraj-quiz.png" width="195" height="169" /> </div>
+            <div class="sectionContent">
+              <h3>Written Quiz – KAMARAJAR’S BIRTHDAY</h3>
+              <p>Kamarajar Awareness Centre, Virudhunagar, conducted a State Level written examination on the topic <strong>KAMARAJAR.</strong></p>
+              <a href="written-quiz-kamarajar.php">Read More</a> </div>
+		</div>
+
+		<div class="SplSection">
+            <div class="sectionImg"><img src="images/spotlight/year-of.png" width="195" height="169" /> </div>
+            <div class="sectionContent">
+              <h3>Year of Tourism</h3>
+              <p>On 5th August, 2017, an Open School Competition on the topic <strong>“YEAR OF TOURISM”</strong> was conducted at Muthiah Alagappa Matriculation Higher Secondary School, Kottaiyur.</p>
+              <a href="year-of-tourism.php">Read More</a> </div>
+		</div>
+		<div class="SplSection">
+            <div class="sectionImg"><img src="images/spotlight/likita-spot.jpg" width="195" height="169" /> </div>
+            <div class="sectionContent">
+              <h3>GOVERNOR AWARD CAMP – RAJYA PURASKAR</h3>
+              <p>M.LIKITA of IX has been nominated for the  &lsquo;<strong>Governor Award Camp – Rajya Puraskar</strong>&rsquo; for Scouts and Guides.</p>
+              <a href="governor-award.php">Read More</a> </div>
+		</div>
+		
+		<div class="SplSection">
+            <div class="sectionImg"><img src="images/spotlight/bigquiz.jpg" width="195" height="169" /> </div>
+            <div class="sectionContent">
+              <h3>Big Quiz 2K17</h3>
+              <p>MOUNT ZION INTERNATIONAL SCHOOL - pudukkottai organized a big quiz 2k17. Our students S.MUTHUKUMAR and S.HARIRAMAKRISHNAN got SECOND place.</p>
+              <a href="bigquiz2k17.php">Read More</a> </div>
+		</div>
+		
+		<div class="SplSection">
+            <div class="sectionImg"><img src="images/spotlight/sports-zonal.jpg" width="195" height="169" /> </div>
+            <div class="sectionContent">
+              <h3>Karaikudi Zonal level Games</h3>
+              <p>Karaikudi Zonal level games Meet was held from 13-jul-2017 to 15-jul-2017. Our students performed extremely well and won many prizes. </p>
+              <a href="sports-zonal.php">Read More</a> </div>
+		</div>
+		
+		
+		<div class="SplSection">
+            <div class="sectionImg"><img src="images/spotlight/spottur.png" width="195" height="169" /> </div>
+            <div class="sectionContent">
+              <h3>Staff Tour </h3>
+              <p>Staff Tour was arranged for our School Staff Members went on a Tour to Kodaikanal for two days (26.4.2017 and 27.4.2017)</p>
+              <a href="staff-tour-2017.php">Read More</a> </div>
+		</div>	
+			<div class="SplSection">
+            <div class="sectionImg"><img src="images/gallery/pongal-2017/icon.png" width="195" height="169" /> </div>
+            <div class="sectionContent">
+              <h3>Pongal celebrations</h3>
+              <p>The Harvest Festival of Tamilnadu, Pongal Festival was celebrated in our school. On this occasion campus was decorated with rangoli and thoranams.</p>
+              <a href="pongal-2017.php">Read More</a> </div>
+          </div>
+		  
+		<div class="SplSection">            
+		<div class="sectionImg"><img src="images/spotlight/alumni.png" width="195" height="169" /> </div>          
+		<div class="sectionContent">            
+		<h3>VISIT OF ALUMNI</h3>             
+		<p>On Thursday, the 15th September, 2016, our alumni Mr. Palaniappan Vairavan and his friend visited our school.</p>            
+		<a href="alumni-2016.php">Read More</a> 
+		</div>        
+		</div>			
+		<div class="SplSection">            
+		<div class="sectionImg"><img src="images/spotlight/smile.jpg" width="195" height="169" /> </div>         
+		<div class="sectionContent">            
+		<h3>Smile Foundation</h3>           
+		<p>Smile Foundation is a national level development organization directly benefitting over 400,000 children and their families every year,</p>        
+		<a href="smile-foundation.php">Read More</a>
+		</div>          
+		</div>			
+		<div class="SplSection">          
+		<div class="sectionImg"><img src="images/spotlight/karate.jpg" width="195" height="169" /> </div>           
+		<div class="sectionContent">            
+		<h3>SOUTHERN REGIONAL KARATE CHAMPIONSHIP</h3>            
+		<p>Southern Regional Karate Championship was held at Aachi International School, Usilampatti.</p>          
+		<a href="karate-championship.php">Read More</a> 
+		</div>         
+		</div>			
+		<div class="SplSection">       
+		<div class="sectionImg"><img src="images/spotlight/independance.jpg" width="195" height="169" /> </div>          
+		<div class="sectionContent">      
+        <h3>70th INDEPENDENCE DAY CELERATIONS</h3>           
+		<p>70th Independence Day Celebrations were held at our school campus on 15th August, 2016. </p>          
+		<a href="independence.php">Read More</a> 
+		</div>         
+		</div>		
+		<div class="SplSection">   
+		<div class="sectionImg"><img src="images/spotlight/sports.jpg" width="195" height="169" /> </div>           
+		<div class="sectionContent">  
+		<h3>YEAR OF SPORTS</h3>          
+		<p>&ldquo;Year of Sports&rdquo; Inter School Sivagangai District Level competition was held at Muthaiah Alagappa Matriculation Higher Secondary School.</p>       
+		<a href="sports.php">Read More</a> 
+		</div>         
+		</div>		
+        <div class="SplSection">
+            <div class="sectionImg"><img src="images/spotlight/annadhanam-medicalcamb.jpg" width="195" height="169" /> </div>
+            <div class="sectionContent">
+              <h3>Annadhanam and Medical Camp</h3>
+              <p>Interact Club is the students wing of Rotary Club. Our school also has Interact Club which extends its services to the needy people in and around Karaikudi.</p>
+              <a href="annadhanam-and-medical-camp.php">Read More</a> </div>
+          </div>
+         <div class="SplSection">
+            <div class="sectionImg"><img src="images/spotlight/student.jpg" width="195" height="169" /> </div>
+            <div class="sectionContent">
+              <h3>District Rank Award</h3>
+              <p>Our student M.Muthupriyadharshini receiving award from Sivagangai Dist. Collector Ms.S.Malarvizhi for getting district rank in 2 Public Exam.</p>
+              <a href="NSS-camb-mathur.php">Read More</a> </div>
+          </div>
+         <div class="SplSection">
+            <div class="sectionImg"><img src="images/spotlight/student-achi.jpg" width="195" height="169" /> </div>
+            <div class="sectionContent">
+              <h3>District Topper</h3>
+              <p>Our student R.Srinidhi the District Topper with our beloved Secretary, Chairman and the Principal</p>
+              <a href="all-faith-prayer-2016.php">Read More</a> </div>
+          </div>          
+          <div class="view_all_link"><a href="academics-details.php?5" >View All</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<?php 
+   function test($num) {
+     
+       return $num;
+   }
+   function addOrdinalNumberSuffix($num) {
+    if (!in_array(($num % 100),array(11,12,13))){
+      switch ($num % 10) {
+        // Handle 1st, 2nd, 3rd
+        case 1:  return $num.'st';
+        case 2:  return $num.'nd';
+        case 3:  return $num.'rd';
+      }
+    }
+    return $num.'th';
+  }
+
+
+?>
+ <link rel="stylesheet" href="css/side_bar.css">    
+       
+           <div id="contactform">
+  <div id="contact-button">   
+    <div class="rotated-text">Apply Now</div>
+  </div>
+               <form method="POST" action="action.php">
+      <h2>admission form</h2>
+      <input required="" type="text" name="name" placeholder="Enter your name"/>
+      <input required="" type="text" name="parent_name" placeholder="Enter Parent/Guardian Name"/>
+      <input required="" type="text" name="email" placeholder="Enter your Email-id"/>
+      <input required="" type="text" maxlength="10" id="mobile_sign" pattern="[0-9]{10}" name="mobile_no" placeholder="Enter your Mobile no"/>
+      <p class="error_msg_sign" style="display: none;color:red;">Mobile number should start with 6,7,8,9 and contain atleast 10 digit number</p>
+     
+      <input  type="text" id="datepicker" name="dob" placeholder="Enter your DOB"/>
+      <?php 
+ 
+      
+    
+              ?>
+      <select name="class" required="" > 
+          <option value="">Select your class</option>
+          <?php for($i=1;$i<=12;$i++){ ?>
+           <option value="<?= addOrdinalNumberSuffix($i).' STD' ?>"><?= addOrdinalNumberSuffix($i).' STD' ?></option>     
+        <?php  } ?>
+        
+      </select>
+     
+      <textarea name="address" required="" row="6" col="5" placeholder="Enter your address"></textarea> 
+         <div class="radio">
+          <lable>Hostel Facilities</lable>
+          <div class="form_part">
+              <lable>Yes</lable>
+          <input required="" type="radio" name="hostel" value="Yes" />
+          <lable>No</lable>
+          <input required="" type="radio" name="hostel" value="No" checked/>
+       </div>
+       </div>
+      <div class="radio">
+          <lable >Transportation Services</lable>
+          <div class="form_part">
+          <lable for="yes">Yes</lable>
+          <input required="" id="yes" type="radio" name="trans" value="Yes" />
+          <lable for="no">No</lable>
+          <input required="" id="no" type="radio" name="trans" value="No" checked/>
+       </div>
+       </div>
+    <input class="submit_btn" id="submit_sign" type="submit" value="SUBMIT" >
+  </form> 
+</div> 
+   
+
+            <script>
+    
+             $(document).ready(function(){
+//                 alert('test');
+             
+                  $('.error_msg_sign').hide();
+       $('#submit_sign').click(function(){
+        
+  var $regexname='^([0|\+[0-9]{1,5})?([6-9][0-9]{9})$';
+//  var $regexname='/^[0]?[6789]\d{9}$/';
+  if ($('#mobile_sign').val().match($regexname)) {
+      
+      $('.error_msg_sign').hide();
+      $('#mobile_sign').css('border','1px solid green');
+     return true;
+  }else{
+       $('.error_msg_sign').show();
+        $('#mobile_sign').css('border','1px solid red');
+      $('#mobile_sign').focus();
+     return false;
+     
+        }
+ 
+  
+       });  
+           });
+               </script> 
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+        <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script  src="script/index.js"></script>  
+         <script>
+    $.noConflict();
+             jQuery(document).ready(function(){
+//                 alert('test');
+              jQuery("#datepicker").datepicker();
+           });
+           
+           </script>   
+<?php include "footer.php"; ?>
+  

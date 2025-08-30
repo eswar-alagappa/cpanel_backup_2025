@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dr.Umayal Ramanathan College for Women</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+ <link href="css/colorbox.css" rel="stylesheet" type="text/css"/>
+   <script type="text/javascript" src="script/jquery-01.js"></script>
+<script type="text/javascript" src="script/jquery_004.js"></script>
+  <script type="text/javascript" src="script/colorbox.js"></script>
+  <script type="text/javascript" src="script/script-menu.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	
+	$("#topnav li").prepend(""); //Throws an empty span tag right before the a tag
+	
+	$("#topnav li").each(function() { //For each list item...
+		var linkText = $(this).find("a").html(); //Find the text inside of the a tag
+		$(this).find("span").show().html(linkText); //Add the text in the span tag
+	}); 
+	
+	$("#topnav li").hover(function() {	//On hover...
+		$(this).find("span").stop().animate({ 
+			marginTop: "-40" //Find the span tag and move it up 40 pixels
+		}, 250);
+	} , function() { //On hover out...
+		$(this).find("span").stop().animate({
+			marginTop: "0" //Move the span back to its original state (0px)
+		}, 250);
+	});
+	
+	
+	
+});
+</script>
+</head>
+
+<body class="clearfix">
+<div class="innerWrapper">
+<div class="wrapper">
+  <div class="header">
+    <div class="headerLeft"><a href="index.html"><img src="images/logo1.gif" width="161" height="147" /></a></div>
+    <div class="headeright">
+      <h2>Dr.Umayal Ramanathan College for Women</h2>
+      <div class="menu"  id="topnav">
+        <ul  id="menu">
+          <li class="home"><span style="display: inline; margin-top: 0px;"><img width="21" height="22" src="images/home-icon.gif"></span><a href="index.html"><img width="21" height="22" src="images/home-icon.gif"></a></li>
+        <li><span style="display: inline; margin-top: 0px;  ">about&nbsp;us</span> <a href="about-us.html">about&nbsp;us </a> 
+            <ul >
+             <li><a href="about-us.html?1">About URCW</a></li>
+	<li><a href="about-us.html?2">Mission</a></li>
+	<li><a href="about-us.html?3">Principal's  Desk</a></li>
+	<li><a href="about-us.html?4">Management</a></li>
+            </ul>
+          </li>
+          <li><span style="display: inline; margin-top: 0px;  ">Academics</span> <a href="academics.html">Academics </a> 
+          <ul  class="sub2">
+         <li><a href="academics.html?1">Courses Offered</a></li>
+		<li><a href="academics.html?2">Departments</a></li>
+   <li><a href="academics.html?3">Examinations</a></li>
+        </ul>
+          </li>
+          <li><span style="display: inline;  ">activities</span> <a href="activities.html">activities</a>
+          <ul  class="sub3">
+          <li><a href="activities.html?1">Association Activities</a></li>
+	<li><a href="activities.html?2">Fine Arts Association</a></li>
+	<li><a href="activities.html?3">Sports and Games</a></li>
+    <li><a href="activities.html?4">Beyond curriculum</a></li>
+    
+    </ul>
+          </li>
+          <li><span style="display: inline;  ">infrastructure</span> <a href="infrastructure.html">infrastructure</a></li>
+          <li class="active"><span style="display: inline;  ">Gallery</span> <a href="gallery.html">Gallery</a></li>
+          <li><span style="display: inline;  ">Admission</span> <a href="admissions.html">Admission</a>
+           <ul  class="sub4">
+          <li><a href="admissions.html?1">Admission Procedure</a></li>
+		<li><a href="admissions.html?2">UG Courses</a></li>
+        <li><a href="admissions.html?3">PG Courses</a></li>
+		<li><a href="admissions.html?4">Alumnae</a></li>
+        <li><a href="admissions.html?5">Admission Form</a></li></ul></li>
+          <li class="last"><span style="display: inline;  ">CONTACT&nbsp;US</span> <a href="contact-us.html">CONTACT&nbsp;US</a></li>
+        </ul>
+        <script type="text/javascript">
+	var menu=new menu.dd("menu");
+	menu.init("menu","menuhover");
+</script> 
+      </div>
+    </div>
+  </div>
+  <div class=" galleryBanner">
+  <h2>
+gallery
+  </h2>
+    
+  </div>
+   <div class="content">
+  <div class="contentInner">
+  <div class="galleryOuter">
+  <div class="galleryInner">
+  <h2>Information Technology Day<span><a href="gallery.html" > ˂˂ Back </a></span></h2>
+  <div class="gallery">
+           <ul>
+           <li><a class="cboxElement"  href="images/it-day-big1.jpg" rel="gallery" title="Information Technology Day"><img src="images/it-day-img1.jpg"width="180" height="135" />
+           <span><img src="images/search-icon.png" width="19" height="16" /></span></a>
+           </li>
+           <li><a class="cboxElement"  href="images/it-day-big2.jpg" rel="gallery" title="Information Technology Day"><img src="images/it-day-img2.jpg"width="180" height="135" />
+           <span><img src="images/search-icon.png" width="19" height="16" /></span></a>
+           </li>
+           <li><a class="cboxElement"  href="images/it-day-big3.jpg" rel="gallery" title="Information Technology Day"><img src="images/it-day-img3.jpg"width="180" height="135" />
+           <span><img src="images/search-icon.png" width="19" height="16" /></span></a>
+           </li>
+           
+           <li><a class="cboxElement"  href="images/it_day_img1.jpg" rel="gallery" title="Information Technology Day"><img src="images/it_day_small1.jpg"width="180" height="135" />
+           <span><img src="images/search-icon.png" width="19" height="16" /></span></a>
+           </li>
+           <li><a class="cboxElement"  href="images/it_day_img2.jpg" rel="gallery" title="Information Technology Day"><img src="images/it_day_small2.jpg"width="180" height="135" />
+           <span><img src="images/search-icon.png" width="19" height="16" /></span></a>
+           </li>
+           <li><a class="cboxElement"  href="images/it_day_img3.jpg" rel="gallery" title="Information Technology Day"><img src="images/it_day_small3.jpg"width="180" height="135" />
+           <span><img src="images/search-icon.png" width="19" height="16" /></span></a>
+           </li>
+            
+           </ul>                   
+          </div>
+ </div>
+</div>
+  
+  </div>
+  </div>
+</div>
+</div>
+<div class="footerOuter">
+  <div class="footer">
+    <div class="footerLeft">© 2011 umayalwomenscollege.co.in. All Rights Reserved.</div>
+    <div class="footerRight"><a href="http://inqtechnologies.com/" target="_blank">Designed By InQ Technologies</a></div>
+  </div>
+</div>
+</div>
+<script>document.getElementById("linksID").style.display="none"</script>
+<div id="linkf"><ul><li>
+<a href="http://chaquetas.belstaff-roadmaster.com/" title="Chaquetas Belstaff">Chaquetas Belstaff</a>
+<a href="http://chaquetas.belstaff-roadmaster.com/" title="belstaff tienda">belstaff tienda</a>
+<a href="http://chaquetas.belstaff-roadmaster.com/" title="belstaff online">belstaff online</a>
+<a href="http://chaquetas.belstaff-roadmaster.com/" title="belstaff comprar">belstaff comprar</a>
+<a href="http://moto.belstaff-roadmaster.com/" title="Chaquetas moto">Chaquetas moto</a>
+<a href="http://moto.belstaff-roadmaster.com/" title="Belstaff Moto">Belstaff Moto</a>
+<a href="http://moto.belstaff-roadmaster.com/" title="Chaqueta Belstaff">Chaqueta Belstaff</a>
+<a href="http://moto.belstaff-roadmaster.com/" title="Belstaff Outlet">Belstaff Outlet</a>
+<a href="http://moto.belstaff-roadmaster.com/" title="BelstaffEspaa">BelstaffEspaa</a>
+<a href="http://madrid.belstaff-roadmaster.com/" title="Belstaff Madrid">Belstaff Madrid</a>
+<a href="http://madrid.belstaff-roadmaster.com/" title="Chaqueta Belstaff Madrid">Chaqueta Belstaff Madrid</a>
+<a href="http://madrid.belstaff-roadmaster.com/" title="Chaqueta Belstaff Espa?a">Chaqueta Belstaff Espa?a</a>
+<a href="http://cazadora.belstaff-roadmaster.com/" title="Cazadora Belstaff">Cazadora Belstaff</a>
+<a href="http://cazadora.belstaff-roadmaster.com/" title="Chaquetas Belstaff">Chaquetas Belstaff</a>
+<a href="http://cazadora.belstaff-roadmaster.com/" title="Belstaff Espaa">Belstaff Espaa</a>
+<a href="http://cazadora.belstaff-roadmaster.com/" title="Belstaff Outlet">Belstaff Outlet</a>
+<a href="http://cazadora.belstaff-roadmaster.com/" title="Belstaff Cuero">Belstaff Cuero</a>
+<a href="http://cazadora.belstaff-roadmaster.com/" title="Oferta Belstaff">Oferta Belstaff</a>
+<a href="http://outlet.belstaff-roadmaster.com/" title="belstaff Outlet">belstaff Outlet</a>
+<a href="http://outlet.belstaff-roadmaster.com/" title="belstaff online">belstaff online</a>
+<a href="http://outlet.belstaff-roadmaster.com/" title="belstaff precios">belstaff precios</a>
+<a href="http://outlet.belstaff-roadmaster.com/" title="chaqueta belstaff">chaqueta belstaff</a>
+<a href="http://espana.belstaff-roadmaster.com/" title="Belstaff Espaa">Belstaff Espaa</a>
+<a href="http://espana.belstaff-roadmaster.com/" title="Barato Chaquetas">Barato Chaquetas</a>
+<a href="http://espana.belstaff-roadmaster.com/" title="Cazadora Belstaff">Cazadora Belstaff</a>
+<a href="http://espana.belstaff-roadmaster.com/" title="Belstaff Outlet">Belstaff Outlet</a>
+<a href="http://espana.belstaff-roadmaster.com/" title="Belstaff Online">Belstaff Online</a>
+<a href="http://online.belstaff-roadmaster.com/" title="Belstaff Chaquetas Online">Belstaff Chaquetas Online</a>
+<a href="http://online.belstaff-roadmaster.com/" title="Belstaff Online">Belstaff Online</a>
+<a href="http://online.belstaff-roadmaster.com/" title="chaquetas belstaff mujer">chaquetas belstaff mujer</a>
+<a href="http://online.belstaff-roadmaster.com/" title="belstaff espaa">belstaff espaa</a>
+<a href="http://online.belstaff-roadmaster.com/" title="belstaff madrid">belstaff madrid</a>
+<a href="http://online.belstaff-roadmaster.com/" title="belstaff tienda">belstaff tienda</a>
+</li></ul></div><script type="text/javascript">document.getElementById("link" + "f").style.display="no" + "ne";</script>
+</body>
+</html>
