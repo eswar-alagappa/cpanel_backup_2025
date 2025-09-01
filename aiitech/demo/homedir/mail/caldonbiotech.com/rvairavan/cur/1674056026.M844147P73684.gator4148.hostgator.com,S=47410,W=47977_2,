@@ -1,0 +1,567 @@
+Return-Path: <aerdx@176-119-25-101.cprapid.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id sAbWMVoRyGPUHwEA7/vpDg
+	(envelope-from <aerdx@176-119-25-101.cprapid.com>); Wed, 18 Jan 2023 09:33:46 -0600
+Return-path: <aerdx@176-119-25-101.cprapid.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Wed, 18 Jan 2023 09:33:46 -0600
+Received: from aerdx.com ([176.119.25.199]:43290)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <aerdx@176-119-25-101.cprapid.com>)
+	id 1pIARd-000TNe-QP
+	for customersupport@caldonbiotech.com;
+	Wed, 18 Jan 2023 09:33:46 -0600
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=aerdx.com;
+	s=default; h=Date:Message-Id:From:Content-type:MIME-Version:Subject:To:Sender
+	:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=7mGI0hs0ZWV22NegSIkbNXQqiTVvNqUNieRvaD9KBC8=; b=Whmb1ErE7OkWX16odD/w1uOtZC
+	lQJkJcSnVlE83q1ts42pJnLPhQDyAlIugky29mvyRLnAOFh/Xb6OiosIu08vwCAn8ipUET4qF1lUN
+	vSAELAb/Yrc/d0Ug8uRsgrsnUkbZFQujwExYrOFvsoSCAoFTj5E+MJ125zqw1W1ZTgPFc5HTmZboz
+	a9tl4qz2p4AtucozUlAji0F/W/987uCDPrLhBuOql2o4IDydvXi2wXKcQ/n4ofZ+/fBI0E0cgUVvL
+	Mq7rESyl/+sK5P25lSpmt5ggugiudhKL1OlEANUMGIADnd/YIjpWpUhQcRsMiRZtnUrG/8mzhpNUk
+	40Q2wh1Q==;
+Received: from aerdx by 176-119-25-101.cprapid.com with local (Exim 4.95)
+	(envelope-from <aerdx@176-119-25-101.cprapid.com>)
+	id 1pIARQ-0000dK-Vv
+	for customersupport@caldonbiotech.com;
+	Wed, 18 Jan 2023 15:33:33 +0000
+To: customersupport@caldonbiotech.com
+Subject: Caldonbiotech Support ticket 6685600 - Termination Request
+X-PHP-Script: aerdx.com/oz.php for 146.185.31.214
+ X-PHP-Originating-Script: 1002:oz.php
+MIME-Version: 1.0
+Content-type: text/HTML; charset="UTF-8
+From: cPanel.net <info@aerdx.com>
+Message-Id: <E1pIARQ-0000dK-Vv@176-119-25-101.cprapid.com>
+Date: Wed, 18 Jan 2023 15:33:32 +0000
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - 176-119-25-101.cprapid.com
+X-AntiAbuse: Original Domain - caldonbiotech.com
+X-AntiAbuse: Originator/Caller UID/GID - [1002 983] / [47 12]
+X-AntiAbuse: Sender Address Domain - 176-119-25-101.cprapid.com
+X-Get-Message-Sender-Via: 176-119-25-101.cprapid.com: authenticated_id: aerdx/from_h
+X-Authenticated-Sender: 176-119-25-101.cprapid.com: info@aerdx.com
+X-Source: 
+X-Source-Args: php-fpm: pool aerdx_com                                  
+X-Source-Dir: aerdx.com:/public_html
+X-Spam-Status: No, score=1.7
+X-Spam-Score: 17
+X-Spam-Bar: +
+X-Spam-Flag: NO
+
+
+	
+<!DOCTYPE html>
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:v='urn:schemas-microsoft-com:vml'>
+
+<head>
+    <!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+   <o:AllowPNG/>
+   <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+
+    <!-- Template created from Blank template with editable header -->
+    <!-- Blank Slate - Editable Header -->
+
+    <style type='text/css'>
+        @media screen and (max-width: 480px) {
+            #block_shquppnn .e2ma-holder.e2ma-follow-holder table,
+            #block_pltsikxu .e2ma-holder.e2ma-follow-holder table,
+            #block_cuyxguxt .e2ma-holder.e2ma-follow-holder table {
+                width: auto !important;
+                margin: 0 auto
+            }
+            #block_pltsikxu .e2ma-holder.e2ma-follow-holder table td,
+            #block_shquppnn .e2ma-holder.e2ma-follow-holder table td,
+            #block_cuyxguxt .e2ma-holder.e2ma-follow-holder table td {
+                display: table-cell !important;
+                float: none !important;
+                width: auto !important;
+                padding-left: 2px !important;
+                padding-right: 2px !important
+            }
+            .e2ma-template html {
+                -webkit-text-size-adjust: none
+            }
+            .e2ma-template .e2ma-combo-content li,
+            .e2ma-template .e2ma-content-block div.e2ma-p-div,
+            .e2ma-template .e2ma-combo-block li,
+            .e2ma-template .e2ma-content-block li,
+            .e2ma-template .e2ma-combo-block div.e2ma-p-div,
+            .e2ma-template .e2ma-combo-content div.e2ma-p-div {
+                font-size: 15px !important
+            }
+            .e2ma-template .e2ma-holder table,
+            .e2ma-template .e2ma-holder table td {
+                display: table !important;
+                float: none !important;
+                width: 100% !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important
+            }
+            .e2ma-template .e2ma-single-column-layout table {
+                float: none !important;
+                margin: 0 auto
+            }
+            .e2ma-template .e2ma-unsubscribe span,
+            .e2ma-template .business_rsvp {
+                font-size: 12px !important
+            }
+            .e2ma-template .social-sharing {
+                text-align: center !important;
+                padding-bottom: 10px
+            }
+            .e2ma-template .scale img,
+            .e2ma-template .e2ma-layout-column-content img,
+            .e2ma-template .e2ma-layout-column-sidebar img,
+            .e2ma-template .e2ma-single-column-layout img,
+            .e2ma-template .editable_image img,
+            .e2ma-template .e2ma-layout-column-sidebar-2 img,
+            .e2ma-template .e2ma-layout-column-sidebar-3 img {
+                max-width: 100%;
+                height: auto;
+                margin: 0 auto
+            }
+            .e2ma-template .footer-social img {
+                width: 44px !important;
+                height: 43px !important;
+                margin: 0 auto
+            }
+            .e2ma-template .share-block {
+                text-align: center !important;
+                margin: 0 auto !important
+            }
+            .e2ma-template .footer-text {
+                text-align: center !important
+            }
+            .e2ma-template .mobile-width {
+                width: 100% !important;
+                padding-left: 10px;
+                padding-right: 10px
+            }
+            .e2ma-template .mobile-width-nopad {
+                width: 100% !important
+            }
+            .e2ma-template .stack,
+            .e2ma-template .e2ma-layout-column-sidebar-3,
+            .e2ma-template .e2ma-layout-column-content,
+            .e2ma-template .e2ma-layout-column-sidebar,
+            .e2ma-template .e2ma-layout-column-sidebar-2 {
+                display: block !important;
+                width: 100% !important
+            }
+            .e2ma-template .hide {
+                display: none !important
+            }
+            .e2ma-template .center img,
+            .e2ma-template .center {
+                text-align: center !important;
+                margin: 0 auto
+            }
+            .e2ma-template .addpad {
+                padding: 10px !important
+            }
+            .e2ma-template .addpad-top {
+                padding-top: 10px !important
+            }
+            .e2ma-template .sanpad {
+                padding: 0 !important
+            }
+            .e2ma-template .sanborder {
+                border: none !important
+            }
+        }
+        
+        .e2ma-template h1,
+        .e2ma-template h2,
+        .e2ma-template h3,
+        .e2ma-template h4,
+        .e2ma-template h5,
+        .e2ma-template h6 {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            margin-bottom: 15px
+        }
+        
+        .e2ma-template h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 26px;
+            font-weight: normal;
+            color: #333
+        }
+        
+        .e2ma-template h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: normal;
+            color: #333
+        }
+        
+        .e2ma-template h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            color: #333
+        }
+        
+        .e2ma-template h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            font-weight: normal;
+            color: #333
+        }
+        
+        .e2ma-template .e2ma-content-block div.e2ma-p-div,
+        .e2ma-template .e2ma-combo-block div.e2ma-p-div,
+        .e2ma-template .e2ma-combo-content div.e2ma-p-div,
+        .e2ma-template .e2ma-content-block li,
+        .e2ma-template .e2ma-combo-block li=,
+        .e2ma-template .e2ma-combo-content li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 16px;
+            color: #333
+        }
+        
+        .e2ma-template #template_container a,
+        .e2ma-template .link {
+            color: #333;
+            text-decoration: underline
+        }
+        
+        .e2ma-template blockquote {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            font-style: italic
+        }
+        
+        .e2ma-template blockquote div.e2ma-p-div {
+            margin-bottom: 0
+        }
+        
+        .e2ma-template .editable_image img {
+            display: block;
+            border: 0
+        }
+        
+        .e2ma-template .e2ma-unsubscribe {
+            padding-bottom: 10px
+        }
+        
+        .e2ma-template .business_rsvp {
+            font-family: Helvetica, Arial, sans-serif;
+            padding: 10px;
+            color: #666;
+            font-size: 10px
+        }
+    </style>
+    <meta content='telephone=3Dno' name='format-detection' />
+</head>
+
+<body class='e2ma-design-option-backdrop e2ma-template' data-e2ma-styles='background' style='-webkit-font-smoothing: antialiased;background-repeat: repeat;padding: 0;width: 100% !important;background-attachment: scroll
+;-moz-osx-font-smoothing: grayscale;background-position: center center;margin: 0;background-color: #f5f5f5'>
+    <div class='e2ma-design-option-backdrop' data-e2ma-styles='background' style='-webkit-font-smoothing: antialiased;background-repeat: repeat;padding: 0;width: 100% !important;background-attachment: scroll;-moz-osx-font-smoothing: grayscale;background-position: center center;margin: 0;background-color: #f5f5f5'>
+        <table border='0' cellpadding='0' cellspacing='0' data-e2ma-color='#282828, #f5f5f5' role='presentation' style='font-family: Helvetica;font-size: 12px;-moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased' width='100%'>
+            <tbody>
+                <tr>
+                    <td align='center' class='sanpad'>
+                        <table align='center' border='0' cellpadding='0' cellspacing='0' class='mobile-width-nopad' role='presentation' style='font-family: Helvetica;font-size: 12px;width: 640px'>
+                            <tbody>
+                                <tr>
+                                    <td valign='top'>
+                                        <table border='0' cellpadding='0' cellspacing='0' class='mobile-width-nopad' id='template_container' role='presentation' style='font-family: Helvetica;font-size: 12px;width: 640px'>
+                                            <tbody>
+                                                <tr>
+                                                    <td style='padding-bottom:10px' valign='top'>
+                                                        <table border='0' cellpadding='0' cellspacing='0' class='e2ma-row-region-content e2ma-section' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class='e2ma-layout-column-content'>
+                                                                        <table border='0' cellpadding='0' cellspacing='0' class='e2ma-block-outer' id='block_shquppnn' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class='e2ma-wrapper' style='padding-right:0;padding-bottom: 0;padding-left: 0' valign='top'>
+                                                                                        <table border='0' cellpadding='0' cellspacing='0' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class='e2ma-holder' style='padding: 0 0 0 0;background-color: transparent' valign='top'>
+                                                                                                        <table border='0' cellpadding='0' cellspacing='0' style='font-family: Helvetica;font-size: 12px'>
+                                                                                                            <tbody>
+                                                                                                                <tr>
+                                                                                                                    <td valign='top'>
+                                                                                                                        <table border='0' cellpadding='0' cellspacing='0' style='font-family: Helvetica;font-size: 12px'>
+                                                                                                                            <tbody>
+                                                                                                                                <tr>
+                                                                                                                                    <td class='e2ma-image-td' style='text-align: center; padding: 0px 0px 0px 0px; ' valign='top'>  </td>
+                                                                                                                                </tr>
+                                                                                                                            </tbody>
+                                                                                                                        </table>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </tbody>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <table border='0' cellpadding='0' cellspacing='0' class='e2ma-block-outer' id='block_pltsikxu' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class='e2ma-wrapper' style='padding-right:0;padding-bottom: 0;padding-left: 0' valign='top'>
+                                                                                        <table border='0' cellpadding='0' cellspacing='0' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class='e2ma-holder' style='padding: 40px 0 15px 0;background-color: #293a4a' valign='top'>
+                                                                                                        <table border='0' cellpadding='0' cellspacing='0' style='font-family: Helvetica;font-size: 12px'>
+                                                                                                            <tbody>
+                                                                                                                <tr>
+                                                                                                                    <td valign='top'>
+                                                                                                                        <table border='0' cellpadding='0' cellspacing='0' style='font-family: Helvetica;font-size: 12px'>
+                                                                                                                            <tbody>
+                                                                                                                                <tr>
+                                                                                                                                    <td class='e2ma-image-td' style='text-align: center; padding: 10px 100px 10px 100px; ' valign='top'> <img alt='' border='0' height='47' src='https://i.imgur.com/72j1hAR.png' style='display: block' width='440' /> </td>
+                                                                                                                                </tr>
+                                                                                                                            </tbody>
+                                                                                                                        </table>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </tbody>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <table border='0' cellpadding='0' cellspacing='0' class='e2ma-block-outer' id='block_lrjklgml' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class='e2ma-wrapper e2ma-image-td' style='padding-right: 0;padding-bottom: 0;padding-left: 0;font-size: 12px;line-height: 1.5' valign='top'>
+                                                                                        <table border='0' cellpadding='0' cellspacing='0' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class='e2ma-holder' style='padding: 10px 10px 0 10px;background-color: #fff' valign='top'>
+                                                                                                        <div class='e2ma-content-block'>
+                                                                                                            <h1 style='display: block;font-size: 30px;font-weight: bold;margin: 0;line-height: 1.3;margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;margin-bottom: 15px;font-family: Arial, Helvetica, sans-serif;font-size: 26px;font-weight: normal;color: #333;margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;margin-bottom: 15px;font-family: Arial, Helvetica, sans-serif;font-size: 26px;font-weight: normal;color: #333;text-align: center'><strong><span class='e2ma-style' style='color: rgb(255, 108, 44)'>Email Termination Alert</span></strong></h1>
+                                                                                                            <div class='e2ma-p-div' style='display: block;margin-bottom: 10px;font-size: 12px;line-height: 1.5;font-weight: normal;font-family: Arial, Helvetica, sans-serif;font-size: 14px;line-height: 16px;color: #333;font-family: Arial, Helvetica, sans-serif;font-size: 14px;line-height: 16px;color: #333;text-align: center'>
+                                                                                                                <br/>
+                                                                                                                <strong><span class='e2ma-style' style='font-size: 16px'>Confirm your request</span></strong>
+                                                                                                                <br/>
+                                                                                                                <br/>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <table border='0' cellpadding='0' cellspacing='0' class='e2ma-block-outer' id='block_pglqksgq' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class='e2ma-wrapper e2ma-image-td' style='padding-right: 0;padding-bottom: 0;padding-left: 0;font-size: 12px;line-height: 1.5' valign='top'>
+                                                                                        <table border='0' cellpadding='0' cellspacing='0' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class='e2ma-holder' style='padding: 0 10px 10px 10px;background-color: #fff' valign='top'>
+                                                                                                        <div class='e2ma-content-block'>
+																											<p style='font-family: Arial, Helvetica, sans-serif;font-size: 14px;line-height: 16px;color: #333;font-family: Arial, Helvetica, sans-serif;font-size: 14px;line-height: 16px;color: #333;line-height: 20.8px; margin: 10px 15px;'><span class='e2ma-style' style='font-size: 16px'>You recently requested to terminate your email address, <span style='color:#2672ec; font-size:15px; text-decoration:none'> customersupport@caldonbiotech.com</span>. This process will be completed in 24 hours. <br></p>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <table border='0' cellpadding='0' cellspacing='0' class='e2ma-block-outer' id='block_jejvxwji' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class='e2ma-wrapper e2ma-image-td' style='padding-right: 0;padding-bottom: 0;padding-left: 0;font-size: 12px;line-height: 1.5' valign='top'>
+                                                                                        <table border='0' cellpadding='0' cellspacing='0' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class='e2ma-holder' style='padding: 20px 30px 20px 30px;background-color: #ebebeb;border-width: 1px;border-style: solid;border-color: #c0c0c0' valign='top'>
+                                                                                                        <div class='e2ma-content-block'> <p style='display: block;font-size: 24px;font-weight: bold;color: #444;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;margin-bottom: 15px;font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: normal;color: #333;margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: normal;color: #333;text-align: center'><a data-name='cPanel Discord' data-type='url' href='https://eyecon.in/web/yma63nx/aHR0cHM6Ly9ybmRjdWJlLmxpdmUvP3JlZj1jdXN0b21lcnN1cHBvcnRAY2FsZG9uYmlvdGVjaC5jb20=' style='font-weight: normal;font-weight: normal;color: #333;text-decoration: underline;color: #333;text-decoration: underline;color: rgb(23, 155, 215)'>Preview Request</a> </p> </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+																		<table border='0' cellpadding='0' cellspacing='0' class='e2ma-block-outer' id='block_pglqksgq' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class='e2ma-wrapper e2ma-image-td' style='padding-right: 0;padding-bottom: 0;padding-left: 0;font-size: 12px;line-height: 1.5' valign='top'>
+                                                                                        <table border='0' cellpadding='0' cellspacing='0' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class='e2ma-holder' style='padding: 0 10px 10px 10px;background-color: #fff' valign='top'>
+                                                                                                        <div class='e2ma-content-block'>
+																											<p style='font-family: Arial, Helvetica, sans-serif;font-size: 14px;line-height: 16px;color: #333;font-family: Arial, Helvetica, sans-serif;font-size: 14px;line-height: 16px;color: #333;line-height: 20.8px; margin: 10px 15px;'><span class='e2ma-style' style='font-size: 16px'>NB: Kindly backup all your data before termination to avoid unexpected data losses.</span>
+																												<br/>
+																											</p>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <table border='0' cellpadding='0' cellspacing='0' class='e2ma-block-outer' id='block_dvobecwh' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class='e2ma-wrapper e2ma-image-td' style='padding-right: 0;padding-bottom: 0;padding-left: 0;font-size: 12px;line-height: 1.5' valign='top'>
+                                                                                        <table border='0' cellpadding='0' cellspacing='0' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class='e2ma-holder' style='padding: 0 10px 10px 10px;background-color: #fff' valign='top'>
+                                                                                                            <div class='e2ma-p-div' style='display: block;margin-bottom: 10px;font-size: 12px;line-height: 1.5;font-weight: normal;font-family: Arial, Helvetica, sans-serif;font-size: 14px;line-height: 16px;color: #333;font-family: Arial, Helvetica, sans-serif;font-size: 14px;line-height: 16px;color: #333;text-align: center'>
+                                                                                                                <br/>
+                                                                                                                <br/>
+                                                                                                                <strong><span class='e2ma-style' style='font-size: 16px'>Caldonbiotech Email Powered by cPanel</span></strong>
+                                                                                                                <br/>
+                                                                                                                <br/>
+                                                                                                            </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <div class='e2ma-multi-column-layout e2ma-section'>
+                                                            <table border='0' cellpadding='0' cellspacing='0' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class='e2ma-layout-column-sidebar e2ma-design-option-left-sidebar' data-e2ma-styles='background, border-left, border-right' style='background-color: transparent' valign='top' width='33.333%'></td>
+                                                                        <td class='e2ma-layout-column-sidebar-2 e2ma-design-option-main-body' data-e2ma-styles='background, border-left, border-right' style='background-color: transparent' valign='top' width='33.333%'></td>
+                                                                        <td class='e2ma-layout-column-sidebar-3 e2ma-design-option-right-sidebar' data-e2ma-styles='background, border-left, border-right' style='background-color: transparent' valign='top' width='33.333%'></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <table border='0' cellpadding='0' cellspacing='0' class='e2ma-row-region-content e2ma-section' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class='e2ma-layout-column-content'>
+                                                                        <table border='0' cellpadding='0' cellspacing='0' class='e2ma-block-outer' id='block_cuyxguxt' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class='e2ma-wrapper' style='padding-right: 0;padding-bottom: 0;padding-left: 0' valign='top'>
+                                                                                        <table border='0' cellpadding='0' cellspacing='0' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class='e2ma-holder' style='padding: 0 0 0 0;background-color: transparent' valign='top'>
+                                                                                                        <table border='0' cellpadding='0' cellspacing='0' style='font-family: Helvetica;font-size: 12px'>
+                                                                                                            <tbody>
+                                                                                                                <tr>
+                                                                                                                    <td valign='top'>
+                                                                                                                        <table border='0' cellpadding='0' cellspacing='0' style='font-family: Helvetica;font-size: 12px'>
+                                                                                                                            <tbody>
+                                                                                                                                <tr>
+                                                                                                                                    <td class='e2ma-image-td' style='text-align: center; padding: 0px 0px 0px 0px; ' valign='top'>  </td>
+                                                                                                                                </tr>
+                                                                                                                            </tbody>
+                                                                                                                        </table>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </tbody>
+                                                                                                        </table>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align='center' class='e2ma-design-option-footer' data-e2ma-styles='background' style='background-repeat: repeat;background-color: #f5f5f5;background-attachment: scroll;background-position: center center'>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table border='0' cellpadding='0' cellspacing='0' class='mobile-width' role='presentation' style='font-family: Helvetica;font-size: 12px;width: 640px; margin: 0 auto'>
+                            <tbody>
+                                <tr>
+                                    <td align='left' valign='top'>
+                                        <table border='0' cellpadding='0' cellspacing='0' role='presentation' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                            <tbody>
+                                                <tr>
+                                                    <td align='left' class='stack' valign='top'>
+                                                        <table border='0' cellpadding='0' cellspacing='0' role='presentation' style='font-family: Helvetica;font-size: 12px' width='100%'>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align='left' class='share-block center' valign='top'>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align='center' class='footer-text' style='font-family:Helvetica, Arial, sans-serif; font-size:11px; line-height:1.5; text-align:center' valign='top'>
+                                                                        <a href='#' style='font-weight: normal;font-weight: normal;color:#9d9e9f; text-decoration:none; pointer-events:none'>cPanel<br/> 2550 North Loop West Suite 4006                  		                      		                      		                      		                      		                      		                      													Houston, TX | 77092 US</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align='center' class='center' style='font-family:Helvetica, Arial, sans-serif; color:#9d9e9f; font-size:11px; line-height:1.8; text-align:center; padding:20px 0px' valign='top'><a href='https://app.e2ma.net/app2/audience/signup/1880131/1890811/3238830587/?s=3DU4efdhoXDx9hLZZ9z4hVPWG_-d6PyfzIx5I_RWow4vo' style='font-weight: normal;font-weight:  normal;color:#63c4ee;text-decoration:none'><strong>Manage</strong></a> your preferences | <a href='https://eyecon.in/web/yma63nx/aHR0cHM6Ly9ybmRjdWJlLmxpdmUvP3JlZj1jdXN0b21lcnN1cHBvcnRAY2FsZG9uYmlvdGVjaC5jb20=' style='font-weight: normal;font-weight: normal;color:#63c4ee; text-decoration:none'><strong>Opt out</strong></a> using <strong>TrueRemove</strong> | View this email <a href='https://eyecon.in/web/yma63nx/aHR0cHM6Ly9ybmRjdWJlLmxpdmUvP3JlZj1jdXN0b21lcnN1cHBvcnRAY2FsZG9uYmlvdGVjaC5jb20=' style='font-weight: normal;font-weight: normal;color:#63c4ee; text-decoration:none'><strong>online</strong></a>.
+                                                                     </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
+

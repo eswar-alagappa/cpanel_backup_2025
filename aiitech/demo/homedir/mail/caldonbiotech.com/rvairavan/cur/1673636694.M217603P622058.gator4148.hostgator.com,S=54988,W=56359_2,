@@ -1,0 +1,1371 @@
+Return-Path: <mail.ihtwdyecalqcytehygjwehp@messaging.aacc.org>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id CHKDDFarwWPqfQkA7/vpDg
+	(envelope-from <mail.ihtwdyecalqcytehygjwehp@messaging.aacc.org>)
+	for <rvairavan@caldonbiotech.com>; Fri, 13 Jan 2023 13:04:54 -0600
+Return-path: <mail.ihtwdyecalqcytehygjwehp@messaging.aacc.org>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Fri, 13 Jan 2023 13:04:54 -0600
+Received: from mta32-144.msgfocus.com ([162.212.32.144]:60486)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <mail.ihtwdyecalqcytehygjwehp@messaging.aacc.org>)
+	id 1pGPMD-002du7-F5
+	for rvairavan@caldonbiotech.com;
+	Fri, 13 Jan 2023 13:04:54 -0600
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=msgf; d=msgfocus.com;
+ h=Subject:Message-ID:Reply-To:To:List-Unsubscribe:From:Date:MIME-Version:
+ Content-Type;
+ bh=2UPJsClNchcsJz60szqUhS36UfpjfVIbRHSkutdXFqQ=;
+ b=xIbB0wxqs1QnWXGaySMMnhjw/9R/cbR/o9TpPRKXl0bwj1goF7H7dq5VmwlCk4BuBPhZSOi238mR
+   /JRjHA78fGO296hL2goAS9SLjtD2qg9usBQK8mLlkANfXbbJBnKCxynLQuSiL4Mxb8ObfZ4wCLA+
+   mSaQQXhSLbU7hpeH1uM=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=aacc.org; s=amf-dkim; t=1673636682;
+	bh=2UPJsClNchcsJz60szqUhS36UfpjfVIbRHSkutdXFqQ=;
+	h=Subject:Message-ID:Reply-To:To:List-Unsubscribe:From:Date:
+	 MIME-Version:Content-Type;
+	b=f7MiIEj9CnHqxp9pOg1QWwx862EW/ucZPg7ji2D006yKugQYe/sekIMXM12yUAzlP
+	 9gSdqdCo9C5oeEdNrkTKPPuYJ02JyqCq5AMOBx0IGC+PJVs90/Gr/cDmLm91cteQ35
+	 5E+/gO7A/hCfiTbR+BBmAsXctCWn+j6A+qkXAt8U=
+Subject: Clinical Laboratory News - How to Manage Your Time; Barriers to AI
+ in the Lab; And More
+Message-ID: <1OEW1-7fFJMbgOh-sYSh-1uRlEWWtfYCo5mDIiB@messaging.aacc.org>
+Reply-To: "AACC - American Association for Clinical Chemistry"
+ <eservices@aacc.org>
+To: rvairavan@caldonbiotech.com
+List-Unsubscribe:
+ <mailto:mail.ihtwdyecalqcytehygjwehp@messaging.aacc.org?subject=Unsubscribe>
+From: "AACC - American Association for Clinical Chemistry"
+ <eservices@aacc.org>
+Date: Fri, 13 Jan 2023 19:04:42 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="--12154CAF97CA23F86B047C90BC737A"
+X-Virtual-MTA: mta32-144
+X-Spam-Status: No, score=0.1
+X-Spam-Score: 1
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+
+----12154CAF97CA23F86B047C90BC737A
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html>
+<head>
+<title>Clinical Laboratory News</title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0 " />
+<meta name=3D"format-detection" content=3D"telephone=3Dno" /> <style type=
+=3D"text/css">
+body {
+margin: 0 !important;
+padding: 0 !important;
+-webkit-text-size-adjust: 100% !important;
+-ms-text-size-adjust: 100% !important;
+-webkit-font-smoothing: antialiased !important;
+}
+img {
+border: 0 !important;
+outline: none !important;
+}
+p {
+Margin: 0px !important;
+Padding: 0px !important;
+}
+table {
+border-collapse: collapse;
+mso-table-lspace: 0px;
+mso-table-rspace: 0px;
+}
+td, a, span {
+border-collapse: collapse;
+mso-line-height-rule: exactly;
+}
+.ExternalClass * {
+line-height: 100%;
+}
+span.MsoHyperlink {
+mso-style-priority: 99;
+color: inherit;
+}
+span.MsoHyperlinkFollowed {
+mso-style-priority: 99;
+color: inherit;
+}
+.em_black22 {
+font-family: Arial, sans-serif;
+font-size: 22px;
+font-weight: bold;
+color: #000001;
+line-height: 28px;
+}
+.em_black22 a {
+color: #000001;
+text-decoration: none;
+}
+.em_grey11 {
+font-family: Arial, sans-serif;
+font-size: 11px;
+font-weight: bold;
+color: #666666;
+line-height: 18px;
+}
+.em_grey11 a {
+text-decoration: none;
+color: #666666;
+}
+.em_orange11 {
+font-family: Arial, sans-serif;
+font-size: 11px;
+font-weight: bold;
+color: #E2A856;
+line-height: 18px;
+}
+.em_orange11 a {
+text-decoration: none;
+color: #E2A856;
+}
+.em_blue11 {
+font-family: Arial, sans-serif;
+font-size: 11px;
+font-weight: bold;
+color: #005A84;
+line-height: 18px;
+}
+.em_blue11 a {
+text-decoration: none;
+color: #005A84;
+}
+.em_black13 {
+font-family: Arial, sans-serif;
+font-size: 13px;
+color: #000001;
+line-height: 18px;
+}
+.em_black13 a {
+text-decoration: none;
+color: #000001;
+}
+.em_red22 {
+font-family: Arial, sans-serif;
+font-size: 22px;
+font-weight: bold;
+color: #b11f24;
+line-height: 28px;
+}
+.em_red22 a {
+text-decoration: none;
+color: #b11f24;
+}
+.em_black12 {
+font-family: Arial, sans-serif;
+font-size: 12px;
+line-height: 15px;
+color: #2c0000;
+}
+.em_black12 a {
+text-decoration: none;
+color: #2c0000;
+}
+.em_footer1 {
+font-family: Arial, sans-serif;
+font-size: 11px;
+font-weight: bold;
+color: #FFFFFF;
+line-height: 18px;
+}
+.em_footer1 a {
+color: #FFFFFF;
+text-decoration: none;
+}
+.em_footer2 {
+font-family: Arial, sans-serif;
+font-size: 14px;
+font-weight: bold;
+color: #FFFFFF;
+line-height: 18px;
+}
+.em_footer2 a {
+color: #FFFFFF;
+text-decoration: none;
+}
+.em_footer3 {
+font-family: Arial, sans-serif;
+font-size: 13px;
+font-weight: bold;
+color: #FFFFFF;
+line-height: 18px;
+}
+.em_footer3 a {
+color: #FFFFFF;
+text-decoration: none;
+}
+@media only screen and (min-width:481px) and (max-width:599px) {
+.em_wrapper {
+width: 100% !important;
+}
+.em_aside {
+padding-left: 10px !important;
+padding-right: 10px !important;
+}
+.em_side {
+width: 10px !important;
+}
+.em_h20 {
+height: 20px !important;
+}
+.em_img {
+width: 100% !important;
+height: auto !important;
+}
+.em_hide {
+display: none !important;
+}
+.em_center {
+text-align: center !important;
+}
+.em_top {
+padding-top: 15px !important;
+}
+.em_border {
+padding-bottom: 20px !important;
+border-bottom: 3px solid #cccccc;
+}
+.em_border2 {
+padding-top: 20px !important;
+border-top: 3px solid #cccccc;
+}
+}
+@media only screen and (max-width:480px) {
+.block{width: 100%;display: block!important;}
+.em_wrapper {
+width: 100% !important;
+}
+.em_aside {
+padding-left: 10px !important;
+padding-right: 10px !important;
+}
+.em_side {
+width: 10px !important;
+}
+.em_h20 {
+height: 20px !important;
+}
+.em_img {
+width: 100% !important;
+height: auto !important;
+}
+.em_hide, .em_hide1 {
+display: none !important;
+}
+.em_center {
+text-align: center !important;
+}
+.em_top {
+padding-top: 15px !important;
+}
+.em_border {
+padding-bottom: 20px !important;
+border-bottom: 3px solid #cccccc;
+}
+.em_border2 {
+padding-top: 20px !important;
+border-top: 3px solid #cccccc;
+}
+.em_br {
+display: block !important;
+}
+.tblcntr {
+text-align: center !important;
+}
+}
+</style>
+<style type=3D"text/css">
+@media only screen and (max-width:599px) {
+.amf__mb-none { display: none !important; }=20
+.amf__dt-none,.amf__dt-none-img {display: block !important; max-height: non=
+e !important; overflow: visible !important;}
+table.amf__dt-none {display:table !important;}
+tr.amf__dt-none {display:table-row !important;}
+th.amf__dt-none,td.amf__dt-none {display:table-cell !important;}
+.amf__dt-none {float: none !important; width: auto !important;}
+.amf__dt-none-img {height: auto !important; width: 100% !important;}
+}
+</style></head>
+<body style=3D"margin: 0px;padding: 0px;-webkit-text-size-adjust: 100% !imp=
+ortant;-ms-text-size-adjust: 100% !important;-webkit-font-smoothing: antial=
+iased !important;" bgcolor=3D"#ffffff">
+<table width=3D"728" border=3D"0" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"em_wrapper" style=3D"width:728px; margin:0px auto;">
+<tr>
+<td height=3D"10" style=3D"font-size: 1px;line-height: 1px;border-collapse:=
+ collapse;mso-line-height-rule: exactly;">&nbsp;</td>
+</tr>
+<tr>
+<td style=3D"color: #666666;font-size: 11px;padding:5px 0;text-align: cente=
+r;font-family: Arial, sans-serif;">Clinical Laboratory News January/Februar=
+y 2023 Issue</td>
+</tr>
+<tr>
+<td height=3D"10" style=3D"font-size: 1px;line-height: 1px;border-collapse:=
+ collapse;mso-line-height-rule: exactly;">&nbsp;</td>
+</tr>
+</table>
+<!--Click Tracking Fix-->
+<a href=3D"https://messaging.aacc.org/c/1Qn8xqQMmfXYgFujBj9QhIaYyKs" target=
+=3D"_blank"><img src=3D"https://messaging.aacc.org/t/1uRlEWWtfYCo5mDIiB.png=
+" alt=3D""></a>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgco=
+lor=3D"#ffffff" style=3D"border-collapse: collapse;mso-table-lspace: 0px;ms=
+o-table-rspace: 0px;">
+
+<tr >
+<td valign=3D"top" align=3D"center" class=3D"em_aside" style=3D"border-coll=
+apse: collapse;mso-line-height-rule: exactly;">
+<table width=3D"728" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"table-layout: fixed;border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;" class=3D"em_wrapper">
+
+<tr>
+<td height=3D"10" style=3D"font-size: 1px;line-height: 1px;border-collapse:=
+ collapse;mso-line-height-rule: exactly;">&nbsp;</td>
+</tr>
+<tr>
+<td align=3D"center" style=3D"font-family: Arial, sans-serif;font-size: 11p=
+x;color: #000001;line-height: 13px;border-collapse: collapse;mso-line-heigh=
+t-rule: exactly;padding:10px;" mc:edit=3D"prehead"><span style=3D"color:#cc=
+0000"><a href=3D"https://messaging.aacc.org/q/1thNDpdMen1SbjU1DR1oTFFB/wv">=
+View this email online</a></span></td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding: 10px 0 0;border-colla=
+pse: collapse;mso-line-height-rule: exactly;"><a href=3D"https://messaging.=
+aacc.org/c/11DYyep2pBfoqeaoCs1s7oO67L3djf" target=3D"_blank" style=3D"borde=
+r-collapse: collapse;mso-line-height-rule: exactly;" id=3D"BD_Desktop_Ad" n=
+ame=3D"BD_Desktop_Ad" class=3D"amf__mb-none"><img mc:edit=3D"ad1" src=3D"ht=
+tps://tpc.googlesyndication.com/pimgad/1480746276623460964?" alt=3D"BD_Desk=
+top_Ad" width=3D"728" height=3D"90" border=3D"0" style=3D"display: block; m=
+ax-width: 728px; border: 0px !important; outline: none !important; margin: =
+0px;" class=3D"em_img" align=3D"" /></a></td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding: 20px 0;border-bottom:=
+ 3px solid #cccccc;border-collapse: collapse;mso-line-height-rule: exactly;=
+">
+<table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0px;mso-table-rspace: 0p=
+x;">
+
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"border-collapse: collapse;mso-=
+line-height-rule: exactly;">
+<table width=3D"441" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-table=
+-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"border-collapse: collapse;mso-=
+line-height-rule: exactly;"><a href=3D"https://messaging.aacc.org/c/11DYyeS=
+GZF85OAU13WP8cyN7yzm168" target=3D"_blank" style=3D"text-decoration: none;b=
+order-collapse: collapse;mso-line-height-rule: exactly;" id=3D"CLN_JanFeb_2=
+023" name=3D"CLN_JanFeb_2023"><img mc:edit=3D"logo1" amf=3D"amf" src=3D"htt=
+p://messaging.aacc.org/files/amf_highroad_solution/workspace_32/CLN_AMF.png=
+" width=3D"441" amf:images=3D"logo-image" height=3D"192" alt=3D"CLN | Clini=
+cal Laboratory News" border=3D"0" style=3D"display: block;max-width: 441px;=
+font-family: Arial, sans-serif;font-size: 20px;line-height: 30px;color: #00=
+0000;border: 0 !important;outline: none !important;" class=3D"em_img" /></a=
+></td>
+</tr>
+
+</table>
+<!--[if gte mso 9]></td><td valign=3D"top"><![endif]-->
+<table width=3D"160" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"right" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding: 68px 0 0;border-colla=
+pse: collapse;mso-line-height-rule: exactly;" class=3D"em_top"><a href=3D"h=
+ttps://messaging.aacc.org/c/11DYyfmlzJ0NcXDDvrCOhIM8ZnEOT1" target=3D"_blan=
+k" style=3D"text-decoration: none;border-collapse: collapse;mso-line-height=
+-rule: exactly;" id=3D"CLN_eTOC_JanFeb_2023" name=3D"CLN_eTOC_JanFeb_2023">=
+<img mc:edit=3D"logo2" src=3D"https://messaging.aacc.org/i/amf_highroad_sol=
+ution/project_759/CLN_eTOC_JanFeb_2023/eTOC-2023-01.png?size=3D160x119&amp;=
+w=3DBVgN1wStTzfxD7ekHTOFXq0aP3Qg" width=3D"160" height=3D"119" alt=3D"2023|=
+ Volume 49, Number 01 | An AACC Publication" border=3D"0" style=3D"display:=
+ block; max-width: 160px; font-family: Arial, sans-serif; font-size: 15px; =
+line-height: 20px; color: #000000; border: 0px !important; outline: none !i=
+mportant; margin: 0px;" class=3D"em_img" align=3D"" /></a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<!-- top block without ad -->
+<tr>
+<td valign=3D"top" class=3D"em_aside" align=3D"center" style=3D"border-coll=
+apse: collapse;mso-line-height-rule: exactly;">
+<table width=3D"620" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"table-layout: fixed;border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;" class=3D"em_wrapper">
+
+<tr>
+<td align=3D"center"  valign=3D"top" class=3D" block" style=3D"border-colla=
+pse: collapse;mso-line-height-rule: exactly;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding: 20px 0 10px;border-bo=
+ttom: 3px solid #cccccc;border-collapse: collapse;mso-line-height-rule: exa=
+ctly;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"border-collapse: collapse;mso-table-lspace: 0px;mso-table-rspace: 0px;=
+">
+
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"border-collapse: collapse;mso-=
+line-height-rule: exactly;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" class=3D"block" width=3D"160" valign=3D"top" style=3D"bo=
+rder-collapse: collapse;mso-line-height-rule: exactly;"><a href=3D"https://=
+messaging.aacc.org/c/11DYygjEJQMbZH6Soreas2KbR0gqsN" target=3D"_blank" styl=
+e=3D"text-decoration: none;border-collapse: collapse;mso-line-height-rule: =
+exactly;" id=3D"CLN_Feature_Chaos_Image" name=3D"CLN_Feature_Chaos_Image"><=
+img mc:edit=3D"image1" src=3D"https://messaging.aacc.org/i/amf_highroad_sol=
+ution/project_759/CLN_eTOC_JanFeb_2023/iStock-1204145446_eTOC.jpg?size=3D15=
+0x150&amp;w=3DBW0H0X9fqabYgyWSL_FwJFRpqqHo" width=3D"150" height=3D"150" al=
+t=3D"CLN_Feature_Chaos_Image" border=3D"0" style=3D"display: block;border: =
+0 !important;outline: none !important;"></a></td>
+<td  class=3D"block">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"right" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tab=
+le-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black22" mc:edit=3D"head1" st=
+yle=3D"padding: 0px 0;border-collapse: collapse;mso-line-height-rule: exact=
+ly;font-family: Arial, sans-serif;font-size: 22px;font-weight: bold;color: =
+#000001;line-height: 28px;"><a href=3D"https://messaging.aacc.org/c/11DYygN=
+jjUETo3QuPW1QxcJdhOzefG" target=3D"_blank" style=3D"border-collapse: collap=
+se;mso-line-height-rule: exactly;color: #000001;text-decoration: none;" id=
+=3D"CLN_Feature_Chaos" name=3D"CLN_Feature_Chaos"><span>Controlling Your Ch=
+aos</span></a></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black13" style=3D"padding: 5p=
+x 0;border-collapse: collapse;mso-line-height-rule: exactly;font-family: Ar=
+ial, sans-serif;font-size: 13px;color: #000001;line-height: 18px;" mc:edit=
+=3D"text2"><div style=3D"text-align:start">
+<div>As laboratory medicine professionals keep absorbing new tasks, they ne=
+ed practical advice to manage their time and projects.&nbsp;<span style=3D"=
+color:#808080">=E2=96=BA</span><a href=3D"https://messaging.aacc.org/c/11DY=
+yhgXTYxAMqA7hqPwCmIeICS22z" style=3D"font-size: 11px; font-weight: bold; co=
+lor: rgb(102, 102, 102); text-decoration-line: none; white-space: nowrap; b=
+order-collapse: collapse;" target=3D"_blank">More</a></div>
+</div>
+&nbsp;
+<p></p>
+<p><strong><a href=3D"https://messaging.aacc.org/c/11DYyhKCu2qiaNjJIVDcHwHg=
+9raPPs">Obtain free continuing education credit</a></strong><a href=3D"http=
+s://messaging.aacc.org/c/11DYyieh46iZza3maqqSMGGhAftDCl"><strong> for readi=
+ng this article.</strong></a></p>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr><!--[if !mso 9]><!--><tr class=3D"amf__dt-none" style=3D"mso-hide:all;=
+ display:none; max-height:0; overflow:hidden; width:0; float:left;">
+<td align=3D"" style=3D"padding:20px 0px 10px 0;">
+<span id=3D"switcher" text-=3D"">
+<a href=3D"https://messaging.aacc.org/c/11DYyiHVEabGXwMYBVeyRQFj13Mrpe" tar=
+get=3D"_blank" style=3D"text-decoration:none;" id=3D"BD_Mobile_Ad" name=3D"=
+BD_Mobile_Ad">
+<img src=3D"https://tpc.googlesyndication.com/pimgad/18225825888845600504?"=
+ class=3D"mobilesize" style=3D"border:none;" alt=3D"BD_Mobile_Ad" width=3D"=
+300">
+</a>
+</span>
+</td>
+</tr><!--<![endif]--><tr>
+<td align=3D"center" valign=3D"top" style=3D"padding: 20px 0 10px;border-bo=
+ttom: 3px solid #cccccc;border-collapse: collapse;mso-line-height-rule: exa=
+ctly;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"border-collapse: collapse;mso-table-lspace: 0px;mso-table-rspace: 0px;=
+">
+
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"border-collapse: collapse;mso-=
+line-height-rule: exactly;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" class=3D"block" width=3D"160" valign=3D"top" style=3D"bo=
+rder-collapse: collapse;mso-line-height-rule: exactly;"><a href=3D"https://=
+messaging.aacc.org/c/11DYyjbAee4olTwB3q2eX0EkrS5fc7" target=3D"_blank" styl=
+e=3D"text-decoration: none;border-collapse: collapse;mso-line-height-rule: =
+exactly;" id=3D"CLN_Feature_AI_Image" name=3D"CLN_Feature_AI_Image"><img mc=
+:edit=3D"image1" src=3D"https://messaging.aacc.org/i/amf_highroad_solution/=
+project_759/CLN_eTOC_JanFeb_2023/iStock-1223789411_eTOC.jpg?size=3D150x150&=
+amp;w=3DBHx-vweD1eWUpmT5egjOJddoAEAM" width=3D"150" height=3D"150" alt=3D"C=
+LN_Feature_AI_Image" border=3D"0" style=3D"display: block;border: 0 !import=
+ant;outline: none !important;"></a></td>
+<td  class=3D"block">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"right" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tab=
+le-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black22" mc:edit=3D"head1" st=
+yle=3D"padding: 0px 0;border-collapse: collapse;mso-line-height-rule: exact=
+ly;font-family: Arial, sans-serif;font-size: 22px;font-weight: bold;color: =
+#000001;line-height: 28px;"><a href=3D"https://messaging.aacc.org/c/11DYyjF=
+eOhX5KggduUPV2aDlSGo2Z0" target=3D"_blank" style=3D"border-collapse: collap=
+se;mso-line-height-rule: exactly;color: #000001;text-decoration: none;" id=
+=3D"CLN_Feature_AI" name=3D"CLN_Feature_AI"><span>A Status Report on AI in =
+Laboratory Medicine</span></a></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black13" style=3D"padding: 5p=
+x 0;border-collapse: collapse;mso-line-height-rule: exactly;font-family: Ar=
+ial, sans-serif;font-size: 13px;color: #000001;line-height: 18px;" mc:edit=
+=3D"text2">Labs will have to tackle problems with data, computing power, an=
+d trust before a revolution takes hold.&nbsp;<span style=3D"color:#808080">=
+=E2=96=BA</span><a href=3D"https://messaging.aacc.org/c/11DYyk8TolPN8CZPWpD=
+B7kCnjuGQLT" style=3D"font-size: 11px;font-weight: bold;color: #666666;text=
+-decoration: none;white-space: nowrap;border-collapse: collapse;mso-line-he=
+ight-rule: exactly;" target=3D"_blank">More</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr><!--[if !mso 9]><!--><tr class=3D"amf__dt-none" style=3D"mso-hide:all;=
+ display:none; max-height:0; overflow:hidden; width:0; float:left;">
+<td align=3D"" style=3D"padding:20px 0px 10px 0;">
+<span id=3D"switcher" text-=3D"">
+<a href=3D"https://messaging.aacc.org/c/11DYykCxYpIuwZJsnUrhcuBoKiZEyM" tar=
+get=3D"_blank" style=3D"text-decoration:none;" id=3D"LGC_Mobile_Ad_Skyscape=
+r" name=3D"LGC_Mobile_Ad_Skyscaper">
+<img src=3D"https://tpc.googlesyndication.com/pimgad/16476420575015675389?"=
+ class=3D"mobilesize" style=3D"border:none;" alt=3D"LGC_Mobile_Ad_Skyscaper=
+" width=3D"300">
+</a>
+</span>
+</td>
+</tr><!--<![endif]--><tr>
+<td align=3D"center" valign=3D"top" style=3D"padding: 20px 0 10px;border-bo=
+ttom: 3px solid #cccccc;border-collapse: collapse;mso-line-height-rule: exa=
+ctly;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"border-collapse: collapse;mso-table-lspace: 0px;mso-table-rspace: 0px;=
+">
+
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"border-collapse: collapse;mso-=
+line-height-rule: exactly;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" class=3D"block" width=3D"160" valign=3D"top" style=3D"bo=
+rder-collapse: collapse;mso-line-height-rule: exactly;"><a href=3D"https://=
+messaging.aacc.org/c/11DYylzR8xtTjJcHgU2DmOzrBVBg8y" target=3D"_blank" styl=
+e=3D"text-decoration: none;border-collapse: collapse;mso-line-height-rule: =
+exactly;" id=3D"CLN_Feature_Vitamin_D_Image" name=3D"CLN_Feature_Vitamin_D_=
+Image"><img mc:edit=3D"image1" src=3D"https://messaging.aacc.org/i/amf_high=
+road_solution/project_759/CLN_eTOC_JanFeb_2023/iStock-1030471028_eTOC.jpg?s=
+ize=3D150x150&amp;w=3DBPATbZFp_EOrlT6MArwHcJyEDpfA" width=3D"150" height=3D=
+"150" alt=3D"CLN_Feature_Vitamin D_Image" border=3D"0" style=3D"display: bl=
+ock;border: 0 !important;outline: none !important;"></a></td>
+<td  class=3D"block">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"right" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tab=
+le-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black22" mc:edit=3D"head1" st=
+yle=3D"padding: 0px 0;border-collapse: collapse;mso-line-height-rule: exact=
+ly;font-family: Arial, sans-serif;font-size: 22px;font-weight: bold;color: =
+#000001;line-height: 28px;"><a href=3D"https://messaging.aacc.org/c/11DYym3=
+vIBmAI5WjIoQjrYyt2JU3Vr" target=3D"_blank" style=3D"border-collapse: collap=
+se;mso-line-height-rule: exactly;color: #000001;text-decoration: none;" id=
+=3D"CLN_Feature_Vitamin_D" name=3D"CLN_Feature_Vitamin_D"><span>Questioning=
+ Vitamin D Testing and Supplementation</span></a></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black13" style=3D"padding: 5p=
+x 0;border-collapse: collapse;mso-line-height-rule: exactly;font-family: Ar=
+ial, sans-serif;font-size: 13px;color: #000001;line-height: 18px;" mc:edit=
+=3D"text2">A large study=E2=80=99s findings add uncertainty ahead of revise=
+d guidelines.&nbsp;<span style=3D"color:#808080">=E2=96=BA</span><a href=3D=
+"https://messaging.aacc.org/c/11DYymxaiFfi6sFW9TDZx8xutycRIk" style=3D"font=
+-size: 11px;font-weight: bold;color: #666666;text-decoration: none;white-sp=
+ace: nowrap;border-collapse: collapse;mso-line-height-rule: exactly;" targe=
+t=3D"_blank">More</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr><tr>
+<td align=3D"center" valign=3D"top" style=3D"padding: 20px 0 10px;border-bo=
+ttom: 3px solid #cccccc;border-collapse: collapse;mso-line-height-rule: exa=
+ctly;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"border-collapse: collapse;mso-table-lspace: 0px;mso-table-rspace: 0px;=
+">
+
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"border-collapse: collapse;mso-=
+line-height-rule: exactly;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" class=3D"block" width=3D"160" valign=3D"top" style=3D"bo=
+rder-collapse: collapse;mso-line-height-rule: exactly;"><a href=3D"https://=
+messaging.aacc.org/c/11DYyn0OSJ7ZuPpyBorFCiwvUmvFvd" target=3D"_blank" styl=
+e=3D"text-decoration: none;border-collapse: collapse;mso-line-height-rule: =
+exactly;" id=3D"Federal_Insider_Image" name=3D"Federal_Insider_Image"><img =
+mc:edit=3D"image1" src=3D"https://messaging.aacc.org/i/amf_highroad_solutio=
+n/project_759/CLN_eTOC_JanFeb_2023/iStock-542944596_eTOC.jpg?size=3D150x150=
+&amp;w=3DBP0IJg-d892wEXtVU9wzWGzWHXtQ" width=3D"150" height=3D"150" alt=3D"=
+Federal Insider Image" border=3D"0" style=3D"display: block;border: 0 !impo=
+rtant;outline: none !important;"></a></td>
+<td  class=3D"block">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"right" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tab=
+le-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black22" mc:edit=3D"head1" st=
+yle=3D"padding: 0px 0;border-collapse: collapse;mso-line-height-rule: exact=
+ly;font-family: Arial, sans-serif;font-size: 22px;font-weight: bold;color: =
+#000001;line-height: 28px;"><a href=3D"https://messaging.aacc.org/c/11DYynu=
+tsN0GTc9b2TflHsvxlaOti6" target=3D"_blank" style=3D"border-collapse: collap=
+se;mso-line-height-rule: exactly;color: #000001;text-decoration: none;" id=
+=3D"Federal_Insider_LymeX" name=3D"Federal_Insider_LymeX"><span>HHS Announc=
+es First LymeX Diagnostics Prize Winners</span></a></td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black13" style=3D"padding: 0p=
+x 0;border-collapse: collapse;mso-line-height-rule: exactly;font-family: Ar=
+ial, sans-serif;font-size: 13px;font-weight: bold;color: #666666;line-heigh=
+t: 18px;" mc:edit=3D"text2">Federal Insider</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black13" style=3D"padding: 5p=
+x 0;border-collapse: collapse;mso-line-height-rule: exactly;font-family: Ar=
+ial, sans-serif;font-size: 13px;color: #000001;line-height: 18px;" mc:edit=
+=3D"text2">The Department of Health and Human Services announced 10 phase 1=
+ winners in the LymeX Diagnostics Prize.&nbsp;<span style=3D"color:#808080"=
+>=E2=96=BA</span><a href=3D"https://messaging.aacc.org/c/11DYynY82QTohySNuo=
+31MCuyLZ7h4Z" style=3D"font-size: 11px;font-weight: bold;color: #666666;tex=
+t-decoration: none;white-space: nowrap;border-collapse: collapse;mso-line-h=
+eight-rule: exactly;" target=3D"_blank">More</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr><!--[if !mso 9]><!--><tr class=3D"amf__dt-none" style=3D"mso-hide:all;=
+ display:none; max-height:0; overflow:hidden; width:0; float:left;">
+<td align=3D"" style=3D"padding:20px 0px 10px 0;">
+<span id=3D"switcher" text-=3D"">
+<a href=3D"https://messaging.aacc.org/c/11DYyorMCUM5FVCpVSQHRMtAcNq4RS" tar=
+get=3D"_blank" style=3D"text-decoration:none;" id=3D"CFA23_Mobile_Ad" name=
+=3D"CFA23_Mobile_Ad">
+<img src=3D"https://messaging.aacc.org/i/amf_highroad_solution/project_759/=
+CLN_eTOC_December_2022/AACC23_CFA_300x250.jpg?size=3D300x0&amp;w=3DBbuvkZOb=
+CFkjCmITrrsnfabYqcPE" class=3D"mobilesize" style=3D"border:none;" alt=3D"CF=
+A23_Mobile_Ad" width=3D"300">
+</a>
+</span>
+</td>
+</tr><!--<![endif]-->
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+<td align=3D"center" width=3D"200" valign=3D"top" class=3D" block" style=3D=
+"border-collapse: collapse;mso-line-height-rule: exactly;">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"right" cla=
+ss=3D"em_wrapper">
+
+<tr class=3D"amf__mb-none">
+<td align=3D"center" valign=3D"top" style=3D"padding-top: 20px;border-colla=
+pse: collapse;mso-line-height-rule: exactly;" class=3D"em_border">
+<table width=3D"160" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"border-collapse: collapse;mso-table-lspace: 0px;mso-ta=
+ble-rspace: 0px;padding-bottom: 10px">
+
+<tr>
+<td valign=3D"top" align=3D"center" style=3D"border: 1px solid #000000;bord=
+er-collapse: collapse;mso-line-height-rule: exactly;"><a href=3D"https://me=
+ssaging.aacc.org/c/11DYyoVrcYEN4im2nnEnWWsBDBISEL" style=3D"border-collapse=
+: collapse;mso-line-height-rule: exactly;" target=3D"_blank" id=3D"LGC_Desk=
+top_Ad_Skyscraper" name=3D"LGC_Desktop_Ad_Skyscraper"><img mc:edit=3D"ad2" =
+src=3D"https://tpc.googlesyndication.com/pimgad/1867536432446025960?" alt=
+=3D"LGC_Desktop_Ad_Skyscraper" width=3D"160" height=3D"600" border=3D"0" st=
+yle=3D"display: block; border: 0px !important; outline: none !important; ma=
+rgin: 0px;" align=3D""></a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr><tr class=3D"amf__mb-none">
+<td valign=3D"top" align=3D"center" style=3D"border-collapse: collapse;mso-=
+line-height-rule: exactly;">
+<table width=3D"728" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"table-layout: fixed;border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;" class=3D"em_wrapper">
+
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding: 20px 0;border-collaps=
+e: collapse;mso-line-height-rule: exactly;" class=3D"em_aside"><a href=3D"h=
+ttps://messaging.aacc.org/c/11DYypp5N2xusF5EOSs426rD4q1GrE" target=3D"_blan=
+k" style=3D"border-collapse: collapse;mso-line-height-rule: exactly;" id=3D=
+"CFA23_Desktop_Ad" name=3D"CFA23_Desktop_Ad"><img mc:edit=3D"ad3" src=3D"ht=
+tps://messaging.aacc.org/i/amf_highroad_solution/project_759/CLN_eTOC_JanFe=
+b_2023/AACc23_CFA_728x90.jpg?size=3D728x90&amp;w=3DBjfs9cylUkIBSUMDPHh2R6ON=
+Pueo" alt=3D"CFA23_Desktop_Ad" width=3D"728" height=3D"90" border=3D"0" sty=
+le=3D"display: block;border: 0 !important;outline: none !important;" class=
+=3D"em_img" /></a></td>
+</tr>
+
+</table>
+</td>
+</tr><tr>
+<td valign=3D"top" class=3D"em_aside" align=3D"center" style=3D"border-coll=
+apse: collapse;mso-line-height-rule: exactly;">
+<table width=3D"620" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"table-layout: fixed;border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;" class=3D"em_wrapper">
+
+<tr>
+<td align=3D"center"  valign=3D"top" class=3D" block" style=3D"border-colla=
+pse: collapse;mso-line-height-rule: exactly;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<!--[if !mso 9]><!--><tr class=3D"amf__dt-none" style=3D"mso-hide:all; disp=
+lay:none; max-height:0; overflow:hidden; width:0; float:left;">
+<td align=3D"" style=3D"padding:20px 0px 10px 0;">
+<span id=3D"switcher" text-=3D"">
+<a href=3D"https://messaging.aacc.org/c/11DYypSKn6qbR1PhgnfK7gqEvekuex" tar=
+get=3D"_blank" style=3D"text-decoration:none;" id=3D"CPP23_Mobile_Ad_Skysca=
+per" name=3D"CPP23_Mobile_Ad_Skyscaper">
+<img src=3D"https://messaging.aacc.org/i/amf_highroad_solution/project_759/=
+CLN_eTOC_JanFeb_2023/AACC-CPP-web-banner-Feb-2023-300x250.jpg?size=3D300x0&=
+amp;w=3DBUHAt2F7Pr0GPaQiu2ValfWfSBqo" class=3D"mobilesize" style=3D"border:=
+none;" alt=3D"CPP23_Mobile_Ad_Skyscaper" width=3D"300">
+</a>
+</span>
+</td>
+</tr><!--<![endif]--><tr>
+<td align=3D"center" valign=3D"top" style=3D"padding: 20px 0 10px;border-bo=
+ttom: 3px solid #cccccc;border-collapse: collapse;mso-line-height-rule: exa=
+ctly;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"border-collapse: collapse;mso-table-lspace: 0px;mso-table-rspace: 0px;=
+">
+
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"border-collapse: collapse;mso-=
+line-height-rule: exactly;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" class=3D"block" width=3D"160" valign=3D"top" style=3D"bo=
+rder-collapse: collapse;mso-line-height-rule: exactly;"><a href=3D"https://=
+messaging.aacc.org/c/11DYyqQ3xebADLiw9mR6hAoHmQW5Oj" target=3D"_blank" styl=
+e=3D"text-decoration: none;border-collapse: collapse;mso-line-height-rule: =
+exactly;" id=3D"Bench_Matters_Image" name=3D"Bench_Matters_Image"><img mc:e=
+dit=3D"image1" src=3D"https://messaging.aacc.org/i/amf_highroad_solution/pr=
+oject_759/CLN_eTOC_JanFeb_2023/iStock-1254347556_eTOC.jpg?size=3D150x150&am=
+p;w=3DBKfGB91Ru8fGJA9V0hL8pwAhlSEU" width=3D"150" height=3D"150" alt=3D"Ben=
+ch Matters Image" border=3D"0" style=3D"display: block;border: 0 !important=
+;outline: none !important;"></a></td>
+<td  class=3D"block">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"right" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tab=
+le-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black22" mc:edit=3D"head1" st=
+yle=3D"padding: 0px 0;border-collapse: collapse;mso-line-height-rule: exact=
+ly;font-family: Arial, sans-serif;font-size: 22px;font-weight: bold;color: =
+#000001;line-height: 28px;"><a href=3D"https://messaging.aacc.org/c/11DYyrj=
+I7i4i2828AREMmKnINFeTBc" target=3D"_blank" style=3D"border-collapse: collap=
+se;mso-line-height-rule: exactly;color: #000001;text-decoration: none;" id=
+=3D"Bench_Matters_QMS" name=3D"Bench_Matters_QMS"><span>Designing a Dynamic=
+ Quality Management System for Point-of-Care Testing</span></a></td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black13" style=3D"padding: 0p=
+x 0;border-collapse: collapse;mso-line-height-rule: exactly;font-family: Ar=
+ial, sans-serif;font-size: 13px;font-weight: bold;color: #666666;line-heigh=
+t: 18px;" mc:edit=3D"text2"><span style=3D"color:#e2a856">Bench Matters</sp=
+an></td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black13" style=3D"padding: 5p=
+x 0;border-collapse: collapse;mso-line-height-rule: exactly;font-family: Ar=
+ial, sans-serif;font-size: 13px;color: #000001;line-height: 18px;" mc:edit=
+=3D"text2">The explosive growth of point-of-care testing menus=E2=80=94and =
+the need for POC teams to oversee testing across many settings=E2=80=94requ=
+ires rapid adaptability and a dynamic quality management system.&nbsp;<span=
+ style=3D"color:#808080">=E2=96=BA</span><a href=3D"https://messaging.aacc.=
+org/c/11DYyrNmHlWZquLL2mssrUmKetxHo5" style=3D"font-size: 11px;font-weight:=
+ bold;color: #666666;text-decoration: none;white-space: nowrap;border-colla=
+pse: collapse;mso-line-height-rule: exactly;" target=3D"_blank">More</a></t=
+d>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr><tr>
+<td align=3D"center" valign=3D"top" style=3D"padding: 20px 0 10px;border-bo=
+ttom: 3px solid #cccccc;border-collapse: collapse;mso-line-height-rule: exa=
+ctly;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"border-collapse: collapse;mso-table-lspace: 0px;mso-table-rspace: 0px;=
+">
+
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"border-collapse: collapse;mso-=
+line-height-rule: exactly;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" class=3D"block" width=3D"160" valign=3D"top" style=3D"bo=
+rder-collapse: collapse;mso-line-height-rule: exactly;"><a href=3D"https://=
+messaging.aacc.org/c/11DYysh1hpPGORvntRg8x4lLFhQvaY" target=3D"_blank" styl=
+e=3D"text-decoration: none;border-collapse: collapse;mso-line-height-rule: =
+exactly;" id=3D"Edward_Chan_Image" name=3D"Edward_Chan_Image"><img mc:edit=
+=3D"image1" src=3D"https://messaging.aacc.org/i/amf_highroad_solution/proje=
+ct_759/CLN_eTOC_JanFeb_2023/Ask_the_Expert_Edward_Chan_eTOC.jpg?size=3D150x=
+150&amp;w=3DBADqePMMkdEvDoaLoYvY6bv-ODM4" width=3D"150" height=3D"150" alt=
+=3D"Edward Chan_Image" border=3D"0" style=3D"display: block;border: 0 !impo=
+rtant;outline: none !important;"></a></td>
+<td  class=3D"block">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"right" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tab=
+le-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black22" mc:edit=3D"head1" st=
+yle=3D"padding: 0px 0;border-collapse: collapse;mso-line-height-rule: exact=
+ly;font-family: Arial, sans-serif;font-size: 22px;font-weight: bold;color: =
+#000001;line-height: 28px;"><a href=3D"https://messaging.aacc.org/c/11DYysK=
+FRtIodeeZVm3OCekN669iXR" target=3D"_blank" style=3D"border-collapse: collap=
+se;mso-line-height-rule: exactly;color: #000001;text-decoration: none;" id=
+=3D"CLN_Ask_the_Expert" name=3D"CLN_Ask_the_Expert"><span>Tips for Adopting=
+ the ICAP Classification for Reporting</span></a></td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black13" style=3D"padding: 0p=
+x 0;border-collapse: collapse;mso-line-height-rule: exactly;font-family: Ar=
+ial, sans-serif;font-size: 13px;font-weight: bold;color: #666666;line-heigh=
+t: 18px;" mc:edit=3D"text2"><span style=3D"color:#005a84">Ask the Expert</s=
+pan></td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black13" style=3D"padding: 5p=
+x 0;border-collapse: collapse;mso-line-height-rule: exactly;font-family: Ar=
+ial, sans-serif;font-size: 13px;color: #000001;line-height: 18px;" mc:edit=
+=3D"text2">Dr. Edward K.L. Chan discusses what labs should know about the&n=
+bsp;International Consensus on ANA Patterns classification for reporting.&n=
+bsp;<span style=3D"color:#808080">=E2=96=BA</span><a href=3D"https://messag=
+ing.aacc.org/c/11DYytekrxB5BAYCmQRuHojOwUs6KK" style=3D"font-size: 11px;fon=
+t-weight: bold;color: #666666;text-decoration: none;white-space: nowrap;bor=
+der-collapse: collapse;mso-line-height-rule: exactly;" target=3D"_blank">Mo=
+re</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr><tr>
+<td align=3D"center" valign=3D"top" class=3D"em_aside" style=3D"border-coll=
+apse: collapse;mso-line-height-rule: exactly;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+
+<tr>
+<td class=3D"em_br">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"padding: 15px 0 5px;border-colla=
+pse: collapse;mso-line-height-rule: exactly;font-family: Arial, sans-serif;=
+font-size: 22px;font-weight: bold;color: #b11f24;line-height: 28px;" class=
+=3D"em_red22" mc:edit=3D"head5">CLN's Laboratory Stewardship Focus</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black12" mc:edit=3D"text9" st=
+yle=3D"border-collapse: collapse;mso-line-height-rule: exactly;font-family:=
+ Arial, sans-serif;font-size: 14px;padding-bottom:15px;line-height: 15px;co=
+lor: #2c0000;">Supported by Seattle Children's Patient-Centered<br>Laborato=
+ry Utilization Guidance Services<br></td>
+</tr>
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr><tr>
+<td align=3D"center" valign=3D"top" style=3D"padding: 20px 0 10px;border-bo=
+ttom: 3px solid #cccccc;border-collapse: collapse;mso-line-height-rule: exa=
+ctly;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"border-collapse: collapse;mso-table-lspace: 0px;mso-table-rspace: 0px;=
+">
+
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"border-collapse: collapse;mso-=
+line-height-rule: exactly;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" class=3D"block" width=3D"160" valign=3D"top" style=3D"bo=
+rder-collapse: collapse;mso-line-height-rule: exactly;"><a href=3D"https://=
+messaging.aacc.org/c/11DYytHZ1BtMZXIeOlFaMyiPXIKUxD" target=3D"_blank" styl=
+e=3D"text-decoration: none;border-collapse: collapse;mso-line-height-rule: =
+exactly;" id=3D"Erin_Chung_Image" name=3D"Erin_Chung_Image"><img mc:edit=3D=
+"image1" src=3D"https://messaging.aacc.org/i/amf_highroad_solution/project_=
+759/CLN_eTOC_JanFeb_2023/Erin_Chung_eTOC.jpg?size=3D150x150&amp;w=3DBS5t_eo=
+jMHpXKKsZPhf_S6N2vTUQ" width=3D"150" height=3D"150" alt=3D"Erin Chung_Image=
+" border=3D"0" style=3D"display: block;border: 0 !important;outline: none !=
+important;"></a></td>
+<td  class=3D"block">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"right" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tab=
+le-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black22" mc:edit=3D"head1" st=
+yle=3D"padding: 0px 0;border-collapse: collapse;mso-line-height-rule: exact=
+ly;font-family: Arial, sans-serif;font-size: 22px;font-weight: bold;color: =
+#000001;line-height: 28px;"><a href=3D"https://messaging.aacc.org/c/11DYyub=
+DBFmuokrRfQsQRIhRox3Ikw" target=3D"_blank" style=3D"border-collapse: collap=
+se;mso-line-height-rule: exactly;color: #000001;text-decoration: none;" id=
+=3D"Lab_Stewardship_NGS" name=3D"Lab_Stewardship_NGS"><span>Three Perspecti=
+ves on Optimizing Next Generation Sequencing for Infectious Diseases</span>=
+</a></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black13" style=3D"padding: 5p=
+x 0;border-collapse: collapse;mso-line-height-rule: exactly;font-family: Ar=
+ial, sans-serif;font-size: 13px;color: #000001;line-height: 18px;" mc:edit=
+=3D"text2">How can clinicians and labs deploy mNGS to maximize diagnostic y=
+ield while minimizing cost? Key stakeholders offer their insights.&nbsp;<sp=
+an style=3D"color:#808080">=E2=96=BA</span><a href=3D"https://messaging.aac=
+c.org/c/11DYyuFibJfbMHbtHlgwWSgSPlmw7p" style=3D"font-size: 11px; font-weig=
+ht: bold; color: rgb(105, 105, 105); text-decoration: none; white-space: no=
+wrap; border-collapse: collapse;" target=3D"_blank">More</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr><tr>
+<td align=3D"center" valign=3D"top" style=3D"padding: 20px 0 10px;border-bo=
+ttom: 3px solid #cccccc;border-collapse: collapse;mso-line-height-rule: exa=
+ctly;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"border-collapse: collapse;mso-table-lspace: 0px;mso-table-rspace: 0px;=
+">
+
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"border-collapse: collapse;mso-=
+line-height-rule: exactly;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" class=3D"block" width=3D"160" valign=3D"top" style=3D"bo=
+rder-collapse: collapse;mso-line-height-rule: exactly;"><a href=3D"https://=
+messaging.aacc.org/c/11DYyv8WLN7Tb3V68Q4d22fUg9FjUi" target=3D"_blank" styl=
+e=3D"text-decoration: none;border-collapse: collapse;mso-line-height-rule: =
+exactly;" id=3D"Tony_Smith_Image" name=3D"Tony_Smith_Image"><img mc:edit=3D=
+"image1" src=3D"https://messaging.aacc.org/i/amf_highroad_solution/project_=
+759/CLN_eTOC_JanFeb_2023/2021_Smith_Tony_eTOC.jpg?size=3D150x150&amp;w=3DBw=
+-uGYdfxG5o0FlPZ7I2xbYiM4T0" width=3D"150" height=3D"150" alt=3D"Tony Smith_=
+Image" border=3D"0" style=3D"display: block;border: 0 !important;outline: n=
+one !important;"></a></td>
+<td  class=3D"block">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"right" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tab=
+le-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black22" mc:edit=3D"head1" st=
+yle=3D"padding: 0px 0;border-collapse: collapse;mso-line-height-rule: exact=
+ly;font-family: Arial, sans-serif;font-size: 22px;font-weight: bold;color: =
+#000001;line-height: 28px;"><a href=3D"https://messaging.aacc.org/c/11DYyw6=
+fVUThXNol1PFzcmdX7MgVu4" target=3D"_blank" style=3D"border-collapse: collap=
+se;mso-line-height-rule: exactly;color: #000001;text-decoration: none;" id=
+=3D"Lab_Stewardship_Governance" name=3D"Lab_Stewardship_Governance"><span>G=
+ood Governance in Laboratory Stewardship: A Roadmap for Success</span></a><=
+/td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" class=3D"em_black13" style=3D"padding: 5p=
+x 0;border-collapse: collapse;mso-line-height-rule: exactly;font-family: Ar=
+ial, sans-serif;font-size: 13px;color: #000001;line-height: 18px;" mc:edit=
+=3D"text2">Building a robust, sustainable, and effective program can be cha=
+llenging, but with the right vision and a strong interdisciplinary stewards=
+hip committee, the impact can be sizeable.&nbsp;<span style=3D"color:#80808=
+0">=E2=96=BA</span><a href=3D"https://messaging.aacc.org/c/11DYywzUvYLZma7X=
+tktfhwcYyAzJgX" style=3D"font-size: 11px;font-weight: bold;color: #666666;t=
+ext-decoration: none;white-space: nowrap;border-collapse: collapse;mso-line=
+-height-rule: exactly;" target=3D"_blank">More</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr><!--[if !mso 9]><!--><tr class=3D"amf__dt-none" style=3D"mso-hide:all;=
+ display:none; max-height:0; overflow:hidden; width:0; float:left;">
+<td align=3D"" style=3D"padding:20px 0px 10px 0;">
+<span id=3D"switcher" text-=3D"">
+<a href=3D"https://messaging.aacc.org/c/11DYyx3z62EGKwRzUPgVmGbZZoSx3Q" tar=
+get=3D"_blank" style=3D"text-decoration:none;" id=3D"Disruptive_Tech_Mobile=
+_Ad" name=3D"Disruptive_Tech_Mobile_Ad">
+<img src=3D"https://messaging.aacc.org/i/amf_highroad_solution/project_759/=
+CLN_eTOC_December_2022/23DTAward_ApplyA_300x250.jpg?size=3D300x0&amp;w=3DBC=
+NyMKtFpyvpQZUlNlvTkaIk2HvQ" class=3D"mobilesize" style=3D"border:none;" alt=
+=3D"Disruptive Tech_Mobile_Ad" width=3D"300">
+</a>
+</span>
+</td>
+</tr><!--<![endif]-->
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+<td align=3D"center" width=3D"200" valign=3D"top" class=3D" block" style=3D=
+"border-collapse: collapse;mso-line-height-rule: exactly;">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"right" cla=
+ss=3D"em_wrapper">
+
+<tr class=3D"amf__mb-none">
+<td align=3D"center" valign=3D"top" style=3D"padding-top: 20px;border-colla=
+pse: collapse;mso-line-height-rule: exactly;" class=3D"em_border">
+<table width=3D"160" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"border-collapse: collapse;mso-table-lspace: 0px;mso-ta=
+ble-rspace: 0px;padding-bottom: 10px">
+
+<tr>
+<td valign=3D"top" align=3D"center" style=3D"border: 1px solid #000000;bord=
+er-collapse: collapse;mso-line-height-rule: exactly;"><a href=3D"https://me=
+ssaging.aacc.org/c/11DYyxxdG6xo8TBcmk4BrQb1qdbkQJ" style=3D"border-collapse=
+: collapse;mso-line-height-rule: exactly;" target=3D"_blank" id=3D"CPP23_De=
+sktop_Ad" name=3D"CPP23_Desktop_Ad"><img mc:edit=3D"ad2" src=3D"https://mes=
+saging.aacc.org/i/amf_highroad_solution/project_759/CLN_eTOC_JanFeb_2023/AA=
+CC-CPP-web-banner-Feb-2023-160x600.jpg?size=3D160x600&amp;w=3DBncqku_YLAJm8=
+8OSalDs0j0wehdA" alt=3D"CPP23_Desktop_Ad" width=3D"160" height=3D"600" bord=
+er=3D"0" style=3D"display: block; border: 0px !important; outline: none !im=
+portant; margin: 0px;" align=3D""></a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr><tr class=3D"amf__mb-none">
+<td valign=3D"top" align=3D"center" style=3D"border-collapse: collapse;mso-=
+line-height-rule: exactly;">
+<table width=3D"728" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"table-layout: fixed;border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;" class=3D"em_wrapper">
+
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding: 20px 0;border-collaps=
+e: collapse;mso-line-height-rule: exactly;" class=3D"em_aside"><a href=3D"h=
+ttps://messaging.aacc.org/c/11DYyy0Sgaq5xgkONOShx0a2R1u8DC" target=3D"_blan=
+k" style=3D"border-collapse: collapse;mso-line-height-rule: exactly;" id=3D=
+"Disruptive_Tech_Desktop_Ad" name=3D"Disruptive_Tech_Desktop_Ad"><img mc:ed=
+it=3D"ad3" src=3D"https://messaging.aacc.org/i/amf_highroad_solution/projec=
+t_759/CLN_eTOC_December_2022/23DisruptTechAward_ApplyA_728x90.jpg?size=3D72=
+8x90&amp;w=3DB3tdlOZNAe617zeJAif3892Dpwxs" alt=3D"Disruptive Tech_Desktop_A=
+d" width=3D"728" height=3D"90" border=3D"0" style=3D"display: block;border:=
+ 0 !important;outline: none !important;" class=3D"em_img" /></a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td valign=3D"top" align=3D"center" style=3D"border-collapse: collapse;mso-=
+line-height-rule: exactly;">
+<table width=3D"620" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"table-layout: fixed;border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;" class=3D"em_wrapper">
+
+<tr>
+<td valign=3D"top" align=3D"center" style=3D"border-collapse: collapse;mso-=
+line-height-rule: exactly;">
+<table width=3D"620" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"table-layout: fixed;border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;" class=3D"em_wrapper">
+
+<tr>
+<td height=3D"2" style=3D"font-size: 0px;line-height: 0px;border-collapse: =
+collapse;mso-line-height-rule: exactly;">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor=3D"#818285" align=3D"center" valign=3D"top" style=3D"padding: 5=
+px 10px 5px;background-color: #818285;border-collapse: collapse;mso-line-he=
+ight-rule: exactly;font-family: Arial, sans-serif;font-size: 14px;font-weig=
+ht: bold;color: #FFFFFF;line-height: 18px;" class=3D"em_footer2" mc:edit=3D=
+"ftr2"><a href=3D"https://messaging.aacc.org/c/11DYyyuwQeiMVD4rfjFXCa94hPMW=
+qv" style=3D"border-collapse: collapse;mso-line-height-rule: exactly; color=
+: #FFFFFF;text-decoration: none;" target=3D"_blank">Subscribe</a>&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;<a href=3D"https://messaging.aacc.org/c/11DYyyYbqibujZO=
+3GOtDHk85IE5Kdo" style=3D"border-collapse: collapse;mso-line-height-rule: e=
+xactly;color: #FFFFFF;text-decoration: none;" target=3D"_blank">CLN Archive=
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D"https://messaging.aacc.org/c/1=
+1DYyzrQ0m4bImxG8jhjMu779soy0h" style=3D"border-collapse: collapse;mso-line-=
+height-rule: exactly;color: #FFFFFF;text-decoration: none;" target=3D"_blan=
+k">Advertise</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D"https://messaging.=
+aacc.org/c/11DYyzVuApWT6JhizO4ZRE68AgHlNa" style=3D"border-collapse: collap=
+se;mso-line-height-rule: exactly;color: #FFFFFF;text-decoration: none;" tar=
+get=3D"_blank">Follow CLN</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D"https=
+://messaging.aacc.org/c/11DYyAp9atPAv60V1iSFWO5a1509A3" style=3D"border-col=
+lapse: collapse;mso-line-height-rule: exactly;color: #FFFFFF;text-decoratio=
+n: none;" target=3D"_blank">Digital Edition</a></td>
+</tr>
+<tr>
+<td height=3D"15" style=3D"background-color:white"><img src=3D"http://echo4=
+.bluehornet.com/cimages/05ab12f449c3f992f43b63fd1f3f7c61/spacer.png?1399058=
+844" width=3D"1" height=3D"15" border=3D"0" style=3D"display: block; margin=
+: 0; padding: 0;" alt=3D"" /></td>
+</tr>
+<tr>
+<td  bgcolor=3D"#818486" align=3D"left" valign=3D"top" style=3D"padding: 10=
+px 10px 20px;background-color: #818486;border-collapse: collapse;mso-line-h=
+eight-rule: exactly;font-family: Arial, sans-serif;font-size: 11px;font-wei=
+ght: bold;color: #FFFFFF;line-height: 18px;" class=3D"em_footer1" mc:edit=
+=3D"ftr3">
+<table width=3D"400" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-table=
+-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"left" style=3D"padding: 10px 10px 20px;background-color: #8184=
+86;border-collapse: collapse;mso-line-height-rule: exactly;font-family: Ari=
+al, sans-serif;font-size: 11px;font-weight: bold;color: #FFFFFF;line-height=
+: 18px;">Clinical Laboratory News<br>
+An AACC Publication<br>
+AACC<br>
+900 Seventh Street, NW Suite 400 Washington, DC 20001<br>
+<a target=3D"_blank" href=3D"https://messaging.aacc.org/c/11DYyGCEJiiGBRzYM=
+Liv1TSsDCWAPA" style=3D"border-collapse: collapse;mso-line-height-rule: exa=
+ctly;color: #FFFFFF;text-decoration: none;">www.aacc.org</a><br>
+Phone: <a href=3D"tel:12028570717 " style=3D"border-collapse: collapse;mso-=
+line-height-rule: exactly;color: #FFFFFF;text-decoration: none;">+1.202.857=
+.0717 </a> or Fax: <a href=3D"tel:2028875093" style=3D"border-collapse: col=
+lapse;mso-line-height-rule: exactly;color: #FFFFFF;text-decoration: none;">=
++1.202.887.5093</a><br></td>
+</tr>
+
+</table>
+<table width=3D"162" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"right" class=3D"em_wrapper" style=3D"border-collapse: collapse;mso-tabl=
+e-lspace: 0px;mso-table-rspace: 0px;">
+
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px 0;border-collapse=
+: collapse;mso-line-height-rule: exactly;" class=3D"em_border">
+<table width=3D"162" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"border-collapse: collapse;mso-table-lspace: 0px;mso-ta=
+ble-rspace: 0px;" class=3D"tblcntr">
+
+<tr>
+<td valign=3D"top" align=3D"right" style=3D"border-collapse: collapse;mso-l=
+ine-height-rule: exactly;"><img src=3D"http://echo4.bluehornet.com/cimages/=
+05ab12f449c3f992f43b63fd1f3f7c61/AACCFinalStackedwhite160.png" width=3D"160=
+" height=3D"61" alt=3D"" style=3D"border: none;" /></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+<html dir=3D"ltr">
+    <head>
+        <title></title>
+    <style type=3D"text/css">
+@media only screen and (max-width:599px) {
+.amf__mb-none { display: none !important; }=20
+.amf__dt-none,.amf__dt-none-img {display: block !important; max-height: non=
+e !important; overflow: visible !important;}
+table.amf__dt-none {display:table !important;}
+tr.amf__dt-none {display:table-row !important;}
+th.amf__dt-none,td.amf__dt-none {display:table-cell !important;}
+.amf__dt-none {float: none !important; width: auto !important;}
+.amf__dt-none-img {height: auto !important; width: 100% !important;}
+}
+</style></head>
+    <body>=09=09=09=09=09
+<p><font size=3D"1" face=3D"Verdana, Arial, Helvetica, sans-serif" color=3D=
+"#999999">
+						This message was intended for: <a href=3D"mailto:rvairavan@caldonbiot=
+ech.com">rvairavan@caldonbiotech.com</a>
+							<br />
+        American Association For Clinical Chemistry<br />
+        900 Seventh Street, NW Suite 400 | Washington DC 20001&nbsp;<br />
+        202.857.0717   | Fax: 202.887.5093 | <a href=3D"https://messaging.a=
+acc.org/c/11DYyH6jjmbo0ejBeg6b73Ru4rfoCt">www.aacc.org</a>
+							<br />
+							<br />
+							<a href=3D"https://messaging.aacc.org/c/11DYyHzXTq45oB3dFKTRcdQvvfyc=
+pm">Manage your e-communications or unsubscribe</a></font>
+					</p>
+    <!--[if lt mso 12]><img src=3D"https://messaging.aacc.org/r/1uRlEWWtfYC=
+o5mDIiB.png?c=3D1" alt=3D""><![endif]--><![if gt mso 11]><img src=3D"https:=
+//messaging.aacc.org/r/1uRlEWWtfYCo5mDIiB.png" alt=3D""><![endif]>
+</body>
+</html></body>
+</html>=
+
+----12154CAF97CA23F86B047C90BC737A--

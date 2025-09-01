@@ -1,0 +1,438 @@
+Return-Path: <Star.Johnson@fda.hhs.gov>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id aG6lBkDiKWOEhQ0A7/vpDg
+	(envelope-from <Star.Johnson@fda.hhs.gov>)
+	for <rvairavan@caldonbiotech.com>; Tue, 20 Sep 2022 10:54:40 -0500
+Return-path: <Star.Johnson@fda.hhs.gov>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Tue, 20 Sep 2022 10:54:40 -0500
+Received: from smtp6.fda.gov ([150.148.19.43]:45648)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <Star.Johnson@fda.hhs.gov>)
+	id 1oafa2-003iUr-SY
+	for rvairavan@caldonbiotech.com;
+	Tue, 20 Sep 2022 10:54:40 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+  d=fda.hhs.gov; i=@fda.hhs.gov; q=dns/txt; s=selector02;
+  t=1663689280; x=1695225280;
+  h=from:to:subject:date:message-id:mime-version;
+  bh=wDGGDtGxj3QTI5Tfm0rNTQ285mj3cVH5yUZohgM7FtQ=;
+  b=Rx/sFJoHXiz4JZqZFOJbokoH1Ky7SLDXbCXJmKyHbiXskJK1MVYvsdqj
+   8pqQBY5VO6HDWj0KuxU8YnVBRndpjbPMMNxC39U5B9MuAVZCW+fR5LhFM
+   mk4gmRhdwl/ogmUCdWuXS0QdG0Jr/8uQy9CAIbefuiNQDIaDepVdlpFOp
+   eqYydsjNdzH8A6ZEXqQrB5yo5e9+G7imT7npcGzI2VVmsPRphom1AGxZc
+   UomUPlGfsTDU7at1gdxDpjoiWPBBIccequrd6ToE8OwcNlmI12b0+a5jj
+   Ab0c/qkNDAGMoK+PQWEetAGEXp/nsAG2BvpXQhMN3nWB38x/+vx5rg7Gz
+   w==;
+IronPort-SDR: NBPdXqCGzBJ/dPXluzxXiaVrYnPRKPpz6sP3d/SxQjK5uhPJBBczHmomfEGiBiG1wtXWUJhyq1
+ aEs89e+heP7yYhS9aU+QGFRxjYgSC1/iY=
+X-IPAS-Result: =?us-ascii?q?A2FJAwB44Slj/ygruQpXAx4BAQsSDEAJgTsLgSFbKH8Cg?=
+ =?us-ascii?q?ViVY5BphWSFGoEsFIERAxg8CwEBAQ0BATsHBAEBAwSEOUUChGwmNAkOAQIEA?=
+ =?us-ascii?q?QEBAQMCAwEBAQEBAQMBAQEFAQEBAQEBBgMBAgKBMmRog0MKNQEMg1NKAzsBA?=
+ =?us-ascii?q?QEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEFAoEIHlMTAQE4E?=
+ =?us-ascii?q?QEVMjkUEgEEEwgXghJNghZXAzATrDiBNBpngggBAQYEBIURGII4CQkBgTOBZ?=
+ =?us-ascii?q?oFLhReDNYQqgg1DgRVDhXAXAwEYgREBEgEjNBGDR4Iug3GBPiODN49zBzcDR?=
+ =?us-ascii?q?B1BAwt2AxUDFAMFJAcDGQ8jDQ0EHQwDAwUlAwICGwcCAgMCBhMFAgJNOAgEC?=
+ =?us-ascii?q?AQrJA8FAgcvBQQvAh4EBQYRCAIWAgYEBAQEFQIQCAIIJhcHEzMZAQVZEAkhH?=
+ =?us-ascii?q?CgNBQYTAyBvBUUPKDJrKx0bCoEMKigVAwQEAwIGEwMDIgIQKjEUBCkTEi0HK?=
+ =?us-ascii?q?3MJAgMibAMDBCgdDwMJIAQcBygmPAdYPwMDECI9BgMJAwIkW4EwKAUDDRkmC?=
+ =?us-ascii?q?AU5HgQIPAIFBphYggsHFicjLit0F0MEGAQVAo1MhTwLAQ0djUyEC4oIkyIHA?=
+ =?us-ascii?q?4NWmSuHJBaDdoxQhksDkXCHL49bIIIqi3WYfQICAgIEBQIOCIFhgQMjcCsKQ?=
+ =?us-ascii?q?SkhgmcJRQECAQINAQICAwECAQKOKgwWg1CBf4hfdQIBNQMCBgsBAQMJihwBX?=
+ =?us-ascii?q?QEB?=
+IronPort-PHdr: A9a23:wXi+1xOpYEQDKkB8DkAl6ncNWUAX0o4cdiYZ6Zsi3rRJdKnrv5HvJ
+ 1fW6vgliljVFZ7a5PRJh6uz0ejgVGUM7IzHvCUEd5pBBBMAgN8dygonBsPNAEbnLfnsOio9G
+ skKVFJs83yhd0ZPH8OraVHb5H2y9ngdHQusXTc=
+IronPort-Data: A9a23:Ui0ZuKKnRkEKW44FFE+ReJQlxSXFcZb7ZxGr2PjKsXjdYENS0DADz
+ mAaXm7QPP6CYWP2KdslYYrj8xgBuJDRnN41G1RorCE8RH9jl5HIVI+TRqvS04N+DSFhoGZPt
+ Zh2hgzodZhsJpPkS5PE3oHJ9RGQ74nRLlbHILOCa3sZqTNMEn9700oywbZh2OaEvPDga++zk
+ YKqyyHgEAfNNw5cagr4PIra9XuDFNyr0N8plgRWicJj5DcypFFMZH4rHpxdGlOjKmVi8kxWc
+ M6YpF2x1juxEx7AkbpJmJ6jGqEBaua60QRjFhO68kVt6/RPjnVa70o1CBYTQW132iXVo4lN8
+ +pEjL+/GTx5PpDGu81IBnG0EwkmVUFH0JHrGkeB6pTClxWAfXflhfppEinaP6VBoqAuUTwIq
+ adedGhlghOr3opaxJqAVuB2wOYkLM/wO4U3tH1pizHZFrApRo6rr6Div4MDg29r25AUdRrYT
+ 8cWTwZKdibcWB5OGXsrELlmhr+NhGaqJlW0r3rQ/8Lb+VP71hJ40aLkLtPTUteDQclSmEyZo
+ X7L9GS/CRYfXOFz0hLcqjT11rKJwXi9BNp6+KCEy8OGSWa7ngQ7YCD6n3PgyRVgokLhCd9ZN
+ WIO/S8i8fo7+ECxF4CvURGx5n6EpVgTXMQJS7827wSEy6z15QeFBzFYH2AbN4F87Jc7FW4wy
+ 1uEv9L1Hjgz4rebfnSQq+WPpjSoNClJcGIPPHdWTQYM79T5jps0ixbDEoRqHKKv14SnFz35h
+ TCKt24xgKtK1ZwH0KCy/FbmhTOwp8GVH1BvuViNBjqot1orapSkaoqk7UngwcxBdIvJHEOcu
+ HUkmtSF6LxcB5+6kiHQEv4GG6uk5qrYPTDR3QxvEp0m+2j/8nKvZ9kAsh9SH3hXaZ5VIWevb
+ kPa/wxW+sYLbnetaKZ2ZaO3CtgrlPSxS466C6qMNtceMIJscAKn/T11YRLC1W7alkVxw7o0P
+ o2WcJrxAHsXYUi9IOFamwvAPWcX+x0D
+IronPort-HdrOrdr: A9a23:hReJ1KAVvmNiYcPlHeh+sceALOsnbusQ8zAXPh9KJCC9I/bzqy
+ nxpp8mPH7P+VAssRQb9exoV5PwJU80maQFg7X5Xo3SPzUO2lHYVb2KhLGKq1KPexEWntQtrZ
+ uIGJIOb+EYY2IK6PoS1DPIaOrIjeP3g5yAtKP79TNAXAtqY6Zv40NQDRuaKFR/QE1jCYAiHJ
+ SRy8Jbr374EE5nG/iTNz0gZazuttfLnJXpbVovAAMm0hCHiXeN5KThGxaV8x8CW3dkwKsk80
+ LCjwvlj5/Twc2T+1v57Sv+/p5WkNzuxp9qA9GNsNEcLnHWhgOhdO1aKsO/VGRemoCSwWdvtO
+ OJjwYrPsx15X+UVHqyuwHR1w7p1ytrw2P+yHeD6EGT6vDRdXYfMY5slIhZehzW5w4Lp9dnyp
+ 9G2Gqfqt5+EQ7ApiLg/NLFPisa3HZcmUBS3NL7skYvGLf2KYUh27D3xXklZ6voyRiKoLzOE4
+ FVfb7hDbhtAB+nhkvizxVSKeyXLwkO9yi9MzI/U+yuoklrdSNCvjslLYok7wM9yK4=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-AV: E=Sophos;i="5.93,331,1654574400"; 
+   d="scan'208,217";a="243703582"
+Received: from unknown (HELO FDSWV30900.fda.gov) ([10.185.43.40])
+  by ironport6.fda.gov with ESMTP/TLS/DHE-RSA-AES256-GCM-SHA384; 20 Sep 2022 11:54:25 -0400
+Received: from FDSWV09481.fda.gov (10.168.16.140) by FDSWV30900.fda.gov
+ (10.185.43.40) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.2.1118.12; Tue, 20 Sep
+ 2022 11:54:24 -0400
+Received: from GCC02-BL0-obe.outbound.protection.outlook.com (10.0.19.33) by
+ FDSWV09481.fda.gov (10.168.16.140) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.2.1118.12 via Frontend Transport; Tue, 20 Sep 2022 11:54:24 -0400
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=NAgMb886f6hhVY0VK324KP5++85TNGlYtlRs0d0xFfpfXm2qc0l37jFVd4Ji5vdiPjIEWwpuosBoOKJAf8qIOh/ReFYOvJFySlDzJ9E8WQc77WA6k5RbK+MCKMqNQMpr0C3/ymhZyaZ8lDRmaDuOrGWQJLr9slcGUawE1d528GNj1WLSlavuxbre+zZoirTsfMd9XjgSdHJuq3xSqMAIvOYXNxVqwtySTWnFM0VuxY6/U42NJC7ObaHcQePHyuaAa4x7nKg77PCpjWhPG3wi2nB6wt88FkQxcl6bbjFOJnW/CE1oGkbKOrHVtvmGH4xQTL5+oF4X/EQYQS7eH4wm+Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=wDGGDtGxj3QTI5Tfm0rNTQ285mj3cVH5yUZohgM7FtQ=;
+ b=F0H9VCjs6jO7hwEX3jp8aFK+lo6VDumArSPpErL/H2ee16inGynhOFJb/hfHdNfp9/ZGWFYJ3scsXWkYJN1CCkOun+65qfS9YcqQe4yAURtTfP1vlLAQyTNXhNrV3fhgYOvTuz6xMx9NN3zh1GXR6Jmdt7pbemmTp2I7kNIdhl8WsOlCG5ry1Bvgq7kAq1NAS04mVzminmdCy4AayPtugp+gIwopy2Q0DgAvScwa8pMnWc/ETOj0RYK6SGmO0jaG8koe9BBLpxTIaDk70R12TBpxjzSrbUgfPWR5OX+9a4Zg9G/z2FomxrM6KhKp4zKuaMDCtoDka0CDH5lfy4Gtxw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=fda.hhs.gov; dmarc=pass action=none header.from=fda.hhs.gov;
+ dkim=pass header.d=fda.hhs.gov; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=FDA.onmicrosoft.com;
+ s=selector2-FDA-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=wDGGDtGxj3QTI5Tfm0rNTQ285mj3cVH5yUZohgM7FtQ=;
+ b=t1V0uyfly2m/5Akjul+m1NuQZqhqbK/islH0NwvNR5FUmt9l9OH+hwMGsCG9+UOcraKrkST0TDVi1h5lBov1z2HO4hoKluSWG1dd8OTmX5riP9pJeiCgLOmfvdN9T+Q4xUJbcBbr5rGptW6YcymrYk4TasHRlDmVmIpCKaGGSNE=
+Received: from SA0PR09MB7227.namprd09.prod.outlook.com (2603:10b6:806:a8::22)
+ by SJ0PR09MB6158.namprd09.prod.outlook.com (2603:10b6:a03:269::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5632.17; Tue, 20 Sep
+ 2022 15:54:23 +0000
+Received: from SA0PR09MB7227.namprd09.prod.outlook.com
+ ([fe80::d188:c2a2:44d7:3576]) by SA0PR09MB7227.namprd09.prod.outlook.com
+ ([fe80::d188:c2a2:44d7:3576%6]) with mapi id 15.20.5632.021; Tue, 20 Sep 2022
+ 15:54:23 +0000
+From: "Johnson, T. Star" <Star.Johnson@fda.hhs.gov>
+To: "rvairavan@caldonbiotech.com" <rvairavan@caldonbiotech.com>
+Subject: FDA Expired Device Registration
+Thread-Topic: FDA Expired Device Registration
+Thread-Index: AdjNCJ9iLdoQdysuQeG8d85p4m9nDg==
+Date: Tue, 20 Sep 2022 15:54:09 +0000
+Message-ID: <SA0PR09MB72275D57910982B2C9706183DF4C9@SA0PR09MB7227.namprd09.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=fda.hhs.gov;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SA0PR09MB7227:EE_|SJ0PR09MB6158:EE_
+x-ms-office365-filtering-correlation-id: b13f0b4c-d308-44ae-3196-08da9b20632b
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: xSm+e9f8IO219QtVqAP/4cXryr5NbV73cwP3Lxyb1aIEurJ7y45WO0e6nnl01BF0aahZuoQuHUb7TWlJi6A3LZ2InAWGe1hxoJcbE138hP31Cm0aWqmAFJmZEgBtZPkw3S4eNu+s9u5iqea27LChXJQabr8AYfClfb6r9JHZmi9nBH5gff3s2tudyhgifOY0ZEhEmD1RP7JocwnRmZBlEPVZxkcaAYiD5YJDOUHHzsy6gOPdCFpJoU4T0vPY+4ihnE6uORn3QMBU4yyU5zOrVjJleIOrl+ookwcTUqwkArNLffQmuu8cC5iX6pPBMNO44gZgOG9eIlWca/02NckNasrp5sidstPyX91GWEAqU1mHfcc4HLR8Pjg2L+/gfW39GlvBNI1UxxidXjiyHYZXLaiqtVUnujBloGILCv2DJ2mruo2W+5bfZxQuwK/9ImITDUcWpNwv7JCXaiUbTv8QkyOIX9NWuEg0rE5y3k6ZlffZEbPNupIVcJNPHWiit6D4U7Wb2RPNje9IjNNXnQWJjeIVzaIwknAWBcJBLE5MuChPVX6xUg+O8TzEHadUQnuO19J9PWQKGtDq0Fwmkb0KNhCyKlPL4UtFg0zPKEY0VjpvSshYpMpNwFBZME15WP9KjWfLKqi1HNFd00pzQnFbpUhamoyiQP9IJ89ikxXC1Y3gpmBhc72LDFr0sW4NyLGe4SB3XahdZiP8fm3VgagG36KJ2xICxA3NwVEeyACE1gDwjfA9dtsBA4nsOvmRMVsRpv4u8J27b3LbWTpNCOuapcFDEWSDUuqclQ2NgD5dnZg=
+x-forefront-antispam-report: CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SA0PR09MB7227.namprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230022)(366004)(451199015)(2906002)(38070700005)(7696005)(3480700007)(66446008)(66946007)(6506007)(64756008)(6666004)(55016003)(33656002)(76116006)(8676002)(83380400001)(6916009)(66476007)(52536014)(40140700001)(498600001)(5660300002)(186003)(8936002)(71200400001)(66556008)(86362001)(38100700002)(26005)(9686003)(166002)(122000001)(82960400001);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: =?us-ascii?Q?lMH2oq/2jLmzfexGAaaQl76ak/PZzIgpFf+D2vVYLxURmEiOkhudjDhkf7HV?=
+ =?us-ascii?Q?FH5MIUWK4HMF5beI8g/qJg6/VowVa6nmlaSBB/nq2iifdvzfR32xg85gaT27?=
+ =?us-ascii?Q?FSCHURrvZjRlpm8gFZK/HGzpQYRQKMiZc9EIvO//dhdXbKwbIi0xbaxrDSZm?=
+ =?us-ascii?Q?KJDlwrYUhGupoa0AJtksrX0SzD7SxRgRjYoaDAKLCL811OdoKcpOTe5y+ZlZ?=
+ =?us-ascii?Q?4cPGWfBpkCrQic9ifrJ+3xBs6Mt0mJKepUSKddImimBrSJt4RbqIGJjac9Eb?=
+ =?us-ascii?Q?mC+r4EgBF586p0UX1dovmo+BrovVGzRa6RqFBw/qIRi4hy0+SO9//7Fujkp8?=
+ =?us-ascii?Q?3Eq+bepAZGqV+jwRR1Lv0ZTNx2NVlDA16jroOcOwPuUbOMQPQ1oOLJ8GrxqR?=
+ =?us-ascii?Q?y2s7to1Eo9IB2kbaRy0+jwoHkahF8okgkonbL+Gfe+0HEcNUCToJnUJv0YDi?=
+ =?us-ascii?Q?gCWMP0hz69gIQ96sNdTCcf2EXWAGLVnOxD4gwlWQvo0oCkg1z/k9ZH8VtDg8?=
+ =?us-ascii?Q?4af1lid5jEBHZ6KWB7y2Wl8BFyzYRPpMtX8TPtS7irw9VOmG79At8QQGgz0R?=
+ =?us-ascii?Q?kvmKGqhpWcxE/3GBWDXJdw4yWdWoyCai9k+oZa7i4cj3X7oD5wqNO91HncQH?=
+ =?us-ascii?Q?lhHidQEWHqOVs3o3YemGneslg416arAGu+25zOSfNKoRlt8uq9CuMxPNlccB?=
+ =?us-ascii?Q?YJNIaVn6cVRA7jaZHhVFwpv0elEAfuKg+oPe/54L2tUndN60gsMV8ZOMpGk+?=
+ =?us-ascii?Q?w7deBv5bWd+qJaEzeqa7ClKQoGNEUQasyTpy5i6MqCOwidtJEvY2YDN+8Cgb?=
+ =?us-ascii?Q?ak5RLyB+Ja6a1QHOlslXwrIUpo4QUDSfUvjniJMD/+q3VnSNqS5IAkE9QPU6?=
+ =?us-ascii?Q?b7R//QhdBBIMW/CQhGpoHUJKVFoZQNlrOfcSZIEhrXxjbeam1OnA0YkrDvtu?=
+ =?us-ascii?Q?Sm0MO/IwEomQGKkDtab7NC5lhjil1X4cgcdMgARLTJ+XOxOvWVXRvn8Il2KR?=
+ =?us-ascii?Q?Udv4G5739UpJFGC/O9k3FJuC+0W1m9VjLuPV4Ry3fSnTKmKvgJ/4S6l3gN7r?=
+ =?us-ascii?Q?LB3vtL0lMBpW4ep1eBZyteFAXBep06k/oKMqBcLAj7qxyRIxAn6OXC8bRh8J?=
+ =?us-ascii?Q?H3+siAE0Xgm/Bxt5urIwXWOC35HdMCUcOLJimUkybWXsv/x6SsxjOrYNhb9s?=
+ =?us-ascii?Q?ShRkuVlZLK0OmsUfkts6CP6awaoMpoJlcTm3dASXq/rVw4X1S6V1UhPkU/QU?=
+ =?us-ascii?Q?xOFh+QVdgP+qGZSzfSR2H9I0t4KYTThRnfkp9LC6makPattIJqwHnEs2F/Ta?=
+ =?us-ascii?Q?PiSZ/MxSmxaCVg727tGxaYr2BB0SHD5cS84XfATX3cBZao9tmF60j4Fn+bJh?=
+ =?us-ascii?Q?MOYSP9hrguhYXcuHrlONYJkjM1EgB5z8B1aUChNJdbgrU/udWe/xpPQdKiAF?=
+ =?us-ascii?Q?F+TJCjfVtLSCVy4vzZVUiDjy6Tq+JEDgpgv5XFU01v6nE+eP2sKKdkQuQYH5?=
+ =?us-ascii?Q?uV0FVPOh5n9+MwE05+a9JkU5bkwe23Lg04sv5OhweY+fGgu5p5smeE1MPw57?=
+ =?us-ascii?Q?eG3QvIhCf7+mTYrRH6r+aUyaarClFsTZFCUUX9Pi?=
+Content-Type: multipart/alternative;
+	boundary="_000_SA0PR09MB72275D57910982B2C9706183DF4C9SA0PR09MB7227namp_"
+MIME-Version: 1.0
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SA0PR09MB7227.namprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: b13f0b4c-d308-44ae-3196-08da9b20632b
+X-MS-Exchange-CrossTenant-originalarrivaltime: 20 Sep 2022 15:54:09.4165
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 7d2fdb41-339c-4257-87f2-a665730b31fc
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR09MB6158
+X-OriginatorOrg: fda.hhs.gov
+X-Spam-Status: No, score=-16.5
+X-Spam-Score: -164
+X-Spam-Bar: ----------------
+X-Spam-Flag: NO
+
+--_000_SA0PR09MB72275D57910982B2C9706183DF4C9SA0PR09MB7227namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+This is a courtesy reminder. Our records indicate that the annual medical d=
+evice registration of your facility:
+
+Caldon Biotech Inc.
+1600 Faraday Ave
+Carlsbad, CA 92008-7313
+
+expired some time ago and is not current.  The FDA Establishment Identifier=
+ (FEI) on file for your facility is 3002147128.  Please reply to this email=
+ to let me know if this firm is still in business or if the firm's business=
+ operations or products have changed which would impact the need for an upd=
+ated registration.  And, if so, please briefly describe the firm's operatio=
+ns.  I will update our records accordingly.
+
+Establishments that are involved in the production and distribution of medi=
+cal devices intended for commercial distribution in the United States (U.S.=
+) are required to register annually with the FDA. Most establishments that =
+are required to register are also required to list the devices and the acti=
+vities performed on those devices at that establishment (Title 21 CFR Part =
+807<http://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfcfr/CFRSearch.cfm?C=
+FRPart=3D807>).  See Who Must Register and List<http://www.fda.gov/MedicalD=
+evices/DeviceRegulationandGuidance/HowtoMarketYourDevice/RegistrationandLis=
+ting/ucm053165.htm>, When to Register and List<http://www.fda.gov/MedicalDe=
+vices/DeviceRegulationandGuidance/HowtoMarketYourDevice/RegistrationandList=
+ing/ucm053181.htm>, and How to Register and List<http://www.fda.gov/Medical=
+Devices/DeviceRegulationandGuidance/HowtoMarketYourDevice/RegistrationandLi=
+sting/ucm053185.htm>.
+
+The renewal period for 2023 will begin on October 1, 2022.  Alternatively, =
+please let me know if the firm's business operations or products have chang=
+ed which would impact the need for an updated registration.
+
+If you're receiving this message and you have paid the userfees, it is poss=
+ible the next step in the registration process could have been missed.  Aft=
+er processing the payment, the PIN-PCN set of numbers need to be entered in=
+to the registration system to complete the registration. Your registration =
+won't show as current/active until those numbers are put in.
+
+If you have very recently provided an annual updated registration to CDRH, =
+it may not be reflected in their database as of yet, and I apologize for an=
+y confusion.  If this is the case, please let me know.  For more specific m=
+edical device registration information, please visit the FDA website at: Me=
+dical Device Registration System<http://www.fda.gov/MedicalDevices/DeviceRe=
+gulationandGuidance/HowtoMarketYourDevice/RegistrationandListing/ucm053156.=
+htm>, CDRH at 301-796-7400, or reglist@cdrh.fda.gov<mailto:reglist@cdrh.fda=
+.gov>.  Thank you for your attention to this.
+
+
+
+Star Johnson  (she/her)
+Program Analyst/OEI Coordinator
+Office of Regulatory Affairs
+Office of Medical Device and Radiological Health Operations
+(OMDRHO)Division 3
+U.S. Food and Drug Administration
+T: 913-495-5132
+star.johnson@fda.hhs.gov<mailto:star.johnson@fda.hhs.gov>
+
+
+--_000_SA0PR09MB72275D57910982B2C9706183DF4C9SA0PR09MB7227namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple" style=3D"word-wrap:brea=
+k-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Times New Roman&quo=
+t;,serif">This is a courtesy reminder. Our records indicate that the annual=
+ medical device registration of your facility:
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Times New Roman&quo=
+t;,serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><b><u><span style=3D"font=
+-family:&quot;Times New Roman&quot;,serif">Caldon Biotech Inc.<o:p></o:p></=
+span></u></b></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><b><u><span style=3D"font=
+-family:&quot;Times New Roman&quot;,serif">1600 Faraday Ave<o:p></o:p></spa=
+n></u></b></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in"><b><u><span style=3D"font=
+-family:&quot;Times New Roman&quot;,serif">Carlsbad, CA 92008-7313&nbsp;<o:=
+p></o:p></span></u></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Times New Roman&quo=
+t;,serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Times New Roman&quo=
+t;,serif">expired some time ago and is not current. &nbsp;The FDA Establish=
+ment Identifier (FEI) on file for your facility is
+<b><u>3002147128</u></b>. &nbsp;Please reply to this email to let me know i=
+f this firm is still in business or if the firm&#8217;s business operations=
+ or products have changed which would impact the need for an updated regist=
+ration.&nbsp; And, if so, please briefly describe
+ the firm&#8217;s operations.&nbsp; I will update our records accordingly.<=
+o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Times New Roman&quo=
+t;,serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN" style=3D"font-family:&quot;Times N=
+ew Roman&quot;,serif">Establishments that are involved in the production an=
+d distribution of medical devices intended for commercial distribution in t=
+he United States (U.S.) are required to register
+ annually with the FDA. Most establishments that are required to register a=
+re also required to list the devices and the activities performed on those =
+devices at that establishment
+<span style=3D"color:#333333">(</span></span><a href=3D"http://www.accessda=
+ta.fda.gov/scripts/cdrh/cfdocs/cfcfr/CFRSearch.cfm?CFRPart=3D807" target=3D=
+"_blank"><span lang=3D"EN" style=3D"font-family:&quot;Times New Roman&quot;=
+,serif">Title 21 CFR Part 807</span></a><span lang=3D"EN" style=3D"font-fam=
+ily:&quot;Times New Roman&quot;,serif;color:#333333">).&nbsp;
+</span><span lang=3D"EN" style=3D"font-family:&quot;Times New Roman&quot;,s=
+erif">See<span style=3D"color:#333333">
+</span></span><a href=3D"http://www.fda.gov/MedicalDevices/DeviceRegulation=
+andGuidance/HowtoMarketYourDevice/RegistrationandListing/ucm053165.htm"><sp=
+an style=3D"font-family:&quot;Times New Roman&quot;,serif">Who Must Registe=
+r and List</span></a><span style=3D"font-family:&quot;Times New Roman&quot;=
+,serif">,
+</span><a href=3D"http://www.fda.gov/MedicalDevices/DeviceRegulationandGuid=
+ance/HowtoMarketYourDevice/RegistrationandListing/ucm053181.htm"><span styl=
+e=3D"font-family:&quot;Times New Roman&quot;,serif">When to Register and Li=
+st</span></a><span style=3D"font-family:&quot;Times New Roman&quot;,serif">=
+,
+ and </span><a href=3D"http://www.fda.gov/MedicalDevices/DeviceRegulationan=
+dGuidance/HowtoMarketYourDevice/RegistrationandListing/ucm053185.htm"><span=
+ style=3D"font-family:&quot;Times New Roman&quot;,serif">How to Register an=
+d List</span></a><span style=3D"font-family:&quot;Times New Roman&quot;,ser=
+if">.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Times New Roman&quo=
+t;,serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ti=
+mes New Roman&quot;,serif">The renewal period for 2023 will begin on Octobe=
+r 1, 2022.&nbsp; Alternatively, please let me know if the firm&#8217;s busi=
+ness operations or products have changed which would impact
+ the need for an updated registration.</span><span style=3D"font-size:12.0p=
+t;font-family:&quot;Times New Roman&quot;,serif"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ti=
+mes New Roman&quot;,serif">If you&#8217;re receiving this message and you h=
+ave paid the userfees, it is possible the next step in the registration pro=
+cess could have been missed. &nbsp;After processing the payment,
+ the PIN-PCN set of numbers need to be entered into the registration system=
+ to complete the registration. Your registration won&#8217;t show as curren=
+t/active until those numbers are put in.&nbsp;
+</span><span style=3D"font-size:12.0pt;font-family:&quot;Arial&quot;,sans-s=
+erif"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Times New Roman&quo=
+t;,serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Times New Roman&quo=
+t;,serif">If you have very recently provided an annual updated registration=
+ to CDRH, it may not be reflected in their database as of yet, and I apolog=
+ize for any confusion.&nbsp; If this is the case, please
+ let me know.&nbsp; For more specific medical device registration informati=
+on, please visit the FDA website at:
+</span><a href=3D"http://www.fda.gov/MedicalDevices/DeviceRegulationandGuid=
+ance/HowtoMarketYourDevice/RegistrationandListing/ucm053156.htm"><span styl=
+e=3D"font-family:&quot;Times New Roman&quot;,serif">Medical Device Registra=
+tion System</span></a><span style=3D"font-family:&quot;Times New Roman&quot=
+;,serif">,
+ CDRH at 301-796-7400, or </span><a href=3D"mailto:reglist@cdrh.fda.gov"><s=
+pan style=3D"font-family:&quot;Times New Roman&quot;,serif">reglist@cdrh.fd=
+a.gov</span></a><span style=3D"font-family:&quot;Times New Roman&quot;,seri=
+f">.&nbsp;
+</span><span lang=3D"EN" style=3D"font-family:&quot;Times New Roman&quot;,s=
+erif">Thank you for your attention to this.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN" style=3D"font-family:&quot;Times N=
+ew Roman&quot;,serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN" style=3D"font-family:&quot;Times N=
+ew Roman&quot;,serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN" style=3D"font-family:&quot;Times N=
+ew Roman&quot;,serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:12.0pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:#0070C0">Star Johnson
+</span></b><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sa=
+ns-serif;color:#0070C0">&nbsp;(she/her)<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#555555">Program Analyst/OEI<b>
+</b>Coordinator<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:8.5pt;font-family:&quot;=
+Arial&quot;,sans-serif;color:#555555">Office of Regulatory Affairs<o:p></o:=
+p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:8.5pt;font-family:&quot;=
+Arial&quot;,sans-serif;color:#555555">Office of Medical Device and Radiolog=
+ical Health Operations<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:8.5pt;font-family:&quot;=
+Arial&quot;,sans-serif;color:#555555">(OMDRHO)Division 3<o:p></o:p></span><=
+/b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:8.5pt;font-family:&quot;=
+Arial&quot;,sans-serif;color:#555555">U.S. Food and Drug Administration</sp=
+an></b><i><span style=3D"font-size:8.5pt;font-family:&quot;Arial&quot;,sans=
+-serif;color:#555555">
+</span></i><span style=3D"font-size:8.5pt;font-family:&quot;Arial&quot;,san=
+s-serif;color:#555555"><b><o:p></o:p></b></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:8.5pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:#555555">T: 913-495-5132<br>
+</span><a href=3D"mailto:star.johnson@fda.hhs.gov"><span style=3D"font-size=
+:8.5pt;font-family:&quot;Arial&quot;,sans-serif">star.johnson@fda.hhs.gov</=
+span></a><span style=3D"font-size:8.5pt;font-family:&quot;Arial&quot;,sans-=
+serif"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_SA0PR09MB72275D57910982B2C9706183DF4C9SA0PR09MB7227namp_--

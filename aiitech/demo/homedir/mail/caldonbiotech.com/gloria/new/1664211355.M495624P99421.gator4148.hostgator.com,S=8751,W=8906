@@ -1,0 +1,155 @@
+Return-Path: <rowan.hanold@docusign.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id 0KFiHJvZMWNdhAEA7/vpDg
+	(envelope-from <rowan.hanold@docusign.com>); Mon, 26 Sep 2022 11:55:55 -0500
+Return-path: <rowan.hanold@docusign.com>
+Envelope-to: gloria@caldonbiotech.com
+Delivery-date: Mon, 26 Sep 2022 11:55:55 -0500
+Received: from mail-io1-f53.google.com ([209.85.166.53]:43538)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <rowan.hanold@docusign.com>)
+	id 1ocrOd-000PeX-28
+	for gloria@caldonbiotech.com;
+	Mon, 26 Sep 2022 11:55:55 -0500
+Received: by mail-io1-f53.google.com with SMTP id z191so5707768iof.10
+        for <gloria@caldonbiotech.com>; Mon, 26 Sep 2022 09:55:49 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=docusign.com; s=google;
+        h=to:subject:message-id:date:mime-version:from:from:to:cc:subject
+         :date;
+        bh=9Sb5RVlC0UW4LTigqVj9YN1mtrXeQxZAPfm/K4vyW2U=;
+        b=fNYiUOJNvKyaG+LJm24pzVQX1y/eKscZ6RNU1C7qGzTsy+Bz945cRTRO8xzaYGoy8P
+         9F6G6RKkRepUxOkBvEPokq6Cru7bG9viu00UhNzC1s+G3DXKkgi+7zXBvrnM2FUuWAxy
+         4gAt2qoqbT05LoHjkaK2Uv0CtWxofCBm5hmX7/RjtRhSseKPlhJxpWT4lAt+KN9mSRE+
+         SnCj9WqeK+QDcERr0xL+b8tm0h9tfXQnuQlDanLej0tJrMtR+gjdiplzc4YiBClSfo+v
+         gU6ViUVJNe/RFSKQVhvhFwCoMz9Oj3gb+r10WQsU25Z7JS58L2KX0/tE+2cJjT7wiXW4
+         t11g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:mime-version:from:x-gm-message-state
+         :from:to:cc:subject:date;
+        bh=9Sb5RVlC0UW4LTigqVj9YN1mtrXeQxZAPfm/K4vyW2U=;
+        b=7FYotz65wKsjLAA7L1fq8svucGCxUgUH0iZraZD1FmU+1pQ6tQ18azVSZciVxvgZFb
+         1sAbbkgvcrSscmA/SA3J/hi66AJarO0A8bz1Dlp3sfGnizyTcxihuryIUuIJeTmjTgTg
+         cRPOFaXhGM8Yq2jYiNmvhWHNXHf8Eqse/6Ieat+4juU4hUeYAyOfC1ms+Wquar0hlVhW
+         cGNpIeVCAdWGu7wxgDzuClf+11fgFmyvax5u/hmrQkl2m1CjIzjHhTYmbfe8/o+Ic2KR
+         WzyMy5YnPMNii0oxOE6qjOkJMVNx2LXnP3LmRnMQ9aLV+yJJUSlOVPvDHCf9wtagSjFo
+         2YJw==
+X-Gm-Message-State: ACrzQf1gbTO7eO+tY35FslP8EQMOAjztWUmPBb0qApuwKCJWHB2GI+L/
+	cbqjYmNQBGbIJTpelK4tvR7Z/mZZRvSxmC5Hq4xoNfjGjs8=
+X-Google-Smtp-Source: AMsMyM7h4KTuj3cxCXmsdUQYdO4YTJZ3TLieJ/IjGqyrYtlKshONquEA0ITMx6YOgomshNm6kjrXwVRyO5HCha91omw=
+X-Received: by 2002:a05:6638:40ab:b0:35a:52aa:3ceb with SMTP id
+ m43-20020a05663840ab00b0035a52aa3cebmr12370015jam.130.1664211342344; Mon, 26
+ Sep 2022 09:55:42 -0700 (PDT)
+Received: from 193155701165 named unknown by gmailapi.google.com with
+ HTTPREST; Mon, 26 Sep 2022 09:55:41 -0700
+From: Rowan Hanold <rowan.hanold@docusign.com>
+Mime-Version: 1.0
+X-OUTREACH-SENT: true
+Date: Mon, 26 Sep 2022 09:55:41 -0700
+Message-ID: <CAPLzbbG_Q9rYt9ArE-CrXAitdqQd-44uHJn7KEFWNn3+1S0SfA@mail.gmail.com>
+Subject: missed connecting Gloria
+To: Gloria Milich <gloria@caldonbiotech.com>
+Content-Type: multipart/alternative; boundary="000000000000e461fc05e99765ff"
+X-Spam-Status: No, score=-0.6
+X-Spam-Score: -5
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--000000000000e461fc05e99765ff
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi, Gloria -
+
+I've missed connecting with you recently and thought it might just be
+easier to ask: Are you the correct person to speak with about electronic
+signatures and the time and resources it could save for your organization?
+If not, who would that conversation be relevant to?
+
+While I know saving time and creating efficiencies is important to you, I
+want to be sure my emails are relevant and your inbox space is respected.
+
+- Rowan
+
+Rowan Hanold | SMB Market Development Representative
+c: 309.981.9994 | docusign.com <https://www.docusign.com/>
+180 North LaSalle St., Sixth Floor, Chicago, IL 60601
+Book time on my calendar!
+<https://click.docusign.com/c/rowan-hanolddocusign-com>
+
+
+Our understanding is you are located in the United States or Canada. If
+this is incorrect, please accept my apology and let me know and I will
+update our system. If you would like to unsubscribe from future DocuSign
+marketing emails please reply to me or click
+<http://esign.docusign.com/global-unsubscribe>here
+<http://esign.docusign.com/global-unsubscribe>.
+
+If you'd like me to stop sending you emails, please click here
+<https://click.docusign.com/api/mailings/unsubscribe/PMRGSZBCHIYTKNJWG43TCM=
+ZVFQRG64THEI5CEODGGFTGKMDBGUWTANDCMEWTCMLFGYWTSNBQMEWTAMTDHFQTMOBXMMZTGYRCF=
+QRHMZLSONUW63RCHIRDIIRMEJZWSZZCHIRGIVSWMRVW2Y3UNFKXG3BWO5XVETRZHB4HATKDIRDT=
+GMKDKR2XUUBVJM2XMYLIK5GHOMLDHURH2=3D=3D=3D>
+
+--000000000000e461fc05e99765ff
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div><span style=3D"line-height:normal;font-family:Arial,Helvetica,sans-ser=
+if;font-size:13px">Hi, Gloria -=C2=A0</span></div><br><div><span style=3D"l=
+ine-height:normal;font-family:Arial,Helvetica,sans-serif;font-size:13px">I&=
+#39;ve missed connecting with you recently and thought it might just be eas=
+ier to ask:=C2=A0Are you the correct person to speak with about electronic =
+signatures and the time and resources it could save for your organization? =
+If not, who would that conversation be relevant to?=C2=A0</span></div><br><=
+div><span style=3D"line-height:normal;font-family:Arial,Helvetica,sans-seri=
+f;font-size:13px">While I know saving time and creating efficiencies is imp=
+ortant to you, I want to be sure my emails are relevant and your inbox spac=
+e is respected</span><span style=3D"line-height:normal;font-family:Arial,He=
+lvetica,sans-serif;font-size:13px">.</span></div><br><div><span style=3D"li=
+ne-height:normal;font-family:Arial,Helvetica,sans-serif;font-size:13px">-=
+=C2=A0</span><span style=3D"line-height:normal;font-family:Arial,Helvetica,=
+sans-serif;font-size:13px">Rowan</span></div><div><br></div><div class=3D"o=
+utreach-signature"><div class=3D"MsoNormal"><span style=3D"font-family:Aria=
+l,Helvetica,sans-serif;font-size:13px">Rowan Hanold=C2=A0| SMB Market Devel=
+opment Representative=C2=A0</span></div><div class=3D"MsoNormal"><div><span=
+ style=3D"font-family:Arial,Helvetica,sans-serif;font-size:13px">c: 309.981=
+.9994 |=C2=A0</span><a rel=3D"noopener noreferrer" target=3D"_blank" href=
+=3D"https://www.docusign.com/"><span style=3D"font-family:Arial,Helvetica,s=
+ans-serif;font-size:13px">docusign.com</span></a></div></div><div class=3D"=
+MsoNormal"><span style=3D"font-family:Arial,Helvetica,sans-serif;font-size:=
+13px">180 North LaSalle St., Sixth Floor, Chicago, IL 60601</span></div><di=
+v class=3D"MsoNormal"><a rel=3D"noopener noreferrer" target=3D"_blank" href=
+=3D"https://click.docusign.com/c/rowan-hanolddocusign-com"><span style=3D"f=
+ont-family:Arial,Helvetica,sans-serif;font-size:13px">Book time on my calen=
+dar!</span></a></div><br><div class=3D"MsoNormal"><img height=3D"45" width=
+=3D"200" src=3D"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/D=
+ocuSign_Logo.svg/1280px-DocuSign_Logo.svg.png"><span style=3D"font-family:A=
+rial,Helvetica,sans-serif;font-size:13px">=C2=A0</span></div><div class=3D"=
+MsoNormal"><span style=3D"font-family:Arial,Helvetica,sans-serif;font-size:=
+13px">Our understanding is you are located in the United States or Canada.=
+=C2=A0If this is incorrect, please accept my apology and let me know and I =
+will update our system. If you would like to unsubscribe from future DocuSi=
+gn marketing emails=C2=A0please reply to me or=C2=A0</span><a rel=3D"noopen=
+er noreferrer" target=3D"_blank" href=3D"http://esign.docusign.com/global-u=
+nsubscribe"><span style=3D"font-family:Arial,Helvetica,sans-serif;font-size=
+:13px">click=C2=A0</span></a><a rel=3D"noopener noreferrer" target=3D"_blan=
+k" href=3D"http://esign.docusign.com/global-unsubscribe"><span style=3D"fon=
+t-family:Arial,Helvetica,sans-serif;font-size:13px">here</span></a><span st=
+yle=3D"font-family:Arial,Helvetica,sans-serif;font-size:13px">.</span></div=
+><br></div><div class=3D"outreach-signature outreach-unsubscribe" style=3D"=
+font-size:10px;color:#999">If you&#39;d like me to stop sending you emails,=
+ please <a href=3D"https://click.docusign.com/api/mailings/unsubscribe/PMRG=
+SZBCHIYTKNJWG43TCMZVFQRG64THEI5CEODGGFTGKMDBGUWTANDCMEWTCMLFGYWTSNBQMEWTAMT=
+DHFQTMOBXMMZTGYRCFQRHMZLSONUW63RCHIRDIIRMEJZWSZZCHIRGIVSWMRVW2Y3UNFKXG3BWO5=
+XVETRZHB4HATKDIRDTGMKDKR2XUUBVJM2XMYLIK5GHOMLDHURH2=3D=3D=3D">click here</a=
+></div><img src=3D"https://click.docusign.com/api/mailings/opened/PMRGSZBCH=
+IYTKNJWG43TCMZVFQRG64THEI5CEODGGFTGKMDBGUWTANDCMEWTCMLFGYWTSNBQMEWTAMTDHFQT=
+MOBXMMZTGYRCFQRHMZLSONUW63RCHIRDIIRMEJZWSZZCHIRHE5CELBRGG5TXG5VXCWKYIRJGM22=
+QMVXTCRCHMJRVA5JTMFRXU2LYIVYVUT2JLJPWI33XHURH2=3D=3D=3D.gif" alt=3D"" width=
+=3D"1" height=3D"1">
+
+--000000000000e461fc05e99765ff--

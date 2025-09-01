@@ -1,0 +1,217 @@
+Return-Path: <courtney@audiencr.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id ACZ1I/I/Y2NdYAYA7/vpDg
+	(envelope-from <courtney@audiencr.com>); Wed, 02 Nov 2022 23:13:38 -0500
+Return-path: <courtney@audiencr.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Wed, 02 Nov 2022 23:13:38 -0500
+Received: from mail-lf1-f54.google.com ([209.85.167.54]:36534)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <courtney@audiencr.com>)
+	id 1oqRbm-001lIk-1i
+	for customersupport@caldonbiotech.com;
+	Wed, 02 Nov 2022 23:13:38 -0500
+Received: by mail-lf1-f54.google.com with SMTP id g12so933463lfh.3
+        for <customersupport@caldonbiotech.com>; Wed, 02 Nov 2022 21:13:33 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=audiencr.com; s=google;
+        h=to:subject:message-id:date:from:sender:mime-version:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=4HJRINcQuvGM+8ImuFO8S1JZ8ANzPLfZxhQRmIdNT7A=;
+        b=MYK4clFHJDBAz6ORlulGiNKZWkrZvbSyHx77RSCXmAZaYgDBsPaUTnoFUTdSwSMTdj
+         dRT2v4AzoWCNogtacpeZT50NEA/O1DZurrRSnURQ5jgEq7KmZStlxPKxirellWnUor4C
+         POoeIutS+lSycDmRSgFCoU38pcpqlHMq3QTh9Pnxanv4dVlHcihsVTMwmYeGCHBnPsoT
+         OCXUSTXshEnQAxEJ8LnDSkizVI4l4SQ7iVwKCbUu22kW3qNIWgbcoppWJZJdNGtfm7MX
+         J5lvisw3U45WcC+oeKYgyZP5bhrjt9K7xHPxNtsMsfNl9E7wAEAFHC85ArbR+6vwcKEj
+         O42w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:sender:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=4HJRINcQuvGM+8ImuFO8S1JZ8ANzPLfZxhQRmIdNT7A=;
+        b=pdJjSx6R0pRH6UIhehKfUHwLJo+AOYq2L75PVG0szScX1C+QzkzNkLDAcq8hCsrgrY
+         6bYiJ2aqRHILq/WQNa6Yo9MRbZC5bzqdeYrTP3yj93EBEM//dMmvrBiCSW9pEVG4ieru
+         oyLEIU1A8NwSKb2I02cq1zCrMOa5zF1yOGrjekcHd/ibB7p1EoK4suVfj+nfEb9+tunf
+         eV/DvW/zOcoMcQ4rvJM3Me8wJ2RYdDDO4/L1+0dYWf/ZWks9ztMjNE8mSgPRbHalZHXq
+         IErzITtMuWzJp0+EcFfRlVngIZzVf1zAmmej/SqtNKjnR6O3WU3dxiWwA3bhTp/9F1af
+         FmPg==
+X-Gm-Message-State: ACrzQf2UqXqecinDOKVtP8150CdDjWKulrmcM+cVXOpLvMnIuyidnOi6
+	3hC250UkATwLnVOTbmmGK+P3ztTTBpyNVJtTjQ2aD4FVYApfsA==
+X-Google-Smtp-Source: AMsMyM7u5uwhM06sWf2yCPbmMqNQ1VJO+f95WlWr4LVoKWw4W6kydPxXnNVpbwtI/ua5cEHe4O/H2zPDUitnNjzuucw=
+X-Received: by 2002:ac2:4a9e:0:b0:4b1:8173:61c9 with SMTP id
+ l30-20020ac24a9e000000b004b1817361c9mr1151490lfp.296.1667448803192; Wed, 02
+ Nov 2022 21:13:23 -0700 (PDT)
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Wed, 2 Nov 2022 21:13:21 -0700
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Wed, 2 Nov 2022 21:13:19 -0700
+MIME-Version: 1.0
+Sender: "courtney@audiencr.com" <courtney@audiencr.com>
+From: "courtney@audiencr.com" <courtney@audiencr.com>
+Date: Wed, 2 Nov 2022 21:13:21 -0700
+X-Google-Sender-Auth: GcKCSTFoyIH5PwWj_IYFioGhmF0
+Message-ID: <CA+=aKbSC_82p=HJyVX3ji0Ne_Djj690+KuEoLhLg6NuvoPLDAg@mail.gmail.com>
+Subject: Advertising Options / Sponsored Content Options on caldonbiotech.com
+To: Customersupport <customersupport@caldonbiotech.com>
+Content-Type: multipart/alternative; boundary="0000000000009881ea05ec892dd0"
+X-Spam-Status: No, score=2.3
+X-Spam-Score: 23
+X-Spam-Bar: ++
+X-Spam-Flag: NO
+
+--0000000000009881ea05ec892dd0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi there,
+
+We are a Content Placement & Digital Marketing Agency based in the UK. We
+have more than 200 clients in different business verticals i.e. Business,
+Finance, Insurance, Technology, Health, Real-Estate, Sports, Online Gaming
+/ Casino as well in other niche markets.
+
+
+Whilst looking for opportunities, we came across your website
+caldonbiotech.com.
+
+
+
+Please let us know the pricing and options to place sponsored content on
+your website.
+
+We can provide you with a high-quality piece of content, fitting your
+website audience. We=E2=80=99ll include citations and images, so as to make=
+ the
+content naturally resonate with your readers.
+
+
+
+Furthermore, if you are interested in publishing sponsored content
+on websites/blogs owned by your company, please send us more details with
+the below info:
+
+
+
+- Website URLs
+
+- Pricing
+
+- Linking restrictions (Nofollow etc)
+
+- Any restrictions about the content or outgoing links
+
+
+
+Let me know and we can get something started.
+
+
+
+Best,
+--=20
+
+[image: beacon]
+
+--0000000000009881ea05ec892dd0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><p style=3D"margin-top:0pt;margin-bottom:0pt;background:rg=
+b(255,255,255);font-family:&quot;Times New Roman&quot;;font-size:12pt"><spa=
+n style=3D"font-family:Calibri;color:rgb(34,34,34);font-size:11pt">Hi there=
+,</span><b><span style=3D"font-family:Calibri;color:rgb(34,34,34);font-weig=
+ht:bold;font-size:11pt"><span></span></span></b></p><p style=3D"margin-bott=
+om:0pt;background:rgb(255,255,255);margin-top:5pt;font-family:&quot;Times N=
+ew Roman&quot;;font-size:12pt"><span style=3D"font-family:Calibri;color:rgb=
+(34,34,34);font-size:11pt">We are a Content Placement &amp; Digital Marketi=
+ng Agency based in the UK. We have more than 200 clients in different busin=
+ess verticals i.e. Business, Finance, Insurance, Technology, Health, Real-E=
+state, Sports, Online Gaming / Casino as well in other niche markets.</span=
+></p><p style=3D"margin-bottom:0pt;background:rgb(255,255,255);margin-top:5=
+pt;font-family:&quot;Times New Roman&quot;;font-size:12pt"><span style=3D"f=
+ont-family:Calibri;color:rgb(34,34,34);font-size:11pt"><br></span></p><p st=
+yle=3D"margin-top:0pt;margin-bottom:0pt;background:rgb(255,255,255);font-fa=
+mily:&quot;Times New Roman&quot;;font-size:12pt"><span style=3D"font-family=
+:Calibri;color:rgb(34,34,34);font-size:11pt">Whilst looking for opportuniti=
+es, we came across your website=C2=A0<a href=3D"http://caldonbiotech.com">c=
+aldonbiotech.com</a>.</span><span style=3D"font-family:Calibri;color:rgb(34=
+,34,34);font-size:11pt"><span></span></span></p><p style=3D"margin-top:0pt;=
+margin-bottom:0pt;background:rgb(255,255,255);font-family:&quot;Times New R=
+oman&quot;;font-size:12pt"><span style=3D"font-family:Calibri;color:rgb(34,=
+34,34);font-size:11pt">=C2=A0</span><span style=3D"font-family:Calibri;colo=
+r:rgb(34,34,34);font-size:11pt"><span></span></span></p><p style=3D"margin-=
+top:0pt;margin-bottom:0pt;background:rgb(255,255,255);font-family:&quot;Tim=
+es New Roman&quot;;font-size:12pt"><span style=3D"font-family:Calibri;color=
+:rgb(0,0,0);font-size:11pt">Please let us know the pricing and options to p=
+lace sponsored content on your website.</span></p><p style=3D"margin-top:0p=
+t;margin-bottom:0pt;background:rgb(255,255,255);font-family:&quot;Times New=
+ Roman&quot;;font-size:12pt"><span style=3D"font-family:Calibri;color:rgb(0=
+,0,0);font-size:11pt">We can provide you with a high-quality piece of conte=
+nt, fitting your website audience. We=E2=80=99ll include citations and imag=
+es, so as to make the content naturally resonate with your readers.</span><=
+span style=3D"font-family:Calibri;color:rgb(34,34,34);font-size:11pt"><span=
+></span></span></p><p style=3D"margin-top:0pt;margin-bottom:0pt;background:=
+rgb(255,255,255);font-family:&quot;Times New Roman&quot;;font-size:12pt"><s=
+pan style=3D"font-family:Calibri;color:rgb(34,34,34);font-size:11pt">=C2=A0=
+</span><span style=3D"font-family:Calibri;color:rgb(34,34,34);font-size:11p=
+t"><span></span></span></p><p style=3D"margin-top:0pt;margin-bottom:0pt;bac=
+kground:rgb(255,255,255);font-family:&quot;Times New Roman&quot;;font-size:=
+12pt"><span style=3D"font-family:Calibri;color:rgb(0,0,0);font-size:11pt">F=
+urthermore, if you are interested in publishing sponsored content on=C2=A0w=
+ebsites/blogs owned by your company, please send us more details with the b=
+elow info:</span><span style=3D"font-family:Calibri;color:rgb(34,34,34);fon=
+t-size:11pt"><span></span></span></p><p style=3D"margin-top:0pt;margin-bott=
+om:0pt;background:rgb(255,255,255);font-family:&quot;Times New Roman&quot;;=
+font-size:12pt"><span style=3D"font-family:Calibri;color:rgb(34,34,34);font=
+-size:11pt">=C2=A0</span><span style=3D"font-family:Calibri;color:rgb(34,34=
+,34);font-size:11pt"><span></span></span></p><p style=3D"margin-top:0pt;mar=
+gin-bottom:0pt;background:rgb(255,255,255);font-family:&quot;Times New Roma=
+n&quot;;font-size:12pt"><span style=3D"font-family:Calibri;color:rgb(0,0,0)=
+;font-size:11pt">- Website URLs</span><span style=3D"font-family:Calibri;co=
+lor:rgb(34,34,34);font-size:11pt"><span></span></span></p><p style=3D"margi=
+n-top:0pt;margin-bottom:0pt;background:rgb(255,255,255);font-family:&quot;T=
+imes New Roman&quot;;font-size:12pt"><span style=3D"font-family:Calibri;col=
+or:rgb(0,0,0);font-size:11pt">- Pricing</span><span style=3D"font-family:Ca=
+libri;color:rgb(34,34,34);font-size:11pt"><span></span></span></p><p style=
+=3D"margin-top:0pt;margin-bottom:0pt;background:rgb(255,255,255);font-famil=
+y:&quot;Times New Roman&quot;;font-size:12pt"><span style=3D"font-family:Ca=
+libri;color:rgb(0,0,0);font-size:11pt">- Linking restrictions (Nofollow etc=
+)</span><span style=3D"font-family:Calibri;color:rgb(34,34,34);font-size:11=
+pt"><span></span></span></p><p style=3D"margin-top:0pt;margin-bottom:0pt;ba=
+ckground:rgb(255,255,255);font-family:&quot;Times New Roman&quot;;font-size=
+:12pt"><span style=3D"font-family:Calibri;color:rgb(0,0,0);font-size:11pt">=
+- Any restrictions about the content or outgoing links</span><span style=3D=
+"font-family:Calibri;color:rgb(34,34,34);font-size:11pt"><span></span></spa=
+n></p><p style=3D"margin-top:0pt;margin-bottom:0pt;background:rgb(255,255,2=
+55);font-family:&quot;Times New Roman&quot;;font-size:12pt"><span style=3D"=
+font-family:Calibri;color:rgb(34,34,34);font-size:11pt">=C2=A0</span><span =
+style=3D"font-family:Calibri;color:rgb(34,34,34);font-size:11pt"><span></sp=
+an></span></p><p style=3D"margin-top:0pt;margin-bottom:0pt;background:rgb(2=
+55,255,255);font-family:&quot;Times New Roman&quot;;font-size:12pt"><span s=
+tyle=3D"font-family:Calibri;color:rgb(34,34,34);font-size:11pt">Let me know=
+ and we can get something started.</span><span style=3D"font-family:Calibri=
+;color:rgb(34,34,34);font-size:11pt"><span></span></span></p><p style=3D"ma=
+rgin-top:0pt;margin-bottom:0pt;background:rgb(255,255,255);font-family:&quo=
+t;Times New Roman&quot;;font-size:12pt"><span style=3D"font-family:Calibri;=
+color:rgb(34,34,34);font-size:11pt">=C2=A0</span><span style=3D"font-family=
+:Calibri;color:rgb(34,34,34);font-size:11pt"><span></span></span></p><p sty=
+le=3D"margin-top:0pt;margin-bottom:0pt;background-image:initial;background-=
+position:initial;background-size:initial;background-repeat:initial;backgrou=
+nd-origin:initial;background-clip:initial;font-family:&quot;Times New Roman=
+&quot;;font-size:12pt"></p><p style=3D"margin-top:0pt;margin-bottom:12pt;ba=
+ckground-image:initial;background-position:initial;background-size:initial;=
+background-repeat:initial;background-origin:initial;background-clip:initial=
+;font-family:&quot;Times New Roman&quot;;font-size:12pt"><span style=3D"fon=
+t-family:Calibri;font-size:11pt">Best,</span><span style=3D"font-family:Cal=
+ibri;font-size:11pt"></span></p>-- <br><div dir=3D"ltr" data-smartmail=3D"g=
+mail_signature"><div dir=3D"ltr"><div><img src=3D"https://ci3.googleusercon=
+tent.com/mail-sig/AIorK4x9XoSuR29G1JTw8AVs49vfhjBbP3JJgbiyHrvd-BQc7pCcq3VSr=
+5S5v51_7566xh_AHdpS20E"><br></div></div></div></div>
+<img src=3D"https://audiencr-dot-yamm-track.appspot.com/2_yyQNzRPnQbT1gCTyi=
+Mutn8bTO9XcdX9Xv3ErAD761lAf7E7hAGIA2uArmnWSaxkhJC0hAJXpERmLNljZzxLIB693M1aH=
+oRAu1HhVp87IqbYLPOcVOCbW-W1yUIAtAgOFAM2B2TgEXVMrDqgl7jNLJ1I2MHY4jijIAE" wid=
+th=3D"1" height=3D"1" alt=3D"beacon" style=3D"display:none; display:none!im=
+portant;">
+
+--0000000000009881ea05ec892dd0--

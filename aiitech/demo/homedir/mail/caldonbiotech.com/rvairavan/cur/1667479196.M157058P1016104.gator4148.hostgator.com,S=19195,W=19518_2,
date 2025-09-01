@@ -1,0 +1,323 @@
+Return-Path: <olalovedale+bncBDYZ3VM35AIRBDPNR2NQMGQE5PP5F4Q@googlegroups.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id CPADCZy2Y2MogQ8A7/vpDg
+	(envelope-from <olalovedale+bncBDYZ3VM35AIRBDPNR2NQMGQE5PP5F4Q@googlegroups.com>)
+	for <rvairavan@caldonbiotech.com>; Thu, 03 Nov 2022 07:39:56 -0500
+Return-path: <olalovedale+bncBDYZ3VM35AIRBDPNR2NQMGQE5PP5F4Q@googlegroups.com>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Thu, 03 Nov 2022 07:39:56 -0500
+Received: from mail-qk1-f185.google.com ([209.85.222.185]:39702)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <olalovedale+bncBDYZ3VM35AIRBDPNR2NQMGQE5PP5F4Q@googlegroups.com>)
+	id 1oqZVj-004G14-Pg
+	for rvairavan@caldonbiotech.com;
+	Thu, 03 Nov 2022 07:39:56 -0500
+Received: by mail-qk1-f185.google.com with SMTP id de21-20020a05620a371500b006eed31abb72sf1845082qkb.6
+        for <rvairavan@caldonbiotech.com>; Thu, 03 Nov 2022 05:39:51 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1667479185; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=GSy6XBsloVGTwMNp99ZPsEWVxX9GojEkd/7SPFBQr1LJr5x6uyfn70IDhGg0pkyio6
+         bj1R0GmhjlDbk4DTxo5pcvdWHvF0wsg5sICTCU7GTwfM/Vuw+6xgL3gGYJFBs5fOXemH
+         LX0isdAnBE2GclLaDXaIGL6hG0sk4HiAUlFRHB7wi5ch67sZ7FUWmeAi3OuEBpjz1H5c
+         Eijlbk/7eu1YFq7UMVBOa82Wh91OUJxt/C1DvCkc1bVNOhxKh2tq4JaOkboXdqdKS1ni
+         p/MLgAykywBO+1rYsmKLKaubHZ3+ORyORgtboXe94MMGlk8LyAP13r2OF4/wOy5IZcWK
+         SYZw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:to:from:subject:date:message-id:feedback-id
+         :reply-to:mime-version:sender:dkim-signature:dkim-signature;
+        bh=N02465meb/j48bwh8rz70xMRAIZd7U2e40AVq4CXWsI=;
+        b=O4zQ15Xb93214kSAeXiGLcU3PvscSykeWCeuDX99X0w7RgRzRvNCUTIjOWK4oFzl9w
+         YUwP3RNOug6J+rgNIqc0aD40bWtv2rWTtmJ0NWsGgy/SQZslfnFCRRaZYl/FY8aPD1Aq
+         4MeSJypxQSGeRLS1JGsoI8Q1qDIlDkgMd/6Z53VkmrJm+kaBYj5DcmH4tkZ3qqSi6Ky2
+         SUlkcWv+Hr5G6VWzXMTGT/++sd9mflNxSgSzKRADwC3tD8WWfGVTnm/hOC0I4GnV9M8J
+         kHk2MqkgQzJusavFxHhOShKwny+6FpAexxGtkiprd1A1r3knprRkGgpQVxPt3zCoR9fO
+         5CBA==
+ARC-Authentication-Results: i=2; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="nKRSh4/p";
+       spf=pass (google.com: domain of 3xlzjywsjc3klixilsbaxibdjxfi.zljlixilsbaxibdlldibdolrmp.zlj@trix.bounces.google.com designates 2607:f8b0:4864:20::1147 as permitted sender) smtp.mailfrom=3XLZjYwsJC3kliXilsbaXibdjXfi.ZljliXilsbaXibdlldibdolrmp.Zlj@trix.bounces.google.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=20210112;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:x-original-authentication-results
+         :x-original-sender:to:from:subject:date:message-id:feedback-id
+         :reply-to:mime-version:sender:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=N02465meb/j48bwh8rz70xMRAIZd7U2e40AVq4CXWsI=;
+        b=XvG9TFOicu+HZXFn+R2cF96TEA2nu1LSK7iZh+ljDgd9FBWoZWSYYHUEG71r0APrwo
+         ttvyv19V6VWbl+u0EFPx2zLC6bT67uBiLgqaoWp/VplotjxES8xAFcG69am09VK2LgV1
+         /4eFrMyBa7Hcd6h2RwGo5eYcQAn5R8wdBgWuAnhVafewEUdjihEkqGmRwNAzj3r8WgPG
+         /GX8MJV5HvR7YAPd/TsQCBTakGlL5HQC57UzfXzEnNuN/uLr/q58bF90DSpZ6hArPd10
+         vJEbySsj6/N/vvkdF/VdvVCW20/xcB9lDfR60o1yPV3p7qNfLEp3xninAeQ9sjDj43Te
+         kCiA==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:x-original-authentication-results
+         :x-original-sender:to:from:subject:date:message-id:feedback-id
+         :reply-to:mime-version:from:to:cc:subject:date:message-id:reply-to;
+        bh=N02465meb/j48bwh8rz70xMRAIZd7U2e40AVq4CXWsI=;
+        b=E3S2F34xNrVJRLbjtk8eplciY/DfEYPdRca3mrdDIQYHTF/0UhcD1cilcBWo+eCC6v
+         wil5LzH0k+Q8NVDndxw2axIAxKg5EDBWmv/0gC/0u+rZLMw2FlfNW85Zj2utEtoHm6Ob
+         87dvh6R81g9xcCo0NKi7fCLxhKCcDF5d3543HAxQPRLYnabO8obhNcv1yfexcCBFFf0U
+         oHjZyvVE/uaAlTfbbm+v2y57QG1xX9Tgd1Wx2JOklSu/QJkQjSw7A9HqTa1/3xm3IWUr
+         2Gl1SuLNYdxCRvq2LSSQFBTSh3aZ5WS/t/j6okVfQczygLu1BxrPlMj1NotIxf+BzHV0
+         /fgA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:x-original-authentication-results
+         :x-original-sender:to:from:subject:date:message-id:feedback-id
+         :reply-to:mime-version:x-gm-message-state:sender:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=N02465meb/j48bwh8rz70xMRAIZd7U2e40AVq4CXWsI=;
+        b=CqHEp5Uo89U6Hd/OFpGnqB9RDKiGXj3jEiDPSd1LFz4IZykITM1tpWURnjMzxCqRGt
+         ON+EWIU8qOA/SK6ZkvvE/UI/REPlWLORqGC1Msl8k/m693LD19GSZZOSjds81nxWvqKi
+         260X6FkUmjqgZeJMuOb5e5FC3Sv4YtNpBAKefZ0/baQptuicHiMGrRmMjMl/pJ4bu72n
+         10/fOIxktXiB9sisuSbhO4VtoaDKFrboM1xMJ5MQzCdlE71X14gbYnj+C7G3lkCIgguJ
+         4j5PynmsjHwntgr+yK8rK5Xmhla8UsBIEG29DR29yiVrPjYm075CDI3REiyQTTkIlRNZ
+         JBAg==
+Sender: olalovedale@googlegroups.com
+X-Gm-Message-State: ACrzQf39QK1amWRGNnBBfwNs+hVLdmitmZHLhpwrjQaFQ9OQ5tg2Y/2W
+	oucDHHHOHeQR4H9B/aygWQc=
+X-Google-Smtp-Source: AMsMyM4razAPnUcYaJDJsUn8yElj9xoNmZToj46KOmQC89xpjH0Oy/MI+gLKKg4ROnYaVqvqqXya9A==
+X-Received: by 2002:a05:622a:147:b0:39c:dc0d:7d0f with SMTP id v7-20020a05622a014700b0039cdc0d7d0fmr23539457qtw.281.1667479185323;
+        Thu, 03 Nov 2022 05:39:45 -0700 (PDT)
+X-BeenThere: olalovedale@googlegroups.com
+Received: by 2002:a0c:f389:0:b0:4b1:d9f8:1b13 with SMTP id i9-20020a0cf389000000b004b1d9f81b13ls1037056qvk.9.-pod-prod-gmail;
+ Thu, 03 Nov 2022 05:39:41 -0700 (PDT)
+X-Received: by 2002:a0c:810f:0:b0:47b:299a:56d7 with SMTP id 15-20020a0c810f000000b0047b299a56d7mr26404059qvc.12.1667479181444;
+        Thu, 03 Nov 2022 05:39:41 -0700 (PDT)
+Received: by 2002:a05:620a:46a3:b0:6b9:2fad:614b with SMTP id af79cd13be357-6fa726cd0dcms85a;
+        Thu, 3 Nov 2022 05:38:53 -0700 (PDT)
+X-Received: by 2002:a05:620a:2893:b0:6bc:6ecd:2c44 with SMTP id j19-20020a05620a289300b006bc6ecd2c44mr21271139qkp.593.1667479132676;
+        Thu, 03 Nov 2022 05:38:52 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1667479132; cv=none;
+        d=google.com; s=arc-20160816;
+        b=WSThV78xbJRYc9LR6buLJvCg2nQi6GXaxLxgYWdo5WfmvwFrQ3uS+vaBy1JXPRN+MZ
+         BSsmE2eiSrZwR3VYQKswDAcVsEHv/uJgQe+JpzF0bRcVQhw2P6fzxUDrK8jKUFjBc94/
+         50ISc4+DX+jms6Y1F3qa7YHv+Efs+CLelfufQjwTRNYUIOBGok7ur3oloWeFdE3z9DwR
+         vW3Nk/9y87IjlV6FwoluiXzbnUzzn7ko+d20RDKWuLiUkqgWJcH9r4mAzC17JGMCWzOQ
+         CfbtvvmiJvDuJU+3X349McZ+r/RxDLsDCRZpDEdgeXuLa8ljMXpsTs2PfFVvf8+UvNTG
+         mGSg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:date:message-id:feedback-id:reply-to:mime-version
+         :dkim-signature;
+        bh=PBAY/RmRj8iXocJqVQm26nq5XvXgUat6dAIidOZCegk=;
+        b=cyB+rjmjXE9OYT3GpBgqWuSkcSlSQAJIKg+Ma/WcSqBJ/KwuNF4dUIE8TvyCLToyZz
+         MpFXbgW7WcCZZi3Ww1rYvEFVsXmHQnFBKZlU0FB8HgKhaTWBrliUjKaFcqi0DeqgXGIg
+         c9PFJgW/WgfnuAbZLB2uIYFjJBxlnOLbi7FXhgcQzcIdnhOLFKAaxBUsEiEIY1u7BDbk
+         NcUnRnQsjfxpIQrHIArtamM+VefZd7zU+kOoRkH+I0ClA4BslqUj9ulGHCSFnC7hoRz1
+         7btXFABWRKiIi5b9T1lV43k3cpBVO0wJfxGnEiYQnh11Qjm+BxMB6SamFsWuMceLp6Gc
+         AWvQ==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="nKRSh4/p";
+       spf=pass (google.com: domain of 3xlzjywsjc3klixilsbaxibdjxfi.zljlixilsbaxibdlldibdolrmp.zlj@trix.bounces.google.com designates 2607:f8b0:4864:20::1147 as permitted sender) smtp.mailfrom=3XLZjYwsJC3kliXilsbaXibdjXfi.ZljliXilsbaXibdlldibdolrmp.Zlj@trix.bounces.google.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: from mail-yw1-x1147.google.com (mail-yw1-x1147.google.com. [2607:f8b0:4864:20::1147])
+        by gmr-mx.google.com with ESMTPS id c13-20020a05620a134d00b006eeb0d15906si33890qkl.6.2022.11.03.05.38.52
+        for <olalovedale@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 03 Nov 2022 05:38:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3xlzjywsjc3klixilsbaxibdjxfi.zljlixilsbaxibdlldibdolrmp.zlj@trix.bounces.google.com designates 2607:f8b0:4864:20::1147 as permitted sender) client-ip=2607:f8b0:4864:20::1147;
+Received: by mail-yw1-x1147.google.com with SMTP id 00721157ae682-373582569edso17681027b3.2
+        for <olalovedale@googlegroups.com>; Thu, 03 Nov 2022 05:38:52 -0700 (PDT)
+MIME-Version: 1.0
+X-Received: by 2002:a05:6902:10e:b0:6cf:cb2d:32b1 with SMTP id
+ o14-20020a056902010e00b006cfcb2d32b1mr11926310ybh.264.1667479132328; Thu, 03
+ Nov 2022 05:38:52 -0700 (PDT)
+Reply-To: olalovedale@googlegroups.com
+X-No-Auto-Attachment: 1
+Feedback-ID: MailTypeSendForm:GoogleForms
+X-GoogleForms-FormId: e/1FAIpQLScvMdZvgFBRqClTiRtN4_-4zMTd-4Tz9B8sVKXjqpv4GgqZrA
+X-GoogleForms-IsConsumerForm: true
+Message-ID: <0000000000005a58f505ec903d8a@google.com>
+Date: Thu, 03 Nov 2022 12:38:52 +0000
+Subject: OldLawrencians Registration & Payment for OL Brunch @ Kota House, Delhi
+From: olalovedale@gmail.com
+To: olalovedale@googlegroups.com
+Content-Type: multipart/alternative; boundary="0000000000005a58e105ec903d87"
+X-Original-Sender: olalovedale@gmail.com
+X-Original-Authentication-Results: gmr-mx.google.com;       dkim=pass
+ header.i=@gmail.com header.s=20210112 header.b="nKRSh4/p";       spf=pass
+ (google.com: domain of 3xlzjywsjc3klixilsbaxibdjxfi.zljlixilsbaxibdlldibdolrmp.zlj@trix.bounces.google.com
+ designates 2607:f8b0:4864:20::1147 as permitted sender) smtp.mailfrom=3XLZjYwsJC3kliXilsbaXibdjXfi.ZljliXilsbaXibdlldibdolrmp.Zlj@trix.bounces.google.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Precedence: list
+Mailing-list: list olalovedale@googlegroups.com; contact olalovedale+owners@googlegroups.com
+List-ID: <olalovedale.googlegroups.com>
+X-Google-Group-Id: 585760002904
+List-Post: <https://groups.google.com/group/olalovedale/post>, <mailto:olalovedale@googlegroups.com>
+List-Help: <https://groups.google.com/support/>, <mailto:olalovedale+help@googlegroups.com>
+List-Archive: <https://groups.google.com/group/olalovedale
+List-Unsubscribe: <mailto:googlegroups-manage+585760002904+unsubscribe@googlegroups.com>,
+ <https://groups.google.com/group/olalovedale/subscribe>
+X-Spam-Status: No, score=-0.7
+X-Spam-Score: -6
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--0000000000005a58e105ec903d87
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: quoted-printable
+
+I've invited you to fill in the following form:
+Registration &amp; Payment for OL Brunch @ Kota House, Delhi
+
+To fill it in, visit:
+https://docs.google.com/forms/d/e/1FAIpQLScvMdZvgFBRqClTiRtN4_-4zMTd-4Tz9B8=
+sVKXjqpv4GgqZrA/viewform?vc=3D0&amp;c=3D0&amp;w=3D1&amp;flr=3D0&amp;usp=3Dm=
+ail_form_link
+
+Old Lawrencians Association Delhi/NCR Chapter has invited you to register =
+=20
+for the reunion on 13/11/2022 - Please fill this form and make your =20
+payment(s) via the UPI or OR code on the form:
+
+Google Forms: Create and analyse surveys.
+
+--=20
+Never Give In
+
+The Old Lawrencians Association is a legally registered body Registered und=
+er Tamil Nadu Act 27 of 1975 =C2=AE (Serial No. =E2=80=93 44 of 1989) repre=
+senting the interests of the Alumni of The Lawrence School, Lovedale 643003=
+, Nilgiris, TN, India.
+
+Chapters/Groups across India & North America, UK, UAE, Australia, Singapore
+
+www.olalovedale.com
+OLA Official Mobile/Whatsapp Number +919498490228
+Email : Hello@OLALovedale.net ; olalovedale@gmail.com
+
+Official Social Media Channels
+https://www.linkedin.com/groups/76653/
+https://www.facebook.com/oldlawrencians/
+https://www.facebook.com/groups/oldlawrencians/
+https://www.youtube.com/c/OldLawrenciansAssociation
+https://www.facebook.com/groups/LawrencianMarketPlace=20
+https://www.instagram.com/olalovedale/
+https://www.instagram.com/the.ol.nation/
+https://twitter.com/olalovedale=20
+https://www.clubhouse.com/club/ola-old-lawrencians-assn
+
+#olalovedale #lawrenceschool #oldlawrencian #nevergivein #lovedale #lawrenc=
+ian #olnation #olassembly
+---=20
+You received this message because you are subscribed to the Google Groups "=
+OLA_Lovedale" group.
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to olalovedale+unsubscribe@googlegroups.com.
+To view this discussion on the web visit https://groups.google.com/d/msgid/=
+olalovedale/0000000000005a58f505ec903d8a%40google.com.
+
+--0000000000005a58e105ec903d87
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><body style=3D"font-family: Roboto,Helvetica,Arial,sans-serif; margin=
+: 0; padding: 0; height: 100%; width: 100%;"><table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"background-color:rgb(116,69,80);" width=
+=3D"100%" role=3D"presentation"><tbody><tr height=3D"64px"><td style=3D"pad=
+ding: 0 24px;"><img alt=3D"Google Forms" height=3D"26px" style=3D"display: =
+inline-block; margin: 0; vertical-align: middle;" width=3D"143px" src=3D"ht=
+tps://www.gstatic.com/docs/forms/google_forms_logo_lockup_white_2x.png"></t=
+d></tr></tbody></table><div style=3D"padding: 24px; background-color:rgb(21=
+3,199,203)"><div align=3D"center" style=3D"background-color: #fff; border-b=
+ottom: 1px solid #e0e0e0;margin: 0 auto; max-width: 624px; min-width: 154px=
+;padding: 0 24px;"><table align=3D"center" cellpadding=3D"0" cellspacing=3D=
+"0" style=3D"background-color: #fff;" width=3D"100%" role=3D"presentation">=
+<tbody><tr height=3D"24px"><td></td></tr><tr><td><span style=3D"display: ta=
+ble-cell; vertical-align: top; font-size: 13px; line-height: 18px; color: #=
+424242;" dir=3D"auto">Old Lawrencians Association Delhi/NCR Chapter has inv=
+ited you to register for the reunion on 13/11/2022 - Please fill this form =
+and make your payment(s) via the UPI or OR code on the form:</span></td></t=
+r><tr height=3D"20px"><td></tr><tr style=3D"font-size: 20px; line-height: 2=
+4px;"><td dir=3D"auto"><a href=3D"https://docs.google.com/forms/d/e/1FAIpQL=
+ScvMdZvgFBRqClTiRtN4_-4zMTd-4Tz9B8sVKXjqpv4GgqZrA/viewform?vc=3D0&amp;c=3D0=
+&amp;w=3D1&amp;flr=3D0&amp;usp=3Dmail_form_link" style=3D"color: rgb(116,69=
+,80); text-decoration: none; vertical-align: middle; font-weight: 500">Regi=
+stration &amp; Payment for OL Brunch @ Kota House, Delhi</a><div itemprop=
+=3D"action" itemscope itemtype=3D"http://schema.org/ViewAction"><meta itemp=
+rop=3D"url" content=3D"https://docs.google.com/forms/d/e/1FAIpQLScvMdZvgFBR=
+qClTiRtN4_-4zMTd-4Tz9B8sVKXjqpv4GgqZrA/viewform?vc=3D0&amp;c=3D0&amp;w=3D1&=
+amp;flr=3D0&amp;usp=3Dmail_goto_form"><meta itemprop=3D"name" content=3D"Fi=
+ll out form"></div></td></tr><tr height=3D"16px"></tr><tr><td style=3D"disp=
+lay: table-cell; vertical-align: top; font-size: 13px; line-height: 18px; c=
+olor: #424242;" dir=3D"auto"><p><b>Calling All Old Lawrencians in the Delhi=
+/NCR/Gurugram/Noida &amp; Northern Region, their Spouses/Significant Life P=
+artners &amp; Lovedale faculty - Sunday 13th November at 12 noon!<br></b></=
+p><p><b>We have received confirmations from 92 OLs &amp; 17 Spouses/Partner=
+s as of 3rd Nov!<br></b></p><p><b>DELHI/NCR OL REUNION 2022!</b></p></td></=
+tr><tr height=3D"24px"></tr><tr><td><table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%"><tbody><tr><td><a href=3D"https://docs.goog=
+le.com/forms/d/e/1FAIpQLScvMdZvgFBRqClTiRtN4_-4zMTd-4Tz9B8sVKXjqpv4GgqZrA/v=
+iewform?vc=3D0&amp;c=3D0&amp;w=3D1&amp;flr=3D0&amp;usp=3Dmail_form_link" st=
+yle=3D"border-radius: 3px; box-sizing: border-box; display: inline-block; f=
+ont-size: 13px; font-weight: 700; height: 40px; line-height: 40px; padding:=
+ 0 24px; text-align: center; text-decoration: none; text-transform: upperca=
+se; vertical-align: middle; color: #fff; background-color: rgb(116,69,80);"=
+ target=3D"_blank" rel=3D"noopener">Fill out form</a></td></tr></tbody></ta=
+ble></td></tr><tr height=3D"24px"></tr></tbody></table></div><table align=
+=3D"center" cellpadding=3D"0" cellspacing=3D"0" style=3D"max-width: 672px; =
+min-width: 154px; border-collapse: separate; border-spacing: 0 0.2em;" widt=
+h=3D"100%" role=3D"presentation"><tbody><tr height=3D"24px"><td></td></tr><=
+tr><td><a href=3D"https://docs.google.com/forms?usp=3Dmail_form_link" style=
+=3D"color: #424242; font-size: 13px;">Create your own Google Form</a></td><=
+/tr></tbody></table></div></body></html>
+
+<p></p>
+
+-- <br />
+Never Give In<br />
+&nbsp;<br />
+The Old Lawrencians Association is a legally registered body Registered und=
+er Tamil Nadu Act 27 of 1975 =C2=AE (Serial No. =E2=80=93 44 of 1989) repre=
+senting the interests of the Alumni of The Lawrence School, Lovedale 643003=
+, Nilgiris, TN, India.<br />
+&nbsp;<br />
+Chapters/Groups across India &amp; North America, UK, UAE, Australia, Singa=
+pore<br />
+&nbsp;<br />
+www.olalovedale.com<br />
+OLA Official Mobile/Whatsapp Number +919498490228<br />
+Email : Hello@OLALovedale.net ; olalovedale@gmail.com<br />
+&nbsp;<br />
+Official Social Media Channels<br />
+<a href=3D"https://www.linkedin.com/groups/76653/">https://www.linkedin.com=
+/groups/76653/</a><br />
+<a href=3D"https://www.facebook.com/oldlawrencians/">https://www.facebook.c=
+om/oldlawrencians/</a><br />
+<a href=3D"https://www.facebook.com/groups/oldlawrencians/">https://www.fac=
+ebook.com/groups/oldlawrencians/</a><br />
+<a href=3D"https://www.youtube.com/c/OldLawrenciansAssociation">https://www=
+.youtube.com/c/OldLawrenciansAssociation</a><br />
+<a href=3D"https://www.facebook.com/groups/LawrencianMarketPlace">https://w=
+ww.facebook.com/groups/LawrencianMarketPlace</a> <br />
+<a href=3D"https://www.instagram.com/olalovedale/">https://www.instagram.co=
+m/olalovedale/</a><br />
+<a href=3D"https://www.instagram.com/the.ol.nation/">https://www.instagram.=
+com/the.ol.nation/</a><br />
+<a href=3D"https://twitter.com/olalovedale">https://twitter.com/olalovedale=
+</a> <br />
+<a href=3D"https://www.clubhouse.com/club/ola-old-lawrencians-assn">https:/=
+/www.clubhouse.com/club/ola-old-lawrencians-assn</a><br />
+&nbsp;<br />
+#olalovedale #lawrenceschool #oldlawrencian #nevergivein #lovedale #lawrenc=
+ian #olnation #olassembly<br />
+--- <br />
+You received this message because you are subscribed to the Google Groups &=
+quot;OLA_Lovedale&quot; group.<br />
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:olalovedale+unsubscribe@googlegroups.com">olalove=
+dale+unsubscribe@googlegroups.com</a>.<br />
+To view this discussion on the web visit <a href=3D"https://groups.google.c=
+om/d/msgid/olalovedale/0000000000005a58f505ec903d8a%40google.com?utm_medium=
+=3Demail&utm_source=3Dfooter">https://groups.google.com/d/msgid/olalovedale=
+/0000000000005a58f505ec903d8a%40google.com</a>.<br />
+
+--0000000000005a58e105ec903d87--

@@ -1,0 +1,87 @@
+Return-Path: <>
+Delivered-To: cbt@gator4148.hostgator.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id +OInJYVx62M0VAYA7/vpDg
+	(envelope-from <>)
+	for <cbt@gator4148.hostgator.com>; Tue, 14 Feb 2023 05:33:25 -0600
+Return-path: <>
+Envelope-to: cbt@gator4148.hostgator.com
+Delivery-date: Tue, 14 Feb 2023 05:33:25 -0600
+Received: from mailnull by gator4148.hostgator.com with local (Exim 4.95)
+	id 1pRtYr-001nBz-IR
+	for cbt@gator4148.hostgator.com;
+	Tue, 14 Feb 2023 05:33:25 -0600
+X-Failed-Recipients: aadil@ifelsetech.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@gator4148.hostgator.com>
+To: cbt@gator4148.hostgator.com
+References: <dc1ce8e5be6f39310662f4efbc6431a5@caldonbiotech.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1676374405-eximdsn-897051174
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1pRtYr-001nBz-IR@gator4148.hostgator.com>
+Date: Tue, 14 Feb 2023 05:33:25 -0600
+
+--1676374405-eximdsn-897051174
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  aadil@ifelsetech.com
+    host eig-east.smtp.a.cloudfilter.net [18.215.58.191]
+    SMTP error from remote mail server after end of data:
+    550 RtYopkDY9VU6VRtYppvRrs - <cbt@gator4148.hostgator.com> sender rejected AUP#CDRBL
+
+--1676374405-eximdsn-897051174
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; gator4148.hostgator.com
+
+Action: failed
+Final-Recipient: rfc822;aadil@ifelsetech.com
+Status: 5.0.0
+Remote-MTA: dns; eig-east.smtp.a.cloudfilter.net
+Diagnostic-Code: smtp; 550 RtYopkDY9VU6VRtYppvRrs - <cbt@gator4148.hostgator.com> sender rejected AUP#CDRBL
+
+--1676374405-eximdsn-897051174
+Content-type: message/rfc822
+
+Return-path: <cbt@gator4148.hostgator.com>
+Received: from cbt by gator4148.hostgator.com with local (Exim 4.95)
+	(envelope-from <cbt@gator4148.hostgator.com>)
+	id 1pRtYo-001nA9-QU
+	for aadil@ifelsetech.com;
+	Tue, 14 Feb 2023 05:33:22 -0600
+To: aadil@ifelsetech.com
+Subject: [Caldon Biotech] Please moderate: "RECENT STUDY FINDS THAT THE REDUCED ALDOLASE LEVEL IS AN INDICATION OF COLORECTAL CANCER"
+X-PHP-Script: caldonbiotech.com/wp-comments-post.php for 51.159.37.178, 51.159.37.178
+X-PHP-Originating-Script: 990:class-phpmailer.php
+Date: Tue, 14 Feb 2023 11:33:22 +0000
+From: WordPress <wordpress@caldonbiotech.com>
+Message-ID: <dc1ce8e5be6f39310662f4efbc6431a5@caldonbiotech.com>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+A new comment on the post "RECENT STUDY FINDS THAT THE REDUCED ALDOLASE LEVEL IS AN INDICATION OF COLORECTAL CANCER" is waiting for your approval
+https://caldonbiotech.com/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/
+
+Author: watch (IP address: 51.159.37.178, 51-159-37-178.rev.poneytelecom.eu)
+Email: pamela-a-a@hotmail.com
+URL: https://www.1377x.is/
+Comment: 
+Greg Behrendt ve Liz Tuccillo’nun çok satan kitabına dayanan film, 20’li 30’lu yaşlarında Baltimore’lu bir grup insanı konu alıyor. Söz konusu insanlar ilişki havuzunun sığ kısmından evlilik hayatının derin ve bulanık sularına doğru ilerlerken bir yandan karşı cinsin işaretlerini okumaya bir yandan da “istisna yoktur” kuralına istisna oluşturmaya çalışıyorlar. Lance Janczunski
+
+Approve it: https://caldonbiotech.com/wp-admin/comment.php?action=approve&c=145#wpbody-content
+Trash it: https://caldonbiotech.com/wp-admin/comment.php?action=trash&c=145#wpbody-content
+Spam it: https://caldonbiotech.com/wp-admin/comment.php?action=spam&c=145#wpbody-content
+Currently 145 comments are waiting for approval. Please visit the moderation panel:
+https://caldonbiotech.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+
+
+--1676374405-eximdsn-897051174--

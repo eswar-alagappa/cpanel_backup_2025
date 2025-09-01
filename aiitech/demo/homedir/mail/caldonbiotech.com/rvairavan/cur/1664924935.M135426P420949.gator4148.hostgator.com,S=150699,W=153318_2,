@@ -1,0 +1,2619 @@
+Return-Path: <eheotis@cap.org>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id 1YytBwe9PGNVbAYA7/vpDg
+	(envelope-from <eheotis@cap.org>)
+	for <rvairavan@caldonbiotech.com>; Tue, 04 Oct 2022 18:08:55 -0500
+Return-path: <eheotis@cap.org>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Tue, 04 Oct 2022 18:08:55 -0500
+Received: from mx0b-000c9301.pphosted.com ([67.231.152.220]:16102 helo=mx0a-000c9301.pphosted.com)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <eheotis@cap.org>)
+	id 1ofr1x-001lKN-O3
+	for rvairavan@caldonbiotech.com;
+	Tue, 04 Oct 2022 18:08:55 -0500
+Received: from pps.filterd (m0001211.ppops.net [127.0.0.1])
+	by mx0b-000c9301.pphosted.com (8.17.1.9/8.17.1.9) with ESMTP id 294I0GXV024332;
+	Tue, 4 Oct 2022 18:08:42 -0500
+Received: from nam12-dm6-obe.outbound.protection.outlook.com (mail-dm6nam12lp2170.outbound.protection.outlook.com [104.47.59.170])
+	by mx0b-000c9301.pphosted.com (PPS) with ESMTPS id 3k0sqtr9f1-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT);
+	Tue, 04 Oct 2022 18:08:41 -0500 (CDT)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=BDU/Vj3sn8Aj1hYi4CmxRLSU0nTV5J2cNM3+f3lu1zIYEQLd1KsMHtqljB2L19ABeNYO9QxLNZHNqEhNpSu4PxdEQJ3s3uaMUUqUbSgw2iNhOIuwLqaM2LdwtFDl3rUwS9HzamvSeQ51JM3H2b7K1nbKL5uPTf9R/3ph8YC/rYWy88jzlCvA5PW4XbYMuaWxdXH9Xlw6GFE089K1a9Zhcg1P0dqla24F+g7x6gXNGpxSuBCOmB78HtqeyeDzhP+1+tgm3qSbrswWAYPV0ijoVpc6DliqA8QmpLk2RsmhrwtWR67+WNGA71D5Dxlxu2rTd6QmgSU7qfUMi7oy/btrfw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=s6IYvyG1BuxHXdTUlyNa6NqtDJoGG1JRslMsRhfQmnY=;
+ b=IjMKluO8+3IRMpt8A3m7CNKeFNzkb0vKE/WIFaa8+QJRQu01RIcMBSCa3TA1S8efMJxOx72r58xX/oVgthPgQzEySI8ywNHlbOHnl1i9eXK9mQPWYkHwB2SxVSGT4sfxeGKSeS+re1bjUgIbQmPTHWsmM48uS7Zn0B8Ogk1ZcLVp6ueF97Xrs2Dp+wajF78xwU48ZiWDxxcI14US+5ZdPtOlgYcQU63J33VXcZcZfctUjXoL8OdMyWV6sjNr9p6hicCGJDw0ZwJsHYcGZsv8CogOxtSQ4NxVKggq32AfPQ4e89oaIXnj3vqnOY2+AQH7GSL5iuwGn2l0jOTciVByxA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=cap.org; dmarc=pass action=none header.from=cap.org; dkim=pass
+ header.d=cap.org; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=thecap.onmicrosoft.com; s=selector2-thecap-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=s6IYvyG1BuxHXdTUlyNa6NqtDJoGG1JRslMsRhfQmnY=;
+ b=JFZrb4H/iNc+dGDScj0y6RCDh9AT6DbIpngZ16G6tNLD1YN5m4B/Lrk1php/ut/n5eJaNwM87vWhTx0h71Nt1HtPBHlvx59W53NGH6vG+EU6HTBGk1Rwv9uMNQHMjCAOi9MTDNa+mEDfmoTnd5QbGp3t/vyHpY9EyYoRq/i9aFQ=
+Received: from CH2PR11MB4501.namprd11.prod.outlook.com (2603:10b6:610:49::12)
+ by PH0PR11MB5783.namprd11.prod.outlook.com (2603:10b6:510:128::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5676.20; Tue, 4 Oct
+ 2022 23:08:36 +0000
+Received: from CH2PR11MB4501.namprd11.prod.outlook.com
+ ([fe80::8905:7142:cd5:6f]) by CH2PR11MB4501.namprd11.prod.outlook.com
+ ([fe80::8905:7142:cd5:6f%3]) with mapi id 15.20.5676.032; Tue, 4 Oct 2022
+ 23:08:36 +0000
+From: "Eleni Heotis (s)" <eheotis@cap.org>
+To: 'Laura Orlow-Kojac' <LOrlow@CarolinaChemistries.com>
+CC: Christina Gonzales <CGonzales@CarolinaChemistries.com>,
+        "rvairavan@caldonbiotech.com" <rvairavan@caldonbiotech.com>,
+        "AnnMarie Di
+ Prima (s)" <ADIPRIM@cap.org>
+Subject: RE: CAP CORRECTION/ADDITION FW: 2022 ADL-B COA
+Thread-Topic: CAP CORRECTION/ADDITION FW: 2022 ADL-B COA
+Thread-Index: 
+ AdjPhoTDKSOtxVpZQLehWL5XB/scMgC6X5vgAHUHP4AAINFusAAQ0yyAAIVGPpAARHwqgAAFHcXA
+Date: Tue, 4 Oct 2022 23:08:36 +0000
+Message-ID: 
+ <CH2PR11MB45018299AD8D0ED73D151583B55A9@CH2PR11MB4501.namprd11.prod.outlook.com>
+References: 
+ <CH2PR11MB45011C5CB988E26B5FA50D17B5519@CH2PR11MB4501.namprd11.prod.outlook.com>
+ <SN6PR11MB278265A3067570753E0EEED0B6519@SN6PR11MB2782.namprd11.prod.outlook.com>
+ <SJ0PR22MB26728DB75EFA69C4989F44BCC5519@SJ0PR22MB2672.namprd22.prod.outlook.com>
+ <009901d8d13f$f4684a90$dd38dfb0$@caldonbiotech.com>
+ <SJ0PR22MB267274CA2A1BBBA9C0E7D6C5C5529@SJ0PR22MB2672.namprd22.prod.outlook.com>
+ <CH2PR11MB45012329B030147D9DD9E884B5559@CH2PR11MB4501.namprd11.prod.outlook.com>
+ <SJ0PR22MB2672C182BA4F11983C011047C5579@SJ0PR22MB2672.namprd22.prod.outlook.com>
+ <CH2PR11MB4501EDDE99CC99A17484AB14B5569@CH2PR11MB4501.namprd11.prod.outlook.com>
+ <SJ0PR22MB26720A7C336D400AE88F76F6C5569@SJ0PR22MB2672.namprd22.prod.outlook.com>
+ <CH2PR11MB4501840F01FF78CE873F8289B55B9@CH2PR11MB4501.namprd11.prod.outlook.com>
+ <SJ0PR22MB26726105D3C68A6A88D36918C55A9@SJ0PR22MB2672.namprd22.prod.outlook.com>
+In-Reply-To: 
+ <SJ0PR22MB26726105D3C68A6A88D36918C55A9@SJ0PR22MB2672.namprd22.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: CH2PR11MB4501:EE_|PH0PR11MB5783:EE_
+x-ms-office365-filtering-correlation-id: dab2ee1e-acbb-4173-458f-08daa65d5e25
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: 
+ wBfsIGA0FJrmwuyKQ3VV/cWwnUwEVX89ELrW/dA18bbYPDF9YRVZJj1caboiu91KcalMf1lkCNVyJ1VKCkQcDLe29ISma9b/54LLQBQNVKInI7uFTIDjcuhBgubt3a0+7Wocrtx+46Ekp4wl8wOKhHg4E11k7k0KVWAVc78phav/ZH2T1ED4/zt4OF6gKQvr2pAJeA56DV5p9UOldmj0gx0gQj6HN6ypIbPBPuvbvOkatG+VKMh70FYFbcVa32CW+Up3/FNucT+Vz7PDdxmB7o7V0K932+uz0gh42fqGiXFLBMx5ca1myjJ+YQBAky/Lw3G7pngsR2VCzdfrWKkRK+WX+5dPnlJfE8Oib2Mad59maQpr9TsH47+2+2nT8ccoaPhoOWXrYZMr99jH4tOuZnuTy0uEQ8lLThWVUO31Ojws1BfNtc01N+RLikpX73cwQmAqTHp30tgiOpWOu8R9TAt+Duvgv1mr36JbIAAzBjooQljtrZsN+kRyxhgqXPCxqawh7Zd4/8kEon++TrxFighvZP8G+Jvth0z9bzpc5u6YprNnYnC14ndLN4Egrk5ngWDnTB+swjdb6kHM3Cx752mvR1Z4/vB7F5nbc8Hw7LVy8cQRJhvswhPxL/hGPjJSIXcH9WPbYc0Hd3xdoF9wgmYRJ8347c2Ybvbphtyc8QwGM3cSWsAUP+Dz7M36afzeLZzxKWswxwowMwa4lPXdRIHYx+kkdJnq0becPEfd1XeDOulKuhpu9Zstl31Pn/w/6plL/vyLo8LY47IAiZc69A==
+x-forefront-antispam-report: 
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CH2PR11MB4501.namprd11.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230022)(346002)(39850400004)(366004)(136003)(376002)(396003)(451199015)(7696005)(122000001)(6916009)(41300700001)(38100700002)(26005)(166002)(40140700001)(4326008)(83380400001)(8936002)(71200400001)(53546011)(64756008)(86362001)(66946007)(76116006)(478600001)(786003)(8676002)(6506007)(54906003)(66556008)(38070700005)(66476007)(33656002)(9686003)(2906002)(316002)(55016003)(66446008)(186003)(5660300002)(52536014)(99936003)(579004);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: 
+ =?windows-1256?Q?SG45dTeXbjmcgOujD53tV+958gTYd9y7dYywkEW0ryPhvKL7SxvORbGe?=
+ =?windows-1256?Q?ynd/suLfarjGuBQeABVuDNFErLTA913TCQdxg6pF1Ut5QPvGI+wF10zn?=
+ =?windows-1256?Q?icFWdkYDhfV2R+iQIV3qsDhbb4iz9mVkgwiq4/t4LWjMGvTDTyOfPfJR?=
+ =?windows-1256?Q?4taG37jqbeXIG9JowQkxeLW4rEe6u75LfqEg2Zs1w4DpZWdwJ5uyuoIU?=
+ =?windows-1256?Q?kJWIipNqM5s+4CXDpfORBc5A1INicgnJnHGveBwBHFMSI825XNgQRlMc?=
+ =?windows-1256?Q?daMSuQKTSQI2ic0p5cmxUBxXEdTJODWwWl+UySmRaj5BNQKs+XNRV+Xh?=
+ =?windows-1256?Q?tvtHo72cdcfNd5Qp3sEeBzGiKjmaX+Ab2ZNQkTgk11b/KNh7F+HgrnFS?=
+ =?windows-1256?Q?dDIESUwtpEX6Y0fma9XL3I87I0Yx/Y/hrEO02LsLgDJLQErVHdrnTO8E?=
+ =?windows-1256?Q?r0HIR7SZaYi3VDSv5a93CTSHXzAC05aN0IyITRTMTpsWl2unrnsOoqrW?=
+ =?windows-1256?Q?X8Uh13MvcJOHAH5gqfnyRND9KupMDzAX+KQ1f6FGJDmanRU1qYLPrPiP?=
+ =?windows-1256?Q?kx+5opx3DcfPMzDBaojcTdBf9hBPYo5hmOpRIJMyzJI1ERNEhJmNgS4k?=
+ =?windows-1256?Q?bpfSaG7YUZUkl5elbgnwfTCd9TlyPwEWgOGaFcLFZvUpyOXvTFMNi1xw?=
+ =?windows-1256?Q?5tS0WZANveYlpRuoOwvpgXp6ZnDmx0HgnnrGRUlUHPsnLIoWlKFZMXDt?=
+ =?windows-1256?Q?vu8/mq5itRR7+ifgwUnZBJlXNYz0M7TUJpc0/U8Lbs7EtzfwCSSDt0kK?=
+ =?windows-1256?Q?JRT9HQmgW2rwhCOC8ZGTJbqg98bFfVijdNrJIW/qQGLdtQX5iL0y9rhf?=
+ =?windows-1256?Q?4lac46y2ryI0STnbPA/UEt7Sx4wsRjwY3ABrA3xKsPZRqGsFw9Ag4oCd?=
+ =?windows-1256?Q?v3r9rVLYZlMW+XzfKtYLpM3QnomJRxx9i2jMwSr2Mjt5v/T4vWUzk643?=
+ =?windows-1256?Q?HVGMqShV7uf9vFkdbfuDE0RO55EqFkUt7YZRSAB4byIFTEHGLGKJeds7?=
+ =?windows-1256?Q?/OhlOzoR2cxfuvMyfY60hoeD+UsUaBwkd0Ir+GqFcijJYEBWNqw7+pBJ?=
+ =?windows-1256?Q?hlQyDsdprZQWU89f08cJ7prLFTXMwqzai8fDpB8XhiykDjIwWuLwXm4C?=
+ =?windows-1256?Q?oTe0zjFadpYdbpDCxW3ZTGt20K78x7FYHWj9QX/AByg13vLUow6wWSlK?=
+ =?windows-1256?Q?IF9/vUYfHne52kcUlWY3KqhpTtM7G5G9c6h36e8IZ/RXqfBu9CxRq88P?=
+ =?windows-1256?Q?nouchg3MQ6/J74seHvG826ILwmwFJk7E6Y4A7wFZ7myKoF+Jml3tWKRd?=
+ =?windows-1256?Q?FTpDuBHn9waz5PLGYRKmmh0cg7Tem7/z8gIc1YwXCRVOBPvbPFbbQBu2?=
+ =?windows-1256?Q?XGjiFAOKGuXNS2LaE+WPFK4nYHbFO7WalNrs/tH5dHex1fK3pmXb3z+I?=
+ =?windows-1256?Q?cUf+IUdHYOLci8vq873wegJ0TfQv2OH+pzQzNX6dxVaCWdO4+xOhHrB0?=
+ =?windows-1256?Q?w/7ZgF83ynhDGq4gskTqBE2kZIVBRRZC3qeyZl6flL9qMaFfGwc9YkYx?=
+ =?windows-1256?Q?BkuWAGTP11Xm38IWjHUBsKy4wTIfxT+g1i5EkNc5RufUM7YBAhd6Abfo?=
+ =?windows-1256?Q?G/fFhRgb1M0=3D?=
+Content-Type: multipart/related;
+	boundary="_006_CH2PR11MB45018299AD8D0ED73D151583B55A9CH2PR11MB4501namp_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-OriginatorOrg: cap.org
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: CH2PR11MB4501.namprd11.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: dab2ee1e-acbb-4173-458f-08daa65d5e25
+X-MS-Exchange-CrossTenant-originalarrivaltime: 04 Oct 2022 23:08:36.7704
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 4503f2e1-c310-4ce0-95cc-fe3d26359fc4
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: AJ9y7mMIo13pBMH+EqDE+jbJ4T1M1YJ3WuLVj8MZodik8vWNsalku0hCGjDWHcGD
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR11MB5783
+X-Proofpoint-GUID: vg_wJb5aBcT0zOZWzOslmNGyrH0AjC5t
+X-Proofpoint-ORIG-GUID: vg_wJb5aBcT0zOZWzOslmNGyrH0AjC5t
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.205,Aquarius:18.0.895,Hydra:6.0.528,FMLib:17.11.122.1
+ definitions=2022-10-04_09,2022-09-29_03,2022-06-22_01
+X-Proofpoint-Spam-Details: rule=outbound_notspam policy=outbound score=0 malwarescore=0
+ priorityscore=1501 clxscore=1015 suspectscore=0 bulkscore=0
+ impostorscore=0 adultscore=0 lowpriorityscore=0 phishscore=0 mlxscore=0
+ mlxlogscore=999 spamscore=0 classifier=spam adjust=0 reason=mlx
+ scancount=1 engine=8.19.0-2209130001 definitions=main-2210040150
+X-Spam-Status: No, score=2.4
+X-Spam-Score: 24
+X-Spam-Bar: ++
+X-Spam-Flag: NO
+
+--_006_CH2PR11MB45018299AD8D0ED73D151583B55A9CH2PR11MB4501namp_
+Content-Type: multipart/alternative;
+	boundary="_000_CH2PR11MB45018299AD8D0ED73D151583B55A9CH2PR11MB4501namp_"
+
+--_000_CH2PR11MB45018299AD8D0ED73D151583B55A9CH2PR11MB4501namp_
+Content-Type: text/plain; charset="windows-1256"
+Content-Transfer-Encoding: quoted-printable
+
+Thank you!
+
+Eleni Heotis, MLS(ASCP)CM
+Senior Technical Product and Quality Assurance Specialist
+College of American Pathologists
+325 Waukegan Road, Northfield, IL 60093
+ eheotis@cap.org<mailto:pprovax@cap.org>
+cap.org<http://www.cap.org/> | @Pathologists<https://twitter.com/Pathologis=
+ts> | Facebook<https://www.facebook.com/capathologists> | Instagram<https:/=
+/www.instagram.com/cap_pathologists>
+
+
+
+[cid:image001.jpg@01D8D81C.51AF3370]
+
+
+
+From: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com>
+Sent: Tuesday, October 4, 2022 3:42 PM
+To: Eleni Heotis (s) <eheotis@cap.org>
+Cc: Christina Gonzales <CGonzales@CarolinaChemistries.com>; rvairavan@caldo=
+nbiotech.com; AnnMarie Di Prima (s) <ADIPRIM@cap.org>
+Subject: RE: CAP CORRECTION/ADDITION FW: 2022 ADL-B COA
+Importance: High
+
+Hello Eleni, Please see attached the FINAL C of A=92s. Thank you for your p=
+atience while we got this fine tuned. Laura Orlow-Kojac Carolina Liquid Che=
+mistries Corp. =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E =9E =9E =9E
+ZjQcmQRYFpfptBannerStart
+This Message Is From an External Sender
+This message came from outside your organization.
+**This banner is provided by CAP IS**
+ZjQcmQRYFpfptBannerEnd
+Hello Eleni,
+
+Please see attached the FINAL C of A=92s.
+
+Thank you for your patience while we got this fine tuned.
+
+
+Laura Orlow-Kojac
+Carolina Liquid Chemistries Corp.
+510 W. Central Avenue
+Suite  C
+Brea CA 92821
+714-529-7125   fax 714-529-7274
+
+
+
+From: Eleni Heotis (s) <eheotis@cap.org<mailto:eheotis@cap.org>>
+Sent: Monday, October 3, 2022 5:02 AM
+To: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com<mailto:LOrlow@Carolin=
+aChemistries.com>>
+Cc: Christina Gonzales <CGonzales@CarolinaChemistries.com<mailto:CGonzales@=
+CarolinaChemistries.com>>; rvairavan@caldonbiotech.com<mailto:rvairavan@cal=
+donbiotech.com>; AnnMarie Di Prima (s) <ADIPRIM@cap.org<mailto:ADIPRIM@cap.=
+org>>
+Subject: RE: CAP CORRECTION/ADDITION FW: 2022 ADL-B COA
+
+Perfect, thank you.
+
+Eleni Heotis, MLS(ASCP)CM
+Senior Technical Product and Quality Assurance Specialist
+College of American Pathologists
+325 Waukegan Road, Northfield, IL 60093
+ eheotis@cap.org<mailto:pprovax@cap.org>
+cap.org<http://www.cap.org/> | @Pathologists<https://urldefense.com/v3/__ht=
+tps:/twitter.com/Pathologists__;!!Nge-QFtCGiqLqA!FAZhSGHPy9nDsRSjvULqYvPim-=
+vbB66uhBHm2EN23X0mz0eDn5Uh_AAv6eaf8UKagzEnWaOK5sIak3yCg3Nk$> | Facebook<htt=
+ps://urldefense.com/v3/__https:/www.facebook.com/capathologists__;!!Nge-QFt=
+CGiqLqA!FAZhSGHPy9nDsRSjvULqYvPim-vbB66uhBHm2EN23X0mz0eDn5Uh_AAv6eaf8UKagzE=
+nWaOK5sIak-TwBfL1$> | Instagram<https://urldefense.com/v3/__https:/www.inst=
+agram.com/cap_pathologists__;!!Nge-QFtCGiqLqA!FAZhSGHPy9nDsRSjvULqYvPim-vbB=
+66uhBHm2EN23X0mz0eDn5Uh_AAv6eaf8UKagzEnWaOK5sIakxMjmrTn$>
+
+
+
+[cid:image001.jpg@01D8D81C.51AF3370]
+
+
+
+From: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com<mailto:LOrlow@Carol=
+inaChemistries.com>>
+Sent: Friday, September 30, 2022 3:25 PM
+To: Eleni Heotis (s) <eheotis@cap.org<mailto:eheotis@cap.org>>
+Cc: Christina Gonzales <CGonzales@CarolinaChemistries.com<mailto:CGonzales@=
+CarolinaChemistries.com>>; rvairavan@caldonbiotech.com<mailto:rvairavan@cal=
+donbiotech.com>; AnnMarie Di Prima (s) <ADIPRIM@cap.org<mailto:ADIPRIM@cap.=
+org>>
+Subject: RE: CAP CORRECTION/ADDITION FW: 2022 ADL-B COA
+
+Hello Eleni, We can remove that statement. And will send to you revised C o=
+f A on Monday. Sorry this has been such a back and forth. Laura Orlow-Kojac=
+ =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E
+ZjQcmQRYFpfptBannerStart
+This Message Is From an External Sender
+This message came from outside your organization.
+**This banner is provided by CAP IS**
+ZjQcmQRYFpfptBannerEnd
+Hello Eleni,
+
+We can remove that statement.  And will send to you revised C of A on Monda=
+y.
+
+Sorry this has been such a back and forth.
+
+
+Laura Orlow-Kojac
+Carolina Liquid Chemistries Corp.
+510 W. Central Avenue
+Suite  C
+Brea CA 92821
+714-529-7125   fax 714-529-7274
+
+
+
+From: Eleni Heotis (s) <eheotis@cap.org<mailto:eheotis@cap.org>>
+Sent: Friday, September 30, 2022 5:34 AM
+To: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com<mailto:LOrlow@Carolin=
+aChemistries.com>>
+Cc: Christina Gonzales <CGonzales@CarolinaChemistries.com<mailto:CGonzales@=
+CarolinaChemistries.com>>; rvairavan@caldonbiotech.com<mailto:rvairavan@cal=
+donbiotech.com>; AnnMarie Di Prima (s) <ADIPRIM@cap.org<mailto:ADIPRIM@cap.=
+org>>
+Subject: RE: CAP CORRECTION/ADDITION FW: 2022 ADL-B COA
+
+Hi Laura,
+
+The new statement looks great.
+
+The following state is not listed in our declaration of testing section.
+
+The raw material used here is lyophilized in an alkaline medium. No specime=
+n was collected directly from animal.
+
+Is the statement needed or can it be removed? Per MSR composite the materia=
+l is from animal origin. Please confirm and made any necessary changes to t=
+he MSR composition and COA.
+
+[cid:image002.png@01D8D81C.51AF3370]
+
+Thank you,
+
+Eleni Heotis, MLS(ASCP)CM
+Senior Technical Product and Quality Assurance Specialist
+College of American Pathologists
+325 Waukegan Road, Northfield, IL 60093
+ eheotis@cap.org<mailto:pprovax@cap.org>
+cap.org<http://www.cap.org/> | @Pathologists<https://urldefense.com/v3/__ht=
+tps:/twitter.com/Pathologists__;!!Nge-QFtCGiqLqA!BSeaTAd02nDEtA7XqwLscwDAmX=
+zE52ufkUZbP_TlCmrpO2x3xMsrl3S-qgcY9Du2GeUP7vakerEI0HxbyvaH$> | Facebook<htt=
+ps://urldefense.com/v3/__https:/www.facebook.com/capathologists__;!!Nge-QFt=
+CGiqLqA!BSeaTAd02nDEtA7XqwLscwDAmXzE52ufkUZbP_TlCmrpO2x3xMsrl3S-qgcY9Du2GeU=
+P7vakerEI0Joc3ImA$> | Instagram<https://urldefense.com/v3/__https:/www.inst=
+agram.com/cap_pathologists__;!!Nge-QFtCGiqLqA!BSeaTAd02nDEtA7XqwLscwDAmXzE5=
+2ufkUZbP_TlCmrpO2x3xMsrl3S-qgcY9Du2GeUP7vakerEI0PNDfdE5$>
+
+
+
+[cid:image001.jpg@01D8D81C.51AF3370]
+
+
+
+
+
+From: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com<mailto:LOrlow@Carol=
+inaChemistries.com>>
+Sent: Thursday, September 29, 2022 3:43 PM
+To: Eleni Heotis (s) <eheotis@cap.org<mailto:eheotis@cap.org>>
+Cc: Christina Gonzales <CGonzales@CarolinaChemistries.com<mailto:CGonzales@=
+CarolinaChemistries.com>>; rvairavan@caldonbiotech.com<mailto:rvairavan@cal=
+donbiotech.com>; AnnMarie Di Prima (s) <ADIPRIM@cap.org<mailto:ADIPRIM@cap.=
+org>>
+Subject: RE: CAP CORRECTION/ADDITION FW: 2022 ADL-B COA
+
+Hello Eleni, Please see attached updated C of A for your review. I hope thi=
+s will meet the requirements. If there is anything else you need please let=
+ me know, =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E =9E =9E =9E =9E
+ZjQcmQRYFpfptBannerStart
+This Message Is From an External Sender
+This message came from outside your organization.
+**This banner is provided by CAP IS**
+ZjQcmQRYFpfptBannerEnd
+Hello Eleni,
+
+Please see attached updated C of A for your review.   I hope this will meet=
+ the requirements.
+
+If there is anything else you need please let me know,
+
+
+Laura Orlow-Kojac
+Carolina Liquid Chemistries Corp.
+510 W. Central Avenue
+Suite  C
+Brea CA 92821
+714-529-7125   fax 714-529-7274
+
+
+
+From: Eleni Heotis (s) <eheotis@cap.org<mailto:eheotis@cap.org>>
+Sent: Tuesday, September 27, 2022 5:57 AM
+To: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com<mailto:LOrlow@Carolin=
+aChemistries.com>>; AnnMarie Di Prima (s) <ADIPRIM@cap.org<mailto:ADIPRIM@c=
+ap.org>>
+Cc: Christina Gonzales <CGonzales@CarolinaChemistries.com<mailto:CGonzales@=
+CarolinaChemistries.com>>
+Subject: RE: CAP CORRECTION/ADDITION FW: 2022 ADL-B COA
+
+Hi Laura,
+
+Thank you for correcting the specimen number. Please update Declaration of =
+Testing section to include the appropriate statement/s from the list below:
+
+[cid:image003.png@01D8D81C.51AF3370]
+
+Thank you,
+
+Eleni Heotis, MLS(ASCP)CM
+Senior Technical Product and Quality Assurance Specialist
+College of American Pathologists
+325 Waukegan Road, Northfield, IL 60093
+ eheotis@cap.org<mailto:pprovax@cap.org>
+cap.org<http://www.cap.org/> | @Pathologists<https://urldefense.com/v3/__ht=
+tps:/twitter.com/Pathologists__;!!Nge-QFtCGiqLqA!GcA_tiGfIf5yeGzZ2XEkfb0Zd3=
+7a9EDZ32aF46vCQeYKfTzd8MTCC6fNwuchm9PaxL_L3KuglwhEZgsDPp8p$> | Facebook<htt=
+ps://urldefense.com/v3/__https:/www.facebook.com/capathologists__;!!Nge-QFt=
+CGiqLqA!GcA_tiGfIf5yeGzZ2XEkfb0Zd37a9EDZ32aF46vCQeYKfTzd8MTCC6fNwuchm9PaxL_=
+L3KuglwhEZgbvY4Tl$> | Instagram<https://urldefense.com/v3/__https:/www.inst=
+agram.com/cap_pathologists__;!!Nge-QFtCGiqLqA!GcA_tiGfIf5yeGzZ2XEkfb0Zd37a9=
+EDZ32aF46vCQeYKfTzd8MTCC6fNwuchm9PaxL_L3KuglwhEZlI8_Q5n$>
+
+
+
+[cid:image001.jpg@01D8D81C.51AF3370]
+
+
+
+From: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com<mailto:LOrlow@Carol=
+inaChemistries.com>>
+Sent: Monday, September 26, 2022 9:57 AM
+To: AnnMarie Di Prima (s) <ADIPRIM@cap.org<mailto:ADIPRIM@cap.org>>; Eleni =
+Heotis (s) <eheotis@cap.org<mailto:eheotis@cap.org>>
+Cc: Christina Gonzales <CGonzales@CarolinaChemistries.com<mailto:CGonzales@=
+CarolinaChemistries.com>>
+Subject: CAP CORRECTION/ADDITION FW: 2022 ADL-B COA
+
+AnnMarie and Eleni, Please see attached the updated CoA=92s for the Aldolas=
+e Controls for your review. Let us know if you should need anything else, S=
+incerely, =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E
+ZjQcmQRYFpfptBannerStart
+This Message Is From an Untrusted Sender
+You have not previously corresponded with this sender.
+**This banner is provided by CAP IS**
+ZjQcmQRYFpfptBannerEnd
+AnnMarie and Eleni,
+
+Please see attached the updated CoA=92s for the Aldolase Controls  for your=
+ review.
+
+Let us know if you should need anything else,
+
+Sincerely,
+
+Laura Orlow-Kojac
+Carolina Liquid Chemistries Corp.
+510 W. Central Avenue
+Suite  C
+Brea CA 92821
+714-529-7125   fax 714-529-7274
+
+
+
+From: rvairavan@caldonbiotech.com<mailto:rvairavan@caldonbiotech.com> <rvai=
+ravan@caldonbiotech.com<mailto:rvairavan@caldonbiotech.com>>
+Sent: Sunday, September 25, 2022 5:36 PM
+To: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com<mailto:LOrlow@Carolin=
+aChemistries.com>>
+Cc: Christina Gonzales <CGonzales@CarolinaChemistries.com<mailto:CGonzales@=
+CarolinaChemistries.com>>
+Subject: RE: URGENT! CAP CORRECTION/ADDITION FW: 2022 ADL-B COA
+
+Hello Laura
+
+Here is the signed doc with an explanation written on animal source
+
+Thanks
+Ram
+
+Ramanath Vairavan Ph.D
+President
+Caldon Biotech
+Mobile: 760-402-6335; rvairavan@caldonbiotech.com<mailto:rvairavan@caldonbi=
+otech.com>
+www.caldonbiotech.com<https://urldefense.proofpoint.com/v2/url?u=3Dhttps-3A=
+__nam04.safelinks.protection.outlook.com_-3Furl-3Dhttp-253A-252F-252Fwww.di=
+acarta.com-252F-26data-3D01-257C01-257Ceisenbm-2540labcorp.com-257Cb84ab9ac=
+12c84e33eba208d7101527c9-257C7b3bf3a5ce934afbabec7bf49544d250-257C1-26sdata=
+-3DJBxYSwQlgWm1b6OAMGpqfkHV8iGuwk9X1Ks2aWuwF3w-253D-26reserved-3D0&d=3DDwMF=
+_g&c=3DuhUSuyNScXHb_F2nn0PKeY0q4oY6FfjGrtpKpaZYX9Y&r=3Dn9qe1kpx8Rqz4bAJd9cJ=
+Iw&m=3DGlMtmaha6McdnPRI3w16Pp5HY27OY05J0GGo1Z-wy7tWqTyQmKh9N6frjr-Py4Qu&s=
+=3Db6JYoJibAULXnAUqOwlm3YogQhBWGoSYoKvM9v6zZQY&e=3D>
+
+From: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com<mailto:LOrlow@Carol=
+inaChemistries.com>>
+Sent: Friday, September 23, 2022 1:27 PM
+To: rvairavan@caldonbiotech.com<mailto:rvairavan@caldonbiotech.com>
+Cc: Christina Gonzales <CGonzales@CarolinaChemistries.com<mailto:CGonzales@=
+CarolinaChemistries.com>>
+Subject: URGENT! CAP CORRECTION/ADDITION FW: 2022 ADL-B COA
+Importance: High
+
+Hello Ram, Please see email below  and  items attached.
+
+There was a typo on Level 2 =96 for the specimen #- I have corrected.
+
+ALSO- they want us to add another Declaration of Testing Statement on the C=
+ of A from the CAP Template below.
+
+You can direct me as to what the you would like to add, or you can change t=
+he word document to prepare for your signing.
+
+Please let me know how to assist.
+
+I look forward to hearing from you soon
+
+Laura Orlow-Kojac
+Carolina Liquid Chemistries Corp.
+510 W. Central Avenue
+Suite  C
+Brea CA 92821
+714-529-7125   fax 714-529-7274
+
+
+
+From: AnnMarie Di Prima (s) <ADIPRIM@cap.org<mailto:ADIPRIM@cap.org>>
+Sent: Friday, September 23, 2022 1:00 PM
+To: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com<mailto:LOrlow@Carolin=
+aChemistries.com>>
+Cc: Eleni Heotis (s) <eheotis@cap.org<mailto:eheotis@cap.org>>
+Subject: FW: 2022 ADL-B COA
+
+Looping in Laura as well.
+
+From: Eleni Heotis (s) <eheotis@cap.org<mailto:eheotis@cap.org>>
+Sent: Friday, September 23, 2022 2:58 PM
+To: 'rvairavan@caldonbiotech.com' <rvairavan@caldonbiotech.com<mailto:rvair=
+avan@caldonbiotech.com>>
+Cc: AnnMarie Di Prima (s) <ADIPRIM@cap.org<mailto:ADIPRIM@cap.org>>; Christ=
+ina Chancey (s) <cchance@cap.org<mailto:cchance@cap.org>>; Molly Hansen (s)=
+ <mhansen@cap.org<mailto:mhansen@cap.org>>
+Subject: 2022 ADL-B COA
+
+Hi Ram,
+
+Please verify the specimen number on page 3 and include a Declaration of Te=
+sting statement on COA.
+
+[cid:image003.png@01D8D81C.51AF3370]
+
+Thank you,
+
+Eleni Heotis, MLS(ASCP)CM
+Senior Technical Product and Quality Assurance Specialist
+College of American Pathologists
+325 Waukegan Road, Northfield, IL 60093
+ eheotis@cap.org<mailto:pprovax@cap.org>
+cap.org<http://www.cap.org/> | @Pathologists<https://urldefense.com/v3/__ht=
+tps:/twitter.com/Pathologists__;!!Nge-QFtCGiqLqA!E7MPMhr9epnCtgws5QUpXjswqv=
+8pSnL4UqKpadJ6p6tcM_AU-BQW76edDPn9R9qs1EbdIV9JgGJBfau0YYWO$> | Facebook<htt=
+ps://urldefense.com/v3/__https:/www.facebook.com/capathologists__;!!Nge-QFt=
+CGiqLqA!E7MPMhr9epnCtgws5QUpXjswqv8pSnL4UqKpadJ6p6tcM_AU-BQW76edDPn9R9qs1Eb=
+dIV9JgGJBfV51qDJw$> | Instagram<https://urldefense.com/v3/__https:/www.inst=
+agram.com/cap_pathologists__;!!Nge-QFtCGiqLqA!E7MPMhr9epnCtgws5QUpXjswqv8pS=
+nL4UqKpadJ6p6tcM_AU-BQW76edDPn9R9qs1EbdIV9JgGJBfelwW0K7$>
+
+
+
+[cid:image001.jpg@01D8D81C.51AF3370]
+
+
+--_000_CH2PR11MB45018299AD8D0ED73D151583B55A9CH2PR11MB4501namp_
+Content-Type: text/html; charset="windows-1256"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dwindows-1=
+256">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Mistral;
+	panose-1:3 9 7 2 3 4 7 2 4 3;}
+@font-face
+	{font-family:"Lucida Handwriting";
+	panose-1:3 1 1 1 1 1 1 1 1 1;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+span.EmailStyle20
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Thank you!<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif;color:#00B0F0">Eleni Heotis, MLS(ASCP)<sup>CM</sup><o:p></o:p></span=
+></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif">Senior Technical Product and Quality Assurance Specialist<o:p></o:p=
+></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif">College of American Pathologists<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif">325 Waukegan Road, Northfield, IL 60093
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:#00B0F0">&nbsp;<a href=3D"mailto:pprovax@cap.org"><span style=3D"=
+color:#00B0F0">eheotis@cap.org</span></a>
+<i><o:p></o:p></i></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><a href=3D"http://w=
+ww.cap.org/"><span style=3D"font-size:10.0pt;color:#009ABF">cap.org</span><=
+/a></span><span style=3D"color:#009ABF"> |
+</span><span style=3D"font-size:11.0pt"><a href=3D"https://twitter.com/Path=
+ologists"><span style=3D"font-size:10.0pt;color:#009ABF">@Pathologists</spa=
+n></a></span><span style=3D"color:#009ABF"> |
+</span><span style=3D"font-size:11.0pt"><a href=3D"https://www.facebook.com=
+/capathologists"><span style=3D"font-size:10.0pt;color:#009ABF">Facebook</s=
+pan></a></span><span style=3D"color:#009ABF"> |
+</span><span style=3D"font-size:11.0pt"><a href=3D"https://www.instagram.co=
+m/cap_pathologists"><span style=3D"font-size:10.0pt;color:#009ABF">Instagra=
+m</span></a></span><span style=3D"color:#009ABF"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-GT" style=3D"font-family:&quot;Aria=
+l&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-GT" style=3D"font-family:&quot;Aria=
+l&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-GT" style=3D"font-family:&quot;Aria=
+l&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><img border=3D"0" w=
+idth=3D"272" height=3D"46" style=3D"width:2.8333in;height:.4791in" id=3D"_x=
+0000_i1032" src=3D"cid:image001.jpg@01D8D81C.51AF3370"></span><b><span styl=
+e=3D"font-family:&quot;Arial&quot;,sans-serif;color:#0054A0"><o:p></o:p></s=
+pan></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt">From:</span></b>=
+<span style=3D"font-size:11.0pt"> Laura Orlow-Kojac &lt;LOrlow@CarolinaChem=
+istries.com&gt;
+<br>
+<b>Sent:</b> Tuesday, October 4, 2022 3:42 PM<br>
+<b>To:</b> Eleni Heotis (s) &lt;eheotis@cap.org&gt;<br>
+<b>Cc:</b> Christina Gonzales &lt;CGonzales@CarolinaChemistries.com&gt;; rv=
+airavan@caldonbiotech.com; AnnMarie Di Prima (s) &lt;ADIPRIM@cap.org&gt;<br=
+>
+<b>Subject:</b> RE: CAP CORRECTION/ADDITION FW: 2022 ADL-B COA<br>
+<b>Importance:</b> High<o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class=3D"MsoNormal" style=3D"mso-line-height-alt:.75pt"><span style=3D"f=
+ont-size:1.0pt;color:white">Hello Eleni, Please see attached the FINAL C of=
+ A=92s. Thank you for your patience while we got this fine tuned. Laura Orl=
+ow-Kojac Carolina Liquid Chemistries Corp.
+ =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E
+<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"mso-line-height-alt:.75pt"><span style=3D"f=
+ont-size:1.0pt;color:white">ZjQcmQRYFpfptBannerStart<o:p></o:p></span></p>
+</div>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%;border-radius:4px">
+<tbody>
+<tr>
+<td style=3D"padding:12.0pt 0in 12.0pt 0in">
+<table class=3D"MsoNormalTable" border=3D"1" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%;background:#D0D8DC;border:none;=
+border-top:solid #90A4AE 3.0pt">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"border:none;padding:0in 7.5pt 3.75pt 4.5pt">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"left">
+<tbody>
+<tr>
+<td style=3D"padding:3.0pt 6.0pt 3.0pt 6.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.5pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:black">This Message Is From an External Sende=
+r
+<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr>
+<td style=3D"padding:3.0pt 6.0pt 3.0pt 6.0pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:black">This message came from outside your organi=
+zation.
+<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style=3D"padding:3.0pt 6.0pt 3.0pt 6.0pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:black">**This banner is provided by CAP IS**
+<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p class=3D"MsoNormal" style=3D"mso-line-height-alt:.75pt"><span style=3D"f=
+ont-size:1.0pt;color:white">ZjQcmQRYFpfptBannerEnd</span><span style=3D"fon=
+t-size:1.0pt;font-family:&quot;Times New Roman&quot;,serif;color:white"><o:=
+p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hello Eleni,<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Please see attached=
+ the FINAL C of A=92s.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Thank you for your =
+patience while we got this fine tuned.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:11.0pt;font-family:&quot=
+;Lucida Handwriting&quot;;color:navy">Laura Orlow-Kojac<o:p></o:p></span></=
+i></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Carolina Liquid Chemistries Corp.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">510 W. Central Avenue<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Suite&nbsp; C&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Brea CA 92821<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">714-529-7125&nbsp;&nbsp; fax 714-529-7274<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt">From:</span></b>=
+<span style=3D"font-size:11.0pt"> Eleni Heotis (s) &lt;<a href=3D"mailto:eh=
+eotis@cap.org">eheotis@cap.org</a>&gt;
+<br>
+<b>Sent:</b> Monday, October 3, 2022 5:02 AM<br>
+<b>To:</b> Laura Orlow-Kojac &lt;<a href=3D"mailto:LOrlow@CarolinaChemistri=
+es.com">LOrlow@CarolinaChemistries.com</a>&gt;<br>
+<b>Cc:</b> Christina Gonzales &lt;<a href=3D"mailto:CGonzales@CarolinaChemi=
+stries.com">CGonzales@CarolinaChemistries.com</a>&gt;;
+<a href=3D"mailto:rvairavan@caldonbiotech.com">rvairavan@caldonbiotech.com<=
+/a>; AnnMarie Di Prima (s) &lt;<a href=3D"mailto:ADIPRIM@cap.org">ADIPRIM@c=
+ap.org</a>&gt;<br>
+<b>Subject:</b> RE: CAP CORRECTION/ADDITION FW: 2022 ADL-B COA<o:p></o:p></=
+span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Perfect, thank you.=
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif;color:#00B0F0">Eleni Heotis, MLS(ASCP)<sup>CM</sup><o:p></o:p></span=
+></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif">Senior Technical Product and Quality Assurance Specialist<o:p></o:p=
+></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif">College of American Pathologists<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif">325 Waukegan Road, Northfield, IL 60093
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:#00B0F0">&nbsp;<a href=3D"mailto:pprovax@cap.org"><span style=3D"=
+color:#00B0F0">eheotis@cap.org</span></a>
+<i><o:p></o:p></i></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><a href=3D"http://w=
+ww.cap.org/"><span style=3D"font-size:10.0pt;color:#009ABF">cap.org</span><=
+/a></span><span style=3D"color:#009ABF"> |
+</span><span style=3D"font-size:11.0pt"><a href=3D"https://urldefense.com/v=
+3/__https:/twitter.com/Pathologists__;!!Nge-QFtCGiqLqA!FAZhSGHPy9nDsRSjvULq=
+YvPim-vbB66uhBHm2EN23X0mz0eDn5Uh_AAv6eaf8UKagzEnWaOK5sIak3yCg3Nk$"><span st=
+yle=3D"font-size:10.0pt;color:#009ABF">@Pathologists</span></a></span><span=
+ style=3D"color:#009ABF">
+ | </span><span style=3D"font-size:11.0pt"><a href=3D"https://urldefense.co=
+m/v3/__https:/www.facebook.com/capathologists__;!!Nge-QFtCGiqLqA!FAZhSGHPy9=
+nDsRSjvULqYvPim-vbB66uhBHm2EN23X0mz0eDn5Uh_AAv6eaf8UKagzEnWaOK5sIak-TwBfL1$=
+"><span style=3D"font-size:10.0pt;color:#009ABF">Facebook</span></a></span>=
+<span style=3D"color:#009ABF">
+ | </span><span style=3D"font-size:11.0pt"><a href=3D"https://urldefense.co=
+m/v3/__https:/www.instagram.com/cap_pathologists__;!!Nge-QFtCGiqLqA!FAZhSGH=
+Py9nDsRSjvULqYvPim-vbB66uhBHm2EN23X0mz0eDn5Uh_AAv6eaf8UKagzEnWaOK5sIakxMjmr=
+Tn$"><span style=3D"font-size:10.0pt;color:#009ABF">Instagram</span></a></s=
+pan><span style=3D"color:#009ABF"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-GT" style=3D"font-family:&quot;Aria=
+l&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-GT" style=3D"font-family:&quot;Aria=
+l&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-GT" style=3D"font-family:&quot;Aria=
+l&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><img border=3D"0" w=
+idth=3D"272" height=3D"46" style=3D"width:2.8333in;height:.4791in" id=3D"_x=
+0000_i1031" src=3D"cid:image001.jpg@01D8D81C.51AF3370"></span><b><span styl=
+e=3D"font-family:&quot;Arial&quot;,sans-serif;color:#0054A0"><o:p></o:p></s=
+pan></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt">From:</span></b>=
+<span style=3D"font-size:11.0pt"> Laura Orlow-Kojac &lt;<a href=3D"mailto:L=
+Orlow@CarolinaChemistries.com">LOrlow@CarolinaChemistries.com</a>&gt;
+<br>
+<b>Sent:</b> Friday, September 30, 2022 3:25 PM<br>
+<b>To:</b> Eleni Heotis (s) &lt;<a href=3D"mailto:eheotis@cap.org">eheotis@=
+cap.org</a>&gt;<br>
+<b>Cc:</b> Christina Gonzales &lt;<a href=3D"mailto:CGonzales@CarolinaChemi=
+stries.com">CGonzales@CarolinaChemistries.com</a>&gt;;
+<a href=3D"mailto:rvairavan@caldonbiotech.com">rvairavan@caldonbiotech.com<=
+/a>; AnnMarie Di Prima (s) &lt;<a href=3D"mailto:ADIPRIM@cap.org">ADIPRIM@c=
+ap.org</a>&gt;<br>
+<b>Subject:</b> RE: CAP CORRECTION/ADDITION FW: 2022 ADL-B COA<o:p></o:p></=
+span></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class=3D"MsoNormal" style=3D"mso-line-height-alt:.75pt"><span style=3D"f=
+ont-size:1.0pt;color:white">Hello Eleni, We can remove that statement. And =
+will send to you revised C of A on Monday. Sorry this has been such a back =
+and forth. Laura Orlow-Kojac =9E =9E =9E =9E =9E
+ =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E =9E =9E =9E =9E =9E =9E
+<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"mso-line-height-alt:.75pt"><span style=3D"f=
+ont-size:1.0pt;color:white">ZjQcmQRYFpfptBannerStart<o:p></o:p></span></p>
+</div>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%;border-radius:4px">
+<tbody>
+<tr>
+<td style=3D"padding:12.0pt 0in 12.0pt 0in">
+<table class=3D"MsoNormalTable" border=3D"1" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%;background:#D0D8DC;border:none;=
+border-top:solid #90A4AE 3.0pt">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"border:none;padding:0in 7.5pt 3.75pt 4.5pt">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"left">
+<tbody>
+<tr>
+<td style=3D"padding:3.0pt 6.0pt 3.0pt 6.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.5pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:black">This Message Is From an External Sende=
+r
+<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr>
+<td style=3D"padding:3.0pt 6.0pt 3.0pt 6.0pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:black">This message came from outside your organi=
+zation.
+<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style=3D"padding:3.0pt 6.0pt 3.0pt 6.0pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:black">**This banner is provided by CAP IS**
+<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p class=3D"MsoNormal" style=3D"mso-line-height-alt:.75pt"><span style=3D"f=
+ont-size:1.0pt;color:white">ZjQcmQRYFpfptBannerEnd</span><span style=3D"fon=
+t-size:1.0pt;font-family:&quot;Times New Roman&quot;,serif;color:white"><o:=
+p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hello Eleni,<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">We can remove that =
+statement.&nbsp; And will send to you revised C of A on Monday.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Sorry this has been=
+ such a back and forth.&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:11.0pt;font-family:&quot=
+;Lucida Handwriting&quot;;color:navy">Laura Orlow-Kojac<o:p></o:p></span></=
+i></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Carolina Liquid Chemistries Corp.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">510 W. Central Avenue<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Suite&nbsp; C&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Brea CA 92821<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">714-529-7125&nbsp;&nbsp; fax 714-529-7274<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt">From:</span></b>=
+<span style=3D"font-size:11.0pt"> Eleni Heotis (s) &lt;<a href=3D"mailto:eh=
+eotis@cap.org">eheotis@cap.org</a>&gt;
+<br>
+<b>Sent:</b> Friday, September 30, 2022 5:34 AM<br>
+<b>To:</b> Laura Orlow-Kojac &lt;<a href=3D"mailto:LOrlow@CarolinaChemistri=
+es.com">LOrlow@CarolinaChemistries.com</a>&gt;<br>
+<b>Cc:</b> Christina Gonzales &lt;<a href=3D"mailto:CGonzales@CarolinaChemi=
+stries.com">CGonzales@CarolinaChemistries.com</a>&gt;;
+<a href=3D"mailto:rvairavan@caldonbiotech.com">rvairavan@caldonbiotech.com<=
+/a>; AnnMarie Di Prima (s) &lt;<a href=3D"mailto:ADIPRIM@cap.org">ADIPRIM@c=
+ap.org</a>&gt;<br>
+<b>Subject:</b> RE: CAP CORRECTION/ADDITION FW: 2022 ADL-B COA<o:p></o:p></=
+span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hi Laura,<o:p></o:p=
+></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">The new statement l=
+ooks great.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">The following state=
+ is not listed in our declaration of testing section.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;color:#0070C0"><o:p>=
+&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt;color:#0070C0">The r=
+aw material used here is lyophilized in an alkaline medium. No specimen was=
+ collected directly from animal.&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Is the statement ne=
+eded or can it be removed? Per MSR composite the material is from animal or=
+igin. Please confirm and made any necessary changes to the MSR composition =
+and COA.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><img border=3D"0" width=3D"266" height=3D"66" style=
+=3D"width:2.7708in;height:.6875in" id=3D"Picture_x0020_6" src=3D"cid:image0=
+02.png@01D8D81C.51AF3370"><span style=3D"font-size:11.0pt"><o:p></o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Thank you,<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif;color:#00B0F0">Eleni Heotis, MLS(ASCP)<sup>CM</sup><o:p></o:p></span=
+></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif">Senior Technical Product and Quality Assurance Specialist<o:p></o:p=
+></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif">College of American Pathologists<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif">325 Waukegan Road, Northfield, IL 60093
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:#00B0F0">&nbsp;<a href=3D"mailto:pprovax@cap.org"><span style=3D"=
+color:#00B0F0">eheotis@cap.org</span></a>
+<i><o:p></o:p></i></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><a href=3D"http://w=
+ww.cap.org/"><span style=3D"font-size:10.0pt;color:#009ABF">cap.org</span><=
+/a></span><span style=3D"color:#009ABF"> |
+</span><span style=3D"font-size:11.0pt"><a href=3D"https://urldefense.com/v=
+3/__https:/twitter.com/Pathologists__;!!Nge-QFtCGiqLqA!BSeaTAd02nDEtA7XqwLs=
+cwDAmXzE52ufkUZbP_TlCmrpO2x3xMsrl3S-qgcY9Du2GeUP7vakerEI0HxbyvaH$"><span st=
+yle=3D"font-size:10.0pt;color:#009ABF">@Pathologists</span></a></span><span=
+ style=3D"color:#009ABF">
+ | </span><span style=3D"font-size:11.0pt"><a href=3D"https://urldefense.co=
+m/v3/__https:/www.facebook.com/capathologists__;!!Nge-QFtCGiqLqA!BSeaTAd02n=
+DEtA7XqwLscwDAmXzE52ufkUZbP_TlCmrpO2x3xMsrl3S-qgcY9Du2GeUP7vakerEI0Joc3ImA$=
+"><span style=3D"font-size:10.0pt;color:#009ABF">Facebook</span></a></span>=
+<span style=3D"color:#009ABF">
+ | </span><span style=3D"font-size:11.0pt"><a href=3D"https://urldefense.co=
+m/v3/__https:/www.instagram.com/cap_pathologists__;!!Nge-QFtCGiqLqA!BSeaTAd=
+02nDEtA7XqwLscwDAmXzE52ufkUZbP_TlCmrpO2x3xMsrl3S-qgcY9Du2GeUP7vakerEI0PNDfd=
+E5$"><span style=3D"font-size:10.0pt;color:#009ABF">Instagram</span></a></s=
+pan><span style=3D"color:#009ABF"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-GT" style=3D"font-family:&quot;Aria=
+l&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-GT" style=3D"font-family:&quot;Aria=
+l&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-GT" style=3D"font-family:&quot;Aria=
+l&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><img border=3D"0" w=
+idth=3D"272" height=3D"46" style=3D"width:2.8333in;height:.4791in" id=3D"_x=
+0000_i1029" src=3D"cid:image001.jpg@01D8D81C.51AF3370"></span><b><span styl=
+e=3D"font-family:&quot;Arial&quot;,sans-serif;color:#0054A0"><o:p></o:p></s=
+pan></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt">From:</span></b>=
+<span style=3D"font-size:11.0pt"> Laura Orlow-Kojac &lt;<a href=3D"mailto:L=
+Orlow@CarolinaChemistries.com">LOrlow@CarolinaChemistries.com</a>&gt;
+<br>
+<b>Sent:</b> Thursday, September 29, 2022 3:43 PM<br>
+<b>To:</b> Eleni Heotis (s) &lt;<a href=3D"mailto:eheotis@cap.org">eheotis@=
+cap.org</a>&gt;<br>
+<b>Cc:</b> Christina Gonzales &lt;<a href=3D"mailto:CGonzales@CarolinaChemi=
+stries.com">CGonzales@CarolinaChemistries.com</a>&gt;;
+<a href=3D"mailto:rvairavan@caldonbiotech.com">rvairavan@caldonbiotech.com<=
+/a>; AnnMarie Di Prima (s) &lt;<a href=3D"mailto:ADIPRIM@cap.org">ADIPRIM@c=
+ap.org</a>&gt;<br>
+<b>Subject:</b> RE: CAP CORRECTION/ADDITION FW: 2022 ADL-B COA<o:p></o:p></=
+span></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class=3D"MsoNormal" style=3D"mso-line-height-alt:.75pt"><span style=3D"f=
+ont-size:1.0pt;color:white">Hello Eleni, Please see attached updated C of A=
+ for your review. I hope this will meet the requirements. If there is anyth=
+ing else you need please let me know,
+ =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E =9E =9E
+<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"mso-line-height-alt:.75pt"><span style=3D"f=
+ont-size:1.0pt;color:white">ZjQcmQRYFpfptBannerStart<o:p></o:p></span></p>
+</div>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%;border-radius:4px">
+<tbody>
+<tr>
+<td style=3D"padding:12.0pt 0in 12.0pt 0in">
+<table class=3D"MsoNormalTable" border=3D"1" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%;background:#D0D8DC;border:none;=
+border-top:solid #90A4AE 3.0pt">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"border:none;padding:0in 7.5pt 3.75pt 4.5pt">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"left">
+<tbody>
+<tr>
+<td style=3D"padding:3.0pt 6.0pt 3.0pt 6.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.5pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:black">This Message Is From an External Sende=
+r
+<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr>
+<td style=3D"padding:3.0pt 6.0pt 3.0pt 6.0pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:black">This message came from outside your organi=
+zation.
+<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style=3D"padding:3.0pt 6.0pt 3.0pt 6.0pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:black">**This banner is provided by CAP IS**
+<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p class=3D"MsoNormal" style=3D"mso-line-height-alt:.75pt"><span style=3D"f=
+ont-size:1.0pt;color:white">ZjQcmQRYFpfptBannerEnd</span><span style=3D"fon=
+t-size:1.0pt;font-family:&quot;Times New Roman&quot;,serif;color:white"><o:=
+p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hello Eleni,<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Please see attached=
+ updated C of A for your review.&nbsp;&nbsp; I hope this will meet the requ=
+irements.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">If there is anythin=
+g else you need please let me know,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:11.0pt;font-family:&quot=
+;Lucida Handwriting&quot;;color:navy">Laura Orlow-Kojac<o:p></o:p></span></=
+i></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Carolina Liquid Chemistries Corp.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">510 W. Central Avenue<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Suite&nbsp; C&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Brea CA 92821<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">714-529-7125&nbsp;&nbsp; fax 714-529-7274<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt">From:</span></b>=
+<span style=3D"font-size:11.0pt"> Eleni Heotis (s) &lt;<a href=3D"mailto:eh=
+eotis@cap.org">eheotis@cap.org</a>&gt;
+<br>
+<b>Sent:</b> Tuesday, September 27, 2022 5:57 AM<br>
+<b>To:</b> Laura Orlow-Kojac &lt;<a href=3D"mailto:LOrlow@CarolinaChemistri=
+es.com">LOrlow@CarolinaChemistries.com</a>&gt;; AnnMarie Di Prima (s) &lt;<=
+a href=3D"mailto:ADIPRIM@cap.org">ADIPRIM@cap.org</a>&gt;<br>
+<b>Cc:</b> Christina Gonzales &lt;<a href=3D"mailto:CGonzales@CarolinaChemi=
+stries.com">CGonzales@CarolinaChemistries.com</a>&gt;<br>
+<b>Subject:</b> RE: CAP CORRECTION/ADDITION FW: 2022 ADL-B COA<o:p></o:p></=
+span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hi Laura,<o:p></o:p=
+></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Thank you for corre=
+cting the specimen number. Please update Declaration of Testing section to =
+include the appropriate statement/s from the list below:<o:p></o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><img border=3D"0" w=
+idth=3D"799" height=3D"387" style=3D"width:8.3229in;height:4.0312in" id=3D"=
+Picture_x0020_3" src=3D"cid:image003.png@01D8D81C.51AF3370"></span><span st=
+yle=3D"font-size:11.0pt"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Thank you,<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif;color:#00B0F0">Eleni Heotis, MLS(ASCP)<sup>CM</sup><o:p></o:p></span=
+></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif">Senior Technical Product and Quality Assurance Specialist<o:p></o:p=
+></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif">College of American Pathologists<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif">325 Waukegan Road, Northfield, IL 60093
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:#00B0F0">&nbsp;<a href=3D"mailto:pprovax@cap.org"><span style=3D"=
+color:#00B0F0">eheotis@cap.org</span></a>
+<i><o:p></o:p></i></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><a href=3D"http://w=
+ww.cap.org/"><span style=3D"font-size:10.0pt;color:#009ABF">cap.org</span><=
+/a></span><span style=3D"color:#009ABF"> |
+</span><span style=3D"font-size:11.0pt"><a href=3D"https://urldefense.com/v=
+3/__https:/twitter.com/Pathologists__;!!Nge-QFtCGiqLqA!GcA_tiGfIf5yeGzZ2XEk=
+fb0Zd37a9EDZ32aF46vCQeYKfTzd8MTCC6fNwuchm9PaxL_L3KuglwhEZgsDPp8p$"><span st=
+yle=3D"font-size:10.0pt;color:#009ABF">@Pathologists</span></a></span><span=
+ style=3D"color:#009ABF">
+ | </span><span style=3D"font-size:11.0pt"><a href=3D"https://urldefense.co=
+m/v3/__https:/www.facebook.com/capathologists__;!!Nge-QFtCGiqLqA!GcA_tiGfIf=
+5yeGzZ2XEkfb0Zd37a9EDZ32aF46vCQeYKfTzd8MTCC6fNwuchm9PaxL_L3KuglwhEZgbvY4Tl$=
+"><span style=3D"font-size:10.0pt;color:#009ABF">Facebook</span></a></span>=
+<span style=3D"color:#009ABF">
+ | </span><span style=3D"font-size:11.0pt"><a href=3D"https://urldefense.co=
+m/v3/__https:/www.instagram.com/cap_pathologists__;!!Nge-QFtCGiqLqA!GcA_tiG=
+fIf5yeGzZ2XEkfb0Zd37a9EDZ32aF46vCQeYKfTzd8MTCC6fNwuchm9PaxL_L3KuglwhEZlI8_Q=
+5n$"><span style=3D"font-size:10.0pt;color:#009ABF">Instagram</span></a></s=
+pan><span style=3D"color:#009ABF"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-GT" style=3D"font-family:&quot;Aria=
+l&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-GT" style=3D"font-family:&quot;Aria=
+l&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-GT" style=3D"font-family:&quot;Aria=
+l&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><img border=3D"0" w=
+idth=3D"272" height=3D"46" style=3D"width:2.8333in;height:.4791in" id=3D"Pi=
+cture_x0020_4" src=3D"cid:image001.jpg@01D8D81C.51AF3370"></span><b><span s=
+tyle=3D"font-family:&quot;Arial&quot;,sans-serif;color:#0054A0"><o:p></o:p>=
+</span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt">From:</span></b>=
+<span style=3D"font-size:11.0pt"> Laura Orlow-Kojac &lt;<a href=3D"mailto:L=
+Orlow@CarolinaChemistries.com">LOrlow@CarolinaChemistries.com</a>&gt;
+<br>
+<b>Sent:</b> Monday, September 26, 2022 9:57 AM<br>
+<b>To:</b> AnnMarie Di Prima (s) &lt;<a href=3D"mailto:ADIPRIM@cap.org">ADI=
+PRIM@cap.org</a>&gt;; Eleni Heotis (s) &lt;<a href=3D"mailto:eheotis@cap.or=
+g">eheotis@cap.org</a>&gt;<br>
+<b>Cc:</b> Christina Gonzales &lt;<a href=3D"mailto:CGonzales@CarolinaChemi=
+stries.com">CGonzales@CarolinaChemistries.com</a>&gt;<br>
+<b>Subject:</b> CAP CORRECTION/ADDITION FW: 2022 ADL-B COA<o:p></o:p></span=
+></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class=3D"MsoNormal" style=3D"mso-line-height-alt:.75pt"><span style=3D"f=
+ont-size:1.0pt;color:white">AnnMarie and Eleni, Please see attached the upd=
+ated CoA=92s for the Aldolase Controls for your review. Let us know if you =
+should need anything else, Sincerely, =9E
+ =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E=
+ =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =
+=9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E =9E
+<o:p></o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"mso-line-height-alt:.75pt"><span style=3D"f=
+ont-size:1.0pt;color:white">ZjQcmQRYFpfptBannerStart<o:p></o:p></span></p>
+</div>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%;border-radius:4px">
+<tbody>
+<tr>
+<td style=3D"padding:12.0pt 0in 12.0pt 0in">
+<table class=3D"MsoNormalTable" border=3D"1" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%;background:#D0D8DC;border:none;=
+border-top:solid #90A4AE 3.0pt">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"border:none;padding:0in 7.5pt 3.75pt 4.5pt">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"left">
+<tbody>
+<tr>
+<td style=3D"padding:3.0pt 6.0pt 3.0pt 6.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.5pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:black">This Message Is From an Untrusted Send=
+er
+<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr>
+<td style=3D"padding:3.0pt 6.0pt 3.0pt 6.0pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:black">You have not previously corresponded with =
+this sender.
+<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style=3D"padding:3.0pt 6.0pt 3.0pt 6.0pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:black">**This banner is provided by CAP IS**
+<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p class=3D"MsoNormal" style=3D"mso-line-height-alt:.75pt"><span style=3D"f=
+ont-size:1.0pt;color:white">ZjQcmQRYFpfptBannerEnd</span><span style=3D"fon=
+t-size:1.0pt;font-family:&quot;Times New Roman&quot;,serif;color:white"><o:=
+p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">AnnMarie and Eleni,=
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Please see attached=
+ the updated CoA=92s for the Aldolase Controls &nbsp;for your review.<o:p><=
+/o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Let us know if you =
+should need anything else,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Sincerely, <o:p></o=
+:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:11.0pt;font-family:&quot=
+;Lucida Handwriting&quot;;color:navy">Laura Orlow-Kojac<o:p></o:p></span></=
+i></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Carolina Liquid Chemistries Corp.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">510 W. Central Avenue<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Suite&nbsp; C&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Brea CA 92821<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">714-529-7125&nbsp;&nbsp; fax 714-529-7274<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt">From:</span></b>=
+<span style=3D"font-size:11.0pt">
+<a href=3D"mailto:rvairavan@caldonbiotech.com">rvairavan@caldonbiotech.com<=
+/a> &lt;<a href=3D"mailto:rvairavan@caldonbiotech.com">rvairavan@caldonbiot=
+ech.com</a>&gt;
+<br>
+<b>Sent:</b> Sunday, September 25, 2022 5:36 PM<br>
+<b>To:</b> Laura Orlow-Kojac &lt;<a href=3D"mailto:LOrlow@CarolinaChemistri=
+es.com">LOrlow@CarolinaChemistries.com</a>&gt;<br>
+<b>Cc:</b> Christina Gonzales &lt;<a href=3D"mailto:CGonzales@CarolinaChemi=
+stries.com">CGonzales@CarolinaChemistries.com</a>&gt;<br>
+<b>Subject:</b> RE: URGENT! CAP CORRECTION/ADDITION FW: 2022 ADL-B COA<o:p>=
+</o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hello Laura<o:p></o=
+:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Here is the signed =
+doc with an explanation written on animal source<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Thanks<o:p></o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Ram<o:p></o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:22.0pt;font-family:Mistral;=
+color:#4472C4">Ramanath Vairavan Ph.D</span><span style=3D"font-size:11.0pt=
+"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">President<o:p></o:p=
+></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Caldon Biotech<o:p>=
+</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Mobile: 760-402-633=
+5; <a href=3D"mailto:rvairavan@caldonbiotech.com">
+<span style=3D"color:blue">rvairavan@caldonbiotech.com</span></a><o:p></o:p=
+></span></p>
+<p class=3D"MsoNormal"><u><span style=3D"font-size:11.0pt;color:blue"><a hr=
+ef=3D"https://urldefense.proofpoint.com/v2/url?u=3Dhttps-3A__nam04.safelink=
+s.protection.outlook.com_-3Furl-3Dhttp-253A-252F-252Fwww.diacarta.com-252F-=
+26data-3D01-257C01-257Ceisenbm-2540labcorp.com-257Cb84ab9ac12c84e33eba208d7=
+101527c9-257C7b3bf3a5ce934afbabec7bf49544d250-257C1-26sdata-3DJBxYSwQlgWm1b=
+6OAMGpqfkHV8iGuwk9X1Ks2aWuwF3w-253D-26reserved-3D0&amp;d=3DDwMF_g&amp;c=3Du=
+hUSuyNScXHb_F2nn0PKeY0q4oY6FfjGrtpKpaZYX9Y&amp;r=3Dn9qe1kpx8Rqz4bAJd9cJIw&a=
+mp;m=3DGlMtmaha6McdnPRI3w16Pp5HY27OY05J0GGo1Z-wy7tWqTyQmKh9N6frjr-Py4Qu&amp=
+;s=3Db6JYoJibAULXnAUqOwlm3YogQhBWGoSYoKvM9v6zZQY&amp;e=3D">www.caldonbiotec=
+h.com</a></span></u><span style=3D"font-size:11.0pt"><o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt">From:</span></b>=
+<span style=3D"font-size:11.0pt"> Laura Orlow-Kojac &lt;<a href=3D"mailto:L=
+Orlow@CarolinaChemistries.com">LOrlow@CarolinaChemistries.com</a>&gt;
+<br>
+<b>Sent:</b> Friday, September 23, 2022 1:27 PM<br>
+<b>To:</b> <a href=3D"mailto:rvairavan@caldonbiotech.com">rvairavan@caldonb=
+iotech.com</a><br>
+<b>Cc:</b> Christina Gonzales &lt;<a href=3D"mailto:CGonzales@CarolinaChemi=
+stries.com">CGonzales@CarolinaChemistries.com</a>&gt;<br>
+<b>Subject:</b> URGENT! CAP CORRECTION/ADDITION FW: 2022 ADL-B COA<br>
+<b>Importance:</b> High<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hello Ram, Please s=
+ee email below &nbsp;and&nbsp; items attached.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">There was a typo on=
+ Level 2 =96 for the specimen #- I have corrected.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">ALSO- they want us =
+to add another Declaration of Testing Statement on the C of A from the CAP =
+Template below.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">You can direct me a=
+s to what the you would like to add, or you can change the word document to=
+ prepare for your signing.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Please let me know =
+how to assist.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">I look forward to h=
+earing from you soon<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:11.0pt;font-family:&quot=
+;Lucida Handwriting&quot;;color:navy">Laura Orlow-Kojac<o:p></o:p></span></=
+i></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Carolina Liquid Chemistries Corp.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">510 W. Central Avenue<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Suite&nbsp; C&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Brea CA 92821<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">714-529-7125&nbsp;&nbsp; fax 714-529-7274<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt">From:</span></b>=
+<span style=3D"font-size:11.0pt"> AnnMarie Di Prima (s) &lt;<a href=3D"mail=
+to:ADIPRIM@cap.org">ADIPRIM@cap.org</a>&gt;
+<br>
+<b>Sent:</b> Friday, September 23, 2022 1:00 PM<br>
+<b>To:</b> Laura Orlow-Kojac &lt;<a href=3D"mailto:LOrlow@CarolinaChemistri=
+es.com">LOrlow@CarolinaChemistries.com</a>&gt;<br>
+<b>Cc:</b> Eleni Heotis (s) &lt;<a href=3D"mailto:eheotis@cap.org">eheotis@=
+cap.org</a>&gt;<br>
+<b>Subject:</b> FW: 2022 ADL-B COA<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Looping in Laura as=
+ well.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt">From:</span></b>=
+<span style=3D"font-size:11.0pt"> Eleni Heotis (s) &lt;<a href=3D"mailto:eh=
+eotis@cap.org">eheotis@cap.org</a>&gt;
+<br>
+<b>Sent:</b> Friday, September 23, 2022 2:58 PM<br>
+<b>To:</b> 'rvairavan@caldonbiotech.com' &lt;<a href=3D"mailto:rvairavan@ca=
+ldonbiotech.com">rvairavan@caldonbiotech.com</a>&gt;<br>
+<b>Cc:</b> AnnMarie Di Prima (s) &lt;<a href=3D"mailto:ADIPRIM@cap.org">ADI=
+PRIM@cap.org</a>&gt;; Christina Chancey (s) &lt;<a href=3D"mailto:cchance@c=
+ap.org">cchance@cap.org</a>&gt;; Molly Hansen (s) &lt;<a href=3D"mailto:mha=
+nsen@cap.org">mhansen@cap.org</a>&gt;<br>
+<b>Subject:</b> 2022 ADL-B COA<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hi Ram,<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Please verify the s=
+pecimen number on page 3 and include a Declaration of Testing statement on =
+COA.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><img border=3D"0" w=
+idth=3D"799" height=3D"387" style=3D"width:8.3229in;height:4.0312in" id=3D"=
+Picture_x0020_1" src=3D"cid:image003.png@01D8D81C.51AF3370"></span><span st=
+yle=3D"font-size:11.0pt"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Thank you,<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif;color:#00B0F0">Eleni Heotis, MLS(ASCP)<sup>CM</sup><o:p></o:p></span=
+></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif">Senior Technical Product and Quality Assurance Specialist<o:p></o:p=
+></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif">College of American Pathologists<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif">325 Waukegan Road, Northfield, IL 60093
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:#00B0F0">&nbsp;<a href=3D"mailto:pprovax@cap.org"><span style=3D"=
+color:#00B0F0">eheotis@cap.org</span></a>
+<i><o:p></o:p></i></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><a href=3D"http://w=
+ww.cap.org/"><span style=3D"font-size:10.0pt;color:#009ABF">cap.org</span><=
+/a></span><span style=3D"color:#009ABF"> |
+</span><span style=3D"font-size:11.0pt"><a href=3D"https://urldefense.com/v=
+3/__https:/twitter.com/Pathologists__;!!Nge-QFtCGiqLqA!E7MPMhr9epnCtgws5QUp=
+Xjswqv8pSnL4UqKpadJ6p6tcM_AU-BQW76edDPn9R9qs1EbdIV9JgGJBfau0YYWO$"><span st=
+yle=3D"font-size:10.0pt;color:#009ABF">@Pathologists</span></a></span><span=
+ style=3D"color:#009ABF">
+ | </span><span style=3D"font-size:11.0pt"><a href=3D"https://urldefense.co=
+m/v3/__https:/www.facebook.com/capathologists__;!!Nge-QFtCGiqLqA!E7MPMhr9ep=
+nCtgws5QUpXjswqv8pSnL4UqKpadJ6p6tcM_AU-BQW76edDPn9R9qs1EbdIV9JgGJBfV51qDJw$=
+"><span style=3D"font-size:10.0pt;color:#009ABF">Facebook</span></a></span>=
+<span style=3D"color:#009ABF">
+ | </span><span style=3D"font-size:11.0pt"><a href=3D"https://urldefense.co=
+m/v3/__https:/www.instagram.com/cap_pathologists__;!!Nge-QFtCGiqLqA!E7MPMhr=
+9epnCtgws5QUpXjswqv8pSnL4UqKpadJ6p6tcM_AU-BQW76edDPn9R9qs1EbdIV9JgGJBfelwW0=
+K7$"><span style=3D"font-size:10.0pt;color:#009ABF">Instagram</span></a></s=
+pan><span style=3D"color:#009ABF"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-GT" style=3D"font-family:&quot;Aria=
+l&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-GT" style=3D"font-family:&quot;Aria=
+l&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-GT" style=3D"font-family:&quot;Aria=
+l&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><img border=3D"0" w=
+idth=3D"272" height=3D"46" style=3D"width:2.8333in;height:.4791in" id=3D"Pi=
+cture_x0020_2" src=3D"cid:image001.jpg@01D8D81C.51AF3370"></span><b><span s=
+tyle=3D"font-family:&quot;Arial&quot;,sans-serif;color:#0054A0"><o:p></o:p>=
+</span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+</div>
+</body>
+</html>
+
+--_000_CH2PR11MB45018299AD8D0ED73D151583B55A9CH2PR11MB4501namp_--
+--_006_CH2PR11MB45018299AD8D0ED73D151583B55A9CH2PR11MB4501namp_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=4678;
+	creation-date="Tue, 04 Oct 2022 23:08:34 GMT";
+	modification-date="Tue, 04 Oct 2022 23:08:35 GMT"
+Content-ID: <image001.jpg@01D8D81C.51AF3370>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIf
+IiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7
+Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAuARADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2G4uI
+bS3kuLiVIoYlLO7nAUDqSayb/XNJl060u11jyreeQPFNAdwkAPI4B49ar32tWd/o2tpeaVcz29mj
+rLAUyZ1wchfyrAkn0BvBOiXEfh++itHfZBbR5DxAk5ye+SM+9PSL98m0qqtS1bOhl0aSfxnb60mv
+XCwralBp6t+7fOfm6++enYVlabplvbWWuE+JIwm1klmifBgPJLMc9f8A69aTa5aW/jS08PrpVz5j
+2vmJdBP3SKAfl/TH4ipo9I0X7Jq8C6QyxXDMt0joQJ+Oo56cnpSvKzS2ZSjC6k/iWxNoEtpa+HbH
+GrpfRMAsd28g/ekk4AJPPoB14rYrmLiPRtG8P6bapohls451MEATd5Tgkhue+cnPvW+bsC9W28t8
+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
+KAP/2Q==
+
+--_006_CH2PR11MB45018299AD8D0ED73D151583B55A9CH2PR11MB4501namp_
+Content-Type: image/png; name="image002.png"
+Content-Description: image002.png
+Content-Disposition: inline; filename="image002.png"; size=5264;
+	creation-date="Tue, 04 Oct 2022 23:08:35 GMT";
+	modification-date="Tue, 04 Oct 2022 23:08:35 GMT"
+Content-ID: <image002.png@01D8D81C.51AF3370>
+Content-Transfer-Encoding: base64
+
+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
+9w/KF93QYisAAAAASUVORK5CYII=
+
+--_006_CH2PR11MB45018299AD8D0ED73D151583B55A9CH2PR11MB4501namp_
+Content-Type: image/png; name="image003.png"
+Content-Description: image003.png
+Content-Disposition: inline; filename="image003.png"; size=42805;
+	creation-date="Tue, 04 Oct 2022 23:08:35 GMT";
+	modification-date="Tue, 04 Oct 2022 23:08:35 GMT"
+Content-ID: <image003.png@01D8D81C.51AF3370>
+Content-Transfer-Encoding: base64
+
+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
+
+--_006_CH2PR11MB45018299AD8D0ED73D151583B55A9CH2PR11MB4501namp_--

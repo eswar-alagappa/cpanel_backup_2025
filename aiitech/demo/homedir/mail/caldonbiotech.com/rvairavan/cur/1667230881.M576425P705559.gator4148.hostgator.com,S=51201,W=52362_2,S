@@ -1,0 +1,1161 @@
+Return-Path: <pattigaull@aol.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id QUL/IaHsX2MXxAoA7/vpDg
+	(envelope-from <pattigaull@aol.com>)
+	for <rvairavan@caldonbiotech.com>; Mon, 31 Oct 2022 10:41:21 -0500
+Return-path: <pattigaull@aol.com>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Mon, 31 Oct 2022 10:41:21 -0500
+Received: from sonic318-20.consmr.mail.ne1.yahoo.com ([66.163.186.82]:42490)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <pattigaull@aol.com>)
+	id 1opWuf-002xDC-0i
+	for rvairavan@caldonbiotech.com;
+	Mon, 31 Oct 2022 10:41:21 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=aol.com; s=a2048; t=1667230870; bh=Cqfc3jm8LRLvbOKH70UDZWI4FFaqHvy+Q4sZx5qayBs=; h=Date:From:Reply-To:To:Cc:In-Reply-To:References:Subject:From:Subject:Reply-To; b=KPEroL2+5Zo1xRYo1NL1qzPOgv4sOkyUf0EkIWd8hBDLd/NCnIfptM4/T64QGAa2MGokSWxKBddVs0F7/L1OXYTUW78S+hhE5mvBe8nTUv7J3KCNnJzQkXkvvLsG9i7hGarVuOrnHShwdoZZtjqfIhXBPAiExfxu6Y8yLTwtd8d9C4kE4+zBlJHpa7XITYeM5Ln8NpZfP+CB42P+0Inx/aDsFUNSv34Du9ECCQSYJmvvIGp4SezXdtsH9Mh/AjQR/yDfrPcAB2kzk0KZ5jpF6nbSbSxBxFzJB4OtmH3IDk2ta6se3MRxQ0nE0XFQ2VhwO/h6IyrgF+m9Y4hEdmW57A==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1667230870; bh=mXV9ZR7ywhZpKAIMHLcRecWm2vUr9AEu/PEEdBfGj3E=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=Mqt2/aGQEoKdlQHq30jhFKOvbyO+4gF/O3yymGesGZQbz6PBjjP9LKYC0p3XECGB1I3FSIx8sB9UyEB63Bc8i5A/FK/7tCmbRos9fvc+L9mMxohWYSy81Y98kw6d2mIjO4OGu+R0MV0ieJEgp0MUkw1hgbxk0sjd0Y39fFefvmyE4AnS539jhaDYiL/dBi3vvwPrJiM4Bt70I/GSermy9LP0sQL5P/ac3o3Ru5iu1KrmuGn4u84/w+xT+xpt5AGml/jieq1I3Hkovvi/32+/nfq/twczU+HDzjije8jx4eaMat1fSs+VR9l7p6NDOGbyVEU8VaGoiYSXVj95IU40sg==
+X-YMail-OSG: 3KTQf9QVM1nupYZ3hDMKgB8VcaA7mMudbgb1J3ZOzbIfadpYc3RgVGcePNGPlbJ
+ ZcGyyh.vu7p.w_hFp_B1yFFzDuOUvikyLVdg.xy7BlkhM9SKJaeerZCUJBW6kVClmKHT6J7FFicJ
+ pwrBTxAiM5mwNJtdjZejyQ5W126YlKU7izOOWTRFx8FIWMR__UKQHTT27iKzjOICFOZSZ1iBZZ0i
+ mADp8aZIXklMnLqaNMrQh7WCyiMjWIYxsVtWWMbArggnCg_UCLZSGel9pbQm84eLQ9uHFo0DsjIF
+ RYfeShTbW8oEmPc1bOtMB5PBLrPlahP3IIPxzZN3pkAsQJqKtyD9K2uKkwApGLQqq7KatjlPb5gC
+ j3wG92hWWj2dXkwkARnluyB5Oa.wd63Ud9OG18SmAVNYuhmGrL7qfJtqMmqQcNMhyIhmnYXeKGqv
+ Y6o2PIpj.abvCQpxbcsnL5AleNYkRGb1L6e2uNXDanI9YELe6ND1ODERYeytjU435CZYFZGXaBAB
+ tNUj4PLkf7r7SjoiMGG0htjo27lbSfsxf3g3acxDVWWE12l_EJ96hqF3wphDdw4D1KD8EwN_hFgp
+ oEo1WzRWaaIIqxHC1vxx5l0v7yboJ4wtwdV.b1zv0MVIarHzRhaAozBpeMoKuLakt3S9oGb08rAi
+ DSsugShPsbbnxfWN7B8XnUeW4YV7zE6wjpY5ksY3gkmg18rXS80r2vu0aaCEfqjCAkUUv8WxZXvb
+ 9FLACpGlHxZYvnAzxLstaJxcPfelpCiHCztSXWSf_1UwqQKLGCs7tgN4XKCXzSJJKW8QJiMbMddj
+ d__hUsWrOCoYwJBq4cAmlSuLEVLB.w2.RZT.c2bUarzhPQO4vlUFUzQCWjveByxyCxcwQgWtJPDz
+ 20GdVVfo2COQ6VM6KYUAlp0NcUEL4IPcryo6Fs6v65ih9UAV.6hXJ0wFQ.NGKycxA9Hrk3gCTZ.t
+ Rz_n2ItlCm9C8XYvgVkQaxvKjLmov9v7H.YgTpaUmOFuOk0PMqSaHt0S12cDjtv4TEz1J0DNoKay
+ 06KQju8tycPj2jjtuhi623weQPKsxgB2VxJ9mnjtu_Ihun9LOrrEvd5k1oYt7T3fPQf1LMxDdads
+ IshOvUta99tUiRoRkldPH0vxkgmU2MDovF1YyO2cnyS_Ltnaqgp12AaVPFZI7IIM_kbt_IpJ.otx
+ aiH8lvL0PcbhaChoq1p2A0X.hM8tqOlQ5IMxhRTiyqHfMHcfd_5BvhmGgqqAoEhliH26Ge1oftiT
+ _0HUWS1s4xQPkeEsrHMO1iNwJexOeQbizdIB32XIgnQy_QywfDGDyUU8ZH6VIvVFJh0JNccmaMpv
+ rm_OBcBVLF0A1cQ2fQHaTSqQRjCr9whvfZ.i6Bi.gklT2jvbKuHuP7ecwzjsNbtUnhUl1iUffCDk
+ r4FymcSkxRQeKuTVtXTco5xjTGTK0yMA5VyoDfYrxqWIIAE4vh5EXNPU7H.PoDdAEVHK7Uxkem.t
+ CmDtLgCKtsWCOiCr9YkwKCOLIKGcIoUqj_qWtI4hMMYbh5NxRzmjgB39bYRb90Q_X3O1ihbteofj
+ 0xw8wP94IAGmGK1K6m92BXpx.s7WqYA9.HkMYliX5ZCT1GBcM.DVtlaeJOsSGZzwH_UxawDUtSOx
+ AClhB.skTmv9olLJtvqTx6bBGt63a.3usSUXr3UvD5q3S35HDf_Wb8milcq2rA_2gXTIzHBnHGy3
+ NxIUB0NfywQwdUoPy1F38TnT5YAA3YxndEWfjKnKStOJE1_umiok5E8sk2zAKWGaEortaKjY8ZCe
+ fuOU4sHOdCQqShcTJf570BWMNxkRbnMeAF47HbJbuQ9yQYPlFQcPr7w20Scz5T_DT7vbSvUgf5Vv
+ W8eDB0eAOU1tgTLHoYKZukeQjXbWJ_R8423WobyxdHRlx0BWFlA2bthUBmG0vtHFsL_iYnLn73Rn
+ b3HnVE0c1NiQ_dU2BopmL_.RyZdNWRsO1fFoB2Z.0vSuSr_k0XRgfyQoJ3SeUcE3HFy9.ImuO3NA
+ 1xrUfljOKRKvJ5fybAQkeNAEEqd919Wyk1n4pewoeaMyZKmylHgkQS75JOzjQ4SdVP8WEnNGlnUu
+ 6q38oQYWXiXSGuHjwhHzMwgSd1dlBt5X_BnF1dRONh1jw71obXv06tINm9bgek0cHAFfATB9RUAk
+ 80rrQZPP6P.Oaz8vVzcSmFAGNJLTouWHzwAFTrLET_9tJ.evYvZdbsITOS9aSl4ox80SF7Tg27iT
+ 1eArloF_3sfq.tvOwTWYo
+X-Sonic-MF: <pattigaull@aol.com>
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic318.consmr.mail.ne1.yahoo.com with HTTP; Mon, 31 Oct 2022 15:41:10 +0000
+Date: Mon, 31 Oct 2022 15:41:07 +0000 (UTC)
+From: Patti Shugart <pattigaull@aol.com>
+Reply-To: Patti Shugart <pattigaull@aol.com>
+To: "SSMD@reedtech.com" <SSMD@reedtech.com>
+Cc: "scarchidi@carolinachemistries.com" <scarchidi@carolinachemistries.com>, 
+	"rvairavan@caldonbiotech.com" <rvairavan@caldonbiotech.com>, 
+	"smahatha@carolinachemistries.com" <smahatha@carolinachemistries.com>
+Message-ID: <22207374.2508672.1667230867158@mail.yahoo.com>
+In-Reply-To: <BYAPR08MB543291350DDDF5993BBF3466F9379@BYAPR08MB5432.namprd08.prod.outlook.com>
+References: <BYAPR08MB54325FB6EFE2649C05A9F64AF9329@BYAPR08MB5432.namprd08.prod.outlook.com> <C9B81F4A-CED7-405F-B4F7-96B58626C7F6@aol.com> <BYAPR08MB543291350DDDF5993BBF3466F9379@BYAPR08MB5432.namprd08.prod.outlook.com>
+Subject: Re: GUDID Question
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_2508671_836263797.1667230867157"
+X-Mailer: WebService/1.1.20783 aolwebmail
+Content-Length: 45828
+X-Spam-Status: No, score=0.7
+X-Spam-Score: 7
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+------=_Part_2508671_836263797.1667230867157
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2508670_133240194.1667230867095"
+
+------=_Part_2508670_133240194.1667230867095
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Jen,=C2=A0
+Thank you. I have looped Dr. Vairavan into this change. He is the owner of =
+Caldon Biotech.=C2=A0
+Jen, do Research Use Only exempt products need to have the GUDID?=C2=A0
+Dr. Vairavan,=C2=A0
+You are correct CLC may list for you and get your GUDIDs.=C2=A0 That said, =
+you have three products that CLC contract manufacturers for you.=C2=A0Aldol=
+ase Reagent ( Exempt ), Aldolase Controls ( Exempt) and Sputolysin ( RUO).=
+=C2=A0=C2=A0
+As the below states we will need CALDON BIOTECH's DUNS number to do this co=
+rrectly.=C2=A0 We also need a statement from you that you do not have any a=
+dditional products or records that Caldon needs to submit that are not link=
+ed to CLC, because CALDON cannot have their DUNS number existing on 2 separ=
+ate GUDID accounts.=C2=A0=C2=A0
+Please respond back to this email that you intend for CLC to register for y=
+our GUDID, provide your DUNS number and a statement that their are no other=
+ records that Caldion needs to submit that are not linked to CLC. Once we g=
+et this we can move forward. In the event we do not have this, we will no l=
+onger be able to produce the products because they are required to have the=
+ GUDID.=C2=A0
+Sian,=C2=A0
+Please memorialize the above in the Caldon File.=C2=A0
+Thank you everyone for your assistance with this matter.=C2=A0
+Kindest regards,=C2=A0
+Patti Shugart=C2=A0
+
+
+
+
+
+
+
+-----Original Message-----
+From: LNG-HPA SSMD Support <SSMD@reedtech.com>
+To: Patti Shugart <pattigaull@aol.com>; LNG-HPA SSMD Support <SSMD@reedtech=
+.com>
+Cc: Savannah Carchidi <scarchidi@carolinachemistries.com>
+Sent: Mon, Oct 31, 2022 11:30 am
+Subject: RE: GUDID Question
+
+<!--#yiv5220854681 _filtered {} _filtered {} _filtered {} _filtered {}#yiv5=
+220854681 #yiv5220854681 p.yiv5220854681MsoNormal, #yiv5220854681 li.yiv522=
+0854681MsoNormal, #yiv5220854681 div.yiv5220854681MsoNormal {margin:0in;fon=
+t-size:11.0pt;font-family:"Calibri", sans-serif;}#yiv5220854681 a:link, #yi=
+v5220854681 span.yiv5220854681MsoHyperlink {color:#0563C1;text-decoration:u=
+nderline;}#yiv5220854681 span.yiv5220854681EmailStyle21 {font-family:"Calib=
+ri Light", sans-serif;color:windowtext;}#yiv5220854681 .yiv5220854681MsoChp=
+Default {font-size:10.0pt;} _filtered {}#yiv5220854681 div.yiv5220854681Wor=
+dSection1 {}-->Hi Patti and Savannah,  =C2=A0 I spoke with a colleague and =
+confirmed the following=E2=80=A6  =C2=A0 Being you are the contract manufac=
+turer of the devices, you are not responsible for registering those product=
+s in the GUDID; the company you manufacture for bears the responsibility. H=
+owever, if you have an agreement in place with the company you manufacture =
+for, the FDAdoes allow for GUDID data to be submitted by the contract manuf=
+acturer on behalf of the Labeler. The way in which you are allowed to do th=
+is is a unique situation, though. When submitting the records to the GUDID,=
+ the record must include the DUNS number of the company that is considered =
+the Labeler. The Labeler=E2=80=99s DUNS number will need to be listed on th=
+e CLC GUDID account, which will allow Reed Tech to process the submission, =
+since it is the CLC GUDID account that we are able to submit for. The possi=
+ble issue is if this other company has additional records they need to subm=
+it that are not linked to CLC at all, because a company cannot have their D=
+UNS number exist on 2 separate GUDID accounts.  =C2=A0 So, in conclusion, y=
+ou are able to submit on the Labeler=E2=80=99s behalf, but I would only sug=
+gest this if these devices are the only devices that this Labeler carries. =
+Let me know if you have any questions!  =C2=A0 Best,  =C2=A0 Jen Foley Prod=
+uct Support Specialist, Life Sciences  =C2=A0 Emailjennifer.foley@reedtech.=
+com Webwww.ReedTech.com SocialTwitter | LinkedIn  =C2=A0   =C2=A0 From: Pat=
+ti Shugart <pattigaull@aol.com>=20
+Sent: Friday, October 28, 2022 6:41 PM
+To: LNG-HPA SSMD Support <SSMD@reedtech.com>
+Cc: Savannah Carchidi <scarchidi@carolinachemistries.com>
+Subject: Re: GUDID Question  =C2=A0 Absolutely.=C2=A0  =C2=A0 Carolina Chem=
+istries supplying laboratories for over 25 years=20
+
+=20
+On Oct 28, 2022, at 3:40 PM, LNG-HPA SSMD Support <SSMD@reedtech.com> wrote=
+:=20
+
+=EF=BB=BF  Hi Patti, =C2=A0 I want to say that youare able to submit on the=
+ir behalf, but I=E2=80=99m not 100% positive since this isn=E2=80=99t a fre=
+quent concern. Is it okay if I follow up with you on this? I want to see if=
+ my colleague has a definitive answer for this. =C2=A0 Best, =C2=A0 Jen Fol=
+ey Product Support Specialist, Life Sciences =C2=A0 Emailjennifer.foley@ree=
+dtech.com Webwww.ReedTech.com SocialTwitter | LinkedIn =C2=A0  =C2=A0 From:=
+ Patti Shugart <pattigaull@aol.com>
+Sent: Thursday, October 27, 2022 11:35 PM
+To: Foley, Jennifer (LNG-HPA) <jennifer.foley@reedtech.com>
+Cc: Savannah Carchidi <scarchidi@carolinachemistries.com>; LNG-HPA SSMD Sup=
+port <SSMD@reedtech.com>
+Subject: Re: GUDID Question =C2=A0 Jenn,=C2=A0 =C2=A0 Thank you, but still =
+need clarity. Since we are the entity physically attaching the label becaus=
+e we are the contracted manufacturer, yet our name is not on the label is i=
+t our responsibility for the GUDID submission? =C2=A0Or is it the company t=
+hat had contracted us to manufacture? =C2=A0 =C2=A0 Can the company that co=
+ntracted with us to manufacture for them have us do the GUDID submission? =
+=C2=A0=C2=A0 =C2=A0 Please advise.=C2=A0 =C2=A0 Thanks!!=C2=A0 Carolina Che=
+mistries supplying laboratories for over 25 years=20
+
+
+=20
+On Oct 27, 2022, at 9:47 PM, Foley, Jennifer (LNG-HPA) <jennifer.foley@reed=
+tech.com> wrote:=20
+
+=EF=BB=BF  Hi Savannah, =C2=A0 The FDA specifies that the GUDID submission =
+is the ultimate responsibility of the =E2=80=9Cdevice labeler=E2=80=9D. Thi=
+s is the entity/company who is identified on the device's label (which also=
+ contains the UDI code). So the same entity that attaches the UDI to the de=
+vice is also responsible for the electronic GUDID submission. =C2=A0 Let me=
+ know if you have any further questions! =C2=A0 Best, =C2=A0 Jen Foley Prod=
+uct Support Specialist, Life Sciences =C2=A0 Emailjennifer.foley@reedtech.c=
+om Webwww.ReedTech.com SocialTwitter | LinkedIn =C2=A0  =C2=A0 From: Savann=
+ah Carchidi <SCarchidi@CarolinaChemistries.com>
+Sent: Monday, October 24, 2022 3:58 PM
+To: Foley, Jennifer (LNG-HPA) <jennifer.foley@reedtech.com>
+Cc: Patti Shugart <pattigaull@aol.com>
+Subject: GUDID Question =C2=A0=20
+|  | You don't often get email fromscarchidi@carolinachemistries.com.Learn =
+why this is important  |  |
+
+Jen,  =C2=A0 Good afternoon! Thank you again for all your help in getting o=
+ur GUDIDs through. =C2=A0 I have a question I was hoping you could answer. =
+CLC is a contract manufacturer for a company that makes 2 products, they ar=
+e very small. Because we are the contract manufacturer, are we able to regi=
+ster their GUDID=E2=80=99s for these products? Or would the company need to=
+ register them?  =C2=A0 Thank you, Savannah =C2=A0 Document Control Special=
+ist  Carolina Liquid Chemistries=20
+
+
+------=_Part_2508670_133240194.1667230867095
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+<div style=3D"color:mediumblue;font: 12pt Arial, Helvetica, sans-serif;"><s=
+pan style=3D"font-weight: bold;">Jen,&nbsp;</span>
+<div><br>
+</div>
+
+<div>Thank you. I have looped Dr. Vairavan into this change. He is the owne=
+r of Caldon Biotech.&nbsp;</div>
+
+<div><br>
+</div>
+
+<div>Jen, do Research Use Only exempt products need to have the GUDID?&nbsp=
+;</div>
+
+<div><br>
+</div>
+
+<div><span style=3D"font-weight: bold;">Dr. Vairavan,&nbsp;</span></div>
+
+<div><br>
+</div>
+
+<div>You are correct CLC may list for you and get your GUDIDs.&nbsp; That s=
+aid, you have three products that CLC contract manufacturers for you.&nbsp;=
+</div>
+
+<div>Aldolase Reagent ( Exempt ), Aldolase Controls ( Exempt) and Sputolysi=
+n ( RUO).&nbsp;&nbsp;</div>
+
+<div><br>
+</div>
+
+<div>As the below states we will need CALDON BIOTECH's DUNS number to do th=
+is correctly.&nbsp; We also need a statement from you that you do not have =
+any additional products or records that Caldon needs to submit that are not=
+ linked to CLC, because CALDON cannot have their DUNS number existing on 2 =
+separate GUDID accounts.&nbsp;&nbsp;</div>
+
+<div><br>
+</div>
+
+<div>Please respond back to this email that you intend for CLC to register =
+for your GUDID, provide your DUNS number and a statement that their are no =
+other records that Caldion needs to submit that are not linked to CLC. Once=
+ we get this we can move forward. In the event we do not have this, we will=
+ no longer be able to produce the products because they are required to hav=
+e the GUDID.&nbsp;</div>
+
+<div><br>
+</div>
+
+<div><span style=3D"font-weight: bold;">Sian,&nbsp;</span></div>
+
+<div><br>
+</div>
+
+<div>Please memorialize the above in the Caldon File.&nbsp;</div>
+
+<div><br>
+</div>
+
+<div>Thank you everyone for your assistance with this matter.&nbsp;</div>
+
+<div><br>
+</div>
+
+<div>Kindest regards,&nbsp;</div>
+
+<div><br>
+</div>
+
+<div>Patti Shugart&nbsp;</div>
+
+<div><br>
+</div>
+
+<div><br>
+</div>
+
+<div><br>
+</div>
+
+<div><br>
+</div>
+
+<div><br>
+</div>
+
+<div><br>
+<br>
+<br>
+
+<div style=3D"font-family:arial,helvetica;font-size:10pt;color:black"><font=
+ size=3D"2">-----Original Message-----<br>
+From: LNG-HPA SSMD Support &lt;SSMD@reedtech.com&gt;<br>
+To: Patti Shugart &lt;pattigaull@aol.com&gt;; LNG-HPA SSMD Support &lt;SSMD=
+@reedtech.com&gt;<br>
+Cc: Savannah Carchidi &lt;scarchidi@carolinachemistries.com&gt;<br>
+Sent: Mon, Oct 31, 2022 11:30 am<br>
+Subject: RE: GUDID Question<br>
+<br>
+
+<div id=3D"yiv5220854681"><style><!--
+#yiv5220854681 =20
+ _filtered {}
+ _filtered {}
+ _filtered {}
+ _filtered {}
+#yiv5220854681 =20
+#yiv5220854681 p.yiv5220854681MsoNormal, #yiv5220854681 li.yiv5220854681Mso=
+Normal, #yiv5220854681 div.yiv5220854681MsoNormal
+=09{margin:0in;font-size:11.0pt;font-family:"Calibri", sans-serif;}
+#yiv5220854681 a:link, #yiv5220854681 span.yiv5220854681MsoHyperlink
+=09{color:#0563C1;text-decoration:underline;}
+#yiv5220854681 span.yiv5220854681EmailStyle21
+=09{font-family:"Calibri Light", sans-serif;color:windowtext;}
+#yiv5220854681 .yiv5220854681MsoChpDefault
+=09{font-size:10.0pt;}
+ _filtered {}
+#yiv5220854681 div.yiv5220854681WordSection1
+=09{}
+--></style>
+<div>
+
+<div class=3D"yiv5220854681WordSection1">
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;">Hi Patti and Savannah,
+</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;"> &nbsp;</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;">I spoke with a colleague and confirmed the following=E2=
+=80=A6
+</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;"> &nbsp;</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;">Being you are the contract manufacturer of the devices,=
+ you are not responsible for registering those products in the GUDID; the c=
+ompany you manufacture for bears the
+ responsibility. However, if you have an agreement in place with the compan=
+y you manufacture for, the FDA
+<u>does</u> allow for GUDID data to be submitted by the contract manufactur=
+er on behalf of the Labeler. The way in which you are allowed to do this is=
+ a unique situation, though. When submitting the records to the GUDID, the =
+record must include the DUNS number
+ of the company that is considered the <u>Labeler</u>. The Labeler=E2=80=99=
+s DUNS number will need to be listed on the CLC GUDID account, which will a=
+llow Reed Tech to process the submission, since it is the CLC GUDID account=
+ that we are able to submit for. The possible
+ issue is if this other company has additional records they need to submit =
+that are not linked to CLC at all, because a company cannot have their DUNS=
+ number exist on 2 separate GUDID accounts.
+</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;"> &nbsp;</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;">So, in conclusion, you are able to submit on the Labele=
+r=E2=80=99s behalf, but I would only suggest this if these devices are the =
+only devices that this Labeler carries. Let
+ me know if you have any questions!</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;"> &nbsp;</span></div>
+=20
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;">Best,</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><b><span style=3D"font-size:12.0pt;fo=
+nt-family:sans-serif;"> &nbsp;</span></b></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><b><span style=3D"font-size:12.0pt;fo=
+nt-family:sans-serif;">Jen Foley</span></b><span style=3D"font-size:12.0pt;=
+font-family:sans-serif;"></span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><i><span style=3D"font-size:12.0pt;fo=
+nt-family:sans-serif;color:#595959;">Product Support Specialist, Life Scien=
+ces</span></i></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:8.0pt;font-f=
+amily:sans-serif;color:#1F497D;"> &nbsp;</span></div>
+=20
+
+<div style=3D"line-height:14.0pt;" class=3D"yiv5220854681MsoNormal"><span s=
+tyle=3D"font-family:sans-serif;color:black;">Email
+<a rel=3D"nofollow noopener noreferrer" shape=3D"rect" ymailto=3D"mailto:je=
+nnifer.foley@reedtech.com" target=3D"_blank" href=3D"mailto:jennifer.foley@=
+reedtech.com">jennifer.foley@reedtech.com</a></span><span style=3D"font-siz=
+e:10.0pt;font-family:sans-serif;color:black;">
+</span><span style=3D"font-size:12.0pt;font-family:sans-serif;"></span></di=
+v>
+=20
+
+<div style=3D"line-height:14.0pt;" class=3D"yiv5220854681MsoNormal"><span s=
+tyle=3D"font-family:sans-serif;color:black;">Web
+</span><span style=3D"font-family:sans-serif;color:#4472C4;"><a rel=3D"nofo=
+llow noopener noreferrer" shape=3D"rect" target=3D"_blank" href=3D"https://=
+nam11.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fwww.reedtech.com=
+%2F&amp;data=3D05%7C01%7Cjennifer.foley%40reedtech.com%7Cee728f40966046c519=
+8108da489f9b96%7C9274ee3f94254109a27f9fb15c10675d%7C0%7C0%7C637902147592651=
+038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1=
+haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DP8INQHtmYMsZNXNiJo6keAhNT%2=
+FsBzZiA6mdMsdRA40o%3D&amp;reserved=3D0"><span style=3D"color:#4472C4;">www.=
+ReedTech.com</span></a></span></div>
+=20
+
+<div style=3D"line-height:14.0pt;" class=3D"yiv5220854681MsoNormal"><span s=
+tyle=3D"font-family:sans-serif;color:black;">Social
+</span><span style=3D"font-family:sans-serif;color:#4472C4;"><a rel=3D"nofo=
+llow noopener noreferrer" shape=3D"rect" target=3D"_blank" href=3D"https://=
+nam11.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fwww.twitter.com%=
+2FReedTechLifeSci&amp;data=3D05%7C01%7Cjennifer.foley%40reedtech.com%7Cee72=
+8f40966046c5198108da489f9b96%7C9274ee3f94254109a27f9fb15c10675d%7C0%7C0%7C6=
+37902147592651038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luM=
+zIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DiiJFDrj8UgCZ1=
+m6zHOHh8lnMs5VZbUv%2FKW0hFQnDijU%3D&amp;reserved=3D0"><span style=3D"color:=
+#4472C4;">Twitter</span></a></span><span style=3D"font-family:sans-serif;co=
+lor:black;">
+ | </span><span style=3D"font-family:sans-serif;color:#4472C4;"><a rel=3D"n=
+ofollow noopener noreferrer" shape=3D"rect" target=3D"_blank" href=3D"https=
+://nam11.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fwww.linkedin.=
+com%2Fshowcase%2Freed-tech-life-sciences&amp;data=3D05%7C01%7Cjennifer.fole=
+y%40reedtech.com%7Cee728f40966046c5198108da489f9b96%7C9274ee3f94254109a27f9=
+fb15c10675d%7C0%7C0%7C637902147592651038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC=
+4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&am=
+p;sdata=3DGKEzcWoFlbuN7uLpj4e6Mv5PKev%2F68f0%2B%2B5eXbsnaVM%3D&amp;reserved=
+=3D0"><span style=3D"color:#4472C4;">LinkedIn</span></a></span><span style=
+=3D"font-family:sans-serif;color:black;"></span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-family:New serif;=
+"> &nbsp;</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><a rel=3D"nofollow noopener noreferre=
+r" shape=3D"rect" target=3D"_blank" href=3D"https://nam11.safelinks.protect=
+ion.outlook.com/?url=3Dhttp%3A%2F%2Fwww.reedtech.com%2F&amp;data=3D05%7C01%=
+7Cjennifer.foley%40reedtech.com%7Cee728f40966046c5198108da489f9b96%7C9274ee=
+3f94254109a27f9fb15c10675d%7C0%7C0%7C637902147592651038%7CUnknown%7CTWFpbGZ=
+sb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3=
+000%7C%7C%7C&amp;sdata=3DP8INQHtmYMsZNXNiJo6keAhNT%2FsBzZiA6mdMsdRA40o%3D&a=
+mp;reserved=3D0"><span style=3D"font-size:16.0pt;color:blue;text-decoration=
+:none;"><img id=3D"yiv5220854681Picture_x0020_3" border=3D"0" width=3D"229"=
+ height=3D"28" style=3D"width:2.3854in;min-height:.2916in;" src=3D"cid:eucS=
+yceEtBLAxsxDAHSX" yahoo_partid=3D"2"></span></a></div>
+=20
+</div>
+
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;"> &nbsp;</span></div>
+=20
+
+<div id=3D"yiv5220854681yqt62512" class=3D"yiv5220854681yqt3065924374">
+<div>
+
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in;">
+
+<div class=3D"yiv5220854681MsoNormal"><b>From:</b> Patti Shugart &lt;pattig=
+aull@aol.com&gt; <br clear=3D"none">
+<b>Sent:</b> Friday, October 28, 2022 6:41 PM<br clear=3D"none">
+<b>To:</b> LNG-HPA SSMD Support &lt;SSMD@reedtech.com&gt;<br clear=3D"none"=
+>
+<b>Cc:</b> Savannah Carchidi &lt;scarchidi@carolinachemistries.com&gt;<br c=
+lear=3D"none">
+<b>Subject:</b> Re: GUDID Question</div>
+=20
+</div>
+
+</div>
+
+
+<div class=3D"yiv5220854681MsoNormal"> &nbsp;</div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal">Absolutely.&nbsp;</div>
+=20
+
+<div>
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal"> &nbsp;</div>
+=20
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal">Carolina Chemistries supplying labora=
+tories for over 25 years</div>
+=20
+</div>
+
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal"><br clear=3D"none">
+<br clear=3D"none">
+</div>
+=20
+<blockquote style=3D"margin-top:5.0pt;margin-bottom:5.0pt;">
+
+<div style=3D"margin-bottom:12.0pt;" class=3D"yiv5220854681MsoNormal">On Oc=
+t 28, 2022, at 3:40 PM, LNG-HPA SSMD Support &lt;<a rel=3D"nofollow noopene=
+r noreferrer" shape=3D"rect" ymailto=3D"mailto:SSMD@reedtech.com" target=3D=
+"_blank" href=3D"mailto:SSMD@reedtech.com">SSMD@reedtech.com</a>&gt; wrote:=
+</div>
+=20
+</blockquote>
+</div>
+
+<blockquote style=3D"margin-top:5.0pt;margin-bottom:5.0pt;">
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal">=EF=BB=BF </div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;">Hi Patti,
+</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;">&nbsp;</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;">I want to say that you
+<u>are</u> able to submit on their behalf, but I=E2=80=99m not 100% positiv=
+e since this isn=E2=80=99t a frequent concern. Is it okay if I follow up wi=
+th you on this? I want to see if my colleague has a definitive answer for t=
+his.
+</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;">&nbsp;</span></div>
+=20
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;">Best,</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><b><span style=3D"font-size:12.0pt;fo=
+nt-family:sans-serif;">&nbsp;</span></b></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><b><span style=3D"font-size:12.0pt;fo=
+nt-family:sans-serif;">Jen Foley</span></b></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><i><span style=3D"font-size:12.0pt;fo=
+nt-family:sans-serif;color:#595959;">Product Support Specialist, Life Scien=
+ces</span></i></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:8.0pt;font-f=
+amily:sans-serif;color:#1F497D;">&nbsp;</span></div>
+=20
+
+<div style=3D"line-height:14.0pt;" class=3D"yiv5220854681MsoNormal"><span s=
+tyle=3D"font-family:sans-serif;color:black;">Email
+<a rel=3D"nofollow noopener noreferrer" shape=3D"rect" ymailto=3D"mailto:je=
+nnifer.foley@reedtech.com" target=3D"_blank" href=3D"mailto:jennifer.foley@=
+reedtech.com">jennifer.foley@reedtech.com</a></span><span style=3D"font-siz=
+e:10.0pt;font-family:sans-serif;color:black;">
+</span></div>
+=20
+
+<div style=3D"line-height:14.0pt;" class=3D"yiv5220854681MsoNormal"><span s=
+tyle=3D"font-family:sans-serif;color:black;">Web
+</span><span style=3D"font-family:sans-serif;color:#4472C4;"><a rel=3D"nofo=
+llow noopener noreferrer" shape=3D"rect" target=3D"_blank" href=3D"https://=
+nam11.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fwww.reedtech.com=
+%2F&amp;data=3D05%7C01%7CSSMD%40reedtech.com%7C117caa9770b644a372d608dab935=
+6dba%7C9274ee3f94254109a27f9fb15c10675d%7C0%7C0%7C638025936409399992%7CUnkn=
+own%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXV=
+CI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DHiKemkU%2BoirZAzS3Cbgdx4VM4zHd6Ypn3iO=
+UGTmABeg%3D&amp;reserved=3D0"><span style=3D"color:#4472C4;">www.ReedTech.c=
+om</span></a></span></div>
+=20
+
+<div style=3D"line-height:14.0pt;" class=3D"yiv5220854681MsoNormal"><span s=
+tyle=3D"font-family:sans-serif;color:black;">Social
+</span><span style=3D"font-family:sans-serif;color:#4472C4;"><a rel=3D"nofo=
+llow noopener noreferrer" shape=3D"rect" target=3D"_blank" href=3D"https://=
+nam11.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fwww.twitter.com%=
+2FReedTechLifeSci&amp;data=3D05%7C01%7CSSMD%40reedtech.com%7C117caa9770b644=
+a372d608dab9356dba%7C9274ee3f94254109a27f9fb15c10675d%7C0%7C0%7C63802593640=
+9399992%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI=
+6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DRcgYWwqljhmO5f%2Fs%2Br4=
+C9nwiM2wR5bEToKdcoTeoCvM%3D&amp;reserved=3D0"><span style=3D"color:#4472C4;=
+">Twitter</span></a></span><span style=3D"font-family:sans-serif;color:blac=
+k;">
+ | </span><span style=3D"font-family:sans-serif;color:#4472C4;"><a rel=3D"n=
+ofollow noopener noreferrer" shape=3D"rect" target=3D"_blank" href=3D"https=
+://nam11.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fwww.linkedin.=
+com%2Fshowcase%2Freed-tech-life-sciences&amp;data=3D05%7C01%7CSSMD%40reedte=
+ch.com%7C117caa9770b644a372d608dab9356dba%7C9274ee3f94254109a27f9fb15c10675=
+d%7C0%7C0%7C638025936409399992%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAi=
+LCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D=
+Ltm8OK0XsbjVpUQKjWSup8wsJydUy6XInfhiIbfEKBw%3D&amp;reserved=3D0"><span styl=
+e=3D"color:#4472C4;">LinkedIn</span></a></span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-family:New serif;=
+">&nbsp;</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><a rel=3D"nofollow noopener noreferre=
+r" shape=3D"rect" target=3D"_blank" href=3D"https://nam11.safelinks.protect=
+ion.outlook.com/?url=3Dhttp%3A%2F%2Fwww.reedtech.com%2F&amp;data=3D05%7C01%=
+7CSSMD%40reedtech.com%7C117caa9770b644a372d608dab9356dba%7C9274ee3f94254109=
+a27f9fb15c10675d%7C0%7C0%7C638025936409556242%7CUnknown%7CTWFpbGZsb3d8eyJWI=
+joiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%=
+7C&amp;sdata=3DzaJUQVGjmjmPosaDo%2FtSt%2BheUtSjPTdodSI6NXtwc8E%3D&amp;reser=
+ved=3D0"><span style=3D"font-size:16.0pt;color:blue;text-decoration:none;">=
+<img id=3D"yiv5220854681Picture_x0020_2" border=3D"0" width=3D"229" height=
+=3D"28" style=3D"width:2.3854in;min-height:.2916in;" src=3D"cid:eucSyceEtBL=
+AxsxDAHSX" yahoo_partid=3D"2" alt=3D"image001.png"></span></a></div>
+=20
+</div>
+
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;">&nbsp;</span></div>
+=20
+
+<div>
+
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in;">
+
+<div class=3D"yiv5220854681MsoNormal"><b>From:</b> Patti Shugart &lt;<a rel=
+=3D"nofollow noopener noreferrer" shape=3D"rect" ymailto=3D"mailto:pattigau=
+ll@aol.com" target=3D"_blank" href=3D"mailto:pattigaull@aol.com">pattigaull=
+@aol.com</a>&gt;
+<br clear=3D"none">
+<b>Sent:</b> Thursday, October 27, 2022 11:35 PM<br clear=3D"none">
+<b>To:</b> Foley, Jennifer (LNG-HPA) &lt;<a rel=3D"nofollow noopener norefe=
+rrer" shape=3D"rect" ymailto=3D"mailto:jennifer.foley@reedtech.com" target=
+=3D"_blank" href=3D"mailto:jennifer.foley@reedtech.com">jennifer.foley@reed=
+tech.com</a>&gt;<br clear=3D"none">
+<b>Cc:</b> Savannah Carchidi &lt;<a rel=3D"nofollow noopener noreferrer" sh=
+ape=3D"rect" ymailto=3D"mailto:scarchidi@carolinachemistries.com" target=3D=
+"_blank" href=3D"mailto:scarchidi@carolinachemistries.com">scarchidi@caroli=
+nachemistries.com</a>&gt;; LNG-HPA SSMD Support &lt;<a rel=3D"nofollow noop=
+ener noreferrer" shape=3D"rect" ymailto=3D"mailto:SSMD@reedtech.com" target=
+=3D"_blank" href=3D"mailto:SSMD@reedtech.com">SSMD@reedtech.com</a>&gt;<br =
+clear=3D"none">
+<b>Subject:</b> Re: GUDID Question</div>
+=20
+</div>
+
+</div>
+
+
+<div class=3D"yiv5220854681MsoNormal">&nbsp;</div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal">Jenn,&nbsp;</div>
+=20
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal">&nbsp;</div>
+=20
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal">Thank you, but still need clarity. Si=
+nce we are the entity physically attaching the label because we are the con=
+tracted manufacturer, yet our name is not on the label is it our responsibi=
+lity for the GUDID submission? &nbsp;Or is it the company
+ that had contracted us to manufacture? &nbsp;</div>
+=20
+</div>
+
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal">&nbsp;</div>
+=20
+</div>
+
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal">Can the company that contracted with =
+us to manufacture for them have us do the GUDID submission? &nbsp;&nbsp;</d=
+iv>
+=20
+</div>
+
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal">&nbsp;</div>
+=20
+</div>
+
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal">Please advise.&nbsp;</div>
+=20
+</div>
+
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal">&nbsp;</div>
+=20
+</div>
+
+
+<div>
+
+<div style=3D"margin-bottom:12.0pt;" class=3D"yiv5220854681MsoNormal">Thank=
+s!!&nbsp;</div>
+=20
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal">Carolina Chemistries supplying labora=
+tories for over 25 years</div>
+=20
+</div>
+
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal"><br clear=3D"none">
+<br clear=3D"none">
+<br clear=3D"none">
+</div>
+=20
+<blockquote style=3D"margin-top:5.0pt;margin-bottom:5.0pt;">
+
+<div style=3D"margin-bottom:12.0pt;" class=3D"yiv5220854681MsoNormal">On Oc=
+t 27, 2022, at 9:47 PM, Foley, Jennifer (LNG-HPA) &lt;<a rel=3D"nofollow no=
+opener noreferrer" shape=3D"rect" ymailto=3D"mailto:jennifer.foley@reedtech=
+.com" target=3D"_blank" href=3D"mailto:jennifer.foley@reedtech.com">jennife=
+r.foley@reedtech.com</a>&gt; wrote:</div>
+=20
+</blockquote>
+</div>
+
+<blockquote style=3D"margin-top:5.0pt;margin-bottom:5.0pt;">
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal">=EF=BB=BF </div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;">Hi Savannah,
+</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;">&nbsp;</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;color:#202124;background:white;">The FDA specifies that t=
+he GUDID submission is the ultimate responsibility of the =E2=80=9Cdevice l=
+abeler=E2=80=9D. This is the entity/company who is identified
+ on the device's label (which also contains the UDI code). So the same enti=
+ty that attaches the UDI to the device is also responsible for the electron=
+ic GUDID submission.
+</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;color:#202124;background:white;">&nbsp;</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;color:#202124;background:white;">Let me know if you have =
+any further questions!</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;">&nbsp;</span></div>
+=20
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;">Best,</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><b><span style=3D"font-size:12.0pt;fo=
+nt-family:sans-serif;">&nbsp;</span></b></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><b><span style=3D"font-size:12.0pt;fo=
+nt-family:sans-serif;">Jen Foley</span></b></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><i><span style=3D"font-size:12.0pt;fo=
+nt-family:sans-serif;color:#595959;">Product Support Specialist, Life Scien=
+ces</span></i></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:8.0pt;font-f=
+amily:sans-serif;color:#1F497D;">&nbsp;</span></div>
+=20
+
+<div style=3D"line-height:14.0pt;" class=3D"yiv5220854681MsoNormal"><span s=
+tyle=3D"font-family:sans-serif;color:black;">Email
+<a rel=3D"nofollow noopener noreferrer" shape=3D"rect" ymailto=3D"mailto:je=
+nnifer.foley@reedtech.com" target=3D"_blank" href=3D"mailto:jennifer.foley@=
+reedtech.com">jennifer.foley@reedtech.com</a></span><span style=3D"font-siz=
+e:10.0pt;font-family:sans-serif;color:black;">
+</span></div>
+=20
+
+<div style=3D"line-height:14.0pt;" class=3D"yiv5220854681MsoNormal"><span s=
+tyle=3D"font-family:sans-serif;color:black;">Web
+</span><span style=3D"font-family:sans-serif;color:#4472C4;"><a rel=3D"nofo=
+llow noopener noreferrer" shape=3D"rect" target=3D"_blank" href=3D"https://=
+nam11.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fwww.reedtech.com=
+%2F&amp;data=3D05%7C01%7CSSMD%40reedtech.com%7C117caa9770b644a372d608dab935=
+6dba%7C9274ee3f94254109a27f9fb15c10675d%7C0%7C0%7C638025936409556242%7CUnkn=
+own%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXV=
+CI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DzaJUQVGjmjmPosaDo%2FtSt%2BheUtSjPTdod=
+SI6NXtwc8E%3D&amp;reserved=3D0"><span style=3D"color:#4472C4;">www.ReedTech=
+.com</span></a></span></div>
+=20
+
+<div style=3D"line-height:14.0pt;" class=3D"yiv5220854681MsoNormal"><span s=
+tyle=3D"font-family:sans-serif;color:black;">Social
+</span><span style=3D"font-family:sans-serif;color:#4472C4;"><a rel=3D"nofo=
+llow noopener noreferrer" shape=3D"rect" target=3D"_blank" href=3D"https://=
+nam11.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fwww.twitter.com%=
+2FReedTechLifeSci&amp;data=3D05%7C01%7CSSMD%40reedtech.com%7C117caa9770b644=
+a372d608dab9356dba%7C9274ee3f94254109a27f9fb15c10675d%7C0%7C0%7C63802593640=
+9556242%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI=
+6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3DagsbIN9ELQICW0BOJnqpzYY=
+H52SscTxP%2FLxUylBgRfY%3D&amp;reserved=3D0"><span style=3D"color:#4472C4;">=
+Twitter</span></a></span><span style=3D"font-family:sans-serif;color:black;=
+">
+ | </span><span style=3D"font-family:sans-serif;color:#4472C4;"><a rel=3D"n=
+ofollow noopener noreferrer" shape=3D"rect" target=3D"_blank" href=3D"https=
+://nam11.safelinks.protection.outlook.com/?url=3Dhttp%3A%2F%2Fwww.linkedin.=
+com%2Fshowcase%2Freed-tech-life-sciences&amp;data=3D05%7C01%7CSSMD%40reedte=
+ch.com%7C117caa9770b644a372d608dab9356dba%7C9274ee3f94254109a27f9fb15c10675=
+d%7C0%7C0%7C638025936409556242%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAi=
+LCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=3D=
+vHNSwLostEqL80yYUfBvKYiT2v1gdm1wi3BkG05fqf8%3D&amp;reserved=3D0"><span styl=
+e=3D"color:#4472C4;">LinkedIn</span></a></span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-family:New serif;=
+">&nbsp;</span></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal"><a rel=3D"nofollow noopener noreferre=
+r" shape=3D"rect" target=3D"_blank" href=3D"https://nam11.safelinks.protect=
+ion.outlook.com/?url=3Dhttp%3A%2F%2Fwww.reedtech.com%2F&amp;data=3D05%7C01%=
+7CSSMD%40reedtech.com%7C117caa9770b644a372d608dab9356dba%7C9274ee3f94254109=
+a27f9fb15c10675d%7C0%7C0%7C638025936409556242%7CUnknown%7CTWFpbGZsb3d8eyJWI=
+joiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%=
+7C&amp;sdata=3DzaJUQVGjmjmPosaDo%2FtSt%2BheUtSjPTdodSI6NXtwc8E%3D&amp;reser=
+ved=3D0"><span style=3D"font-size:16.0pt;color:blue;text-decoration:none;">=
+<img id=3D"yiv5220854681Picture_x0020_1" border=3D"0" width=3D"229" height=
+=3D"28" style=3D"width:2.3854in;min-height:.2916in;" src=3D"cid:eucSyceEtBL=
+AxsxDAHSX" yahoo_partid=3D"2" alt=3D"image001.png"></span></a></div>
+=20
+</div>
+
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"font-size:12.0pt;font-=
+family:sans-serif;">&nbsp;</span></div>
+=20
+
+<div>
+
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in;">
+
+<div class=3D"yiv5220854681MsoNormal"><b>From:</b> Savannah Carchidi &lt;<a=
+ rel=3D"nofollow noopener noreferrer" shape=3D"rect" ymailto=3D"mailto:SCar=
+chidi@CarolinaChemistries.com" target=3D"_blank" href=3D"mailto:SCarchidi@C=
+arolinaChemistries.com">SCarchidi@CarolinaChemistries.com</a>&gt;
+<br clear=3D"none">
+<b>Sent:</b> Monday, October 24, 2022 3:58 PM<br clear=3D"none">
+<b>To:</b> Foley, Jennifer (LNG-HPA) &lt;<a rel=3D"nofollow noopener norefe=
+rrer" shape=3D"rect" ymailto=3D"mailto:jennifer.foley@reedtech.com" target=
+=3D"_blank" href=3D"mailto:jennifer.foley@reedtech.com">jennifer.foley@reed=
+tech.com</a>&gt;<br clear=3D"none">
+<b>Cc:</b> Patti Shugart &lt;<a rel=3D"nofollow noopener noreferrer" shape=
+=3D"rect" ymailto=3D"mailto:pattigaull@aol.com" target=3D"_blank" href=3D"m=
+ailto:pattigaull@aol.com">pattigaull@aol.com</a>&gt;<br clear=3D"none">
+<b>Subject:</b> GUDID Question</div>
+=20
+</div>
+
+</div>
+
+
+<div class=3D"yiv5220854681MsoNormal">&nbsp;</div>
+=20
+<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" widt=
+h=3D"100%" style=3D"width:100.0%;" class=3D"yiv5220854681MsoNormalTable"><t=
+body><tr><td colspan=3D"1" rowspan=3D"1" style=3D"background:#A6A6A6;paddin=
+g:5.25pt 1.5pt 5.25pt 1.5pt;"></td><td colspan=3D"1" rowspan=3D"1" width=3D=
+"100%" style=3D"width:100.0%;background:#EAEAEA;padding:5.25pt 3.75pt 5.25p=
+t 11.25pt;">
+
+<div>
+
+<div style=3D"" class=3D"yiv5220854681MsoNormal">
+<span style=3D"font-size:9.0pt;color:#212121;">You don't often get email fr=
+om
+<a rel=3D"nofollow noopener noreferrer" shape=3D"rect" ymailto=3D"mailto:sc=
+archidi@carolinachemistries.com" target=3D"_blank" href=3D"mailto:scarchidi=
+@carolinachemistries.com">scarchidi@carolinachemistries.com</a>.
+<a rel=3D"nofollow noopener noreferrer" shape=3D"rect" target=3D"_blank" hr=
+ef=3D"https://aka.ms/LearnAboutSenderIdentification">Learn why this is impo=
+rtant</a></span></div>
+=20
+</div>
+
+</td><td colspan=3D"1" rowspan=3D"1" width=3D"75" style=3D"width:56.25pt;ba=
+ckground:#EAEAEA;padding:5.25pt 3.75pt 5.25pt 3.75pt;">
+</td></tr></tbody></table>
+
+<div>
+
+<div class=3D"yiv5220854681MsoNormal"><span style=3D"color:black;">Jen, </s=
+pan></div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal">&nbsp;</div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal">Good afternoon! Thank you again for a=
+ll your help in getting our GUDIDs through.
+</div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal">&nbsp;</div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal">I have a question I was hoping you co=
+uld answer. CLC is a contract manufacturer for a company that makes 2 produ=
+cts, they are very small. Because we are the contract manufacturer, are we =
+able to register their GUDID=E2=80=99s for these products?
+ Or would the company need to register them? </div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal">&nbsp;</div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal">Thank you,</div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal">Savannah</div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal">&nbsp;</div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal">Document Control Specialist </div>
+=20
+
+<div class=3D"yiv5220854681MsoNormal">Carolina Liquid Chemistries</div>
+=20
+</div>
+
+</div>
+
+</blockquote>
+</div>
+
+</div>
+
+</div>
+
+</blockquote>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</font></div>
+</div>
+</div>
+
+------=_Part_2508670_133240194.1667230867095--
+
+------=_Part_2508671_836263797.1667230867157
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Disposition: inline; filename="image001.png"
+Content-ID: <eucSyceEtBLAxsxDAHSX>
+
+iVBORw0KGgoAAAANSUhEUgAAAOYAAAAcCAIAAAD6AVSTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAF
+FmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0w
+TXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRh
+LyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDIgNzkuMTY0NDg4LCAyMDIwLzA3LzEw
+LTIyOjA2OjUzICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3Jn
+LzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0i
+IiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRw
+Oi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMu
+YWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNv
+bS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9z
+VHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjIu
+MCAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTEyLTA3VDEyOjM5OjM4LTA1OjAwIiB4
+bXA6TW9kaWZ5RGF0ZT0iMjAyMC0xMi0wN1QxMjo0MzozOC0wNTowMCIgeG1wOk1ldGFkYXRhRGF0
+ZT0iMjAyMC0xMi0wN1QxMjo0MzozOC0wNTowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rv
+c2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIu
+MSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpmMzc1ZGUxNC0wMGFmLWJlNGYtODQ1NC0zZDVk
+ZWQ0Mzg0MjQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ZjM3NWRlMTQtMDBhZi1iZTRmLTg0
+NTQtM2Q1ZGVkNDM4NDI0IiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6ZjM3NWRl
+MTQtMDBhZi1iZTRmLTg0NTQtM2Q1ZGVkNDM4NDI0Ij4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2Vx
+PiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlp
+ZDpmMzc1ZGUxNC0wMGFmLWJlNGYtODQ1NC0zZDVkZWQ0Mzg0MjQiIHN0RXZ0OndoZW49IjIwMjAt
+MTItMDdUMTI6Mzk6MzgtMDU6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hv
+cCAyMi4wIChXaW5kb3dzKSIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVz
+Y3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz40jAQN
+AAAUYklEQVR4nO1cd1SUR9e/z7ONpYsgRakuJSoiTVdM1HBALDQTY14Nib280Q9N8vpFzSf2o4ma
+aBI1iqIiii2gSAllBTFGiWCD0GWlt13asgvbnvn+GH3edYG15s05b/gdDmf33jszd2bu3LlzZ4BA
+CMEAUBeXKH7JUP2ery5/RLW0AABpbc1wdmJNmsgKCmDweAMVHMQg/jwQ/ZisQin7Zp8i8Yri7m01
+AAHAAGBYOwKLhdraqG4RAJAmFpz3Z7Pfn82eOf0v0HoQf2NomywlfCy/mqZ6+IAcOpQwMASE1FVV
+6pIyVcFdRMkIrhnD0pLq6qTaGigAEkBv0TKj6J+AQf5VHRjE3w3aJis/e0F+5gw5ksccN5bp7cVw
+sCf09NSPq6nmZtWtvJ4jx5TCUqaFLfvtSYSlhTJDIK8q5ozxND5/ljHK7a/qwyD+VnjGZCUrVilS
+U1keY9kzZoI+F4nbiKGmDEdH0tKK8ZYrAIBKJb/0MzsoCBiM3qPRiqtp6upadXUZwTEyKy0iHexw
+PUKhMDU1NTg42N7e/i/p1SD+i/FkQ6fqG0Sm5uryCtPrAu7nn8vTUpR5eQw3V9TWIb+USDU0IrkC
+AFR/lChLiokhpoSxEWFtwwp4FwhgWNgheXdHwHTU3Q0AMpnshx9+OH36dHp6em9v71/ZuUH8N4IJ
+AFRjU6f/dO7aSIMtUZJFS3tOnjLYHMWZHa7MzEK9ChZ/AiKA4LB7T8R2L12ponrUuXmG0QdBLkey
+Xoabi+ruA4adi+pRiWThCuNLZ1hstpeXl6Ghob29PZPJ1GpPJBKJxWIHBwcOh/MGu1FfX9/T0+Pk
+5ESSA0bVHR0dpqam/bKUSqVQKDQzMzM3N38dNdrb25ubm+3s7PT19V+nnr7o7e1tbW3FvaMoSl9f
+f+jQoW+2ib6QSCTt7e1WVlZsNpsmKhSKlpYWgiC0hBFCLBbL0tLylZtraWlRKpXDhw9/jhyiqJ4j
+x5R5d5C0pwlAZOuEEFIV3Gs1GSrdsl35oFAS+QUlkch2fdMMIDI0b3N4qwWg3Wtiz+FoyfJVHdPD
+RKbW4hE8sZVDM4Ay7w5CCCEklUpRf1ixYgUA5OXl9ct9Zejp6QFAe3u7Dpl58+aFhYX1yyopKQGA
+JUuWvKYaixcvBoCzZ8++Zj19kZCQoLUa3d3dCwoK3nhDmti1axdBEFqTdf36dU01GAyGluG+Mtzd
+3UmSVKlUusWYqKeXM28uKFQtBlzWOB+ze3fkSVfbw0JNf4rWW7SoY7yfwYG9ipQMyYb/ZZiPIPT1
+kUrJsHVW3b2r+n0s6cJTl5YDIAAANpsAkO342jjpIgAM5GbkcjkAqNXql1l+z0dUVFRdXR2Xy9Uh
+Y2BgEB8ff+zYsaVLl2qxKIoCgNcPY8LDwzkcjru7e7/cjo6Oq1evOjs78/n8l61ZLpdTFOXs7Dxm
+zBiCINra2nJycry9vQUCgb+//2uqPRB6enoQQiqVSpNoZWU1c+ZMAGAymffv36+pqfHw8LCzs1Op
+VNbW1q/TXGdnJ56IfiGVSm/cuOHg4AAIIdQrbwIQO7kghHqOxNQByFPSEEKNAPKrKQihZgCRiZXY
+zkU8gicewRPbOossbMUWtt1f/l+bq4fY0v4J3dKxBQhl/l0dS2TlypXwJ3jZF8GmTZtw548eParF
+wl526dKlf6oCaWlpVlZWn376qVqtftmyFy9eBICTJ0/SlJs3bwKApaXlG9XxGWzbtg0Abt++PZDA
+wYMHAeBNOfvRo0fDwH76l19+mTp16oYNG5gAIFm0nAIwKyumyirbViw2/Z8v2DOnt43z5k6bwQ6e
+2T7WlyQ5hKkJ0K4RIYLLRc0tqhs3yRE2qqYmgsUCAOCwECB5/AWmt+frrDaZTJaZmalQKCZMmGBn
+9yQL0d3d3dvbqxVrFhcX29raGhkZVVdXS6VSNzc3vHsqlcqUlBSEUFBQEO3vFQoF/rB8+fIhQ4bM
+mTNHtxoKhSIrK0smk3l4eDg7O2OiVCqtrq4eNWqUpmRpaamNjY2xsbFYLK6rq+PxeAYGBpiVmJhI
+UVRAQICJiYm9vf2cOXOmTJnyyiMjEonoz35+fgYGBs3NzVoyN27cqKurs7W1ffvtt/utITs7myAI
+X1/ffvM5t2/ffvz4sZmZ2bRp01xdXXXr09HRAQB9dVCr1WlpaV1dXePGjdMaK4zKysqCggIWizV5
+8mR6TtVqNYvFAoDi4uKioiITE5OgoCC6CJfLdXV1tbKyAlWVsBGg54efEEItBqat5tYIIdneAw0A
+CCF5YlITgNje7Ykf1fyxdRZZ2ouHj9QktgCrI3CWjpX0XC8bGxur2bdVq1ZhurOzs5GREUVRtOSj
+R48AYPXq1QihCRMmwNONrKSkxMLCgq4hMzMTy3/22WcAEB8fP3LkSABIS0ujq+rrZX/++WdNNZYt
+W4bp2A5wQxh43xw3bhxCaM+ePQCQmpqKEKqurqYNHQASEhIQQgqFQsfg6AD2skeOHNEk4lMR/fXh
+w4fYUWGMHDmypKREU37r1q2andq2bZsmt6ioCA8jxqhRoyIiIkCnl92+fTsAJCcnaxK1hi40NFSr
+1AcffKApsH79erFYjBDy9PQ0NTX96KOPaJanp2dVVRUupVarCwsLm5qaoGvh8lY9I4SQbM/+egB1
+STlCqAmga/4ihFBnYHALMMW2zv2Y7AieePhIsc1ITW4rw6h94hQdQ6/bZNesWQMAfD4/JSVFIBDM
+nj0bABYsWIAQOnXqFAA4Oztjyc7OTmNjYwDIyclBCHl7ewMARVFqtVpPT4/D4WRnZ6enp/v5+V2+
+fBkXwSbb3d2tVCrxiGRlZWFWcXGxpsnu3bsXz1liYqJAIFi4cCEAhISE0PMxYsSIrq4uhFBPTw+P
+xwOAuLg4hNCuXbsA4ObNmwghrF5WVlZ2djafz4+JidExLM8FNtmvvvpKJBI1NDRcu3btnXfeoVcs
+Qqiqqgp36ujRo9euXdu/fz8AkCRZXl6OBfDBNzAwUCAQZGZmhoeHA8D8+fMxt6GhARePiorKyMiI
+i4ujl70O/9LXZPHQOTk5JSQkXLt2DU83n8/H3K6uLux033///YyMjISEBPy1rKwMITR9+pPL//37
+96enp3/11VcAMGzYMK1GQWRo3r32S4SQyHy4yGgoQkh+MaEBQPl7PlKqRHpDRENt+7fX/n5a2abt
+XhPRwIc+HSYrFosBYNq0aZrELVu20Av9m2++AYDIyEiJRIL3rPT0dCyGnR9CCB/vAgIC+taPTTY7
+OxshlJeXh0cHx2FFRUW0yXZ3dwPAhAkTNMt+++23ACAQCBBCSUlJADBlyhSZTDZjxgwAOH/+PBb7
++uuvAeDBgwcIIXjqet8ItFwXxty5c2mBUaNGcblczSJdXV0A8MknnyCEcnNzAWDTpk2aAthqRSIR
+QmjSpEkAcPHiRU0BHMO8uMniuMXPz09T5sqVK9gKEUJffPEF9PHu9FYwefJkAEhKSqJZISEhAJCf
+n68pz6S6Rdx/Rar/KFGI6k33fQ8A0sgvWHrGTF9vRWIS1dvOGGYBA5/jtIGzdQO/DtOBuLg4AEAI
+rVy5EjtCFosllUoBYOvWrampqevWrVOpVBs3bjx37lxLS8uJEyemTZumWYNKpWKz2aGhoUlJST4+
+Prt37w4ICNBqBQe748ePv3Pnjq+vr7e3t0gk0txPL126BAB6enqrV6/u6ekBACaTiXf/zZs3+/v7
+h4SEHDhwYM2aNU5OTk1NTbt37547d+6T3hMEAOC1FxERERcX5+7uvnPnztDQ0FcYEE0ghAAgPDx8
+9OjRO3fuBIDS0lI61nzw4EFxcbG9vf3mzZvpyBInoWNjY0+dOhUdHQ0AIpFozZo1eFUzmUxs08nJ
+yQsWLLh58+b06dO14vv58+dfv34dvfBs4hMhNk08cSRJ4ixYQkLCmjVrkpKSCIKgz8EYbm5Prvpb
+W1sBAJspxvLly69evVpSUoJ3UQwmw8qRHG4j3XeABOD+cynV2KRoFHLD5gKAMicXAAC9sL0CgJoC
+JhOezdW9IPDWVlBQkJmZSRM5HA6Px6OzJxs2bPjpp59qamqCgoLwfq0JpVLJZDITExOXLVsWExMT
+GBjo5uZ26NChd999l5ahc+A+Pj4pKSmzZs1yd3ePj4+Hp2YhFAoBoKioSDMByWKxnJ2d6bNgZGTk
+1atXs7KyJk6c+OWXX2qpgc95p0+fNjExOXjwYFhYmK2t7aFDh4KDg19hWDCwbvPmzZs7d66bm9vH
+H3+8fft2vMhpndva2vAZn4aVlZWRkREAtLS0AMDhw4c1uSRJ4vsI7B0DAwO1Gm1ra3spJevq6gAg
+Pz//1q1bmnRzc3McANTU1Oi4Qup7PYE9l9aFFMmcNBFUKnlyGttmJHC58kuJFADT1wsA1DW1AAx4
+KY+pUhD6+tCn7RcBDp6uXLmiuQv09vZWVFQcP34cy8TExNTU1ABAenp6cnJyv/WQJHn8+HGxWLxp
+06bS0lJ/f//CwsJ+JWfOnHn58uXGxsapU6fC01zysGHD4Nl0EkJIoVCUl5efOXMGF4yPj8/KyiJJ
+8tatWzExMVrV0kP/448/dnZ27tq1q7a2NiQkhI5GXhmPHz8GgIiIiIULF545cwbHIQBgY2MDT2MA
+1VMghBobG//44w8AwA5VLpdrCqjVapFIFBERgd1bX/Ve9i4Qz+CBAwe01Ghtbf3xxx9xhdjH9ws8
+bpo5e2yyWncoJDtgqrq0HNXXM/34AKB+UEgAkDbWAAA9PQRo37jqAkEg6CUddD2Fwd6C19/z8EWL
+FgEAPoHR0MxjnzlzZsmSJXPmzCkrK7OwsAgJCbl79+4znSFJAMCBqZmZ2bZt27Kzs+FpyNEvwsLC
+6DAR30R8+OGHAPD5559ritEnNgDIy8ubP3++m5tbRUWFl5fXkiVLcCt07/DvwsJClUplbGy8fv36
+e/fuAcCxY8d0jMyLgJ686Ojo8ePHr1+//sKFCwDg4+NjY2MTHR1dV1fHeAoAaG5uxmmjdevWAcDa
+tWsBgBbAzpXBYLi6urq4uFy4cOH27duazaWmpkJ/zm8g+Pn5Yd00W8Es/CEoKAghdOLECc1SEonk
+5QaBPXM6otRIoSSH2wAA1dYGAARHDwCAy0Wg0l3+GSBAAOxZM3S1R5IAEBUVtW/fvj1PsWPHjri4
+OBsbmwULFty9e5fP52dkZBQVFe3du5fFYuGcSG5ubkREhKGh4cWLF11cXLAReHt7YwPFS5PD4RQV
+Fbm7uwcGBlZWVpaVlX3//fcA4OvrS8v0jczee+89fLrCu+fQoUPXr19fUVExevTolJSUwsLCw4cP
+s9lsfELPz8/n8/kkSebk5Dg5OQkEAgMDA39//5ycHLpCW1vb3t7esWPHenp6lpeXV1ZW4vonTpz4
+EoP5LPC1EH05xGQycYsffvhhd3c3SZJJSUkKhcLW1jY2Nra6uvrXX3/19PS0srK6f/8+AMyePTs4
+OPjw4cPh4eEPHjyorKw8fPiwhYUFVokkycTERKxhbGysUCjMy8vj8/mYqCOWxfrQAsOHD1+7du29
+e/dGjx4tEAhqa2vj4+NZLJaJiYlMJgOAHTt2GBkZLV68eOPGjVVVVQ8fPgwNDTU2Ni4tLYVn3VO/
+vX4ChBBSKEUcU8mnaxFCne/9oxFAdugoQkjyz8gWgAEzXH3StK1MbttbXjrSBejpLXy/wAJ4dmnY
+2NjgI+Rbb70FAE1NTXRVeCOLjIxECOEQXqFQNDU1rV69WrOGffv2aTZNp2m1sHr16uDgYPqrVthn
+YWFx+vRphBC+HX38+DEt2dTUBABeXl7o6XVRTk6OQqHQ8tNbtmzRMSzPBU5XR0VFaRKxSRkZGQmF
+QoRQWlqa1luZVatWaaq6bNkyTS6Px7tw4QLNTUlJ0YwE9PX1cRohNzd3IK2w87506ZIm8cCBA1oz
++91338lkMsytq6sbP368Jnf27NlYSdy65huDkydPQp8g7cl72Q6fScSQISaZyZLFK6Unjhhv2qq/
+Larn0JHuVSsZds5AvUg8S6jqKkxiYjmLPtYhVF5eXltbi9v+d0mCMDY2pntSX18vEAhaW1t9fX1x
+4gMAhEKhWq3Wiihyc3N5PJ6NjU1+fn5nZ+eUKVNwqF5eXp6WlsZgMKZNm+bi4oKFKyoqampqvL29
+B3rPVVNTQx+wAKC1tTUzM7OhocHDw4M+mtTU1NTU1GhdLP3222/W1taOjo7V1dWVlZVjxozBD5pq
+a2txaD516tSBHh68IFpaWgoLC3k8ntaV1e+//15aWjp58mQHBwdMOX/+fEFBgaOj44wZM2gijeLi
+4uTkZIlEwufzZ82apcVFCJ07d+7+/fuOjo44HSkQCHx8fExMTPrVSigUVlVVeXh4aEW99fX1ycnJ
+lZWV3t7ewcHBhoaGWgWvX7+ekZFhamoaFBQ0duxYTLx9+7ZUKvX396dDkebm5qKiIno8MZ6YbO+R
+47It280aH/d8f6hjzSrDOR8ZXYyj6urbnd3BwJDgPu+hIIulFpYwbF3MasqeIzmIQbwenoTznMUL
+wMBQ/UjIeT+cAaC8fh1JpeSI4cwp71DihudkAEgStTYDi2t09oQusUEM4k3gickSLCZ3xVLpZ+vI
+4Tacie/KW+sUl5MBgB0WTIH66Q1Bf2CyUFubqrvN+NQp1tt+/xmlB/F3xr8zXtx1a9nvhYFcrr9n
+JwDIz10EAO6SBXpvB6hry6HP3xcAQQBJqh9XUN1dJsdOcuZ9oC0wiEH8CejzfwwoCkiy890gWU6G
++a+3WJP4qL1DbM+jJGKmnSsgChDCxko1t1C97QwLa6OTJ9gzgwaofxCDeMPo719vAABA1z8+kp0/
+a36ngOnjpS5/JPlkoSLvVwIYpL4pknVRoGRa2umtWMr91+eEkcF/WOlB/J0xoMkCgDRqC+qQGERt
+JMyHAoBs9x5V9g2qo50wHcJ6Z5LeyqWk+Z/+F3ODGIQW/h/mD85OSS+ImgAAAABJRU5ErkJggg==
+
+------=_Part_2508671_836263797.1667230867157--

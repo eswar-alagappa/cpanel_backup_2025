@@ -1,0 +1,39 @@
+<?php include 'header.php'; ?>
+<div class="container">
+<div class="row">
+<div class="banner">
+<img src="img/banner.jpg" alt="ImageMissing"/>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="main-page">
+<div class="row">
+
+<div class="col-lg-3 col-xs-12 area">
+<?php include 'major_links.php'; ?>
+</div>
+<?php include "social.php";?>
+<div class="col-lg-8 col-xs-12 profile">
+<h3>Exam Notification</h3>
+<h5>Submission of applications through online commences on - 19-11-2018 </h5>
+<!--<p>28 - November - 2016</p>-->
+<h5>Last date for receipt of filled in Examination Applications - without Penalty  - 03-12-2018 </h5>
+<!--<p>05 - December - 2016</p>-->
+<h5>Last date for receipt of filled in Examination Applications - with a Penalty  - 06-12-2018 </h5>
+ - 
+<!--<h5>Penalty</h5>-->
+
+<h5>Date of commencement of Examinations</h5>
+<h5>26 - December – 2018</h5>
+<p>Candidates may follow the link <a href="http://exam.alagappauniversity.ac.in/exam/student/exam_apply_dde_au.php" title="Online Apply" target="_blank">http://exam.alagappauniversity.ac.in/exam/student/exam_apply_dde_au.php</a> to fill the exam application and pay the exam fee through net banking / credit card / debit card. </p>
+<p>After the successful payment of the exam fee, the candidate can print the e-Hall Ticket instantly. </p>
+<p>After the successful payment, if the e-Hall Ticket is not generated, the candidate should wait up to TWO days for auto process. No need to apply again.</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<?php include "footer.php"; ?>

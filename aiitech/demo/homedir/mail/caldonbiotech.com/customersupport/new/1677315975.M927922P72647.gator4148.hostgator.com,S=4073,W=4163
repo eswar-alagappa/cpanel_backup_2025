@@ -1,0 +1,90 @@
+Return-Path: <maya@srbooster.io>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id oK3vNYfP+WPHGwEA7/vpDg
+	(envelope-from <maya@srbooster.io>); Sat, 25 Feb 2023 03:06:15 -0600
+Return-path: <maya@srbooster.io>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Sat, 25 Feb 2023 03:06:15 -0600
+Received: from mail-qt1-f172.google.com ([209.85.160.172]:45010)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <maya@srbooster.io>)
+	id 1pVqVT-000Ru8-Hm
+	for customersupport@caldonbiotech.com;
+	Sat, 25 Feb 2023 03:06:15 -0600
+Received: by mail-qt1-f172.google.com with SMTP id s12so1855396qtq.11
+        for <customersupport@caldonbiotech.com>; Sat, 25 Feb 2023 01:06:10 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=srbooster-io.20210112.gappssmtp.com; s=20210112;
+        h=content-transfer-encoding:date:mime-version:message-id:subject
+         :reply-to:to:from:from:to:cc:subject:date:message-id:reply-to;
+        bh=W1uWuV89JkyYVOIGhuMnERTx7chzF6PUu+UoPNnMaHQ=;
+        b=OZcYrhluM4fWQPMe2vuLQw6kS5LnT3Tym4xfcbjivpPVKWUTftc79UV0Ap5EPBm+sN
+         g7tBhG5DeJBqtmhNHbs+POOJWc4yF+QS1MQCq2XpOu4AJVN5p6j8y786WHaXqn5rTNXD
+         tzhYpPj24j/7r+jX2quc6OpIW+3s/fENWN8BFWpO4iIuGaQ+TXiPQ7Kuonnazgxglth8
+         Kfa3Chv65oSPpX8FbKpl+0NtbXFt6XmTrx7psAa8H8adT+jhvgcKJRjK74FwixXwStQ1
+         Y5EP3PsgTyde+2lQwFk/1hBr1tSXIaNajhKbXYTsWDlBgoqfg5NGIc9gsjctKoGxRbJV
+         W2sg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=content-transfer-encoding:date:mime-version:message-id:subject
+         :reply-to:to:from:x-gm-message-state:from:to:cc:subject:date
+         :message-id:reply-to;
+        bh=W1uWuV89JkyYVOIGhuMnERTx7chzF6PUu+UoPNnMaHQ=;
+        b=HsySbBIc1CUKeLvXPLFV9b9XFP4oOvhS7E+dW38yZaOBPo4J/ohsJ3njJY3GqDGu9p
+         TxHh3evr2odYTqZaN/wn8XFU3HjBqtUb9BiRCOPs+u7ifzc63k2xZ5zjZTO/EpPdvcsW
+         dUEv//gEIGeUNUY5J/+Q/ApNQNSl0SD/bqjkw61ECeJKhucYD9m5TapA9VyJgKg7dj7U
+         MWxTE71HAh6dOOVSK+hObpCjBoPm+CQLP3yUovj0G0VBVO1YfQzJkJSLrB0WwuuF63aU
+         QU86ve3VS2l5pwS0LTqVjqam1gdJIDcLEqDaI05BWPDconiXXi1mT71wkIgOdp8zVDJZ
+         d2jA==
+X-Gm-Message-State: AO0yUKUrOSWyLGfGb+kGBlKiE0IayxGcMTDQv1EORuGYkatXcN8WjwrV
+	zrAkqu7yxjORIZIcnPMlUx3lDQtXlODbRLtp
+X-Google-Smtp-Source: AK7set9YMNN4FCKpCg+S/QeAsYo8g65/yWsZ1nQwWauRorF1er9qbVHTC+9hlZ+NSUxZ8d7Jyqtk/A==
+X-Received: by 2002:a05:622a:50d:b0:3bf:c7ac:37e4 with SMTP id l13-20020a05622a050d00b003bfc7ac37e4mr1780319qtx.53.1677315964328;
+        Sat, 25 Feb 2023 01:06:04 -0800 (PST)
+Received: from [127.0.0.1] (ec2-52-5-208-59.compute-1.amazonaws.com. [52.5.208.59])
+        by smtp.gmail.com with ESMTPSA id q13-20020ac8450d000000b003bfad864e81sm1034417qtn.69.2023.02.25.01.06.03
+        for <customersupport@caldonbiotech.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sat, 25 Feb 2023 01:06:03 -0800 (PST)
+From: Maya Lee <maya@srbooster.io>
+To: Caldon Biotech <customersupport@caldonbiotech.com>
+Reply-To: Maya Lee <maya@srbooster.io>
+Subject: Caldon Biotech, February directory list update
+ =?utf-8?Q?=F0=9F=8C=8E?=
+Message-ID: <55abe46688be7d004f2f5a8490ac65fe@srbooster.io>
+MIME-Version: 1.0
+Date: Sat, 25 Feb 2023 04:06:03 -0500
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=-0.5
+X-Spam-Score: -4
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+Hi Caldon Biotech,
+
+
+We have updated our list of 80+ high-quality sta=
+rtup directories for February, where you can submit "Caldon Biotech" to inc=
+rease organic traffic, grow your online visibility, and improve your Off-pa=
+ge SEO. =F0=9F=9A=80
+
+New Directories (3): Medium, IGotBiz, and Bunity=
+
+
+You can see the directory list here: https://www.srbooster.com/ck/47/=
+628458/SRB-directory-list
+
+Also, we can do the work for you: https://ww=
+w.srbooster.com/ck/47/628458/SRB
+
+
+Warm regards,
+SR Booster Team
+=
+
+
+PS: If you know about any other directory, let us know about it.
+

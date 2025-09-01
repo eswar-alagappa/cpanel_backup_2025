@@ -1,0 +1,206 @@
+<html>
+<head>
+<title>Kristalite Imports</title>
+<SCRIPT language=JavaScript>
+function checkout(txt)
+{	
+   if (txt.Name.value=="") 
+	{
+	alert("Name is empty");
+        document.enquiry.Name.focus();
+	return(false);
+	}
+
+if (txt.Address.value=="") 
+	{
+	alert("Address is empty");
+     document.enquiry.Address.focus();
+	return(false);
+	}
+if (txt.Mail.value=="") 
+	{
+	alert("Email-Id is empty");
+        document.enquiry.Mail.focus();
+	return(false);
+	}
+return(true);
+}
+function checknum(txt1,txt)
+{
+	if(txt.value=="")
+	{
+		alert(txt1 + "  is Empty ");
+		//txt.setfocus();
+	}
+	if(isNaN(txt.value))
+	{
+		alert("Invalid entry")
+		//txt.setfocus();
+	}
+}
+	
+function checkmail(txt1,txt)
+{
+mail=txt.value
+p=0;q=0;
+	if((mail.length>=5)&&(mail.substring(mail.length-1,mail.length)!="."))
+	{
+	for(i=0;i<=mail.length;i++)
+	{
+		if(mail.substring(i,i+1)=="@")
+		{
+		for(j=i;j<=mail.length;j++)		
+		if((mail.substring(j,j+1)==".")&&(mail.substring(j-1,j)!="@"))
+		{
+		p=1	           
+		break
+		}
+		}
+	}
+	for(i=0;i<=mail.length;i++)
+	{
+		if((mail.substring(i,i+1)==".")&&(mail.substring(i-1,i)!="@"))
+		{
+        	q=1	           
+		break
+		}
+	}
+	}
+	
+if((p!=1)||(q!=1))
+{	
+ alert("Invalid MAILID")
+//	txt.mail.setfocus();
+}
+}
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF"leftMargin=0 link=#ffffff rightmargin=0 topMargin=0 
+vLink=#ffffff marginheight="0" marginwidth="0">
+<table width="788" height="350" cellspacing="0" cellpadding="0">
+  <tr align="right" valign="top" > 
+    <td height="110"background="klogo1.gif" colspan="2"><a href="index.html"><img src="home.gif" width="83" height="64" border="0"></a></td>
+  </tr>
+  <tr> 
+    <td width="168" align="right" height="2">&nbsp;</td>
+    <td height="2" width="625" align="right"><img src="krisadd.gif" width="471" height="15"></td>
+  </tr>
+  <tr> 
+    <td height="2" colspan="2"><img src="hr.gif" width="790" height="5"></td>
+  </tr>
+  <tr> 
+    <td height="198" align="center" width="168" valign="top"> 
+      <table width="75%" cellspacing="1">
+        <tr> 
+          <td height="50">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td height="30"><a href="about.html"><img src="about.gif" width="160" height="25" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td height="30"><a href="product.html"><img src="products.gif" width="160" height="25" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td height="30"><a href="products.html"><img src="proddet.gif" width="160" height="25" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td height="34"><a href="order.html"><img src="order.gif" width="160" height="25" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td height="30"><a href="key.html"><img src="key.gif" width="160" height="25" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td height="30"><a href="orderfm.html"><img src="orderfm.gif" width="160" height="25" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td height="30"><a href="bond.html"><img src="bond.gif" width="160" height="25" border="0"></a></td>
+        </tr>
+      </table>
+    </td>
+    <td height="300" width="625" valign="top" rowspan="2"> 
+      <table border=0 height=215 width=596>
+        <tr>
+          <td height=23 width=211>&nbsp;</td>
+          <td height=23 width="375">&nbsp;</td>
+        </tr>
+        <form action="mailto:info@kristalite.com" method="post" 
+                    name="enquiry" onSubmit="return checkout(this)">
+          <tr> 
+            <td height=23 width=211><b><font color=#b22222 
+                        face="Arial, Helvetica, sans-serif" size=3><font 
+                        size=2>&nbsp;Name</font> </font></b></td>
+            <td height=23 width="375"> 
+              <input name=Name size=40>
+            </td>
+          </tr>
+          <tr> 
+            <td height=86 width=211 valign="top"><b><font color=#b22222 
+                        face="Arial, Helvetica, sans-serif" size=2>&nbsp;Communication 
+              Address</font></b> 
+              <p>&nbsp;</p>
+              <p> </p>
+            </td>
+            <td align=left height=86 valign=top width="375"> 
+              <p align=left> 
+                <textarea cols=40 name=Address rows=4></textarea>
+              </p>
+            </td>
+          </tr>
+          <tr> 
+            <td height=19 width=211><b><font color="#b222222" face="Arial, Helvetica, sans-serif" size="2">&nbsp;Phone</font></b> 
+            </td>
+            <td height=19 width="375"> 
+              <input maxlength=30 name=Phone 
+                        onBlur=checknum(name,this) size=30>
+            </td>
+          </tr>
+          <tr> 
+            <td height=25 width=211><b><font color=#993333 
+                        face="Arial, Helvetica, sans-serif" 
+                        size=2>&nbsp;<font color="#b222222">E-mail</font></font></b></td>
+            <td height=25 width="375"> 
+              <input maxlength=50 name=Mail 
+                        onBlur=checkmail(name,this) size=50>
+            </td>
+          </tr>
+          <tr> 
+            <td height=19 width=211><b><font color="#b222222" face="Arial, Helvetica, sans-serif" size="2">&nbsp;Requirements</font></b> 
+            </td>
+            <td align=left height=19 width=375> &nbsp; 
+              <select name="select">
+              </select>
+            </td>
+          </tr>
+          <tr> 
+            <td height=67 valign=top width=211><b><font 
+                        color=#b22222 face="Arial, Helvetica, sans-serif" 
+                        size=2>&nbsp;Remarks</font></b> </td>
+            <td height=67 valign=top width="375"> 
+              <textarea cols=40 name=Remarks rows=3></textarea>
+            </td>
+          </tr>
+          <tr> 
+            <td height=18 width=211></td>
+            <td height=18 width="375"> 
+              <input name=SUBMIT type=submit value=Submit>
+              &nbsp;&nbsp;&nbsp; 
+              <input name=B2 type=reset value=Clear>
+            </td>
+          </tr>
+        </form>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="65" align="center" width="168">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="3" align="center" colspan="2"><font face="Arial, Helvetica, sans-serif" size=1><b><font 
+      color=#000066>Copyright © 2002-2003 by <a 
+      href="mailto:info@alagappa.com"><font color=#3333ff>Aiitech</font><font color=#99ccff>.</font></a></font></b></font></td>
+  </tr>
+</table>
+</body>
+</html>

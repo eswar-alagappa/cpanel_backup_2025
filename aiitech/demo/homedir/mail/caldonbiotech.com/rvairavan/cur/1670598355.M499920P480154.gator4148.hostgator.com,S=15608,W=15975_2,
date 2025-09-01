@@ -1,0 +1,367 @@
+Return-Path: <ruby.reed@smartb2bmarketing.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id 8A3bHNNOk2OaUwcA7/vpDg
+	(envelope-from <ruby.reed@smartb2bmarketing.com>); Fri, 09 Dec 2022 09:05:55 -0600
+Return-path: <ruby.reed@smartb2bmarketing.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Fri, 09 Dec 2022 09:05:55 -0600
+Received: from mail-pl1-f175.google.com ([209.85.214.175]:46994)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <ruby.reed@smartb2bmarketing.com>)
+	id 1p3ewk-0029UO-UZ
+	for customersupport@caldonbiotech.com;
+	Fri, 09 Dec 2022 09:05:55 -0600
+Received: by mail-pl1-f175.google.com with SMTP id jn7so5128237plb.13
+        for <customersupport@caldonbiotech.com>; Fri, 09 Dec 2022 07:05:49 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=smartb2bmarketing-com.20210112.gappssmtp.com; s=20210112;
+        h=content-language:thread-index:mime-version:message-id:date:subject
+         :in-reply-to:references:to:from:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=34JlTpQh3xelpBYvqrMgLTKdHWnT0uKvjwEwOv7Djuc=;
+        b=x8Eawb6ZW7nVEqWr6kgmoLPGwfipyXJkA5MWfTIX2Y3klOglLAnZERSJcSJ7tBLwd+
+         Gac+JWHJVFAKfK71SmsZ4oTScoqslDZ6rUDfgWJ+leOsrsz51tOD68AGKdJw+X5lK1i5
+         LCZIz+AIfDz/FZGM5gmaJSC3oxR5XfnfINo1q5FjcgHnaS44088HjkL/NYThmtv5X0j7
+         8XZEP2k9ikqowq8ggQG+CGqB+tT4nyVPwSK+QuUfDWouCmYOmtl7SUW377239Tuz1E5I
+         xN9VezUI2ERcK3tNvmLHze0l1+muinjRKo3bH2VUuS+zjhTBye+0I00jkwxCa59N8vd6
+         iJzg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=content-language:thread-index:mime-version:message-id:date:subject
+         :in-reply-to:references:to:from:x-gm-message-state:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=34JlTpQh3xelpBYvqrMgLTKdHWnT0uKvjwEwOv7Djuc=;
+        b=5leAt6f1VVV93FKC+lsGLOjt5i6UBk9AOlKXX189YJ1Dq0LYr+HxkW8GN3E4L9AQW3
+         4LAwVOteeloVY8j+jVvgNpVso/iIuh9/WtYZ9mz5SVTsCgyabgpYscFXjJEWEnmSa0XE
+         iVvJ825ZLd0h4QULYmrtND1U7mfSyAAfqN6BrxR9CmDUsg3PLZVrjk1Im/q3RGdiBvUi
+         ODPga/BMIY64iaLOQxy+Qpnx7F1yot6wvyyl1lr8WrGDgANs6e4R9aTKQ8hhedzD5Aum
+         fqJ0ysfc0qO0bGOFZx5EShJdLu5cW2LT6lfKjaJherZ9ea8ZVdeSjHJ7y2jws18WFjcN
+         P47w==
+X-Gm-Message-State: ANoB5pmnGsZWUcShtUkCTOcPeEJ0ljbMI+1TzLGHZNb6yaw4ZHDJC+l3
+	2kFoolS2r3S+fDH53qI7OPiAdVuhS5hWIpjV
+X-Google-Smtp-Source: AA0mqf5AB29JsAEOraW7VFKIpPVmFHci0MWMDH1ubo9HtCeZEXNm8CYsChvHlOvcJW3TEWbRGRLayA==
+X-Received: by 2002:a17:903:2786:b0:189:f69d:d5cc with SMTP id jw6-20020a170903278600b00189f69dd5ccmr6242969plb.58.1670598343587;
+        Fri, 09 Dec 2022 07:05:43 -0800 (PST)
+Received: from DESKTOP81I1OQ5 ([117.199.229.139])
+        by smtp.gmail.com with ESMTPSA id f12-20020a170902684c00b00189ed861791sm1435799pln.266.2022.12.09.07.05.42
+        for <customersupport@caldonbiotech.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 09 Dec 2022 07:05:43 -0800 (PST)
+From: ruby.reed@smartb2bmarketing.com
+X-Google-Original-From: <Ruby.Reed@smartb2bmarketing.com>
+To: <customersupport@caldonbiotech.com>
+References: 
+In-Reply-To: 
+Subject: =?us-ascii?Q?RE:_Medical_Technology_and_Equipment's_Industry_Professional?=
+	=?us-ascii?Q?s_Database?=
+Date: Fri, 9 Dec 2022 10:02:03 -0500
+Message-ID: <0e2501d90bdf$b5365670$1fa30350$@smartb2bmarketing.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0E26_01D90BB5.CC6382C0"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AdjytTsJmsqBiBM4T82a+5CekvMnqgZKW9rw
+Content-Language: en-us
+X-Spam-Status: No, score=-0.5
+X-Spam-Score: -4
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_0E26_01D90BB5.CC6382C0
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+ 
+
+ 
+
+Hi,
+
+ 
+
+I am just doing a follow up with my previous email to check whether you are
+interested in our Contacts List.
+
+ 
+
+If you can let me know your targeted criteria, I can assist you with the
+count/costs, and sample details for your consideration.
+
+ 
+
+Target Industry: _____________; (Any)    
+
+Target Geography: ______________; (USA/Canada/UK/Europe/Across the world)
+
+Target Job Title:   _________________; (CEO, CFO, CMO, VP, Others etc.)
+
+ 
+
+Looking forward to hear from you soon!
+
+ 
+
+Thanks and Regards,
+
+Ruby Reed
+
+ 
+
+ 
+
+From: Ruby.Reed@smartb2bmarketing.com <Ruby.Reed@smartb2bmarketing.com> 
+Sent: Monday, November 7, 2022 9:41 AM
+To: 'customersupport@caldonbiotech.com' <customersupport@caldonbiotech.com>
+Subject: Medical Technology and Equipment's Industry Professionals Database
+
+ 
+
+Hi,
+
+ 
+
+Hope this finds you well!
+
+ 
+
+Go ahead with our Newly updated "Medical Technology & Equipment's Industry
+Professionals Contact List" to target the right audience and promote your
+Products/services across the world.
+
+ 
+
+Database consists of:  Name, Company, Job Title, Website, Physical Address,
+Employees, Revenue, Industry, SIC, Phone Number and Verified Email Address.
+
+ 
+
+Job titles: CEOs/R&D, Directors of Purchasing, Directors of Quality control,
+Heads of Product Design, Senior Packaging Engineers, Heads of Research and
+Development, Product Designers, Engineering Production Management,
+Manufacturing Management, Regulatory Affairs, Process Engineers.
+
+ 
+
+Industry Segments: Hospital/Clinic/Medical Care Centre, Medical Practice,
+Medical Laboratory/Institute, Physiotherapist Practice, Rehabilitation
+Centre, Residential Home, Anesthesiology/Dermatology, Healthcare/Surgery,
+Medical Diagnostics/Medical Examination, Cardiovascular/Nephrology,
+Neurology/Neurosurgery, Obstetrics/Gynecology, Ophthalmology/Orthopedics,
+Physical Therapy, Radiology/Urology, Buying Group/Service/Trade and many
+more across the world.
+
+ 
+
+Please let me know your thoughts. So that I can send you few samples to
+check our database accuracy along with counts and pricing.
+
+ 
+
+Target Industry: _____________; (Any)    
+
+Target Geography: ______________; (USA, UK, Across the World)     
+
+Target Job Title:   _________________; (CEO, CFO, CMO, VP etc.)
+
+ 
+
+In case, you are not the decision maker on this, please guide me to the
+right contact.
+
+ 
+
+Regards,
+
+Ruby Reed | Sr. Marketing Executive 
+
+Our Services: E mail Lists, E mail Appending, Custom List Building, and
+Campaign.   
+
+Lead Generation Team (USA/UK/Europe) 
+
+ 
+
+To remove from this mailing: reply with subject line as "leave out."
+
+ 
+
+ 
+
+
+------=_NextPart_000_0E26_01D90BB5.CC6382C0
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><META =
+HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii"><meta name=3DGenerator content=3D"Microsoft Word 15 =
+(filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-IN;}
+span.EmailStyle18
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US =
+link=3D"#0563C1" vlink=3D"#954F72" style=3D'word-wrap:break-word'><div =
+class=3DWordSection1><p class=3DMsoNormal><span =
+style=3D'mso-fareast-language:EN-US'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><span =
+style=3D'mso-fareast-language:EN-US'><o:p>&nbsp;</o:p></span></p><div><p =
+class=3DMsoNormal><span =
+style=3D'color:#0070C0;mso-fareast-language:EN-US'>Hi,<o:p></o:p></span><=
+/p><p class=3DMsoNormal><span =
+style=3D'color:#0070C0;mso-fareast-language:EN-US'><o:p>&nbsp;</o:p></spa=
+n></p><p class=3DMsoNormal><span =
+style=3D'color:#0070C0;mso-fareast-language:EN-US'>I am just doing a =
+follow up with my previous email to check whether you are interested in =
+our Contacts List.<o:p></o:p></span></p><p class=3DMsoNormal><span =
+style=3D'color:#0070C0;mso-fareast-language:EN-US'><o:p>&nbsp;</o:p></spa=
+n></p><p class=3DMsoNormal><span =
+style=3D'color:#0070C0;mso-fareast-language:EN-US'>If you can let me =
+know your <b>targeted criteria,</b> I can assist you with the =
+<b>count/costs,</b> and <b>sample details</b> for your =
+consideration.<o:p></o:p></span></p><p class=3DMsoNormal><span =
+style=3D'color:#0070C0;mso-fareast-language:EN-US'><o:p>&nbsp;</o:p></spa=
+n></p><p class=3DMsoNormal><b><span =
+style=3D'color:#0070C0;background:yellow;mso-highlight:yellow;mso-fareast=
+-language:EN-US'>Target Industry: _____________; (Any)&nbsp;&nbsp;&nbsp; =
+<o:p></o:p></span></b></p><p class=3DMsoNormal><b><span =
+style=3D'color:#0070C0;background:yellow;mso-highlight:yellow;mso-fareast=
+-language:EN-US'>Target Geography: ______________; =
+(USA/Canada/UK/Europe/Across the world)<o:p></o:p></span></b></p><p =
+class=3DMsoNormal><b><span =
+style=3D'color:#0070C0;background:yellow;mso-highlight:yellow;mso-fareast=
+-language:EN-US'>Target Job Title:&nbsp;&nbsp; _________________; (CEO, =
+CFO, CMO, VP, Others etc.)</span></b><b><span =
+style=3D'color:#0070C0;mso-fareast-language:EN-US'><o:p></o:p></span></b>=
+</p><p class=3DMsoNormal><span =
+style=3D'color:#0070C0;mso-fareast-language:EN-US'><o:p>&nbsp;</o:p></spa=
+n></p><p class=3DMsoNormal><span =
+style=3D'color:#0070C0;mso-fareast-language:EN-US'>Looking forward to =
+hear from you soon!<o:p></o:p></span></p><p class=3DMsoNormal><span =
+style=3D'color:#0070C0;mso-fareast-language:EN-US'><o:p>&nbsp;</o:p></spa=
+n></p><p class=3DMsoNormal><span =
+style=3D'color:#0070C0;mso-fareast-language:EN-US'>Thanks and =
+Regards,<o:p></o:p></span></p><p class=3DMsoNormal><b><span =
+style=3D'font-size:12.0pt;color:#0070C0;mso-fareast-language:EN-US'>Ruby =
+Reed</span></b><b><span =
+style=3D'mso-fareast-language:EN-US'><o:p></o:p></span></b></p><p =
+class=3DMsoNormal><span =
+style=3D'mso-fareast-language:EN-US'><o:p>&nbsp;</o:p></span></p></div><p=
+ class=3DMsoNormal><span =
+style=3D'mso-fareast-language:EN-US'><o:p>&nbsp;</o:p></span></p><div><di=
+v style=3D'border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in'><p class=3DMsoNormal><b><span =
+style=3D'mso-fareast-language:EN-US'>From:</span></b><span =
+style=3D'mso-fareast-language:EN-US'> Ruby.Reed@smartb2bmarketing.com =
+&lt;Ruby.Reed@smartb2bmarketing.com&gt; <br><b>Sent:</b> Monday, =
+November 7, 2022 9:41 AM<br><b>To:</b> =
+'customersupport@caldonbiotech.com' =
+&lt;customersupport@caldonbiotech.com&gt;<br><b>Subject:</b> Medical =
+Technology and Equipment&#8217;s Industry Professionals =
+Database<o:p></o:p></span></p></div></div><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>Hi,<span =
+style=3D'mso-fareast-language:EN-US'><o:p></o:p></span></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>Hope this =
+finds you well!<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>Go ahead =
+with our Newly updated <b><u><span =
+style=3D'background:yellow;mso-highlight:yellow'>&#8220;Medical =
+Technology &amp; Equipment&#8217;s Industry Professionals Contact =
+List&#8221;</span></u></b> to target the right audience and promote your =
+<b>Products/services</b> across the world.<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal><b>Database =
+consists of</b>:&nbsp; Name, Company, Job Title, Website, Physical =
+Address, Employees, Revenue, Industry, SIC, Phone Number and Verified =
+Email Address.<o:p></o:p></p><p class=3DMsoNormal><span =
+style=3D'color:red'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><b><u><span style=3D'color:red'>Job =
+titles:</span></u></b><span style=3D'color:red'> </span><span =
+style=3D'background:darkgray;mso-highlight:darkgray'>CEOs/R&amp;D, =
+Directors of Purchasing, Directors of Quality control, Heads of Product =
+Design, Senior Packaging Engineers, Heads of Research and Development, =
+Product Designers, Engineering Production Management, Manufacturing =
+Management, Regulatory Affairs, Process =
+Engineers.</span><o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal><b><u><span =
+style=3D'color:red'>Industry Segments:</span></u></b><span =
+style=3D'color:red'> </span><span =
+style=3D'background:darkgray;mso-highlight:darkgray'>Hospital/Clinic/Medi=
+cal Care Centre, Medical Practice, Medical Laboratory/Institute, =
+Physiotherapist Practice, Rehabilitation Centre, Residential Home, =
+Anesthesiology/Dermatology, Healthcare/Surgery, Medical =
+Diagnostics/Medical Examination, Cardiovascular/Nephrology, =
+Neurology/Neurosurgery, Obstetrics/Gynecology, =
+Ophthalmology/Orthopedics, Physical Therapy, Radiology/Urology, Buying =
+Group/Service/Trade</span> and many more across the =
+world.<o:p></o:p></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal>Please let me know your thoughts. So that I can send =
+you few <b>samples</b> to check our database accuracy along with =
+<b>counts</b> and <b>pricing</b>.<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal><b><span =
+style=3D'background:yellow;mso-highlight:yellow'>Target Industry: =
+_____________; (Any)&nbsp;&nbsp;&nbsp; <o:p></o:p></span></b></p><p =
+class=3DMsoNormal><b><span =
+style=3D'background:yellow;mso-highlight:yellow'>Target Geography: =
+______________; (USA, UK, Across the World)&nbsp;&nbsp;&nbsp;&nbsp; =
+<o:p></o:p></span></b></p><p class=3DMsoNormal><b><span =
+style=3D'background:yellow;mso-highlight:yellow'>Target Job =
+Title:&nbsp;&nbsp; _________________; (CEO, CFO, CMO, VP =
+etc.)</span><o:p></o:p></b></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>In case, you =
+are not the decision maker on this, please guide me to the right =
+contact.<o:p></o:p></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal><span lang=3DEN-IN =
+style=3D'color:black'>Regards,<o:p></o:p></span></p><p =
+class=3DMsoNormal><b><span style=3D'color:#203864'>Ruby Reed | Sr. =
+Marketing Executive </span></b><span lang=3DEN-IN =
+style=3D'color:#002060'><o:p></o:p></span></p><p =
+class=3DMsoNormal><b><span style=3D'font-size:8.0pt;color:#92D050'>Our =
+Services: E mail Lists, E mail Appending, Custom List Building, and =
+Campaign.&nbsp;&nbsp; <o:p></o:p></span></b></p><p =
+class=3DMsoNormal><b><span style=3D'font-size:8.0pt;color:#92D050'>Lead =
+Generation Team (USA/UK/Europe) <o:p></o:p></span></b></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal><b><span =
+style=3D'font-size:8.0pt;color:#7F7F7F'>To remove from this mailing: =
+reply with subject line as &quot;leave out.&quot;</span></b><b><span =
+style=3D'font-size:8.0pt'><o:p></o:p></span></b></p><p =
+class=3DMsoNormal><span lang=3DEN-IN =
+style=3D'color:#002060'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p></div></body></html>
+------=_NextPart_000_0E26_01D90BB5.CC6382C0--
+

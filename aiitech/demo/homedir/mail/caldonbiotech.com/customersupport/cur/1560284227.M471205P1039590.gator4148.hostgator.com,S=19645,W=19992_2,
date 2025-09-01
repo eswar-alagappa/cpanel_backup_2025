@@ -1,0 +1,347 @@
+Return-Path: <prvs=3065a695b5=breidinp@slhs.org>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id KD02GUMMAF3m3A8A7/vpDg
+	(envelope-from <prvs=3065a695b5=breidinp@slhs.org>); Tue, 11 Jun 2019 15:17:07 -0500
+Return-path: <prvs=3065a695b5=breidinp@slhs.org>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Tue, 11 Jun 2019 15:17:07 -0500
+Received: from mx0a-002ded01.pphosted.com ([148.163.149.130]:49200)
+	by gator4148.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.92)
+	(envelope-from <prvs=3065a695b5=breidinp@slhs.org>)
+	id 1hanCc-0004JL-Sn
+	for customersupport@caldonbiotech.com; Tue, 11 Jun 2019 15:17:07 -0500
+Received: from pps.filterd (m0133925.ppops.net [127.0.0.1])
+	by mx0a-002ded01.pphosted.com (8.16.0.27/8.16.0.27) with SMTP id x5BKFlLG002268
+	for <customersupport@caldonbiotech.com>; Tue, 11 Jun 2019 14:16:55 -0600
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=slhs.org; h=from : to : subject :
+ date : message-id : content-type : mime-version; s=s1-2018;
+ bh=SSHHhGrpaK5larWt/ZGXg72PPm0JCekFyxdZu9BZwlU=;
+ b=rZkgqleBB+Nmo70l6LvGhPdyhHlxfLotOChuAVk2EeCDdzjtrXo99dX2QrgfKD48PYPv
+ qXyzmCSZ20odvObTV1xkDapVyVfeoRooqPWkquc9SQOpyZ74oKFNPjvxsyHML1sDk1//
+ JBM30w/0xFhAtZ9YAQJeBij8IzDEsRNYYGfbvrt/Yv2pU8YUPI54TunOAgOwgArEuL2R
+ z0ZPpojFFoRWGI8Age76Yy73p0gqlRP2ItB6o8+LfQRWA5vLFiDixba/pF7upIMGuH7n
+ /l9OlJuijr42Mp+L7qGQ1t+2oMGB7FuFe5g/velDHWhxRcTzhfO2HKLNo//wbp8/V1Bp +w== 
+Received: from dlpninsptr02 ([216.147.240.251])
+	by mx0a-002ded01.pphosted.com with ESMTP id 2t2eugrx1s-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <customersupport@caldonbiotech.com>; Tue, 11 Jun 2019 14:16:55 -0600
+From: Paige Breidinger <breidinp@slhs.org>
+To: "customersupport@caldonbiotech.com" <customersupport@caldonbiotech.com>
+Subject: Fiscal Year Question
+Thread-Topic: Fiscal Year Question
+Thread-Index: AdUgkkdAgxSmwjQ9StGorM7idYPlLw==
+Date: Tue, 11 Jun 2019 20:14:48 +0000
+Message-ID: <DM6PR05MB6635463E08220F0E4EF34642A5ED0@DM6PR05MB6635.namprd05.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+x-originating-ip: [216.147.240.254]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 3ee5a9c5-2818-4970-55a6-08d6eea97462
+x-microsoft-antispam: BCL:0;PCL:0;RULEID:(2390118)(7020095)(4652040)(8989299)(4534185)(4627221)(201703031133081)(201702281549075)(8990200)(5600148)(711020)(4605104)(1401327)(2017052603328)(49563074)(7193020);SRVR:DM6PR05MB5306;
+x-ms-traffictypediagnostic: DM6PR05MB5306:
+x-ms-exchange-purlcount: 2
+x-microsoft-antispam-prvs: <DM6PR05MB530681CB46C129ED0226A8E4A5ED0@DM6PR05MB5306.namprd05.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:1186;
+x-forefront-prvs: 006546F32A
+x-forefront-antispam-report: SFV:NSPM;SFS:(10019020)(376002)(136003)(39850400004)(366004)(346002)(396003)(199004)(189003)(3846002)(81156014)(81166006)(7116003)(6436002)(790700001)(53936002)(25786009)(74316002)(6116002)(1730700003)(7696005)(99286004)(476003)(7736002)(8676002)(99936001)(86362001)(102836004)(256004)(6916009)(71190400001)(52536014)(55016002)(3480700005)(14444005)(54896002)(5640700003)(71200400001)(236005)(316002)(9686003)(8936002)(54556002)(733005)(6306002)(76116006)(558084003)(486006)(555904003)(5660300002)(2906002)(186003)(26005)(14454004)(6506007)(66066001)(478600001)(2501003)(66446008)(66616009)(64756008)(66946007)(66556008)(68736007)(66476007)(2351001)(73956011)(33656002);DIR:OUT;SFP:1102;SCL:1;SRVR:DM6PR05MB5306;H:DM6PR05MB6635.namprd05.prod.outlook.com;FPR:;SPF:None;LANG:en;PTR:InfoNoRecords;A:1;MX:1;
+received-spf: None (protection.outlook.com: slhs.org does not designate
+ permitted sender hosts)
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam-message-info: Nd7z/N09a7NHZ8b0ttJBaXx+DNHr1kglRMTW3AHi454V0BKgj8mseWp+neGZO1bnfcOHjm5Oyq7FlWFlwsF9IpWMUwhblvYZhS95gTkAPwwKdqY4dywuZhltz0CO5PuL7wQYVD6X9mlHkDwfkxiNVvk0aQf9QE5SOyUERSujam50L84EHmkN3j7Fwu+zPRIJY3j9H1K4vg8aj5BhJUpokbZ0WU1dumrUzXxUTR48X17E9/DudLW4mne17mocTqhPKk+ZKg/FHf4lfYvPkRn+uUICoagi4zDHj7IgYbX3QK+FMzfSa2xbr+z0D93QlsNFlUMVVnWWsqN0VoeusVQAVywRhzSLJWA9RfWlI5aM7QTZehRR5Gm0KFfYtdn4v4mxr6k0+lYQzxlvoupa5wgon0akOgbj3iXE/7GBaWwzknk=
+Content-Type: multipart/related;
+	boundary="_004_DM6PR05MB6635463E08220F0E4EF34642A5ED0DM6PR05MB6635namp_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3ee5a9c5-2818-4970-55a6-08d6eea97462
+X-MS-Exchange-CrossTenant-originalarrivaltime: 11 Jun 2019 20:14:48.7367
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 93fb7985-8893-49e5-8440-bb350d28a54f
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: breidinp@slhs.org
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR05MB5306
+X-OriginatorOrg: slhs.org
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:,, definitions=2019-06-11_10:,,
+ signatures=0
+X-Spam-Status: No, score=-0.5
+X-Spam-Score: -4
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--_004_DM6PR05MB6635463E08220F0E4EF34642A5ED0DM6PR05MB6635namp_
+Content-Type: multipart/alternative;
+	boundary="_000_DM6PR05MB6635463E08220F0E4EF34642A5ED0DM6PR05MB6635namp_"
+
+--_000_DM6PR05MB6635463E08220F0E4EF34642A5ED0DM6PR05MB6635namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Good Afternoon,
+
+My name is Paige from St. Luke's Health system.  I am emailing to get your =
+fiscal year end date for Caldon Biotech.  We are trying to update our suppl=
+ier data information.
+
+
+Thank You,
+
+
+[cid:image001.png@01D52060.0655C050]
+Paige Breidinger
+Purchasing Intern
+St. Luke's Health System
+*  208-706-9702
+*  breidinp@slhs.org<mailto:breidinp@slhs.org>
+
+
+----------------------------------------------------------------------
+"This message is intended for the use of the person or entity to which it i=
+s addressed and may contain information that is confidential or privileged,=
+ the disclosure of which is governed by applicable law. If the reader of th=
+is message is not the intended recipient, you are hereby notified that any =
+dissemination, distribution, or copying of this information is strictly pro=
+hibited. If you have received this message by error, please notify us immed=
+iately and destroy the related message."
+
+--_000_DM6PR05MB6635463E08220F0E4EF34642A5ED0DM6PR05MB6635namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Good Afternoon,<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;<o:p></o:p></p>
+<p class=3D"MsoNormal">My name is Paige from St. Luke&#8217;s Health system=
+.&nbsp; I am emailing to get your fiscal year end date for Caldon Biotech.&=
+nbsp; We are trying to update our supplier data information.&nbsp;
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thank You,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"margin-left:5.4pt;border-collapse:collapse">
+<tbody>
+<tr style=3D"height:34.65pt">
+<td width=3D"174" rowspan=3D"2" style=3D"width:130.5pt;border:none;border-r=
+ight:solid #6CAEDF 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:34.65pt">
+<p class=3D"MsoNormal" style=3D"margin-left:-6.3pt;line-height:115%"><span =
+style=3D"color:#1F497D"><img width=3D"155" height=3D"65" id=3D"Picture_x002=
+0_7" src=3D"cid:image001.png@01D52060.0655C050"><o:p></o:p></span></p>
+</td>
+<td width=3D"179" valign=3D"top" style=3D"width:134.1pt;border:none;border-=
+bottom:solid #6CAEDF 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:34.65pt">
+<p class=3D"MsoNormal" style=3D"line-height:105%"><b><span style=3D"font-si=
+ze:10.5pt;line-height:105%;color:#004B8D;letter-spacing:.2pt">Paige Breidin=
+ger</span></b><span style=3D"font-size:10.5pt;line-height:105%;color:#004B8=
+D"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:105%"><i><span style=3D"font-si=
+ze:9.0pt;line-height:105%;color:gray;letter-spacing:.2pt">Purchasing Intern=
+<o:p></o:p></span></i></p>
+<p class=3D"MsoNormal" style=3D"line-height:105%"><b><span style=3D"font-si=
+ze:9.0pt;line-height:105%;color:gray;letter-spacing:.2pt">St. Luke&#8217;s =
+Health System</span></b><i><span style=3D"font-size:9.0pt;line-height:105%;=
+color:#AEAAAA"><o:p></o:p></span></i></p>
+</td>
+</tr>
+<tr style=3D"height:26.95pt">
+<td width=3D"179" valign=3D"top" style=3D"width:134.1pt;border:none;padding=
+:0in 5.4pt 0in 5.4pt;height:26.95pt">
+<p class=3D"MsoNormal" style=3D"margin-top:2.0pt;line-height:105%"><span st=
+yle=3D"font-size:9.0pt;line-height:105%;font-family:Wingdings;color:#004B8D=
+">(</span><span style=3D"font-size:9.0pt;line-height:105%;color:#004B8D">&n=
+bsp; 208-706-9702<i><br>
+</i></span><span style=3D"font-size:9.0pt;line-height:105%;font-family:Wing=
+dings;color:#004B8D">&#43;</span><span style=3D"font-size:9.0pt;line-height=
+:105%;color:#004B8D">&nbsp;
+</span><span style=3D"font-size:9.0pt;line-height:105%"><a href=3D"mailto:b=
+reidinp@slhs.org"><span style=3D"color:#0563C1">breidinp@slhs.org</span></a=
+></span><span style=3D"font-size:9.0pt;line-height:105%;font-family:Wingdin=
+gs;color:#548DD4"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+
+<HR>&quot;This message is intended for the use of the person or entity to w=
+hich it is addressed and may contain information that is confidential or pr=
+ivileged, the disclosure of which is governed by applicable law. If the rea=
+der of this message is not the intended recipient, you are hereby notified =
+that any dissemination, distribution, or copying of this information is str=
+ictly prohibited. If you have received this message by error, please notify=
+ us immediately and destroy the related message.&quot;<BR>
+</body>
+</html>
+
+--_000_DM6PR05MB6635463E08220F0E4EF34642A5ED0DM6PR05MB6635namp_--
+
+--_004_DM6PR05MB6635463E08220F0E4EF34642A5ED0DM6PR05MB6635namp_
+Content-Type: image/png; name="image001.png"
+Content-Description: image001.png
+Content-Disposition: inline; filename="image001.png"; size=5412;
+	creation-date="Tue, 11 Jun 2019 20:14:48 GMT";
+	modification-date="Tue, 11 Jun 2019 20:14:48 GMT"
+Content-ID: <image001.png@01D52060.0655C050>
+Content-Transfer-Encoding: base64
+
+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
+
+--_004_DM6PR05MB6635463E08220F0E4EF34642A5ED0DM6PR05MB6635namp_--
+

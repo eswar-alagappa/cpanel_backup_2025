@@ -1,0 +1,159 @@
+Return-Path: <rowan.hanold@docusign.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id qLn3BWegKGPhTAAA7/vpDg
+	(envelope-from <rowan.hanold@docusign.com>); Mon, 19 Sep 2022 12:01:27 -0500
+Return-path: <rowan.hanold@docusign.com>
+Envelope-to: gloria@caldonbiotech.com
+Delivery-date: Mon, 19 Sep 2022 12:01:27 -0500
+Received: from mail-il1-f180.google.com ([209.85.166.180]:45604)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <rowan.hanold@docusign.com>)
+	id 1oaK98-0005Gg-LP
+	for gloria@caldonbiotech.com;
+	Mon, 19 Sep 2022 12:01:27 -0500
+Received: by mail-il1-f180.google.com with SMTP id k9so15119172ils.12
+        for <gloria@caldonbiotech.com>; Mon, 19 Sep 2022 10:01:20 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=docusign.com; s=google;
+        h=to:subject:message-id:date:mime-version:from:from:to:cc:subject
+         :date;
+        bh=XASoobL8JNIItGfZ2KX/GLZepEFJMA2c9oc2t5WLEAw=;
+        b=Mh2c3PkHh3dzI4lcrtg+UEiME+7x5x+9J22Ut21GFvEETZzc5hKtWypwokZ8gVTI2D
+         pL+x1ZkhriySuxd97DkltiSOFUGoFR6DXJpyW8/YUkHUuHU3DsFyKPWRJ/oKqpcZHN87
+         g/i3Q/xpJQVWOeyV7chns4jVqLPHIsHPFCecLYz+CU+shLT1a+aOoe6bSCEyv+8wN7Jt
+         TTJQQs8W1O9SSjR1gfwsu4Im3K9dSQWZuJoYS0XkGDGSZXzw9UzzZ+KiB4SdUJ8NDuQQ
+         vZGMrTrTUZCbbY+mw3exATAtDSSmyc/trKL5i4ZqM8S9U//4NqNkCcAqBSiJQ/b5zvGE
+         0AWw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:mime-version:from:x-gm-message-state
+         :from:to:cc:subject:date;
+        bh=XASoobL8JNIItGfZ2KX/GLZepEFJMA2c9oc2t5WLEAw=;
+        b=Q6+S/8YL4HdXPv9r8HaCq5wBQe3zJW3eG945EAcf+NYZ4dNdxrKe3wF8DKj6iSaSSz
+         bnRpzKnbGgkrkLz611pzRytIG614u12Kcm6KeAcU9BXbtDRuyABZO3tIyASQCQ0lKxw+
+         +s6o5DTzHWzECNLjg4HHLLMlmDDHh610L1E13FxGkkjTnsWreo1dVVoyYbwglDZS2yJ+
+         sSARWVo92BgYATq8sDscRFRCvSnhb9vEzREJK/EOHZE5Kvmn8eOV7ufAyAaiD4j2YaXD
+         ViEkIBcpyiKG2QQpHCh6LkF/fFb/mIpmYRbeFftd2rMh2UScJxDlwKFYeOt3PR8dpXie
+         4kTA==
+X-Gm-Message-State: ACrzQf1fMY2hcjae1wzxXBnRy4cpdaGUrPQcdgGt9B4GONkDUB3RcbCw
+	6f8K+ubr2AOf4Q0pMzxJfc+md6P6QA+lvbGcmMTSSNH7gMI=
+X-Google-Smtp-Source: AMsMyM6/B9GRSk1UDQoceohumEGL34jkMKwWt87a77Q/yprWsSkeXjO6BGwHfoUuv1gXNfvrQpgNMooe2UrKpsKxipQ=
+X-Received: by 2002:a05:6e02:156c:b0:2f5:b1bc:3a50 with SMTP id
+ k12-20020a056e02156c00b002f5b1bc3a50mr2756733ilu.71.1663606872680; Mon, 19
+ Sep 2022 10:01:12 -0700 (PDT)
+Received: from 193155701165 named unknown by gmailapi.google.com with
+ HTTPREST; Mon, 19 Sep 2022 12:01:12 -0500
+From: Rowan Hanold <rowan.hanold@docusign.com>
+Mime-Version: 1.0
+X-OUTREACH-SENT: true
+Date: Mon, 19 Sep 2022 12:01:12 -0500
+Message-ID: <CAPLzbbHPHObTBoekPb2x+Pu0NY3_1RDhXEDhAThiSUEadwLqXA@mail.gmail.com>
+Subject: application process
+To: Gloria Milich <gloria@caldonbiotech.com>
+Content-Type: multipart/alternative; boundary="000000000000b1381b05e90aa83d"
+X-Spam-Status: No, score=-0.6
+X-Spam-Score: -5
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--000000000000b1381b05e90aa83d
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Gloria - I read a stat today that shared 80% of people deciding on
+technology reported that if digital transformation doesn't happen, their
+companies will lose revenue in the next 12 months.
+
+An example of "why" revenue is lost that we see in your industry is the
+simple aspect of "if it's too complicated, it won't be done." Over 40% of
+folks that start to open an account will abandon it because it's too
+complicated or time consuming.
+
+That concept applies across the lifecycle of your processes and my hope is
+to learn more about those to see where we can help.
+
+Would it be a terrible idea to set time for a call next week?
+
+-Rowan
+
+Rowan Hanold | SMB Market Development Representative
+c: 309.981.9994 | docusign.com <https://www.docusign.com/>
+180 North LaSalle St., Sixth Floor, Chicago, IL 60601
+Book time on my calendar!
+<https://click.docusign.com/c/rowan-hanolddocusign-com>
+
+
+Our understanding is you are located in the United States or Canada. If
+this is incorrect, please accept my apology and let me know and I will
+update our system. If you would like to unsubscribe from future DocuSign
+marketing emails please reply to me or click
+<http://esign.docusign.com/global-unsubscribe>here
+<http://esign.docusign.com/global-unsubscribe>.
+
+If you'd like me to stop sending you emails, please click here
+<https://click.docusign.com/api/mailings/unsubscribe/PMRGSZBCHIYTKMZZG4YTGM=
+BXFQRG64THEI5CEODGGFTGKMDBGUWTANDCMEWTCMLFGYWTSNBQMEWTAMTDHFQTMOBXMMZTGYRCF=
+QRHMZLSONUW63RCHIRDIIRMEJZWSZZCHIRGYTLIMY2UEQ3CJF2WSOLZNFWTS5LHL42E6UTVJNBX=
+K5DGNNHEMUTFMI2TQ2CFIVZFOT3HHURH2=3D=3D=3D>
+
+--000000000000b1381b05e90aa83d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div><span style=3D"font-family:Arial,Helvetica,sans-serif;font-size:13px">=
+Gloria - I read a stat today that shared 80% of people deciding on technolo=
+gy reported that if digital transformation doesn&#39;t happen, their compan=
+ies will lose revenue in the next 12 months.=C2=A0</span></div><br><div><sp=
+an style=3D"font-family:Arial,Helvetica,sans-serif;font-size:13px">An examp=
+le of &quot;why&quot; revenue is lost that we see in your industry is the s=
+imple aspect of &quot;if it&#39;s too complicated, it won&#39;t be done.&qu=
+ot; Over 40% of folks that start to open an account will abandon it because=
+ it&#39;s too complicated or time consuming.=C2=A0</span></div><br><div><sp=
+an style=3D"font-family:Arial,Helvetica,sans-serif;font-size:13px">That con=
+cept applies across the lifecycle of your processes and my hope is to learn=
+ more about those to see where we can help.=C2=A0</span></div><br><div><spa=
+n style=3D"font-family:Arial,Helvetica,sans-serif;font-size:13px">Would it =
+be a terrible idea to set time for a call next week?=C2=A0</span></div><br>=
+<div><span style=3D"font-family:Arial,Helvetica,sans-serif;font-size:13px">=
+-Rowan</span></div><div><br></div><div class=3D"outreach-signature"><div cl=
+ass=3D"MsoNormal"><span style=3D"font-family:Arial,Helvetica,sans-serif;fon=
+t-size:13px">Rowan Hanold=C2=A0| SMB Market Development Representative=C2=
+=A0</span></div><div class=3D"MsoNormal"><div><span style=3D"font-family:Ar=
+ial,Helvetica,sans-serif;font-size:13px">c: 309.981.9994 |=C2=A0</span><a r=
+el=3D"noopener noreferrer" target=3D"_blank" href=3D"https://www.docusign.c=
+om/"><span style=3D"font-family:Arial,Helvetica,sans-serif;font-size:13px">=
+docusign.com</span></a></div></div><div class=3D"MsoNormal"><span style=3D"=
+font-family:Arial,Helvetica,sans-serif;font-size:13px">180 North LaSalle St=
+., Sixth Floor, Chicago, IL 60601</span></div><div class=3D"MsoNormal"><a r=
+el=3D"noopener noreferrer" target=3D"_blank" href=3D"https://click.docusign=
+.com/c/rowan-hanolddocusign-com"><span style=3D"font-family:Arial,Helvetica=
+,sans-serif;font-size:13px">Book time on my calendar!</span></a></div><br><=
+div class=3D"MsoNormal"><img height=3D"45" width=3D"200" src=3D"https://upl=
+oad.wikimedia.org/wikipedia/commons/thumb/f/f5/DocuSign_Logo.svg/1280px-Doc=
+uSign_Logo.svg.png"><span style=3D"font-family:Arial,Helvetica,sans-serif;f=
+ont-size:13px">=C2=A0</span></div><div class=3D"MsoNormal"><span style=3D"f=
+ont-family:Arial,Helvetica,sans-serif;font-size:13px">Our understanding is =
+you are located in the United States or Canada.=C2=A0If this is incorrect, =
+please accept my apology and let me know and I will update our system. If y=
+ou would like to unsubscribe from future DocuSign marketing emails=C2=A0ple=
+ase reply to me or=C2=A0</span><a rel=3D"noopener noreferrer" target=3D"_bl=
+ank" href=3D"http://esign.docusign.com/global-unsubscribe"><span style=3D"f=
+ont-family:Arial,Helvetica,sans-serif;font-size:13px">click=C2=A0</span></a=
+><a rel=3D"noopener noreferrer" target=3D"_blank" href=3D"http://esign.docu=
+sign.com/global-unsubscribe"><span style=3D"font-family:Arial,Helvetica,san=
+s-serif;font-size:13px">here</span></a><span style=3D"font-family:Arial,Hel=
+vetica,sans-serif;font-size:13px">.</span></div><br></div><div class=3D"out=
+reach-signature outreach-unsubscribe" style=3D"font-size:10px;color:#999">I=
+f you&#39;d like me to stop sending you emails, please <a href=3D"https://c=
+lick.docusign.com/api/mailings/unsubscribe/PMRGSZBCHIYTKMZZG4YTGMBXFQRG64TH=
+EI5CEODGGFTGKMDBGUWTANDCMEWTCMLFGYWTSNBQMEWTAMTDHFQTMOBXMMZTGYRCFQRHMZLSONU=
+W63RCHIRDIIRMEJZWSZZCHIRGYTLIMY2UEQ3CJF2WSOLZNFWTS5LHL42E6UTVJNBXK5DGNNHEMU=
+TFMI2TQ2CFIVZFOT3HHURH2=3D=3D=3D">click here</a></div><img src=3D"https://c=
+lick.docusign.com/api/mailings/opened/PMRGSZBCHIYTKMZZG4YTGMBXFQRG64THEI5CE=
+ODGGFTGKMDBGUWTANDCMEWTCMLFGYWTSNBQMEWTAMTDHFQTMOBXMMZTGYRCFQRHMZLSONUW63RC=
+HIRDIIRMEJZWSZZCHIRE4VBYIYZTITCKG55C2Q2XKZMXM3LJIZCVA4KZNI3DCTJSOFCFUTRRIM4=
+FAVTNKJJFS2DLHURH2=3D=3D=3D.gif" alt=3D"" width=3D"1" height=3D"1">
+
+--000000000000b1381b05e90aa83d--

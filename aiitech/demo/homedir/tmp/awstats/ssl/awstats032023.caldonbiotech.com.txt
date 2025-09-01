@@ -1,0 +1,395 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202303 will be lost/reset.
+# Last config file used to build this data file was /home3/cbt/tmp/awstats/ssl/awstats.caldonbiotech.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2014                
+POS_TIME 2697                
+POS_VISITOR 7812                
+POS_DAY 9024                
+POS_DOMAIN 3390                
+POS_LOGIN 3745                
+POS_ROBOT 3900                
+POS_WORMS 4206                
+POS_EMAILSENDER 4337                
+POS_EMAILRECEIVER 4480                
+POS_SESSION 9133                
+POS_SIDER 9310                
+POS_FILETYPES 4615                
+POS_DOWNLOADS 4861                
+POS_OS 5018                
+POS_BROWSER 5200                
+POS_SCREENSIZE 5754                
+POS_UNKNOWNREFERER 5828                
+POS_UNKNOWNREFERERBROWSER 6087                
+POS_ORIGIN 6228                
+POS_SEREFERRALS 6366                
+POS_PAGEREFS 6532                
+POS_SEARCHWORDS 6680                
+POS_KEYWORDS 6832                
+POS_MISC 2361                
+POS_ERRORS 6891                
+POS_CLUSTER 3601                
+POS_SIDER_404 7079                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20230302060641 716 181471 13804605641724
+FirstTime 20230301010245
+LastTime 20230302052010
+LastUpdate 20230302062656 716 0 716 0 0
+TotalVisits 36                  
+TotalUnique 28                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 28                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+WindowsMediaPlayerSupport 0 0 0
+PDFSupport 0 0 0
+TotalMisc 0 0 0
+QuickTimeSupport 0 0 0
+DirectorSupport 0 0 0
+JavascriptDisabled 0 0 0
+JavaEnabled 0 0 0
+RealPlayerSupport 0 0 0
+FlashSupport 0 0 0
+AddToFavourites 0 2 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 10 10 632656 27 27 191127
+1 7 72 2045361 14 14 2338
+2 3 3 45882 19 19 1577
+3 0 0 0 13 13 1079
+4 10 10 407506 29 29 277098
+5 2 2 157868 13 13 1079
+6 2 2 45874 2 2 166
+7 0 0 0 3 3 249
+8 13 76 2626319 21 29 191652
+9 5 5 91766 17 19 1337
+10 0 0 0 10 10 830
+11 2 2 157866 23 23 3911
+12 3 3 124825 20 20 191818
+13 1 1 0 10 12 922
+14 0 0 0 14 14 1162
+15 4 4 68790 16 17 15380
+16 0 0 0 9 9 890
+17 9 9 589746 44 44 8431
+18 10 10 295917 27 31 545296
+19 1 1 403 18 18 1780
+20 1 1 0 11 13 1148
+21 8 8 137649 18 23 7851
+22 91 118 7246099 37 57 1272400
+23 2 2 157870 14 14 1139
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 10
+us 144 234 11501255
+in 9 74 2203241
+ca 8 8 183537
+eu 7 7 431882
+de 5 5 114695
+fr 4 4 147754
+cn 2 2 45888
+bh 2 2 45874
+ph 2 2 157868
+se 1 1 403
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 5
+spider 25 1081296 20230301222045 0
+Googlebot/ 6 276 20230301205628 6
+scrapy 4 91786 20230302041034 0
+Apache\-HttpClient/ 3 0 20230301232234 0
+Applebot/ 2 92 20230301095257 2
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 10
+ttf 2 24272 0 0
+woff 1 12212 0 0
+css 57 2106421 0 0
+php 13 806 0 0
+html 160 8605688 0 0
+png 10 595194 0 0
+jpg 10 1298054 0 0
+Unknown 2 2384 0 0
+js 78 1868510 0 0
+woff2 6 318856 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 2
+/wp-content/plugins/js_composer/changes.txt 1 0 52228
+//wp-content/plugins/js_composer/changes.txt 1 0 52228
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 9
+linux 2 2
+winxp 2 2
+win10 165 55
+macosx15 4 4
+Unknown 13 13
+win8.1 2 2
+win7 147 102
+androidnougat 2 2
+ios_iphone 2 2
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 24
+chrome60.0.3112.107 2 2
+chrome48.0.2564.109 2 2
+chrome101.0.4951.54 2 2
+chrome51.0.2704.106 4 4
+chrome84.0.4147.125 9 9
+firefox58.0 1 1
+chrome100.0.4896.127 2 2
+chrome83.0.4103.61 20 2
+firefox47.0 8 8
+chrome102.0.0.0 2 2
+chrome80.0.3987.149 4 4
+safari13.0.3 2 2
+mozilla 2 2
+chrome55.0.2883.87 2 2
+msie6.0 2 2
+msie9.0 118 91
+chrome79.0.3945.79 51 6
+chrome101.0.4951.64 2 2
+Unknown 11 11
+chrome66.0.3359.181 5 5
+chrome84.0.4147.105 2 2
+chrome109.0.0.0 72 7
+opera89.0.4447.51 2 2
+chrome78.0.3904.108 12 12
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 2
+Mozilla/5.0_zgrab/0.x_(compatible;_Researchscan/http;__http://researchscan.comsys.rwth-aachen.de) 20230301093610
+WordPress/5.0.18;_https://caldonbiotech.com 20230302025804
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+WordPress/5.0.18;_https://caldonbiotech.com 20230302025804
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 64 80
+From1 0 0
+From2 91 118
+From3 0 0
+From4 29 141
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+www_google_com 91 118
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 10
+404 34 1494117
+406 71 16046
+502 2 1118
+400 4 208
+409 278 23074
+500 16 10736
+301 20 0
+504 1 569
+405 4 0
+302 1 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 15
+/ 2 -
+/yabnrzmz.php 2 www.google.com
+/wp-sales.js 3 -
+/th1s_1s_a_4o4.html 2 -
+/wp-content/themes/dt-the7/js/%url% 1 -
+/wp-plain.php 1 www.google.com
+/wp-content/plugins/apikey/apikey.php.suspected 2 -
+/.env.example 2 -
+/plugins/content/apismtp/apismtp.php.suspected 2 -
+/_profiler/phpinfo 2 -
+// 2 -
+/400.shtml 1 -
+/wp-content/plugins/apikey/apikey.php 2 -
+/plugins/content/apismtp/apismtp.php 2 -
+/owa/auth/logon.aspx 8 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 28
+184.154.139.49 91 118 7246099 20230301222044
+192.185.52.186 11 11 0 20230302025804
+143.198.204.24 10 10 632656 20230302002409
+107.178.101.245 8 8 631492 20230301080123
+205.169.39.69 8 71 2310573 20230301080805
+27.5.118.188 7 72 2045361 20230301010247
+138.199.59.134 5 5 274024 20230301173329
+47.253.58.192 4 4 91771 20230301214608
+37.187.89.121 3 3 68817 20230301180318
+81.169.150.120 3 3 68817 20230301180318
+104.209.128.205 3 3 68790 20230301154408
+193.188.20.137 2 2 45874 20230301065959
+34.76.242.182 2 2 157870 20230301231109
+20.163.190.39 2 2 45884 20230301041535
+20.163.120.11 2 2 157864 20230301171649
+47.252.21.241 2 2 45888 20230301094511
+45.154.98.15 2 2 157880 20230301180522
+137.226.113.44 2 2 45878 20230301093610
+139.180.138.186 2 2 157866 20230301111209
+156.146.51.132 2 2 45882 20230302025803
+113.108.9.38 2 2 45888 20230301121805
+138.199.19.185 2 2 157858 20230301175211
+47.252.21.203 2 2 45878 20230301210551
+115.85.30.27 2 2 157868 20230302052010 20230302052010 /
+35.173.64.170 2 2 45876 20230301044253
+188.165.217.167 1 1 78937 20230301121001
+62.102.148.154 1 1 403 20230301191844
+68.235.48.108 1 1 403 20230301180052
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 2
+20230301 169 324 13995991 32
+20230302 15 15 836406 4
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 4
+0s-30s 31
+2mn-5mn 1
+30mn-1h 2
+30s-2mn 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 55
+/ 69 3486681 26 20
+/wp-cron.php 11 0 8 8
+/contact/ 4 232088 0 0
+/news/ 2 108078 0 0
+/package-insert-3/ 2 121860 0 0
+/aldolase-liquid-control-product-highlight/ 2 117066 0 0
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-solid-900.woff2 2 134800 0 0
+/sputolysin-product-highlight/ 2 116256 0 0
+/sputolysin-stat-pack/ 2 127406 0 0
+/aldolase-reagent-pack-highlights/ 2 115822 0 0
+/dt_gallery/ 2 104466 0 0
+/dt_gallery/feed/ 2 2498 0 1
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-regular-400.woff2 2 29736 0 0
+/au-2700/ 2 137682 0 0
+//wp-json/wp/v2/users/ 2 1178 0 1
+/au-600/ 2 152860 0 0
+/sample-page/ 2 105382 0 0
+/dimension-rxl/ 2 155798 0 0
+/aldolase-control-package-insert/ 2 126868 0 0
+/2016/05/ 2 102464 0 0
+/cobas-mira/ 2 162040 0 0
+/olympus-au-400-600-640-2700-5400/ 2 215560 0 0
+/msds/ 2 113920 0 0
+/comments/feed/ 2 1426 0 0
+/2016/ 2 102206 0 0
+/significance-of-testing-aldolase/ 2 110534 0 0
+/hitachi-717-aldolase/ 2 129296 0 0
+/wp-content/themes/dt-the7/fonts/icomoon-the7-social/fonts/icomoon-the7-social-icons-16x16.ttf 2 24272 0 0
+/au-800/ 2 142114 0 0
+/aldolase-reagent-package-insert/ 2 149412 0 0
+/bayer-advia-1650/ 2 342812 0 0
+/wp-json/ 1 75045 0 0
+/wp-content/themes/dt-the7/fonts/icomoon-the7-social/fonts/icomoon-the7-social-icons-16x16.woff 1 12212 0 1
+/category/research/feed/ 2 13156 0 0
+/olympus-b/ 2 192298 0 0
+/wp-json/contact-form-7/v1/contact-forms/1365/feedback 1 110 0 1
+/feed/ 2 13086 0 0
+/faq/ 2 153004 0 0
+/aldolase-control-msds/ 2 102746 0 0
+/2016/05/12/ 2 102720 0 0
+/about-us/ 2 115372 0 0
+/dt_gallery/hospital/ 2 114144 0 0
+/aldolase-reagent-pack-msds/ 2 149594 0 0
+/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.woff2 2 154320 0 1
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/ 2 128024 0 0
+/beckman-cx-7/ 2 145594 0 0
+/category/research/ 2 102648 0 0
+/au-400/ 2 174244 0 0
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/feed/ 2 1958 0 0
+/wp-json/oembed/1.0/embed 1 2274 0 0
+/author/admin/ 2 112572 0 0
+/client-testimonials/ 2 110356 0 0
+/sample-page/feed/ 2 1426 0 0
+/author/admin/feed/ 2 13928 0 0
+/xmlrpc.php 2 806 2 2
+END_SIDER

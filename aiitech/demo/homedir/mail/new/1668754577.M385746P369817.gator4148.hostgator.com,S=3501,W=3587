@@ -1,0 +1,86 @@
+Return-Path: <>
+Delivered-To: cbt@gator4148.hostgator.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id IGScFpEsd2OZpAUA7/vpDg
+	(envelope-from <>)
+	for <cbt@gator4148.hostgator.com>; Fri, 18 Nov 2022 00:56:17 -0600
+Return-path: <>
+Envelope-to: cbt@gator4148.hostgator.com
+Delivery-date: Fri, 18 Nov 2022 00:56:17 -0600
+Received: from mailnull by gator4148.hostgator.com with local (Exim 4.95)
+	id 1ovvIP-001dP6-AT
+	for cbt@gator4148.hostgator.com;
+	Fri, 18 Nov 2022 00:56:17 -0600
+X-Failed-Recipients: raj_singh635@yahoo.co.in
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@gator4148.hostgator.com>
+To: cbt@gator4148.hostgator.com
+References: <ff5ed8df1a76839756433995dfa1e9b7@caldonbiotech.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1668754577-eximdsn-1298965981
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1ovvIP-001dP6-AT@gator4148.hostgator.com>
+Date: Fri, 18 Nov 2022 00:56:17 -0600
+
+--1668754577-eximdsn-1298965981
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  raj_singh635@yahoo.co.in
+    host eig-west.smtp.a.cloudfilter.net [34.223.136.48]
+    SMTP error from remote mail server after end of data:
+    550 vvIMo4eem7Lz5vvIMoVB2w - <cbt@gator4148.hostgator.com> sender rejected AUP#CDRBL
+
+--1668754577-eximdsn-1298965981
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; gator4148.hostgator.com
+
+Action: failed
+Final-Recipient: rfc822;raj_singh635@yahoo.co.in
+Status: 5.0.0
+Remote-MTA: dns; eig-west.smtp.a.cloudfilter.net
+Diagnostic-Code: smtp; 550 vvIMo4eem7Lz5vvIMoVB2w - <cbt@gator4148.hostgator.com> sender rejected AUP#CDRBL
+
+--1668754577-eximdsn-1298965981
+Content-type: message/rfc822
+
+Return-path: <cbt@gator4148.hostgator.com>
+Received: from cbt by gator4148.hostgator.com with local (Exim 4.95)
+	(envelope-from <cbt@gator4148.hostgator.com>)
+	id 1ovvIM-001dMR-3K
+	for raj_singh635@yahoo.co.in;
+	Fri, 18 Nov 2022 00:56:14 -0600
+To: raj_singh635@yahoo.co.in
+Subject: [Caldon Biotech] Please moderate: "blog02"
+X-PHP-Script: caldonbiotech.com/wp-comments-post.php for 45.158.49.216, 45.158.49.216
+X-PHP-Originating-Script: 990:class-phpmailer.php
+Date: Fri, 18 Nov 2022 06:56:14 +0000
+From: WordPress <wordpress@caldonbiotech.com>
+Message-ID: <ff5ed8df1a76839756433995dfa1e9b7@caldonbiotech.com>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+A new comment on the post "blog02" is waiting for your approval
+https://caldonbiotech.com/blog02/
+
+Author: Aizen Power (IP address: 45.158.49.216, 45-158-49-216.dynamic-pool.mclaut.net)
+Email: 74807@gmail.com
+URL: https://bit.ly/3hPAL5e
+Comment: 
+One Simple Way To Maintain Normal Erections - https://bit.ly/3hPAL5e
+
+Approve it: https://caldonbiotech.com/wp-admin/comment.php?action=approve&c=142#wpbody-content
+Trash it: https://caldonbiotech.com/wp-admin/comment.php?action=trash&c=142#wpbody-content
+Spam it: https://caldonbiotech.com/wp-admin/comment.php?action=spam&c=142#wpbody-content
+Currently 142 comments are waiting for approval. Please visit the moderation panel:
+https://caldonbiotech.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+
+
+--1668754577-eximdsn-1298965981--

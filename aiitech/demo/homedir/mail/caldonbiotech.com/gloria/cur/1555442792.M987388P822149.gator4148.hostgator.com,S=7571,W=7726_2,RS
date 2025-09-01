@@ -1,0 +1,155 @@
+Return-Path: <sbarnett@southeastlabs.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP id EB55NWgstlyFiwwA7/vpDg
+	; Tue, 16 Apr 2019 14:26:32 -0500
+Return-path: <sbarnett@southeastlabs.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Tue, 16 Apr 2019 14:26:32 -0500
+Received: from mail-eopbgr820101.outbound.protection.outlook.com ([40.107.82.101]:43968 helo=NAM01-SN1-obe.outbound.protection.outlook.com)
+	by gator4148.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES256-SHA384:256)
+	(Exim 4.91)
+	(envelope-from <sbarnett@southeastlabs.com>)
+	id 1hGTiy-003ZuV-GN
+	for customersupport@caldonbiotech.com; Tue, 16 Apr 2019 14:26:32 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=NETORG171516.onmicrosoft.com; s=selector1-southeastlabs-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=kFs12RJAa8eLSZ4X6q6IknZyFYBAnbYoTyHlvcB94A4=;
+ b=OoyT946v855n3m66/w5NIq5kARy9trxkjG7iGDGNaFj2q3caE+rjCsAA8sZyibx+3LQ6yZhBCfELKPIGIquwoZt6E7RxaaPyKPoHU6jKOUNY4rE3EPxleHEQo1X3818pXgCdaNVPT/spt1lfOdHt9nAo/MGJqZJ0klz5WCelxhc=
+Received: from BN7PR11MB2532.namprd11.prod.outlook.com (52.135.244.26) by
+ BN7PR11MB2610.namprd11.prod.outlook.com (52.135.244.156) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.1792.17; Tue, 16 Apr 2019 19:26:19 +0000
+Received: from BN7PR11MB2532.namprd11.prod.outlook.com
+ ([fe80::4931:4561:41a2:38a3]) by BN7PR11MB2532.namprd11.prod.outlook.com
+ ([fe80::4931:4561:41a2:38a3%4]) with mapi id 15.20.1813.011; Tue, 16 Apr 2019
+ 19:26:19 +0000
+From: Shane Barnett <sbarnett@southeastlabs.com>
+To: "customersupport@caldonbiotech.com" <customersupport@caldonbiotech.com>
+CC: Shane Barnett <sbarnett@southeastlabs.com>
+Subject: SCL order 04-16-19
+Thread-Topic: SCL order 04-16-19
+Thread-Index: AdT0igyOosGtvQCFTYOu2OguW1zbBQ==
+Date: Tue, 16 Apr 2019 19:26:19 +0000
+Message-ID:
+ <BN7PR11MB2532B8DC38E9949E8605959FD6240@BN7PR11MB2532.namprd11.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: spf=none (sender IP is )
+ smtp.mailfrom=sbarnett@southeastlabs.com; 
+x-originating-ip: [12.181.27.178]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 3e37253d-3342-484c-2d21-08d6c2a166fa
+x-microsoft-antispam:
+ BCL:0;PCL:0;RULEID:(2390118)(7020095)(4652040)(7021145)(8989299)(5600140)(711020)(4605104)(4534185)(7022145)(4603075)(4627221)(201702281549075)(8990200)(7048125)(7024125)(7027125)(7023125)(2017052603328)(7193020);SRVR:BN7PR11MB2610;
+x-ms-traffictypediagnostic: BN7PR11MB2610:
+x-ms-exchange-purlcount: 2
+x-microsoft-antispam-prvs:
+ <BN7PR11MB26109E0DF0312FAA431BCEF3D6240@BN7PR11MB2610.namprd11.prod.outlook.com>
+x-forefront-prvs: 000947967F
+x-forefront-antispam-report:
+ SFV:NSPM;SFS:(10019020)(366004)(396003)(376002)(346002)(136003)(39830400003)(199004)(189003)(316002)(25786009)(33656002)(1730700003)(486006)(81156014)(81166006)(97736004)(186003)(8676002)(68736007)(99286004)(476003)(55016002)(86362001)(4326008)(7736002)(53936002)(6916009)(6306002)(54896002)(74316002)(107886003)(9686003)(2351001)(106356001)(5660300002)(105586002)(256004)(14444005)(558084003)(6116002)(2906002)(790700001)(7696005)(3846002)(71190400001)(71200400001)(52536014)(66066001)(2501003)(6506007)(6436002)(26005)(102836004)(508600001)(14454004)(5640700003)(8936002);DIR:OUT;SFP:1102;SCL:1;SRVR:BN7PR11MB2610;H:BN7PR11MB2532.namprd11.prod.outlook.com;FPR:;SPF:None;LANG:en;PTR:InfoNoRecords;A:1;MX:1;
+received-spf: None (protection.outlook.com: southeastlabs.com does not
+ designate permitted sender hosts)
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam-message-info:
+ 1KOZJPLsbYz3qOawh9ucb83l1gLYaIXbbFRcTWR48wbziJeBWaiBKe8LVVi8ie8sFfKcYaQr+Y2kA1rLnZ3rhfc/T/F42OlxaLMms4n+OhKLPOTUAIm7JPS/EqHCcqDrxxV3e9fjdK8/g1SHPjf6YWkCE3NBWMS7WQzps4Ui0Qk6+2Gtt8Cz3fF08HWAf+PUa79pFdgtljs9dXXPqBEH6A08DXAwKUZ0Nl91u0WwTVZVrUv2pzwewOwoi23RIBYk8F1F5bed82mt71tLX7iolsg0dOFI0ccCSQNMG1DGVoh/iguh5wr9ztMhMS2ceydON5f6RCP7b55B98/TPw5BpZ7pM7a2+BTncUVWXO6ea9VY+Ami9bvyba1tJJF4YzXUfMq95aFNftKUpioN1BvktbML6eXiNSb3/DByDyiWqc4=
+Content-Type: multipart/alternative;
+	boundary="_000_BN7PR11MB2532B8DC38E9949E8605959FD6240BN7PR11MB2532namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: southeastlabs.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3e37253d-3342-484c-2d21-08d6c2a166fa
+X-MS-Exchange-CrossTenant-originalarrivaltime: 16 Apr 2019 19:26:19.0577
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 46dc2aa5-ebea-4db6-a397-4d6c02a7d799
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN7PR11MB2610
+X-Spam-Status: No, score=-0.5
+X-Spam-Score: -4
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--_000_BN7PR11MB2532B8DC38E9949E8605959FD6240BN7PR11MB2532namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+This is Shane Barnett at Southeast Clinical Laboratories 3621 3rd Ave South=
+ Birmingham, AL 35222.  I need to place an order for your item COAL 015 (lo=
+t 171222 exp 12/2019 if possible).  Please use PO# 041619CHEM.  Please let =
+me know if you have any questions.
+Thanks,
+Shane
+
+
+--_000_BN7PR11MB2532B8DC38E9949E8605959FD6240BN7PR11MB2532namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel" xmlns:m=3D"http://schema=
+s.microsoft.com/office/2004/12/omml" xmlns=3D"http://www.w3.org/TR/REC-html=
+40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">This is Shane Barnett at Southeast Clinical Laborato=
+ries 3621 3<sup>rd</sup> Ave South Birmingham, AL 35222.&nbsp; I need to pl=
+ace an order for your item COAL 015 (lot 171222 exp 12/2019 if possible).&n=
+bsp; Please use PO# 041619CHEM.&nbsp; Please let
+ me know if you have any questions.<o:p></o:p></p>
+<p class=3D"MsoNormal">Thanks,<o:p></o:p></p>
+<p class=3D"MsoNormal">Shane<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_BN7PR11MB2532B8DC38E9949E8605959FD6240BN7PR11MB2532namp_--

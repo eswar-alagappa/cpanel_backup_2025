@@ -1,0 +1,99 @@
+Return-Path: <reverendfatherjohnsonpaul@gmail.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id EMd6A08/hGNtYAgA7/vpDg
+	(envelope-from <reverendfatherjohnsonpaul@gmail.com>)
+	for <rvairavan@caldonbiotech.com>; Sun, 27 Nov 2022 22:55:43 -0600
+Return-path: <reverendfatherjohnsonpaul@gmail.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Sun, 27 Nov 2022 22:55:43 -0600
+Received: from mail-io1-f43.google.com ([209.85.166.43]:39526)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <reverendfatherjohnsonpaul@gmail.com>)
+	id 1ozWBC-002J58-QJ
+	for customersupport@caldonbiotech.com;
+	Sun, 27 Nov 2022 22:55:42 -0600
+Received: by mail-io1-f43.google.com with SMTP id p141so6819937iod.6
+        for <customersupport@caldonbiotech.com>; Sun, 27 Nov 2022 20:55:37 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=vB100RVbW21CuB/ZAnuOE081FCBXa7X4Fni7lATvKBM=;
+        b=N1giFRUyGU3rTkHkA22R89teqcJ5xRA4vzXKt325Wm+bAhqnqY/n0ZnHasBrAb4Ik2
+         2S8EyLIPnENOosinnrdLqWw/xidYpyMOAhOykWfejqeJvbsOtOImxVtIa6vVLDCAqVIg
+         4lFVRYI1zxMm//M2CLWxzKtXV3FIr/bXmH9ZNJiDJvs5p+i4sLxCvZfVRXUNQB2hH6/w
+         3lMHjaBmMajJpGg6bkgNGY5DyVAv9enkjKKvIw/Q33PPpsPSB+pJUkhWrPf+5WhN4h4v
+         0/voznSPmkYSS50wN/7GfnSBZUs3EBrVwxmxRU+z5xvz6qY55B895yJSHg25wwWSx66V
+         7TeQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=vB100RVbW21CuB/ZAnuOE081FCBXa7X4Fni7lATvKBM=;
+        b=iXm720+D+HxW9SO07IWuJ960ykn0e0tzrVuDwzlIIrsxVN7RIvj5Zx1yvfx5taRgaf
+         so3BSOB+V3Iez4RqIVgneIn8agBszgOJRf7SgSEucApBbdbH68BgX7CY4VttYkZF60wy
+         +XGWrVKu95BcQRpIrX1IstSX2yDFoRuBrjKIuEMb6IqiRArp5PpBn7lV6j6zm9IkWgZO
+         9594/KX29EjX2NDgHAJOAX9JtaCtHg8miRkeLyQwG181beMUbHKI2bCW/mFIADFTdoBt
+         yIfn/spksjA/3lglkWoaPSAykPoU5pALT6mUmou1/Rqz80TsVwmiEotAxt6i3kcUrt6H
+         Cxeg==
+X-Gm-Message-State: ANoB5pnZqFbST9PqERA9M7RrXRUSX279wBK9aJXh3jewCDSXm9O7CEoY
+	RXFCuwI6SxYBYfDKGz1PYmxUs9emVOANv35eFw==
+X-Google-Smtp-Source: AA0mqf4AXuiVUA1eep46iAb2hWkIwHNZJLBMklNbf6wxo5srySkgHUlNAvxbkqQBjs+MscRLaaK83wDyaWADtdnAjbg=
+X-Received: by 2002:a6b:b24c:0:b0:6df:4527:63e8 with SMTP id
+ b73-20020a6bb24c000000b006df452763e8mr7083009iof.103.1669611332017; Sun, 27
+ Nov 2022 20:55:32 -0800 (PST)
+MIME-Version: 1.0
+References: <CAGBD7kHeAFyYRoi_TdjcxKSGezv40hPcpzZD08E1Vc2WKx+HWQ@mail.gmail.com>
+In-Reply-To: <CAGBD7kHeAFyYRoi_TdjcxKSGezv40hPcpzZD08E1Vc2WKx+HWQ@mail.gmail.com>
+From: "A&G Investment" <reverendfatherjohnsonpaul@gmail.com>
+Date: Mon, 28 Nov 2022 04:55:21 +0000
+Message-ID: <CAGBD7kFrwRATepHdzQ_upxkNKsYmK1GFh5PuOYavHcRK1yAYCA@mail.gmail.com>
+Subject: Fwd: Order Inquiry
+To: "A&G Investment" <alfredgabaliinvestment@aol.com>
+Content-Type: multipart/alternative; boundary="0000000000005ba24f05ee80ae77"
+Bcc: customersupport@caldonbiotech.com
+X-Spam-Status: No, score=4.0
+X-Spam-Score: 40
+X-Spam-Bar: ++++
+X-Spam-Flag: NO
+
+--0000000000005ba24f05ee80ae77
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Sir\Madam
+
+This is A & G Investment we need your product From your company, Please i
+want you to provide us your information
+
+Prices FOB
+
+PAYMENT TERMS
+
+Delivered date from the date of order
+
+Please contact us via.
+
+Best Regards,
+Ms.Erika, Purchasing Manager
+A & G Investment
+Address: Lujo Brentano Strasse 19, Chiemsee, Germany
+PO Box :85209
+Tell +4915207829731.
+
+--0000000000005ba24f05ee80ae77
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_quote"><div dir=3D"ltr">Dear Sir\Madam=
+<br><br>This is A &amp; G Investment we need your product From your company=
+, Please i want you to provide us your information<br><br>Prices FOB<br><br=
+>PAYMENT TERMS<br><br>Delivered date from the date of order<br><br>Please c=
+ontact us via.<br><br>Best Regards,<br>Ms.Erika, Purchasing Manager<br>A &a=
+mp; G Investment<br>Address: Lujo Brentano Strasse 19, Chiemsee, Germany<br=
+>PO Box :85209<br>Tell +4915207829731.<br></div>
+</div></div>
+
+--0000000000005ba24f05ee80ae77--

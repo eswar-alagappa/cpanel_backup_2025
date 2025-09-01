@@ -1,0 +1,158 @@
+Return-Path: <wglass.cpa90@yahoo.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id sKFgL8wRO2PiOQIA7/vpDg
+	(envelope-from <wglass.cpa90@yahoo.com>)
+	for <rvairavan@caldonbiotech.com>; Mon, 03 Oct 2022 11:46:04 -0500
+Return-path: <wglass.cpa90@yahoo.com>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Mon, 03 Oct 2022 11:46:04 -0500
+Received: from sonic311-24.consmr.mail.ne1.yahoo.com ([66.163.188.205]:43985)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <wglass.cpa90@yahoo.com>)
+	id 1ofOZw-000c2q-B0
+	for rvairavan@caldonbiotech.com;
+	Mon, 03 Oct 2022 11:46:04 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1664815552; bh=ShGolEQQG1dxdDo53sRuGG7Q+sClMW4iktk6rQ9D2Ew=; h=Date:From:To:In-Reply-To:References:Subject:From:Subject:Reply-To; b=RsY7Kgtrk0x0+zZzMnoZ54kVVu+Uwo0n5vcMCzOU78rpvo20Nq5BU3M5wcF4v43bGEanNg3RBhBAmouepRVSC9PfaCxzdYI1nFSbtRKYVhRFYk9UJpaDLHOmTExkR19hcpx5uj3Akg7+DmUXavxe7PtcsQIsrKHweL607gCIuA2/IMx2KlzwyHj3o7UBLI1SEllahf4thV8M+IePrEGeWreVgBhzlk0vwlhu2zkkn/PY81drOVYM08DYJbCF2ae5Qnm2Et80un8VrSmesDpcw/MNwyMloNjhZjxGjleajTmbXWqcSQVvHNdWJ5gq4wvw00Q8s0zxPoWPG2A81xPHBQ==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1664815552; bh=gd2o3nyLmgbCbql0xqB09F43QKRIxMkJ4Zvjh5gtsfV=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=qZj6FMf9kwrn7wAi39YPEyI2ITLzXiCNYKAuwXNymUAEMvh5oDJpeUyB5ggSfvisRAr2zDI//TRuwbnRXMNNGpDR+fs86MQ/bTwR3Mg8AY5aBgLtruEPpzQU4ekx/Sm4g2FIYGWNbrAbB44e2iXVo2wRqMZ5PegbYLiKZ9jOJXxnGdAEpH9CZK9os+aVcBeOZR0sUq7TgFcplg3/cY2zwLyd8LKYW0EE92fHm5vaCaSuju9FI12bPT2jvk44+h8sS/wy2JyfBvjJAdx9/k0Grh3/k6DMhNVB8AM6Eobbv0VSOfgZwlb2y2dcueaOem4TOa7L7R6iA5hzsrMTUQif4Q==
+X-YMail-OSG: TwSU4QAVM1mxyde0fg02cIDIOUe2bcBdy8zc9iaxkVSF19lj6WJNICa0vhxHASZ
+ RxE_cA1zHiAyLwbiJoi260URHjLg5Y0fkuxXTP.vvVvcDggmYlDP7IKKMIAQGcuJV8AQJk3AEZnr
+ ToZTVl_jVTzsC.MUQ.Uc7eCG4sfQbpPFaCI13M64gUdHixNzXAMT8vz2lZtzwwKrV3.slqgYVfpi
+ pK0QsJn1f1d0vNIV79OvIObzC_nfgqoCkgso6gajkFsNa0tYaWEy.3wKMwYTMas5HIW6X1GvwxGV
+ BdGVlCgfOV40xEDCNubr_uFsI5KSd1qASf4EtC4rkcX9zgfq3eOUfgf67NmEF3uug62RUnKOj5U0
+ QXmsMMJchLJX1hHpdSgS5hM2FifubKOZhlfBkamQrIhhXdKeVk9aI52hT5X9ujMK13kB8vsrPUY6
+ fToet9XBV8car6h2fvXOnOClkIwxZC5_1I6SIZ3Goa4yl.1PudlsWoT46AULc.EU1rkx8OwiXdVS
+ zOkpXkG_zKOkGB0Ci49YD953wzcGFQXcxiH5ZRAipxTWyRKDLV.F_vDPzpE2DEjyNZGEl2gthZd3
+ 1pLVESmlaRD8Nv24eG3RciGQYm.DVyL0juhi6ugDV4M4fwSM.8pIlcEb1.tYXJn98G_ONQNsb9RI
+ aMp1nRhmERR8ofNzD4qxamRue.AufqQkVnGPqrcfelvPXrxpfhVUm6UaKP69tADOgWl.iuaW9bkf
+ p3VcoGW93zBqHLXtaOP5qmQIyIeB0KHAjmi.IeW6cwdMAWiEUIB.NEj8X3d8Uy9OuuIw840CDAbD
+ 5.gHcT3fKdQoea9PaN4R6fPt3712VtQQQyGfYKkGaHrKzoPtNDbDK10OVP1Bv4Xabe2.rmS1IPRH
+ 7HByQBk4PSX.Uqdm6XVLgzyxCkBV2_yPKVSkDDNpXZBRvVvII13hg0sDJLs755f8aQom9k3HXycl
+ aKLXrlsn13SIdUAnYlPlrI2CjKrqnbyION3v3DN9sjLW9IRXfeQQMnsm0qdPvue3zWptBEsOvkA4
+ 41vWH4xvXLHnOpoggsTpXQHotqfuNC1ZPcJBde5lBRGHevtt36MkQwAoWFGOIEvtdYiaiS0DIPiN
+ cBOr0OspTQxKAad1HJ.W2kx2cy71dooeIEHDjmuW03MuoWJQ.eJoMZp29OL6k6a5yeMvZ6Po3LVN
+ GdR9B007tIa2sQEDiDYpbiT06jypFEHc2LB42E3IVl1dYZUj2tocg4OXCW.s.UFUiz2LKfZD2OBz
+ v6i_MM7FlhgT4PotO4dMRYmV3sPWjnus4FV8AMpmHgc2gZQjeTtQF2n1EenEID3CKgNKaIDyQ0ZF
+ YXxIzPU5.dJT8Ji76GKpWWpWdSyVvTbdguF3SBU9OYNg8sdSKmyrg7Ol.NACs9TOwGb17cixJuyC
+ lph2TYP5MYMIA1swF7lH6FHX8CHDUTzAyMbokFIBWNZ6PtjYGMaIZjkWNwOmwH9fqiQ5HtTgmCAi
+ RqrsGkI.egSYbS22pStWHWj4s2sgMEg5vk4uNXTjfdOC8t8q1v2p077XgY6Ga4GzhYrGwAeODbu2
+ .xzpc2ZzZV72QKDDhUO5sIw_Ebt7PSpqywo_AGtvYWO29_tWflG7iL1GLYcLpBFtrWM4PdnbmF9y
+ GR2VUR.HBgWPY27MUQzEWAX5mUCytWtyjkPsgfqDrUA7EUIJ..KM0yZIWFOwcDC4GGteSXsrvAWz
+ vnMS6tXl6XLM_MBcmydFClhOuGSeMiQbPZEKVGScRxWHP5HPTCbMmz4TEBEsl6UijLrourhj2ejP
+ sXz6vsS6HXm7c3iHwOL7vuXrf_eelDhcKuqbzppR7FUKd_XUmc5F3TnbDGWHlO4CFkXj6jzfNWsV
+ hYfg0Y2P2w0oiRw3tEW.Q1ZbJ._I9eiXWcAGDDCRAY5ocZ6g9L64G0y0KbEXAJCG5ANBPkt1fmUI
+ NCOVOqeeTanbOY0o7FEz811lLiiQJRvxVPHSILnXNL_DlXpGEJjix14.8pRMNshq497hqaTUPAvY
+ chqP0qYnB87MOReN93pqt3HhRHKCqQcYy6VOrVWapBe5.CHct01n6btKfmSgUr_WnQSMY4yOKG6J
+ 51HEcYK452LxPFbShOrPrF.z1eeULRfsdjfG_X9YNk2lf6KFDHk02Qr9waOC7hS4CcC4BVlVW__O
+ DoxKg_v8guWgjPL9gWF1UGVMzgo_M6aRmMU.RJ3HYBUfF3ImqnMywiIdVK205xpEWC7zeszK4akf
+ itvti40fwesnAayhglK7.Uo495RQn_QoBYJ7_N1fCPpbSINlxiHQTBrWuRVuEm.2FiS1UedBI
+X-Sonic-MF: <wglass.cpa90@yahoo.com>
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic311.consmr.mail.ne1.yahoo.com with HTTP; Mon, 3 Oct 2022 16:45:52 +0000
+Date: Mon, 3 Oct 2022 16:45:40 +0000 (UTC)
+From: William Glass <wglass.cpa90@yahoo.com>
+To: Ram Vairavan <rvairavan@caldonbiotech.com>
+Message-ID: <1883537149.1347134.1664815540571@mail.yahoo.com>
+In-Reply-To: <78DF26E3-2C70-4E7D-8B99-9DB7A312378C@caldonbiotech.com>
+References: <78DF26E3-2C70-4E7D-8B99-9DB7A312378C@caldonbiotech.com>
+Subject: Re: [Scan] 2022-10-03 08:39
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1347133_574557004.1664815540569"
+X-Mailer: WebService/1.1.20723 YMailNorrin
+Content-Length: 3973
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+------=_Part_1347133_574557004.1664815540569
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Ram
+What exactly are you doing here? Why are you issuing 1099-K forms? This is =
+the form that credit card processors issue to their merchant account users.=
+ Who is doing these forms and why?=C2=A0
+Bill
+
+WILLIAM W. GLASS, CPA
+
+Office (949)489-0500Fax (949)489-9550P O Box 6062Laguna Niguel, CA 92607
+
+
+
+
+
+
+=20
+
+    On Monday, October 3, 2022 at 08:43:07 AM PDT, Ram Vairavan <rvairavan@=
+caldonbiotech.com> wrote: =20
+=20
+ Hi Bill
+How did this happen. What needs to be done now
+Regards
+Ram
+--
+Sent with Genius Scan for iOS.
+https://dl.tglapp.com/genius-scan
+
+
+
+
+Sent from my iPhone =20
+------=_Part_1347133_574557004.1664815540569
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div class=3D"ydpaf8fa106yahoo-style-wrap" style=
+=3D"font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size:16px=
+;"><div><div dir=3D"ltr" data-setdir=3D"false">Ram</div><div dir=3D"ltr" da=
+ta-setdir=3D"false"><br></div><div dir=3D"ltr" data-setdir=3D"false">What e=
+xactly are you doing here? Why are you issuing 1099-K forms? This is the fo=
+rm that credit card processors issue to their merchant account users. Who i=
+s doing these forms and why?&nbsp;</div><div dir=3D"ltr" data-setdir=3D"fal=
+se"><br></div><div dir=3D"ltr" data-setdir=3D"false">Bill</div><div><br></d=
+iv><div class=3D"ydpaf8fa106signature"><div style=3D"font-family:Helvetica,=
+ Arial, sans-serif;font-size:16px;"><p align=3D"center" style=3D"font-famil=
+y:Helvetica, Arial, sans-serif;font-size:16px;"><strong><font face=3D"bookm=
+an old style, new york, times, serif" size=3D"2">WILLIAM W. GLASS, CPA<br><=
+/font></strong></p><div style=3D"text-align:center;"><strong><font face=3D"=
+bookman old style, new york, times, serif" size=3D"2">Office (949)489-0500<=
+/font></strong></div><div style=3D"text-align:center;"><strong><font face=
+=3D"bookman old style, new york, times, serif" size=3D"2">Fax (949)489-9550=
+</font></strong></div><div style=3D"text-align:center;"><strong><font face=
+=3D"bookman old style, new york, times, serif" size=3D"2">P O Box 6062</fon=
+t></strong></div><div style=3D"text-align:center;"><strong style=3D"text-al=
+ign:left;"><font face=3D"bookman old style, new york, times, serif" size=3D=
+"2">Laguna Niguel, CA 92607</font></strong></div><p></p><div dir=3D"ltr" st=
+yle=3D"text-align:center;font-family:Helvetica, Arial, sans-serif;font-size=
+:16px;"><strong><font face=3D"bookman old style, new york, times, serif" si=
+ze=3D"2"><br></font></strong></div><div style=3D"text-align:center;"><font =
+face=3D"bookman old style, new york, times, serif" size=3D"2"><b><br></b></=
+font></div><br><p style=3D"font-family:Helvetica, Arial, sans-serif;font-si=
+ze:16px;"></p></div></div></div>
+        <div><br></div><div><br></div>
+       =20
+        </div><div id=3D"yahoo_quoted_5633767508" class=3D"yahoo_quoted">
+            <div style=3D"font-family:'Helvetica Neue', Helvetica, Arial, s=
+ans-serif;font-size:13px;color:#26282a;">
+               =20
+                <div>
+                    On Monday, October 3, 2022 at 08:43:07 AM PDT, Ram Vair=
+avan &lt;rvairavan@caldonbiotech.com&gt; wrote:
+                </div>
+                <div><br></div>
+                <div><br></div>
+                <div><div dir=3D"ltr">Hi Bill<br></div><div dir=3D"ltr">How=
+ did this happen. What needs to be done now<br></div><div dir=3D"ltr">Regar=
+ds<br></div><div dir=3D"ltr">Ram<br></div><div dir=3D"ltr">--<br></div><div=
+ dir=3D"ltr">Sent with Genius Scan for iOS.<br></div><div dir=3D"ltr"><a hr=
+ef=3D"https://dl.tglapp.com/genius-scan" target=3D"_blank">https://dl.tglap=
+p.com/genius-scan</a><br></div><div dir=3D"ltr"><br></div><div dir=3D"ltr">=
+<br></div><br><br>Sent from my iPhone</div>
+            </div>
+        </div></body></html>
+------=_Part_1347133_574557004.1664815540569--

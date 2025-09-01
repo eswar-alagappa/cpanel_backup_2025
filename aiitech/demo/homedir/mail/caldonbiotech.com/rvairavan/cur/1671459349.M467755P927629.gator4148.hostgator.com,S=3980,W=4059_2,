@@ -1,0 +1,79 @@
+Return-Path: <brightclements0008@gmail.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id 2J6LGxVyoGONJw4A7/vpDg
+	(envelope-from <brightclements0008@gmail.com>)
+	for <rvairavan@caldonbiotech.com>; Mon, 19 Dec 2022 08:15:49 -0600
+Return-path: <brightclements0008@gmail.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Mon, 19 Dec 2022 08:15:49 -0600
+Received: from mail-wm1-f52.google.com ([209.85.128.52]:34722)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <brightclements0008@gmail.com>)
+	id 1p7Gvl-004FMf-5D
+	for customersupport@caldonbiotech.com;
+	Mon, 19 Dec 2022 08:15:49 -0600
+Received: by mail-wm1-f52.google.com with SMTP id bi26-20020a05600c3d9a00b003d3404a89faso4732946wmb.1
+        for <customersupport@caldonbiotech.com>; Mon, 19 Dec 2022 06:15:43 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Bw/ctZcw5gq3iuPkdJv+mf98q19S/Nn1HgDdPLKOgjM=;
+        b=WYAVjFoC12RFtc3Z2L9u4HFHWI21OOTHh+31G8cDMzJ81lv7Q1bFmzumGCE/4xdKYE
+         sx6EWNVFVhStZTv6LyQjXNd0J26L00ePdLK2sVr9vJbwyq7I3NH6sI0uvVmbAi5y8nCT
+         oxS9XoRRu5EyY5jIxZ0fjjMghVeF4FYfsGGsjT5CaIx15UrTRP42d9lb9X6C1ddkmv3F
+         MePsOk7eF2AdYKtulTxe7OnNkQpjYIAMu5Ul7dhqKaIaWWI195Q02F7+ahIMoKaCQGea
+         04aFed5Aqe9gPssaxb8Xzn4yEJtuksi41zFDBkmchEbKqkFNzKvZxwYitxIObgTyHVmN
+         kzDg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=Bw/ctZcw5gq3iuPkdJv+mf98q19S/Nn1HgDdPLKOgjM=;
+        b=Py1nHTjGsQAaOule3bufsIkrQBo31BLIKJ+6re9p83fNT1BzABgN3FVqVBEFRW5tNP
+         NiU0dEDMtL1+kPIlIyXje4YoNQaqEjc23+TOT9yUdd7IJdTnex61QbjmU4C8IyiBYyD6
+         qiK5A0oEoa/ywPiLv5RnlYJa6xGlZV+Pbt6m1hqdbgmqSLpBL7/eE/WG4EmXx1VYJSzx
+         fM6di7xH9a7vCO0SsllgfgKudx0y3ID55/79ff1jAeg7ZT6z9PPqErWKdBo6yTmdO++z
+         c+enOxtKTAt+METKzwc2JQTAY2NIR1j2H8R1FYCnqOkItdyxY9s0oX/cNhVsRC8anbbs
+         9zOg==
+X-Gm-Message-State: AFqh2kp0vxfFXEGPXgpXYgra9TPN8/dd0y1705sW8iAY1dJnTFWPTbrF
+	tojAaae9en8ZhJHQuMR37910khCho4x8ep00Dvk=
+X-Google-Smtp-Source: AMrXdXvie9RRj1Eh64pFfepxyT6Zyvp2pjuxSQEoXQKJ5GxRDfuMWiClci4inq1QxfH8NtJDfMN+LZhd96LBO4XW8JM=
+X-Received: by 2002:a05:600c:502b:b0:3d3:5d0f:6dfd with SMTP id
+ n43-20020a05600c502b00b003d35d0f6dfdmr31587wmr.87.1671459337759; Mon, 19 Dec
+ 2022 06:15:37 -0800 (PST)
+MIME-Version: 1.0
+References: <CAJm+xmaJb9K4U7tBRo_Oh-rxQ+4WwYypHnxLZxAt_0O-v9Y8ow@mail.gmail.com>
+In-Reply-To: <CAJm+xmaJb9K4U7tBRo_Oh-rxQ+4WwYypHnxLZxAt_0O-v9Y8ow@mail.gmail.com>
+From: ABDUL ABBAS <brightclements0008@gmail.com>
+Date: Mon, 19 Dec 2022 14:15:26 +0000
+Message-ID: <CAJm+xmYZ2-pkXorxwOVcHXLNgRH5AF+ef1anG1cknM5CYiZTUg@mail.gmail.com>
+Subject: Fwd: HELLO
+To: ABDUL ABBAS <abbasabdul252@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000156ed205f02ef4f6"
+Bcc: customersupport@caldonbiotech.com
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--000000000000156ed205f02ef4f6
+Content-Type: text/plain; charset="UTF-8"
+
+Hello I am Mr. Abdul Abbas, from the UAE, I would like to discuss a joint
+idea agreement with you.
+
+--000000000000156ed205f02ef4f6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail=
+_attr">Hello I am Mr. Abdul Abbas, from the UAE, I would like to discuss a =
+joint idea agreement with you.<br></div><div dir=3D"ltr"><div></div><div></=
+div><div></div><div></div><div></div><div></div><div><br></div></div>
+</div></div>
+
+--000000000000156ed205f02ef4f6--

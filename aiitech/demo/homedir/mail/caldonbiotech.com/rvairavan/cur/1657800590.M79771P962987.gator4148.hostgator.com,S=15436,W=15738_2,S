@@ -1,0 +1,302 @@
+Return-Path: <rthomas@ehs.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id YAnPA44H0GKrsQ4A7/vpDg
+	(envelope-from <rthomas@ehs.com>); Thu, 14 Jul 2022 07:09:50 -0500
+Return-path: <rthomas@ehs.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Thu, 14 Jul 2022 07:09:50 -0500
+Received: from mail-bn8nam12on2087.outbound.protection.outlook.com ([40.107.237.87]:57793 helo=NAM12-BN8-obe.outbound.protection.outlook.com)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <rthomas@ehs.com>)
+	id 1oBxfB-000kB3-8x
+	for customersupport@caldonbiotech.com;
+	Thu, 14 Jul 2022 07:09:49 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=IEhAwAopBkib7cym58oPrcPTgwBnswyQ0VoF9e3IO7IY/M+YMVpw+rujUaI7BKrHyStpfuDHFPeNw2Ada+c8LBVmMnPLvnrYNa7sPWHxVdHbQt1MJaa8zQ8Kj6rp9VOBchqr+q4ng2eZsMbOFQL4tRrh3+8MSW8mXAAiaCSPjZZlaqzEyuUkIpFTH49I255dMNb72emZnStyARk6klS/OlCqlytJuY3Nn90odsxrCf8NdIDRcm5Uu4Wlnk2sgIxmd9+SjAp4UFEutSlDYD/eUYu7DOlbJ+FT5DWzYotwTPCv2jO8UgA7yaligqzaZEuqQ8ua9FVDBpnnKI1DfKcufQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=Heu2By4GqtEFVg2LR8bWEhEzOJFTGAEPVQjbKIEwcDg=;
+ b=eQ5I7xR2v2BSSPHj/t8Q2fctNl9fUmbdWlENXYBbWuYAGDhRsKuJqmRdpL5rCGlL5WCALn8rRxbc6/vP0unkzLMMv0RSyQ8X88REY+gZos2AOKpHZgH4NFyrI+RNo1TIGtnS4folbA0RyBMkfh3G2upY9T8Pp0x7kzCoPY0eKsyhwavpO70GFSZRdod9fl9NdR07lAJFgusiu+xguJHQUYgD41Ru/QiX7IJ5e8DyHxZXR6XZAJDEXGY1U/L6Fj25fkr6i5jjgVTulrRll/XmYXi9rU2nGQF0ANGhewBMGJCap2YfChnWDPDQm+2Hs6xoopKH/YWhTTfA1/IUyaPBqw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=ehs.com; dmarc=pass action=none header.from=ehs.com; dkim=pass
+ header.d=ehs.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ehs.com; s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Heu2By4GqtEFVg2LR8bWEhEzOJFTGAEPVQjbKIEwcDg=;
+ b=u1iYFzN60l0K3gRmT6CqTsF4COj3r6Dr+hPk4CgyJUy74AI6EyhEp96dBHhQClp2VWBTZzYtJZhcv/EUhXoKHznmkOvq/QW1ahfgVApeE+RZiouTayzkczUxin2wcbJF5lgHyOCfIMvWrVf6R5fBcYkqC9EgJiQ6/EhKAH/KUhg=
+Received: from BL3P223MB0273.NAMP223.PROD.OUTLOOK.COM (2603:10b6:208:34d::13)
+ by BN0P223MB0117.NAMP223.PROD.OUTLOOK.COM (2603:10b6:408:147::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5438.12; Thu, 14 Jul
+ 2022 12:09:37 +0000
+Received: from BL3P223MB0273.NAMP223.PROD.OUTLOOK.COM
+ ([fe80::488f:d404:8695:4455]) by BL3P223MB0273.NAMP223.PROD.OUTLOOK.COM
+ ([fe80::488f:d404:8695:4455%7]) with mapi id 15.20.5438.014; Thu, 14 Jul 2022
+ 12:09:37 +0000
+From: Roy Thomas <rthomas@ehs.com>
+To: "customersupport@caldonbiotech.com" <customersupport@caldonbiotech.com>
+Subject: Subject: Request for GHS [M]SDS (Batch B7644)
+Thread-Topic: Subject: Request for GHS [M]SDS (Batch B7644)
+Thread-Index: AQHYl3qUbp9rW2vIkE2WLUh6OSE5PQ==
+Date: Thu, 14 Jul 2022 12:09:37 +0000
+Message-ID:
+ <BL3P223MB0273A25DA354C6F2B71DA0B6B5889@BL3P223MB0273.NAMP223.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+msip_labels:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=ehs.com;
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 0fcfed39-4c2f-4e34-30ac-08da6591b8eb
+x-ms-traffictypediagnostic: BN0P223MB0117:EE_
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ amOt/kvQudBiRn5KTLFhPp8FEd1JLU2oGR2A8eK1v2UkYUjlSC7AlhMd7ISY37UBuGKN9+PJAERvPmmEes7V8V8ChMFFasBWM21rdfxNT+ypdvFkv/VXRtxUFvwu72IlnEdwfj6B+qVYNndqLYvuCrr0yTrQz1hICqipbqlzaO11MZt4DzouzogCtBXap8D508/prr6yaukzAJVoOOrzff4fzs4bzHsXOAFf0gLX7KfN+RkFweeiFk1WQUXVdMBqwYKp3vhfCGjxYCt7qfYk88L5LM3LG3In/n8x1nzFZpOFPxQEAQ1NrnRPBhHf0QQu3c0eowVl/AkQhTIpoRFe2BW16wTjApo8fD6JHTe9uX9x+tj9alZsMb2uxNAtP5xjnJ9Kyy8w/VGaDVyqZUpxnc8ZCPpC2rFmW606emyl3+1WsHqgA87X0GYTM5OSFGfJ2iTswSzYFM5vvtnnmz88KWKQg64sWytqW/zozzf8DM9UcDw0ou6F8GeKLBn+FeOidRlLWqKP7YyhaWO9ZXfkkEg5pCpFCpYbSr/PR+6e64+YylRKP1h2id9DFpfjdIlvlOILfpTCMV6ADuwoErwspD8Q9PgZqRaQaG582TTFmmfe5OWQyir9AqhMSitufWdGZiH2Kwhp7F0/rJaZpL4VdK8F5xbxoyOn1Q7Vld+vlA5t4LgCG0Z0gQK29oIQJ7rqar3Y3+bRbIhtNWY6ArABg25BIvUMzvwEfWa8DQMzPP81vSuAAGHES6B3K9ktfpo5QhQwxK6wuNczNk5AnOqttMDJh1ue2cI4AnusOBVlXXSI7m8rEyhCVhGD18L8NPg3tVPHDUuy1yWCuhNkh5u5om3qwFhK5FzWWQ9aDmpRtohynErNrhbfvUfFp0TVSz5HSNLNMkO1bDenxu+sk2uqLw==
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BL3P223MB0273.NAMP223.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230016)(346002)(366004)(39860400002)(396003)(136003)(376002)(26005)(66946007)(6916009)(66476007)(9686003)(7696005)(76116006)(66556008)(91956017)(478600001)(41300700001)(6506007)(64756008)(8676002)(86362001)(122000001)(316002)(71200400001)(83380400001)(186003)(38070700005)(19627405001)(15974865002)(8936002)(66446008)(33656002)(5660300002)(52536014)(40140700001)(38100700002)(55016003)(2906002);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?Windows-1252?Q?/HEOL2pRKm/5NXx9hRldhwJ3+MAG03bdU6Lk3/y8KRzUti/RRP4Sr4W0?=
+ =?Windows-1252?Q?6sXb9G/3mSshAMSjZ8yZervv8idxtDSwzmmOezpvIk/q4Eq+EP+KdYa3?=
+ =?Windows-1252?Q?KwzZDP3EegH1Wl2xPaXvFwDDC4feZUsnPXjUAOlCGb1ktMgYzUSIosXP?=
+ =?Windows-1252?Q?TDpQzZXQQVjbH6EbJyl+/u7g8GgMVJZdtEGBNX8fUOmNZlFSjRvoI9KD?=
+ =?Windows-1252?Q?35D02QGZujhmFV+M6fIfGJkZVLEdAvrrh8lGqsl67aX+Ir0II3XASM8f?=
+ =?Windows-1252?Q?7tWT02KB1ODhrzVz9THHbpgZd9boOGbrLJm/O1uLT+vsrtCOdCPcMhT6?=
+ =?Windows-1252?Q?e0Xfc9RpyD4sdY09T95MdrySRkVzeeisELnlyaO1aF/VEt1UnXmJGb6y?=
+ =?Windows-1252?Q?Cmx8XqO306a8bKrjbHFHhK5J87tfipQSbMws23gprYRvs9cbavlRC2Km?=
+ =?Windows-1252?Q?d8GZUZuIY+2RwjIx5TTZa3yO4wRm+fsGjW5cy4k/PyxMzfrb2UkVMGXm?=
+ =?Windows-1252?Q?ASLYl9xDDBS5jID8ATkL6EiKJSLIpRPWWOphI++jKdwvFWmY+Pe/3Rx+?=
+ =?Windows-1252?Q?f0U2Rx89dsPccp3J8i6PggmD+NCsOJeF03UNEHFt7s2NmGCk1wsDGWnB?=
+ =?Windows-1252?Q?YPjkjrK1aUakk+/aNbV/sp1Wf4pJ/oE4oeS+l5RFeJj4LDa2Vt0Uluf4?=
+ =?Windows-1252?Q?cgDNG/rcQFX2Z0S7yAO1+NqtbMcDxz37OHJBmtKe8Ip9EHGf4EoU/Y9+?=
+ =?Windows-1252?Q?Qfy0g01lXv05k12pyEaoFjAG4iBR71D4JtksVNM4pAKWQSKY2SpzL0rP?=
+ =?Windows-1252?Q?QDuH/hxsl4doImVVa+/FcaLvthQ8UrBQZz7Rf6oxF6ol+3VYkMVQ3b95?=
+ =?Windows-1252?Q?T7HrOdpW7UcocQXDEUxmE6AcnlmUiigxTsy73x2zhZEdUXiAw6m0B8K0?=
+ =?Windows-1252?Q?MkjedMhWQCmceJ9kj5xqQyjbLq0u25w59Ya4PBONLKiDB0Nng6IfIWuj?=
+ =?Windows-1252?Q?owXjU9JCmmTL6hdFke8So1Mc+HmjS5CjNYnXUnd4nnLdxRhuzhuXoXjs?=
+ =?Windows-1252?Q?f1A9A4BFKHYM6xXVlK59rUi29Ft+mqrQrqBpWNL/AHSoLS0s7Tg+2uyH?=
+ =?Windows-1252?Q?au6z0m0qjRTfTRtzFIvIyjmKK89XARq9FxF0q39yUY4N5pnWZKfDuAn+?=
+ =?Windows-1252?Q?LKPjgvCmMGllyCwXQ/rJ0jjmzERu3zlzo/hkLzM2baKUDOAXUW7zYEtP?=
+ =?Windows-1252?Q?iip7B4sLwxSQxxrYBPddlEx27b9ujs+F23Wvb97bO32xULrYAIl+iQM5?=
+ =?Windows-1252?Q?YMF6kFez79KbbLfoai1qqa0lX5wFw0E8Tje2dYWBpam4SU3CMPkiMQ8z?=
+ =?Windows-1252?Q?oq6Gcf6uYYUF5mHswfr3Vzy8i5wqVdxWgVOGXRj94HuO9efYTgQY9bqo?=
+ =?Windows-1252?Q?iyLfDIh+YQouIWulydy8TAkCbbAWeGjR576o2jZFNS9RaLkYPmqKVFy5?=
+ =?Windows-1252?Q?f406kl2sKwZ+INWURSqH+6zePhPHEebG3rXJllpLg2/fvwoMTv/w7BKP?=
+ =?Windows-1252?Q?ZY9y5E+mhL3650R9vRh/OCqPllZxGYSKqwJ5y789s29f8kLCDGh4Lawa?=
+ =?Windows-1252?Q?IPkdZ/OkjBCA8+mwd1XnjsqOmVZZU1wHJ3J1BjAhH5CWL5F4Ci7d4OpK?=
+ =?Windows-1252?Q?aN8mhR5eGkM=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_BL3P223MB0273A25DA354C6F2B71DA0B6B5889BL3P223MB0273NAMP_"
+MIME-Version: 1.0
+X-OriginatorOrg: ehs.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: BL3P223MB0273.NAMP223.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: 0fcfed39-4c2f-4e34-30ac-08da6591b8eb
+X-MS-Exchange-CrossTenant-originalarrivaltime: 14 Jul 2022 12:09:37.2806
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 9c3d2f7c-3779-46eb-a27c-fa083d7949c9
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: aw5AlNdP7vrgx6opuI5BnhsFV8bUSA3tWpUTcHDv/0PkF5PEyczgb/aYl5hZlp/4
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN0P223MB0117
+X-Spam-Status: No, score=-0.7
+X-Spam-Score: -6
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--_000_BL3P223MB0273A25DA354C6F2B71DA0B6B5889BL3P223MB0273NAMP_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+I am looking to obtain the latest [M]SDS on behalf of a mutual client "Hami=
+lton Health Services" (Canadian Client)for the following product:
+
+1) Product Name: Statpak Sputolysin Test
+   Product Code: CSPU-010
+   Language: English
+   Existing Revision Date: 1/1/2010
+
+We could not locate the [M]SDS on your website. Could you please confirm if=
+ these are the latest versions of [M]SDS=92s for this product?
+
+If a newer version of the above [M]SDS is available, could you please email=
+ the latest [M]SDS in pdf format to rthomas@ehs.com or fax it to 866-379-61=
+89 , and if you could mention our Reference Number B7644 in the subject lin=
+e that would be appreciated.
+
+"Hamilton Health Services" would prefer a Canada GHS compliant[M]SDS if ava=
+ilable.  If not, we gladly accept the regulatory format your [M]SDS=92s com=
+e in.
+
+Please feel free to contact us if you require additional information.
+
+ Thank you for your time.
+
+Roy Thomas.
+
+Roy Thomas
+SDS Obtainment Specialist
+VelocityEHS
+222 W Merchandise Mart Plaza, STE 1750
+Chicago, IL 60654
+Fax : 1-866-379-6189
+Direct - 914-574-8003
+Email: rthomas@ehs.com
+
+Visit us at: www.EHS.com | www.msdsonline.com | www.humantech.com
+
+Try our award-winning, mobile chemical and SDS management solutions at MSDS=
+online.com
+
+Notice: Copyright=A9 2019, VelocityEHS. All rights reserved. VelocityEHS=AE=
+, MSDSonline=AE and Humantech=AE are proprietary trademarks of VelocityEHS.=
+ This email, including any attachments, may contain confidential informatio=
+n and may not be redistributed without permission. If you are not the inten=
+ded recipient, please immediately notify the sender by phone or reply-email=
+, and delete it and all its contents from your system.
+
+
+--_000_BL3P223MB0273A25DA354C6F2B71DA0B6B5889BL3P223MB0273NAMP_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+<div>Hello,<br>
+</div>
+<div><br>
+</div>
+<div>I am looking to obtain the latest [M]SDS on behalf of a mutual client =
+&quot;Hamilton Health Services&quot; (Canadian Client)for the following pro=
+duct:
+</div>
+<div><br>
+</div>
+<div>1) Product Name: Statpak Sputolysin Test</div>
+<div>&nbsp; &nbsp;Product Code: CSPU-010</div>
+<div>&nbsp; &nbsp;Language: English</div>
+<div>&nbsp; &nbsp;Existing Revision Date: 1/1/2010</div>
+<div><br>
+</div>
+<div>We could not locate the [M]SDS on your website. Could you please confi=
+rm if these are the latest versions of [M]SDS=92s for this product?</div>
+<div><br>
+</div>
+<div>If a newer version of the above [M]SDS is available, could you please =
+email the latest [M]SDS in pdf format to rthomas@ehs.com or fax it to 866-3=
+79-6189 , and if you could mention our Reference Number B7644 in the subjec=
+t line that would be appreciated.</div>
+<div><br>
+</div>
+<div>&quot;Hamilton Health Services&quot; would prefer a Canada GHS complia=
+nt[M]SDS if available. &nbsp;If not, we gladly accept the regulatory format=
+ your [M]SDS=92s come in.</div>
+<div><br>
+</div>
+<div>Please feel free to contact us if you require additional information.<=
+/div>
+<div><br>
+</div>
+<div>&nbsp;Thank you for your time.</div>
+<div><br>
+</div>
+Roy Thomas.<br>
+</div>
+<div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div id=3D"Signature">
+<div>
+<div name=3D"divtagdefaultwrapper" style=3D"font-family:Calibri,Arial,Helve=
+tica,sans-serif; font-size:; margin:0">
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10pt; font-family:Cambri=
+a">Roy Thomas</span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10pt; font-family:Cambria">=
+SDS Obtainment Specialist</span><span style=3D"font-size:13.5pt; font-famil=
+y:Calibri"></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10pt; font-family:Cambria">=
+VelocityEHS</span><span style=3D"font-size:13.5pt; font-family:Calibri"></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10pt; font-family:Cambria">=
+222 W Merchandise Mart Plaza, STE 1750</span><span style=3D"font-size:13.5p=
+t; font-family:Calibri"></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10pt; font-family:Cambria">=
+Chicago</span><span style=3D"font-size:10pt; font-family:Cambria">, IL 6065=
+4</span><span style=3D"font-size:13.5pt; font-family:Calibri"></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10pt; font-family:Cambria">=
+Fax : 1-866-379-6189</span><span style=3D"font-size:13.5pt; font-family:Cal=
+ibri"></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10pt; font-family:Cambria">=
+Direct - 914-574-8003</span><span style=3D"font-size:13.5pt; font-family:Ca=
+libri"></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10pt; font-family:Cambria">=
+Email:&nbsp;</span><span style=3D"font-size:10.0pt; font-family:Cambria; co=
+lor:blue">rthomas@ehs.com</span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt; font-family:Cambria=
+; color:blue">&nbsp;</span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10pt; font-family:Cambria">=
+Visit us at:&nbsp;</span><span style=3D"font-size:10.0pt; font-family:Cambr=
+ia; color:blue">www.EHS.com | www.msdsonline.com | www.humantech.com</span>=
+<span style=3D"font-size:13.5pt; font-family:Calibri"></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:13.5pt; font-family:Calibri=
+">&nbsp;</span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10pt; font-family:Cambri=
+a">Try our award-winning, mobile chemical and SDS management solutions at M=
+SDSonline.com</span></b><span style=3D"font-size:13.5pt; font-family:Calibr=
+i"></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:13.5pt; font-family:Calibri=
+">&nbsp;</span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10pt; font-family:Cambri=
+a">Notice: Copyright=A9 2019, VelocityEHS. All rights reserved. VelocityEHS=
+=AE, MSDSonline=AE and Humantech=AE are proprietary trademarks of VelocityE=
+HS. This email, including any attachments, may
+ contain confidential information and may not be redistributed without perm=
+ission. If you are not the intended recipient, please immediately notify th=
+e sender by phone or reply-email, and delete it and all its contents from y=
+our system.</span></b><span style=3D"font-size:13.5pt; font-family:Calibri"=
+></span></p>
+<p class=3D"MsoNormal">&nbsp;</p>
+</div>
+<div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_BL3P223MB0273A25DA354C6F2B71DA0B6B5889BL3P223MB0273NAMP_--

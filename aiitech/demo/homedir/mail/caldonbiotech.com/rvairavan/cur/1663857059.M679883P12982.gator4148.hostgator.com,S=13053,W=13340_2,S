@@ -1,0 +1,287 @@
+Return-Path: <pattigaull@aol.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id cJVyKKNxLGO2MgAA7/vpDg
+	(envelope-from <pattigaull@aol.com>)
+	for <rvairavan@caldonbiotech.com>; Thu, 22 Sep 2022 09:30:59 -0500
+Return-path: <pattigaull@aol.com>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Thu, 22 Sep 2022 09:30:59 -0500
+Received: from sonic314-20.consmr.mail.ne1.yahoo.com ([66.163.189.146]:40516)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <pattigaull@aol.com>)
+	id 1obNEB-0003FS-4q
+	for rvairavan@caldonbiotech.com;
+	Thu, 22 Sep 2022 09:30:59 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=aol.com; s=a2048; t=1663857047; bh=Kswq4PZlh5+A409qzC2MP5p4myYsRi7QgV1zoMKFZdU=; h=Date:From:Reply-To:To:In-Reply-To:References:Subject:From:Subject:Reply-To; b=hcZjphHYO1c3naS7noxnZiFloU6QZGml5UMY4/oO2fQQ3LlEJY9VPVzZBaOW4COpbVMhUUdd72VDr0VRBJ9CQIXBr0VQ+2FMvG4EGkTAuNdcmA7luxivgTtZSGK+5Dy1T1Z1cdWd0j+GYFH03mkX+UzotnfE/415ELQKIOXPyzbqLwGqgyAVaJbGnLFcoiGdl0jCLzJSmyVUOdmaOHHu/b5b6E6H0v3iCIiIm8lxUQHXz3UD6O7TMHyG9hpws+hpECqB1dBL5Ph0sINL/yvrfeXvTdKa0+SPTXYh/eEqs5Y/S8HxKLUJrTtcIjt+TiQoG2HFVqyGGaAixi9kGiY4NQ==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1663857047; bh=gnms94oqZHYyd4+YMhxmEusmaGPG/owOXKuZkkJoKfL=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=kJRRES+oO4NmVJqeU+XgrV+IhE8ZpezbtG8Z+pXGQo05Zr5976bTGbCuX8itXM4ve2rfzPyv+MMBzZWxCrdhMPKzzypCnfqon4+VQ07OKfg1QlcEHWMho633mejMYtUZ48Xwqcrp4ppW2rsFqCD0lHoHz55OyzJnHxjgN147j/IXjZmWsuhnZDzD8fYayMteyeO5L9p7h22+Og6ofJcleOuGvveYJDwy0OwzvG/PPBhNIHJKks8YKuFMo5WFuUQA3cH0aYP1Y2OwIhE3of5nxpdDISvTbKpPQr99vo4mUJ1J31D6dbtlfreT26uQCmEB5VhNykrG4mmVDWPvFl7IxQ==
+X-YMail-OSG: XIENNKgVM1kkwisLSVkvRVmU6ffB6w2Fbjytzgvw3PqLJctk.l6fFhjDgTdX.7b
+ dPTNeVc40_EwpJ5lDr_wrM8q.u55t5RnvSS9RD0HweZxW3sdzJBE90tzzAVqIdA1QL2AV37G6.q1
+ BMypkdWqIBKIT7ikCW7FXnr.L0phlvJ2EdnU3ir9k6rVcemEUceE9wHioIJgUlb8malrCac66cJ7
+ 31zZdBdX9C19.Xw992qSebEF8_7rnOchmoR5ns0VLwvKbv7yAWd7FHXQg9kJoPtih3isKYuX0PWH
+ Dmr.VFECooLov7GZfMqfsv.2s8voSpCorf3m4BsUyUkGW4vLoJ9dAbgfvVjqKI6aPfdYfWRGWNCZ
+ hIM2FSAvLnmUeZniicpcaI5pwZ5ZwsHtJGi642VMDzRGxS6k19X2njHEhlTqGGMzcVJjcKwQbRUV
+ zf9s7d_4YSLnPDhrHrVsM.pnu0HKmxEksQnnvFqC91CM5xsiTuQODFWiZospfDKkyJGcsWPcZPZR
+ KrdCRFW8MnlhSIyMfXivGbFRTNgEEJfvoyoA5RAkVH.7TrZ0.AQvJj3Ctgqv.73WMaUhaCtr8EjG
+ 9HDxOlGJvkVsN2qV4HwT6JvNjFjTIzJ34_oRtC7PV.TP6yw.crvpNUiaRDGDvlpmS0x2e3x5jafF
+ a2ONXgdVbM6bu7FZQX66TZQ4nMGG3gNGpR6Qak8pHRmfrMm4FBrCQUKCkv5j5mDSLYStIoUQ8YRW
+ bKwtTAn1g4RRub2wA6Xv6PtRsGeJ2GsGThNroMUcdiHZao9LVWKkkttkxMi7A.dvydcK.3AiKAhq
+ JdBj0WeXXMw3RlkhCE6GR8dq8msYLcEnoQT9wTMeSjSQyA2EdUe1xfmQAbbd74dYmuQINpf6U6kH
+ k3kFZuXRPS3TKATaqgytVYmFNLE5ptB_8mDdtm9efscJsMQeT2_wH_qq_S.zu7BTfcdH6pemw6fK
+ Cn5PXNeNft5Z2pFA562Mw.kLBXKBMp8OrppkcTuru0i0m_0LeIYLOF4sTjxIQXQniQWWIVoAo3HQ
+ wnNzCU4QFcIQ0Df4WCYpoUXBgsc79yalQw6EaJurliNZlmKho2O6fQYhArwQd.4IoYDIIWun.KG3
+ 9ut6S6_I_lQuotL.mvrhDM5pJhQEp06LAZgEQOAby5wmG2NBwbPHYCsdPfT3yl2hQUpkVO7X.mJz
+ YlzXFSxgLvRIod11Bs3rsbvIlRRYWSLPJOP_BrGekOGSK0aH9X4_Exc2ECzTsIlInpkllc8AlMsk
+ UWdvtSvS6R2idYsg.3GX09YKkXAnW3rw5JJhB8gB3bhYJ3bDBgY8Df.1UnI8IxqDOa2ZdqsE52pN
+ 6t9ohhzKBwZCDKn4ED4PoHeQ5t5fa2c1MlBT3O48iBBdvxreGzRHGdfvQtU_DGM.vJ2QV4hGpjlc
+ 1er6mf1lXj2SsUugo7vx9Q2fycJIeEMbJfuz_e5J1OhdCR9Mq0ukYobJWX4jcrPf01Y4bdqqLvvb
+ dHPgva5TjFdTkGLHOsI.VAkKsku7zlEp.IcJkph6ZydPYSqQdc0dnmm8neKwxnsJwpCpaZ65PaWE
+ iHEYXOQW2KomK.noDsB30Ht783.qLwbc7fPt0arF5XdOl90impAqpTFxC.EmGpMHAQmnP2VDyJUn
+ sxebco9GR5EeOh.BWCqIg_POmVE8dbe_YfQxD8vfV1eCUQQKKhz4LlVRDIvbsxFjff_kQxduQXi7
+ .QXDsRqXHOjcdJvl6HxUQ14x4LhAkbc259c1sH8z2iiFC7sgAys7HO3xwqZx.F3xGxoB.VLpJS5I
+ bVLQOkeanExvh99OQPcB68tDvbkXS.tfiUrU71hnp0uLk1wXWeRESOg8e1u0NOQDVBy9N7b.dCd4
+ XCG5zl3u0cCRZakWuinmGaxJAcosxadA4potgYNv3o9nIHKDqvZO7EGFSkS3djGei14Fw4nbFRKT
+ 6nr.ZD00R_aHCSxePBw8BjHR2GxsVgx0MI8fZKSL7GjcxEljfjAfduu2I6_nX2toSZc_oQVZkzIh
+ OOpKp7ILajIIzoX_7LMt0cYMsjf0LSnIIMnREWjlpkQXdlPH7Fhb1rO.vpb2RUzpAl5oPDDs6CVJ
+ Pt1KComCNMAO4IdJWAXo1b8W7c.x1eie8FBMFAiulzmq9NRevHNyhap98zCII375v2Np8li_0A0w
+ SKUzflVCU5h2yEtSxaZsP6O9ryU2s5C4ej_22WaESAqSHccekUyRjsFe1Xd0YOIIm5nxKbsX5dRY
+ SMMqlijct
+X-Sonic-MF: <pattigaull@aol.com>
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic314.consmr.mail.ne1.yahoo.com with HTTP; Thu, 22 Sep 2022 14:30:47 +0000
+Date: Thu, 22 Sep 2022 14:30:42 +0000 (UTC)
+From: Patti Shugart <pattigaull@aol.com>
+Reply-To: Patti Shugart <pattigaull@aol.com>
+To: "rvairavan@caldonbiotech.com" <rvairavan@caldonbiotech.com>
+Message-ID: <280373085.1445571.1663857042749@mail.yahoo.com>
+In-Reply-To: <E817EC8C-A7D8-4DEC-84D0-5D2F9B001C8D@aol.com>
+References: <MW4PR05MB82342A202A7A81E86A4799BFB34C9@MW4PR05MB8234.namprd05.prod.outlook.com> <E817EC8C-A7D8-4DEC-84D0-5D2F9B001C8D@aol.com>
+Subject: Fwd: CPSU010 replacement item
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1445570_1632139793.1663857042747"
+X-Mailer: WebService/1.1.20663 aolwebmail
+Content-Length: 7981
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+------=_Part_1445570_1632139793.1663857042747
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Do you have time to discuss this.=C2=A0 The FDA had heartburn over your lab=
+eling.=C2=A0I think with all the VTM they might have been worried people we=
+re using it as VTM or something.=C2=A0
+Patti=C2=A0
+
+-----Original Message-----
+From: Patti Shugart <pattigaull@aol.com>
+To: Patsy Zimmerman <zimmermp@slhs.org>
+Cc: contactsales@carolinachemistries.com
+Sent: Tue, Sep 20, 2022 6:41 pm
+Subject: Re: CPSU010 replacement item=20
+
+Patsy,=C2=A0
+I am going to work with the manufacturer. How do you use the product?=C2=A0
+Patti=C2=A0
+
+Carolina Chemistries supplying laboratories for over 25 years
+
+On Sep 20, 2022, at 6:02 PM, Patsy Zimmerman <zimmermp@slhs.org> wrote:
+
+
+
+=EF=BB=BF
+ _filtered {} _filtered {}#yiv6337990887 p.yiv6337990887MsoNormal, #yiv6337=
+990887 li.yiv6337990887MsoNormal, #yiv6337990887 div.yiv6337990887MsoNormal=
+ {margin:0in;font-size:11pt;font-family:Calibri, sans-serif;}#yiv6337990887=
+ span.yiv6337990887EmailStyle17 {font-family:Calibri, sans-serif;color:wind=
+owtext;}#yiv6337990887 .yiv6337990887MsoChpDefault {font-family:Calibri, sa=
+ns-serif;} _filtered {}#yiv6337990887 div.yiv6337990887WordSection1 {}Can I=
+ please be provided with a list of subs that can be used in place of the di=
+scontinued item CPSU010.  =C2=A0  =C2=A0 Thank you  Patsy  =C2=A0  =C2=A0=
+=20
+| Patsy Zimmerman Sourcing Manager St. Luke's Health System 3330 E. Louise =
+Dr. #500 Meridian ID 83642  |
+| P: (208) 706-9671 F: (208) 381-5103 E:zimmermp@slhs.org=C2=A0  |
+
+ =C2=A0  =C2=A0 "This message is intended for the use of the person or enti=
+ty to which it is addressed and may contain information that is confidentia=
+l or privileged, the disclosure of which is governed by applicable law. If =
+the reader of this message is not the intended recipient, you are hereby no=
+tified that any dissemination, distribution, or copying of this information=
+ is strictly prohibited. If you have received this message by error, please=
+ notify us immediately and destroy the related message."
+
+------=_Part_1445570_1632139793.1663857042747
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+<div style=3D"color:mediumblue;font: 12pt Arial, Helvetica, sans-serif;">Do=
+ you have time to discuss this.&nbsp; The FDA had heartburn over your label=
+ing.&nbsp;
+<div>I think with all the VTM they might have been worried people were usin=
+g it as VTM or something.&nbsp;</div>
+
+<div><br>
+</div>
+
+<div>Patti&nbsp;</div>
+
+<div>
+<div><br>
+<br>
+
+<div style=3D"font-family:arial,helvetica;font-size:10pt;color:black"><font=
+ size=3D"2">-----Original Message-----<br>
+From: Patti Shugart &lt;pattigaull@aol.com&gt;<br>
+To: Patsy Zimmerman &lt;zimmermp@slhs.org&gt;<br>
+Cc: contactsales@carolinachemistries.com<br>
+Sent: Tue, Sep 20, 2022 6:41 pm<br>
+Subject: Re: CPSU010 replacement item <br>
+<br>
+
+<div id=3D"yiv6337990887">
+<div>Patsy,&nbsp;
+<div><br clear=3D"none"></div>
+
+<div>I am going to work with the manufacturer. How do you use the product?&=
+nbsp;</div>
+
+<div><br clear=3D"none"></div>
+
+<div>Patti&nbsp;<br clear=3D"none"><br clear=3D"none">
+<div dir=3D"ltr">Carolina Chemistries supplying laboratories for over 25 ye=
+ars</div>
+
+<div id=3D"yiv6337990887yqt98966" class=3D"yiv6337990887yqt4126808777">
+<div dir=3D"ltr"><br clear=3D"none"><blockquote type=3D"cite">On Sep 20, 20=
+22, at 6:02 PM, Patsy Zimmerman &lt;zimmermp@slhs.org&gt; wrote:<br clear=
+=3D"none"><br clear=3D"none"></blockquote></div>
+<blockquote type=3D"cite">
+<div dir=3D"ltr">=EF=BB=BF
+
+</div>
+</blockquote></div>
+</div>
+</div>
+
+<div id=3D"yiv6337990887yqt48209" class=3D"yiv6337990887yqt4126808777"><sty=
+le> _filtered {}
+ _filtered {}
+#yiv6337990887 p.yiv6337990887MsoNormal, #yiv6337990887 li.yiv6337990887Mso=
+Normal, #yiv6337990887 div.yiv6337990887MsoNormal {margin:0in;font-size:11p=
+t;font-family:Calibri, sans-serif;}
+#yiv6337990887 span.yiv6337990887EmailStyle17 {font-family:Calibri, sans-se=
+rif;color:windowtext;}
+#yiv6337990887 .yiv6337990887MsoChpDefault {font-family:Calibri, sans-serif=
+;}
+ _filtered {}
+#yiv6337990887 div.yiv6337990887WordSection1 {}</style>
+<div>
+<div class=3D"yiv6337990887WordSection1">
+
+<div class=3D"yiv6337990887MsoNormal">Can I please be provided with a list =
+of subs that can be used in place of the discontinued item CPSU010.</div>
+=20
+
+<div class=3D"yiv6337990887MsoNormal"> &nbsp;</div>
+=20
+
+<div class=3D"yiv6337990887MsoNormal"> &nbsp;</div>
+=20
+
+<div class=3D"yiv6337990887MsoNormal">Thank you </div>
+=20
+
+<div class=3D"yiv6337990887MsoNormal">Patsy</div>
+=20
+
+<div class=3D"yiv6337990887MsoNormal"> &nbsp;</div>
+=20
+
+<div class=3D"yiv6337990887MsoNormal"> &nbsp;</div>
+=20
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"margin-lef=
+t:5.4pt;border-collapse:collapse;" class=3D"yiv6337990887MsoNormalTable"><t=
+body><tr style=3D"min-height:38.25pt;"><td colspan=3D"1" rowspan=3D"1" vali=
+gn=3D"top" style=3D"border:none;border-bottom:solid #548DD4 1.0pt;padding:0=
+in 5.4pt 0in 5.4pt;min-height:38.25pt;">
+
+<div style=3D"line-height:115%;" class=3D"yiv6337990887MsoNormal"><b><span =
+style=3D"color:#1F497D;">Patsy Zimmerman
+</span></b></div>
+=20
+
+<div style=3D"line-height:115%;" class=3D"yiv6337990887MsoNormal"><i><span =
+style=3D"font-size:10.0pt;line-height:115%;color:#1F497D;letter-spacing:.2p=
+t;">Sourcing Manager</span></i></div>
+=20
+
+<div style=3D"line-height:115%;" class=3D"yiv6337990887MsoNormal"><b><span =
+style=3D"color:#1F497D;letter-spacing:.2pt;">St. Luke's Health System</span=
+></b></div>
+=20
+
+<div style=3D"line-height:115%;" class=3D"yiv6337990887MsoNormal"><i><span =
+style=3D"font-size:10.0pt;line-height:115%;color:#1F497D;letter-spacing:.2p=
+t;">3330 E. Louise Dr. #500 Meridian ID 83642</span></i><i><span style=3D"c=
+olor:#1F497D;"></span></i></div>
+=20
+</td></tr><tr style=3D"min-height:27.0pt;"><td colspan=3D"1" rowspan=3D"1" =
+valign=3D"top" style=3D"padding:0in 5.4pt 0in 5.4pt;min-height:27.0pt;">
+
+<div style=3D"line-height:115%;" class=3D"yiv6337990887MsoNormal"><i><span =
+style=3D"font-size:10.0pt;line-height:115%;color:#1F497D;letter-spacing:.2p=
+t;">P: (208) 706-9671</span></i></div>
+=20
+
+<div style=3D"line-height:115%;" class=3D"yiv6337990887MsoNormal"><i><span =
+style=3D"font-size:10.0pt;line-height:115%;color:#1F497D;letter-spacing:.2p=
+t;">F: (208) 381-5103</span></i></div>
+=20
+
+<div style=3D"line-height:115%;" class=3D"yiv6337990887MsoNormal"><i><span =
+style=3D"font-size:10.0pt;line-height:115%;color:#1F497D;letter-spacing:.2p=
+t;">E:
+</span></i><a rel=3D"nofollow noopener noreferrer" shape=3D"rect" ymailto=
+=3D"mailto:zimmermp@slhs.org" target=3D"_blank" href=3D"mailto:zimmermp@slh=
+s.org"><i><span style=3D"font-size:10.0pt;line-height:115%;color:#0563C1;le=
+tter-spacing:.2pt;">zimmermp@slhs.org</span></i></a><i><span style=3D"font-=
+size:10.0pt;line-height:115%;color:#1F497D;letter-spacing:.2pt;">
+</span></i><i><u><span style=3D"font-size:10.0pt;line-height:115%;color:blu=
+e;letter-spacing:.2pt;">&nbsp;</span></u></i><i><span style=3D"font-size:10=
+.0pt;line-height:115%;color:#1F497D;letter-spacing:.2pt;"></span></i></div>
+=20
+</td></tr></tbody></table>
+
+<div class=3D"yiv6337990887MsoNormal"> &nbsp;</div>
+=20
+
+<div class=3D"yiv6337990887MsoNormal"> &nbsp;</div>
+=20
+</div>
+
+
+<hr>"This message is intended for the use of the person or entity to which =
+it is addressed and may contain information that is confidential or privile=
+ged, the disclosure of which is governed by applicable law. If the reader o=
+f this message is not the intended recipient, you are hereby notified that =
+any dissemination, distribution, or copying of this information is strictly=
+ prohibited. If you have received this message by error, please notify us i=
+mmediately and destroy the related message."<br clear=3D"none">
+
+
+</div>
+</div>
+</div>
+</font></div>
+</div>
+</div>
+</div>
+
+------=_Part_1445570_1632139793.1663857042747--

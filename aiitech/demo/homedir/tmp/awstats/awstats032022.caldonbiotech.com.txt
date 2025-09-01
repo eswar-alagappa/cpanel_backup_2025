@@ -1,0 +1,834 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 202203 will be lost/reset.
+# Last config file used to build this data file was /home3/cbt/tmp/awstats/awstats.caldonbiotech.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2010                
+POS_TIME 2690                
+POS_VISITOR 25522               
+POS_DAY 26858               
+POS_DOMAIN 3447                
+POS_LOGIN 3767                
+POS_ROBOT 3922                
+POS_WORMS 4556                
+POS_EMAILSENDER 4687                
+POS_EMAILRECEIVER 4830                
+POS_SESSION 27549               
+POS_SIDER 27749               
+POS_FILETYPES 4965                
+POS_DOWNLOADS 5116                
+POS_OS 5206                
+POS_BROWSER 5372                
+POS_SCREENSIZE 5756                
+POS_UNKNOWNREFERER 5830                
+POS_UNKNOWNREFERERBROWSER 6363                
+POS_ORIGIN 6788                
+POS_SEREFERRALS 6926                
+POS_PAGEREFS 7070                
+POS_SEARCHWORDS 7218                
+POS_KEYWORDS 7370                
+POS_MISC 2353                
+POS_ERRORS 7429                
+POS_CLUSTER 3623                
+POS_SIDER_404 7613                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20220401002021 84 20970 14904321849697
+FirstTime 20220301021756
+LastTime 20220331231102
+LastUpdate 20220401183843 84 0 83 0 0
+TotalVisits 328                 
+TotalUnique 32                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 35                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+DirectorSupport 0 0 0
+AddToFavourites 0 17 0
+JavascriptDisabled 0 0 0
+FlashSupport 0 0 0
+JavaEnabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+QuickTimeSupport 0 0 0
+TotalMisc 0 0 0
+RealPlayerSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 26 26 0 57 95 1065684
+1 40 40 0 136 191 1507893
+2 19 19 5927 168 211 1659848
+3 23 23 632 66 87 226887
+4 15 15 0 79 99 1015865
+5 20 20 38220 71 88 456903
+6 19 19 0 49 96 439153
+7 18 18 0 129 156 540292
+8 18 18 0 90 112 1255126
+9 25 25 540 105 133 742360
+10 8 8 0 53 64 26812
+11 29 29 29726 96 143 878523
+12 30 30 41 76 109 623131
+13 24 24 0 61 103 366108
+14 22 22 311 55 86 647370
+15 24 24 231252 154 169 1036743
+16 24 24 216 89 121 120343
+17 19 19 800 127 144 705793
+18 25 27 17571 48 149 341807
+19 17 17 91 72 200 216297
+20 14 14 1 77 92 568599
+21 20 20 19 80 99 411725
+22 46 46 1980 166 175 652092
+23 10 10 52 194 233 3018492
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 9
+us 487 487 258798
+ru 31 31 2311
+nl 8 8 29726
+it 2 2 0
+au 2 2 0
+de 2 2 0
+fr 2 2 782
+cl 1 1 18210
+gb 0 2 17500
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 13
+Googlebot/ 308 8008 20220331231101 308
+bingbot/ 72 1872 20220331213353 72
+unknown 48 1248 20220330102000 48
+Applebot/ 34 884 20220330033227 34
+oBot/ 24 624 20220329134705 24
+bot[\s_+:,\.\;\/\\-] 23 468 20220326093820 23
+robot 4 104 20220330231225 4
+YandexBot/ 4 104 20220321122028 4
+Mail\.RU_Bot/ 2 52 20220331001846 2
+(firefox/)([0-9]\.|[0-1][0]\.) 2 13084 20220327164256 0
+ELinks/ 2 52 20220305060144 2
+netEstate[\x20]NE[\x20]Crawler 2 52 20220304160253 2
+facebookexternalhit/ 2 52 20220326185210 2
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 5
+Unknown 30 44455 0 0
+cgi 2 632 0 0
+php 475 2028 0 0
+txt 2 17526 0 0
+html 28 262660 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 2
+/license.txt 2 0 17500
+/robots.txt 0 2 52
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 8
+linux 3 1
+macosx10 1 1
+win7 12 12
+macosx 23 23
+win10 31 31
+win8 1 1
+linuxandroid 2 2
+Unknown 466 464
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 17
+chrome74.0.3729.169 5 5
+chrome76.0.3809.100 4 4
+chrome72.0.3626.121 2 2
+firefox62.0 2 0
+firefox68.0 5 5
+chrome74.0.3729.157 3 3
+firefox77.0 18 18
+Unknown 458 456
+firefox36.0 1 1
+chrome84.0.4147.125 8 8
+chrome39.0.2171.95 1 1
+firefox67.0 4 4
+firefox98.0 1 1
+chrome66.0.3359.30 2 2
+mozilla 8 8
+chrome50.0.2661.75 12 12
+firefox66.0 5 5
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 7
+Cpanel-HTTP-Client/1.0 20220316225235
+WordPress/5.0.16;_https://caldonbiotech.com 20220331231102
+facebookexternalhit/1.1_(_http://www.facebook.com/externalhit_uatext.php) 20220326185210
+WordPress/5.0.15;_https://caldonbiotech.com 20220311010804
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20220316225238
+node-fetch/1.0_(_https://github.com/bitinn/node-fetch) 20220301175218
+wp_is_mobile 20220321215127
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 6
+WordPress/5.0.15;_https://caldonbiotech.com 20220311010804
+facebookexternalhit/1.1_(_http://www.facebook.com/externalhit_uatext.php) 20220326185210
+wp_is_mobile 20220321215127
+node-fetch/1.0_(_https://github.com/bitinn/node-fetch) 20220301175218
+WordPress/5.0.16;_https://caldonbiotech.com 20220331231102
+Cpanel-HTTP-Client/1.0 20220316225235
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 86 90
+From1 25 25
+From2 0 0
+From3 0 0
+From4 424 424
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 9
+302 41 0
+406 263 59438
+400 2 2
+409 56 4648
+301 1064 242
+405 4 168
+404 1148 18421978
+403 17 10366
+500 16 400
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 428
+/wp-admin/maint/wp-aespa.php 1 -
+/wp-bmta.php 2 caldonbiotech.com
+/load.php 4 -
+/autoload_classmap.php 2 -
+/defau1t.php 4 www.bing.com
+/main 2 -
+/.well-known/pki-validation/13A8B26A8D7AA786082A3A096472F684.txt 2 -
+/.well-known/pki-validation/3622DA08F38B44333C56753AE9E6EA1F.txt 2 -
+/public/assets/global/plugins/server/php/ 1 -
+/css/load.php 8 caldonbiotech.com
+/www.caldonbiotech.com.php 2 -
+/.well-known/pki-validation/F7412CF6260399E44CCCE6A5A7822DC6.txt 2 -
+/wp-content/outcms.php 7 www.bing.com
+/wp-admin/style.php 2 www.bing.com
+/media-admin.php 4 www.bing.com
+/.well-known/pki-validation/753A2ADDA9AE08750028514054941BD7.txt 2 -
+/wDR.php 2 -
+/.well-known/pki-validation/8CF053414FC51BE6492CB2A046BFCAC0.txt 2 -
+/blog/wp-admin/includes/ 2 www.google.com
+/index3.php 1 -
+/.well-known/pki-validation/FE92859DCFCF3DCF828F6E20FDFFCA2D.txt 2 -
+/wp/wp-admin/install.php 1 -
+/wp-content/plugins/background-image-cropper/s_e.php 1 -
+/wp-2019.php 2 -
+/wp-content/plugins/erro.zip 2 caldonbiotech.com
+/wp-plain.php.suspected 4 -
+/sites/default/files/alfacgiapi 4 www.bing.com
+/jquery-file-upload/server/php/ 1 -
+/bc 2 -
+/misc/drupal.js 4 -
+/beence.php 4 www.bing.com
+/.aws/credentials 2 -
+/.well-known/pki-validation/51B1474CE90AD857DFB27FE8C4CF6A93.txt 2 -
+/wp-admin/css/colors/blue/blue.php 1 -
+/plugins/jQuery-File-Upload/server/php/ 1 -
+/wp-content/themes/classic/inc/ 2 http://caldonbiotech.com/wp-content/themes/classic/inc/index.php
+/assets/backend/plugins/plupload/examples/upload.php 2 -
+/.well-known/pki-validation/828E0E9B5A9A9A3D8B2BB2B0D2A312A4.txt 2 -
+/wp-class.php 2 -
+/.well-known/pki-validation/7FDF09351D20349AC582415B8A608C50.txt 2 -
+/.well-known/pki-validation/4C24226B2B495F8823143FC8C0AC4329.txt 2 -
+/contact-us 1 -
+/.well-known/pki-validation/73A5CBA0D254CA0AE80A459A2AE2376B.txt 2 -
+/wp-xyiaw.php 2 caldonbiotech.com
+/wp-content/sistem.php 2 -
+/wp-includes/widgets/class-wp-widget-content.php 2 -
+/defau11.php 4 www.bing.com
+/.well-known/pki-validation/DB355273B7CF9613947E7ACD14BBAAED.txt 2 -
+/.well-known/pki-validation/E12B62FE3C24A2F3779CAF096ACCEB1E.txt 2 -
+/admin/assets/fileupload/server/php/ 1 -
+/oldsite/wp-admin/install.php 1 -
+/wp-content/hbhbrdryld.php 1 -
+/.well-known/pki-validation/4CDB355883E7D3F5BD677CC4DB27F75B.txt 2 -
+/ALFA_DATA 4 www.bing.com
+/wp-xxav.php 2 caldonbiotech.com
+/assets/images/wp_wrong_datlib.php 1 -
+/wp-includes/ms-cache.php.suspected 4 -
+/admin/view/stylesheet/accesson.php 2 -
+/blog/ 1 -
+/wp-admin/css/colors/index.php 1 -
+/wordpress/wp-admin/install.php 1 -
+/cgi-bin/cgi-bin.php 4 -
+/.well-known/pki-validation/7C56E9D57EA7920895BA258F07808F0C.txt 2 -
+/jindex.php 2 -
+/public/.aws/credentials 2 -
+/.well-known/acme-challenge/menu_settings.php 1 -
+/wp-content/wp-aespa.php 2 -
+/wp-includes/images/css.php 4 www.bing.com
+/olux.php 4 www.bing.com
+/qq.php 1 -
+/wordpress/wp-admin/includes/ 2 www.google.com
+/wp-content/plugins/woolementor/assets/js/front.js 3 -
+/wp-includes/ALFA_DATA 4 www.bing.com
+/wp-content/plugins/background-image-cropper/image/ico/s_ne.php 1 -
+/.well-known/pki-validation/3BEFB1547A6B279CA20A90D631BE13F1.txt 2 -
+/wp-content/plugins/press/wp-class.php 1 -
+/_profiler/phpinfo 2 -
+/.env/ 4 -
+/wp-content/themes/logs.txt 4 caldonbiotech.com
+/shells.php 4 www.bing.com
+/assets/images/moduless.php 4 -
+/phpinfo.php 2 -
+/legion.php 4 www.bing.com
+/.well-known/pki-validation/3FBDA22C9C51718D61E7010F67EEC83D.txt 2 -
+/blog/wp-includes/wlwmanifest.xml 2 -
+/3index.php 18 caldonbiotech.com
+/.well-known/pki-validation/804E6EFDA323917A3D134BFF235FD526.txt 2 -
+/templates/beez3/alfacgiapi 4 www.bing.com
+/.well-known/pki-validation/8CC6AD36AFDB630EDE4E0320CBB4C6B2.txt 2 -
+/.well-known/pki-validation/83E13955EA4B6A0AE0DB727687B33752.txt 2 -
+/wp_wrong_datlib.php 5 www.bing.com
+/wp-content/plugins/wp-booking-calendar/admin/lang_import.php 4 -
+/css/votes.php.suspected 2 -
+/s_ne.php 5 www.bing.com
+/wp-fiter.php 2 caldonbiotech.com
+/css.php 4 www.bing.com
+/.well-known/alfacgiapi 4 www.bing.com
+/.well-known/pki-validation/440BBAB29753C99B1358E41D75F55EA5.txt 2 -
+/.well-known/pki-validation/39610DEDFC5AF0C5EBA65FE914CC061F.txt 2 -
+/assets/images/s_ne.php 1 -
+/config.php 4 www.bing.com
+/wp-content/plugins/background-image-cropper/s_ne.php 1 -
+/xx.php 2 -
+/wp-admin/css/colors/blue/menu_settings.php 1 -
+/wp-includes/Requests/Exception/HTTP/512.php 2 -
+/wp-mail.php.suspected 2 -
+/assets/images/images.php 2 -
+/takeout.php 2 -
+/wp-content/plugins/wpcargo/includes/barcode.php 2 -
+/.well-known/pki-validation/D65A3A25A7274AFFC3A700AC98E50942.txt 2 -
+/caldonbiotech.com.php 2 -
+/sistem.php 1 -
+/.well-known/pki-validation/035360E422C41FE345FB20AE166A60EC.txt 2 -
+/wp-content/export.php 4 www.bing.com
+/wp-includes/SimplePie/gzdecodes.php 2 -
+/assets/js/fileupload/server/php/ 1 -
+/wp-content/uploads/cgialfa 4 www.bing.com
+/assets/images/accesson.php 3 -
+/.well-known/pki-validation/86BAD91588CBD03B06A49ADA0AC688FD.txt 2 -
+/wp-content/plugins/networker/networker.php 2 -
+/xleet.php 6 www.bing.com
+/.well-known/cgialfa 4 www.bing.com
+/blog// 1 -
+/assets/plugins/jQuery-File-Upload/server/php/ 1 -
+/.well-known/pki-validation/FCE158340CC095B317EB465C35C54A4D.txt 2 -
+/xmlrpc.php.suspected 4 -
+/wp-admin/cgialfa 2 www.bing.com
+/wso.php 6 www.bing.com
+/wp-includes/shell20211028.php 1 -
+/sites/default/files/ALFA_DATA 4 www.bing.com
+/.well-known/pki-validation/ED8295E92796A4FE6E6EB0093FC0D084.txt 2 -
+/xmrlpc.php 4 www.bing.com
+/search.php 1 -
+/administrator/ 12 -
+/wp-content/cgialfa 4 www.bing.com
+/wp-admin/votes.php 3 -
+/.well-known/pki-validation/B150934021973928B3D9C80A5DD81FF2.txt 2 -
+/.well-known/pki-validation/C41C7D80C72ECD1E414C9B81D234B7A7.txt 2 -
+/.well-known/pki-validation/32C4A7C0C8474F974DED7135B536031F.txt 2 -
+/templates/beez3/ 4 www.bing.com
+/xml.php 2 http://caldonbiotech.com/xml.php
+/wp-content/uploads/alfacgiapi 4 www.bing.com
+/cache/accesson0.php 2 -
+/.well-known/pki-validation/73BD3359E50CB95589A0A43EDB04764D.txt 2 -
+/.well-known/pki-validation/E2BA1617024C1DE33E235CA984F48555.txt 2 -
+/ups.php 4 www.bing.com
+/blog/wp-admin/install.php 1 -
+/.well-known/pki-validation/D8396A48E36F4F8FE751B5ADDACDF581.txt 2 -
+/wp-admin/alfacgiapi 2 www.bing.com
+/wp-content/plugins/background-image-cropper/wp_wrong_datlib.php 1 -
+/accesson.php 2 -
+/about.php 4 www.bing.com
+/sh3llx.php 2 -
+/assets/jQuery-File-Upload/server/php/ 1 -
+/assets/global/plugins/plupload/examples/upload.php 2 -
+/ffAA531.php 2 -
+/.well-known/pki-validation/58C8C7B4BA1680BA8BC343582560388B.txt 2 -
+/magento_version 6 -
+/.well-known/pki-validation/FD48D80EC8AE8918954A56B71AE892A7.txt 2 -
+/upload.php 4 www.bing.com
+/wp-booking.php 4 www.bing.com
+/.well-known/pki-validation/8272F49186E069A0DE14D724A351841C.txt 2 -
+/moduless.php 6 www.bing.com
+/.well-known/pki-validation/A6FEF05AC046F494A102C160BE2E0C52.txt 2 -
+/util/login.aspx 4 -
+/slicemap.php 4 -
+/.well-known/pki-validation/F3DE6731597FBE93A53A838836580049.txt 2 -
+/web/wp-includes/wlwmanifest.xml 2 -
+/wp-content/wp-content.php 2 -
+/wp-plain.php 4 -
+/style.php 4 www.bing.com
+/admin/controller/extension/extension/ALFA_DATA 4 www.bing.com
+/wp.php 4 www.bing.com
+/cache/accesson.php 2 -
+/xindex.php 4 www.bing.com
+/.well-known/pki-validation/809218C51337D14430E0A8C57A252BC8.txt 2 -
+/.well-known/pki-validation/BF575D73D7311D768C058B28EA7C9F2C.txt 2 -
+/admin/controller/extension/extension/cgialfa 4 www.bing.com
+/1.php 4 www.bing.com
+/license.php 1 -
+/admin/jquery-file-upload/server/php/ 1 -
+/hbhbrdryld.php 1 -
+/wp-admin/sistem.php 1 -
+/alwso.php 2 -
+/wp-admin.php 5 www.bing.com
+/wp-content/plugins/tatsu/public/js/vendor/tilt.min.js 2 -
+/wp-info.php 2 -
+/up.php 4 www.bing.com
+/wp-content/logo.jpg 2 caldonbiotech.com
+/templates/beez3/cgialfa 4 www.bing.com
+/.well-known/pki-validation/99B647C5BEE1EE3602BF0FA753BBAE44.txt 2 -
+/class-wp-widget-archives.php 2 -
+/.well-known/pki-validation/BF1EFAAE90CE8CE96F44C549A6BD71FF.txt 2 -
+/.well-known/pki-validation/5BAD106F39FB5D50AF3CBBD6D71DA396.txt 2 -
+/wp-config.txt 2 -
+/wp-content/db-cache.php 4 www.bing.com
+/wp-plugins.php 5 www.bing.com
+/wp-admin/hbhbrdryld.php 1 -
+//wp-content/themes/sketch/404.php 1 www.google.com
+/.well-known/pki-validation/C55D1AA9C647C72EE4980C3EC91DB7B5.txt 2 -
+/wp-cla.php 2 caldonbiotech.com
+/.well-known/pki-validation/FDBAF6D13A457186A2B296B9AB82CCE3.txt 2 -
+/auto-seo.php 2 -
+/.well-known/pki-validation/03BC9D29C81B3CD5BCE4CCF0059ABDBC.txt 2 -
+/wp-admin/css/colors/light/colors.php 1 -
+/admin.php 10 caldonbiotech.com
+/wp-content/plugins/wp-striplple/striplple.php 1 caldonbiotech.com
+/logs.php 2 -
+/lock360.php 4 www.bing.com
+/wp-includes/css/css.php 4 www.bing.com
+/xmlrpcs.php 4 www.bing.com
+/s_e.php 5 www.bing.com
+/wp-content/themes/twentyfive/include.php/wp/wp-content/themes/sketch/404.php 1 www.google.com
+/humans.txt 8 -
+/new/wp-admin/install.php 1 -
+/.well-known/pki-validation/D3A51FF785B5AEEAF4895D829236348F.txt 2 -
+/js.php 1 -
+/crypto/bitcoin/wallet.dat 2 -
+/cgi-bin/menu_settings.php 1 -
+/2index.php 6 -
+/admin/assets/server/php/ 1 -
+/test/wp-admin/install.php 1 -
+/wp-content/plugins/wp-light/wp-light.php 2 -
+/assets/images/utility.php 1 -
+/assets/images/s_e.php 1 -
+/wp-admin/css/colors/colors.php 2 -
+/.well-known/pki-validation/1506855B29FB92C6FE6A237A23C54610.txt 2 -
+/x.php 4 www.bing.com
+/export.php 4 www.bing.com
+/public/assets/plugins/plupload/examples/upload.php 2 -
+/.well-known/pki-validation/0E453FB099D4822B19DCC25EA2441BE2.txt 2 -
+/index.php 1 caldonbiotech.com
+/wp-includes/wp-includes.php 2 -
+/.well-known/pki-validation/B1CE0C64B1D5CF3F7EF4CBF814F83AA0.txt 2 -
+/wp-content/themes/FifteenTen/404.php.suspected 4 -
+/wp-content/plugins/background-image-cropper/accesson.php 2 -
+/1index.php 6 www.bing.com
+/wp-fox.php 2 -
+/wordpress/ 2 -
+/content/pages/home.php 2 -
+/site/wp-admin/includes/ 2 www.google.com
+/z.php 4 www.bing.com
+/.well-known/pki-validation/B6D83A729DBE68CC587CFBE2D29E64AE.txt 2 -
+/cache/s_e.php 1 -
+/old 2 -
+/system_log.php 4 www.bing.com
+/.well-known/pki-validation/D2BE0B3BA09C69865D9F9D02C2C1BD6C.txt 2 -
+/.well-known/pki-validation/EFDAA52E549B037BC4EA909B57E7FAAC.txt 2 -
+/.well-known/pki-validation/739755EBDB358CB18A65399C54AC9F12.txt 2 -
+/assets/fileupload/server/php/ 1 -
+/cache.php 1 -
+/.well-known/pki-validation/993E680F495CA188F33CE83BBF505D1B.txt 2 -
+/WSO.php 2 -
+/ckeditor/connectors/php/connector.php 2 -
+/wp/wp-admin/includes/ 2 www.google.com
+/web/wp-admin/install.php 1 -
+//wp-content/themes/twentyfive/include.php/wp/wp-content/themes/sketch/404.php 1 www.google.com
+/old/wp-admin/install.php 1 -
+/wikindex.php 10 caldonbiotech.com
+/info.php 2 -
+/js/ckfinder/core/connector/php/connector.php 2 -
+/wp 2 -
+/wp-blog-post.php 1 -
+/.well-known/pki-validation/73DCBD7E7C69B26238EC9CD9D71DF29A.txt 2 -
+/debug/default/view 2 -
+/.well-known/pki-validation/10F04B08877D6F1B2722BF71F4775B24.txt 2 -
+/aws/.credentials 4 -
+/alfa.php 4 www.bing.com
+/.well-known/pki-validation/87C9F2799E3BEBD63452557DC2E46DC6.txt 2 -
+/cgialfa 4 www.bing.com
+/.well-known/pki-validation/9FFCA85D19229E689D507C67D2DDE89E.txt 2 -
+/wp-content/3index.php 6 -
+/.well-known/pki-validation/BAC17D894304745D7754161AA25454EF.txt 2 -
+/archives.php 4 www.bing.com
+/wp-backup-sql-302.php 4 www.bing.com
+/css/votes.php 2 -
+/.well-known/ALFA_DATA 4 www.bing.com
+/wp-admin/radio.php 2 -
+/qindex.php 4 www.bing.com
+/.well-known/pki-validation/75F516954E4A35A029A3F2B6B65E5F07.txt 2 -
+/.well-known/pki-validation/6427B1C94FC42511B58FE45C4AA38659.txt 2 -
+/wp-includes/SimplePie/font-editor.php 2 caldonbiotech.com
+/.aws/config 2 -
+/wp-includes/css/wp-config.php 4 www.bing.com
+/.well-known/pki-validation/9415B43C9243F18EC40C736B5FFEEA80.txt 2 -
+/2index.php.suspected 4 -
+/a.php 4 www.bing.com
+/wp-admin/ALFA_DATA 2 www.bing.com
+/.well-known/pki-validation/B8D9FA07BD6A0C70732CAEB7DFD2CC4A.txt 2 -
+/.aws/.credentials 2 -
+/accesson0.php 2 -
+/wp-offseta.php 2 caldonbiotech.com
+/wp-stream.php 1 caldonbiotech.com
+/assets/colors/accesson.php 2 -
+/wp-content/ALFA_DATA 4 www.bing.com
+/.well-known/pki-validation/5E90406727C2486DF82C3ED0A6E6FF97.txt 2 -
+/wp-content/plugins/infusionsoft-php-sdk-master/composer.json 2 -
+/assets/images/accesson0.php 2 -
+/.well-known/pki-validation/168E3DBBC95EA3D9F3A1571D4883BD74.txt 2 -
+/.well-known/pki-validation/7BE9C2ADDF67D177C659B797E98BED10.txt 2 -
+/.well-known/pki-validation/F0FFDC15E6E24AE9B27318BEA56FB338.txt 2 -
+/cms/wp-admin/install.php 1 -
+/wp-includes/ID3/menu_settings.php 1 -
+/wp/wp-content/themes/sketch/404.php 2 www.google.com
+/.well-known/pki-validation/420191AAF797E28A387DED403EC06661.txt 2 -
+/.well-known/pki-validation/1BD4443AB3419E9E7648984186D678CC.txt 2 -
+/wp-content/plugins/backup_index.php 4 www.bing.com
+/wp-content/uploads/2019/index.php 1 -
+/site/wp-admin/install.php 1 -
+/local.php 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/%5C%22 1 http://www.google.com/url
+/products.html 2 -
+/xlet.php 2 -
+/wp-includes/alfacgiapi 4 www.bing.com
+/radio.php 6 -
+/wp-content/functions.php 2 -
+/wp-content/plugins/background-image-cropper/image/ico/s_e.php 1 -
+/.well-known/pki-validation/AF64BF6EF2A7823A17DDA599C82F8E1E.txt 2 -
+/ads.txt 10 -
+/wp-content/uploads/ALFA_DATA 4 www.bing.com
+/.well-known/pki-validation/AC86C6DCF10F99F05A9ADC8668C903DD.txt 2 -
+/xleet-shell.php 2 -
+/admin/assets/plugins/server/php/ 1 -
+/downloadl/moban.html 6 -
+/admin/controller/extension/extension/alfacgiapi 4 www.bing.com
+/admin/jQuery-File-Upload/server/php/ 1 -
+/longer.php 3 www.google.com
+/old-index.php 22 caldonbiotech.com
+/assets/js/jquery-file-upload/server/php/ 1 -
+/wp-includes/sistem.php 1 -
+/.env.save 2 -
+/doc.php 4 www.bing.com
+/.well-known/pki-validation/010628E9703A6FA431BBD9BC106522FF.txt 2 -
+/wp-content/plugins/background-image-cropper/image/ico/accesson.php 2 -
+/wp-admin/wp-admin.php 1 -
+/wallet.dat 2 -
+/wp-content/alfacgiapi 4 www.bing.com
+/public/assets/plugins/server/php/ 1 -
+/wp-includes/ms-cache.php 4 -
+/sys-cache/index.php 1 -
+/core/misc/drupal.js 4 -
+/wp-includes/cgialfa 4 www.bing.com
+/well-known/acme-challenge/a/a/a/a/a.php 2 -
+/error.php 4 www.bing.com
+/wp-includes/Requests/Exception/HTTPS.php 1 -
+/wp-includes/wp-class.php 5 www.bing.com
+/wp-admin/js/widgets/wp-aespa.php 1 -
+/assets/plugins/fileupload/server/php/ 1 -
+/bk 2 -
+/assets/plugins/plupload/examples/upload.php 2 -
+/.well-known/pki-validation/1C2ABE55D567A6A0F04D18D78BD87AF4.txt 2 -
+/admin/fileupload/server/php/ 1 -
+/.well-known/pki-validation/EB7B6904BCCD72429D1FDB90A939B231.txt 2 -
+/templates/beez3/ALFA_DATA 4 www.bing.com
+//contact-us 1 -
+/.well-known/pki-validation/724F3EA3394B1BF33DD3FD83D853C9C1.txt 2 -
+/wp-vola.php 2 caldonbiotech.com
+/wp-couldent.php 2 -
+/assets/admin/plugins/jQuery-File-Upload/server/php/ 1 -
+/install.php 4 -
+/installer.php 4 -
+/admin/assets/plugins/jQuery-File-Upload/server/php/ 1 -
+/backup 2 -
+/wordpress 2 -
+/.well-known/pki-validation/0DD7D6BC023058B96E8B40AA820083E0.txt 2 -
+/cache/index3.php 1 -
+/load.php.suspected 4 -
+/.well-known/pki-validation/39465DEA81743734C5C2950D23B58C77.txt 2 -
+/wp-sitemap-posts-post-1.xml 2 -
+/register/ 6 -
+/wp-content/plugins/background-image-cropper/moduless.php 2 -
+/wp-content/mu-plugins-old/ 4 www.bing.com
+/.well-known/pki-validation/3160D85D111AE52F373B18A4E54CA9B5.txt 2 -
+/admin.php.suspected 2 -
+/sites/default/files/cgialfa 4 www.bing.com
+/bitcoin/wallet.dat 2 -
+/gank.php.PhP 4 www.bing.com
+/.well-known/pki-validation/1D1B52DA58EBDF8764EA597DE13717FD.txt 2 -
+/vendor/phpunit/phpunit/LICENSE/ 2 -
+/wp-content/themes/twentythree/inc/ 2 http://caldonbiotech.com/wp-content/themes/twentythree/inc/index.php
+/cache/wp_wrong_datlib.php 1 -
+/.well-known/pki-validation/8B5B97BE9AE248E09F9D4E3FCA5DD7DA.txt 2 -
+/.well-known/pki-validation/9DE6BAC02E74E0D0B49F1DA868FAAD44.txt 2 -
+/.well-known/pki-validation/B9FBBF17E75EEE277B8C068C68069563.txt 2 -
+/assets/plugins/server/php/ 1 -
+/wp-content/plugins/image-sizes/assets/js/admin.js 3 -
+/wp-content/mu-plugins/db-safe-mode.php 4 www.bing.com
+/wp-cruz.php 2 caldonbiotech.com
+/contents.php 4 caldonbiotech.com
+/wp-content/plugins/background-image-cropper/index3.php 1 -
+/wp-content/themes/izo/inc/customizer/body.php 2 caldonbiotech.com
+/.well-known/pki-validation/28C3BD27911D31C12483F5A796B255C8.txt 2 -
+/backup/wallet.dat 2 -
+/wp-content/themes/cindex.php 6 -
+/wp-content/themes/sketch/404.php 9 www.google.com
+/wikindex.php.suspected 2 -
+//longer.php 1 www.google.com
+/.well-known/pki-validation/D8403C03296F6602D55976C4A82962FF.txt 2 -
+/wp-content/plugins/wp-automatic/process_form.php 3 -
+/.well-known/pki-validation/53BD4FF5BDC3297FF9431AE540586EE8.txt 2 -
+/wp-content/uploads.php 2 -
+/wp-content/qq.php 1 -
+/.suspected 4 -
+/shell.php 6 www.bing.com
+/wp-content/cache.php 1 -
+/blog/wp-json/wp/v2/users 1 -
+/.well-known/pki-validation/6917EAAB320138806108E9D159DE5D4B.txt 2 -
+/.well-known/pki-validation/F5E2912FC37A690DB63F7F70E7C9D4CA.txt 2 -
+/wp-includes/sodium_compat/src/Core32/Ed25519.php 12 -
+/.well-known/pki-validation/A7396553B3DFB15C52289DF3E054EA8B.txt 2 -
+/backup/wp-admin/install.php 1 -
+/wp-signin.php 12 www.bing.com
+/wp-content/themes/FifteenTen/404.php 4 -
+/alfacgiapi 4 www.bing.com
+/nc_assets/img/featured/600/600.php 2 -
+/caldonbiotech.com:443 2 -
+/.well-known/pki-validation/C61A0C57F232DFE6D19B8947685C279B.txt 2 -
+/ckfinder/core/connector/php/connector.php 2 -
+/.well-known/pki-validation/6579E551757EF1DC8F0BADB9C86BF749.txt 2 -
+/wp-content/plugins/ubh/up.php 4 www.bing.com
+/adgwrgewrh 6 -
+/wp-theme.php 2 -
+/test.php 4 www.bing.com
+/.well-known/pki-validation/F8DC20230DE41019C50EA3197DDDE418.txt 2 -
+/p3pi.html 4 -
+/wp-content/themes/class.enhanced.php 2 caldonbiotech.com
+/.well-known/pki-validation/7FFD284512E006566261EA7A100F7AAA.txt 2 -
+/p4pi.html 4 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 35
+192.185.52.186 442 442 1152 20220331231102
+185.191.34.215 17 17 2109 20220331224830
+52.190.8.246 10 10 0 20220315005931
+212.192.241.18 6 6 0 20220306012318
+62.197.136.192 6 6 0 20220321215128
+193.106.191.112 4 4 202 20220331162015
+20.115.128.142 4 4 231252 20220325153445
+195.133.18.141 4 4 0 20220324193748
+20.223.185.232 2 2 0 20220322045357
+66.133.109.36 2 2 174 20220316225238
+34.221.255.206 2 2 174 20220316225238
+194.126.131.147 2 2 29726 20220301110529
+20.213.160.159 2 2 0 20220322170354
+139.59.72.187 2 2 0 20220328121053
+198.58.105.131 2 2 0 20220321084730
+3.142.122.14 2 2 174 20220316225238
+151.80.67.229 2 2 0 20220315142804
+34.122.107.220 2 2 632 20220315031222
+208.113.171.179 2 2 0 20220323123539
+207.180.203.19 2 2 0 20220309043944
+18.159.196.172 2 2 174 20220316225238
+164.68.124.233 2 2 0 20220323171610
+52.147.207.96 2 2 0 20220301123755
+212.83.176.120 2 2 782 20220301175219
+192.169.215.52 2 2 0 20220325095459
+173.252.83.11 0 1 26 
+81.109.71.43 0 2 17500 
+107.189.10.237 1 1 5927 20220325024556
+45.9.20.103 1 1 77 20220331225757
+69.171.251.15 0 1 26 
+167.86.78.234 1 1 18210 20220331055157
+18.144.39.254 1 1 260 20220320144959
+137.184.39.184 1 1 540 20220327090656
+138.121.170.230 1 1 18210 20220331055157
+92.204.55.213 2 2 0 20220323171610
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20220301 18 18 30508 11
+20220302 9 9 0 7
+20220303 12 12 0 8
+20220304 11 11 0 7
+20220305 16 16 0 12
+20220306 18 18 0 9
+20220307 13 13 0 11
+20220308 12 12 0 10
+20220309 20 20 0 13
+20220310 16 16 0 7
+20220311 15 15 0 12
+20220312 17 17 0 10
+20220313 14 14 0 10
+20220314 21 21 0 10
+20220315 26 26 2432 13
+20220316 37 37 1848 11
+20220317 14 14 0 12
+20220318 14 14 0 10
+20220319 11 11 0 9
+20220320 12 12 260 11
+20220321 23 23 0 13
+20220322 21 21 0 13
+20220323 24 24 52 13
+20220324 17 17 0 9
+20220325 23 23 237179 13
+20220326 10 12 17552 8
+20220327 9 9 540 7
+20220328 20 20 0 11
+20220329 14 14 0 9
+20220330 17 17 0 10
+20220331 31 31 37008 19
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+1h+ 23
+30mn-1h 45
+0s-30s 228
+5mn-15mn 7
+15mn-30mn 24
+30s-2mn 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 41
+/wp-cron.php 424 0 287 288
+/wp-load.php 30 0 11 11
+/wp-content/ 18 0 7 7
+/.well-known/acme-challenge/h2YX9JQ-s2pVXFOHREGfypWHCYCs02KqFyVG4aOLzBE 8 696 4 4
+/contact/ 4 145688 1 2
+/.well-known/acme-challenge/0644I1I9OS2BCN-N4Z6RIGDO33ZG8GGG 2 128 0 0
+/.well-known/acme-challenge/6Y5NDIO_BKHJL4W65MUY9SHSQFIOEHIV 2 128 0 0
+/cgi-sys/suspendedpage.cgi 2 632 1 1
+/wp-json 2 36420 2 2
+/.well-known/acme-challenge/HYUK5_1L_ACFD2-YMB59ZDE2OM3P1RAQ 2 128 0 0
+/.well-known/acme-challenge/0NY4QYG45UGAQBBIKAZ439B1T11ZXIVV 2 128 0 0
+/wp-content/plugins/akismet/class.akismet-https.php 2 900 1 0
+/.well-known/acme-challenge/BBVP3U95-D3LPTKA-L-C9V77RE8WW0KI 2 128 0 0
+/cgi-sys/403.html 2 900 0 1
+/blog/feed/ 2 782 1 1
+/.well-known/acme-challenge/5V_342YSXABZQPBATS1V7G02GB7IU07V 2 128 0 0
+/.well-known/acme-challenge/PIMO0ZMN95OPKJ56HY-5S5Q39RA26BCJ 2 128 0 0
+/about-us/ 2 115290 1 0
+/.well-known/acme-challenge/DAE_JCQJ70JJ9YKHPZASAGVEUK29YZFH 2 128 1 0
+/.well-known/acme-challenge/BUSFAC7R3FFDU-_371PBYI65CGDOE3UY 2 128 0 0
+/wp-content/themes/twentyseventeen/template-parts/header/header-image.php 1 68 0 0
+/wp-content/themes/twentyseventeen/template-parts/footer/footer-widgets.php 1 1 0 1
+/wp-content/themes/twentyseventeen/footer.php 1 110 0 1
+/wp-admin/install.php 1 540 1 1
+/wp-content/themes/twentyseventeen/template-parts/navigation/navigation-top.php 1 77 1 1
+/wp-content/themes/twentyseventeen/template-parts/post/content-excerpt.php 1 19 1 1
+/wp-json/wp/v2/users 1 260 1 1
+/wp-config.php 1 0 0 0
+/wp-content/themes/twentyseventeen/template-parts/footer/site-info.php 1 34 0 1
+/wp-content/themes/twentyseventeen/template-parts/post/content-video.php 1 19 0 1
+/wp-content/themes/twentyseventeen/template-parts/page/content-front-page-panels.php 1 21 0 0
+/wp-content/themes/twentyseventeen/header.php 1 22 1 1
+/wp-content/themes/twentyseventeen/template-parts/page/content-front-page.php 1 18 0 0
+/wp-content/themes/twentyseventeen/inc/color-patterns.php 1 0 0 0
+/wp-content/themes/twentyseventeen/template-parts/post/content-image.php 1 19 1 0
+/wp-json/wp/v2/posts 1 5927 1 1
+/wp-content/themes/twentyseventeen/searchform.php 1 1 1 0
+/wp-content/themes/twentyseventeen/template-parts/post/content-none.php 1 90 0 0
+/wp-content/themes/twentyseventeen/template-parts/header/site-branding.php 1 51 1 1
+/wp-content/themes/twentyseventeen/template-parts/page/content-page.php 1 19 1 0
+/wp-content/themes/twentyseventeen/template-parts/post/content-audio.php 1 19 1 0
+END_SIDER

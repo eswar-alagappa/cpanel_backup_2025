@@ -1,0 +1,283 @@
+Return-Path: <phyllis@asocal.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id CMlYMFK7UV29cQMA7/vpDg
+	(envelope-from <phyllis@asocal.com>); Mon, 12 Aug 2019 14:17:38 -0500
+Return-path: <phyllis@asocal.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Mon, 12 Aug 2019 14:17:38 -0500
+Received: from mail-pf1-f193.google.com ([209.85.210.193]:39073)
+	by gator4148.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.92)
+	(envelope-from <phyllis@asocal.com>)
+	id 1hxFp4-001ElK-AI
+	for customersupport@caldonbiotech.com; Mon, 12 Aug 2019 14:17:38 -0500
+Received: by mail-pf1-f193.google.com with SMTP id f17so46183851pfn.6
+        for <customersupport@caldonbiotech.com>; Mon, 12 Aug 2019 12:17:33 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=asocal-com.20150623.gappssmtp.com; s=20150623;
+        h=return-receipt-to:from:to:subject:date:message-id:mime-version
+         :thread-index:content-language:disposition-notification-to;
+        bh=0iRNDpESSChGW97hKzh/uNI/WON2uh3pFXH0zg1Ua/4=;
+        b=L32rMLif1NRUNA5ZXzRJhUZFWgpyVXILzJ8/AvgqyXWreSSITK9CmeGkNNF0wD2+6L
+         Z0S1dpYIazHgzcpURIkLimPdHGWpUem6thlrC53R3PjTtDFs/Hr7YoQpa9X865JjN2Wn
+         11pihmG4CG6yrKhEfOTHdpoJlVl+WjrO086NLWpPz6tV4t821L8eaP3d/vZKuRCV6rIb
+         Y+nm1snpRtgpZq+OG5tCtDIrrCoAN0zbjGn6L1pkIbV/X3kLhnwKlH1tuccVOA7b1U2K
+         UbWccn0m6ldL/URQs8HazhJqh9/pjaNOLRJMcs5i0DxWi7HZ8JGnEt4h2SUAmER20XHx
+         52sQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:return-receipt-to:from:to:subject:date
+         :message-id:mime-version:thread-index:content-language
+         :disposition-notification-to;
+        bh=0iRNDpESSChGW97hKzh/uNI/WON2uh3pFXH0zg1Ua/4=;
+        b=Yw+tYrNaXtbDbVijrq9/w/Yu52fuhVwUhDiUSftfWQ1qZhjW/Dq8a52ZkeLjVzU0x5
+         EzN87LG3lVY5KAa7VLR1KttDe+RKbCuoel/n58g1LGGbzp2eiL5WttVUtEpyxLNYW+eF
+         FngZkgwXZeDPdiyRqrd5+63k9P3ShOLB0EVNcYXJZ+yGy/mi/40bxZA6u60BmXZLlawF
+         O9OyFjlUc4YC7NfFUT9IZeog4i+tUAw4WVRKzurs1oGAelgGk5AdCsqVDZbvtxFeKvBx
+         Z72dHBJLVg09/jTcdLfLabvQnXjTHwPIFjoI5/z8RRztvLpk5pLC5xagOvqmatV9UNRc
+         YIsw==
+X-Gm-Message-State: APjAAAXvnQq7jhUOj2vYfSis/ExzEdbhsdfHEw+VfwDjueZ5+juJ9jHP
+	lr6K0PPs1i8sjpEYplMfzC3dXOSq94M=
+X-Google-Smtp-Source: APXvYqzsr9LchstEYkQ7ypocQp/lh1n72C1Y+7LF4SCzYcXF6GKOdkOKMgL24K77wmvTaVVQ1eSbPQ==
+X-Received: by 2002:a17:90a:de02:: with SMTP id m2mr798131pjv.18.1565637447063;
+        Mon, 12 Aug 2019 12:17:27 -0700 (PDT)
+Received: from DESKTOPKTVB81L ([2406:7400:5c:326a:21a4:25aa:eec2:e8a1])
+        by smtp.gmail.com with ESMTPSA id h195sm5103499pfe.20.2019.08.12.12.17.25
+        for <customersupport@caldonbiotech.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 12 Aug 2019 12:17:26 -0700 (PDT)
+Return-Receipt-To: "Phyllis Smith" <phyllis@asocal.com>
+From: "Phyllis Smith" <phyllis@asocal.com>
+To: <customersupport@caldonbiotech.com>
+Subject: Cardiologist Professionals contact list 2019
+Date: Mon, 12 Aug 2019 15:17:22 -0400
+Message-ID: <!&!AAAAAAAAAAAYAAAAAAAAAOfi8eOrbaNMvIl8lcjak5XCgAAAEAAAAIPWf9QggGVBj2qwhl5t538BAAAAAA==@asocal.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_02FC_01D55121.0C97C020"
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: AdVRQpD9qoO0s4CuSuGhqiRcjtxPyw==
+Content-Language: en-ca
+Disposition-Notification-To: "Phyllis Smith" <phyllis@asocal.com>
+X-Spam-Status: No, score=-1.5
+X-Spam-Score: -14
+X-Spam-Bar: -
+X-Spam-Flag: NO
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_02FC_01D55121.0C97C020
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+Hope you're doing great! 
+
+ 
+
+Would you be interested in the newly sourced "Cardiologist Professionals
+contact list" for your upcoming sales and marketing initiatives?
+
+ 
+
+You can reach:- Advanced Practice Nurses, Anesthesiologists, Cardiologists,
+Cardiothoracic Surgeons, Critical Care Physicians, General Medicine,
+Physicians, Hospitalists, ICU Medical Directors, International Professors,
+Clinicians,  Pulmonary, Critical Care, and Sleep Professionals,
+Interventional Bronchoscopists, Pediatric Pulmonologists, Physician
+Assistants, Practice Administrators, Executives, and Managers, Pulmonary,
+Critical Care, Directors and Associate, Training Program Directors,
+Pulmonologists, Registered Nurses, Respiratory Therapists, Sleep Medicine
+Physicians and many more across USA, UK, Canada, Europe and most of the
+World.
+
+ 
+
+Our Database Includes: Company Name, Contact name, Title, Address, Phone,
+Fax, City, State, Zip codes, Country, Industry, Employee size, Revenue size,
+Sic Code, Website and verified email address.
+
+ 
+
+Let me know your targeted audience in order to get back to you with updated
+counts, pricing and other information's.
+
+ 
+
+Target Industry-
+
+Target Job Title-
+
+Target Geography-
+
+ 
+
+Looking forward for your response
+
+ 
+
+Best Regards,
+
+Phyllis Smith 
+
+Marketing Specialist 
+
+Services | Email List | Telemarketing List | Direct Mailing List | Data
+Appending | Email
+
+ 
+
+Disclaimer: You were specifically sent this email based upon your company
+profile. If for some reason this was sent in error or you wish not to
+receive any further messages from us please reply with subject line as
+"Exclude" and you will be excluded from all future mailings.
+
+ 
+
+ 
+
+
+------=_NextPart_000_02FC_01D55121.0C97C020
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><META =
+HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii"><meta name=3DGenerator content=3D"Microsoft Word 12 =
+(filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style></head><body lang=3DEN-US><div class=3DWordSection1><p =
+class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'>Hi=
+,<br><br>Hope you're doing great!<strong><span =
+style=3D'font-family:"Cambria","serif"'> =
+<o:p></o:p></span></strong></span></p><p class=3DMsoNormal><strong><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'><o=
+:p>&nbsp;</o:p></span></strong></p><p class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'>Wo=
+uld you be interested in the newly sourced =
+&#8220;<b>Cardiologist<strong><span =
+style=3D'font-family:"Cambria","serif"'> Professionals</span></strong> =
+contact list&#8221;</b> for your upcoming sales and marketing =
+initiatives?</span><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif"'><o:p></o:p></spa=
+n></p><p class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'><o=
+:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'>Yo=
+u can reach:-</span></b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'> =
+Advanced Practice Nurses, Anesthesiologists, Cardiologists, =
+Cardiothoracic Surgeons, Critical Care Physicians, General Medicine, =
+Physicians, Hospitalists, ICU Medical Directors, International =
+Professors, Clinicians,&nbsp; Pulmonary, Critical Care, and Sleep =
+Professionals, Interventional Bronchoscopists, Pediatric Pulmonologists, =
+Physician Assistants, Practice Administrators, Executives, and Managers, =
+Pulmonary, Critical Care, Directors and Associate, Training Program =
+Directors, Pulmonologists, Registered Nurses, Respiratory Therapists, =
+Sleep Medicine Physicians and many more across USA, UK, Canada, Europe =
+and most of the World.<o:p></o:p></span></p><p class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'><o=
+:p>&nbsp;</o:p></span></p><p class=3DMsoNormal =
+style=3D'text-autospace:none'><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'>Ou=
+r Database Includes:</span></b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'> =
+Company Name, Contact name, Title, Address, Phone, Fax, City, State, Zip =
+codes, Country, Industry, Employee size, Revenue size, Sic Code, Website =
+and verified email address.<o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'text-autospace:none'><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'><o=
+:p>&nbsp;</o:p></span></p><p class=3DMsoNormal =
+style=3D'text-autospace:none'><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'>Le=
+t me know your targeted audience in order to get back to you with =
+updated counts, pricing and other =
+information&#8217;s.<o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'text-autospace:none'><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'><o=
+:p>&nbsp;</o:p></span></p><p class=3DMsoNormal =
+style=3D'text-autospace:none'><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'>Ta=
+rget Industry-<o:p></o:p></span></b></p><p class=3DMsoNormal =
+style=3D'text-autospace:none'><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'>Ta=
+rget Job Title-<o:p></o:p></span></b></p><p class=3DMsoNormal =
+style=3D'text-autospace:none'><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'>Ta=
+rget Geography-<o:p></o:p></span></b></p><p class=3DMsoNormal =
+style=3D'text-autospace:none'><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'><o=
+:p>&nbsp;</o:p></span></p><p class=3DMsoNormal =
+style=3D'text-autospace:none'><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'>Lo=
+oking forward for your response<o:p></o:p></span></p><p =
+class=3DMsoNormal style=3D'text-autospace:none'><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif"'><o:p>&nbsp;</o:p=
+></span></p><p class=3DMsoNormal style=3D'text-autospace:none'><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#002060'>Be=
+st Regards,<o:p></o:p></span></b></p><p class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:red'>Phylli=
+s Smith <o:p></o:p></span></b></p><p class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#424282'>Ma=
+rketing Specialist <o:p></o:p></span></b></p><p =
+class=3DMsoNormal><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#0070C0'>Se=
+rvices |</span></b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#0070C0'> =
+Email List<b> |</b> Telemarketing List <b>|</b> Direct Mailing List =
+<b>|</b> Data Appending <b>|</b> Email<o:p></o:p></span></p><p =
+class=3DMsoNormal style=3D'text-autospace:none'><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#1F497D'><o=
+:p>&nbsp;</o:p></span></p><p class=3DMsoNormal =
+style=3D'text-autospace:none'><b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#BFBFBF'>Di=
+sclaimer</span></b><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif";color:#BFBFBF'>: =
+You were specifically sent this email based upon your company profile. =
+If for some reason this was sent in error or you wish not to receive any =
+further messages from us please reply with subject line as =
+&quot;Exclude&quot; and you will be excluded from all future =
+mailings.</span><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif"'><o:p></o:p></spa=
+n></p><p class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Cambria","serif"'><o:p>&nbsp;</o:p=
+></span></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p></div></body></html>
+------=_NextPart_000_02FC_01D55121.0C97C020--
+

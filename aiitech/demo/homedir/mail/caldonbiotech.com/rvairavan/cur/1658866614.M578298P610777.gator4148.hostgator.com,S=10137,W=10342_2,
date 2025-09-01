@@ -1,0 +1,205 @@
+Return-Path: <bridget@elianelectronicsrecycling.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id 8I5jIrZL4GLZUQkA7/vpDg
+	(envelope-from <bridget@elianelectronicsrecycling.com>)
+	for <rvairavan@caldonbiotech.com>; Tue, 26 Jul 2022 15:16:54 -0500
+Return-path: <bridget@elianelectronicsrecycling.com>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Tue, 26 Jul 2022 15:16:54 -0500
+Received: from mail-ed1-f42.google.com ([209.85.208.42]:45705)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <bridget@elianelectronicsrecycling.com>)
+	id 1oGQz7-003080-UA
+	for rvairavan@caldonbiotech.com;
+	Tue, 26 Jul 2022 15:16:54 -0500
+Received: by mail-ed1-f42.google.com with SMTP id p5so7998916edi.12
+        for <rvairavan@caldonbiotech.com>; Tue, 26 Jul 2022 13:16:48 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=elianelectronicsrecycling-com.20210112.gappssmtp.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=+vldjZUa+R01MXaiiOE6AZ/GOaXUCXf5WXbI0/Tt3l0=;
+        b=B0nTQhT+2YNAC5W7ZTrRUZ7UDL2UQUaYM6QwvIxCjUMNSV7ZOw8/IkdfQfuhLJfZrO
+         T06HDl8saY9Usxri9QE+vSYb7B1isGxlEw2FzbhKj8HtwEF+PZyHN/5reZwxzYlFH+Cn
+         QVttCsiQ/5ujw9qEp/E6kYl9p9ttQwxjLLezFxAXiDS60jE3WhourkUjY0+2IO1dymxQ
+         o+fXpyeMKF89QHPnRdHQb+UnBGgzdJhMGJNyHI5gIM7vOlFvnCnWC0fgwupoEkJP6wG+
+         jU4Lluxtqjfp7P2cAfZScoy/Ntpa0A7xKrrQb2pkke6X6m/wc4wrrCPc7dDNp1CHau1N
+         yGkQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=+vldjZUa+R01MXaiiOE6AZ/GOaXUCXf5WXbI0/Tt3l0=;
+        b=OAdHcdi4XCsm3WrGfTv9BAoyfa9TVwe0xm/xYotAv4WXwKrYKQBf80gkbuMwpKXIND
+         vNLFIElCvWfUZkUafuSDrZmsipinCWzao6hhNTMKsoa7ywxf9AsgEH7ZZYeveYB6kwjc
+         K/n7i/hQgOmFmvqzV/gEQ+5Gq63mIsSuxVCsBlZKtdSv6IK811ijAv76hDTQkfmatAOq
+         ITjNT+oUxGuP6U8aA0rrxzds0vO8Fk1Bqd8Pz6+Jo6EDQ7KsxYq+nILafR0UWpu0MTwt
+         xz3nbpUp2Wd6GbpMGbwrY0bzJnaZYInLW1OeZFxd+NkTJpBse05jqQhwThfVazzesNd0
+         oOSg==
+X-Gm-Message-State: AJIora9u2/nMeQy9e3FhkAEM1Hnk1cRGTjuku1zYE0dHJnIvb2eQzGCn
+	25vi/a4jCdSWvLA+sjLnQeuOd450xVYmkRp3bOF5xw==
+X-Google-Smtp-Source: AGRyM1sS7GMvI8HgUBs+VNNpSWB4ml8/1qyazGiLonZx/O7mo2/5gUAdj3+yBazH7DOkO7IQg+OX1H2FrY3dLeKKBM0=
+X-Received: by 2002:a05:6402:5191:b0:43b:d047:dcb5 with SMTP id
+ q17-20020a056402519100b0043bd047dcb5mr19728634edd.390.1658866600894; Tue, 26
+ Jul 2022 13:16:40 -0700 (PDT)
+MIME-Version: 1.0
+References: <CALuUXBk5a2H17RC1FiwSfMjkgHi0DMAd4w8AnF0mhCUrK-Zuqg@mail.gmail.com>
+In-Reply-To: <CALuUXBk5a2H17RC1FiwSfMjkgHi0DMAd4w8AnF0mhCUrK-Zuqg@mail.gmail.com>
+From: Bridget Jones <bridget@elianelectronicsrecycling.com>
+Date: Tue, 26 Jul 2022 23:16:00 +0300
+Message-ID: <CALuUXBkCiY8qJ4TWOajNzEyCD6tiSHSCVApyos_0Lxo87+Srsg@mail.gmail.com>
+Subject: Re: Let's Keep it Green! FREE E-waste Service!
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="0000000000007a03a005e4bafa3b"
+Bcc: rvairavan@caldonbiotech.com
+X-Spam-Status: No, score=2.1
+X-Spam-Score: 21
+X-Spam-Bar: ++
+X-Spam-Flag: NO
+
+--0000000000007a03a005e4bafa3b
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+My name is Bridget, Accounts Manager at Elian Electronics Recycling. I
+wanted to follow up and make sure you received our proposal outlining how
+we will be able to provide FREE pick up services along with the proper
+disposal of your e-waste.
+
+Only 10 items or more from our Qualified items list, qualify you for the
+free service!
+
+The Qualified Items list can be found here:
+https://www.elianelectronicsrecycling.com/services
+
+Visit us at www.elianelectronicsrecycling.com
+<www.elianelectronicsrecycling.com%20> | CEWID#116855
+<https://www2.calrecycle.ca.gov/Electronics/CEW/ParticipantsDirectory/Detai=
+ls/1685>
+
+Have a wonderful day!
+
+On Fri, Apr 15, 2022 at 8:34 PM Bridget Jones <
+bridget@elianelectronicsrecycling.com> wrote:
+
+> Hello,
+>
+> My name is Bridget, the Accounts Manager at Elian Electronics Recycling
+> located in San Jose, CA. We work with the State of California by helping
+> companies and organizations stay compliant by disposing E-waste in a prop=
+er
+> manner. We work with midsize to enterprise level companies like HULU, The
+> Cheesecake Factory, Douglas Emmett, Lewis Brisbois, Riot Games, US
+> Department of Justice, US Border Patrol, just to name a few.
+>
+> We would like to extend our FREE pickup and disposal services for your
+> bulky computers and monitors, or that junky pile of tablets and laptops. =
+We
+> also help clear out medical and testing equipment. This service comes wit=
+h
+> a Certificate of Recycling =E2=80=93 proof that you have responsibly gott=
+en rid of
+> your e-waste in an environmentally-friendly manner. Your customers will
+> notice.
+>
+> As long as you have 10 items or more on our =E2=80=9CQualified items list=
+=E2=80=9D
+> <https://www.elianelectronicsrecycling.com/services> we can go ahead and
+> schedule your pick-up. Call me between 8 am and 5 pm at 408-819-6515, or
+> email me at Bridget@elianelectronicsrecylcing.com . Be sure to check out
+> our =E2=80=9CCourtesy Items List=E2=80=9D as well.
+>
+> Visit us at www.elianelectronicsrecycling.com | CEWID#116855
+> <https://www2.calrecycle.ca.gov/Electronics/CEW/ParticipantsDirectory/Det=
+ails/1685>
+>
+> Sincerely,
+> --
+>
+> *Elian Electronics Recycling*
+> Bridget | Account Manager
+> (408) 891-6515
+> bridget@elianelectronicsrecycling.com
+> CEWID# 116855
+> <https://www2.calrecycle.ca.gov/Electronics/CEW/ParticipantsDirectory/Det=
+ails/1685>
+> www.elianelectronicsrecycling.com
+>
+
+--0000000000007a03a005e4bafa3b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><p class=3D"MsoNormal" style=3D"line-height:11.75pt;backgr=
+ound-image:initial;background-position:initial;background-size:initial;back=
+ground-repeat:initial;background-origin:initial;background-clip:initial;mar=
+gin:0in 0in 8pt;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;">=
+Hello,<br>
+<br>
+My name is Bridget, Accounts Manager at Elian Electronics Recycling. I want=
+ed
+to follow up and make sure you received our proposal outlining how we will =
+be
+able to provide FREE pick up services along with the proper disposal of you=
+r
+e-waste.<br>
+<br>
+Only 10 items or more from our Qualified items list, qualify you for the fr=
+ee
+service!<br>
+<br>
+The Qualified Items list can be found here: <a href=3D"https://www.elianele=
+ctronicsrecycling.com/services" style=3D"color:rgb(5,99,193)">https://www.e=
+lianelectronicsrecycling.com/services</a><br>
+<br>
+Visit us at <a href=3D"www.elianelectronicsrecycling.com%20" style=3D"color=
+:rgb(5,99,193)">www.elianelectronicsrecycling.com</a>
+| <a href=3D"https://www2.calrecycle.ca.gov/Electronics/CEW/ParticipantsDir=
+ectory/Details/1685" style=3D"color:rgb(5,99,193)">CEWID#116855</a><br>
+<br>
+Have a wonderful day!</p></div><br><div class=3D"gmail_quote"><div dir=3D"l=
+tr" class=3D"gmail_attr">On Fri, Apr 15, 2022 at 8:34 PM Bridget Jones &lt;=
+<a href=3D"mailto:bridget@elianelectronicsrecycling.com">bridget@elianelect=
+ronicsrecycling.com</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quot=
+e" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204)=
+;padding-left:1ex"><div dir=3D"ltr"><div>Hello,<br><br>My name is Bridget, =
+the Accounts Manager at Elian Electronics Recycling located in San Jose, CA=
+. We work with the State of California by helping companies and organizatio=
+ns stay compliant by disposing E-waste in a proper manner. We work with mid=
+size to enterprise level companies like HULU, The Cheesecake Factory, Dougl=
+as Emmett, Lewis Brisbois, Riot Games, US Department of Justice, US Border =
+Patrol, just to name a few.<br><br>We would like to extend our FREE pickup =
+and disposal services for your bulky computers and monitors, or that junky =
+pile of tablets and laptops. We also help clear out medical and testing equ=
+ipment. This service comes with a Certificate of Recycling =E2=80=93 proof =
+that you have responsibly gotten rid of your e-waste in an environmentally-=
+friendly manner. Your customers will notice.<br><br>As long as you have 10 =
+items or more on our=C2=A0<a href=3D"https://www.elianelectronicsrecycling.=
+com/services" target=3D"_blank">=E2=80=9CQualified items list=E2=80=9D</a>=
+=C2=A0we can go ahead and schedule your pick-up. Call me between 8 am and 5=
+ pm at 408-819-6515, or email me at=C2=A0<a href=3D"mailto:Bridget@elianele=
+ctronicsrecylcing.com" target=3D"_blank">Bridget@elianelectronicsrecylcing.=
+com</a>=C2=A0. Be sure to check out our =E2=80=9CCourtesy Items List=E2=80=
+=9D as well.<br><br>Visit us at=C2=A0<a href=3D"http://www.elianelectronics=
+recycling.com/" target=3D"_blank">www.elianelectronicsrecycling.com</a>=C2=
+=A0|=C2=A0<a href=3D"https://www2.calrecycle.ca.gov/Electronics/CEW/Partici=
+pantsDirectory/Details/1685" target=3D"_blank">CEWID#116855</a><br><br>Sinc=
+erely,<br></div>-- <br><div dir=3D"ltr"><div dir=3D"ltr"><p style=3D"margin=
+:0px 0px 10px;color:rgb(25,25,25)"><b><font color=3D"#000000">Elian Electro=
+nics Recycling</font></b><br style=3D"color:rgb(136,136,136)"><font color=
+=3D"#444444">Bridget | Account Manager<br>(408) 891-6515</font><br style=3D=
+"color:rgb(136,136,136)"><a href=3D"mailto:bridget@elianelectronicsrecyclin=
+g.com" style=3D"color:rgb(17,85,204)" target=3D"_blank">bridget@elianelectr=
+onicsrecycling.com</a><br style=3D"color:rgb(136,136,136)"><font color=3D"#=
+38761d"><a href=3D"https://www2.calrecycle.ca.gov/Electronics/CEW/Participa=
+ntsDirectory/Details/1685" target=3D"_blank">CEWID# 116855</a></font><br st=
+yle=3D"color:rgb(136,136,136)"><a href=3D"http://www.elianelectronicsrecycl=
+ing.com/" style=3D"color:rgb(17,85,204)" target=3D"_blank">www.elianelectro=
+nicsrecycling.com</a></p><div></div></div></div></div>
+</blockquote></div>
+
+--0000000000007a03a005e4bafa3b--

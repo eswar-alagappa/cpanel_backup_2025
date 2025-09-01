@@ -1,0 +1,77 @@
+Return-Path: <>
+Delivered-To: info@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id 0LA0BKAFDWOPOAcA7/vpDg
+	(envelope-from <>)
+	for <info@caldonbiotech.com>; Mon, 29 Aug 2022 13:29:52 -0500
+Return-path: <>
+Envelope-to: info@caldonbiotech.com
+Delivery-date: Mon, 29 Aug 2022 13:29:52 -0500
+Received: from mailnull by gator4148.hostgator.com with local (Exim 4.95)
+	id 1oSjWB-003Ggx-Vf
+	for info@caldonbiotech.com;
+	Mon, 29 Aug 2022 13:29:52 -0500
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@gator4148.hostgator.com>
+To: info@caldonbiotech.com
+Content-Type: multipart/report; report-type=delivery-status; boundary=1661797791-eximdsn-203966688
+MIME-Version: 1.0
+Subject: Warning: message 1oSDPt-003Fyq-7m delayed 24 hours
+Message-Id: <E1oSjWB-003Ggx-Vf@gator4148.hostgator.com>
+Date: Mon, 29 Aug 2022 13:29:51 -0500
+
+--1661797791-eximdsn-203966688
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+A message that you sent has not yet been delivered to one or more of its
+recipients after more than 24 hours on the queue on gator4148.hostgator.com.
+
+The message identifier is:     1oSDPt-003Fyq-7m
+The date of the message is:    Sun, 28 Aug 2022 10:13:13 +0200
+The subject of the message is: =?UTF-8?B?aW5mb0BjYWxkb25iaW90ZWNoLmNvbTtpbmZvQGNhbGRvbmJpb3RlY2guY29t?=
+	=?UTF-8?B?O0luZm9AMTIzO2NhbGRvbmJpb3RlY2guY29tOzQ2NTsyO0xPR0lO?=
+
+The address to which the message has not yet been delivered is:
+
+  one@whatareyoudoing.xyz
+    host 34.217.196.71 [34.217.196.71]
+    Delay reason: SMTP error from remote mail server after end of data:
+    421 Connection Rejected - see http://www.spamhaus.org/query/ip/128.116.190.233 AUP#IPBL00001
+
+No action is required on your part. Delivery attempts will continue for
+some time, and this warning may be repeated at intervals if the message
+remains undelivered. Eventually the mail delivery software will give up,
+and when that happens, the message will be returned to you.
+
+--1661797791-eximdsn-203966688
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; gator4148.hostgator.com
+
+Action: delayed
+Final-Recipient: rfc822;one@whatareyoudoing.xyz
+Status: 4.0.0
+Remote-MTA: dns; 34.217.196.71
+Diagnostic-Code: smtp; 421 Connection Rejected - see http://www.spamhaus.org/query/ip/128.116.190.233 AUP#IPBL00001
+
+--1661797791-eximdsn-203966688
+Content-type: text/rfc822-headers
+
+Return-path: <info@caldonbiotech.com>
+Received: from 128-116-190-233.static.eolo.it ([128.116.190.233]:37028)
+	by gator4148.hostgator.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <info@caldonbiotech.com>)
+	id 1oSDPt-003Fyq-7m
+	for one@whatareyoudoing.xyz;
+	Sun, 28 Aug 2022 03:13:13 -0500
+Date: Sun, 28 Aug 2022 10:13:13 +0200
+From: info@caldonbiotech.com
+Subject: =?UTF-8?B?aW5mb0BjYWxkb25iaW90ZWNoLmNvbTtpbmZvQGNhbGRvbmJpb3RlY2guY29t?=
+	=?UTF-8?B?O0luZm9AMTIzO2NhbGRvbmJpb3RlY2guY29tOzQ2NTsyO0xPR0lO?=
+To: one@whatareyoudoing.xyz
+
+
+--1661797791-eximdsn-203966688--

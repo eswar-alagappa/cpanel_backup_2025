@@ -1,0 +1,87 @@
+Return-Path: <>
+Delivered-To: cbt@gator4148.hostgator.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id WDOQETHh3WKlGgQA7/vpDg
+	(envelope-from <>)
+	for <cbt@gator4148.hostgator.com>; Sun, 24 Jul 2022 19:17:53 -0500
+Return-path: <>
+Envelope-to: cbt@gator4148.hostgator.com
+Delivery-date: Sun, 24 Jul 2022 19:17:53 -0500
+Received: from mailnull by gator4148.hostgator.com with local (Exim 4.95)
+	id 1oFlnF-001coT-8B
+	for cbt@gator4148.hostgator.com;
+	Sun, 24 Jul 2022 19:17:53 -0500
+X-Failed-Recipients: aadil@ifelsetech.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@gator4148.hostgator.com>
+To: cbt@gator4148.hostgator.com
+References: <f7f50b40e091b57add0ae37ca62473d5@caldonbiotech.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1658708273-eximdsn-1973268376
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1oFlnF-001coT-8B@gator4148.hostgator.com>
+Date: Sun, 24 Jul 2022 19:17:53 -0500
+
+--1658708273-eximdsn-1973268376
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  aadil@ifelsetech.com
+    host 34.223.136.48 [34.223.136.48]
+    SMTP error from remote mail server after end of data:
+    421 <cbt@gator4148.hostgator.com> sender rejected. AUP#CDRBL:
+    retry timeout exceeded
+
+--1658708273-eximdsn-1973268376
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; gator4148.hostgator.com
+
+Action: failed
+Final-Recipient: rfc822;aadil@ifelsetech.com
+Status: 5.0.0
+Remote-MTA: dns; 34.223.136.48
+Diagnostic-Code: smtp; 421 <cbt@gator4148.hostgator.com> sender rejected. AUP#CDRBL: retry timeout exceeded
+
+--1658708273-eximdsn-1973268376
+Content-type: message/rfc822
+
+Return-path: <cbt@gator4148.hostgator.com>
+Received: from cbt by gator4148.hostgator.com with local (Exim 4.95)
+	(envelope-from <cbt@gator4148.hostgator.com>)
+	id 1oE563-00466r-DE
+	for aadil@ifelsetech.com;
+	Wed, 20 Jul 2022 03:30:19 -0500
+To: aadil@ifelsetech.com
+Subject: [Caldon Biotech] Please moderate: "RECENT STUDY FINDS THAT THE REDUCED ALDOLASE LEVEL IS AN INDICATION OF COLORECTAL CANCER"
+X-PHP-Script: caldonbiotech.com/wp-comments-post.php for 51.159.36.139, 51.159.36.139
+X-PHP-Originating-Script: 990:class-phpmailer.php
+Date: Wed, 20 Jul 2022 08:30:19 +0000
+From: WordPress <wordpress@caldonbiotech.com>
+Message-ID: <f7f50b40e091b57add0ae37ca62473d5@caldonbiotech.com>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+A new comment on the post "RECENT STUDY FINDS THAT THE REDUCED ALDOLASE LEVEL IS AN INDICATION OF COLORECTAL CANCER" is waiting for your approval
+https://caldonbiotech.com/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/
+
+Author: kacak bahis siteleri (IP address: 51.159.36.139, 51-159-36-139.rev.poneytelecom.eu)
+Email: ale.gonzalez.m@hotmail.com
+URL: https://fullfilmcidayim.com/
+Comment: 
+This is my first time visit at here and i am really impressed to read everthing at alone place. Jamie Sanges
+
+Approve it: https://caldonbiotech.com/wp-admin/comment.php?action=approve&c=119#wpbody-content
+Trash it: https://caldonbiotech.com/wp-admin/comment.php?action=trash&c=119#wpbody-content
+Spam it: https://caldonbiotech.com/wp-admin/comment.php?action=spam&c=119#wpbody-content
+Currently 119 comments are waiting for approval. Please visit the moderation panel:
+https://caldonbiotech.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+
+
+--1658708273-eximdsn-1973268376--

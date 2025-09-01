@@ -1,0 +1,29 @@
+--- 
+filter: 
+  - 
+    actions: 
+      - 
+        action: save
+        dest: /dev/null
+    enabled: 1
+    filtername: Generated Apache SpamAssassin™ Discard Rule
+    rules: 
+      - 
+        match: contains
+        opt: or
+        part: "$h_X-Spam-Bar:"
+        val: +++++++
+  - 
+    actions: 
+      - 
+        action: save
+        dest: /dev/null
+    filtername: icu filter
+    rules: 
+      - 
+        match: contains
+        opt: or
+        part: "$header_from:"
+        val: "*@example.icu"
+    unescaped: 1
+version: '2.2'

@@ -1,0 +1,328 @@
+Return-Path: <olalovedale+bncBCAPZS4ZUUKRBDHP2OMAMGQEDQNSA4Y@googlegroups.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id iAKBJpz3FGP5BAEA7/vpDg
+	(envelope-from <olalovedale+bncBCAPZS4ZUUKRBDHP2OMAMGQEDQNSA4Y@googlegroups.com>)
+	for <rvairavan@caldonbiotech.com>; Sun, 04 Sep 2022 14:08:12 -0500
+Return-path: <olalovedale+bncBCAPZS4ZUUKRBDHP2OMAMGQEDQNSA4Y@googlegroups.com>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Sun, 04 Sep 2022 14:08:12 -0500
+Received: from mail-ot1-f60.google.com ([209.85.210.60]:42546)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <olalovedale+bncBCAPZS4ZUUKRBDHP2OMAMGQEDQNSA4Y@googlegroups.com>)
+	id 1oUuyZ-000HXv-Ti
+	for rvairavan@caldonbiotech.com;
+	Sun, 04 Sep 2022 14:08:12 -0500
+Received: by mail-ot1-f60.google.com with SMTP id x22-20020a9d6d96000000b00636eec5dcb3sf3999590otp.9
+        for <rvairavan@caldonbiotech.com>; Sun, 04 Sep 2022 12:08:06 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1662318479; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=zhwla3f07o8lEqo4/Fg1QR+B82r6tUPkXEMHCr1aVZOrxfuy6JToL+qBBk9TawcCU5
+         8QX5mIp71zoDwtP5pjBJ5DcVmuIFs/e4UrQRIwrQVyn/sJhe8or64W9KSFQcljkQtFEK
+         i9CPyM/5GEES9Tk6tQVUQqFd6/0EO37CbbMvkixlotFmCknELjiQDYaXujsUTwrKfzgU
+         Y2OhTP5Vj5+GfjJNb+0MvtdTxAaROjJqg/mwTkmyJhehfG+b5MFfvRL4vWApmOLziJoW
+         grE2CiE1EcOiL4WB7Us/o4XRRR4P9fasqGPOpIIUp9D6rt/SVyTaT+wJqqbfmIyitrue
+         l95A==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:reply-to:to:subject:message-id:date:from
+         :mime-version:sender:dkim-signature:dkim-signature;
+        bh=/F1vZ86IMzcqaif3qyyxHe8E4B0jZl6bW+rM1t3bMKA=;
+        b=cDA8cM/ublhwK623JfCk0cszfvFYaoSFTVId0HURSj1r6si1fP1Ux8yLH8/sZEccYD
+         q+9+T3Pul1lYMAnFcNKTPSlNlLlNKhio0Vrx/EIT4fjT7xfC3Xj8nSM6lF0Vb1aKfr6Q
+         eXBQBwZ32SFstT6NkJF0oMQB8XLxDcBzdn/5JI59WdhOmkobOscjjdjMshy8JTXziFM0
+         bphcv8dtmnRa20KNfnCUELyiVqLD1QauujG1RA/IAXTFdVrFbW2a/9kHms90umabwhw+
+         zpf9CTMNjUagDa8NLiwpAI32jxKY06xG3+whrsutwjPUfyuKvk78sLSQc/PbKwshlcap
+         pQUQ==
+ARC-Authentication-Results: i=2; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="lDI8+/6b";
+       spf=pass (google.com: domain of reventhnoel28@gmail.com designates 2607:f8b0:4864:20::102f as permitted sender) smtp.mailfrom=reventhnoel28@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=20210112;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:reply-to:x-original-authentication-results
+         :x-original-sender:to:subject:message-id:date:from:mime-version
+         :sender:from:to:cc:subject:date;
+        bh=/F1vZ86IMzcqaif3qyyxHe8E4B0jZl6bW+rM1t3bMKA=;
+        b=YXP1MtEgiDzcruMJ+/5hLWLsVPGLJRVgAe3bpoG72odfNZ1S7koJ9+23FEgX1AYI80
+         IlCur2hVUKwUMEn+Aqxm7vVg2K0XiFQuPvVACt3CTYh0H2xIdjp6Q5/bBmeke9lQ5Oqy
+         2yMKarNQlYgv7AUlK88kKLSeA3b8mYVMKUYnjxkUNVyMUIS97R4DdW5mriIWR9ONz1kn
+         l9vvCcsM+1UnJJrzySkD80QwZWBLaE7+PLE7o0NhoBA5PkLy6CVzqKXnGbHYhfT6RsGA
+         prIyP7ExXP3wCLFCgviyhHR+ZEf23OqG1oYKIkkA1f+esDBzhXpQ6xPQ8bF0o5okOaHT
+         1BcA==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:reply-to:x-original-authentication-results
+         :x-original-sender:to:subject:message-id:date:from:mime-version:from
+         :to:cc:subject:date;
+        bh=/F1vZ86IMzcqaif3qyyxHe8E4B0jZl6bW+rM1t3bMKA=;
+        b=eWtydamY53nW+8TG/CFeQwPvjM+ZLsDEBHEF2Cph5LCnXvc8AXdCmEH6oFxmPFCgxq
+         17srUwi6Mvs9OPRtXOU4iFHeDkAw5ObyBZKf8M9X7OHyi8lgZSLOmGogN0j1v9JeQL37
+         QD2DGG/UNUoassIT3hQAUhBI4xlx0luDkCpoDQa1IB09ZrDi3Rs4yNVuQOAM4E4woPng
+         P8i2Gy7BEdidJN8bkd6AtSq2sQs2RLqvvZnY+wIl8b5Mraqg6R4xX0yY/Fnfeh/11L+A
+         D+ksQRWHUNUglzR+POA9TN7KzlmvDamn04cPJWxR5RehaulT/n7H5/zxQR/gerssPN6y
+         1kcQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:reply-to:x-original-authentication-results
+         :x-original-sender:to:subject:message-id:date:from:mime-version
+         :x-gm-message-state:sender:from:to:cc:subject:date;
+        bh=/F1vZ86IMzcqaif3qyyxHe8E4B0jZl6bW+rM1t3bMKA=;
+        b=Q63/cOFaJI4KkHgCfJxz3B+Xh43Hh7KVFg3FA0gQkqPGj38VYDKVuDiN0PHwmv3AA9
+         pHiY8aem3Xz/lMKn00KAyRmXgio0UmlcVuTXv97laHzWxylafznYJ29SVnam3mVdLOdW
+         LKSO+HKlCLVQ05kaJk0i3XMh1evWSCI7CuPAfGx/IhcZxLHCjr3wrR+j9P3dz9oSw9bw
+         U9na/IVTMGGrRMadEYOFwBD2rZ/ceZpfTUfyJGXRzOCrcPbqPQVe5+Tr5gOxUSx9nOU0
+         F3w/jiU8Uscyz44zBqDSl4PkqYPc4Mtw3luvG0AuEq6OQ9pYDfhmeMPP2K4qnKTwVns1
+         2olg==
+Sender: olalovedale@googlegroups.com
+X-Gm-Message-State: ACgBeo2TAxH+McVoa5U3oxq20QNKZNIjyhX6wV8GBBTFGAewpM9/9w4O
+	322ZKb2etT/WkEWMfYviyQo=
+X-Google-Smtp-Source: AA6agR5dQOP7bgelrKFSFB9zz9mGLPnjuD/w80NoZNaRN1HpauRfH8lOvdjizxYZr3JzY4Isg3RwlQ==
+X-Received: by 2002:a05:6870:5813:b0:127:569b:3588 with SMTP id r19-20020a056870581300b00127569b3588mr1022499oap.248.1662318479619;
+        Sun, 04 Sep 2022 12:07:59 -0700 (PDT)
+X-BeenThere: olalovedale@googlegroups.com
+Received: by 2002:a54:4f03:0:b0:342:d439:fe70 with SMTP id e3-20020a544f03000000b00342d439fe70ls3164792oiy.3.-pod-prod-gmail;
+ Sun, 04 Sep 2022 12:07:56 -0700 (PDT)
+X-Received: by 2002:a05:6808:1717:b0:334:9342:63f1 with SMTP id bc23-20020a056808171700b00334934263f1mr6524579oib.77.1662318476272;
+        Sun, 04 Sep 2022 12:07:56 -0700 (PDT)
+Received: by 2002:aca:3846:0:b0:344:c4e8:dd6e with SMTP id 5614622812f47-3499d1854e5msb6e;
+        Sun, 4 Sep 2022 08:04:03 -0700 (PDT)
+X-Received: by 2002:a63:e90c:0:b0:422:5ab9:99d6 with SMTP id i12-20020a63e90c000000b004225ab999d6mr38854832pgh.394.1662303842321;
+        Sun, 04 Sep 2022 08:04:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1662303842; cv=none;
+        d=google.com; s=arc-20160816;
+        b=PPQSMW3/4sZqpdftAQOz5iRvbEV/z3V7tlamzsn+spU9OQzfR/IBFC30WEFVOJvxut
+         YqSPk6jKf7ukDpYCafF4UcI3c0fb1Wbe+xuqFMmpsjrLyN409ddQ0T9n83XTEd795RPu
+         NXpbcliYL/yzthmdcdH5yHqxa1tb4PQO2geFKFj7PEMZKwEp1Ol+qFYH2m4zrLG98PJN
+         tfJbPgxyZjVlH9smCvHKPvGSYDf4Fn6cDRQrt2SKJbaf+Zgs+H5dmmBSaD2f7sRUvXs1
+         7Es2FlYm4Avy2baZYy+j2qme0vaoJ0uqm/4rmE8PH8qgVEHGjEJFtqMDSnuj4Icn9+xI
+         86Gg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=ttKzTGfCzfrkmxVvt/tLNBITqa/bH+e28ieS/u+5AdM=;
+        b=u3x5qVKKjjTNaZ39keSsxTnzTxNov+ujdJxC8EYHPo52fLZgzqHKfuMaGaqWUr19Xc
+         +17BWDLNTGVEsevGpQMbGEs48lVUywg6Q1I130k1fqaTDydk1sD7myKclPCopS3pLjI+
+         xIC9JMzcdG8WTyN7Sk2VFrmCmaN9qpOzRMlngRuFono2Q0Rf/DHci7mLAX0xo5ADLZgu
+         t1rYIaFPhvbhur8jXwmscj2FHpZlcYk8dB6nS0NchntSCqbjeJheIX61AOjlrN0PbSZ2
+         thuRp1DodVngs1E+ok5WLOaoSgAN+NCGCCvl8FG4YvZ680fyxDcMzyvjPcWzoo6esC8C
+         7KXw==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b="lDI8+/6b";
+       spf=pass (google.com: domain of reventhnoel28@gmail.com designates 2607:f8b0:4864:20::102f as permitted sender) smtp.mailfrom=reventhnoel28@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: from mail-pj1-x102f.google.com (mail-pj1-x102f.google.com. [2607:f8b0:4864:20::102f])
+        by gmr-mx.google.com with ESMTPS id nd10-20020a17090b4cca00b001faab3fc6a0si680779pjb.3.2022.09.04.08.04.02
+        for <olalovedale@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sun, 04 Sep 2022 08:04:02 -0700 (PDT)
+Received-SPF: pass (google.com: domain of reventhnoel28@gmail.com designates 2607:f8b0:4864:20::102f as permitted sender) client-ip=2607:f8b0:4864:20::102f;
+Received: by mail-pj1-x102f.google.com with SMTP id ev6-20020a17090aeac600b0020031370f86so1757778pjb.1
+        for <olalovedale@googlegroups.com>; Sun, 04 Sep 2022 08:04:02 -0700 (PDT)
+X-Received: by 2002:a17:902:d4c4:b0:170:9fdb:4a2a with SMTP id
+ o4-20020a170902d4c400b001709fdb4a2amr43433309plg.137.1662303841659; Sun, 04
+ Sep 2022 08:04:01 -0700 (PDT)
+MIME-Version: 1.0
+From: Reventh Noel <reventhnoel28@gmail.com>
+Date: Sun, 4 Sep 2022 20:33:48 +0530
+Message-ID: <CABCifB5+8dRtXXLKYFFuqtU9fKnD2G+pYwZvxnNP0cgjTWy91g@mail.gmail.com>
+Subject: OldLawrencians OLA AGM - 2022 (Hybrid - Meeting Link)
+To: olalovedale@googlegroups.com
+Content-Type: multipart/alternative; boundary="000000000000fdb0e105e7db459c"
+X-Original-Sender: reventhnoel28@gmail.com
+X-Original-Authentication-Results: gmr-mx.google.com;       dkim=pass
+ header.i=@gmail.com header.s=20210112 header.b="lDI8+/6b";       spf=pass
+ (google.com: domain of reventhnoel28@gmail.com designates 2607:f8b0:4864:20::102f
+ as permitted sender) smtp.mailfrom=reventhnoel28@gmail.com;       dmarc=pass
+ (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Reply-To: olalovedale@googlegroups.com
+Precedence: list
+Mailing-list: list olalovedale@googlegroups.com; contact olalovedale+owners@googlegroups.com
+List-ID: <olalovedale.googlegroups.com>
+X-Google-Group-Id: 585760002904
+List-Post: <https://groups.google.com/group/olalovedale/post>, <mailto:olalovedale@googlegroups.com>
+List-Help: <https://groups.google.com/support/>, <mailto:olalovedale+help@googlegroups.com>
+List-Archive: <https://groups.google.com/group/olalovedale
+List-Unsubscribe: <mailto:googlegroups-manage+585760002904+unsubscribe@googlegroups.com>,
+ <https://groups.google.com/group/olalovedale/subscribe>
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--000000000000fdb0e105e7db459c
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear OLs,
+
+Please find below the link to join the OLA AGM - 2022 virtually if you are
+missing the physical one.
+
+Old Lawrencians Association is inviting you to a scheduled Zoom meeting
+
+Topic: OLA AGM 2022 (Hybrid)
+Time: Sep 4, 2022 05:00 PM Mumbai, Kolkata, New Delhi
+
+Join Zoom Meeting
+https://us02web.zoom.us/j/88126579534?pwd=3DSUVaTHRnT1VmVk1Ec0U5M29ZdlVNUT0=
+9
+
+Meeting ID: 881 2657 9534
+Passcode: 909046
+One tap mobile
++13092053325,,88126579534#,,,,*909046# US
++13126266799,,88126579534#,,,,*909046# US (Chicago)
+
+Dial by your location
+        +1 309 205 3325 US
+        +1 312 626 6799 US (Chicago)
+        +1 646 931 3860 US
+        +1 929 205 6099 US (New York)
+        +1 301 715 8592 US (Washington DC)
+        +1 253 215 8782 US (Tacoma)
+        +1 346 248 7799 US (Houston)
+        +1 386 347 5053 US
+        +1 564 217 2000 US
+        +1 669 444 9171 US
+        +1 669 900 6833 US (San Jose)
+        +1 719 359 4580 US
+Meeting ID: 881 2657 9534
+Passcode: 909046
+Find your local number: https://us02web.zoom.us/u/kbE5d1o9f2
+
+Thank you.
+
+Tini Korah
+Secretary
+OLA
+
+--=20
+Never Give In
+
+The Old Lawrencians Association is a legally registered body Registered und=
+er Tamil Nadu Act 27 of 1975 =C2=AE (Serial No. =E2=80=93 44 of 1989) repre=
+senting the interests of the Alumni of The Lawrence School, Lovedale 643003=
+, Nilgiris, TN, India.
+
+Chapters Groups across India & North America, UK, UAE, Australia, Singapore=
+ - Details with the OLA Admin
+
+OLA Official Mobile/Whatsapp Number +919498490228
+Email : Hello@OLALovedale.net ; olalovedale@gmail.com
+
+Official Social Media Channels
+https://www.linkedin.com/groups/76653/
+https://www.facebook.com/oldlawrencians/
+https://www.facebook.com/groups/oldlawrencians/
+https://www.youtube.com/c/OldLawrenciansAssociation
+https://www.facebook.com/groups/LawrencianMarketPlace=20
+https://www.instagram.com/olalovedale/
+https://www.instagram.com/the.ol.nation/
+https://twitter.com/olalovedale=20
+https://www.clubhouse.com/club/ola-old-lawrencians-assn
+
+#olalovedale #lawrenceschool #oldlawrencian #nevergivein #lovedale #lawrenc=
+ian #olnation #olassembly
+---=20
+You received this message because you are subscribed to the Google Groups "=
+OLA_Lovedale" group.
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to olalovedale+unsubscribe@googlegroups.com.
+To view this discussion on the web visit https://groups.google.com/d/msgid/=
+olalovedale/CABCifB5%2B8dRtXXLKYFFuqtU9fKnD2G%2BpYwZvxnNP0cgjTWy91g%40mail.=
+gmail.com.
+
+--000000000000fdb0e105e7db459c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Dear OLs,<div dir=3D"auto"><br></div><div dir=3D"auto">Pl=
+ease find below the link to join the OLA AGM - 2022 virtually if you are mi=
+ssing the physical one.</div><div dir=3D"auto"><br></div><div dir=3D"auto">=
+Old Lawrencians Association is inviting you to a scheduled Zoom meeting</di=
+v><div dir=3D"auto"><br></div><div dir=3D"auto">Topic: OLA AGM 2022 (Hybrid=
+)</div><div dir=3D"auto">Time: Sep 4, 2022 05:00 PM Mumbai, Kolkata, New De=
+lhi</div><div dir=3D"auto"><br></div><div dir=3D"auto">Join Zoom Meeting</d=
+iv><div dir=3D"auto"><a href=3D"https://us02web.zoom.us/j/88126579534?pwd=
+=3DSUVaTHRnT1VmVk1Ec0U5M29ZdlVNUT09">https://us02web.zoom.us/j/88126579534?=
+pwd=3DSUVaTHRnT1VmVk1Ec0U5M29ZdlVNUT09</a></div><div dir=3D"auto"><br></div=
+><div dir=3D"auto">Meeting ID: 881 2657 9534</div><div dir=3D"auto">Passcod=
+e: 909046</div><div dir=3D"auto">One tap mobile</div><div dir=3D"auto">+130=
+92053325,,88126579534#,,,,*909046# US</div><div dir=3D"auto">+13126266799,,=
+88126579534#,,,,*909046# US (Chicago)</div><div dir=3D"auto"><br></div><div=
+ dir=3D"auto">Dial by your location</div><div dir=3D"auto">=C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 +1 309 205 3325 US</div><div dir=3D"auto">=C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 +1 312 626 6799 US (Chicago)</div><div dir=3D"auto">=C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 +1 646 931 3860 US</div><div dir=3D"auto">=C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 +1 929 205 6099 US (New York)</div><div dir=3D"auto">=C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 +1 301 715 8592 US (Washington DC)</div><div dir=3D"au=
+to">=C2=A0 =C2=A0 =C2=A0 =C2=A0 +1 253 215 8782 US (Tacoma)</div><div dir=
+=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 +1 346 248 7799 US (Houston)</div><di=
+v dir=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 +1 386 347 5053 US</div><div dir=
+=3D"auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 +1 564 217 2000 US</div><div dir=3D"a=
+uto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 +1 669 444 9171 US</div><div dir=3D"auto">=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 +1 669 900 6833 US (San Jose)</div><div dir=3D"=
+auto">=C2=A0 =C2=A0 =C2=A0 =C2=A0 +1 719 359 4580 US</div><div dir=3D"auto"=
+>Meeting ID: 881 2657 9534</div><div dir=3D"auto">Passcode: 909046</div><di=
+v dir=3D"auto">Find your local number: <a href=3D"https://us02web.zoom.us/u=
+/kbE5d1o9f2">https://us02web.zoom.us/u/kbE5d1o9f2</a></div><div dir=3D"auto=
+"><br></div><div dir=3D"auto">Thank you.</div><div dir=3D"auto"><br></div><=
+div dir=3D"auto">Tini Korah</div><div dir=3D"auto">Secretary</div><div dir=
+=3D"auto">OLA</div></div>
+
+<p></p>
+
+-- <br />
+Never Give In<br />
+&nbsp;<br />
+The Old Lawrencians Association is a legally registered body Registered und=
+er Tamil Nadu Act 27 of 1975 =C2=AE (Serial No. =E2=80=93 44 of 1989) repre=
+senting the interests of the Alumni of The Lawrence School, Lovedale 643003=
+, Nilgiris, TN, India.<br />
+&nbsp;<br />
+Chapters Groups across India &amp; North America, UK, UAE, Australia, Singa=
+pore - Details with the OLA Admin<br />
+&nbsp;<br />
+OLA Official Mobile/Whatsapp Number +919498490228<br />
+Email : Hello@OLALovedale.net ; olalovedale@gmail.com<br />
+&nbsp;<br />
+Official Social Media Channels<br />
+<a href=3D"https://www.linkedin.com/groups/76653/">https://www.linkedin.com=
+/groups/76653/</a><br />
+<a href=3D"https://www.facebook.com/oldlawrencians/">https://www.facebook.c=
+om/oldlawrencians/</a><br />
+<a href=3D"https://www.facebook.com/groups/oldlawrencians/">https://www.fac=
+ebook.com/groups/oldlawrencians/</a><br />
+<a href=3D"https://www.youtube.com/c/OldLawrenciansAssociation">https://www=
+.youtube.com/c/OldLawrenciansAssociation</a><br />
+<a href=3D"https://www.facebook.com/groups/LawrencianMarketPlace">https://w=
+ww.facebook.com/groups/LawrencianMarketPlace</a> <br />
+<a href=3D"https://www.instagram.com/olalovedale/">https://www.instagram.co=
+m/olalovedale/</a><br />
+<a href=3D"https://www.instagram.com/the.ol.nation/">https://www.instagram.=
+com/the.ol.nation/</a><br />
+<a href=3D"https://twitter.com/olalovedale">https://twitter.com/olalovedale=
+</a> <br />
+<a href=3D"https://www.clubhouse.com/club/ola-old-lawrencians-assn">https:/=
+/www.clubhouse.com/club/ola-old-lawrencians-assn</a><br />
+&nbsp;<br />
+#olalovedale #lawrenceschool #oldlawrencian #nevergivein #lovedale #lawrenc=
+ian #olnation #olassembly<br />
+--- <br />
+You received this message because you are subscribed to the Google Groups &=
+quot;OLA_Lovedale&quot; group.<br />
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:olalovedale+unsubscribe@googlegroups.com">olalove=
+dale+unsubscribe@googlegroups.com</a>.<br />
+To view this discussion on the web visit <a href=3D"https://groups.google.c=
+om/d/msgid/olalovedale/CABCifB5%2B8dRtXXLKYFFuqtU9fKnD2G%2BpYwZvxnNP0cgjTWy=
+91g%40mail.gmail.com?utm_medium=3Demail&utm_source=3Dfooter">https://groups=
+.google.com/d/msgid/olalovedale/CABCifB5%2B8dRtXXLKYFFuqtU9fKnD2G%2BpYwZvxn=
+NP0cgjTWy91g%40mail.gmail.com</a>.<br />
+
+--000000000000fdb0e105e7db459c--

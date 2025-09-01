@@ -1,0 +1,954 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 202004 will be lost/reset.
+# Last config file used to build this data file was /home3/cbt/tmp/awstats/ssl/awstats.caldonbiotech.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2014                
+POS_TIME 2698                
+POS_VISITOR 15540               
+POS_DAY 27245               
+POS_DOMAIN 3602                
+POS_LOGIN 4256                
+POS_ROBOT 4411                
+POS_WORMS 5338                
+POS_EMAILSENDER 5469                
+POS_EMAILRECEIVER 5612                
+POS_SESSION 28141               
+POS_SIDER 28351               
+POS_FILETYPES 5747                
+POS_DOWNLOADS 6087                
+POS_OS 6377                
+POS_BROWSER 6726                
+POS_SCREENSIZE 9230                
+POS_UNKNOWNREFERER 9304                
+POS_UNKNOWNREFERERBROWSER 9947                
+POS_ORIGIN 10407               
+POS_SEREFERRALS 10555               
+POS_PAGEREFS 10747               
+POS_SEARCHWORDS 11605               
+POS_KEYWORDS 11757               
+POS_MISC 2361                
+POS_ERRORS 11816               
+POS_CLUSTER 4112                
+POS_SIDER_404 12002               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20200501004350 352 107439 18345149012810
+FirstTime 20200401005333
+LastTime 20200430225806
+LastUpdate 20200501083052 352 0 351 0 0
+TotalVisits 569                 
+TotalUnique 285                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 291                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+RealPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+JavaEnabled 0 0 0
+QuickTimeSupport 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+AddToFavourites 0 10 0
+TotalMisc 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 91 195 3424658 36 64 364834
+1 42 180 5015162 75 90 905757
+2 60 525 15645254 70 84 1643005
+3 1658 2014 120001763 291 467 9216921
+4 107 237 5755944 54 66 1037216
+5 140 635 18869613 82 100 1635315
+6 51 207 6400694 75 95 1343059
+7 55 303 8646557 88 105 1567683
+8 46 258 8114189 25 52 593146
+9 87 315 8574384 32 46 267627
+10 79 513 15483099 141 548 15041485
+11 111 495 12100581 32 46 145922
+12 93 512 14758762 97 504 13622882
+13 64 405 12786768 73 96 1627961
+14 66 267 6593030 35 68 402430
+15 72 422 12584609 42 76 515237
+16 74 163 5346672 48 71 1349030
+17 51 261 7256716 50 67 1114543
+18 54 314 8770733 28 42 274887
+19 35 276 7545144 35 48 610760
+20 113 149 2576081 48 68 1166349
+21 128 702 19667980 65 89 1479560
+22 57 124 4088822 196 218 5562443
+23 33 248 8017378 25 41 261142
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 29
+us 2784 7828 283352629
+cn 133 262 6841086
+gb 84 246 8093125
+de 77 236 6828218
+sa 64 336 7308205
+in 39 315 10365107
+br 28 265 7742391
+ca 27 101 3050324
+ru 23 23 1134800
+fr 20 20 861669
+ua 18 18 547485
+gh 12 12 110920
+se 10 10 229728
+nl 9 9 217004
+ke 5 5 125701
+ch 4 4 91866
+at 4 4 13542
+tr 4 4 160815
+nc 3 3 236892
+vn 3 3 45938
+vg 2 2 6765
+lt 2 2 45944
+it 2 2 157836
+hk 2 2 29756
+dk 2 2 45938
+pk 1 1 0
+kr 1 1 78963
+bn 2 2 144016
+th 2 2 157930
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 20
+bot[\s_+:,\.\;\/\\-] 973 28650055 20200430154940 56
+spider 216 5650798 20200430030313 4
+unknown 132 3432 20200429204849 132
+Googlebot/ 119 63881 20200430233111 116
+crawl 100 1678382 20200417023440 0
+bingbot/ 92 2392 20200428140019 92
+(firefox/)([0-9]\.|[0-1][0]\.) 66 4214015 20200425052224 2
+DuckDuckGo\-Favicons\-Bot/ 33 428223 20200428173047 0
+no_user_agent 31 1945458 20200428023200 2
+KomodiaBot/ 15 998728 20200420212524 0
+java 10 229730 20200427074131 0
+facebookexternalhit/ 9 137808 20200429122811 0
+[\s_+:,\.\;\/\\-]bot 6 137834 20200424135412 0
+SurdotlyBot/ 4 91872 20200409005557 0
+bingpreview 4 76998 20200406135618 0
+YandexBot/ 4 104 20200421172215 4
+curl 3 236880 20200427151003 0
+Python\-urllib/ 2 52 20200430143722 2
+baidu 2 45942 20200427090255 0
+Dalvik/ 1 403 20200421081550 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 14
+gif 18 15246 0 0
+jpg 488 49842996 0 0
+woff2 232 12857092 0 0
+pdf 2 633101 0 0
+eot 22 1895100 0 0
+php 220 55246 0 0
+html 2754 138413317 0 0
+ttf 123 2517192 0 0
+xml 2 2090 0 0
+woff 6 406136 0 0
+css 2714 47927327 0 0
+js 2610 53595729 0 0
+png 521 29855605 0 0
+Unknown 8 8416 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 4
+//wp-content/plugins/js_composer/changes.txt 30 0 1566840
+/wp-content/plugins/js_composer/changes.txt 30 0 1566840
+/wp-content/uploads/2020/03/SPUTOLYSIN-TEST-MSDS.pdf 1 0 542994
+/wp-content/uploads/2020/03/SDS-Aldolase-Control.pdf 1 0 90107
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 20
+macosx7 6 6
+win8.1 205 37
+win16 2 2
+Unknown 244 244
+winlong 3 3
+win10 2896 633
+macosx11 221 151
+linuxandroid 393 36
+ios_ipad 104 6
+win7 3126 1819
+macosx12 54 52
+win8 4 4
+winxp 197 34
+macosx10 44 44
+macosx9 2 2
+linux 1171 173
+macosx8 2 2
+bsdnetbsd 2 2
+ios_iphone 344 39
+macosx 700 78
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 114
+netscape 4 4
+chrome56.0.2924.76 2 2
+chrome54.0.2840.98 38 38
+chrome58.0.3029.110 103 15
+chrome40.0.2214.85 4 4
+chrome49.0.2623.75 4 2
+firefox50.0 163 4
+chrome40.0.2214.93 2 2
+chrome27.0.1453.93 3 3
+chrome58.0.1145.75 2 2
+chrome70.0.3538.102 54 5
+chrome39.0.2171.95 18 18
+safari13.0.5 302 39
+chrome72.0.3617.0 157 13
+firefox17.0 175 12
+chrome56.0.2924.87 9 2
+chrome35.0.3319.102 2 2
+firefox61.0 2 2
+chrome68.0.3440.106 187 13
+firefox15.0 2 2
+chrome80.0.3987.132 98 9
+chrome72.0.3626.121 4 4
+chrome75.0.3770.142 54 8
+chrome41.0.2227.0 4 4
+chrome29.0.1547.62 2 2
+chrome27.0.1453.116 2 2
+firefox45.0 2 2
+firefox74.0 53 4
+firefox47.0 34 34
+chrome66.0.3359.30 103 8
+chrome50.0.8514.1941 76 2
+chrome74.0.3729.169 4 4
+firefox65.0 4 4
+chrome65.0.3325.181 353 18
+opera67.0.3575.115 2 2
+chrome50.0.2661.75 4 4
+msie10.0 7 7
+firefox30.0 6 6
+chrome80.0.3987.122 100 100
+msie6.0 7 7
+firefox54.0 75 12
+firefox66.0 2 2
+safari 104 6
+chrome46.0.7735.1178 42 0
+chrome81.0.4044.111 94 6
+firefox67.0 2 2
+msie8.0 5 5
+chrome81.0.4044.92 106 8
+chrome34.0.1847.131 2 2
+chrome74.0.3729.157 7 7
+edge18 180 12
+opera62.0.3331.99 18 18
+msie11.0 253 48
+safari12.1.2 130 8
+chrome80.0.3987.149 445 58
+chrome51.0.2704.84 12 12
+chrome67.0.3396.87 3 3
+mozilla 63 63
+chrome76.0.3790.0 96 9
+firefox60.0 29 29
+chrome79.0.3945.79 65 65
+chrome24.0.1295.0 2 2
+chrome74.0.3729.131 4 4
+firefox35.0 2 2
+chrome32.0.1664.3 2 2
+chrome78.0.3904.108 2 2
+chrome41.0.2272.96 2 2
+chrome77.0.3835.0 86 8
+chrome40.0.2214.115 2 2
+firefox52.0 212 142
+chrome65.0.3325.146 4 4
+chrome66.0.3359.181 83 83
+chrome68.0.3440.84 2 2
+chrome80.0.3987.162 340 36
+chrome63.0.3239.84 192 27
+chrome79.0.3945.136 106 8
+safari13.1 228 26
+chrome77.0.3865.90 16 16
+chrome62.0.3202.84 1 1
+chrome78.0.3904.97 2 2
+opera12.14 1 1
+chrome79.0.3945.88 212 44
+chrome81.0.4044.122 661 95
+chrome70.0.3538.77 2 2
+chrome50.0.2661.102 1 1
+netscape5.0 3 2
+safari12.0.3 212 20
+safari11.0 2 2
+firefox75.0 222 22
+chrome45.0.2454.101 12 12
+chrome80.0.3987.163 1067 100
+msie9.0 1605 1542
+edge17 98 8
+chrome49.0.2623.112 2 2
+chrome76.0.3809.100 11 11
+chrome27.0.1500.55 2 2
+chrome63.0.3239.132 6 6
+chrome67.0.3396.62 4 4
+chrome66.0.3359.117 2 2
+chrome79.0.3945.130 3 3
+chrome76.0.3809.111 2 2
+Unknown 234 234
+chrome71.0.3578.98 4 4
+chrome71.0.3578.80 142 48
+chrome26.0.1410.65 2 2
+chrome71.0.3542.0 2 2
+firefox57.0 2 2
+msie10.6 1 1
+firefox56.0 14 14
+opera7.11 2 2
+opera54.0.2952.51 2 2
+firefox64.0 3 3
+chrome79.0.3945.59 7 7
+chrome75.0.3770.100 2 2
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 12
+Go-http-client/2.0 20200421135325
+Faraday_v0.15.4 20200402204914
+Mozilla/5.0_zgrab/0.x_(compatible;_Researchscan/t13rl;__http://researchscan.comsys.rwth-aachen.de) 20200426054327
+Python/3.8_aiohttp/3.6.2 20200429205228
+Go-http-client/1.1 20200429040030
+WordPress/5.0.8;_https://caldonbiotech.com 20200430030201
+https://gdnplus.com:Gather_Analyze_Provide. 20200406211204
+WordPress/5.0.9;_https://caldonbiotech.com 20200430215508
+Mozilla/5.0_Firefox/35.0 20200412005549
+myseosnapshot/1.0 20200420153141
+Go_http_package 20200407140645
+Mozilla 20200414141311
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 9
+Go_http_package 20200407140645
+myseosnapshot/1.0 20200420153141
+WordPress/5.0.8;_https://caldonbiotech.com 20200430030201
+Python/3.8_aiohttp/3.6.2 20200429205228
+Go-http-client/1.1 20200429040030
+WordPress/5.0.9;_https://caldonbiotech.com 20200430215508
+https://gdnplus.com:Gather_Analyze_Provide. 20200406211204
+Faraday_v0.15.4 20200402204914
+Go-http-client/2.0 20200421135325
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 874 1358
+From1 8 8
+From2 1610 1673
+From3 74 74
+From4 801 6607
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 2
+r_search_yahoo_com 2 2
+www_google_com 1608 1671
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 13
+http://www.citycenterpharmacy.com 16 16
+https://www.chaplinbaptist.org 14 14
+http://www.sleepsolutionsflorida.com 14 14
+http://www.medicalproductguide.com/companies/10516/caldon-biotech-inc 8 8
+http://192.185.52.186:80 4 4
+https://192.185.52.186:443 4 4
+https://www.yellowpages.com/carlsbad-ca/mip/caldon-biotech-inc-531300245 2 2
+http://www.idexmundi.com/blog/14367301/how-to-increase-traffic-on-your-wordpress-blog-easily/ 2 2
+https://sandiegolifechanging.org/work/ 2 2
+http://www.prevea.com/Providers/Stephen-Perry 2 2
+https://www.biocompare.com/101719-Caldon-Biotech-Inc/ 2 2
+http://www.biokits.com/productinfo/1597/Serum-aldolase-Colorimetric-Assay-Kit-Stat-Pack.html 2 2
+https://www.yellowpages.com 2 2
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 9
+302 12 0
+406 278 62828
+404 392 17057325
+403 53 4422
+301 402 311
+409 120 9960
+500 40 20908
+400 16 369
+405 6 84
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 80
+/1586395999415397043 1 -
+/wp-content/themes/lote27/download.php 2 -
+/%23wp-config.php%23 2 -
+/wp-includes/pomo/hdweb.php 2 -
+/wp-content/themes/cafesalivation/download.php 2 -
+/wp-includes/ID3/comay.php 2 -
+/wp-config.zip 1 -
+/wp-content/themes/twentyeleven/download.php 6 -
+/wp-content/themes/markant/download.php 2 -
+/wp-content/themes/urbancity/lib/scripts/download.php 2 -
+/wp-config.tar 1 -
+/wp-content/plugins/wp-custom-pages/wp-download.php 2 -
+/sitemap.xml 4 -
+/wp-content/themes/oxygen-theme/download.php 2 -
+/wp-config.php_bak 2 -
+/wp-content/themes/endlesshorizon/download.php 2 -
+/wp-content/plugins/wp-hide-security-enhancer/router/file-process.php 2 -
+/wp-content/cache/log/000000/varnish.log 1 -
+/wp-content/cache/log/000000/dbcache.log 1 -
+/wp-content/uploads/file-manager/log.txt 2 -
+/wp-config.inc 2 -
+/cache/accesson1.php 1 -
+/1587511119282166009 1 -
+/wp-json/visualizer/v1/update-chart 1 -
+/website-sitemap.xml 4 -
+/wp-content/themes/yakimabait/download.php 2 -
+/owa/auth/logon.aspx 8 -
+/wp-content/plugins/sf-booking/lib/downloads.php 4 -
+/400.shtml 3 -
+/sitemap.html 4 -
+/wp-content/themes/MichaelCanthony/download.php 2 -
+/wp-content/uploads/wp-config-backup.txt 2 -
+/wp-content/plugins/drpsassembly/js/js.php 2 http://www.facebook.net/
+/p4.html 4 https://www.google.com.mm/
+/wp-content/cache/log/000000/minify.log 1 -
+/wp-config.xml 2 -
+/_wpeprivate/config.json 2 -
+/wp-content/plugins/google-mp3-audio-player/direct_download.php 2 -
+/wp-content/themes/green_farming_new/download.php 2 -
+/smalls.php 1 -
+/wp-content/themes/epic/includes/download.php 2 -
+/wp-config-backup.txt 2 -
+/wp-content/themes/onetone/js/admin.js 2 -
+/lieats.php 1 -
+/wp-content/themes/felis/download.php 2 -
+/wp-content/themes/rowe/download/download.php 2 -
+//sitemap.html 2 -
+/wp-content/plugins/easyrotator-for-wordpress/bb.php 1 -
+/wp-content/plugins/photocart-link/decode.php 2 -
+/p4pi.html 1 https://caldonbiotech.com/p4pi.html
+/ 172 -
+/wp-content/plugins/gassembly/js/js.php 2 http://www.facebook.net/
+/wp-content/themes/TheLoft/download.php 2 -
+/get.php 1 -
+/wp-config.txt 2 -
+/wp-json/trx_addons/v2/get/sc_layout 3 -
+/wp-content/themes/estrutura-basica/scripts/download.php 2 -
+/wp-content/plugins/plugin/info.php 1 -
+/wp-content/themes/nishizawa_tmp/force-download.php 2 -
+/wp-content/plugins/ajax-store-locator-wordpress_0/sl_file_download.php 2 -
+/wp-content/plugins/sam-pro-free/sam-pro-ajax-admin.php 2 -
+/wp-json/rankmath/v1/ 1 -
+/wp-content/plugins/wp-ecommerce-shop-styling/includes/download.php 2 -
+/wp-content/plugins/easyrotator-for-wordpress/cache.php 1 -
+/wp-content/force-download.php 2 -
+/wp-check.php 1 -
+/wp-content/plugins/cip4-folder-download-widget/cip4-download.php 2 -
+/wp-includes/css/style.css.php 1 -
+/cache/blackhat.php 2 -
+/wp-content/themes/u_parts/force-download.php 2 -
+/wp-content/themes/kap/download.php 4 -
+/wp-content/themes/dt-the7/js/%url% 1 -
+/sitemap_index.xml 4 -
+/wp-content/themes/dt-the7/js/%25url%25 2 -
+/th1s_1s_a_4o4.html 60 -
+/wp-config.php1 2 -
+/wp-content/plugins/background-image-cropper/blackhat.php 1 -
+/wp-content/cache/log/000000/pagecache.log 1 -
+/wp-e-commerce/wpsc-includes/misc.functions.php 2 -
+/wp-content/plugins/seo-by-rank-math/assets/front/js/rank-math.js 2 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 291
+184.154.139.52 368 431 29334528 20200430030304
+184.154.139.51 342 342 23442679 20200420030717
+184.154.139.4 294 294 20159388 20200425031134
+184.154.139.50 293 293 20094676 20200429030605
+184.154.139.49 245 245 16799491 20200424030834
+192.185.52.186 198 198 1 20200430215508
+35.233.40.120 74 110 1559930 20200429205232
+35.205.71.96 70 104 1474178 20200414044340
+46.152.133.153 64 336 7308205 20200427083231
+131.220.6.152 59 59 1355247 20200430052715
+111.231.54.110 46 46 798184 20200411110556
+151.138.13.148 46 46 1056642 20200430225806
+115.159.198.225 44 44 769006 20200430031602
+108.178.164.114 42 233 7701874 20200406160605
+35.236.228.133 38 38 674206 20200424001858
+51.15.236.15 30 124 3739041 20200421181900
+200.170.183.50 27 264 7663430 20200424123855
+104.177.112.172 26 228 5424427 20200430110504
+103.12.169.121 23 191 6316029 20200402025928
+69.195.129.54 22 22 459440 20200408203333
+35.184.35.134 21 279 8135713 20200425052225
+68.7.183.93 20 212 6847675 20200419185319
+174.195.133.170 17 124 3836271 20200428195707
+132.183.13.8 16 221 6447394 20200410100050
+70.181.194.157 15 115 3755724 20200407211037
+113.172.41.80 1 1 0 20200405055659
+183.253.80.90 2 2 45948 20200403115951
+18.217.223.118 2 2 157930 20200424145359
+23.254.211.185 2 2 157934 20200429073624
+172.251.48.73 7 95 2440923 20200408112706
+35.164.235.49 2 2 45946 20200406150838
+104.41.228.253 2 2 45942 20200427142602
+157.245.73.58 2 2 45952 20200419092824
+68.111.223.122 6 94 2370785 20200417024135
+91.121.79.16 4 4 315668 20200420065443
+45.32.6.118 4 4 75688 20200425130415
+182.106.216.4 2 2 157914 20200423165724
+8.28.16.254 2 2 157930 20200424101530
+54.191.38.98 3 3 68916 20200406122156
+174.127.135.122 2 2 45944 20200419230033
+91.121.76.25 3 3 45952 20200429190219
+167.71.150.200 1 1 22975 20200403001200
+13.69.199.207 2 2 30348 20200427142703
+177.19.187.79 1 1 78961 20200426205756
+34.211.190.151 3 3 68907 20200417012056
+103.111.69.180 14 122 3891146 20200408105441
+167.160.77.114 2 2 30342 20200424115734
+157.33.218.120 8 106 3406466 20200413021337
+70.181.129.192 8 128 3679622 20200403211308
+54.218.109.112 3 3 68910 20200428162056
+61.161.209.134 1 1 73243 20200419072921
+66.102.8.201 1 29 368054 20200403024135
+61.189.47.93 2 2 157922 20200419072722
+104.236.199.171 2 42 1743510 20200423172920
+35.161.166.141 3 3 68895 20200423164401
+206.217.141.247 8 62 1451538 20200418070630
+107.178.232.159 8 104 3296652 20200426040801
+52.44.240.86 2 2 45942 20200403034658
+165.227.177.154 2 38 1711260 20200419084646
+74.126.55.206 4 4 91884 20200414141311
+178.210.180.127 4 4 160815 20200412220616
+70.127.15.156 4 53 1703226 20200406151055
+163.172.137.15 2 2 45940 20200401051751
+35.166.115.75 3 3 68907 20200413092703
+54.188.107.82 3 3 68907 20200412101901
+104.168.182.234 4 4 89282 20200402175429
+122.129.65.35 1 1 0 20200419114807
+159.89.35.112 2 38 1711256 20200410161544
+161.35.88.186 2 2 45936 20200422123946
+62.210.83.78 6 6 137846 20200425165904
+54.191.47.204 3 3 68910 20200426160553
+194.5.156.34 1 1 403 20200405124709
+40.107.221.78 8 104 3401726 20200406072145
+51.91.202.63 4 4 315826 20200409134925
+47.52.78.5 6 6 107726 20200430120719
+34.214.117.15 3 3 68916 20200411113336
+66.249.88.103 0 4 468676 
+162.253.129.45 3 3 29873 20200427123105
+17.58.56.6 2 2 45928 20200405173421
+185.94.191.125 12 12 947528 20200403032233
+178.22.67.249 2 2 45934 20200403175320
+54.200.170.240 2 2 45942 20200403063751
+34.211.39.5 3 3 68913 20200427162303
+37.9.58.194 2 2 45940 20200422172840
+104.185.184.197 11 100 3357720 20200409212026
+137.226.113.28 2 2 45946 20200420074228
+45.63.95.2 2 2 45948 20200410090316
+138.246.253.15 3 3 0 20200425163518
+104.140.188.14 2 2 157928 20200407093034
+54.188.58.130 3 3 68934 20200405011057
+40.94.36.80 5 53 1723849 20200406101541
+78.46.85.253 2 2 157928 20200424035359
+176.31.244.49 2 2 157936 20200406080720
+47.56.219.93 9 9 161437 20200415175406
+108.162.28.6 3 3 236890 20200426022634
+95.217.77.97 4 4 315852 20200419112132
+64.233.172.232 2 4 50652 20200404122905
+167.172.61.101 2 2 45946 20200415220750
+216.170.122.25 4 4 315828 20200414033858
+50.202.38.3 4 4 315850 20200428234358
+46.118.122.16 3 3 47149 20200428095923
+207.180.255.81 4 4 89276 20200416182853
+34.217.174.22 3 3 68892 20200429160607
+50.113.83.228 6 104 3271632 20200430102808
+87.225.94.221 2 2 157936 20200406181508
+195.181.168.172 2 2 45938 20200424204835
+197.248.25.15 4 4 46744 20200428103646
+221.224.40.74 2 2 157924 20200425072538
+159.203.164.194 2 38 684166 20200402132852
+24.4.58.138 10 108 3436172 20200411082743
+34.209.33.35 9 96 2572294 20200411113340
+184.183.172.61 9 76 2216877 20200408142110
+192.71.36.158 2 2 45956 20200404000756
+70.95.171.252 10 63 1946506 20200414164243
+82.100.220.44 2 2 6771 20200413003704
+202.171.77.194 1 1 78964 20200422043205
+34.67.114.84 2 2 29070 20200425052044
+35.193.110.215 2 2 30350 20200425052042
+124.206.180.133 2 2 157936 20200412005549
+117.21.221.58 2 2 157922 20200426205515
+46.235.40.89 2 2 6771 20200417160448
+198.211.101.83 2 2 157928 20200403125402
+52.43.41.221 3 3 68895 20200425162728
+193.106.30.99 3 3 0 20200421103626
+202.160.39.153 2 2 144016 20200421105513
+58.242.194.173 4 4 91874 20200414090251
+54.191.35.114 2 2 45950 20200412060848
+192.71.224.240 2 2 45956 20200415095030
+69.175.97.170 2 2 45934 20200422051852
+81.19.145.153 2 2 6771 20200415213535
+188.214.132.78 2 2 45944 20200426021707
+104.206.128.34 2 2 157930 20200406210111
+142.93.186.172 4 4 315856 20200404121801
+192.71.2.171 2 2 45944 20200404044535
+109.234.34.254 2 2 157928 20200406182054
+104.41.225.47 2 2 32054 20200427142724
+159.89.237.131 1 1 22975 20200414065212
+117.42.150.57 5 5 75805 20200416003333
+104.198.78.49 2 2 29752 20200425052044
+34.82.192.151 4 4 315860 20200423161727
+137.74.80.168 2 2 29756 20200402091504
+35.237.62.110 4 4 91890 20200410043115
+40.127.111.29 4 4 75310 20200427142803
+5.45.82.205 2 2 45946 20200416081245
+3.14.73.89 4 50 804611 20200430143715
+188.143.169.29 4 4 315850 20200401141735
+162.201.144.173 10 99 2367541 20200403033112
+172.241.82.250 2 2 45948 20200406005851
+35.162.77.131 2 2 45924 20200421160742
+52.114.128.37 2 3 160295 20200424123844
+178.162.204.238 2 2 28720 20200407144346
+46.101.202.17 2 2 5952 20200427045046
+34.220.150.201 4 91 2385859 20200417012100
+95.216.16.19 2 2 5950 20200413044931
+185.195.24.62 1 1 0 20200418193728
+34.220.150.173 2 2 157934 20200402175815
+54.151.29.171 8 86 1624254 20200402215305
+157.47.32.118 5 53 1723843 20200424060554
+46.98.213.18 2 2 86680 20200414171711
+50.202.38.5 2 2 157930 20200428220831
+141.164.87.94 4 4 75708 20200418122140
+45.55.255.118 2 42 1743488 20200428023155
+142.93.178.111 2 38 684158 20200422194258
+104.36.19.93 2 2 45938 20200417121426
+221.1.177.2 1 1 78957 20200423170008
+221.178.138.106 1 1 78964 20200422042801
+99.91.153.61 10 108 2866787 20200409192318
+73.184.211.60 2 92 3025314 20200414153452
+170.130.187.10 4 4 315854 20200407140645
+198.71.235.54 2 2 6771 20200409144629
+66.249.88.107 0 3 350485 
+46.252.205.135 1 1 403 20200402073617
+23.95.232.212 2 2 28480 20200424115727
+137.226.113.34 4 163 5187664 20200421055226
+125.186.73.24 1 1 78963 20200419223049
+5.128.182.20 2 2 45952 20200407075609
+66.110.216.252 1 1 78961 20200421105617
+198.211.113.71 2 2 45950 20200414065002
+178.22.67.142 2 2 45932 20200404100400
+159.65.47.229 2 42 1743500 20200414233710
+45.132.187.31 2 2 157932 20200402075704
+41.139.230.99 1 1 78957 20200423165936
+204.62.118.156 10 90 1974844 20200423171643
+52.43.109.211 3 3 68907 20200415094803
+99.13.22.40 8 106 3406458 20200415113251
+34.220.14.15 6 6 137835 20200430162511
+103.35.74.68 9 96 2518108 20200430121828
+158.46.150.104 2 2 45940 20200402034235
+209.59.181.92 2 2 45934 20200420153141
+35.231.31.209 3 3 68907 20200402103232
+81.19.145.44 2 2 6771 20200411144635
+68.7.72.204 11 11 252655 20200403221624
+159.65.231.198 1 1 0 20200427151001
+149.28.41.61 4 4 75700 20200426023218
+183.89.214.13 2 2 157930 20200424135348
+40.94.36.82 0 1 2359 
+18.237.155.225 3 3 68907 20200402090606
+54.151.59.208 3 3 159073 20200402204914
+45.77.134.191 2 2 45936 20200428030013
+34.221.185.254 2 2 45934 20200428151512
+164.132.44.97 2 2 157836 20200423044049
+35.164.172.251 3 3 68913 20200424162254
+66.84.88.147 5 38 772167 20200424115723
+208.91.199.94 2 2 6765 20200401152800
+54.190.197.60 2 2 45946 20200422172833
+35.224.115.112 2 2 30348 20200425052047
+95.217.177.196 2 2 45932 20200423154721
+198.71.234.10 2 2 6765 20200404124256
+104.154.130.153 2 2 41642 20200425052041
+99.171.177.61 7 96 2443280 20200403212355
+165.225.50.108 8 57 1776268 20200408135104
+192.255.70.112 2 2 157936 20200424085557
+209.208.78.247 2 2 45950 20200410064129
+173.254.227.90 2 2 157928 20200422042752
+75.12.18.5 4 4 75692 20200427213159
+104.129.192.49 8 98 2576454 20200416171031
+69.12.84.54 2 2 157926 20200419223019
+99.106.76.40 2 2 45942 20200416142441
+52.25.245.64 3 3 68904 20200405094041
+78.136.202.52 2 2 45948 20200415212701
+52.83.150.67 2 76 1362228 20200425180137
+138.197.77.243 2 37 647230 20200412144016
+35.203.252.120 5 53 1671313 20200426052540
+51.254.116.148 4 4 203864 20200403064349
+157.51.122.140 1 1 0 20200401220001
+137.226.113.27 2 2 45942 20200426054327
+40.107.221.25 0 2 4718 
+34.219.99.146 3 3 68925 20200407090747
+51.77.249.202 2 2 30660 20200409131833
+51.68.152.26 14 14 321592 20200426232113
+54.186.127.242 2 2 45944 20200425112150
+51.15.124.39 2 2 45938 20200403183400
+24.236.238.20 12 154 4969447 20200408123345
+35.223.125.93 2 2 36998 20200425052042
+34.221.226.154 3 3 68913 20200418160641
+54.213.104.188 2 2 45940 20200416012150
+144.168.162.250 2 2 157928 20200402101335
+193.37.212.80 4 4 315836 20200417062539
+184.94.240.92 4 4 315864 20200411100824
+5.227.15.87 2 2 45946 20200404075718
+14.169.160.248 2 2 45938 20200418150151
+70.183.105.68 12 112 3710520 20200401155001
+94.9.63.182 10 78 2238878 20200424101529
+50.98.90.147 0 2 17043 
+159.224.80.84 2 2 45922 20200427093951
+52.53.249.184 1 1 0 20200402215253
+157.230.37.15 2 2 157828 20200408181426
+41.218.200.219 12 12 110920 20200421153525
+52.234.129.115 2 2 45940 20200416014638
+3.0.163.208 6 6 473774 20200401012435
+157.51.115.92 11 107 2550589 20200402075827
+104.154.62.168 2 2 32460 20200425052047
+76.176.186.57 14 122 3891170 20200428092637
+34.83.105.203 4 4 315856 20200410002859
+54.88.41.70 2 2 45934 20200416150148
+68.8.32.124 11 78 2755061 20200402221437
+35.238.27.72 1 1 22961 20200425052042
+69.195.157.162 5 58 1807220 20200430143757
+60.191.38.77 10 10 789627 20200408150541
+202.171.73.124 2 2 157928 20200420162827
+66.102.8.203 4 27 962201 20200427052828
+157.47.58.86 8 106 3406444 20200424051706
+104.200.41.12 2 2 45922 20200422204102
+99.184.248.22 10 98 2597631 20200406122007
+54.213.33.161 3 3 68901 20200401110104
+13.79.160.159 2 2 29754 20200427142635
+3.81.120.91 2 2 157932 20200408044954
+54.188.241.53 1 1 0 20200427112052
+34.215.159.62 3 3 68898 20200420162936
+192.36.71.133 2 2 45932 20200429040030
+138.246.253.5 1 1 0 20200404070914
+157.51.248.63 10 110 3615282 20200422035454
+109.201.154.219 2 2 157928 20200406192156
+192.71.12.140 2 2 45940 20200421013509
+34.212.132.147 3 3 68889 20200408103159
+82.202.226.49 4 4 273354 20200404062215
+54.245.146.92 3 3 68895 20200417205527
+54.184.204.123 3 3 68913 20200404121125
+54.147.248.244 2 2 45936 20200421135325
+66.102.8.199 1 20 353600 20200403024135
+34.71.161.113 2 2 32494 20200425052047
+188.166.16.211 2 2 45950 20200403001044
+111.59.184.182 0 42 731752 
+66.249.88.105 2 2 45928 20200427052826
+159.251.7.4 6 6 137844 20200424150300
+132.239.142.131 6 60 1596918 20200421154453
+35.246.54.148 2 2 45956 20200421124244
+104.131.190.117 2 38 1711242 20200406081458
+192.171.85.69 6 84 1587502 20200424115712
+54.184.5.35 3 3 68919 20200409120702
+54.213.236.102 2 2 45944 20200421162251
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 30
+20200401 103 254 9953447 21
+20200402 141 535 17207604 28
+20200403 125 493 14809063 27
+20200404 82 84 4463117 17
+20200405 78 78 4063795 16
+20200406 158 671 23719477 29
+20200407 99 371 13230541 19
+20200408 130 487 16314642 18
+20200409 95 372 13281688 15
+20200410 86 237 9038803 15
+20200411 130 315 10604042 13
+20200412 71 106 4486665 14
+20200413 78 176 6985829 12
+20200414 176 501 15723784 23
+20200415 85 183 7187230 14
+20200416 106 296 10429282 21
+20200417 90 265 8791337 20
+20200418 78 132 5017420 16
+20200419 82 210 8853805 23
+20200420 68 68 3974213 11
+20200421 126 358 12363253 22
+20200422 82 218 8250805 17
+20200423 88 208 8166378 18
+20200424 169 624 19352441 24
+20200425 108 440 13640187 23
+20200426 112 330 11656619 19
+20200427 215 623 22864435 25
+20200428 111 366 13493189 18
+20200429 137 173 5238543 11
+20200430 158 546 14862959 20
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+30s-2mn 46
+1h+ 4
+2mn-5mn 4
+0s-30s 479
+15mn-30mn 12
+5mn-15mn 7
+30mn-1h 17
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 83
+/ 886 34220369 358 261
+/wp-cron.php 197 0 167 167
+/contact/ 108 4197042 6 8
+/wp-content/themes/dt-the7/fonts/icomoon-the7-social/fonts/icomoon-the7-social-icons-16x16.ttf 103 1213600 1 9
+/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.woff2 91 6790080 0 24
+/aldolase-liquid-control-product-highlight/ 88 3948538 1 4
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-solid-900.woff2 80 5189800 1 3
+/aldolase-reagent-pack-highlights/ 78 3749436 1 1
+/significance-of-testing-aldolase/ 78 3579306 3 1
+/sputolysin-stat-pack/ 76 4105260 0 2
+/sputolysin-product-highlight/ 76 3735260 0 1
+/olympus-au-400-600-640-2700-5400/ 74 6771842 0 4
+/faq/ 72 4857066 1 2
+/aldolase-control-msds/ 72 3241810 0 1
+/au-800/ 72 4460214 1 1
+/msds/ 72 3597596 0 1
+/aldolase-reagent-package-insert/ 72 4733404 1 1
+/hitachi-717-aldolase/ 71 4008424 1 1
+/beckman-cx-7/ 70 4545042 0 0
+/news/ 70 3386420 1 2
+/bayer-advia-1650/ 70 10489578 0 0
+/au-2700/ 70 4294656 1 1
+/package-insert-3/ 70 3821574 0 0
+/au-600/ 69 4685404 0 29
+/client-testimonials/ 68 3430512 1 1
+/wp-content/themes/dt-the7/fonts/icomoon-the7-social/fonts/icomoon-the7-social-icons-16x16.eot 6 74376 1 0
+/wp-admin/upgrade.php 1 1 1 1
+/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.eot 2 331484 0 0
+/page/4/ 2 121696 0 0
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-solid-900.woff 2 173752 0 0
+/feed/ 64 404380 2 2
+/wp-json/ 30 2251350 0 0
+/aldolase-control-package-insert/ 14 337758 0 1
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-solid-900.eot 6 1084320 0 2
+/services/service-page/ 2 142182 0 0
+/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.woff 2 196048 0 0
+/wp-json/contact-form-7/v1/contact-forms/1365/feedback 2 234 0 2
+/sample-page/feed/ 2 1424 0 0
+/au-400/ 18 470344 1 2
+/category/research/feed/ 2 13152 0 0
+/comments/feed/ 6 3012 0 1
+https://caldonbiotech.com/ 1 78968 0 1
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-regular-400.eot 6 243456 0 0
+/2016/ 6 155350 0 0
+/wp-content/uploads/smile_fonts/icomoon-brankic-32x32/icomoon-brankic-32x32.ttf 18 1288192 0 3
+/author/admin/feed/ 2 13928 0 0
+/departments/ 2 135018 0 0
+/our-clinic/prices/ 2 136078 0 0
+/wp-content/uploads/smile_fonts/icomoon-brankic-32x32/icomoon-brankic-32x32.eot 2 161464 0 0
+/cobas-mira/ 68 5020860 0 0
+/our-clinic/photo-gallery/ 2 119042 0 0
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/ 6 199978 0 0
+/dimension-rxl/ 12 337696 0 0
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-regular-400.woff 2 36336 0 0
+/wp-login.php 17 54439 7 10
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-regular-400.woff2 61 877212 0 1
+/author/admin/ 8 198792 1 1
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/feed/ 2 1956 0 0
+/wp-admin/admin-post.php 3 0 3 2
+/departments/department-page/ 2 146474 0 0
+/olympus-b/ 12 383438 0 0
+/page/2/ 2 124574 0 0
+/wp-content/themes/dt-the7/inc/admin/assets/fonts/dt-icons/dt-icons.ttf 2 15400 0 1
+/dt_gallery/hospital/ 6 167544 0 0
+/2016/05/ 6 155688 0 0
+/services/ 2 145218 0 0
+/doctors/ 2 195068 0 0
+/xmlrpc.php 2 806 2 2
+/category/research/ 6 155956 0 0
+/wp-includes/wlwmanifest.xml 2 2090 0 0
+/about-us/ 47 869306 5 9
+/wp-admin/ 2 0 1 1
+/dt_gallery/feed/ 2 2496 0 0
+/search/1/feed/rss2/ 2 737056 0 0
+/our-clinic/ 2 128602 0 0
+/our-clinic/testimonials/ 2 140182 0 0
+/test-application/ 2 194790 0 0
+/2016/05/12/ 6 156016 0 0
+/page/3/ 2 124900 0 0
+/dt_gallery/ 2 104522 0 0
+/aldolase-reagent-pack-msds/ 12 374332 0 0
+/sample-page/ 2 105438 0 0
+/wp-json/oembed/1.0/embed 6 8182 0 2
+END_SIDER

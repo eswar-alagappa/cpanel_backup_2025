@@ -1,0 +1,484 @@
+Return-Path: <LOrlow@CarolinaChemistries.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id MGUqMacOLmPYOwMA7/vpDg
+	(envelope-from <LOrlow@CarolinaChemistries.com>)
+	for <rvairavan@caldonbiotech.com>; Fri, 23 Sep 2022 14:53:11 -0500
+Return-path: <LOrlow@CarolinaChemistries.com>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Fri, 23 Sep 2022 14:53:11 -0500
+Received: from mail-mw2nam10on2049.outbound.protection.outlook.com ([40.107.94.49]:18666 helo=NAM10-MW2-obe.outbound.protection.outlook.com)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <LOrlow@CarolinaChemistries.com>)
+	id 1obojW-000t12-Ua
+	for rvairavan@caldonbiotech.com;
+	Fri, 23 Sep 2022 14:53:11 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=ed0GjXQXRqrfUDu5r3t7esOv/nx+Bs4NrBVq7c8xxqv03pvmcpgdyIOhushvXXCE6JAtIh3AabAq8o91mLvyHM+2hpr1/mWVQ36AGqosodsIGvm1kb//ZX6TPkqyWmHA1jMm7CQC1jK1DAttLZK0Tf6ciM87yAhk6zDBO5T5O25Yyc9ipV6xbI7aFp1Y7q/S+e0h0kFC04tgGuaDZkp1HnKV5b+Y1dyV5gctMlIq4avupS8tJtN+VnP0wR9t62W7eN6KU6xelc68ipvC2B3riLMEA2xD/eoRkDjDaK3Rdr1PRG0UqiJNHObOUq27YcSPMZv1iHgmcgXZevhW5BQ9fg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=1W8rkmUarYmGDDCs1Nz4HzxrzGK6H9Tf8BaHA7VV5IY=;
+ b=NdW72+MWcsKZPriQUPxPDfgehDcyN1J2JgMAeQ0lJr+RfWsOmS/UkCvYLhYYgphy5nIkV85OUzjokVVBk5b01Ur8QEAx3P2ijuDTfaLVLtnkQK30i65DrHdbHHPmV1Ka0dMqdJJlCdgUYdsN87HW2lZHcN3ibOww2Hol+uoUypmTTkCXqhUJ3A3GL2z8Omm36dAk0XnCYvDRGVIqEEtyiZ+wjdaoWMjPzj4EqXkrfQHcnuscmtZlHsmQk6TCIxd6aAUzDYsFH+Y8jW+cmjv8JTRPN4z/s9xwNJMSe829/lBrnynyWS/JA9QgGGDajyOQj7XG8pBueIEbcsQyuSOpkQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=carolinachemistries.com; dmarc=pass action=none
+ header.from=carolinachemistries.com; dkim=pass
+ header.d=carolinachemistries.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=carolinachemistries.onmicrosoft.com;
+ s=selector2-carolinachemistries-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=1W8rkmUarYmGDDCs1Nz4HzxrzGK6H9Tf8BaHA7VV5IY=;
+ b=TAVJTvFEv/Ltzir+YJICUTDJACXIHxN5z7BQ1kau+lF12/JTZKii1QiVYOEi/cVXeyl0Gvso8TNLcNmzs5NHvFgbTiM/DZkNjdYxV8/oIPe+V1uhkf2CSd5r1oMEpjWd7rja2SqK5PcnsjEF8ATzf/tMEf9kEBfik8i+sLRC4n4=
+Received: from SJ0PR22MB2672.namprd22.prod.outlook.com (2603:10b6:a03:318::17)
+ by CH2PR22MB1766.namprd22.prod.outlook.com (2603:10b6:610:5f::16) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5654.20; Fri, 23 Sep
+ 2022 19:52:53 +0000
+Received: from SJ0PR22MB2672.namprd22.prod.outlook.com
+ ([fe80::1c1:54ec:1986:86b1]) by SJ0PR22MB2672.namprd22.prod.outlook.com
+ ([fe80::1c1:54ec:1986:86b1%4]) with mapi id 15.20.5654.020; Fri, 23 Sep 2022
+ 19:52:53 +0000
+From: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com>
+To: "AnnMarie Di Prima (s)" <ADIPRIM@cap.org>
+CC: "rvairavan@caldonbiotech.com" <rvairavan@caldonbiotech.com>, Christina
+ Gonzales <CGonzales@CarolinaChemistries.com>, Patti Shugart
+	<pattigaull@aol.com>
+Subject: RE: Survey B - Aldolase Controls Shipping Monday
+Thread-Topic: Survey B - Aldolase Controls Shipping Monday
+Thread-Index: AdjPePhJkGdMZcI9QM+wmKhzzY/NhAAAiuPgAAK3LNA=
+Date: Fri, 23 Sep 2022 19:52:53 +0000
+Message-ID:
+ <SJ0PR22MB2672B324CF760448D2A512AFC5519@SJ0PR22MB2672.namprd22.prod.outlook.com>
+References:
+ <SJ0PR22MB2672C7C44BBCC15A64DBFF75C5519@SJ0PR22MB2672.namprd22.prod.outlook.com>
+ <SN6PR11MB2782768F8C810EF58A20D34FB6519@SN6PR11MB2782.namprd11.prod.outlook.com>
+In-Reply-To:
+ <SN6PR11MB2782768F8C810EF58A20D34FB6519@SN6PR11MB2782.namprd11.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=CarolinaChemistries.com;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SJ0PR22MB2672:EE_|CH2PR22MB1766:EE_
+x-ms-office365-filtering-correlation-id: 5e215de8-b12c-4b85-bdaf-08da9d9d3403
+x-ld-processed: f27d3a9c-1dc4-4139-a0c3-b8b63548fe8c,ExtAddr
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ KGkI/7sD2jzm5AMeQj9CwZb14nqolS3ESzXwT8KHcJUZ5bMjjcyTF9MG+Q+yir1omx/A18pUohAbd+MW/W9Xqj0A0e2WjhMbkoi5JwVvuBQiLQHNu+HSoaNpVhcdVj6X2fO9im7+z0ulihmTYsuuY/VTtYiUZfJZyKjpb95lSOV+uiGBKrXHbQ5/iGRyIAIM4RrkkJoYwy0tGBWZh4mc2cTnaGkPpnwMcU/f1xaOQv7R6uKZbkMrHQWzvYZe7sp/DDM1LQxMbp9gCiU1RDcu6TOHcQY0+swzHP2TeeOLo22kbgKGBaJuxT66khkfFr0lpR9u6xxMYQtva4FpXhEcFm94HOvzQlvRclDpjmsYDx4pmRWMIpBrcI/yTtVtDInP7b8RSS39/dS68jj+ETGFono2pugHy+0h2RzLpGG5M45xFMJ/zeVsCp5zEEU++GGUIv0YG3FkPGHK+6G90r2kCYjridDGYogsoYk+7nwQwRzCqYFYjMF76yCKTUDm1zmBUV679l6HQ3in5dJdiCR1sB0vk9J49ZPuZ2d9LHqScoz8iM0y1c9HxXK36rFdcjatRJJmgvmkSnQ3q6JGJ2m8NJSQ0VwNTNktSKCO5KqMWHv02W0b/+jl4LOUreqcNrsfBul5+4II32wOgHsVV+guUBWoEVYu37wZL3VVECYb1yLzj30ntJ31Yq+dRzBsLcDTQt94TXUbsoaW5MsEx542doSr0ORX9qT69M3NhU+spflOiJie/Bgsc/9R0rxPmM/ahbllolgJv/IGiu1yJW6lYTBBs1NNzKkhdSzqvjPuLAmdD9sTJnfF3zGN9r/hrsnY
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SJ0PR22MB2672.namprd22.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230022)(39840400004)(396003)(366004)(376002)(136003)(346002)(451199015)(38070700005)(478600001)(6916009)(166002)(54906003)(122000001)(316002)(41300700001)(76116006)(71200400001)(8936002)(8676002)(2906002)(52536014)(5660300002)(66946007)(66476007)(4326008)(7066003)(38100700002)(66556008)(64756008)(66446008)(9686003)(40140700001)(55016003)(26005)(33656002)(7696005)(53546011)(83380400001)(6506007)(186003)(86362001)(85282002);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?us-ascii?Q?phJK4AxK4gTXdUOQ0AUQU9kGs+QEOXbeZfOiyRumqO83D4ausd56JCgkflC5?=
+ =?us-ascii?Q?3hKNo9QG6JCkji7FQmOVpGpmozKf/lRHMzF+vJVLmTOC1Vgrke4CEMxAfU+h?=
+ =?us-ascii?Q?hxmwXsyQWez62W0Q4uYaU0CzuT1i8UmAHza8vb9x0z2cneaAYE1DXMpqKc3U?=
+ =?us-ascii?Q?YhxhrvtjG/dROH1AL7gm60ZD1Bax1AmeT5tdBugQfQO5iK7XE+jD0qG6qg2g?=
+ =?us-ascii?Q?F8HaFlXo0EiJBUpGV4Rb5qXkjYSySPqLZxXblYzoUlXr9x4qK3yKe9XPh4/k?=
+ =?us-ascii?Q?gcd8jd/MomKFwEZKaQgk8j4LvV3eSmVQjEFYqI5nbqrapwxD4NECJ6+BIfKv?=
+ =?us-ascii?Q?wkjT2zWrG9ZvHZtepEi80KfApbiPIFkeg4y8S2St03sgp1AKM4W20uE653GL?=
+ =?us-ascii?Q?pefn4DKKLBeaMb9kvIN1SRX7PsqtN7AhfTEGvZTET32GRiQv4tCQ6qo4ApxK?=
+ =?us-ascii?Q?MNdjL+/JP0VehsLqOMfesjx6aNlz14uPdoB88JwikNXkOk7LTc2YQmv/NgnH?=
+ =?us-ascii?Q?1xQ4hqj066maHxz0rTGDrxB+or13ojSxFeZEmIxJjIGBUUwY4LYibXZY9bo5?=
+ =?us-ascii?Q?TNbP7tWIXKXsubOTl/ebVjfVtMwA4r+9UeuMJWmGNDlr2zQ5iQeVarLpkflg?=
+ =?us-ascii?Q?gWXyTnAD/Du4AkM2dITL7NXAQDuGSZatew4HEFWpTxTB8KUswouVPnfP6KKR?=
+ =?us-ascii?Q?2bcEC43sscTylo3H6IqjCPpb+Ub9huiLbHBrvm/G7l7TDsAsHVRKlqis6Vww?=
+ =?us-ascii?Q?0e8FCnjGZyrGb1lDs5KcAZAt6ZstskzbJfEHMU5ysm1QFhsXcAFWF6Dao/T/?=
+ =?us-ascii?Q?Z5Fd4vLyFnb0cbgUkulcWGVjQLr6y6Mng2xAcpjzGSErk+8EDDEWYqA4h596?=
+ =?us-ascii?Q?Pa+U2GjGBhO8x7zjx93YmHPsVEjjiWWHSPS42sH7G5DnI2ExEN+ky61KUCAV?=
+ =?us-ascii?Q?LLT4n1DziMP+BQGL+xC5ck07iRr+2KAbb6pnqWegg1whMOGW15KX8p+d0ZGe?=
+ =?us-ascii?Q?A1OW/7u+/EBZcM0L2/p8w7M+lRS1jLFhLRHHf3vajfYUMSUzlbmToJArB46g?=
+ =?us-ascii?Q?ZiBsqcB3ZLkyWVkkA2n9PBJKSCE9j05PMmdeTwCKrUXkgH+Y+8cOYlJoHCSC?=
+ =?us-ascii?Q?Kn5N0giymyHpmCs4IZJgwkR47ks99rMTpBxgUyFPBTjAvW/hYnRVRMfD24ZP?=
+ =?us-ascii?Q?JUJi0OjecLvtQM4B760xHsCD85aqDHP/6+J09nz9gPImqpZv0wRFhoBSsAFx?=
+ =?us-ascii?Q?4sDRcAWqdpFHyTtQuQmYvRHAfsXmHl3+jPVs3TDDSA8Hkdt2Ff84J+CS4isW?=
+ =?us-ascii?Q?e49seue3WRHc4HMnJKKJTsxJD9ijWtGEuyqnKB/ngf/gLxZmgYcKzxjSYhv2?=
+ =?us-ascii?Q?dMgumj6VwQzNz+XrBfTwgb7Qtd3F0WTtQTfDaEodSKzJcs9KY7QVKeuG3JvT?=
+ =?us-ascii?Q?9ElEkdNRB/Hxx1SIlnRFhiljhl6lEzQtWNfXpz/jVFqW3UV4t1QuKDbaQ3iW?=
+ =?us-ascii?Q?aJRvF8fRhhG0m4hP/vKZuNUstYuWb5tR2cd17Ipn8bRE7Er+AUz2KWgzML9D?=
+ =?us-ascii?Q?Bih43gAR+vVzkaPWp/+MCJdsbhxYrUsIWuCvbnw4dTHmddHvUWaGqV8tKfHe?=
+ =?us-ascii?Q?AcdyNMETUDJ6Ur6cqbxYYic=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_SJ0PR22MB2672B324CF760448D2A512AFC5519SJ0PR22MB2672namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: carolinachemistries.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SJ0PR22MB2672.namprd22.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5e215de8-b12c-4b85-bdaf-08da9d9d3403
+X-MS-Exchange-CrossTenant-originalarrivaltime: 23 Sep 2022 19:52:53.4120
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: f27d3a9c-1dc4-4139-a0c3-b8b63548fe8c
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: 7FELAUJgg15gZzJxBrTAUvhyi0TEcOLVHgFqy+YBy6ZxWYPkNoimEpVp3VmOH9LliHNj5/ntIj7LUaLYe+zcWltMiZtTXa4jtdSXyXD/+UqkHVh28encI+XFXwMhsftW
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CH2PR22MB1766
+X-Spam-Status: No, score=-0.4
+X-Spam-Score: -3
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--_000_SJ0PR22MB2672B324CF760448D2A512AFC5519SJ0PR22MB2672namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hi AnnMarie,
+
+Thank you so much for forwarding the  C of A's.
+
+
+Laura Orlow-Kojac
+Carolina Liquid Chemistries Corp.
+510 W. Central Avenue
+Suite  C
+Brea CA 92821
+714-529-7125   fax 714-529-7274
+
+
+
+From: AnnMarie Di Prima (s) <ADIPRIM@cap.org>
+Sent: Friday, September 23, 2022 11:35 AM
+To: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com>
+Cc: rvairavan@caldonbiotech.com; Christina Gonzales <CGonzales@CarolinaChem=
+istries.com>; Patti Shugart <pattigaull@aol.com>
+Subject: RE: Survey B - Aldolase Controls Shipping Monday
+
+Hi Laura,
+I will forward this to capcoa@cap.org<mailto:capcoa@cap.org>.
+Thanks,
+
+AnnMarie Di Prima, MBA
+Technical Buyer, Purchasing
+College of American Pathologists
+325 Waukegan Road, Northfield, IL 60093
+adiprim@cap.org<mailto:adiprim@cap.org>
+Tel: 800-323-4040 ext. 7283 Dir: 847-832-7283 Fax: 847-832-8283
+cap.org<http://www.cap.org/> | @Pathologists<https://twitter.com/Pathologis=
+ts> | CAPconnect<http://community.cap.org/>
+Recognized as a socially responsible employer by Center for Companies That =
+Care
+
+
+
+From: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com<mailto:LOrlow@Carol=
+inaChemistries.com>>
+Sent: Friday, September 23, 2022 1:32 PM
+To: AnnMarie Di Prima (s) <ADIPRIM@cap.org<mailto:ADIPRIM@cap.org>>
+Cc: rvairavan@caldonbiotech.com<mailto:rvairavan@caldonbiotech.com>; Christ=
+ina Gonzales <CGonzales@CarolinaChemistries.com<mailto:CGonzales@CarolinaCh=
+emistries.com>>; Patti Shugart <pattigaull@aol.com<mailto:pattigaull@aol.co=
+m>>
+Subject: Survey B - Aldolase Controls Shipping Monday
+
+Hello AnnMarie, Hope all is well. I wanted to let you know we will be shipp=
+ing the Aldolase Controls, for 2022 Survey B, to CAP on Monday for Tuesday =
+Delivery . Please see attached for your reference the C of A's. Please let =
+me know if
+ZjQcmQRYFpfptBannerStart
+This Message Is From an Untrusted Sender
+You have not previously corresponded with this sender.
+**This banner is provided by CAP IS**
+ZjQcmQRYFpfptBannerEnd
+Hello AnnMarie,
+
+Hope all is well.
+
+I wanted to let you know we will be shipping the Aldolase Controls, for 202=
+2 Survey B, to CAP on Monday for Tuesday Delivery .
+
+Please see attached for your reference the C of A's.   Please let me know i=
+f this needs to go to anyone else.
+
+Once shipped I will forward to you and Nora Fernandez the Packing Slip and =
+Tracking information.
+
+Sincerely,
+
+Laura Orlow-Kojac
+Carolina Liquid Chemistries Corp.
+510 W. Central Avenue
+Suite  C
+Brea CA 92821
+714-529-7125   fax 714-529-7274
+
+
+--_000_SJ0PR22MB2672B324CF760448D2A512AFC5519SJ0PR22MB2672namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Lucida Handwriting";
+	panose-1:3 1 1 1 1 1 1 1 1 1;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+span.EmailStyle20
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hi AnnMarie,<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Thank you so much f=
+or forwarding the &nbsp;C of A&#8217;s.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:11.0pt;font-family:&quot=
+;Lucida Handwriting&quot;;color:navy">Laura Orlow-Kojac<o:p></o:p></span></=
+i></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Carolina Liquid Chemistries Corp.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">510 W. Central Avenue<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Suite&nbsp; C&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Brea CA 92821<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">714-529-7125&nbsp;&nbsp; fax 714-529-7274<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt">From:</span></b>=
+<span style=3D"font-size:11.0pt"> AnnMarie Di Prima (s) &lt;ADIPRIM@cap.org=
+&gt;
+<br>
+<b>Sent:</b> Friday, September 23, 2022 11:35 AM<br>
+<b>To:</b> Laura Orlow-Kojac &lt;LOrlow@CarolinaChemistries.com&gt;<br>
+<b>Cc:</b> rvairavan@caldonbiotech.com; Christina Gonzales &lt;CGonzales@Ca=
+rolinaChemistries.com&gt;; Patti Shugart &lt;pattigaull@aol.com&gt;<br>
+<b>Subject:</b> RE: Survey B - Aldolase Controls Shipping Monday<o:p></o:p>=
+</span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hi Laura,<o:p></o:p=
+></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">I will forward this=
+ to <a href=3D"mailto:capcoa@cap.org">
+capcoa@cap.org</a>. <o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Thanks,<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif;color:#009ABF">AnnMarie Di Prima, MBA<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif">Technical Buyer, Purchasing<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif">College of American Pathologists</span></b><span style=3D"font-fami=
+ly:&quot;Arial&quot;,sans-serif"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif">325 Waukegan Road, Northfield, IL 60093<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif"><a href=3D"mailto:adiprim@cap.org">adiprim@cap.org</a><o:p></o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><b><span lang=3D"ES-GT" style=3D"font-family:&quot;A=
+rial&quot;,sans-serif">Tel:</span></b><span lang=3D"ES-GT" style=3D"font-fa=
+mily:&quot;Arial&quot;,sans-serif"> 800-323-4040 ext. 7283
+<b>Dir:</b> 847-832-7283 <b>Fax:</b> 847-832-8283 <o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif"><a href=3D"http://www.cap.org/"><span style=3D"color:#009ABF">cap.org<=
+/span></a><span style=3D"color:#009ABF"> |
+</span><a href=3D"https://twitter.com/Pathologists"><span style=3D"color:#0=
+09ABF">@Pathologists</span></a><span style=3D"color:#009ABF"> |
+</span><a href=3D"http://community.cap.org/"><span style=3D"color:#009ABF">=
+CAPconnect</span></a><span style=3D"color:#009ABF"><o:p></o:p></span></span=
+></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Arial&quot;,sans=
+-serif;color:gray">Recognized as a socially responsible employer by Center =
+for Companies That Care</span></b><span style=3D"font-family:&quot;Arial&qu=
+ot;,sans-serif;color:#365F91"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:11.0pt">From:</span></b>=
+<span style=3D"font-size:11.0pt"> Laura Orlow-Kojac &lt;<a href=3D"mailto:L=
+Orlow@CarolinaChemistries.com">LOrlow@CarolinaChemistries.com</a>&gt;
+<br>
+<b>Sent:</b> Friday, September 23, 2022 1:32 PM<br>
+<b>To:</b> AnnMarie Di Prima (s) &lt;<a href=3D"mailto:ADIPRIM@cap.org">ADI=
+PRIM@cap.org</a>&gt;<br>
+<b>Cc:</b> <a href=3D"mailto:rvairavan@caldonbiotech.com">rvairavan@caldonb=
+iotech.com</a>; Christina Gonzales &lt;<a href=3D"mailto:CGonzales@Carolina=
+Chemistries.com">CGonzales@CarolinaChemistries.com</a>&gt;; Patti Shugart &=
+lt;<a href=3D"mailto:pattigaull@aol.com">pattigaull@aol.com</a>&gt;<br>
+<b>Subject:</b> Survey B - Aldolase Controls Shipping Monday<o:p></o:p></sp=
+an></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class=3D"MsoNormal" style=3D"mso-line-height-alt:.75pt"><span style=3D"f=
+ont-size:1.0pt;color:white">Hello AnnMarie, Hope all is well. I wanted to l=
+et you know we will be shipping the Aldolase Controls, for 2022 Survey B, t=
+o CAP on Monday for Tuesday Delivery .
+ Please see attached for your reference the C of A&#8217;s. Please let me k=
+now if <o:p>
+</o:p></span></p>
+</div>
+<div>
+<p class=3D"MsoNormal" style=3D"mso-line-height-alt:.75pt"><span style=3D"f=
+ont-size:1.0pt;color:white">ZjQcmQRYFpfptBannerStart<o:p></o:p></span></p>
+</div>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%;border-radius:4px">
+<tbody>
+<tr>
+<td style=3D"padding:12.0pt 0in 12.0pt 0in">
+<table class=3D"MsoNormalTable" border=3D"1" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%;background:#D0D8DC;border:none;=
+border-top:solid #90A4AE 3.0pt">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"border:none;padding:0in 7.5pt 3.75pt 4.5pt">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"left">
+<tbody>
+<tr>
+<td style=3D"padding:3.0pt 6.0pt 3.0pt 6.0pt">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.5pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:black">This Message Is From an Untrusted Send=
+er
+<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr>
+<td style=3D"padding:3.0pt 6.0pt 3.0pt 6.0pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:black">You have not previously corresponded with =
+this sender.
+<o:p></o:p></span></p>
+</td>
+</tr>
+<tr>
+<td style=3D"padding:3.0pt 6.0pt 3.0pt 6.0pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;font-family:&quot;Ari=
+al&quot;,sans-serif;color:black">**This banner is provided by CAP IS**
+<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p class=3D"MsoNormal" style=3D"mso-line-height-alt:.75pt"><span style=3D"f=
+ont-size:1.0pt;color:white">ZjQcmQRYFpfptBannerEnd<o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hello AnnMarie, <o:=
+p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Hope all is well.<o=
+:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">I wanted to let you=
+ know we will be shipping the Aldolase Controls, for 2022 Survey B, to CAP =
+on Monday for Tuesday Delivery .<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Please see attached=
+ for your reference the C of A&#8217;s.&nbsp;&nbsp; Please let me know if t=
+his needs to go to anyone else.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Once shipped I will=
+ forward to you and Nora Fernandez the Packing Slip and Tracking informatio=
+n.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt">Sincerely, <o:p></o=
+:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-size:11.0pt;font-family:&quot=
+;Lucida Handwriting&quot;;color:navy">Laura Orlow-Kojac<o:p></o:p></span></=
+i></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Carolina Liquid Chemistries Corp.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">510 W. Central Avenue<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Suite&nbsp; C&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">Brea CA 92821<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-family:&quot;Arial&quot;,sans-se=
+rif;color:navy">714-529-7125&nbsp;&nbsp; fax 714-529-7274<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"font-size:11.0pt"><o:p>&nbsp;</o:p></=
+span></p>
+</div>
+</body>
+</html>
+
+--_000_SJ0PR22MB2672B324CF760448D2A512AFC5519SJ0PR22MB2672namp_--

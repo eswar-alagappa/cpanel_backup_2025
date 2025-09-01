@@ -1,0 +1,265 @@
+Return-Path: <donna.kirsch@duke.edu>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id KNEpHtn+AGQ07gkA7/vpDg
+	(envelope-from <donna.kirsch@duke.edu>); Thu, 02 Mar 2023 13:54:01 -0600
+Return-path: <donna.kirsch@duke.edu>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Thu, 02 Mar 2023 13:54:01 -0600
+Received: from smtp-gw-05.oit.duke.edu ([152.3.189.231]:44318 helo=mail-gw-05.oit.duke.edu)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <donna.kirsch@duke.edu>)
+	id 1pXp05-002o3v-4m
+	for customersupport@caldonbiotech.com;
+	Thu, 02 Mar 2023 13:54:01 -0600
+Received: from vma-smtpgw-01.duhs.duke.edu ([152.16.191.90])
+	by mail-gw-05.oit.duke.edu (8.17.1.19/8.17.1.19) with ESMTP id 322Jrnf8024920
+	for <customersupport@caldonbiotech.com>; Thu, 2 Mar 2023 14:53:49 -0500
+Received: from mail-gw.oit.duke.edu ([152.3.189.237])
+	by vma-smtpgw-01.duhs.duke.edu (8.17.1.19/8.17.1.19) with ESMTPS id 322JrnUU027331
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <customersupport@caldonbiotech.com>; Thu, 2 Mar 2023 14:53:49 -0500
+Received: from mail-gw-11.oit.duke.edu (mail-gw-11.oit.duke.edu [127.0.0.1])
+	by pps.dm_smtp (8.17.1.5/8.17.1.5) with ESMTP id 322JfuK6004901
+	for <customersupport@caldonbiotech.com>; Thu, 2 Mar 2023 14:53:49 -0500
+Received: from dlp.refeed (mail-gw-11.oit.duke.edu [127.0.0.1])
+	by mail-gw-11.oit.duke.edu (PPS) with ESMTPS id 322JrnHl021570
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <customersupport@caldonbiotech.com>; Thu, 02 Mar 2023 14:53:49 -0500
+Received: from mail-gw-11.oit.duke.edu (mail-gw-11.oit.duke.edu [127.0.0.1])
+	by pps.dlproute (8.17.1.5/8.17.1.5) with ESMTP id 322Jr7gp020875
+	for <customersupport@caldonbiotech.com>; Thu, 2 Mar 2023 14:53:49 -0500
+Received: from smtpgw-05.oit.duke.edu (fitz-bigip-0102-ltm-a-mx-gw-floater.oit.duke.edu [10.136.241.66])
+	by mail-gw-11.oit.duke.edu (PPS) with ESMTPS id 322JrmaI021507
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <customersupport@caldonbiotech.com>; Thu, 02 Mar 2023 14:53:49 -0500
+Received: from CO1PR02CU002-vft-obe.outbound.protection.outlook.com (mail-westus2azlp17010002.outbound.protection.outlook.com [40.93.10.2])
+	by smtpgw-05.oit.duke.edu (8.17.1.19/8.17.1.19) with ESMTPS id 322JrmiP002613
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <customersupport@caldonbiotech.com>; Thu, 2 Mar 2023 14:53:48 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=gKH4XI1uPJuH64R/adoSQwA6jky6xsqMh2g7sqbfow2cewTdWHBHNkxgtgDPjfkJnKO1ctXroSNOcFjn7DBS9aM7y6NIYGilhLAtBaVZTm1LwjzCidVrVFlpwayDjwE/GEjJzGn5FgIlm5sLPI7bQx4lp353f5BfabF6Xaqgd0ReYw4LwO9JEv6DGayULCy1XCPLxUkAzdI2NNk2ee0w1EMV+hRkGCEdZf1+YnrEq5rmehQkd1zko6UVz5mfOQ01wxr4l0FcY5ixQK0bRk4HHffsKdUbrgc34OGwlV6a/5zvf6S6U6BASar6ATArbvNEv1Aa9f0ScZEffV4z7bhLSw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=zlROyeK0NpFeZyCURj2cogJI/g+es3NgXQOo0+5k4eA=;
+ b=b3V7zHaq/xS6Ktv5Fe0HtdicqbKwb1VW8dLHrA3rOIO8WMQxIApWODG76y3ZBVPWtHtgeRdqXOy1R4YG/OowgHZQTmWwpCCy1C4FDy6NU4tikIKO6eCLkb5MMZvB90bP57ZM+BfPuaegQARCxxycGTciZNHMVMmxMQy4WmIFGqv7zagulN8RRIh/xAp5Om73CQ3u1aLMpd36FUZyN9P+1NTyNs1GWOWJCQo2hF/IgToL9fD9UdYrkK/womLnNRtN07RDXk+l338ZfKdcVWnDYYqU7VNBPVHNuI2OfIYRAkq6QtQdsV6QWye2mfS+7nf7YELQOInjl/Y0pa9eHcf8hw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=duke.edu; dmarc=pass action=none header.from=duke.edu;
+ dkim=pass header.d=duke.edu; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=duke.edu; s=selector2;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=zlROyeK0NpFeZyCURj2cogJI/g+es3NgXQOo0+5k4eA=;
+ b=z0FBTJkQiOhd2Z/B9qlEofppWWgQ5afvupR1HSajHwRi8WPIz/9VWHkCJN4XP6RxAvNN0FMPyLbeiaGAJHhWZePAayks1lfMTktGf6aBAWq1TRQROInxl5Ei0FblKXmq8ZK+qvaZ9M8N9h6ZydBmDgL98q21DKaaTwI6dtaJ+Rg=
+Received: from BN7PR05MB5924.namprd05.prod.outlook.com (2603:10b6:408:c::31)
+ by IA0PR05MB9465.namprd05.prod.outlook.com (2603:10b6:208:43f::20) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6156.19; Thu, 2 Mar
+ 2023 19:53:44 +0000
+Received: from BN7PR05MB5924.namprd05.prod.outlook.com
+ ([fe80::488:2b72:3af8:5fb3]) by BN7PR05MB5924.namprd05.prod.outlook.com
+ ([fe80::488:2b72:3af8:5fb3%6]) with mapi id 15.20.6134.027; Thu, 2 Mar 2023
+ 19:53:44 +0000
+From: Donna Kirsch <donna.kirsch@duke.edu>
+To: "customersupport@caldonbiotech.com" <customersupport@caldonbiotech.com>
+CC: "Dr Ruhan Wei, Ph.D." <ruhan.wei@duke.edu>
+Subject: Aldolase reagent question
+Thread-Topic: Aldolase reagent question
+Thread-Index: AdlNQIge5g9VLtZ9QuKq4tVA39JDNw==
+Date: Thu, 2 Mar 2023 19:53:44 +0000
+Message-ID: 
+ <BN7PR05MB592485CBE1E2BC70DB1D3423F3B29@BN7PR05MB5924.namprd05.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: BN7PR05MB5924:EE_|IA0PR05MB9465:EE_
+x-ms-office365-filtering-correlation-id: 5af245ea-472b-48ad-148d-08db1b57d478
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: 
+ uNijU/9z9QnNHxnQeTLEEBoQUw0klZ5/6buAYUABUT9Gpw5ahM0vMKs/+pjd0g/Xb9G0Kx0gkR4xVYdUnMEUEYoFFBPJmKlpOVfYr23EZLB9Rd+Dd6w/tkpD/FjsJQcZUjksO0f3FsNt0x1AiaecONVEKVlJkMMUqw/KecVPxqvkWnL8X4nJbm7cbO4oY++4sD7syS2bnh04AxrePUW/FsXrd3KDKAWPfLhcq4zEW3LA07HXO74izXgSWxA37mPo+fWdjgwfy4w0RqjKYIDUy2Y3zWY6ASEGdjWUk150A9Y2Iv44A7Qyr550bCx64DM2ssdRXoiJq/ogKnovtzxoU7DY74l4WizOllWeJL2OwJtTXG7nLW8TUZAHRfuq9ADS2bsziiXfy6xbIXEamwylfTsGFQjnX3QEn0fif+knYKWAqNos4d0EcwywJlVgIWkCir4wiQnHMECrUAcOn87RETMn0xd18NqpPLXUjoL/On9421x7ggsYJa20VnotTJmUnDbGUoQrV69Gx+CDtvEttrvJLgEleRWM375f3oBuGn7fgnZeQptKFsc8mLR4j5ihjoCAhWWq9dWKDMb4ZtcbFKfvOcBnEvzm/SybeXL77vbW9cQ/fzG/sbAEV05b8EqAFbsoTqetLbK2ynFWZuf44jxf1afRu1J2Wgrkdk0+UP7+/rTjFl9xOIIxfs0hV7bHogmKvGhJUk3wd7b7X6WvLme9jcgMB2Vw9J5rXk2U+HO2h7FQLnqkY0KkGcjOEdLfFjxLy5OiWh1RLWmZADKO0Q==
+x-forefront-antispam-report: 
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BN7PR05MB5924.namprd05.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230025)(4636009)(136003)(366004)(346002)(376002)(396003)(39860400002)(451199018)(76116006)(41300700001)(9326002)(8936002)(7116003)(66446008)(52536014)(55016003)(8676002)(6916009)(64756008)(66476007)(66556008)(66946007)(186003)(4326008)(9686003)(33656002)(558084003)(40140700001)(86362001)(41320700001)(3480700007)(44832011)(2906002)(786003)(6506007)(26005)(107886003)(5660300002)(71200400001)(122000001)(316002)(75432002)(478600001)(7696005)(38100700002)(38070700005)(454784003);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: 
+ =?us-ascii?Q?Cjjocq92MfGF5AQGpDxoaPXHhu5F6dckuzl/jIEkBNbJPFAGKpYDFbMH5daB?=
+ =?us-ascii?Q?80efRtgapUEiIBlNukXVA9PMAtg6ZWjQa0qtCHtmgyLoT06EUZFBX0RjAHxL?=
+ =?us-ascii?Q?RBDfNcsyf8iqkLa2HnB3wPQRkGXWsmc3foMrOPcsDPyL2j93Cx5n+6rqZoQf?=
+ =?us-ascii?Q?w6fb6GOpRP+A2+9s4+phlYWieGE0kLmYgnyi/k9rVUoALYSAnniqhULpycYm?=
+ =?us-ascii?Q?p+CEmOygoXCar9J70zphIjeZLTvYJy37z1CFUL6v6sZgkyztLm25SOjBhP5d?=
+ =?us-ascii?Q?BfCqxwlP7XsDG+h9DLiDVd54cMZq6YrxvwI7mA3B4lOvOiXCzzUfLFzjiReh?=
+ =?us-ascii?Q?a07LbJVFmgwcSoyCxyGkpdD1sUB86NdKg3oYtC/M76ulxAUWzaB/PXfaPfOQ?=
+ =?us-ascii?Q?JKSrmEkD7vdZEgTh46l83yIPBZm5gCMKWhk+0SHOWVXcluVjL3ZZ5hSgkgrV?=
+ =?us-ascii?Q?ZBobDXHLy20Th9QDPTmYaMzUZcavOM0wMVfSUFKvEqN89vBfx2ju57V4ToQk?=
+ =?us-ascii?Q?E/eQFlOs98CX5Dg80MqRPLso/ID8brdEQ3aJBBwB5cyKi3/J6qB6rBZ7hYq/?=
+ =?us-ascii?Q?T/2R0gfkFFvYVsTFryf05d+8bxUC1SxkyhSyIxHLU/EZUbxf8fmhuTqQUY+r?=
+ =?us-ascii?Q?3lwNPx3eZICtMlswCOPi2sjw7k6dTQZ3grGY2CXBYL2prNyc13c1O0T7nCRw?=
+ =?us-ascii?Q?f8ssZ5Rfq8P1fnRPg6A9dGBYw+G76tZuzZYuxuVu8LT57aQw3wdgjkl09prb?=
+ =?us-ascii?Q?0tv+4KbtBO86wJvtPpNmjBauWfGs6LOdyZ1h63dJIYuyHJ0t1hS76ECwD8wx?=
+ =?us-ascii?Q?sXpRWrkxAkUo/pEgtOPIjZr5W9RskSNk4MS32buEddw3nk71qKE7ypHywgfK?=
+ =?us-ascii?Q?25Kvaud0kdXuAUZ1fETSm+qZiNnws5wWAQZimGC43CY4ifaLutgsC2+T8aze?=
+ =?us-ascii?Q?eXGRcli4LpZNTvb+yxSlM3VDQy3B9/x9Osh0mwlbseE7NjxB5gN2PQqKDN2b?=
+ =?us-ascii?Q?v4eQ8WxNScUXVUZlNGjOAtpQFraJ0mDw86iiChEKm2DaTDwWPtztVtzO7Eg5?=
+ =?us-ascii?Q?Y7QWh82APUcAeYzCSU8lztVahDckMOe6uuSU8YNSZzmwdhIijRRi6nlyFY2T?=
+ =?us-ascii?Q?3oPeeQlTZ1GziACENYMaAuYEj9X7DsNW+a0dH30QXPd8mqV2kcbu5fuXcWPZ?=
+ =?us-ascii?Q?MFki0LqQnUym+918SrueZhUXEd0XiL/Y6A8Ftjxjq/GbrAqXUAkwukuQBumo?=
+ =?us-ascii?Q?CR4eL84I5ur314VnTvbUOJWjxXa15MUJSN+WFFHpctLyRb8PPRl0UfWquGEE?=
+ =?us-ascii?Q?Kg70yKzUkDikbyd0JV9a8gNRvSvWgAUpa4tyaOCD6BAkeSzRInNJ1vvevzsu?=
+ =?us-ascii?Q?f6YUb2+uzdxur/gJjH+uj1EKHFGp4SHJ5RKohgSIoySieJ9sOkFc1Vkr32qy?=
+ =?us-ascii?Q?6k/pLFxHl3oSh6i9kygre0AAm1ObTnSPUWdivwA+RBDb37SDVD9d/J+9FgUj?=
+ =?us-ascii?Q?vIX5hNAvmlO22ja0RR5wpsfyB5TAMpOjjd7CosRy6rkhrmmJuSmRw161Lpcu?=
+ =?us-ascii?Q?q8PF/jB4RmhW2yEBWug=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_BN7PR05MB592485CBE1E2BC70DB1D3423F3B29BN7PR05MB5924namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: duke.edu
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: BN7PR05MB5924.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5af245ea-472b-48ad-148d-08db1b57d478
+X-MS-Exchange-CrossTenant-originalarrivaltime: 02 Mar 2023 19:53:44.3332
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: cb72c54e-4a31-4d9e-b14a-1ea36dfac94c
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: fw++9aHADmyr2pDwsq1k2ZrObBOe0RZ5+g4SCN4CVVjwkgftSTwISIxxEzprRIOboz6vjz66WhNgcfA8/EPAFA==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: IA0PR05MB9465
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.219,Aquarius:18.0.942,Hydra:6.0.573,FMLib:17.11.170.22
+ definitions=2023-03-02_13,2023-03-02_02,2023-02-09_01
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.219,Aquarius:18.0.942,Hydra:6.0.573,FMLib:17.11.170.22
+ definitions=2023-03-02_13,2023-03-02_02,2023-02-09_01
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.219,Aquarius:18.0.942,Hydra:6.0.573,FMLib:17.11.170.22
+ definitions=2023-03-02_13,2023-03-02_02,2023-02-09_01
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.219,Aquarius:18.0.942,Hydra:6.0.573,FMLib:17.11.170.22
+ definitions=2023-03-02_13,2023-03-02_02,2023-02-09_01
+X-Proofpoint-Spam-Reason: safe
+X-Proofpoint-Spam-Reason: safe
+X-Proofpoint-GUID: gTRDGF3oRoo2N2KZih2tK3Ex-cZxCYY0
+X-Proofpoint-ORIG-GUID: gTRDGF3oRoo2N2KZih2tK3Ex-cZxCYY0
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.219,Aquarius:18.0.942,Hydra:6.0.573,FMLib:17.11.170.22
+ definitions=2023-03-02_13,2023-03-02_02,2023-02-09_01
+X-Proofpoint-Spam-Reason: safe
+X-CFilter-Loop: Reflected
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--_000_BN7PR05MB592485CBE1E2BC70DB1D3423F3B29BN7PR05MB5924namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+
+Hello,
+I am trying to contact Caldon about Aldolase reagent issue.  The #760-727-7=
+177 just says "goodbye".
+Can someone contact me asap please?
+
+Thank you,
+Donna Kirsch, MT (ASCP)
+Duke Central Automated Lab (DCAL)
+919-684-5023
+
+Upcoming Out of Office:   Mar 13 - 17
+
+
+
+--_000_BN7PR05MB592485CBE1E2BC70DB1D3423F3B29BN7PR05MB5924namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Berlin Sans FB";
+	panose-1:2 14 6 2 2 5 2 2 3 6;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Hello,<o:p></o:p></p>
+<p class=3D"MsoNormal">I am trying to contact Caldon about Aldolase reagent=
+ issue.&nbsp; The #760-727-7177 just says &#8220;goodbye&#8221;.<o:p></o:p>=
+</p>
+<p class=3D"MsoNormal">Can someone contact me asap please?<o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Thank you,</span><span=
+ style=3D"font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif"><=
+o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Be=
+rlin Sans FB&quot;,sans-serif;color:#1F497D">Donna Kirsch,
+</span><span style=3D"font-size:9.0pt;font-family:&quot;Berlin Sans FB&quot=
+;,sans-serif;color:#1F497D">MT (ASCP)</span><span style=3D"font-size:12.0pt=
+;font-family:&quot;Times New Roman&quot;,serif"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Duke Central Automated=
+ Lab (DCAL)</span><span style=3D"font-size:12.0pt;font-family:&quot;Times N=
+ew Roman&quot;,serif"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">919-684-5023<o:p></o:p=
+></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ti=
+mes New Roman&quot;,serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal">Upcoming <span style=3D"font-size:10.0pt">Out</span>=
+ of Office:&nbsp;&nbsp; Mar 13 - 17<o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ti=
+mes New Roman&quot;,serif"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_BN7PR05MB592485CBE1E2BC70DB1D3423F3B29BN7PR05MB5924namp_--

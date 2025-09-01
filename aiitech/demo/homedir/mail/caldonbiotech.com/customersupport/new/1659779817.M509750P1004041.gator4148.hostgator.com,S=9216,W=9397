@@ -1,0 +1,181 @@
+Return-Path: <leilanidraper@digiwebfirm.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id 2P2EHek67mIJUg8A7/vpDg
+	(envelope-from <leilanidraper@digiwebfirm.com>); Sat, 06 Aug 2022 04:56:57 -0500
+Return-path: <leilanidraper@digiwebfirm.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Sat, 06 Aug 2022 04:56:57 -0500
+Received: from mail-oi1-f193.google.com ([209.85.167.193]:44654)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <leilanidraper@digiwebfirm.com>)
+	id 1oKGYD-0006pP-1B
+	for customersupport@caldonbiotech.com;
+	Sat, 06 Aug 2022 04:56:57 -0500
+Received: by mail-oi1-f193.google.com with SMTP id bb16so5047291oib.11
+        for <customersupport@caldonbiotech.com>; Sat, 06 Aug 2022 02:56:51 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=digiwebfirm-com.20210112.gappssmtp.com; s=20210112;
+        h=mime-version:sender:from:date:message-id:subject:to;
+        bh=BwLBY3tZUvU5mwA3hypaBABkov2NdGvqlpKRxhvKweE=;
+        b=X37jP+TUJWAik8TTRWkUPQUg1uYFLWdtcjxYxFCklGxOej/Ps181VV++Ll3gGIGLak
+         ct7xiLC3ANgtjdRXZBBnbgpa8QAYVrpvFBp0FRDEQlBOzDcebpKOXwa9AjGPV5sUz6Kx
+         Rz8u1G/jzHArq0Mb2fxjnWSIhCDPHC9anHYQ81ECwKLBEYFJH5qZAYLUrCtIAXXqRsSv
+         4LiE3RLCTB/9P1XcZwpmm51bNgbp0zYwyoThReakLAADzmbBL/RoP5IGpqw7nkj/bcnR
+         v5Qp1aZdBJBpuIZ6IyzdeIsoWBhoUapz3vIs4wvhr8zLvPiPoVcswoJL7gpkOw4RJbCP
+         6tQQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:sender:from:date:message-id:subject
+         :to;
+        bh=BwLBY3tZUvU5mwA3hypaBABkov2NdGvqlpKRxhvKweE=;
+        b=nh5jPxdGryUZ7Ap29A7AbzOq2sTh/nGfxqNYcZY3uZQBmKcGs8ynL0gUjwe2FkCAGl
+         jmeVKzevQJ98ABio9xtWYauaWrFKtJgijOvnBg+mZXjT3HQOB3N30wIwb7CM/mO3OsDp
+         d7GivRKlAdNprLowjFRYepK8gqbFkNeGz11vnlZQ6b2pU+c2TXv/3qU9a/etCgj3yuzl
+         rtNBIUG/8H80feuOdY3PezA6uIPVLEc//i8SM1ZTQFB1zi95UBSKHXMX3o7XGwXhHzNW
+         1yF1YwiAiGpBfPkcShNXUIW2jANhBuPEzJxGwNRJHoCz8wsUa7GdA87nVskttrt6T+Hf
+         Hniw==
+X-Gm-Message-State: ACgBeo3AaA2pQ1MGaerJuNpoJM5P2B/NTOGOW7rrvaKfFESSD18y63RD
+	PR6BiFVm5E/GN3Vb49xjcC3aU87BN0XUBHL27kQpEmBgIUY=
+X-Google-Smtp-Source: AA6agR7+FlViZfeWQwLcW82BBjmptMGPtYM7/+JV45gYGxR94KFwcIBckBTZfsNgq5AUllLY/iGDh3ynhXqyf7amqDE=
+X-Received: by 2002:a05:6808:14cf:b0:33a:a9ab:722a with SMTP id
+ f15-20020a05680814cf00b0033aa9ab722amr4749353oiw.90.1659779805703; Sat, 06
+ Aug 2022 02:56:45 -0700 (PDT)
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Sat, 6 Aug 2022 09:56:45 +0000
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Sat, 6 Aug 2022 09:56:44 +0000
+MIME-Version: 1.0
+Sender: Leilani Draper <leilanidraper@digiwebfirm.com>
+From: Leilani Draper <leilanidraper@digiwebfirm.com>
+Date: Sat, 6 Aug 2022 09:56:45 +0000
+X-Google-Sender-Auth: ecXtT3dOxWZEnfRbm4LCc450sjc
+Message-ID: <CADJXZDOM6k7TEU5cnNAs7JXp3X1ndsa9V8XNudTt+KBJp4Kb-w@mail.gmail.com>
+Subject: Re: caldonbiotech.com: Promote Your Website on Google!
+To: Customersupport <customersupport@caldonbiotech.com>
+Content-Type: multipart/alternative; boundary="000000000000b9731705e58f9974"
+X-Spam-Status: No, score=2.0
+X-Spam-Score: 20
+X-Spam-Bar: ++
+X-Spam-Flag: NO
+
+--000000000000b9731705e58f9974
+Content-Type: text/plain; charset="UTF-8"
+
+Hello* caldonbiotech.com <http://caldonbiotech.com>,*
+
+
+
+Hope you are doing well there.
+
+
+
+I just wanted to know if you require a better solution to manage SEO, SMO,
+PPC, Facebook, Twitter and LinkedIn Marketing, keyword research, Reporting
+etc. We are a leading Digital Marketing Agency, offering marketing
+solutions worldwide.
+
+If you are interested I can show you the *package price* and *past work*
+details.
+
+We could lower that cost and not compromise on quality!
+
+Kind Regards
+* Leilani Draper! Business Development Manager*
+
+*---------------------------------------------------------------------*
+
+*Note:* - Our next conversation will be on my corporate Email ID. If this
+is something you are interested, please respond to this email. If this is
+not your interest, don't worry, we will not email you again.
+[image: beacon]
+
+--000000000000b9731705e58f9974
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;te=
+xt-align:justify;line-height:normal;font-size:11pt;font-family:Calibri,&quo=
+t;sans-serif&quot;"><span style=3D"font-size:12pt;font-family:Verdana,&quot=
+;sans-serif&quot;;color:black">Hello<b> <a href=3D"http://caldonbiotech.com=
+">caldonbiotech.com</a>,</b></span><span style=3D"font-size:12pt"></span></=
+p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;text-align:justify;=
+line-height:normal;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot=
+;"><span style=3D"font-size:14pt;font-family:Verdana,&quot;sans-serif&quot;=
+;color:black">=C2=A0</span><span style=3D"font-size:12pt"></span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;text-align:justify;=
+line-height:normal;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot=
+;"><span style=3D"font-family:Verdana,&quot;sans-serif&quot;;color:black">H=
+ope you are doing well there.=C2=A0</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 0.0001pt;text-align:justify;=
+line-height:normal;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot=
+;"><span style=3D"font-family:Verdana,&quot;sans-serif&quot;;color:black">=
+=C2=A0</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 10pt;line-height:115%;font-s=
+ize:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-fa=
+mily:Verdana,&quot;sans-serif&quot;;color:black">I just wanted to know if y=
+ou require a better solution to
+manage SEO, SMO, PPC, Facebook, Twitter and LinkedIn Marketing, keyword
+research, Reporting etc. We are a leading Digital Marketing Agency, offerin=
+g
+marketing solutions worldwide.</span></p>
+
+<p class=3D"MsoNormal" style=3D"margin:0in 0in 10pt;line-height:115%;font-s=
+ize:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-fa=
+mily:Verdana,&quot;sans-serif&quot;;color:black">If you are=C2=A0interested=
+=C2=A0I can=C2=A0show you
+the=C2=A0<b>package price</b> and <b>past work</b> details.</span></p>
+
+<p style=3D"margin-bottom:0.0001pt;background-image:initial;background-posi=
+tion:initial;background-size:initial;background-repeat:initial;background-o=
+rigin:initial;background-clip:initial;margin-right:0in;margin-left:0in;font=
+-size:12pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><span=
+ style=3D"font-size:11pt;font-family:Verdana,&quot;sans-serif&quot;;color:b=
+lack">We could lower that cost and not compromise on quality!</span><span s=
+tyle=3D"font-family:Verdana,&quot;sans-serif&quot;">=C2=A0</span><span styl=
+e=3D"font-family:Arial,&quot;sans-serif&quot;"></span></p>
+
+<p style=3D"margin-bottom:0.0001pt;background-image:initial;background-posi=
+tion:initial;background-size:initial;background-repeat:initial;background-o=
+rigin:initial;background-clip:initial;margin-right:0in;margin-left:0in;font=
+-size:12pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><span=
+ style=3D"font-family:Verdana,&quot;sans-serif&quot;;color:black">Kind Rega=
+rds<b><br>
+<strong>Leilani Draper!=C2=A0Business Development Manager</strong></b></spa=
+n><strong><span style=3D"font-family:Verdana,&quot;sans-serif&quot;;color:b=
+lack"></span></strong></p>
+
+<p style=3D"margin-bottom:0.0001pt;background-image:initial;background-posi=
+tion:initial;background-size:initial;background-repeat:initial;background-o=
+rigin:initial;background-clip:initial;margin-right:0in;margin-left:0in;font=
+-size:12pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;"><stro=
+ng><span style=3D"font-family:Verdana,&quot;sans-serif&quot;;color:black">-=
+--------------------------------------------------------------------</span>=
+</strong><span style=3D"font-family:Arial,&quot;sans-serif&quot;"></span></=
+p>
+
+<p class=3D"MsoNormal" style=3D"text-align:justify;margin:0in 0in 10pt;line=
+-height:115%;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><b>=
+<span style=3D"line-height:115%;font-family:Verdana,&quot;sans-serif&quot;;=
+color:black">Note:</span></b><span style=3D"line-height:115%;font-family:Ve=
+rdana,&quot;sans-serif&quot;;color:black">=C2=A0- Our next conversation wil=
+l be on my corporate Email ID. If
+this is something you are interested, please respond to this email. If this=
+ is
+not your interest, don&#39;t worry, we will not email you again.</span><spa=
+n style=3D"font-size:14pt;line-height:115%;font-family:&quot;Times New Roma=
+n&quot;,&quot;serif&quot;">=C2=A0=C2=A0</span><span style=3D"font-size:12pt=
+;line-height:115%"></span></p></div>
+<img src=3D"https://digiwebfirm-dot-yamm-track.appspot.com/2G-oh2p8nKN3eJth=
+8cKKEovoSPd_B1iq8cnRrsNt92ZSO7pVyggHMZMKmXJOt5T2zSV0-l8-FcBzKNRdBBmMs17MW_V=
+zdoVc8icBHYzMoAWiQ21shhbllbkI4ZibeoZZE4XLqotqMPTilk6iQEPzSjoDhXRwLNgqjkKHdG=
+JSBwFoX" width=3D"1" height=3D"1" alt=3D"beacon" style=3D"display:none; dis=
+play:none!important;">
+
+--000000000000b9731705e58f9974--

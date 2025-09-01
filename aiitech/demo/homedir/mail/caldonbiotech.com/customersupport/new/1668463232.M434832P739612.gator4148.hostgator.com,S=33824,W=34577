@@ -1,0 +1,753 @@
+Return-Path: <kelly.krobert@gmail.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id KDT5GIC6cmMcSQsA7/vpDg
+	(envelope-from <kelly.krobert@gmail.com>); Mon, 14 Nov 2022 16:00:32 -0600
+Return-path: <kelly.krobert@gmail.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Mon, 14 Nov 2022 16:00:32 -0600
+Received: from mail-pg1-f179.google.com ([209.85.215.179]:39522)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <kelly.krobert@gmail.com>)
+	id 1ouhVI-003KAG-1C
+	for customersupport@caldonbiotech.com;
+	Mon, 14 Nov 2022 16:00:32 -0600
+Received: by mail-pg1-f179.google.com with SMTP id 6so11431437pgm.6
+        for <customersupport@caldonbiotech.com>; Mon, 14 Nov 2022 14:00:26 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=disposition-notification-to:content-language:thread-index
+         :mime-version:message-id:date:subject:to:from:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=v8yFgSTCdt2E2p1Vnf4XVsGIJMgdkLVA521kamoGgm0=;
+        b=ishZfiA2NWT0pp/WQHXP17JM/3BI2WjS7olGEHpFslQpsoaopoq5sRXbQwWSBksMi3
+         UGXav1/+4pbG6Aur9LjcSLNoprY3qHRz3GH2lEre2IhlZIL26CeveE4MFKlStfQ3H9bF
+         QQ5poMSArvCuEFJEJ/6UgZ+A2YBa1aDlaraVFPTs2W5UMutV3WzGGxdAx9wteqnFP/uZ
+         OgJ6HdMFvgpqGxyFLmJV7E6ziGikVEpvuE1MpZqnh+0/+mjYrnVliW2wWoBKvTQn2Kk5
+         aAAdaHPNgT/cOysc5rRC4zHQQxlWIy92KqaR8UF4tlt2X9r0vS6NP9yyOFqbvvqy6Yw8
+         cRsQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=disposition-notification-to:content-language:thread-index
+         :mime-version:message-id:date:subject:to:from:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=v8yFgSTCdt2E2p1Vnf4XVsGIJMgdkLVA521kamoGgm0=;
+        b=K4mxSugKQZZgKIybnqkW8EzTyhPE+P/5gujQ4BkHVgoS//bKzXw758UsfmGA62qe85
+         lbVN5NjXG/udvKajJ8GPyLWsv65eEqpKvk6qVy5Tcmxm+OfI/suro/CVPWGIMce0Ip+U
+         FCuqdwFZSu7lTWzDlqPTeztV6FEUTvR0mZa2GtoUWeaksClkQ3xZq0T+Cn+vZzSaE3uB
+         O74HTghsxgieXuUSyZI3J7+YqckqTS66JBV0coMKLha/tIrqPbFcgfOCaJ52CfbK5lsm
+         5OoFPZnJvwQu9Ojqgd2J/RTFhEaElIY7gPn7WRBjjt763WzNmCOM51maT1JBoFY1BWqM
+         hYAg==
+X-Gm-Message-State: ANoB5pkV7zfWYCLd/w60kAIuxBzfgaIhnm1i7EhiDGGRTLnTYIvhkM25
+	C8XJ49Z8+OJaZshj/HJ3yXt1TNon+Yw=
+X-Google-Smtp-Source: AA0mqf6l1isAkD8QDUSPTU9/YwIG55HwN7RKGKmsL3J5wN/2Q0gqp6UBMc8BgmUr8UtoZG85Q2YyUw==
+X-Received: by 2002:a63:4848:0:b0:434:f41d:3fc3 with SMTP id x8-20020a634848000000b00434f41d3fc3mr13228217pgk.273.1668463220319;
+        Mon, 14 Nov 2022 14:00:20 -0800 (PST)
+Received: from CarolineFisher ([122.171.19.108])
+        by smtp.gmail.com with ESMTPSA id s29-20020aa78bdd000000b0053e38ac0ff4sm7233904pfd.115.2022.11.14.14.00.17
+        for <customersupport@caldonbiotech.com>
+        (version=TLS1 cipher=ECDHE-ECDSA-AES128-SHA bits=128/128);
+        Mon, 14 Nov 2022 14:00:19 -0800 (PST)
+From: <kelly.krobert@gmail.com>
+To: <customersupport@caldonbiotech.com>
+Subject: Biotechnology Mailing List
+Date: Mon, 14 Nov 2022 16:57:16 -0500
+Message-ID: <!&!AAAAAAAAAAAYAAAAAAAAAEprKaznv71NoAOln3FMr4nCgAAAEAAAALnSu80tUDJEpQjiGCx9PeoBAAAAAA==@gmail.com>
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_95C0_01D8F84A.93234460"
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: Adj4bTLtbscuhF4EQiuJIkGruvxcEQ==
+Content-Language: en-us
+Disposition-Notification-To: <kelly.krobert@gmail.com>
+X-Spam-Status: No, score=0.3
+X-Spam-Score: 3
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_95C0_01D8F84A.93234460
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_95C1_01D8F84A.93234460"
+
+
+------=_NextPart_001_95C1_01D8F84A.93234460
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+                 
+
+Hope you are doing well!    
+
+                  
+
+I wanted to reach out to see if you would be interested in a Biotechnology
+Mailing List.
+
+ 
+
+We provide up-to-date company and business information of the Biotech,
+Pharma and Medtech sectors to professionals everywhere, in order to support
+them in identifying the most appropriate business partners, customers, and
+suppliers. Our customized marketing database can get in touch with Email
+List of Biotech companies Professionals and decision makers.
+
+.         Biotechnology Industry Email List              
+
+.         Biotech Companies Mailing List
+
+.         Biotech Industry Executives Email List     
+
+.         Pharmacist Email Addresses
+
+.         Pharmaceutical Companies Mailing List  
+
+.         Biotechnology Email Database etc...
+
+.          
+
+Kindly let me know your target audience (Please select any of the following
+industry), so that I can provide you more information and free samples to
+check our quality of data.
+
+ 
+
+Look forward to hear from you. I appreciate your time and patience in
+advance.
+
+  
+
+Thanks & Regards
+
+ 
+
+Kelly
+
+Business Advisor
+
+Global Data Consultant
+
+ 
+
+If you wish not to receive further communication from us, reply as "not
+required" in the subject line.
+
+ 
+
+
+------=_NextPart_001_95C1_01D8F84A.93234460
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><META =
+HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii"><meta name=3DGenerator content=3D"Microsoft Word 12 =
+(filtered medium)"><!--[if !mso]><style>v\:* =
+{behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+p.m-8725241732070423540gmail-xmsonormal, =
+li.m-8725241732070423540gmail-xmsonormal, =
+div.m-8725241732070423540gmail-xmsonormal
+	{mso-style-name:m-8725241732070423540gmail-xmsonormal;
+	mso-style-priority:99;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.m-8725241732070423540size
+	{mso-style-name:m-8725241732070423540size;}
+p.xmsonormal, li.xmsonormal, div.xmsonormal
+	{mso-style-name:x_msonormal;
+	mso-style-priority:99;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.m-4311673757943662363m-8725241732070423540size
+	{mso-style-name:m-4311673757943662363m-8725241732070423540size;}
+p.gmail-m-5663945331811536449x1194151938m2332599509934892871gmail-m-68839=
+21862159947162gmail-m-8461777572309801375gmail-m7794813125324257547gmail-=
+m-6168484509169074590x-1147937727m-5388308895320630029xmsonormal, =
+li.gmail-m-5663945331811536449x1194151938m2332599509934892871gmail-m-6883=
+921862159947162gmail-m-8461777572309801375gmail-m7794813125324257547gmail=
+-m-6168484509169074590x-1147937727m-5388308895320630029xmsonormal, =
+div.gmail-m-5663945331811536449x1194151938m2332599509934892871gmail-m-688=
+3921862159947162gmail-m-8461777572309801375gmail-m7794813125324257547gmai=
+l-m-6168484509169074590x-1147937727m-5388308895320630029xmsonormal
+	=
+{mso-style-name:gmail-m_-5663945331811536449x1194151938m23325995099348928=
+71gmail-m-6883921862159947162gmail-m-8461777572309801375gmail-m7794813125=
+324257547gmail-m-6168484509169074590x-1147937727m-5388308895320630029xmso=
+normal;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.gmail-m-5663945331811536449x1194151938m2332599509934892871gmail-m-68839=
+21862159947162gmail-m-8461777572309801375gmail-m7794813125324257547gmail-=
+m-6168484509169074590x-1147937727m-5388308895320630029xx-74919133gmail-m2=
+359268908731694785gmail-xmsonormal, =
+li.gmail-m-5663945331811536449x1194151938m2332599509934892871gmail-m-6883=
+921862159947162gmail-m-8461777572309801375gmail-m7794813125324257547gmail=
+-m-6168484509169074590x-1147937727m-5388308895320630029xx-74919133gmail-m=
+2359268908731694785gmail-xmsonormal, =
+div.gmail-m-5663945331811536449x1194151938m2332599509934892871gmail-m-688=
+3921862159947162gmail-m-8461777572309801375gmail-m7794813125324257547gmai=
+l-m-6168484509169074590x-1147937727m-5388308895320630029xx-74919133gmail-=
+m2359268908731694785gmail-xmsonormal
+	=
+{mso-style-name:"gmail-m_-5663945331811536449x1194151938m2332599509934892=
+871gmail-m-6883921862159947162gmail-m-8461777572309801375gmail-m779481312=
+5324257547gmail-m-6168484509169074590x-1147937727m-5388308895320630029xx-=
+74919133gmail-m2359268908731694785gmail-xmsonormal";
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.gmail-m-5663945331811536449size
+	{mso-style-name:gmail-m_-5663945331811536449size;}
+p.xxxmsonormal, li.xxxmsonormal, div.xxxmsonormal
+	{mso-style-name:x_xxmsonormal;
+	mso-style-priority:99;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.xm-8725241732070423540gmail-xmsonormal, =
+li.xm-8725241732070423540gmail-xmsonormal, =
+div.xm-8725241732070423540gmail-xmsonormal
+	{mso-style-name:x_m-8725241732070423540gmail-xmsonormal;
+	mso-style-priority:99;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.xxmsonormal, li.xxmsonormal, div.xxmsonormal
+	{mso-style-name:x_xmsonormal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.xxgmail-xmsonormal, li.xxgmail-xmsonormal, div.xxgmail-xmsonormal
+	{mso-style-name:x_xgmail-xmsonormal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.m-3097422729647734512font
+	{mso-style-name:m-3097422729647734512font;}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:145633527;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1907118548 67698689 67698691 67698693 67698689 =
+67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:881208878;
+	mso-list-template-ids:-1017752594;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:1109467629;
+	mso-list-template-ids:1292404742;}
+@list l2:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:1749811903;
+	mso-list-type:hybrid;
+	mso-list-template-ids:320394430 67698689 67698691 67698693 67698689 =
+67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"2050" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US><div =
+class=3DWordSection1><p =
+class=3Dm-8725241732070423540gmail-xmsonormal><span =
+style=3D'font-size:10.5pt;font-family:"Calibri","sans-serif"'>Hello,</spa=
+n></p><p =
+class=3Dm-8725241732070423540gmail-xmsonormal>&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;</p><p class=3Dm-8725241732070423540gmail-xmsonormal><span =
+style=3D'font-size:10.5pt;font-family:"Calibri","sans-serif"'>Hope you =
+are doing well!&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p =
+class=3Dm-8725241732070423540gmail-xmsonormal><span =
+style=3D'font-size:10.5pt;font-family:"Calibri","sans-serif"'>&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; </span></p><p =
+class=3Dm-8725241732070423540gmail-xmsonormal =
+style=3D'line-height:12.65pt'><span =
+style=3D'font-size:10.5pt;font-family:"Calibri","sans-serif"'>I wanted =
+to reach out to see if you would be&nbsp;interested in a </span><span =
+class=3Dm-8725241732070423540size><b><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>Biotechnology Mailing List</span></b></span><b><span =
+style=3D'font-size:10.5pt;font-family:"Calibri","sans-serif"'>.</span></b=
+></p><p class=3Dm-8725241732070423540gmail-xmsonormal =
+style=3D'line-height:12.65pt'><b><span =
+style=3D'font-size:10.5pt;font-family:"Calibri","sans-serif"'>&nbsp;</spa=
+n></b></p><p class=3Dm-8725241732070423540gmail-xmsonormal =
+style=3D'line-height:12.65pt'><span =
+class=3Dm-8725241732070423540size><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>We provide up-to-date company and business information =
+of the Biotech, Pharma and Medtech sectors to professionals everywhere, =
+in order to support them in identifying the most appropriate business =
+partners, customers, and suppliers. Our customized marketing database =
+can get in touch with Email List of Biotech companies Professionals and =
+decision makers.</span></span></p><p class=3DMsoNormal =
+style=3D'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:1=
+.0in;text-indent:-.25in;mso-list:l1 level1 lfo5'><![if =
+!supportLists]><span style=3D'font-size:10.0pt;font-family:Symbol'><span =
+style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New =
+Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+</span></span></span><![endif]><span =
+class=3Dm-8725241732070423540size><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>Biotechnology Industry Email =
+List&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span></span></p><p class=3DMsoNormal =
+style=3D'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:1=
+.0in;text-indent:-.25in;mso-list:l1 level1 lfo5'><![if =
+!supportLists]><span style=3D'font-size:10.0pt;font-family:Symbol'><span =
+style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New =
+Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+</span></span></span><![endif]><span =
+class=3Dm-8725241732070423540size><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>Biotech Companies Mailing List</span></span></p><p =
+class=3DMsoNormal =
+style=3D'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:1=
+.0in;text-indent:-.25in;mso-list:l1 level1 lfo5'><![if =
+!supportLists]><span style=3D'font-size:10.0pt;font-family:Symbol'><span =
+style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New =
+Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+</span></span></span><![endif]><span =
+class=3Dm-8725241732070423540size><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>Biotech Industry Executives Email =
+List&nbsp;&nbsp;&nbsp;&nbsp; </span></span></p><p class=3DMsoNormal =
+style=3D'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:1=
+.0in;text-indent:-.25in;mso-list:l1 level1 lfo5'><![if =
+!supportLists]><span style=3D'font-size:10.0pt;font-family:Symbol'><span =
+style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New =
+Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+</span></span></span><![endif]><span =
+class=3Dm-8725241732070423540size><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>Pharmacist Email Addresses</span></span></p><p =
+class=3DMsoNormal =
+style=3D'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;margin-left:1=
+.0in;text-indent:-.25in;mso-list:l1 level1 lfo5'><![if =
+!supportLists]><span style=3D'font-size:10.0pt;font-family:Symbol'><span =
+style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New =
+Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+</span></span></span><![endif]><span =
+class=3Dm-8725241732070423540size><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>Pharmaceutical Companies Mailing List&nbsp; =
+</span></span></p><p class=3DMsoNormal =
+style=3D'margin-left:1.0in;text-indent:-.25in;mso-list:l1 level1 =
+lfo5'><![if !supportLists]><span =
+style=3D'font-size:10.0pt;font-family:Symbol'><span =
+style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New =
+Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+</span></span></span><![endif]><span =
+class=3Dm-8725241732070423540size><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>Biotechnology Email Database =
+etc...</span></span></p><p class=3DMsoNormal =
+style=3D'margin-left:1.0in;text-indent:-.25in;mso-list:l1 level1 =
+lfo5'><![if !supportLists]><span =
+style=3D'font-size:10.0pt;font-family:Symbol'><span =
+style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New =
+Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+</span></span></span><![endif]>&nbsp;</p><p =
+style=3D'margin:0in;margin-bottom:.0001pt'><span =
+class=3Dm-8725241732070423540size><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>Kindly let me know your target =
+audience&nbsp;</span></span><strong><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif"'>(Please =
+select any of the following industry)</span></strong><span =
+class=3Dm-8725241732070423540size><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif"'>, so that =
+I can provide you more information and free samples to check our quality =
+of data.</span></span></p><p =
+style=3D'margin:0in;margin-bottom:.0001pt'><span =
+class=3Dm-8725241732070423540size><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>&nbsp;</span></span></p><p =
+style=3D'margin:0in;margin-bottom:.0001pt;line-height:12.65pt'><span =
+class=3Dm-8725241732070423540size><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>Look forward to hear from you. I appreciate your time =
+and patience in advance.</span></span></p><p =
+style=3D'margin:0in;margin-bottom:.0001pt;line-height:12.65pt'><span =
+class=3Dm-8725241732070423540size><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>&nbsp;&nbsp;</span></span></p><p =
+style=3D'margin:0in;margin-bottom:.0001pt;line-height:12.65pt'><span =
+class=3Dm-8725241732070423540size><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>Thanks &amp; Regards</span></span></p><p =
+style=3D'margin:0in;margin-bottom:.0001pt;line-height:12.65pt'><span =
+class=3Dm-8725241732070423540size><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>&nbsp;</span></span></p><p =
+style=3D'margin:0in;margin-bottom:.0001pt;line-height:12.65pt'><strong><s=
+pan =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>Kelly</span></strong></p><p =
+style=3D'margin:0in;margin-bottom:.0001pt;line-height:12.65pt'><strong><s=
+pan =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>Business Advisor</span></strong></p><p =
+style=3D'margin:0in;margin-bottom:.0001pt;line-height:12.65pt'><strong><s=
+pan =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>Global Data Consultant</span></strong></p><p =
+style=3D'margin:0in;margin-bottom:.0001pt'><span =
+class=3Dm-8725241732070423540size><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>&nbsp;</span></span><i><span =
+style=3D'font-size:11.0pt'><img width=3D133 height=3D46 =
+id=3D"_x0000_i1025" =
+src=3D"cid:image001.png@01D8F843.4A161C90"></span></i></p><p =
+style=3D'margin:0in;margin-bottom:.0001pt'><span =
+class=3Dm-8725241732070423540size><span =
+style=3D'font-size:11.0pt;font-family:"Calibri","sans-serif";color:black;=
+background:white'>If you wish not to receive further communication from =
+us, reply as &quot;not required&quot; in the subject =
+line.</span></span></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p></div></body></html>
+------=_NextPart_001_95C1_01D8F84A.93234460--
+
+------=_NextPart_000_95C0_01D8F84A.93234460
+Content-Type: image/png;
+	name="image001.png"
+Content-Transfer-Encoding: base64
+Content-ID: <image001.png@01D8F843.4A161C90>
+
+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
+RU5ErkJgggA=
+
+------=_NextPart_000_95C0_01D8F84A.93234460--
+

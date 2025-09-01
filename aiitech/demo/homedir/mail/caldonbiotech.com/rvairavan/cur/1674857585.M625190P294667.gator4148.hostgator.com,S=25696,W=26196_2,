@@ -1,0 +1,500 @@
+Return-Path: <cbaumei@cap.org>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id gCPiJHFM1GMLfwQA7/vpDg
+	(envelope-from <cbaumei@cap.org>)
+	for <rvairavan@caldonbiotech.com>; Fri, 27 Jan 2023 16:13:05 -0600
+Return-path: <cbaumei@cap.org>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Fri, 27 Jan 2023 16:13:05 -0600
+Received: from mx0b-000c9301.pphosted.com ([67.231.152.220]:48260 helo=mx0a-000c9301.pphosted.com)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <cbaumei@cap.org>)
+	id 1pLWy1-001UgS-7K
+	for rvairavan@caldonbiotech.com;
+	Fri, 27 Jan 2023 16:13:05 -0600
+Received: from pps.filterd (m0001211.ppops.net [127.0.0.1])
+	by mx0b-000c9301.pphosted.com (8.17.1.22/8.17.1.22) with ESMTP id 30RM8am4001376;
+	Fri, 27 Jan 2023 16:12:48 -0600
+Received: from nam12-dm6-obe.outbound.protection.outlook.com (mail-dm6nam12lp2171.outbound.protection.outlook.com [104.47.59.171])
+	by mx0b-000c9301.pphosted.com (PPS) with ESMTPS id 3nbguc9rb3-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT);
+	Fri, 27 Jan 2023 16:12:48 -0600 (CST)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=Sl5xluzXVI9DQnOv8L9F+Ngk7N8nvnvQ+7NswFoLEWu4w+i2467ROo787bUU1QwX7idWf7uihaH+Fd0TdmuM5l38+gLAjQd1+SFevwvtbgcW8+CJckUWj2yt4wSDHJDDyunaSDBMDJLLd67vp/ldsXirkgmPdvHOZaldskYC3JSGrfNX9pcIHJpHKCUnlntHeECrURlir3lejRtLMsI60P3gGWv+8vcrfYPANQLvMaHOHy5XEbbb0zuDDQjlDX57LH14fNMzzkB7Ue/r0omsQvOB2De714AkdDitX3+Cuua05Yz8JCge3PCYGg7u7GvRBoYirNnHioRArqPdcrJHiQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=yb1oPPqeoXmrBQY5ojRji/KGuwMsXe+sac+D3rcA8zM=;
+ b=kgRfaSTtWkelz7F/n8+G+UMPeuti9jb6D8oy8Zp2cI153vT/Vwltz+KReaQw9t6b3hHVkmf8+5P8KApZaUF+wBPhWl0kv72w0DF2CaNCw6YkcDlJRvA/HD3UlWJYKGAX+OE4PHLVQR3aBlATE+drqL0rf1C/kIL1Vgk5R2m+4eCZAC3wRMrQtSoFpBxjxm2+dmaqTAp36p3rPrPMBHAE7KRV6nY+Ck9WeQIcX4G3+Z/FH26ybDZttm7sDrjcMb/WhigNu2Kab6vFOuGhuOWy0OkBgkrQrzCeptoDZ4hunBAlneUHZjt3cbDv+VQSAGFFI8KzjLtyUCP7Io748urTSA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=cap.org; dmarc=pass action=none header.from=cap.org; dkim=pass
+ header.d=cap.org; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=thecap.onmicrosoft.com; s=selector2-thecap-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=yb1oPPqeoXmrBQY5ojRji/KGuwMsXe+sac+D3rcA8zM=;
+ b=QtpYdF8CCI4HfpG/AA04vnJNqeiplFSd1PVD96B8qJO4FOANBoPog+Twg1iWo5ffY9LuyNNvSLudySkhaWFXRqb8xSI5BhYP4hZWXwSJcjzUt5BQEdd5eTV92niG0rHzjJH3QfRDhGdJRzUFp8WkxBVjpppkQwXlMVJEWl2V7oI=
+Received: from MWHPR11MB1821.namprd11.prod.outlook.com (2603:10b6:300:10f::8)
+ by SA0PR11MB4576.namprd11.prod.outlook.com (2603:10b6:806:97::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6043.25; Fri, 27 Jan
+ 2023 22:12:46 +0000
+Received: from MWHPR11MB1821.namprd11.prod.outlook.com
+ ([fe80::e98c:f15e:9b66:2c54]) by MWHPR11MB1821.namprd11.prod.outlook.com
+ ([fe80::e98c:f15e:9b66:2c54%12]) with mapi id 15.20.6043.022; Fri, 27 Jan
+ 2023 22:12:46 +0000
+From: "Carol Baumeister (s)" <cbaumei@cap.org>
+To: CAPCOA <capcoa@cap.org>
+CC: "Sally Calvey (s)" <scalvey@cap.org>,
+        "Evelyn Castro (s)"
+	<ecastro@cap.org>,
+        "AnnMarie Di Prima (s)" <ADIPRIM@cap.org>,
+        "Jillian
+ Cerullo (s)" <jcerull@cap.org>,
+        "Tiffani Hayes (s)" <thayes@cap.org>,
+        "Kristina Hill (s)" <khill@cap.org>,
+        "Mari Thomas (s)" <mthomas@cap.org>
+Subject: * Reminder:  SDS (Safety Data Sheet) Request for CAP Programs - 2023
+ *
+Thread-Topic: * Reminder:  SDS (Safety Data Sheet) Request for CAP Programs -
+ 2023 *
+Thread-Index: Adkyeukq+8gMDIxQTrCVfF1H0U6QMw==
+Date: Fri, 27 Jan 2023 22:12:46 +0000
+Message-ID: 
+ <MWHPR11MB182140DA98F4758C972E15B8A8CC9@MWHPR11MB1821.namprd11.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: MWHPR11MB1821:EE_|SA0PR11MB4576:EE_
+x-ms-office365-filtering-correlation-id: 377e5721-52df-4e99-6d9b-08db00b39e7c
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: 
+ IuGmICT0SER/wRmuNRZ281FesPRQnM4Lhb2mgQ6JpExTfOuLX+A+Rih0i/2jP/wI8GjYz9sqWQw1dTv2kJmyL2/zyvU/WGf5T0Iq566O3qcbMVsH80WWIBGE5kU3+cvSsxMmqYu9MGYaz3AW1kylxcNCtfnFbQ4RGAObk2h/bKhylebPTr4/ELtu2Xa4I4GyhrfyhcOeUDH1NExMtsQPYbNjI5LBdT5BuooxOeN2s1TgmjCPSQAngIi0sDmDoo96+g9iu3xE+mnjO9iHXMmQ7Lk615C0YL9ez+fFp31P008ZP85tUUzMqBQgfh7b3T+q4Txghrb+3NN1lqqdFQtMCctyxXyXC8oBj9FDxmvneTAvXmTcwxOL9E00wiPzZmR8wTUHby9wm3ImPoDS3cALgIfkidWLoTKfmiDAdciDyvgtMY6HpY00qFXzQ5Iv8RZaPLwGvwlUTrUtlhlmSn8916tqWATUHWAqE4GXUQFjlctOdGBs6Ma0/0QhpKIuEWO/nfdxlLVdZmxtmFME2aat87cSWyUPnyxlWaRHNuW2dUyAI4Ao/2O49zDM75+NS/BnZFd1PtRRliWd4UxK8THkBk3qDH14/UZ08hkgNmgbkMHILv/kavywnR6MaccM019RkhtSQs87mwk7Ew6o3co5h0NK4I4CPUcMgPlrgiFR82xd8bk2l43C/nQ25GWSp+BKoipEUfGC0WxR/dLjm5EG8T0ieT+VMWop+Wpmr2Bskpkrv3L1LlLPxkUo2wNIz/WsKjRTwwGb3tfZYTRlD7fswQ==
+x-forefront-antispam-report: 
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:MWHPR11MB1821.namprd11.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230025)(376002)(346002)(39850400004)(136003)(366004)(396003)(451199018)(41300700001)(8676002)(76116006)(83380400001)(66476007)(64756008)(40140700001)(66446008)(66556008)(66946007)(4326008)(7416002)(52536014)(6862004)(786003)(8936002)(316002)(9686003)(186003)(26005)(55016003)(2906002)(33656002)(6636002)(5660300002)(54906003)(7696005)(41320700001)(478600001)(71200400001)(6506007)(38070700005)(122000001)(86362001)(166002)(38100700002);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: 
+ =?us-ascii?Q?lCOZy3n6SlvoIRK+u5+wzS/zhjmyGYXIDPhFuttXDfI0b9jPK6Xvcddf4Jfn?=
+ =?us-ascii?Q?MKtGoiID6oNhg3tMz9zvy8y8XfKIdVWtaV+a7k+Z8zhIpr9cn1S96TEju3fB?=
+ =?us-ascii?Q?9m/iZ6lMLgFW65i7tANONTHettvK+9LkEP8/xttyhhh1kCoBdnr4iDJiAItf?=
+ =?us-ascii?Q?i2BUDYUeBFWyT++o7ZsAvxIe5b76zbx/sWADQgxwtMX/PfLjRC9MkxwH3f9g?=
+ =?us-ascii?Q?MKlO8VOI50qsjYY5pYTm99yD6x0YS6zNcHdfFFNcQIyMgbLZ58RecwgHWlnh?=
+ =?us-ascii?Q?fbfMQfec8n45LebpHkeikRaSk7GfkrnRkFnLdGt2MoNF7wx7Itli1SFpp5pJ?=
+ =?us-ascii?Q?7D2sMzBwbs7/ueCqv1SMepuI0/+17bPxJsKEgteZSCf3wC4TLEbQDqNP2SBX?=
+ =?us-ascii?Q?nRHQ3BW6amVX/ooRTBtQ+i5TvAtIQSOzQOvsd0VL/FbWgEqFaXEVjT9CF9Am?=
+ =?us-ascii?Q?p5xM7Pjjp3T17BGVF7xArE9pynk+5wZO1T9UIXhketMteXC/KpWtDcUIZDdS?=
+ =?us-ascii?Q?6h5WB9rDpZdxc1ltgPrMWAe+zJ0GRKbIhPNMYWgkmTeu9BSUrILxjirOR24s?=
+ =?us-ascii?Q?xJsbmT4j28N/5v0lBQdqGir9fYGfPnXM3l8LjUgUznhg4i2t8ntyk12b4/mx?=
+ =?us-ascii?Q?XACBI4JGXaXaZ/0U/G1Jm7A5aJEI4QpUtgIelFrt5xzkAvfMn+3PW2N9lDok?=
+ =?us-ascii?Q?YUERstSDQXlLZ/xoXNZpiqOn6XEVx+MyNTRtrUuKp+cVxlITXvwYU8kpZe3j?=
+ =?us-ascii?Q?1EyuHnpTX04DbKg+MDEhb1Kb2/KRLsTVrHmqUjK7/vPjVCztcsEphqnuGlDA?=
+ =?us-ascii?Q?/Ix5sBORjlikvR8mM+yUbIzFO35DpjC76gMANMA+Y63kb6/Z7HlgfSmfCsR+?=
+ =?us-ascii?Q?EOQcej1bxK3F9Lka21lKwsbgvS2vkmqT0jNxykYsW+PCbsAxeNnNC9QmdcyT?=
+ =?us-ascii?Q?RcV54oc+QX8jRw/qiWnNW2z69eKg1ud46VLi+t1PjNxD9wt/4liX6+FCFb4+?=
+ =?us-ascii?Q?ILR3H8LJ4q91MZWRLx7lQ8uzrUF22Ke9xM4EDpbtfZyExQdc6BSo+qZwP4NY?=
+ =?us-ascii?Q?/hRu7EAUzHAjBpL6PMpYV3vhV5mb5scxgggG4YKBT7211PAFNE9zwmARnbJh?=
+ =?us-ascii?Q?WHABebjrgsoGZbcjH5addTF0TOWQt5FsYyOykUUlOmghII9Q/gVSgCVgj/Wz?=
+ =?us-ascii?Q?UtY9RMXH7GIAz6NBSYTXpPZBHGO1jke4Cd1xS7jUVjPnzvMvVafzruIfpydm?=
+ =?us-ascii?Q?WGaSmw8oqss5juuotZTIWxKxT/RARcAvDM4RsM1jA8KBEiwcLSuz9sXhrT3Z?=
+ =?us-ascii?Q?4uP1BRaXmo8kqKIZrOADsoUUf0Ubgl0UlOlSsvOLd8fbf3o7/zpUg+7lJ+vI?=
+ =?us-ascii?Q?AOE/Fofh+RDX0JTcQ202bwRy49BkeipMlULO/7BR1qXHlxW6TSbwvSYeeD3R?=
+ =?us-ascii?Q?zxOHLLHfgPupFly/AxJsORXS0ya3PsHQFYc3TMlpuSfY37YoGPz9lKBvXanD?=
+ =?us-ascii?Q?9ODu1ZD09yVo/mpmhoHkij9QB57whbBk+5oHtNkouUWlDDSkSzRU8DRnGV2Q?=
+ =?us-ascii?Q?ZtYGlyjgiB44dq7F502zqW5sb+yZZj1s82VpD8Ie?=
+Content-Type: multipart/alternative;
+	boundary="_000_MWHPR11MB182140DA98F4758C972E15B8A8CC9MWHPR11MB1821namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: cap.org
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: MWHPR11MB1821.namprd11.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 377e5721-52df-4e99-6d9b-08db00b39e7c
+X-MS-Exchange-CrossTenant-originalarrivaltime: 27 Jan 2023 22:12:46.0845
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 4503f2e1-c310-4ce0-95cc-fe3d26359fc4
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: omC0DJdsuXHQXZ23NZUpdFeQSCPfcPJzD+gutV1E/5uqDlvaHOmmAEqJgGZnsWnD
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA0PR11MB4576
+X-Proofpoint-GUID: F59zapfAXK8HCVsoeDwd0Q3nt-2sDa7r
+X-Proofpoint-ORIG-GUID: F59zapfAXK8HCVsoeDwd0Q3nt-2sDa7r
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.219,Aquarius:18.0.930,Hydra:6.0.562,FMLib:17.11.122.1
+ definitions=2023-01-27_14,2023-01-27_01,2022-06-22_01
+X-Proofpoint-Spam-Details: rule=outbound_notspam policy=outbound score=0 clxscore=1011 malwarescore=0
+ suspectscore=0 bulkscore=0 mlxlogscore=999 priorityscore=1501 mlxscore=0
+ spamscore=0 impostorscore=0 phishscore=0 lowpriorityscore=0 adultscore=0
+ classifier=spam adjust=0 reason=mlx scancount=1 engine=8.19.0-2212070000
+ definitions=main-2301270203
+X-Spam-Status: No, score=0.7
+X-Spam-Score: 7
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--_000_MWHPR11MB182140DA98F4758C972E15B8A8CC9MWHPR11MB1821namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello. Just another reminder as you have not sent the below to us for 2023:
+
+Dear CAP Supplier,
+
+As stated in our CAP Supplier Directive, you need to annually review SDS co=
+mpliance for all Proficiency Testing (PT) material you supply to us.
+The CAP needs current safety documentation available to our customers and s=
+hipping agents for the 2023 Program year to avoid shipping delays/issues.
+Please provide the following to us as soon as possible, preferably by Decem=
+ber 31, 2022.
+
+
+  *   If SDS from previous year is still current & on file with us:
+Statement on company letterhead that the previous SDS remains current for 2=
+023, with list of all Surveys it applies to.
+
+       AND/OR
+
+
+  *   If you are supplying a new Surveys program, or
+If your material has changed, or
+If previous SDS is no longer applicable:
+New SDS for 2023, with list of all Surveys it applies to. Note: Must be for=
+matted to current Global Harmonization Standard (GHS).
+
+AND/OR
+
+
+  *   If your material is not classified as hazardous:
+Either an SDS (preferred) (or a new Letter of Exemption on company letterhe=
+ad if material does not require an SDS).
+
+
+
+Please email documents to: CAPCOA@cap.org<mailto:CAPCOA@cap.org>. Please re=
+member to include the CAP Surveys program names (eg, C Survey, D Survey) fo=
+r which the document(s) applies.
+
+We are happy to assist you, so please let me or your CAP Purchasing contact=
+ know if you have any questions about this request.
+
+
+Thank you,
+
+
+Carol Baumeister, MLS(ASCP)
+Sr. Technical Product & Quality Assurance Specialist, Surveys
+College of American Pathologists
+325 Waukegan Road, Northfield, IL 60093 USA
+cbaumei@cap.org<mailto:cbaumei@cap.org>
+Tel: 800-323-4040 ext. 7817 | Dir: 001-847-832-7817 | Fax: 001-847-832-8817
+cap.org<http://www.cap.org/> | @Pathologists<https://twitter.com/Pathologis=
+ts> | Facebook | Instagram
+Recognized in 2021 as a socially responsible employer by the Center for Com=
+panies That Care
+
+Consider our environment; please print this email only if truly necessary.
+
+
+--_000_MWHPR11MB182140DA98F4758C972E15B8A8CC9MWHPR11MB1821namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel" xmlns:m=3D"http://schema=
+s.microsoft.com/office/2004/12/omml" xmlns=3D"http://www.w3.org/TR/REC-html=
+40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Arial",sans-serif;
+	color:windowtext;
+	font-weight:normal;
+	font-style:normal;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:314187510;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1759422094 67698689 67698691 67698693 67698689 67698=
+691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:55.45pt;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:91.45pt;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:127.45pt;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:163.45pt;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:199.45pt;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:235.45pt;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:271.45pt;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:307.45pt;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:343.45pt;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:red">Hello. Just another reminder as you have no=
+t sent the below to us for 2023:<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#17365D"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#17365D">Dear CAP Supplier,
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#17365D"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#17365D">As stated in our CAP Supplier Directive=
+, you need to annually review SDS compliance for all Proficiency Testing (P=
+T) material you supply to us.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#17365D">The CAP needs current safety documentat=
+ion available to our customers and shipping agents for the 2023 Program yea=
+r to avoid shipping delays/issues.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#17365D">Please provide the following to us as s=
+oon as possible, preferably by
+</span><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-s=
+erif;color:red;background:yellow;mso-highlight:yellow">December 31, 2022</s=
+pan><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-seri=
+f;color:#17365D">.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#17365D"><o:p>&nbsp;</o:p></span></p>
+<ul style=3D"margin-top:0in" type=3D"disc">
+<li class=3D"MsoNormal" style=3D"color:#17365D;margin-bottom:6.0pt;margin-l=
+eft:19.45pt;mso-list:l0 level1 lfo1">
+<b><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif=
+">If <u>SDS from previous year is still current &amp; on file with us:</u><=
+/span></b><u><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,=
+sans-serif"><o:p></o:p></span></u></li></ul>
+<p class=3D"MsoNormal" style=3D"margin-left:.75in"><span style=3D"font-size=
+:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#17365D">Statement
+<b>on company letterhead</b> that the previous SDS remains current for 2023=
+, with list of all Surveys it applies to.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:#17365D"><o:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:#17365D">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp=
+;AND/OR<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#17365D"><o:p>&nbsp;</o:p></span></p>
+<ul style=3D"margin-top:0in" type=3D"disc">
+<li class=3D"MsoNormal" style=3D"color:#17365D;margin-left:19.45pt;line-hei=
+ght:150%;mso-list:l0 level1 lfo1">
+<b><span style=3D"font-size:10.0pt;line-height:150%;font-family:&quot;Arial=
+&quot;,sans-serif">If you are supplying a
+<u>new Surveys program</u>, or<u><o:p></o:p></u></span></b></li></ul>
+<p class=3D"MsoNormal" style=3D"margin-left:.75in;line-height:150%"><b><spa=
+n style=3D"font-size:10.0pt;line-height:150%;font-family:&quot;Arial&quot;,=
+sans-serif;color:#17365D">If your
+<u>material has changed</u>, or<u><o:p></o:p></u></span></b></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:0in;margin-right:0in;mar=
+gin-bottom:6.0pt;margin-left:.75in;line-height:150%">
+<b><span style=3D"font-size:10.0pt;line-height:150%;font-family:&quot;Arial=
+&quot;,sans-serif;color:#17365D">If
+<u>previous SDS is no longer applicable:<o:p></o:p></u></span></b></p>
+<p class=3D"MsoNormal" style=3D"margin-left:.75in"><span style=3D"font-size=
+:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#17365D">New SDS for=
+ 2023, with list of all Surveys it applies to.
+<b><i>Note: </i></b>Must be formatted to current Global Harmonization Stand=
+ard (GHS).<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-left:19.45pt"><span style=3D"font-si=
+ze:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#17365D"><o:p>&nbs=
+p;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-left:19.45pt"><b><span style=3D"font=
+-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#17365D">AND/OR=
+<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"margin-left:19.45pt"><b><span style=3D"font=
+-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#17365D"><o:p>&=
+nbsp;</o:p></span></b></p>
+<ul style=3D"margin-top:0in" type=3D"disc">
+<li class=3D"MsoNormal" style=3D"color:#17365D;margin-left:19.45pt;line-hei=
+ght:150%;mso-list:l0 level1 lfo1">
+<b><span style=3D"font-size:10.0pt;line-height:150%;font-family:&quot;Arial=
+&quot;,sans-serif">If your material is
+<u>not classified as hazardous</u>:<o:p></o:p></span></b></li></ul>
+<p class=3D"MsoNormal" style=3D"margin-left:.75in"><span style=3D"font-size=
+:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#17365D">Either an S=
+DS
+<b>(preferred)</b> (or a <u>new</u> Letter of Exemption on company letterhe=
+ad if material does not require an SDS).<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-left:55.45pt;line-height:150%"><b><s=
+pan style=3D"font-size:10.0pt;line-height:150%;font-family:&quot;Arial&quot=
+;,sans-serif;color:#17365D"><o:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"margin-left:19.45pt"><b><span style=3D"font=
+-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#17365D"><o:p>&=
+nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"margin-left:19.45pt"><span style=3D"font-si=
+ze:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#17365D"><o:p>&nbs=
+p;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#17365D;background:yellow;mso-highlight:yellow">=
+Please email documents to:
+</span><b><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,san=
+s-serif;color:red;background:yellow;mso-highlight:yellow"><a href=3D"mailto=
+:CAPCOA@cap.org"><span style=3D"color:red">CAPCOA@cap.org</span></a></span>=
+</b><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-seri=
+f;color:#17365D;background:yellow;mso-highlight:yellow">.</span><span style=
+=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#17365D=
+">
+ Please remember to include the <b><u>CAP Surveys program names</u></b> (eg=
+, C Survey, D Survey) for which the document(s) applies.<o:p></o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#17365D"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:red">We are happy to assist you, so please let m=
+e or your CAP Purchasing contact know if you have any questions about this =
+request.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:red"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#17365D"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#17365D">Thank you,<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:#009ABF"><o:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:#009ABF"><o:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:#009ABF">Carol Baumeister, MLS(ASCP)</span></=
+b><b><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-ser=
+if;color:#00539F">
+<br>
+</span></b><b><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;=
+,sans-serif">Sr. Technical Product &amp; Quality Assurance Specialist, Surv=
+eys<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Arial&quot;,sans-serif">College of American Pathologists<br>
+</span></b><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sa=
+ns-serif">325 Waukegan Road, Northfield, IL 60093 USA<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><a href=3D"mailto:cbaumei@cap.org"><span style=3D"col=
+or:windowtext;text-decoration:none">cbaumei@cap.org</span></a><br>
+<b>Tel:</b> 800-323-4040 ext. 7817 | <b>Dir:</b> 001-847-832-7817 | <b>Fax:=
+</b> 001-847-832-8817<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#009ABF"><a href=3D"http://www.cap.org/"><span s=
+tyle=3D"color:#009ABF;text-decoration:none">cap.org</span></a> |
+<a href=3D"https://twitter.com/Pathologists"><span style=3D"color:#009ABF;t=
+ext-decoration:none">@Pathologists</span></a> | Facebook | Instagram<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:gray">Recognized in 2021 as a socially respon=
+sible employer by the Center for Companies That Care<o:p></o:p></span></b><=
+/p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:gray"><o:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">Consider our environment; please print this email onl=
+y if truly necessary.</span><span style=3D"font-family:&quot;Arial&quot;,sa=
+ns-serif"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_MWHPR11MB182140DA98F4758C972E15B8A8CC9MWHPR11MB1821namp_--

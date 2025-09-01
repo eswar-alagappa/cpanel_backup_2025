@@ -1,0 +1,383 @@
+Return-Path: <andrew.griffin@docusign.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id wGuFIaL7Y2OlSwkA7/vpDg
+	(envelope-from <andrew.griffin@docusign.com>); Thu, 03 Nov 2022 12:34:26 -0500
+Return-path: <andrew.griffin@docusign.com>
+Envelope-to: gloria@caldonbiotech.com
+Delivery-date: Thu, 03 Nov 2022 12:34:26 -0500
+Received: from mail-ua1-f42.google.com ([209.85.222.42]:46685)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <andrew.griffin@docusign.com>)
+	id 1oqe6j-002Ytu-Op
+	for gloria@caldonbiotech.com;
+	Thu, 03 Nov 2022 12:34:26 -0500
+Received: by mail-ua1-f42.google.com with SMTP id c12so1328716uat.13
+        for <gloria@caldonbiotech.com>; Thu, 03 Nov 2022 10:34:20 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=docusign.com; s=google;
+        h=to:subject:message-id:date:mime-version:references:in-reply-to:from
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=pc/VTOQUI7Fj4O8fTTOZWP2JmWRDdgyKA15cRobLEUk=;
+        b=ejQ0x54l/aeOSD3D/AvKUKjqjhaelqfSR2IttV3+jva5x8xS9z/4yVRPdcn6aK87y9
+         5E4jk1qvivWEYZzNL6zZY2n5c9PcVOffzpRSkm+NCj/HcC3BrSSKTee9e0Jc+asdNqRV
+         nEdXU0XFSqmYvH3piWl6ZGe0p23jKaeqb9aIS9ZKnFpmxv5QS2TyOUrPz9Qt3AubhEQ4
+         uyctcee/CR4a4sEnPmjcphsJJE3kRA9QSSrei4mzhRixMBtGBS+Q0cRwvMtVOHi5zTgo
+         wThfibnuOe1/uNs5HiBk63zCR7uUHAMOV0wYKT1657W1XD29anY3q6k/Ww3QTRxhnYiP
+         UPHA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:mime-version:references:in-reply-to:from
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=pc/VTOQUI7Fj4O8fTTOZWP2JmWRDdgyKA15cRobLEUk=;
+        b=v/T0B1EfOzCg8coPfSsasyagpbiSOsutFjllZmW2+JRFyv4w9VQU6Tuqa6fNEZKPuX
+         0CIOb/BfP8VEvuEgj9gZFLCTF8/7IymNoH8tQ4HUDnM16dFjFep7VIgilsQUdDEuNvYc
+         KBlqtN60gljdNFgAZ76vBwnV43zfEa6Rjbl3d63vlkjaRLwEpyAnlDurfRRaTH46kY8h
+         GDREQnKq1t5OcqfPladpRCg8Txsu3se5Fu+EYrvLYVYbikPzHCAfJmAoSKjeQISUat2f
+         VGXHJPMlwlENsNDWDPVw/PRo17VUM7+6Qa2ksuVvEG8HUsXD8/VHI7zLB0epuX07qNNb
+         aOFw==
+X-Gm-Message-State: ACrzQf0JqYvQQzdyh+1BmK9yx7eF/xiaauUAoGvRTYCDSi7guTnQY6mq
+	9fyI4PFpxKpBV2ew4wzhI7s44oeGk8b/ory2E0oWHpKiMro=
+X-Google-Smtp-Source: AMsMyM4YhHwl+Wr4KulnJsa38/LrtdngJQyEkvfcQobfmPskyKe1WteZMjOq7vFIGAM+vD3oCDnrRATVWuPrlN/P4zM=
+X-Received: by 2002:ab0:992:0:b0:3cb:c597:48ff with SMTP id
+ x18-20020ab00992000000b003cbc59748ffmr14963751uag.19.1667496854113; Thu, 03
+ Nov 2022 10:34:14 -0700 (PDT)
+Received: from 193155701165 named unknown by gmailapi.google.com with
+ HTTPREST; Thu, 3 Nov 2022 10:34:13 -0700
+From: Andrew Griffin <andrew.griffin@docusign.com>
+In-Reply-To: <CAHa+e30p+TH3d=Vk9OqxAidOuOB3Cts8om-8XNK24K+MQt-Orw@mail.gmail.com>
+References: <CAHa+e30p+TH3d=Vk9OqxAidOuOB3Cts8om-8XNK24K+MQt-Orw@mail.gmail.com>
+Mime-Version: 1.0
+X-OUTREACH-SENT: true
+Date: Thu, 3 Nov 2022 10:34:13 -0700
+Message-ID: <CAHa+e30NAPtu2_dSntVg2xnXEudhuqebZghUZXB_Ym1cy7Q1Pg@mail.gmail.com>
+Subject: Re: Demo Time for Tomorrow
+To: Gloria Milich <gloria@caldonbiotech.com>
+Content-Type: multipart/related; boundary="000000000000a7800405ec945df6"
+X-Spam-Status: No, score=-0.6
+X-Spam-Score: -5
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--000000000000a7800405ec945df6
+Content-Type: multipart/alternative; boundary="000000000000a7800305ec945df5"
+
+--000000000000a7800305ec945df5
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Gloria,
+
+My apologies, I should have been more specific in my last email. I can
+create a demo for any paper process, not just HIPAA/Part11 documents. Here
+are some examples below on what I normally do.
+Consider:
+
+   - Procurement
+   <https://www.docusign.com/solutions/departments/procurement> - purchase
+   orders, SOWs, MSAs, RFP sign offs, supplier agreements
+   - Sales <https://www.docusign.com/solutions/departments/sales> - order
+   processing, account provisioning, special terms, partner and reseller
+   agreements
+   - Legal <https://www.docusign.com/solutions/departments/legal> -
+   contracts, NDAs, internal compliance, M&A, Contract Lifecycle Management
+   - HR <https://www.docusign.com/solutions/departments/human-resources> -
+   offer letters, on-/off-boarding, employee policy distribution, benefits
+
+I included my calendar link, feel free to find a time that works for you.
+
+Thanks,
+Andrew
+
+
+*Put time on my calendar **here!*
+<https://click.docusign.com/c/andrew-griffin>
+
+*Andrew Griffin*| Account Executive =E2=80=93 Healthcare & Life Sciences |
+* 253-797-5990 | **docusign.com* <http://docusign.com/>
+*999 3rd Ave #1800, Seattle, WA 98104*
+
+*Our understanding is you are located in the United States or Canada. If
+this is incorrect, please accept my apology and let me know and I will
+update our system. If you would like to unsubscribe from future DocuSign
+marketing emails please reply to me or *click here
+<http://esign.docusign.com/global-unsubscribe>
+
+
+If you'd like me to stop sending you emails, please click here
+<https://click.docusign.com/api/mailings/unsubscribe/PMRGSZBCHIYTMMJRGMZDMN=
+JWFQRG64THEI5CEODGGFTGKMDBGUWTANDCMEWTCMLFGYWTSNBQMEWTAMTDHFQTMOBXMMZTGYRCF=
+QRHMZLSONUW63RCHIRDIIRMEJZWSZZCHIRHAWCCIRKUGSDFI5ZEQ3TUPJ3GGYS2HBIHUZ3KNV2W=
+KRLPGBIVAM2CNVSEWM2OIYWUC6RYHURH2=3D=3D=3D>
+
+
+On Mon, Oct 31, 2022 at 10:33 am, Andrew Griffin wrote:
+
+Hi Gloria,
+
+I am reaching out to introduce myself as your resource here at DocuSign. My
+role is to gather information and show how Healthcare and Life Sciences
+organizations can benefit from taking their processes digital.
+Setting up a product demonstration would be the best way show your team
+immediate benefit.
+
+Our demos are two parts; The first conversation is focused around helping
+me understand what your company is hoping to achieve and where you are at
+now. From there I will be able to build and share a demo tailored to your
+processes. After, if you are interested I can get you in touch with your
+account team to talk through specifics for potential implementation.
+
+I am happy to show you how you could take your processes digital, whether
+it=E2=80=99s internal HR paperwork or specific HIPAA/Part 11 documentation.
+
+Feel free to utilize my calendar below to find a time that works best for
+you.
+
+Thanks,
+Andrew
+
+
+*Put time on my calendar **here!*
+<https://click.docusign.com/c/andrew-griffin>
+
+*Andrew Griffin*| Account Executive =E2=80=93 Healthcare & Life Sciences |
+* 253-797-5990 | **docusign.com* <http://docusign.com/>
+*999 3rd Ave #1800, Seattle, WA 98104*
+
+*Our understanding is you are located in the United States or Canada. If
+this is incorrect, please accept my apology and let me know and I will
+update our system. If you would like to unsubscribe from future DocuSign
+marketing emails please reply to me or *click here
+<http://esign.docusign.com/global-unsubscribe>
+
+
+If you'd like me to stop sending you emails, please click here
+<https://click.docusign.com/api/mailings/unsubscribe/PMRGSZBCHIYTMMBZG44DMN=
+RZFQRG64THEI5CEODGGFTGKMDBGUWTANDCMEWTCMLFGYWTSNBQMEWTAMTDHFQTMOBXMMZTGYRCF=
+QRHMZLSONUW63RCHIRDIIRMEJZWSZZCHIRE23LQJZDGW3RYGBIWM3RYLFLFK3LTHF4FSZDSGZRF=
+6WKEKVQWEY3JNY2WIWDFKY3DKSDHHURH2=3D=3D=3D>
+
+--000000000000a7800305ec945df5
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div id=3D"docs-internal-guid-6d7a9024-7fff-fb93-9a0d-0e76127095c6"><div di=
+r=3D"ltr"><span><span style=3D"font-family:Calibri,sans-serif;font-size:13p=
+x">Hi Gloria,</span></span></div><br><div dir=3D"ltr"><span><span style=3D"=
+font-family:Calibri,sans-serif;font-size:13px">My apologies, I should have =
+been more specific in my last email. I can create a demo for any paper proc=
+ess, not just HIPAA/Part11 documents. Here are some examples below on what =
+I normally do.</span></span></div><div dir=3D"ltr"><span><span style=3D"fon=
+t-family:Calibri,sans-serif;font-size:13px">Consider:=C2=A0</span></span></=
+div><ul style=3D"font-size:13px;font-family:Calibri,sans-serif;padding-left=
+:26px"><li dir=3D"ltr"><div dir=3D"ltr" role=3D"presentation"><a href=3D"ht=
+tps://www.docusign.com/solutions/departments/procurement" target=3D"_blank"=
+ rel=3D"noopener noreferrer"><span><span style=3D"font-family:Calibri,sans-=
+serif;font-size:13px">Procurement</span></span></a><span><span style=3D"fon=
+t-family:Calibri,sans-serif;font-size:13px">=C2=A0- purchase orders, SOWs, =
+MSAs, RFP sign offs, supplier agreements</span></span></div></li><li dir=3D=
+"ltr"><div dir=3D"ltr" role=3D"presentation"><a href=3D"https://www.docusig=
+n.com/solutions/departments/sales" target=3D"_blank" rel=3D"noopener norefe=
+rrer"><span><span style=3D"font-family:Calibri,sans-serif;font-size:13px">S=
+ales</span></span></a><span><span style=3D"font-family:Calibri,sans-serif;f=
+ont-size:13px">=C2=A0- order processing, account provisioning, special term=
+s, partner and reseller agreements=C2=A0</span></span></div></li><li dir=3D=
+"ltr"><div dir=3D"ltr" role=3D"presentation"><a href=3D"https://www.docusig=
+n.com/solutions/departments/legal" target=3D"_blank" rel=3D"noopener norefe=
+rrer"><span><span style=3D"font-family:Calibri,sans-serif;font-size:13px">L=
+egal</span></span></a><span><span style=3D"font-family:Calibri,sans-serif;f=
+ont-size:13px">=C2=A0- contracts, NDAs, internal compliance, M&amp;A, Contr=
+act Lifecycle Management</span></span></div></li><li dir=3D"ltr"><div dir=
+=3D"ltr" role=3D"presentation"><a href=3D"https://www.docusign.com/solution=
+s/departments/human-resources" target=3D"_blank" rel=3D"noopener noreferrer=
+"><span><span style=3D"font-family:Calibri,sans-serif;font-size:13px">HR</s=
+pan></span></a><span><span style=3D"font-family:Calibri,sans-serif;font-siz=
+e:13px">=C2=A0- offer letters, on-/off-boarding, employee policy distributi=
+on, benefits=C2=A0</span></span></div></li></ul><div dir=3D"ltr"><span><spa=
+n style=3D"font-family:Calibri,sans-serif;font-size:13px">I included my cal=
+endar link, feel free to find a time that works for you.</span></span></div=
+><br><div dir=3D"ltr"><span><span style=3D"font-family:Calibri,sans-serif;f=
+ont-size:13px">Thanks,</span></span></div><div dir=3D"ltr"><span></span><sp=
+an style=3D"font-family:Calibri,sans-serif;font-size:13px">Andrew</span></d=
+iv></div><br><div><br></div><div class=3D"outreach-signature"><div><span st=
+yle=3D"font-family:Calibri,sans-serif;font-size:13px"><strong>Put time on m=
+y calendar=C2=A0</strong></span><a rel=3D"noopener noreferrer" target=3D"_b=
+lank" href=3D"https://click.docusign.com/c/andrew-griffin"><span style=3D"f=
+ont-family:Calibri,sans-serif;font-size:13px"><strong>here!</strong></span>=
+</a></div><br><div><span style=3D"font-family:Calibri,sans-serif;font-size:=
+13px"><strong>Andrew Griffin</strong></span><span style=3D"color:rgb(104,10=
+6,108);font-family:Calibri,sans-serif;font-size:13px">| Account Executive =
+=E2=80=93 Healthcare &amp; Life Sciences |</span><span style=3D"color:rgb(1=
+04,106,108);font-family:Calibri,sans-serif;font-size:12pt">=C2=A0</span></d=
+iv><div><span style=3D"color:rgb(104,106,108);font-family:Calibri,sans-seri=
+f;font-size:13px"><strong>=C2=A0253-797-5990 |=C2=A0</strong></span><a rel=
+=3D"noopener noreferrer" target=3D"_blank" href=3D"http://docusign.com/"><s=
+pan style=3D"color:rgb(5,99,193);font-family:Calibri,sans-serif;font-size:1=
+3px"><strong>docusign.com</strong></span></a><span style=3D"color:rgb(5,99,=
+193);font-family:Calibri,sans-serif;font-size:13px"><strong>=C2=A0</strong>=
+</span></div><div><span style=3D"color:gray;font-family:Calibri,sans-serif;=
+font-size:13px"><strong>999 3rd Ave #1800, Seattle, WA 98104</strong></span=
+></div><div><img height=3D"21" width=3D"96" src=3D"cid:NwQc4HbKNXsGRqbx3omv=
+8kptwGR--PEFzoDpyjMUucc" style=3D"width: 96px; height: 21px"><span style=3D=
+"font-family:Calibri,sans-serif;font-size:13px">=C2=A0</span></div><div><sp=
+an style=3D"color:black;font-family:Calibri,sans-serif;font-size:8pt"><em>O=
+ur understanding is you are located in the United States or Canada.=C2=A0If=
+ this is incorrect, please accept my apology and let me know and I will upd=
+ate our system. If you would like to unsubscribe from future DocuSign marke=
+ting emails=C2=A0please reply to me or=C2=A0</em></span><a rel=3D"noopener =
+noreferrer" target=3D"_blank" href=3D"http://esign.docusign.com/global-unsu=
+bscribe"><span style=3D"color:rgb(149,79,114);font-family:Calibri,sans-seri=
+f;font-size:8pt">click=C2=A0here</span></a></div><br><br></div><div class=
+=3D"outreach-signature outreach-unsubscribe" style=3D"font-size:10px;color:=
+#999">If you&#39;d like me to stop sending you emails, please <a href=3D"ht=
+tps://click.docusign.com/api/mailings/unsubscribe/PMRGSZBCHIYTMMJRGMZDMNJWF=
+QRG64THEI5CEODGGFTGKMDBGUWTANDCMEWTCMLFGYWTSNBQMEWTAMTDHFQTMOBXMMZTGYRCFQRH=
+MZLSONUW63RCHIRDIIRMEJZWSZZCHIRHAWCCIRKUGSDFI5ZEQ3TUPJ3GGYS2HBIHUZ3KNV2WKRL=
+PGBIVAM2CNVSEWM2OIYWUC6RYHURH2=3D=3D=3D">click here</a></div><div><br></div=
+><div><br></div><div class=3D"outreach-quote">On Mon, Oct 31, 2022 at 10:33=
+ am, Andrew Griffin wrote:<div><br></div><div><span style=3D"font-family:Ca=
+libri,sans-serif;font-size:13px">Hi Gloria,</span></div><br><div><span styl=
+e=3D"font-family:Calibri,sans-serif;font-size:13px">I am reaching out to in=
+troduce myself as your resource here at DocuSign. My role is to gather info=
+rmation and show how Healthcare and Life Sciences organizations can benefit=
+ from taking their processes digital.=C2=A0</span></div><div><span style=3D=
+"font-family:Calibri,sans-serif;font-size:13px">Setting up a product demons=
+tration would be the best way show your team immediate benefit.=C2=A0</span=
+></div><br><div><span style=3D"font-family:Calibri,sans-serif;font-size:13p=
+x">Our demos are two parts; The first conversation is focused around helpin=
+g me understand what your company is hoping to achieve and where you are at=
+ now. From there I will be able to build and share a demo tailored to your =
+processes. After, if you are interested I can get you in touch with your ac=
+count team to talk through specifics for potential implementation.</span></=
+div><br><div id=3D"docs-internal-guid-30300df0-7fff-42bd-0a1c-a40be73fa6d3"=
+><span style=3D"font-family:Calibri,sans-serif;font-size:13px">I am happy t=
+o show you how you could take your processes digital, whether it=E2=80=99s =
+internal HR paperwork or specific HIPAA/Part 11 documentation.</span></div>=
+<br><div id=3D"docs-internal-guid-e2e3f8dc-7fff-032f-8056-bed0fc284712">
+<div><span style=3D"font-family:Calibri,sans-serif;font-size:13px">Feel fre=
+e to utilize my calendar below to find a time that works best for you.</spa=
+n></div>
+<br><div><span style=3D"font-family:Calibri,sans-serif;font-size:13px">Than=
+ks,</span></div>
+<div><span style=3D"font-family:Calibri,sans-serif;font-size:13px">Andrew</=
+span></div>
+</div><br><div><br></div><div class=3D"outreach-signature">
+<div>
+<span style=3D"font-family:Calibri,sans-serif;font-size:13px"><strong>Put t=
+ime on my calendar=C2=A0</strong></span><a href=3D"https://click.docusign.c=
+om/c/andrew-griffin"><span style=3D"font-family:Calibri,sans-serif;font-siz=
+e:13px"><strong>here!</strong></span></a>
+</div>
+<br><div>
+<span style=3D"font-family:Calibri,sans-serif;font-size:13px"><strong>Andre=
+w Griffin</strong></span><span style=3D"color:rgb(104,106,108);font-family:=
+Calibri,sans-serif;font-size:13px">| Account Executive =E2=80=93 Healthcare=
+ &amp; Life Sciences |</span><span style=3D"color:rgb(104,106,108);font-fam=
+ily:Calibri,sans-serif;font-size:12pt">=C2=A0</span>
+</div>
+<div>
+<span style=3D"color:rgb(104,106,108);font-family:Calibri,sans-serif;font-s=
+ize:13px"><strong>=C2=A0253-797-5990 |=C2=A0</strong></span><a href=3D"http=
+://docusign.com/"><span style=3D"color:rgb(5,99,193);font-family:Calibri,sa=
+ns-serif;font-size:13px"><strong>docusign.com</strong></span></a><span styl=
+e=3D"color:rgb(5,99,193);font-family:Calibri,sans-serif;font-size:13px"><st=
+rong>=C2=A0</strong></span>
+</div>
+<div><span style=3D"color:gray;font-family:Calibri,sans-serif;font-size:13p=
+x"><strong>999 3rd Ave #1800, Seattle, WA 98104</strong></span></div>
+<div>
+<img height=3D"21" width=3D"96" src=3D"cid:NwQc4HbKNXsGRqbx3omv8kptwGR--PEF=
+zoDpyjMUucc" style=3D"width:96px;height:21px;"><span style=3D"font-family:C=
+alibri,sans-serif;font-size:13px">=C2=A0</span>
+</div>
+<div>
+<span style=3D"color:black;font-family:Calibri,sans-serif;font-size:8pt"><e=
+m>Our understanding is you are located in the United States or Canada. If t=
+his is incorrect, please accept my apology and let me know and I will updat=
+e our system. If you would like to unsubscribe from future DocuSign marketi=
+ng emails please reply to me or=C2=A0</em></span><a href=3D"http://esign.do=
+cusign.com/global-unsubscribe"><span style=3D"color:rgb(149,79,114);font-fa=
+mily:Calibri,sans-serif;font-size:8pt">click here</span></a>
+</div>
+<br><br>
+</div><div class=3D"outreach-signature outreach-unsubscribe" style=3D"font-=
+size:10px;color:#999">If you&#39;d like me to stop sending you emails, plea=
+se <a href=3D"https://click.docusign.com/api/mailings/unsubscribe/PMRGSZBCH=
+IYTMMBZG44DMNRZFQRG64THEI5CEODGGFTGKMDBGUWTANDCMEWTCMLFGYWTSNBQMEWTAMTDHFQT=
+MOBXMMZTGYRCFQRHMZLSONUW63RCHIRDIIRMEJZWSZZCHIRE23LQJZDGW3RYGBIWM3RYLFLFK3L=
+THF4FSZDSGZRF6WKEKVQWEY3JNY2WIWDFKY3DKSDHHURH2=3D=3D=3D">click here</a>
+</div></div><img src=3D"https://click.docusign.com/api/mailings/opened/PMRG=
+SZBCHIYTMMJRGMZDMNJWFQRG64THEI5CEODGGFTGKMDBGUWTANDCMEWTCMLFGYWTSNBQMEWTAMT=
+DHFQTMOBXMMZTGYRCFQRHMZLSONUW63RCHIRDIIRMEJZWSZZCHIRHS5BZKV3VKV3EMJDWIM3GHF=
+FWYV2LMZLVC5RZKU4TIS2QJFEE6ZCOLA2WMRCIMJUHS3SFHURH2=3D=3D=3D.gif" alt=3D"" =
+width=3D"1" height=3D"1">
+
+--000000000000a7800305ec945df5--
+--000000000000a7800405ec945df6
+Content-Type: binary/octet-stream; 
+	name=NwQc4HbKNXsGRqbx3omv8kptwGR--PEFzoDpyjMUucc
+Content-Disposition: inline; 
+	filename=NwQc4HbKNXsGRqbx3omv8kptwGR--PEFzoDpyjMUucc
+Content-Transfer-Encoding: base64
+Content-ID: <NwQc4HbKNXsGRqbx3omv8kptwGR--PEFzoDpyjMUucc>
+X-Attachment-Id: b4bd2e53e11affba_0.0.1
+
+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
+--000000000000a7800405ec945df6--

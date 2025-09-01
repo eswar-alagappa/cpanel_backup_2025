@@ -1,0 +1,76 @@
+<?php include 'header.php'; ?>
+
+<div class="container">
+
+<div class="row">
+
+<div class="banner">
+
+<img src="img/banner.jpg" alt="ImageMissing"/>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="container">
+
+<div class="main-page">
+
+<div class="row">
+
+
+
+<div class="col-lg-3 col-xs-12 area">
+
+<?php include 'major_links.php'; ?>
+
+</div>
+
+<?php include "social.php";?>
+
+<div class="col-lg-8 col-xs-12 profile">
+
+<h3>FEES DETAILS</h3>
+
+<h5>UG / Diploma / Certificate</h3>
+
+<p>Theory - Rs : 250/-</p>
+<p>Practical - Rs : 250/-</p>
+
+<h5>PG(Post Graduated) Fees</h5>
+
+<p>Theory - Rs : 300/-</p>
+<p>Practical - Rs : 500/-</p>
+<p>Project - Rs : 500/-</p>
+
+<h5>PG(Post Graduated) Diploma</h5>
+<p>Theory - Rs : 300/-</p>
+<p>Practical - Rs : 300/-</p>
+<p>Project - Rs : 500/-</p>
+
+<h5>Exam Registration Fee &amp; Certificate fee (for semester-wise Mark statement, Cumulative Mark Statement, Provisional Certificate and Degree certificate). This should be paid only once during first semester / first year of appearance</h5>
+<p>UG / Diploma / Certificate programs - Rs : 1000/-</p>
+<p>PG / PG Diploma programs - Rs : 1250/-</p>
+
+<h5>Speed Post postage Fee (for each appearance)</h5>
+<p>Rs : 100/-</p>
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<?php include "footer.php"; ?>
+

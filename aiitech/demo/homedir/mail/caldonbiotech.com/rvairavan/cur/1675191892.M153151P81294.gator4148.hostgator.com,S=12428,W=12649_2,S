@@ -1,0 +1,221 @@
+Return-Path: <rsemones@carolinachemistries.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id 0A+fCFRm2WOOPQEA7/vpDg
+	(envelope-from <rsemones@carolinachemistries.com>)
+	for <rvairavan@caldonbiotech.com>; Tue, 31 Jan 2023 13:04:52 -0600
+Return-path: <rsemones@carolinachemistries.com>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Tue, 31 Jan 2023 13:04:52 -0600
+Received: from mail-mw2nam12on2042.outbound.protection.outlook.com ([40.107.244.42]:11681 helo=NAM12-MW2-obe.outbound.protection.outlook.com)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <rsemones@carolinachemistries.com>)
+	id 1pMvw3-000lBt-Ar
+	for rvairavan@caldonbiotech.com;
+	Tue, 31 Jan 2023 13:04:52 -0600
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=AU8y8/icyD7H1GOJKNDFBILdHfuhoPkIfAFHzYSOFRHWWzeuo7kI5Tjni7Te9/22/DLiNBPI4zomSVGg0YCMDWM90LdRRwGmpuqQDK4V+dV1CRyBz94ypG2Q8GH6rnOC/lvzdve0o/g0eOCDBHo51tkkwiLNMGpNqhplhi5z5+BZtW7wHB//hX3SkBwEufgrAjsPRemjriMWAI3Js7QJXNWYnRjnBlWDOyiN3Daq2eKpCTN3PyTLcqqK0AujeY0f9eXOd9r7AbuNApPIbMsbt0ah+mZc4qCtN0+1NqwbE7gKpDxSuHV8ijXNob250Ktd/OVN1B6Rrt9pThwki09JFg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=hQmgJFLTUvxrRZBWRr79lb6bxLcyND34eoorkQI7J60=;
+ b=CPYE3iFB9qzZVcA82k3MC8VMURU+Uk78Z0dkJ2VtACZ0oM9oOYCp7TVkRHbbl6/xzk6WAJmiKfveraILijKY+nmykr4HO2uHlvq7s321ihsV2h88mMJJSQc1gHeSoTCJc/P6ZW19L3fP6cMKZLbX4D4tMTrx+LGhEHKGsb4WzQ7MIP77XHKQqYJQM5KbtkQagmlJkQY/aGtGi4jmyYLCzHh5i4uejIjob7aPo7JtlriyDnLDYn/SFeGLIbFI6yWoH6ZquCZr30+OiZ2xS2YbhZdDWwbcqqZdf6JQ9eQdRjuFQvJWC0YsZBR1xZ711uHfr/94XFclahNq1vk29VTvdA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=carolinachemistries.com; dmarc=pass action=none
+ header.from=carolinachemistries.com; dkim=pass
+ header.d=carolinachemistries.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=carolinachemistries.onmicrosoft.com;
+ s=selector2-carolinachemistries-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=hQmgJFLTUvxrRZBWRr79lb6bxLcyND34eoorkQI7J60=;
+ b=Sce16o6PxmvF5rlHQ9M8oIwueZd9Hrzg6mCwlNVLaaroiu/H9BQRfly2WVI1hkAGiTk97JlqZVtQY9GwIFgzrUL4/1TKbKNFIo2K9Ec/aKGai0Wf3lH1frcehdrEs0NFsT0GY2pa38HJ3Ea0MQCyNfBIvz/EVstrcpk8pTASMbc=
+Received: from MWHPR2201MB1101.namprd22.prod.outlook.com
+ (2603:10b6:301:2f::23) by SJ0PR22MB3204.namprd22.prod.outlook.com
+ (2603:10b6:a03:403::18) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6043.36; Tue, 31 Jan
+ 2023 19:04:38 +0000
+Received: from MWHPR2201MB1101.namprd22.prod.outlook.com
+ ([fe80::8436:c662:ca6e:3e23]) by MWHPR2201MB1101.namprd22.prod.outlook.com
+ ([fe80::8436:c662:ca6e:3e23%7]) with mapi id 15.20.6043.036; Tue, 31 Jan 2023
+ 19:04:38 +0000
+From: Renee Semones <rsemones@carolinachemistries.com>
+To: "rvairavan@caldonbiotech.com" <rvairavan@caldonbiotech.com>
+Subject: 1099 Preparation
+Thread-Topic: 1099 Preparation
+Thread-Index: Adk1ppLRlPjXLnXATleD9BQi4xSWhg==
+Date: Tue, 31 Jan 2023 19:04:37 +0000
+Message-ID:
+ <MWHPR2201MB11015765250384A2D7F0AF75DED09@MWHPR2201MB1101.namprd22.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=carolinachemistries.com;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: MWHPR2201MB1101:EE_|SJ0PR22MB3204:EE_
+x-ms-office365-filtering-correlation-id: cb54a364-e0d6-4089-ce62-08db03bdffcc
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ 9SlWtMSXFpgrDRASafhRIa392vYK+6OqN0yzJoaUQTQJMtF3YAazJhM/rbQ8vnHu/VqBN17IXMRQEcP0cr+pOmf8R7cgMgXYlNfheKH6+3oKRSZsYnlwsBAWGbUi/q0MBoaylqv49GClk1IJ1nJ4SkKb7kAIpmVn/lgHiDQVqtUeraX22HL11C4nzbC+pjCRemQE/K0qv2K/xjoIEtmPsAp88UuTb0lZUvOEnGulx82xFGzFSsradiCDBzP29yr7S7bkroUgX4QZ2yLrsQ2VKZNYZIbhXtB/e866RsckWbLAhEKTxKWn3Tn2SCdKvmYyKtruwcQ6Phl5/0AY1g9PBGBQF+h65JazwxvdA5wMcMG7FYy8tkybBQNBIxLrRAvc59pEwMogx81nY4puGf3/63vMAfDILCY7hkERQhhfyLB/DHZ4fmYdAICr71d1Ihp9Av5eFfhsHIR3otr83oiUQN+D0MODAxk/GLY+SJjZHiwdxHIeYnWrXzg3J3WoC9pP0FVp9zu++5MATDIyhUHxj3YaPs/iiO3FPx7jiwvcIM2NIVxiX/8tOHfMSpCYKW3XrfacHZaxLUuyAre4Q020dTSaN35Bi17SV8B1JgeUu+JJYDySFiVulYOpMS+TuWMCg9MoEc5VX1mF9qfgF1jMnGBH7ecI+kkhgLRNFWYmuJ5wXB5JzejyO6k9MUWxt6+/7iSPqehdG0XQQAswreFxFA==
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:MWHPR2201MB1101.namprd22.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230025)(366004)(376002)(396003)(346002)(39840400004)(136003)(451199018)(38100700002)(33656002)(86362001)(122000001)(40140700001)(38070700005)(66946007)(316002)(8936002)(41300700001)(5660300002)(7116003)(76116006)(66556008)(66476007)(8676002)(64756008)(66446008)(6916009)(2906002)(55016003)(4744005)(83380400001)(7696005)(478600001)(26005)(52536014)(9686003)(186003)(6506007)(71200400001);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?us-ascii?Q?4BiH6swIa51HYyKgLmWG+jvZjjtmMvUCv+Z1adsbFxdeSIh7/4gl4M4bEYb+?=
+ =?us-ascii?Q?fkFAmaB5iBSgr+ve81eNwGuMTrco3SzXINGFh5dn44xCP3oEcnrprl4ztpw+?=
+ =?us-ascii?Q?uTdAVnE+097C6/ByYqhVNl30t6hb77ghV3D/+CJVWNwWmIuB6fJ4LF+Bv6so?=
+ =?us-ascii?Q?vF/SovUZRMjdm25nC0P40P+bvdaGeXrSgigDEVoC5gYNPqqtCk/oTS6qYiZ9?=
+ =?us-ascii?Q?SNR+jL7/8kgYxbE1dPQP00TVblmlpryrMlehv25eStt1ZoxTtpw53BNtS0Cz?=
+ =?us-ascii?Q?se0ooMucQ78AmowRbtJja+5t5/791+PIFMIJcmYtAzBfV6AxG942p8mfje5s?=
+ =?us-ascii?Q?16oPDfTUQMRcvYZfrQVMNEDZMis4ciT7w813Ak3GuIgP3rpWpsWDIA3ZBxn5?=
+ =?us-ascii?Q?HmGV5/3alSv2IuJmbku3Nlk2ZQfZSiNacAt84rhHXrgpVy4i1yiw+9jAeaKg?=
+ =?us-ascii?Q?QM/8YBaZWbOrUgEyUSMr+vmR8lCdkDCSLClRglGiax5Um8cCC23dASnJQ5ga?=
+ =?us-ascii?Q?X3DRy6ozkjoM1hg3JiWKaIs8Qrcmh96chVs2Q3H6t1VOispZA8glX8mO89Ge?=
+ =?us-ascii?Q?/QZt6zcjwPjXby4LF6DTvmw0nlJALKqMZlZXYcyCCVZn9OA6H4xv93eEPLpj?=
+ =?us-ascii?Q?blyJeYKBk5WTmr70XNBEOLSy0NKGvo9D39ARifW2wR8lPPBpdf3cGlbQnNJZ?=
+ =?us-ascii?Q?WNjFynX4U7BdK/9+ix6YRmHP+pJkyCGVsKowbqYx69YGrXQk1PRFDHQT6G2j?=
+ =?us-ascii?Q?/9pHmiuGQgHUVZxyIP2Bs2sFSuub/+8m3WYn6ai49N/rs1hmi0FYIsQBIPHV?=
+ =?us-ascii?Q?CmTn4sMMhvOIBIwLMnwFulZTy4LCRz/TYVyK0f/nWdXpYRINol3Oj3JIuUa0?=
+ =?us-ascii?Q?jxpOAbrwRaxNnzFWGUrpcsydkKC9aD5izpV17fTn2Yetzd8g0isO6TcCi52U?=
+ =?us-ascii?Q?JfcgvhFqDzbAb2G24b4bSdFGvi97AjuZLhwuJC+1BAOXP5CLadPeyhHZbv1c?=
+ =?us-ascii?Q?VYowctr2qvKYNPrHoQIHHQdwdJotnT//wozWvMhKOgNoHWBIsbxg/8UB1TeA?=
+ =?us-ascii?Q?ffakFzFfKH2jMis/gVDsnbqL+Z4ujrabgPGoBwXSqV0pSB9C7vHB73R1y0A9?=
+ =?us-ascii?Q?0adqF7bxpaqno/Bkpe0lA2weNaTDpWMaao5se25AY0CIj3l0hQ5gfDOVhGbS?=
+ =?us-ascii?Q?G0iVfGy75cpbf4wll8N/PeXlG4qAD5UFq1FUjhhwBEvEEYmrSwtCbEHjWbDz?=
+ =?us-ascii?Q?0zOUheItZE4idva2D92LyAZd93RMYZkaGgArymrQtn8/seecYOj9xUy9rKDl?=
+ =?us-ascii?Q?Wjj9ewUmIlL2wx9gLZXOWuQEDTkKprpBrCr35dKl3+pN2IvZkW3F5GmFtj67?=
+ =?us-ascii?Q?szBjxcH3gMr13rYDRxNn2msk3gn0Y5DhFnGc0DRGEgqsea49qtUMaG8oxTek?=
+ =?us-ascii?Q?KOV4djZ61TjpFXesuVgE8S4NRZ7llNaRl+0GrwYRqCUrppDXARfnH2hQvjFu?=
+ =?us-ascii?Q?X1KyMgjrqQu9IeMjTJXp1ko35JHzdjCo00XnNbE3SkkUAMqbRyz6YtCsmdXb?=
+ =?us-ascii?Q?gAWBKnVO+uavFZhZEim2IVOMv2vJWOkwK2SUkAz2L1exDncVC7pL3sp3/Ow7?=
+ =?us-ascii?Q?iQ=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_MWHPR2201MB11015765250384A2D7F0AF75DED09MWHPR2201MB1101_"
+MIME-Version: 1.0
+X-OriginatorOrg: carolinachemistries.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: MWHPR2201MB1101.namprd22.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: cb54a364-e0d6-4089-ce62-08db03bdffcc
+X-MS-Exchange-CrossTenant-originalarrivaltime: 31 Jan 2023 19:04:37.8059
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: f27d3a9c-1dc4-4139-a0c3-b8b63548fe8c
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: sB19l7NCmbpScN5AgyNGux1JhgRTPPaRlFrQ2DSdcLM2RyMtc+hTaGlAf97+Oi6y5teyX47R6kmVkFBgJ/Fw5pvmyxzL5E7o9eqIrchOpNtDziz/IenSmOew69N4wd9R
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR22MB3204
+X-Spam-Status: No, score=-0.5
+X-Spam-Score: -4
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--_000_MWHPR2201MB11015765250384A2D7F0AF75DED09MWHPR2201MB1101_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Good afternoon Ram,
+
+I am the Assistant Controller here at Carolina Liquid Chemistries.  We are =
+preparing our 1099's to be mailed out today and needed your Social Security=
+ Number.  If you aren't comfortable sending via email, please give me a cal=
+l and I'll take it down over the phone.  336-722-8910 ext 302.  We need to =
+get this in the mail today so please reach out at your earliest convenience=
+.
+
+Warm Regards,
+
+Renee Semones
+Assistant Controller
+Carolina Liquid Chemistries
+Greensboro, NC 27409
+rsemones@carolinachemistries.com<mailto:rsemones@carolinachemistries.com>
+877-722-8910 ext 302
+
+
+--_000_MWHPR2201MB11015765250384A2D7F0AF75DED09MWHPR2201MB1101_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Good afternoon Ram,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">I am the Assistant Controller here at Carolina Liqui=
+d Chemistries.&nbsp; We are preparing our 1099&#8217;s to be mailed out tod=
+ay and needed your Social Security Number.&nbsp; If you aren&#8217;t comfor=
+table sending via email, please give me a call and I&#8217;ll
+ take it down over the phone.&nbsp; 336-722-8910 ext 302.&nbsp; We need to =
+get this in the mail today so please reach out at your earliest convenience=
+.&nbsp;
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#333333">Warm Regards,<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"color:#333333"><o:p>&nbsp;</o:p></=
+span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"color:#333333">Renee Semones<o:p><=
+/o:p></span></b></p>
+<p class=3D"MsoNormal"><span style=3D"color:#333333">Assistant Controller<o=
+:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F3864">Carolina Liquid Chemis=
+tries<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#333333">Greensboro, NC 27409<o=
+:p></o:p></span></p>
+<p class=3D"MsoNormal"><u><span style=3D"color:#0563C1"><a href=3D"mailto:r=
+semones@carolinachemistries.com"><span style=3D"color:#0563C1">rsemones@car=
+olinachemistries.com</span></a></span></u><span style=3D"color:#333333"><o:=
+p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;color:black">877-722=
+-8910 ext 302<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_MWHPR2201MB11015765250384A2D7F0AF75DED09MWHPR2201MB1101_--

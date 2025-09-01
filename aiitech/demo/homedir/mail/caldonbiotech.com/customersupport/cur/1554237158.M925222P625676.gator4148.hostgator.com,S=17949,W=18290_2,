@@ -1,0 +1,341 @@
+Return-Path: <EBUY@partners.org>
+Delivered-To: CUSTOMERSUPPORT@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP id CHtHNebGo1wMjAkA7/vpDg
+	for <CUSTOMERSUPPORT@caldonbiotech.com>; Tue, 02 Apr 2019 15:32:38 -0500
+Return-path: <EBUY@partners.org>
+Envelope-to: CUSTOMERSUPPORT@caldonbiotech.com
+Delivery-date: Tue, 02 Apr 2019 15:32:38 -0500
+Received: from phsmx14-outx.partners.org ([155.52.251.92]:15137)
+	by gator4148.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.91)
+	(envelope-from <EBUY@partners.org>)
+	id 1hBQ5G-002f5G-8A
+	for CUSTOMERSUPPORT@caldonbiotech.com; Tue, 02 Apr 2019 15:32:38 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple;
+  d=partners.org; s=phs; t=1554237158; x=1585773158;
+  h=from:subject:date:message-id:references:in-reply-to:
+   mime-version:to;
+  bh=/0SVAZE+UkE5oQvdw4Z6y84WHnd46YI2ILw5Ink1E6k=;
+  b=GADZ4N+E4ZMIZ8PEDmEAH3baNSOPT21EtDQDh4CzkcWJ+/UfgYwcPSE1
+   SI2H7k+XtkNMeNVCf4Vuh7puQbPLmqBZ8FlnqvPo3qTN9zuYpP86ttSOr
+   JP/zz7eqBIU1tJUqCHe3SyuOCS+u6M1xUr2JKMhVMwO7xLbZDYLRx5VTW
+   tiQjkwtMvk2HgBIakH6zJCoPVRSJtg9xpgg+LAQSK74FXLnIlBf2dQU+7
+   NtrwKpogBrPzKjnLLxw59ZVzKxaZYGYQEJYcGix3QGIK7maj+6ne6PL04
+   pknNZmA7IrfIcy76m9okraeiDnPHSojRpR43q2pQ0PDibhO449hH6z6IP
+   Q==;
+X-Cloudmark-SP-Filtered: true
+X-Cloudmark-SP-Result: =?us-ascii?q?v=3D2=2E1_cv=3DdaAgpSje_c=3D1_sm=3D2_?=
+ =?us-ascii?q?tr=3D0_a=3DjpOVt7BSZ2e4Z31A5e1TngXxSK0=3D=3A19?=
+ =?us-ascii?q?_a=3DxixqXUi=5FDUQA=3A10_a=3D9CDaqva-C30A=3A10_a=3DDnHKpE1QT?=
+ =?us-ascii?q?aUA=3A10_a=3DxqWC=5FBr6kY4A=3A10?=
+ =?us-ascii?q?_a=3DoexKYjalfGEA=3A10_a=3Di9lmW8kt0xoA=3A10_a=3DSC=5F2TSGn5?=
+ =?us-ascii?q?ol70ihyTTkA=3A9?=
+ =?us-ascii?q?_a=3DCjuIK1q=5F8ugA=3A10_a=3Dyyj3iL0VOakA=3A10_a=3DyMhMjlubA?=
+ =?us-ascii?q?AAA=3A8_a=3DSSmOFEACAAAA=3A8?=
+ =?us-ascii?q?_a=3DgKO2Hq4RSVkA=3A10_a=3DUiCQ7L4-1S4A=3A10_a=3DhTZeC7Yk6K0?=
+ =?us-ascii?q?A=3A10_a=3Dfrz4AuCg-hUA=3A10?=
+ =?us-ascii?q?_a=3DRfqRn7LaKEYargy9-6MA=3A9_a=3D=5FFjXuADkoBzPIMeg=3A18_a?=
+ =?us-ascii?q?=3DHXjIzolwW10A=3A10?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A2EaAABvxaNc/zcNFaxiAxsBAQIDAQE?=
+ =?us-ascii?q?IAwEBgVMFAQEMAYEOUwUnA2hQJAQ8lwaVHwGCSIMugXsCCQEDASsBhEAChT0?=
+ =?us-ascii?q?iNQgNAQEDAQEBCAEDAgEBAmknAYI6DBqCYwkCAQMFAR8IAUMYAgEFIAEBASY?=
+ =?us-ascii?q?CBRABBwcMIAUBAQoBCwEGAgZNgkiBda9DE4oeDwkBgSUBjUiBV4dQFQomglc?=
+ =?us-ascii?q?dgiYDgSmPfodYhEWCLoViCR6BZoFVgyUBjQOCA4YOjCeKAwIxlGwCBAIEBQI?=
+ =?us-ascii?q?OB4FPAjWBVk0wgWEKgUWCFReBAAECjRtCgVAIjg0BgR4BAQ?=
+X-IPAS-Result: =?us-ascii?q?A2EaAABvxaNc/zcNFaxiAxsBAQIDAQEIAwEBgVMFAQEMA?=
+ =?us-ascii?q?YEOUwUnA2hQJAQ8lwaVHwGCSIMugXsCCQEDASsBhEAChT0iNQgNAQEDAQEBC?=
+ =?us-ascii?q?AEDAgEBAmknAYI6DBqCYwkCAQMFAR8IAUMYAgEFIAEBASYCBRABBwcMIAUBA?=
+ =?us-ascii?q?QoBCwEGAgZNgkiBda9DE4oeDwkBgSUBjUiBV4dQFQomglcdgiYDgSmPfodYh?=
+ =?us-ascii?q?EWCLoViCR6BZoFVgyUBjQOCA4YOjCeKAwIxlGwCBAIEBQIOB4FPAjWBVk0wg?=
+ =?us-ascii?q?WEKgUWCFReBAAECjRtCgVAIjg0BgR4BAQ?=
+Received: from phsx10ht1.partners.org ([172.21.13.55])
+  by phsmx14-out.partners.org with ESMTP/TLS/AES128-SHA256; 02 Apr 2019 16:32:20 -0400
+Received: from PHSX10CAS15.partners.org (172.21.13.118) by
+ PHSX10HT1.partners.org (172.21.13.55) with Microsoft SMTP Server (TLS) id
+ 14.3.408.0; Tue, 2 Apr 2019 16:32:20 -0400
+Received: from NAM01-BY2-obe.outbound.protection.outlook.com (10.251.1.62) by
+ mail.partners.org (172.21.13.118) with Microsoft SMTP Server (TLS) id
+ 14.3.352.0; Tue, 2 Apr 2019 16:32:18 -0400
+Received: from DM5PR04MB0954.namprd04.prod.outlook.com (10.174.241.158) by
+ DM5PR04MB0348.namprd04.prod.outlook.com (10.168.235.21) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.1750.15; Tue, 2 Apr 2019 20:31:55 +0000
+Received: from DM5PR04MB0954.namprd04.prod.outlook.com
+ ([fe80::c56f:4e10:2c4a:d2a4]) by DM5PR04MB0954.namprd04.prod.outlook.com
+ ([fe80::c56f:4e10:2c4a:d2a4%2]) with mapi id 15.20.1750.017; Tue, 2 Apr 2019
+ 20:31:55 +0000
+From: PHS eBuy Support <EBUY@PARTNERS.ORG>
+Subject: Scam alert!
+Thread-Topic: Scam alert!
+Thread-Index: AdTpkXrMfXeOvNgiQhCFCxjm3BOoHQAAMyvw
+Date: Tue, 2 Apr 2019 20:31:53 +0000
+Message-ID: <DM5PR04MB0954ECD758777A407CCB4E86DD560@DM5PR04MB0954.namprd04.prod.outlook.com>
+References: <DM5PR04MB0954A1B2449C274FF3BA671FDD560@DM5PR04MB0954.namprd04.prod.outlook.com>
+In-Reply-To: <DM5PR04MB0954A1B2449C274FF3BA671FDD560@DM5PR04MB0954.namprd04.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+authentication-results: spf=none (sender IP is )
+ smtp.mailfrom=EBUY@PARTNERS.ORG; 
+x-ms-exchange-messagesentrepresentingtype: 1
+x-originating-ip: [72.74.130.253]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 9f43ab80-5e3d-4138-803c-08d6b7aa3f58
+x-microsoft-antispam: BCL:0;PCL:0;RULEID:(2390118)(7020095)(4652040)(8989299)(5600139)(711020)(4605104)(4534185)(4627221)(201703031133081)(201702281549075)(8990200)(2017052603328)(49563074)(7193020);SRVR:DM5PR04MB0348;
+x-ms-traffictypediagnostic: DM5PR04MB0348:
+x-ms-exchange-purlcount: 2
+x-microsoft-antispam-prvs: <DM5PR04MB03486B83623B3A23FCFFE401B8560@DM5PR04MB0348.namprd04.prod.outlook.com>
+x-forefront-prvs: 0995196AA2
+x-forefront-antispam-report: SFV:NSPM;SFS:(10009020)(366004)(376002)(136003)(39860400002)(396003)(346002)(199004)(189003)(6506007)(93156006)(55016002)(76576003)(790700001)(65686004)(106356001)(33656002)(76176011)(11346002)(25786009)(8676002)(53936002)(14454004)(99286004)(6306002)(3846002)(2906002)(81156014)(81166006)(7116003)(6116002)(476003)(54896002)(79362002)(486006)(102836004)(4744005)(9686003)(1671002)(5660300002)(7416002)(256004)(186003)(316002)(881003)(68736007)(54556002)(52536014)(8936002)(86362001)(26005)(478600001)(446003)(7336002)(105586002)(99936001)(7696005)(71200400001)(109986005)(97736004)(2940100002)(786003)(72206003)(6436002)(71190400001)(7276002)(3480700005)(7406005)(7366002)(733005)(74316002)(66066001)(7736002);DIR:OUT;SFP:1101;SCL:1;SRVR:DM5PR04MB0348;H:DM5PR04MB0954.namprd04.prod.outlook.com;FPR:;SPF:None;LANG:en;PTR:InfoNoRecords;A:1;MX:1;
+received-spf: None (protection.outlook.com: PARTNERS.ORG does not designate
+ permitted sender hosts)
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam-message-info: GO2WdUFTUtkhM+84Gt+yZP9lMuIH3J2XFTiNUg3fvA/cox5kNadD9zRNIk9JknCPR2Vn7hb+u8NzsHml+JOiB/y4nG2ED/0UY3qmfDanLdhTuE3IN9Vy3T1yRs55731nHPLz/goxJSaqpxOY4kYzMwzJ+pFT6E/YdmdNPbLMbvFV9bq0WNmpu6Drsbs9zmBBlcEzty4NlJ+rD1Avha5ElX2lGIhEAEQAjVfU30iba63SAqzwyk5WvX2ACgaOG7yeIIz/CPQsjdOIYssp26XAX4Okxnr4uueWO6GzcIma9r1Yg3wKiGNJmElkneKj4w4ALppZ0NXSKo/7tIczOEPfvQSFPchMf/NzE/M+IH0E4eichrdGOyYTdDut86eGCKHFx1ac2MZIiJCKBq8kvgjTpM8bK417JIVPdbCt/jf/znU=
+Content-Type: multipart/related;
+	boundary="_004_DM5PR04MB0954ECD758777A407CCB4E86DD560DM5PR04MB0954namp_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-MS-Exchange-CrossTenant-Network-Message-Id: 9f43ab80-5e3d-4138-803c-08d6b7aa3f58
+X-MS-Exchange-CrossTenant-originalarrivaltime: 02 Apr 2019 20:31:53.9721
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 720edb1f-5c4e-4043-8141-214a63a7ead5
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM5PR04MB0348
+To: Undisclosed recipients:;
+X-OriginatorOrg: partners.org
+X-Spam-Status: No, score=2.0
+X-Spam-Score: 20
+X-Spam-Bar: ++
+X-Spam-Flag: NO
+
+--_004_DM5PR04MB0954ECD758777A407CCB4E86DD560DM5PR04MB0954namp_
+Content-Type: multipart/alternative;
+	boundary="_000_DM5PR04MB0954ECD758777A407CCB4E86DD560DM5PR04MB0954namp_"
+
+--_000_DM5PR04MB0954ECD758777A407CCB4E86DD560DM5PR04MB0954namp_
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+Attention Massachusetts General Supplier:
+
+We are aware of recent attempts by third parties, purporting to be represen=
+tatives of Massachusetts General Hospital, to obtain sensitive personal or =
+financial information from our Suppliers.
+
+Please contact PHS Supply Chain Client Services at 617-726-2142 immediately=
+ if you have any concerns regarding the authenticity of any communications =
+impersonating Partners HealthCare or one of our members.
+
+Thank you,
+Partners HealthCare Supply Chain Management
+
+[cid:image001.png@01D4E96D.3686AD90]
+
+
+
+
+
+
+The information in this e-mail is intended only for the person to whom it is
+addressed. If you believe this e-mail was sent to you in error and the e-ma=
+il
+contains patient information, please contact the Partners Compliance HelpLi=
+ne at
+http://www.partners.org/complianceline . If the e-mail was sent to you in e=
+rror
+but does not contain patient information, please contact the sender and pro=
+perly
+dispose of the e-mail.
+
+--_000_DM5PR04MB0954ECD758777A407CCB4E86DD560DM5PR04MB0954namp_
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle18
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><b>Attention Massachusetts General Supplier:<o:p></o=
+:p></b></p>
+<p class=3D"MsoNormal"><b><o:p>&nbsp;</o:p></b></p>
+<p class=3D"MsoNormal"><b>We are aware of recent attempts by third parties,=
+ purporting to be representatives of Massachusetts General Hospital, to obt=
+ain sensitive personal or financial information from our Suppliers.
+<o:p></o:p></b></p>
+<p class=3D"MsoNormal"><b><o:p>&nbsp;</o:p></b></p>
+<p class=3D"MsoNormal"><b>Please contact PHS Supply Chain Client Services a=
+t 617-726-2142 immediately if you have any concerns regarding the authentic=
+ity of any communications impersonating Partners HealthCare or one of our m=
+embers.<o:p></o:p></b></p>
+<p class=3D"MsoNormal"><b><o:p>&nbsp;</o:p></b></p>
+<p class=3D"MsoNormal"><b>Thank you, <o:p></o:p></b></p>
+<p class=3D"MsoNormal"><b>Partners HealthCare Supply Chain Management<o:p><=
+/o:p></b></p>
+<p class=3D"MsoNormal"><i><span style=3D"color:black"><o:p>&nbsp;</o:p></sp=
+an></i></p>
+<p class=3D"MsoNormal"><i><img width=3D"361" height=3D"55" style=3D"width:3=
+.7604in;height:.5729in" id=3D"Picture_x0020_1" src=3D"cid:image001.png@01D4=
+E96D.3686AD90"><o:p></o:p></i></p>
+<p class=3D"MsoNormal"><i><o:p>&nbsp;</o:p></i></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+<p></p>
+
+<p>The information in this e-mail is intended only for the person to whom i=
+t is<br>
+addressed. If you believe this e-mail was sent to you in error and the e-ma=
+il<br>
+contains patient information, please contact the Partners Compliance HelpLi=
+ne at<br>
+http://www.partners.org/complianceline . If the e-mail was sent to you in e=
+rror<br>
+but does not contain patient information, please contact the sender and pro=
+perly<br>
+dispose of the e-mail.</p></body>
+</html>
+
+--_000_DM5PR04MB0954ECD758777A407CCB4E86DD560DM5PR04MB0954namp_--
+
+--_004_DM5PR04MB0954ECD758777A407CCB4E86DD560DM5PR04MB0954namp_
+Content-Type: image/png; name="image001.png"
+Content-Description: image001.png
+Content-Disposition: inline; filename="image001.png"; size=3434;
+	creation-date="Tue, 02 Apr 2019 20:31:52 GMT";
+	modification-date="Tue, 02 Apr 2019 20:31:52 GMT"
+Content-ID: <image001.png@01D4E96D.3686AD90>
+Content-Transfer-Encoding: base64
+
+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
+7mMAAAAASUVORK5CYII=
+
+--_004_DM5PR04MB0954ECD758777A407CCB4E86DD560DM5PR04MB0954namp_--
+

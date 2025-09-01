@@ -1,0 +1,390 @@
+Return-Path: <LOrlow@CarolinaChemistries.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id ECrGE8P5xmNgowIA7/vpDg
+	(envelope-from <LOrlow@CarolinaChemistries.com>)
+	for <rvairavan@caldonbiotech.com>; Tue, 17 Jan 2023 13:40:51 -0600
+Return-path: <LOrlow@CarolinaChemistries.com>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Tue, 17 Jan 2023 13:40:51 -0600
+Received: from mail-bn8nam12on2041.outbound.protection.outlook.com ([40.107.237.41]:14672 helo=NAM12-BN8-obe.outbound.protection.outlook.com)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <LOrlow@CarolinaChemistries.com>)
+	id 1pHrpC-001gDF-Q4
+	for rvairavan@caldonbiotech.com;
+	Tue, 17 Jan 2023 13:40:51 -0600
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=FfkXPyHk5jgIqX8I3j6YTYoUm9IqMKDH5+pWnUEp/vBcgmQNAG8gocjLn633jtzLTLuG8i5M7zFAH+rAk5XgHxQCXwqQ7O2aFI85h5xGHLCsZySmNu9xXXH1vK0wJX3RLI5xBIFJF346Cxv0ho9T6uGbXfti0OxJa9UD9g/Z7/6IMEND7E2lmjqAjnziJEpH4VzuNzq1H8AOANu2/KQWCTb5I6IHITUuXkRO5T9yDF12PUDReUSjvY+rHbHhbaCMZujrpkO+Lc262AfKkAAke1zampxCeQTVR1IacchW5nBR/kK0XAnSngU0ecVHI8WSBDszUylSlHZT9fwZVCT5SA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=rcXUGW5e2puKb4KNovOJUZrPWpiL2XQkuV0F1wLgavs=;
+ b=UgItNRmN85r3BzLcSdySEWn33n/by/Q/8RSfy48V1yaWq1REtq+MOXxJVZWNxut/YAZYU2ChH0sy11C5LacQgUDa07+hfwq+irNpQsfDOwSgwoJ5HsrKJOl7BOvtu0ZcYo/C+5D9ulreMT4u8uGiBqDKbR5mQBd69Y4NJioC1fjRDTFbvMK+YKLCPB0/eecM8NbcjfWFLuCcb68TjTPSHAGRt8VpySFmL5IsMhEYnjm7bZkaaxvvw9km3EizQ28bBC+PNFbgh+GHrrcK9A5p1MVvG9eb/3BIe1odnwQYWwLBpfwOLPNZERg/7RduseVlig8dJ0XWH5tIhxA1wuEp3A==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=carolinachemistries.com; dmarc=pass action=none
+ header.from=carolinachemistries.com; dkim=pass
+ header.d=carolinachemistries.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=carolinachemistries.onmicrosoft.com;
+ s=selector2-carolinachemistries-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=rcXUGW5e2puKb4KNovOJUZrPWpiL2XQkuV0F1wLgavs=;
+ b=U6gMrk6QibFWuOAKKC2MUvDlz69tHVwUBM6saFouDC+XcWuS4A96Lq7IB+3J6Nf3+0vENWQgfUw4JAgWZ276lrC8Ql/oksCxpUFlafZC4wSf/h92zXQm6ZN/qorf3HTkUlahaOGVyiTlPW+12ufXxe0T+TDyh5+UFx6hJd/XzSo=
+Received: from SJ0PR22MB2672.namprd22.prod.outlook.com (2603:10b6:a03:318::17)
+ by PH0PR22MB3724.namprd22.prod.outlook.com (2603:10b6:510:16f::15) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5986.23; Tue, 17 Jan
+ 2023 19:40:36 +0000
+Received: from SJ0PR22MB2672.namprd22.prod.outlook.com
+ ([fe80::80c1:2933:d5f4:42be]) by SJ0PR22MB2672.namprd22.prod.outlook.com
+ ([fe80::80c1:2933:d5f4:42be%8]) with mapi id 15.20.5986.023; Tue, 17 Jan 2023
+ 19:40:36 +0000
+From: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com>
+To: "Kristina Hill (s)" <khill@cap.org>, Christina Gonzales
+	<CGonzales@CarolinaChemistries.com>, Ram Vairavan
+	<rvairavan@caldonbiotech.com>
+CC: "AnnMarie Di Prima (s)" <ADIPRIM@cap.org>
+Subject: RE: 2023 ADL-A PO 
+Thread-Topic: 2023 ADL-A PO 
+Thread-Index: AdkqpcrbNycMwjz3RaGDpp5rA1GtwAABTvNQ
+Date: Tue, 17 Jan 2023 19:40:36 +0000
+Message-ID:
+ <SJ0PR22MB267298B7B3945A05F66FDA2BC5C69@SJ0PR22MB2672.namprd22.prod.outlook.com>
+References:
+ <BYAPR11MB3704DF4CCAFDAA32B6A4A42DB6C69@BYAPR11MB3704.namprd11.prod.outlook.com>
+In-Reply-To:
+ <BYAPR11MB3704DF4CCAFDAA32B6A4A42DB6C69@BYAPR11MB3704.namprd11.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=CarolinaChemistries.com;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SJ0PR22MB2672:EE_|PH0PR22MB3724:EE_
+x-ms-office365-filtering-correlation-id: 5abeabbf-f7d8-4453-b8e6-08daf8c2b4b2
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ 3sVfz2K4mezWPi1FvMKdJwk4f8sb2gbS097tX3Guqxq16Envh9TG1RsoXfoaqtFlJ5KAtDcxHVejrYqCaIwq+197IKmo7N+3qqujFHBK5A9+GezgHutgHjDR3MrJmU378aA0Cow8K/kjIQzww5TuOazJyX7jyzP0w9oE4HGypX2soqijhSp5BX27FpUI+WD1KGRtJUm+rc3bieA+1sFXHx7PCc832vNy4JPBBw+m3Idmg0KA4q3BP1MC+0wCNHsfdpSv62k1u8bTs9xS+aoYTOGUh/bc8lpsBsJToq7f/k8M0Rn6VndPnZ6kaypDPtsyxg2VVTFhnoacm/b4Zu1EhrrTGfG8m3cTZuuU97K0oSN4OlXPQXe5W21h93V0w3K9NW0HZRA1ASMTZM7MhGPEcb82vWTrMOymq0xa+G0ctcZZtWhIhYoD2jP/QFZ9szcYbne9SBm79B5sUDFiYz5lyY0V8Hrlbsx8/YBtRMeEbcRSc7NMZgWpl9bK3SAWkQfkBg02cBH0/VTBkaWl97ZaP9tS3D+kQPi5UP3y+v4Gmlfi9nSllYzRWNoHZUaY3nsuFmEpovnUHwB8HG8nueqM3Td0OR3aOJiRF3MUq6lDxIFaNMgt1dOtSP6n+Lkfe7lvKhLI4MdDQxbxxSKvfASjG7KEfmQ4xsVplpH6v2aRxMemeU9rMgpSI0Qm5CpTIDFytHvFwnm5GNk8NgijpRfb06sENs/I44iE9y4ZpQ0YWF1aSOowQYEW4QB6usLqDZJuwc9O7g3bNpHrdessw51Uog==
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SJ0PR22MB2672.namprd22.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230022)(376002)(396003)(346002)(39840400004)(366004)(136003)(451199015)(83380400001)(110136005)(40140700001)(9686003)(71200400001)(7696005)(478600001)(33656002)(55016003)(4743002)(186003)(38070700005)(38100700002)(166002)(86362001)(122000001)(2906002)(52536014)(53546011)(6506007)(26005)(8936002)(8676002)(66446008)(76116006)(64756008)(66556008)(4326008)(66946007)(66476007)(316002)(9326002)(5660300002)(41300700001)(85282002)(36394005);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?us-ascii?Q?YcpzE5K8pni6YKec4g8HWvN9nNVzqvKVYiYVKyn4TA/nBuOeFnP5owV4Gi/B?=
+ =?us-ascii?Q?+QqwtP8PUaU1CqjkXQDHb/EhnfnuGisAjS3vxxXk7p5saaQP7I1DbKkHx5SB?=
+ =?us-ascii?Q?JGUNSlwTi7PLkcb/9XdVTYijuXiaFfATYKcPPVK3qclb8QjjAj4POr71VZm8?=
+ =?us-ascii?Q?xpOatkq76UiLpfvYfoL5h9h2hwcSwo7Eq7Cv2sZjtyEd6kGvqbTjPWQGDTJn?=
+ =?us-ascii?Q?wzEg/xd+7ocqSQ4Bh4tw6B2hCWpU68F1cJJ1gZVYY2KQvO4E5a0Juc8nk+fm?=
+ =?us-ascii?Q?69NaPlehFwXOnDBNvlCdJuKV5s7qZFQHCysYjNafFA9SqDlrNM8hy/cupxAU?=
+ =?us-ascii?Q?xgUIK/5olf80lGW+MPjYUP0rlVweUJMj7tCBFmETfO/E3dBlt6hcdkxVQDao?=
+ =?us-ascii?Q?vC+JjOtbzc4qkLvL4aEruFsSGiM2D8qrUs3XKe/tVKTwRXO195ay0P6wGDaD?=
+ =?us-ascii?Q?0D4qgVNJHHsMeyXeTgo6QFGdH5WgsjOiSbWR/ze4Xz9gPX+62BZfDeYB5Xm0?=
+ =?us-ascii?Q?FfWRVaQ/Ok8L3JYiqh9PpRTYjXzoi15cEodzJUHiuj6XJdSPM3LCJPLXt06X?=
+ =?us-ascii?Q?I9eBf6uZ43LZ0zXvBNPwuGhKhKH16iZzpuPvWmYqFQXTEXJ17IESnKyCZmTs?=
+ =?us-ascii?Q?pK7KV51YkbpJTONkMcZ2Xy/b2O1EWUUs01hOz7OrVy+AfW5fQ0UfeqIt/Fx7?=
+ =?us-ascii?Q?RKJTyGRxhIML70abhrc7aZRMeHmVFL30LImZV3o9XZ63MpTBCO1nhvWGZmkY?=
+ =?us-ascii?Q?u0dbyNdElSV11t9jBHXirH9g+8yfJEPIHbJC7YSqxdvYRKXkCrN/MpZ/bGu6?=
+ =?us-ascii?Q?CXx9EaQC+wtXTLsqLnJ3la9YHgMbz7JHJ+K9HMekPF0lhp6gh+R2jx7hdcxC?=
+ =?us-ascii?Q?4oiKDBB+K9HhswBQQ/Cjc0+J6sNoU7bThZgWW+Ql0PcGKsvpToEyXg7HW+mW?=
+ =?us-ascii?Q?qWIQEyUXMk/BXJM2WHwOddAts8y9ngdLBu49ewGd2P+CTQFljQOLLJDoWwZA?=
+ =?us-ascii?Q?zka23CId1ikpjhiKhcXAXnEzJfZxX+116OevuVJAWErn3Jb0I9kI3IE8etcJ?=
+ =?us-ascii?Q?88+k8xeeLLYX3Dq8mmqWBdTuLLoL4myNbKd05thyHY9aGyWQtgyo3bIuU5r2?=
+ =?us-ascii?Q?bKjijGDKVkmgcIq6ZiJvlZmy52OksrO99SkFQ9fYgtybykturVOcvJ/6F4pB?=
+ =?us-ascii?Q?CaTaNc2A2JuZyLTQEsL03KWWrg4r8mGJitXorRp712asI1kH/6Gtfk/Q7Miq?=
+ =?us-ascii?Q?R6mD3UJdjXZxe/TQaTI3+u3X18CTEn6gKSS4yMwy9W7gHzlj2xGZ25DR2wFt?=
+ =?us-ascii?Q?C045qTXT9YNbVt/v6ZY6qBGkTxcZOQxsM5YFD/6rwFQfAdOBphF8pIjxk+x4?=
+ =?us-ascii?Q?ZLQt1ZN7dDxl8hQQriWZZVVzpr2dC8juVRIg5U+G0r2iq0UPLfl9wExZPc1X?=
+ =?us-ascii?Q?xz5OCJSfiKsPLU8Ua0/J3lZwlw6mE2aZ5r3ypRT2CLFFoi5lOuql5BKASZmI?=
+ =?us-ascii?Q?haRn0MD26fH1XFxpzWpmuNI/de153jaTZ4QCJq5owfWQjEpFVEUcPq14qkMy?=
+ =?us-ascii?Q?+DKEzrNS9Qa2d19FeaNl7lA/LeeYzYMs7fixXRDhWa7+Nj8UzGTppMm3iJdB?=
+ =?us-ascii?Q?8Qgu6zN6cPZSe1kJvoBhl6g=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_SJ0PR22MB267298B7B3945A05F66FDA2BC5C69SJ0PR22MB2672namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: carolinachemistries.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SJ0PR22MB2672.namprd22.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5abeabbf-f7d8-4453-b8e6-08daf8c2b4b2
+X-MS-Exchange-CrossTenant-originalarrivaltime: 17 Jan 2023 19:40:36.4833
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: f27d3a9c-1dc4-4139-a0c3-b8b63548fe8c
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: yqMZAp/EAPBOm7J9HVrCRUD7wrBT+yvBDOkY3aCFOw4inT6HsttnBD7bNIzt9S9xu7bnDkpCnNQ/J8+Esgj2JLDzuD4CIg1O4GZs0pqjI8fChX4DkwgRuMor0jxz4iYQ
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH0PR22MB3724
+X-Spam-Status: No, score=1.0
+X-Spam-Score: 10
+X-Spam-Bar: +
+X-Spam-Flag: NO
+
+--_000_SJ0PR22MB267298B7B3945A05F66FDA2BC5C69SJ0PR22MB2672namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Kristina,
+
+Thank you for your order.  Please accept this email as confirmation.
+
+My name is Laura and I will be your primary contact at Carolina Liquid Chem=
+istries.
+
+We appreciate your long lead time, we will be able to accommodate the April=
+ 26th delivery date.
+
+Sincerely,
+
+
+Laura Orlow-Kojac
+Carolina Liquid Chemistries Corp.
+510 W. Central Avenue
+Suite  C
+Brea CA 92821
+714-529-7125   fax 714-529-7274
+
+
+
+From: Kristina Hill (s) <khill@cap.org>
+Sent: Tuesday, January 17, 2023 11:00 AM
+To: Christina Gonzales <CGonzales@CarolinaChemistries.com>; Laura Orlow-Koj=
+ac <LOrlow@CarolinaChemistries.com>; Ram Vairavan <rvairavan@caldonbiotech.=
+com>
+Cc: AnnMarie Di Prima (s) <ADIPRIM@cap.org>
+Subject: 2023 ADL-A PO
+
+You don't often get email from khill@cap.org<mailto:khill@cap.org>. Learn w=
+hy this is important<https://aka.ms/LearnAboutSenderIdentification>
+Good morning,
+
+My name is Kristina Hill, and I will be taking over as the technical buyer =
+managing your account with CAP.  Don't hesitate to contact me with any ques=
+tions or concerns going forward.
+
+I have attached a PO for the 2023 ADL-A mailing.  Please let us know you re=
+ceived it.
+
+Regards, Kristina.
+
+Kristina E. Hill, MPH, MT(ASCP)
+Technical Buyer, Purchasing
+College of American Pathologists
+325 Waukegan Road, Northfield, IL 60093
+khill@cap.org<mailto:khill@cap.org>
+Tel: 800-323-4040 ext. 7634 | Dir: 847-832-7634 | Fax: 847-832-8634
+cap.org<http://www.cap.org> | @Pathologists<https://twitter.com/Pathologist=
+s> | Facebook<https://www.facebook.com/capathologists> | Instagram<https://=
+www.instagram.com/cap_pathologists>
+Recognized in 2021 as a socially responsible employer by the Center for Com=
+panies That Care
+
+
+--_000_SJ0PR22MB267298B7B3945A05F66FDA2BC5C69SJ0PR22MB2672namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:"Lucida Handwriting";
+	panose-1:3 1 1 1 1 1 1 1 1 1;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+span.EmailStyle21
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Hello Kristina,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thank you for your order.&nbsp; Please accept this e=
+mail as confirmation.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">My name is Laura and I will be your primary contact =
+at Carolina Liquid Chemistries.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">We appreciate your long lead time, we will be able t=
+o accommodate the April 26<sup>th</sup> delivery date.
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Sincerely,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-family:&quot;Lucida Handwriti=
+ng&quot;;color:navy">Laura Orlow-Kojac<o:p></o:p></span></i></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:navy">Carolina Liquid Chemistries Corp.<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:navy">510 W. Central Avenue<o:p></o:p></span></p=
+>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:navy">Suite&nbsp; C&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:navy">Brea CA 92821<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:navy">714-529-7125&nbsp;&nbsp; fax 714-529-7274<=
+o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b>From:</b> Kristina Hill (s) &lt;khill@cap.org&gt;=
+ <br>
+<b>Sent:</b> Tuesday, January 17, 2023 11:00 AM<br>
+<b>To:</b> Christina Gonzales &lt;CGonzales@CarolinaChemistries.com&gt;; La=
+ura Orlow-Kojac &lt;LOrlow@CarolinaChemistries.com&gt;; Ram Vairavan &lt;rv=
+airavan@caldonbiotech.com&gt;<br>
+<b>Cc:</b> AnnMarie Di Prima (s) &lt;ADIPRIM@cap.org&gt;<br>
+<b>Subject:</b> 2023 ADL-A PO <o:p></o:p></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"left" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td style=3D"background:#A6A6A6;padding:5.25pt 1.5pt 5.25pt 1.5pt"></td>
+<td width=3D"100%" style=3D"width:100.0%;background:#EAEAEA;padding:5.25pt =
+3.75pt 5.25pt 11.25pt">
+<div>
+<p class=3D"MsoNormal" style=3D"mso-element:frame;mso-element-frame-hspace:=
+2.25pt;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-el=
+ement-anchor-horizontal:column;mso-height-rule:exactly">
+<span style=3D"font-size:9.0pt;font-family:&quot;Segoe UI&quot;,sans-serif;=
+color:#212121">You don't often get email from
+<a href=3D"mailto:khill@cap.org">khill@cap.org</a>. <a href=3D"https://aka.=
+ms/LearnAboutSenderIdentification">
+Learn why this is important</a><o:p></o:p></span></p>
+</div>
+</td>
+<td width=3D"75" style=3D"width:56.25pt;background:#EAEAEA;padding:5.25pt 3=
+.75pt 5.25pt 3.75pt;align:left">
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p class=3D"MsoNormal"><a name=3D"_Hlk58321179">Good morning,<o:p></o:p></a=
+></p>
+<p class=3D"MsoNormal"><span style=3D"mso-bookmark:_Hlk58321179"><o:p>&nbsp=
+;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-bookmark:_Hlk58321179">My name is=
+ Kristina Hill, and I will be taking over as the technical buyer managing y=
+our account with CAP.&nbsp; Don&#8217;t hesitate to contact me with any que=
+stions or concerns going forward.&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-bookmark:_Hlk58321179"><o:p>&nbsp=
+;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-bookmark:_Hlk58321179">I have att=
+ached a PO for the 2023 ADL-A mailing.&nbsp; Please let us know you receive=
+d it.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-bookmark:_Hlk58321179"><o:p>&nbsp=
+;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-bookmark:_Hlk58321179">Regards, K=
+ristina.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-bookmark:_Hlk58321179"><o:p>&nbsp=
+;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-bookmark:_Hlk58321179"><b><span s=
+tyle=3D"font-size:10.0pt;color:#009ABF">Kristina E. Hill, MPH, MT(ASCP)<o:p=
+></o:p></span></b></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-bookmark:_Hlk58321179"><b><span s=
+tyle=3D"font-size:10.0pt">Technical Buyer, Purchasing<o:p></o:p></span></b>=
+</span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-bookmark:_Hlk58321179"><b><span s=
+tyle=3D"font-size:10.0pt">College of American Pathologists</span></b></span=
+><span style=3D"mso-bookmark:_Hlk58321179"><span style=3D"font-size:10.0pt"=
+><o:p></o:p></span></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-bookmark:_Hlk58321179"><span styl=
+e=3D"font-size:10.0pt">325 Waukegan Road, Northfield, IL 60093<o:p></o:p></=
+span></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-bookmark:_Hlk58321179"></span><a =
+href=3D"mailto:khill@cap.org"><span style=3D"mso-bookmark:_Hlk58321179"><sp=
+an style=3D"font-size:10.0pt;color:blue">khill@cap.org</span></span><span s=
+tyle=3D"mso-bookmark:_Hlk58321179"></span></a><span style=3D"mso-bookmark:_=
+Hlk58321179"><span style=3D"font-size:10.0pt"><o:p></o:p></span></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-bookmark:_Hlk58321179"><b><span s=
+tyle=3D"font-size:10.0pt">Tel:</span></b></span><span style=3D"mso-bookmark=
+:_Hlk58321179"><span style=3D"font-size:10.0pt"> 800-323-4040 ext. 7634 |
+<b>Dir:</b> 847-832-7634 | <b>Fax:</b> 847-832-8634 <o:p></o:p></span></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"mso-bookmark:_Hlk58321179"></span><a =
+href=3D"http://www.cap.org"><span style=3D"mso-bookmark:_Hlk58321179"><span=
+ style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#=
+009ABF">cap.org</span></span><span style=3D"mso-bookmark:_Hlk58321179"></sp=
+an></a><span style=3D"mso-bookmark:_Hlk58321179"><span style=3D"font-size:1=
+0.0pt;color:#009ABF">
+ | </span></span><a href=3D"https://twitter.com/Pathologists"><span style=
+=3D"mso-bookmark:_Hlk58321179"><span style=3D"font-size:10.0pt;font-family:=
+&quot;Arial&quot;,sans-serif;color:#009ABF">@Pathologists</span></span><spa=
+n style=3D"mso-bookmark:_Hlk58321179"></span></a><span style=3D"mso-bookmar=
+k:_Hlk58321179"><span style=3D"font-size:10.0pt;color:#009ABF">
+ | </span></span><a href=3D"https://www.facebook.com/capathologists"><span =
+style=3D"mso-bookmark:_Hlk58321179"><span style=3D"font-size:10.0pt;font-fa=
+mily:&quot;Arial&quot;,sans-serif;color:#009ABF">Facebook</span></span><spa=
+n style=3D"mso-bookmark:_Hlk58321179"></span></a><span style=3D"mso-bookmar=
+k:_Hlk58321179"><span style=3D"font-size:10.0pt;color:#009ABF">
+ | </span></span><a href=3D"https://www.instagram.com/cap_pathologists"><sp=
+an style=3D"mso-bookmark:_Hlk58321179"><span style=3D"font-size:10.0pt;font=
+-family:&quot;Arial&quot;,sans-serif;color:#009ABF">Instagram</span></span>=
+<span style=3D"mso-bookmark:_Hlk58321179"></span></a><span style=3D"mso-boo=
+kmark:_Hlk58321179"><span style=3D"font-size:10.0pt;color:#009ABF"><o:p></o=
+:p></span></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-bookmark:_Hlk58321179"><b><span s=
+tyle=3D"font-size:10.0pt;color:gray">Recognized in 2021 as a socially respo=
+nsible employer by the Center for Companies That Care</span></b></span><spa=
+n style=3D"mso-bookmark:_Hlk58321179"></span><span style=3D"font-size:10.0p=
+t;color:#2F5496"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</div>
+</body>
+</html>
+
+--_000_SJ0PR22MB267298B7B3945A05F66FDA2BC5C69SJ0PR22MB2672namp_--

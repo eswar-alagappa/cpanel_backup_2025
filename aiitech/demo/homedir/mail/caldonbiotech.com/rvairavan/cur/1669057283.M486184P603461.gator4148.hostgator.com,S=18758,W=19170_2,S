@@ -1,0 +1,412 @@
+Return-Path: <ADIPRIM@cap.org>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id AG6THAPLe2NFNQkA7/vpDg
+	(envelope-from <ADIPRIM@cap.org>)
+	for <rvairavan@caldonbiotech.com>; Mon, 21 Nov 2022 13:01:23 -0600
+Return-path: <ADIPRIM@cap.org>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Mon, 21 Nov 2022 13:01:23 -0600
+Received: from mx0a-000c9301.pphosted.com ([67.231.144.225]:7056)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <ADIPRIM@cap.org>)
+	id 1oxC2k-003fEF-Vo
+	for rvairavan@caldonbiotech.com;
+	Mon, 21 Nov 2022 13:01:23 -0600
+Received: from pps.filterd (m0166658.ppops.net [127.0.0.1])
+	by mx0a-000c9301.pphosted.com (8.17.1.9/8.17.1.9) with ESMTP id 2ALHcVaP013805;
+	Mon, 21 Nov 2022 13:01:11 -0600
+Received: from nam12-mw2-obe.outbound.protection.outlook.com (mail-mw2nam12lp2046.outbound.protection.outlook.com [104.47.66.46])
+	by mx0a-000c9301.pphosted.com (PPS) with ESMTPS id 3m0dw9067y-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT);
+	Mon, 21 Nov 2022 13:01:11 -0600 (CST)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=lta3yGpOrNdeHovL6yru4B9jVrQo2IVdpoP+GEja3zE+OPruucqgUa+XqzFZL+6ubPopD0weSabLEjjoDWD7vKkCusfMULJwk+q4lM/iD3dESCOYsl2YEeSRd83Gts/Y2QPkueNPJ+mf6N6lHJg0uzp8ox2z5Z/ThVL2guW8GkDzge/e15/WUHPUa/P6Gl/5ZF3BQRVGiF4wDLd3zbDPjcTif/I2cYzRCPOQYQTLmoPwCyXTJVkKjNV3fq0waLvLsc4kHWMybEu7k0oiLnR/MyHMymJiVWCntAyitJPivXLvGspm/w3EhAt5VMJAsvdau2XSuQcUCPiEdAJuqCRR+Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=qB4yWdp+qqWw4QCeKjBr5i9a1Zxq+SyjUiBJDGl+T8I=;
+ b=n3f2SZj/kQzNKGn6hs+QtxlbLZYmZM/LaxfO7wBbkFq3ewUsmwTxUtFfXm3RilwkBxL1w8USwC5wiSmuUIg4C8sUipLfqymAiGtuygLvYkmWl2DOjh1ke4qKDrRg+4SjwqRr5bkrE19M2Djh333YKD/tgUbXPh+Yy6euBXiePiVY57D6pCOIYNa/FVzYKejuQ9JMArdmdiU01iZzgcZkQNSIAGxGDF72uPFumdFRPYwUkuOkI5SFj7hL58Qc8F5tsLC8o7TNHYPZMH98cG3ObZwT3m9bjDEwNtIS/jEvZdTgiibssCJXTRBnKZw02m3g+P4TCrZVehD0Hq1n5wCk0w==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=cap.org; dmarc=pass action=none header.from=cap.org; dkim=pass
+ header.d=cap.org; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=thecap.onmicrosoft.com; s=selector2-thecap-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=qB4yWdp+qqWw4QCeKjBr5i9a1Zxq+SyjUiBJDGl+T8I=;
+ b=beVniWdqD4GvFyNe8y5184lD1BqBRW6Nvq5iHazQw93EsnALOd7OeIrDsV674WHZ4qW3CNb+FE+GmLjzDFsiqH0F+ICT7fBZKZ86Iblh55xQWYPB6f1Tvn2cXGDMcH+c5FTxVqiCs21RagcFrhE9cgzSsIiMfYMN281zG/2ik0A=
+Received: from SN6PR11MB2782.namprd11.prod.outlook.com (2603:10b6:805:63::11)
+ by CO1PR11MB4994.namprd11.prod.outlook.com (2603:10b6:303:91::7) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5834.15; Mon, 21 Nov
+ 2022 19:01:10 +0000
+Received: from SN6PR11MB2782.namprd11.prod.outlook.com
+ ([fe80::f5c2:bb67:2b99:a12a]) by SN6PR11MB2782.namprd11.prod.outlook.com
+ ([fe80::f5c2:bb67:2b99:a12a%6]) with mapi id 15.20.5813.017; Mon, 21 Nov 2022
+ 19:01:10 +0000
+From: "AnnMarie Di Prima (s)" <ADIPRIM@cap.org>
+Subject: 2023 MSR Approval
+Thread-Topic: 2023 MSR Approval
+Thread-Index: AQHY/due+KC+PAfZUkKCB8rP6AbQHg==
+Date: Mon, 21 Nov 2022 19:01:09 +0000
+Message-ID: 
+ <SN6PR11MB2782FE82FAC4323885D9BFB9B60A9@SN6PR11MB2782.namprd11.prod.outlook.com>
+References: 
+ <BL3PR11MB6386F55DFD4431E8E1F41657CC0A9@BL3PR11MB6386.namprd11.prod.outlook.com>
+ <DM5PR11MB1260CCBCDDFF8CD55BDE16BABE0A9@DM5PR11MB1260.namprd11.prod.outlook.com>
+ <DM4PR11MB6020B2BCF6A4A790670E28D9CC0A9@DM4PR11MB6020.namprd11.prod.outlook.com>
+In-Reply-To: 
+ <DM4PR11MB6020B2BCF6A4A790670E28D9CC0A9@DM4PR11MB6020.namprd11.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SN6PR11MB2782:EE_|CO1PR11MB4994:EE_
+x-ms-office365-filtering-correlation-id: 794b7189-98f2-4f92-f297-08dacbf2c09a
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: 
+ 2aP3PiaeKfWTZFG7EBMHWWzBoHV7xIg4dtrToGPvnn7l6Tig2CrlKOlvtTphj5/g7O7F8qDjRQGUr7EzNG6ihSMddSxAPPq2PH9EJA4tf2474REsOumSlWRbGLPcSI/lNoS+l88qPKts2X7LXPzH6x6YLUWLX/dghMvouW9dB5C3hHsB+UbidLtqzMePozZDmZB20mW1mpMboDfvuRVRWsgH1/8u6v6TsR2MONxe+QgHxXGOWpLQKGtLQ1C4uhrOxNXqo1RDh4Hb9b9KKfEWYS75pA3y82OX3HJsiwNw+Yq0G/OFihnBLr0YMeK9iaVXU839EYQU5rth4Rs6n8hiev3u8yYWcBKoH02lbRPHK8GSve7tLmA9fpn0RaWLyXl8zVEjGNSFNU7MrxALSXZg6xfdViBEx4w6tMDHF5iOiyPTl3XYcr0kLL3vDjhaYnnYkshSxGGROvepeZLQXoopvwGq041Ws8r4O75xv04NosUIbE41cgf+QUpZkf8CY6TFfvoeqVKnw1K31SyQ2pmtqtWcSDDX/iI1amBjlK7QSKBMVS1pf2BE2kxrDSDpWqRVepFcaqWnQCD81W7dXuu38UwVf6TcFHoBCsY29SXu/aIwn2scqSYsCWXZUN48KLg78eLv8Lw2QGdCA1DrXu9+tC7T1AnoHRfvXeNWOo5E3TcDMNTeG82V640Dkoi7/AJMfzBpCdlls+rWOQ9TK5x2iKNHa+koHJC0pL4m4Eszt2+wi8XCu3nVvlZZ2CvDKoSn/eJC9n4EYSqJ0lpHiW6oQg==
+x-forefront-antispam-report: 
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SN6PR11MB2782.namprd11.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230022)(136003)(366004)(346002)(396003)(376002)(39860400002)(109986013)(451199015)(40140700001)(33656002)(86362001)(38070700005)(7696005)(64756008)(76116006)(55016003)(4744005)(5660300002)(26005)(2906002)(9686003)(186003)(166002)(122000001)(38100700002)(66556008)(52536014)(71200400001)(6506007)(66446008)(8936002)(41300700001)(66476007)(66946007)(316002)(9326002)(786003)(7066003)(478600001)(7116003)(8676002);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: 
+ =?us-ascii?Q?fdV9GFeSa42kncmdhrUIaaDxxwjRPToKJdGMKYJLBmH3Vq38dBI5HkftzcQE?=
+ =?us-ascii?Q?MxyubVU3xsB5kzuZ9/JuUhD6N4WlsI3phQYo1hfv/F/t8pSmt/e8TRij6vR8?=
+ =?us-ascii?Q?on7zBj0WVqo3UI2KpqeBpaGIVAXe7QFmM0L8NqZm/43/pgAWgbybsIyrWcMQ?=
+ =?us-ascii?Q?AqYr15YM1eSaz2aaFJXr8Ppbwv4JWbTdoPzchx9tFANhj9q5EBSZ5TySTNxH?=
+ =?us-ascii?Q?0XHLxv+DnWrF3hTv7N/lw1bXW+7LZteHe/0ROuwDmxNhOVkrE+95FVZusIaG?=
+ =?us-ascii?Q?wcwRyTsygf3wWUGcwZ6P1YOdFdtkz+iBJ7n65BVV7zPEi9vNeRBvkOTSp2XL?=
+ =?us-ascii?Q?BQMwPp3KxGIqJ7YFNLqu93GEg82xrDu4saaHiJgqq3uvi9yMurU3rij+2u+V?=
+ =?us-ascii?Q?cVNkIZUIEk5ngBuASgFHnR161DdGF64/xWtjNF0p6wJa7JdJ1UhP21R6b12e?=
+ =?us-ascii?Q?qPePb6zx5nKp1EK9I6Dg8TYY2U6Cdl8T4Lg9DGP3n6FzO0mrj90H7GsiRbae?=
+ =?us-ascii?Q?FeoeB+u5XB4UTHQb1mN588eV657I3moHCdiWzutzTm8uXOKxXmMffq3v08nN?=
+ =?us-ascii?Q?b6jSKFTFi7Pkrsam+FNTAQYbaWj8Q/aYFPdr9xPKyJeewRIGxDO+fdNAUqOC?=
+ =?us-ascii?Q?JggB0TzoHwnUJOT/TghXnKjfcNB/gK53C51VLIy+OCoiKPQj4A+A7JxKBAVS?=
+ =?us-ascii?Q?sqQbqmNaAUvtj1soQIVkpPMSXfmHX57sboZusiIEOgID67P7khUs56pbSPTE?=
+ =?us-ascii?Q?qtIkqLY6xDsoFoRLV23cbqoqJeWcLjMa60j0ktXA1MJI3klRxO5IZpj9kQhE?=
+ =?us-ascii?Q?/NF+uVAY09nSUv63NVzHHmYVvtmvTZlA6Kfznsmxp/nxU0leWwWEQs5HReja?=
+ =?us-ascii?Q?KUT37qp4MRh289gcTtSe84uJqj+4+DXpUuR2FvIj3TS5JEa+EIvOo5J2sx9o?=
+ =?us-ascii?Q?OP1BFl4WFqfWIti5AhG2/PZHBkUl2qxeZpta/2Ir35IhraX9nB1voJqa1OMv?=
+ =?us-ascii?Q?n1PvlrfzTKB7YUeqWMbhfiLOmviwShC2I4HudQr+36K9EXtpVNlG55wj3VYu?=
+ =?us-ascii?Q?PgVRzMVgu7ePYUchLjI1sx8PKUKH6e0mplFOPgZIumXMLlvXsJd81m7Zuryz?=
+ =?us-ascii?Q?40ONRb5pFtDvcsFIpBm+Zp+p+RmvVI/6BETU/jC6iLyGy/zBTHDPSYGLyQNu?=
+ =?us-ascii?Q?TgNF85KHZuVCj0TRgX5otHmOWy1zBvDKR0q+aD7+O02cbllQ0wQJkoSl5gq/?=
+ =?us-ascii?Q?7Vo6mKaVixAPZMEAmS57JarSaL82mxUga0sSnUAxHjbiIc5jTOc3YsdhucaL?=
+ =?us-ascii?Q?7atCIl1Q5/eiKPKdTeAcI4LWCOlcAkAObSs5ZyB22zAGGn50io8v1gExGLef?=
+ =?us-ascii?Q?7qbZ1Y+Ng7e4XDFu216ZOtpmAIy1mtYSB+swynHnqkdO7oyIhrDsb49HZLkq?=
+ =?us-ascii?Q?jcQC7dJr31SpVQwUIzVNmMSZ+uel1Bx5ncLpwio7czWc2fzJI6GpONSz0Jmu?=
+ =?us-ascii?Q?fbSqIsIilpyrG+SVcKgtxS92JcPFYdSlWdK49XH/3wrNXF2ReqyYUpeCaOpg?=
+ =?us-ascii?Q?bkd6z1NT/nfG1jDB28k=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_SN6PR11MB2782FE82FAC4323885D9BFB9B60A9SN6PR11MB2782namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: cap.org
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SN6PR11MB2782.namprd11.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 794b7189-98f2-4f92-f297-08dacbf2c09a
+X-MS-Exchange-CrossTenant-originalarrivaltime: 21 Nov 2022 19:01:09.9782
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 4503f2e1-c310-4ce0-95cc-fe3d26359fc4
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: WCyvC8/ERmQAFYeOhh/5Gwg26U9bS3ssTLFEJZ1AwWIW0t0kCaAs9MADLqniRleD
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CO1PR11MB4994
+X-Proofpoint-ORIG-GUID: 4Yws_q35flQj5RIBj9o9QaF2pIQmhosG
+X-Proofpoint-GUID: 4Yws_q35flQj5RIBj9o9QaF2pIQmhosG
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.219,Aquarius:18.0.895,Hydra:6.0.545,FMLib:17.11.122.1
+ definitions=2022-11-21_16,2022-11-18_01,2022-06-22_01
+X-Proofpoint-Spam-Details: rule=outbound_notspam policy=outbound score=0 mlxlogscore=914 bulkscore=0
+ priorityscore=1501 impostorscore=0 suspectscore=0 phishscore=0
+ malwarescore=0 mlxscore=0 adultscore=0 lowpriorityscore=0 spamscore=0
+ clxscore=1011 classifier=spam adjust=0 reason=mlx scancount=1
+ engine=8.19.0-2210310000 definitions=main-2211210145
+X-Spam-Status: No, score=1.9
+X-Spam-Score: 19
+X-Spam-Bar: +
+X-Spam-Flag: NO
+
+--_000_SN6PR11MB2782FE82FAC4323885D9BFB9B60A9SN6PR11MB2782namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+You are receiving this email because the 2023 specifications are uploaded o=
+n the MoveIt Site, but not approved.  At your earliest convenience please r=
+eview, approve, and email approval page to materials@cap.org<mailto:materia=
+ls@cap.org> and copy me.
+Thank you and have a wonderful Thanksgiving,
+
+AnnMarie Di Prima, MBA
+Technical Buyer, Purchasing
+College of American Pathologists
+325 Waukegan Road, Northfield, IL 60093
+adiprim@cap.org
+Tel: 800-323-4040 ext. 7283 Dir: 847-832-7283 Fax: 847-832-8283
+cap.org<http://www.cap.org/> | @Pathologists<https://twitter.com/Pathologis=
+ts> | CAPconnect<http://community.cap.org/>
+Recognized as a socially responsible employer by Center for Companies That =
+Care
+
+
+
+--_000_SN6PR11MB2782FE82FAC4323885D9BFB9B60A9SN6PR11MB2782namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+span.EmailStyle21
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:1193958703;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1321478854 67698689 67698691 67698693 67698689 67698=
+691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:1766806876;
+	mso-list-template-ids:-1052449618;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple" style=3D"word-wrap:brea=
+k-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Hello,<o:p></o:p></p>
+<p class=3D"MsoNormal">You are receiving this email because the 2023 specif=
+ications are uploaded on the MoveIt Site, but not approved.&nbsp; At your e=
+arliest convenience please review, approve, and email approval page to
+<a href=3D"mailto:materials@cap.org">materials@cap.org</a> and copy me. <o:=
+p></o:p></p>
+<p class=3D"MsoNormal">Thank you and have a wonderful Thanksgiving, <o:p></=
+o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:#009ABF">AnnMarie Di Prima, MBA<o:p></o:p></s=
+pan></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Arial&quot;,sans-serif">Technical Buyer, Purchasing<o:p></o:p></span></b><=
+/p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Arial&quot;,sans-serif">College of American Pathologists</span></b><span s=
+tyle=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"><o:p></o=
+:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">325 Waukegan Road, Northfield, IL 60093<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif">adiprim@cap.org<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span lang=3D"ES-GT" style=3D"font-size:10.0pt;fo=
+nt-family:&quot;Arial&quot;,sans-serif">Tel:</span></b><span lang=3D"ES-GT"=
+ style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif"> 800-3=
+23-4040 ext. 7283
+<b>Dir:</b> 847-832-7283 <b>Fax:</b> 847-832-8283 <o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif"><a href=3D"http://www.cap.org/"><span style=3D"color:=
+#009ABF">cap.org</span></a></span><span style=3D"font-size:10.0pt;font-fami=
+ly:&quot;Arial&quot;,sans-serif;color:#009ABF"> |
+</span><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-s=
+erif"><a href=3D"https://twitter.com/Pathologists"><span style=3D"color:#00=
+9ABF">@Pathologists</span></a></span><span style=3D"font-size:10.0pt;font-f=
+amily:&quot;Arial&quot;,sans-serif;color:#009ABF"> |
+</span><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-s=
+erif"><a href=3D"http://community.cap.org/"><span style=3D"color:#009ABF">C=
+APconnect</span></a></span><span style=3D"font-size:10.0pt;font-family:&quo=
+t;Arial&quot;,sans-serif;color:#009ABF"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Arial&quot;,sans-serif;color:gray">Recognized as a socially responsible em=
+ployer by Center for Companies That Care</span></b><span style=3D"font-size=
+:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#365F91"><o:p></o:p>=
+</span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_SN6PR11MB2782FE82FAC4323885D9BFB9B60A9SN6PR11MB2782namp_--

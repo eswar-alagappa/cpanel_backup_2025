@@ -1,0 +1,860 @@
+Return-Path: <olalovedale+bncBDYZ3VM35AIRBGFKTWMAMGQEZRG6BOI@googlegroups.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id AGlnIClVB2Npcw8A7/vpDg
+	(envelope-from <olalovedale+bncBDYZ3VM35AIRBGFKTWMAMGQEZRG6BOI@googlegroups.com>)
+	for <rvairavan@caldonbiotech.com>; Thu, 25 Aug 2022 05:55:37 -0500
+Return-path: <olalovedale+bncBDYZ3VM35AIRBGFKTWMAMGQEZRG6BOI@googlegroups.com>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Thu, 25 Aug 2022 05:55:37 -0500
+Received: from mail-oo1-f59.google.com ([209.85.161.59]:52834)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <olalovedale+bncBDYZ3VM35AIRBGFKTWMAMGQEZRG6BOI@googlegroups.com>)
+	id 1oRAWO-001HUv-RD
+	for rvairavan@caldonbiotech.com;
+	Thu, 25 Aug 2022 05:55:37 -0500
+Received: by mail-oo1-f59.google.com with SMTP id g24-20020a4a6b18000000b0042886f34138sf9438529ooc.19
+        for <rvairavan@caldonbiotech.com>; Thu, 25 Aug 2022 03:55:31 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1661424925; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=UF9XMGViLY3c4PEet+P1B6PT7aqwMX8tifaV+TkWXOojccEFWvPCcZskvqo2RHFr4K
+         l9LrPfmu5h+6aAZXbPCrasqeyktCJO5lltrf0b1M+UNf5CYDQZRDqVQMp9HC9JPUdFvk
+         tsgH2nNjROCPtAi8u3oe3bGhfSe7CQAGS95ZgzTAfz5F6nEW7hqHp/T5NYPwDoFySFz8
+         SkI990E6SjEQT/kyOC2dhePGZovNfD1fIYgIddydzn1jnqpKykMglLHDMbFwLwIgJT3B
+         JPFDIyv44w2kvXDiuwN7YbqbLKVLo0eedNJ1Nbcbwhd2ojZQBWtCI3L/oQqzZezmXZaE
+         0Rrw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:reply-to:content-language:thread-index
+         :mime-version:message-id:date:subject:in-reply-to:references:to:from
+         :sender:dkim-signature:dkim-signature;
+        bh=YApeNhjTxevX8yhV+aqNUCB9+Q2rtodOHUhI4XxCK8g=;
+        b=l2PDOa525r77a80/VR32ry+0PVB2S9gkeUOIJMUR75Ji9m2dnNjjwB2j1vnP80rdiK
+         ikvBuWmev7YDljK65OUGogjMmIURkv5VzoZjAbPYw0nP2rMBwd2zi85NQ25f0rx/fUui
+         ioX1iXZqRxWZMRPu8EpaxwJHtOZPgm7oGGDwnG61dvOJYFA3FuxL4CfzX7cCpCTcE+R9
+         E6RPp0DlydV24Z8ztu9/J0bDfc4WbNileLJvGEdOUfIDaTkZdEqKHdB6BhQz6WfRflsk
+         woV3iMuMonAfnc2HngB4lT5CAAB2I1itGBaZe56m0NN/sde5HvRgokTw2A21qL/iBk0c
+         ++Hw==
+ARC-Authentication-Results: i=2; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=JYti5IMM;
+       spf=pass (google.com: domain of olalovedale@gmail.com designates 2607:f8b0:4864:20::42b as permitted sender) smtp.mailfrom=olalovedale@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=20210112;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:reply-to:x-original-authentication-results
+         :x-original-sender:content-language:thread-index:mime-version
+         :message-id:date:subject:in-reply-to:references:to:from:sender:from
+         :to:cc;
+        bh=YApeNhjTxevX8yhV+aqNUCB9+Q2rtodOHUhI4XxCK8g=;
+        b=WoVEmMZ94yk0AIvARBNzpUwdbpYGs3pel8Luz6iA9r+lztAbkB4WukaMJItkmasZZA
+         LSG5OwrOjfXA6o5bWudwTZHyZUfwyfTVo49VQaof2rVGwy48oiG0G4/wVDNq/g7NtHow
+         EvbZo/bdC3dfjrFEEy2i6BvRsMcZKImJcbHV0nnScNDufKIeoMywLHqpqbSSQ4yyLb9T
+         i5H/N3CZt0vJD8oidwAS4/uQjxcQuuDjUg8Ir0K5OfOxguRlklg5z6F4ndee/O0cP2Cu
+         xWysnsUPQCY63hF05Pht+pKSJBykjHBCxwE0KcK6LchcrxibKDzqQddnqvElCbZqNH4F
+         uu1w==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:reply-to:x-original-authentication-results
+         :x-original-sender:content-language:thread-index:mime-version
+         :message-id:date:subject:in-reply-to:references:to:from:from:to:cc;
+        bh=YApeNhjTxevX8yhV+aqNUCB9+Q2rtodOHUhI4XxCK8g=;
+        b=EgLaQWpp0VWv14wnFdHDIuRRqJ91tDMSMJkyRw5nO+071Yl0EL4QuOSK6zxNSVbfcK
+         Xng9ixlLlRmg3J2QFOEh7jmUR5E4HvJcGwZLx5bCbmQPe51waSi+cVeI+8LkhLLBSG1r
+         1g2cU2rKxfLsrwpaXszErdcz6yieRGvL72/ZC1yGadLYBNJhNFFuYoY3rslHismxnCmG
+         viJE6yoyeJRA7XLJRuK1gnY/q/8dMIl0jkn9ldv+x9y0/zsyTmbTxZdsu/X4qOAWQOpF
+         6WrVFtKhfGeNAOSCqxTsrqRcThn86x6FvKtq+FEoN0rB+QH3/Mh22sTeEpxbwCvcVitb
+         JNew==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:reply-to:x-original-authentication-results
+         :x-original-sender:content-language:thread-index:mime-version
+         :message-id:date:subject:in-reply-to:references:to:from
+         :x-gm-message-state:sender:from:to:cc;
+        bh=YApeNhjTxevX8yhV+aqNUCB9+Q2rtodOHUhI4XxCK8g=;
+        b=RZS0ged7tCkepFW+6WHYgbNLvYKXZfjtcws/3wlylBc5bJayTcl2+XTqkooiMC2I7P
+         wu6rEEbjYHH7xvo5wMbChiZwUONw8Qhqj+aU27vrc0sxyANKGsxS0LS7bw0Qv51ooeZ4
+         cvFJB2eiU6mYZP79f/LBcZXISRiottTla/iInBCxC+N6hWifIwov0jvti4w51RuefM7l
+         w9ZwTpsMA4p9+KXwMZY900TejFc4RgJPNkDhnFASmzFMNkqllpQNvuve9ylI6+LhM2o5
+         jPoO3FQ+qvrt7nxNi1BJDZM1Lf/tQjySQSGMr8BNIwX6/4JJutE5+XmzxW4lbs5WqEcy
+         iVlg==
+Sender: olalovedale@googlegroups.com
+X-Gm-Message-State: ACgBeo0eSlh0Vrc4UPc3U4wI/DvfmToeSKc6ZcmqjLvYvrYzroyIntYZ
+	wrhHotyz3PmvDjnr42E1Q90=
+X-Google-Smtp-Source: AA6agR5ddxMZpcRMFUC7TnKwFWcI0t9GEzDabY3djNIvbiY0HhefHlJg9guLE+/syrLtLikI77dxAw==
+X-Received: by 2002:a05:6870:40d4:b0:113:82d9:e0f0 with SMTP id l20-20020a05687040d400b0011382d9e0f0mr1650932oal.194.1661424925389;
+        Thu, 25 Aug 2022 03:55:25 -0700 (PDT)
+X-BeenThere: olalovedale@googlegroups.com
+Received: by 2002:a05:6870:444:b0:10c:41e7:bfd9 with SMTP id
+ i4-20020a056870044400b0010c41e7bfd9ls284539oak.2.-pod-prod-gmail; Thu, 25 Aug
+ 2022 03:55:20 -0700 (PDT)
+X-Received: by 2002:a05:6870:328d:b0:10d:ce86:ceee with SMTP id q13-20020a056870328d00b0010dce86ceeemr5873366oac.80.1661424920316;
+        Thu, 25 Aug 2022 03:55:20 -0700 (PDT)
+Received: by 2002:aca:eac6:0:b0:342:e42f:f566 with SMTP id 5614622812f47-34589d100b8msb6e;
+        Thu, 25 Aug 2022 03:54:09 -0700 (PDT)
+X-Received: by 2002:a05:6808:9a6:b0:344:b7a5:424 with SMTP id e6-20020a05680809a600b00344b7a50424mr1456117oig.147.1661424849204;
+        Thu, 25 Aug 2022 03:54:09 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1661424849; cv=none;
+        d=google.com; s=arc-20160816;
+        b=hHNXhuxRSVGQ7QdkavBaeoCNegRUXg1byE4gV5JVOaFvwvru9UvQqg/AfPitfKIIDo
+         LLWJnF+kCCJHeYsSrjkDhQCwlkLM2Y99mvBPvSX+ex8T+YOCgsY9LTZCVNYJthAJkji/
+         35ar11E4WdqKEvDwQCHLG29oRHalzPJHlnIJvyWk4ryWdbQKFC3fbmz5+LNeq8iWfaY7
+         c6REMMTZL6MXD6UuDvi4LHQkEwX3uMO56r2YjIuD0pD8aAkhkaow04jdcVL8wUoqEYBC
+         tSYyEEKsos/o4Vdn05vUWnefqVGDybaWqVAY3QsQBurkcvJp7gMOPtIiUn+sNjbw5eWU
+         fa8g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-language:thread-index:mime-version:message-id:date:subject
+         :in-reply-to:references:to:from:dkim-signature;
+        bh=bCa7ggAwh+fcIEMVv3zsjzbMFsdQ00TlbreS1Toxm8A=;
+        b=N0QDjF/T424B1R/eA35utBI3Sw3oWBPjb7eBXjDoUV+sPC/zYU/qegmi8SVzUY9Jel
+         AOHKe2UFBpaeAfAX2p+O2CQqaUUgB0MBf3gZoo3Dp1F17//oeW2pfU/3qNOjXFpGTyrZ
+         Gx3o8Db/TPV6qu37Aa0uyX7NUkBUM6bBHyR5uujpnGldkuwkkCEV9EJWDGvSuQWFgiuo
+         rqs4Cg0y8doEdF086JKnF39lSNGawrWQHUJXgVHiyxDNTQDWF6gU7VeLaVTZhrAdjYYR
+         GP1OtbGMjTpqbtplKQZ/UYvuQlGkZL699SH1BSuC60mDcSJtIwAgLNJsmksadkEG3bY+
+         vUGg==
+ARC-Authentication-Results: i=1; gmr-mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20210112 header.b=JYti5IMM;
+       spf=pass (google.com: domain of olalovedale@gmail.com designates 2607:f8b0:4864:20::42b as permitted sender) smtp.mailfrom=olalovedale@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: from mail-pf1-x42b.google.com (mail-pf1-x42b.google.com. [2607:f8b0:4864:20::42b])
+        by gmr-mx.google.com with ESMTPS id b12-20020a4ac28c000000b0044a814c2c72si203851ooq.1.2022.08.25.03.54.09
+        for <olalovedale@googlegroups.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Thu, 25 Aug 2022 03:54:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of olalovedale@gmail.com designates 2607:f8b0:4864:20::42b as permitted sender) client-ip=2607:f8b0:4864:20::42b;
+Received: by mail-pf1-x42b.google.com with SMTP id y15so15365127pfr.9
+        for <olalovedale@googlegroups.com>; Thu, 25 Aug 2022 03:54:09 -0700 (PDT)
+X-Received: by 2002:a63:f24f:0:b0:42a:81ff:6e62 with SMTP id d15-20020a63f24f000000b0042a81ff6e62mr2931370pgk.154.1661424848102;
+        Thu, 25 Aug 2022 03:54:08 -0700 (PDT)
+Received: from RSLptp ([103.158.145.17])
+        by smtp.gmail.com with ESMTPSA id ik3-20020a170902ab0300b0016bdc98730bsm14249224plb.151.2022.08.25.03.54.06
+        for <olalovedale@googlegroups.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 25 Aug 2022 03:54:07 -0700 (PDT)
+From: <olalovedale@gmail.com>
+To: <olalovedale@googlegroups.com>
+References: <00b901d8b39a$20defdd0$629cf970$@gmail.com>
+In-Reply-To: <00b901d8b39a$20defdd0$629cf970$@gmail.com>
+Subject: OldLawrencians Vote at the OLA Elections 2022 for the Vice President
+ of the OLA - https://forms.gle/koGybrU5Ua48YPdz6
+Date: Thu, 25 Aug 2022 16:24:05 +0530
+Message-ID: <015e01d8b870$ffaee6d0$ff0cb470$@gmail.com>
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_015F_01D8B89F.1967BF10"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: Adi4b/6/8tfldLIfSSaXnUT7g9LstQ==
+Content-Language: en-gb
+X-Original-Sender: olalovedale@gmail.com
+X-Original-Authentication-Results: gmr-mx.google.com;       dkim=pass
+ header.i=@gmail.com header.s=20210112 header.b=JYti5IMM;       spf=pass
+ (google.com: domain of olalovedale@gmail.com designates 2607:f8b0:4864:20::42b
+ as permitted sender) smtp.mailfrom=olalovedale@gmail.com;       dmarc=pass
+ (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Reply-To: olalovedale@googlegroups.com
+Precedence: list
+Mailing-list: list olalovedale@googlegroups.com; contact olalovedale+owners@googlegroups.com
+List-ID: <olalovedale.googlegroups.com>
+X-Google-Group-Id: 585760002904
+List-Post: <https://groups.google.com/group/olalovedale/post>, <mailto:olalovedale@googlegroups.com>
+List-Help: <https://groups.google.com/support/>, <mailto:olalovedale+help@googlegroups.com>
+List-Archive: <https://groups.google.com/group/olalovedale
+List-Unsubscribe: <mailto:googlegroups-manage+585760002904+unsubscribe@googlegroups.com>,
+ <https://groups.google.com/group/olalovedale/subscribe>
+X-Spam-Status: No, score=-0.7
+X-Spam-Score: -6
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_015F_01D8B89F.1967BF10
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_0160_01D8B89F.1967BF10"
+
+
+------=_NextPart_001_0160_01D8B89F.1967BF10
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+=20
+
+Lovedale, 25th August 2022
+
+=20
+
+Vote at the OLA Elections 2022 for the Vice President of the OLA
+
+=20
+
+Dear OLA Members,
+
+=20
+
+It is finally time to hold our first online election open to everyone globa=
+lly.=20
+
+=20
+
+To remind you, voting is for the position of Vice-President only as we have=
+ two candidates nominated for the post.
+
+=20
+
+They are:
+
+=20
+
+1.	T.M. Krishn Dev =E2=80=93 Batch of 1970
+2.	Philipose G. Pynumootil =E2=80=93 Batch of 1982
+
+=20
+
+The position of Vice-President is normally held for two years and thereafte=
+r it is expected that the incumbent =E2=80=93 having served as VP, becomes =
+the President for a term of two years.
+
+=20
+
+Voting will be open for 72 hours from - 0000 hrs 26th Aug 2022 to 2400 hrs =
+28th Aug 2022 all times being Indian Standard Time.=20
+
+=20
+
+We have used these timings to include the large number of OLs from the Amer=
+icas right up to Australia/New Zealand too.
+
+=20
+
+Even if you are coming up for Founder=E2=80=99s and plan to attend the AGM =
+physically, please do vote online as this will reduce the administration ti=
+me and activities to be handled at the AGM. We intend to livestream the AGM=
+ on the OLA Social Media Channels.=20
+
+=20
+
+Please access the mail from your registered email id only and vote by filli=
+ng and submitting on the link provided.
+
+=20
+
+https://forms.gle/koGybrU5Ua48YPdz6
+
+=20
+
+The link is active but will go live only at the above stated time.
+
+=20
+
+Thank you for your patience and enthusiastic support!
+
+=20
+
+Best regards,
+
+=20
+
+Ram Mohan Rao     Inasu Jacob      Viju Parameshwar
+
+OLA Election Scrutineers
+
+=20
+
+NEVER GIVE IN
+
+=20
+
+--=20
+Never Give In
+
+The Old Lawrencians Association is a legally registered body Registered und=
+er Tamil Nadu Act 27 of 1975 =C2=AE (Serial No. =E2=80=93 44 of 1989) repre=
+senting the interests of the Alumni of The Lawrence School, Lovedale 643003=
+, Nilgiris, TN, India.
+
+Chapters Groups across India & North America, UK, UAE, Australia, Singapore=
+ - Details with the OLA Admin
+
+OLA Official Mobile/Whatsapp Number +919498490228
+Email : Hello@OLALovedale.net ; olalovedale@gmail.com
+
+Official Social Media Channels
+https://www.linkedin.com/groups/76653/
+https://www.facebook.com/oldlawrencians/
+https://www.facebook.com/groups/oldlawrencians/
+https://www.youtube.com/c/OldLawrenciansAssociation
+https://www.facebook.com/groups/LawrencianMarketPlace=20
+https://www.instagram.com/olalovedale/
+https://www.instagram.com/the.ol.nation/
+https://twitter.com/olalovedale=20
+https://www.clubhouse.com/club/ola-old-lawrencians-assn
+
+#olalovedale #lawrenceschool #oldlawrencian #nevergivein #lovedale #lawrenc=
+ian #olnation #olassembly
+---=20
+You received this message because you are subscribed to the Google Groups "=
+OLA_Lovedale" group.
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to olalovedale+unsubscribe@googlegroups.com.
+To view this discussion on the web visit https://groups.google.com/d/msgid/=
+olalovedale/015e01d8b870%24ffaee6d0%24ff0cb470%24%40gmail.com.
+
+------=_NextPart_001_0160_01D8B89F.1967BF10
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head><meta http-equiv=3DContent-Type content=
+=3D"text/html; charset=3Dutf-8"><meta name=3DGenerator content=3D"Microsoft=
+ Word 15 (filtered medium)"><!--[if !mso]><style>v\:* {behavior:url(#defaul=
+t#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+span.EmailStyle20
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:1140878379;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1 -1656816330 1074331673 1074331675 1074331663 1074=
+331673 1074331675 1074331663 1074331673 1074331675;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;
+	mso-bidi-font-family:"Times New Roman";}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-GB link=3D"#0563C1=
+" vlink=3D"#954F72" style=3D'word-wrap:break-word'><div class=3DWordSection=
+1><p class=3DMsoNormal><span style=3D'font-family:"Calibri Light",sans-seri=
+f'><img width=3D503 height=3D108 style=3D'width:5.2416in;height:1.125in' id=
+=3D"Picture_x0020_1" src=3D"cid:image001.jpg@01D8B1BA.31EB0970"></span><spa=
+n style=3D'font-family:"Calibri Light",sans-serif'><o:p></o:p></span></p><p=
+ class=3DMsoNormal><span style=3D'font-family:"Calibri Light",sans-serif'><=
+o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:=
+"Calibri Light",sans-serif'>Lovedale, 25<sup>th</sup> August 2022<o:p></o:p=
+></span></p><p class=3DMsoNormal><b><span style=3D'font-family:"Calibri Lig=
+ht",sans-serif'><o:p>&nbsp;</o:p></span></b></p><p class=3DMsoNormal><b><u>=
+<span style=3D'font-family:"Calibri Light",sans-serif'>Vote at the OLA Elec=
+tions 2022 for the Vice President of the OLA<o:p></o:p></span></u></b></p><=
+p class=3DMsoNormal><b><span style=3D'font-family:"Calibri Light",sans-seri=
+f'><o:p>&nbsp;</o:p></span></b></p><p class=3DMsoNormal><span style=3D'font=
+-family:"Calibri Light",sans-serif'>Dear OLA Members,<o:p></o:p></span></p>=
+<p class=3DMsoNormal><span style=3D'font-family:"Calibri Light",sans-serif'=
+><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'font-famil=
+y:"Calibri Light",sans-serif'>It is finally time to hold our first online e=
+lection open to everyone globally. <o:p></o:p></span></p><p class=3DMsoNorm=
+al><span style=3D'font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p>=
+</span></p><p class=3DMsoNormal><span style=3D'font-family:"Calibri Light",=
+sans-serif'>To remind you, voting is for the position of Vice-President onl=
+y as we have two candidates nominated for the post.<o:p></o:p></span></p><p=
+ class=3DMsoNormal><span style=3D'font-family:"Calibri Light",sans-serif'><=
+o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:=
+"Calibri Light",sans-serif'>They are:<o:p></o:p></span></p><p class=3DMsoNo=
+rmal><span style=3D'font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:=
+p></span></p><ol style=3D'margin-top:0cm' start=3D1 type=3D1><li class=3DMs=
+oListParagraph style=3D'margin-left:0cm;mso-list:l0 level1 lfo1'><b><span l=
+ang=3DEN-IN style=3D'font-family:"Calibri Light",sans-serif'>T.M. Krishn De=
+v</span></b><span lang=3DEN-IN style=3D'font-family:"Calibri Light",sans-se=
+rif'> =E2=80=93 Batch of 1970<o:p></o:p></span></li><li class=3DMsoListPara=
+graph style=3D'margin-left:0cm;mso-list:l0 level1 lfo1'><b><span lang=3DEN-=
+IN style=3D'font-family:"Calibri Light",sans-serif'>Philipose G. Pynumootil=
+</span></b><span lang=3DEN-IN style=3D'font-family:"Calibri Light",sans-ser=
+if'> =E2=80=93 Batch of 1982<o:p></o:p></span></li></ol><p class=3DMsoNorma=
+l><span style=3D'font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p><=
+/span></p><p class=3DMsoNormal><span style=3D'font-family:"Calibri Light",s=
+ans-serif'>The position of Vice-President is normally held for two years an=
+d thereafter it is expected that the incumbent =E2=80=93 having served as V=
+P, becomes the President for a term of two years.<o:p></o:p></span></p><p c=
+lass=3DMsoNormal><span style=3D'font-family:"Calibri Light",sans-serif'><o:=
+p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"C=
+alibri Light",sans-serif'>Voting will be open for <b>72 hours</b> from - <b=
+>0000 hrs 26<sup>th</sup> Aug 2022</b> to <b>2400 hrs 28<sup>th</sup> Aug 2=
+022</b> all times being <b><i>Indian Standard Time. <o:p></o:p></i></b></sp=
+an></p><p class=3DMsoNormal><span style=3D'font-family:"Calibri Light",sans=
+-serif'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'fon=
+t-family:"Calibri Light",sans-serif'>We have used these timings to include =
+the large number of OLs from the Americas right up to Australia/New Zealand=
+ too.<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:=
+"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNorma=
+l><span style=3D'font-family:"Calibri Light",sans-serif'>Even if you are co=
+ming up for Founder=E2=80=99s and plan to attend the AGM physically, please=
+ do vote online as this will reduce the administration time and activities =
+to be handled at the AGM. We intend to livestream the AGM on the OLA Social=
+ Media Channels. <o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'=
+font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></span></p><p clas=
+s=3DMsoNormal><span style=3D'font-family:"Calibri Light",sans-serif'>Please=
+ access the mail from your registered email id only and vote by filling and=
+ submitting on the link provided.<o:p></o:p></span></p><p class=3DMsoNormal=
+><span style=3D'font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p></=
+span></p><p class=3DMsoNormal><b><span style=3D'font-family:"Calibri Light"=
+,sans-serif;background:yellow;mso-highlight:yellow'><a href=3D"https://form=
+s.gle/koGybrU5Ua48YPdz6">https://forms.gle/koGybrU5Ua48YPdz6</a></span></b>=
+<b><span style=3D'font-family:"Calibri Light",sans-serif'><o:p></o:p></span=
+></b></p><p class=3DMsoNormal><span style=3D'font-family:"Calibri Light",sa=
+ns-serif'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'f=
+ont-family:"Calibri Light",sans-serif'>The <b>link is active</b> but will <=
+b>go live only</b> at the above stated time.<o:p></o:p></span></p><p class=
+=3DMsoNormal><span style=3D'font-family:"Calibri Light",sans-serif'><o:p>&n=
+bsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Calib=
+ri Light",sans-serif'>Thank you for your patience and enthusiastic support!=
+<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Cali=
+bri Light",sans-serif'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><sp=
+an style=3D'font-family:"Calibri Light",sans-serif'>Best regards,<o:p></o:p=
+></span></p><p class=3DMsoNormal><span style=3D'font-family:"Calibri Light"=
+,sans-serif'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><b><span styl=
+e=3D'font-family:"Calibri Light",sans-serif'>Ram Mohan Rao=C2=A0=C2=A0=C2=
+=A0=C2=A0 Inasu Jacob=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 Viju Parameshwar<o:p></=
+o:p></span></b></p><p class=3DMsoNormal><b><span style=3D'font-family:"Cali=
+bri Light",sans-serif'>OLA</span></b><span style=3D'font-family:"Calibri Li=
+ght",sans-serif'> Election Scrutineers<o:p></o:p></span></p><p class=3DMsoN=
+ormal><span style=3D'font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o=
+:p></span></p><p class=3DMsoNormal><b><span style=3D'font-family:"Calibri L=
+ight",sans-serif'>NEVER GIVE IN<o:p></o:p></span></b></p><p class=3DMsoNorm=
+al><span style=3D'font-family:"Calibri Light",sans-serif'><o:p>&nbsp;</o:p>=
+</span></p></div></body></html>
+
+<p></p>
+
+-- <br />
+Never Give In<br />
+&nbsp;<br />
+The Old Lawrencians Association is a legally registered body Registered und=
+er Tamil Nadu Act 27 of 1975 =C2=AE (Serial No. =E2=80=93 44 of 1989) repre=
+senting the interests of the Alumni of The Lawrence School, Lovedale 643003=
+, Nilgiris, TN, India.<br />
+&nbsp;<br />
+Chapters Groups across India &amp; North America, UK, UAE, Australia, Singa=
+pore - Details with the OLA Admin<br />
+&nbsp;<br />
+OLA Official Mobile/Whatsapp Number +919498490228<br />
+Email : Hello@OLALovedale.net ; olalovedale@gmail.com<br />
+&nbsp;<br />
+Official Social Media Channels<br />
+<a href=3D"https://www.linkedin.com/groups/76653/">https://www.linkedin.com=
+/groups/76653/</a><br />
+<a href=3D"https://www.facebook.com/oldlawrencians/">https://www.facebook.c=
+om/oldlawrencians/</a><br />
+<a href=3D"https://www.facebook.com/groups/oldlawrencians/">https://www.fac=
+ebook.com/groups/oldlawrencians/</a><br />
+<a href=3D"https://www.youtube.com/c/OldLawrenciansAssociation">https://www=
+.youtube.com/c/OldLawrenciansAssociation</a><br />
+<a href=3D"https://www.facebook.com/groups/LawrencianMarketPlace">https://w=
+ww.facebook.com/groups/LawrencianMarketPlace</a> <br />
+<a href=3D"https://www.instagram.com/olalovedale/">https://www.instagram.co=
+m/olalovedale/</a><br />
+<a href=3D"https://www.instagram.com/the.ol.nation/">https://www.instagram.=
+com/the.ol.nation/</a><br />
+<a href=3D"https://twitter.com/olalovedale">https://twitter.com/olalovedale=
+</a> <br />
+<a href=3D"https://www.clubhouse.com/club/ola-old-lawrencians-assn">https:/=
+/www.clubhouse.com/club/ola-old-lawrencians-assn</a><br />
+&nbsp;<br />
+#olalovedale #lawrenceschool #oldlawrencian #nevergivein #lovedale #lawrenc=
+ian #olnation #olassembly<br />
+--- <br />
+You received this message because you are subscribed to the Google Groups &=
+quot;OLA_Lovedale&quot; group.<br />
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:olalovedale+unsubscribe@googlegroups.com">olalove=
+dale+unsubscribe@googlegroups.com</a>.<br />
+To view this discussion on the web visit <a href=3D"https://groups.google.c=
+om/d/msgid/olalovedale/015e01d8b870%24ffaee6d0%24ff0cb470%24%40gmail.com?ut=
+m_medium=3Demail&utm_source=3Dfooter">https://groups.google.com/d/msgid/ola=
+lovedale/015e01d8b870%24ffaee6d0%24ff0cb470%24%40gmail.com</a>.<br />
+
+------=_NextPart_001_0160_01D8B89F.1967BF10--
+
+------=_NextPart_000_015F_01D8B89F.1967BF10
+Content-Type: image/jpeg;
+	name="image001.jpg"
+Content-Transfer-Encoding: base64
+Content-ID: <image001.jpg@01D8B1BA.31EB0970>
+
+/9j/4AAQSkZJRgABAQEAeAB4AAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMg
+IyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCACiAvYDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2aiii
+gAooooAKKKKACiiigAooooAKKSmTTxwLulkRF9WOKTaWrAkorGuPFGnW4J81pMdSi8fn0rKn+Iuk
+wttMkYPo0yD+tJSvsm/kwbS3Ouori1+Jukk/fh/7/rV618daZdY2Etn+4yv/ACOabbW6f3MSafU6
+ais+31uwumCx3KBj0V/lP5Gr4II60lJPYdhaKKKoAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoopKAFoopKAFooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
+AooooAKKKKACiiigAooooAKKKKACiiigAoopKAFqG4uorWIyTuEUdzVbVdVg0u2aWZ1GATgnAA9S
+ewryLWPFuo+KtTNnpMhjjIbM5OCwAyQg+nYfMaIqU3aP3ilJRWp1viP4k22ns0NuT5vQIg3Sfl0X
+8fyrg73xNrGrxm48+GxiYtsaV8u5HUAn+gFQW1lYWUXmOl/FdQMJluUAJMZ6M0Z9DwRnNTTW1rq6
+x2trby3cFuS0NzC3lIA53Mjbh2OenPNdEaUIavV92YSnKRQ1zS3trKO6mu7q68zy3EshG1lYZ4Gc
+8dM9K1F0LTLgmS1SIpGjGK3kjeOSR9mVVieG6E8VtWngvU9Us4opI4441iMKtHHgiPOdu9+cc9hW
+vF8LI3Ef2qVpPLGE8yd32/Tpik8RDo/uBUn2OAsrcT6fqU+oafHarDbYEgtj98uADt9QM1Jqei2F
+lYR3jIxSG3gBEX7tpZJMncc52gAV6A/wrtXBDOjZ9Xk/+KqlcfDi8t97Ws0rBlCsnmiQMB0G1x2+
+tH1mHmvkx+yfY497bUNItra8g1UwWF0ivCt2S2SRkqVwenrx1rZ07x5qWh3LwanC8QjYKzxAvHyM
+jg+o54P4VT1XQdVhgFvqMJ1BI5DLGCxhkGQAV9COBwD9Ko6zNd6lpxS3GZM+ffxgFWVh8qrsPO1V
+AwfrVWp1VfRk3lDbQ9f0XxdY6tAjCRF3nAZWyhPpnsfY1vg5r5r0VdQhS5v7CZYUtlBkLnCPk8Lz
+wT7V6b4L+IMd8i21zlZFHMZOSo9VPce3UVhUpSp67r8UbU6inpsz0iimRyJJGrowZWGQR0NPqSwo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKAMa/1t11hNI02Fbi+MfnSl22xwR5wGYjnJPQDr7VXOu3drqjaXfxWyXUls9xbTKW
+8pwuNwYdQRkHvkVWhjk0Txlq95dwzPa6kkLRTxxmTYUUqUYAEj1HbmsvX7PU9WbUdajtJ40t7B7O
+whK/vXMhAklK9RgdB14zQB0Gh6+brwxZanrEltavdDcADtXBJ24zyeMGjQdauNW1XVomNq9paSJH
+DLASd5K7jknuAR0rHtITaeJ4p5rG7ktbfTo4dNXySQGyQ+eysQF5OOKveBUnj0y6N7aSW95Pdyzz
+qybVDMxwoPfCgcjigC3q+r3tnrul6dZQW8v27zCzSOwMaoMk4A5HIH1Na11eW9jD5t1NHDHnG52A
+GfSuWmvSvjq4v57G/a2s7LyIGS1dvMdny+3j0VRUCzXt34osdT1fTblbVbR2tLdYi5jlL/xgcB9m
+OvAyeaAOpGtaaYJJxf23lR43v5o2rkZGT2qb7dbDyP30ebj/AFPzD95xn5fXjmvPmtL258JeIUut
+LlS9vr4tKgh3BIyyplf7xCAnI9a155pm8X6dctp90NNs7ORbTbESZJSVXp/D8o43Y6mgDpjq+ngA
+m9thmQxDMq8uOq/UelM/tzTfsiXX2+2NvISEkEoKsR1we+K5S48Lvd6hpFvdWoMcl7Pqd6VXKK2P
+ljz7kjPrtNI+n3Np4v1KRvPtYWijSxNtZiQBMfOqHBCMWJzkc8UAdedXsB5Wb22Hmrvj/er869cj
+1FPg1C0ubZrmG5heBc7pFcbRjrk9sVydt4ZhPibRoxYyR2Gl2TyKZQG3Su33WbuQMnHTJrMFpeTa
+ZF9psbvyJNae61OIQnlCzbRj+JRiMnGeKAOyutdszps81lqNh5igqjzSgRh8cBsc1O2qW1msMeoX
+dtFcugJUvgE9yAecZ9a5jxJY2+oRx3FvpM5FxeWyXEvkEs0UZLZC9QOAucDr6VTf+0bXSfEzJptx
+ca3dzTbN0ZK+TjEeG6EBeijnOaAO2/tawCwsb23AnGYiZB+8Ht69KdDqVncW8lxDdQvDGSHkDjap
+HXJ7VyMWhpqGpeF4DZSCw0y1aQvLFt3OAERTn/gTYqFIHl07XIb7Sr+Rb/UXNwYV2tFGMKjr/ewE
+U4Gev4UAdnZ6pZagzrZ3UMzJ94I4JH1FPvr2HTrKa6uDiOJdxx1PoB7k8Vz3huO7OsXT3WLyKOFU
+h1CW18iZsnmM8DcBgHOB1qTUFl13xBHYMLy2s7LE5mEW0TSg/KAxBBC9fc49KALfhrXJda0yW4u7
+YWk8E8kEsO/dsKnufpg1ettXsL2YxWt5BNIBnYkgJx649K4+yjnsn8U2bafqV9a3EqyLlNjTK6hJ
+drYAJGM4HXtUmlRXlpfL5EMmr2tnZv8AZ5Lm2EE8LcARByAG3D24xzQB1cesafLdfZo723afJHli
+QZJHUD1px1WxF4LQ3cAuSceV5g3Z9MevtXGaZYzw3Wn2tgk9xYozyC31C02vp7bSVKyYGfmOMc9e
+tQ2unXN14Y0rRlsriPURdxz308sZAjZX3u+8/eLYwMZ4NAHcz6rY21ylvPdwRzPjbG8gDHPTj3qt
+b6mJb+8b7ZYPYW6KCUky8b87t56AYxiud0Wyjk06/sNa024uL+7vXe5zGcON+UYP02hQuOe3Ssv+
+z53fNxp1wlnLrjz30awHBjUERDA+8uVQnAI5oA7pNd0yVXaO+t3CIZG2uCQo6nHpzWVb+L7TVtFu
+bvTLq0icSNFbtePtV2BwCR1wTnHes+3lvX8XavfnTLiMjT1isAYsb1G5iWPQEtgY69KpCyZ/C3hq
+0bTrl0guoWuWaA7sqC7YHXBfAz/SgDtZtUtLN4oby7t4p3A+VnAyfoe2adNqtjbyvFNdwJIi7mRp
+AGUepFcTNaXZ0fxDp8thNNrGp3MqI7RkoY24jbf0CqvbPBHSr1lok0XiPUtTktnlksbCK1tGZf8A
+XuFLM49TnAz9aAOuguIrqFJreRJYnGVdDkEexqWsDwTCbbwnYW7RTRyRxjzPNjKEufmbAPOMkit+
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACq19eR2Vs0shACjPJxVgkAEnoK8j+J/i
+k3FyujWsoUNjz2J4VT0U/XqfwoUXOShHqJyUVzMxvEGvXHjLVpIYGmXTIWzJJHGWJ9GYD+HPT86P
+t1oNGeCVJ7aa1ljVra3kClHGdskW4clu/epbG0n0azc3drCIoYnU3un3aiQA85YZ+bnHvWt4P8NX
+mt3yajq0jyXOwAysAGjTHH/AyO/Ye9dMpQpRstkYJSm7vdjtJ8NXXiG6kmngW3ikffLCCcFiOTIR
+1J/uDAHevQ9M8PWWmxpsjDuvRmA+X/dHQfhWhbW0VpAkMCBI1GABU1cjvPWf3dDdJR2ExilopKoY
+tQ3NzHaQPLM21FGfc/SsPXPFsGkTeQkfnzBl3oGxhWBIOfqK4291vV/EpVIoXQMw+QZACMQVb1xw
+QSKDOVSKPSURNRskN1bgCQZMcgBIHv71y/iHwNDe20gtN2GXBjD7WA/2W/ociuss/tH2VPtnlifH
+zCPO0fTNTVPLrdaM03VmeFzaQkRsdJ1LzYbOOYgPCoVZWPP7zPKvgYHb0rOFhLe28l3ZaadPuI7l
+IrQRFg0jEnK8nkgDORXs/iTw5FrFrIViRpiuCp6Sj0P9D2NeSOkuh6jOs66heSyxtDYlWy0WeHHP
+RwOOPXNdVKq5aPf8zCpTUdVsdn4A8Z/a1ezvv3dxGcSIePbcB9eo7da9GBzXz5d2VxozW+oWyR2t
+7bqHa2WQyN5ecb3PTJPBFex+Dtei1vR4pUP8PQnkdiv4Hj8qxqQ5HeOz/BmsJOSs90dDRSUtSUFF
+FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUU
+UAFISFGTwBS011DqVYZUjBB7igDOsvEWkaldtbWGp2lzOoyY4pQxwPYVeguIbkM0EqSBGKMUYHDD
+qDjvXmt/Omg/8JJNpsEUEtxexWFqIlVPLCxAyMPTALEn2ra8PajbaXdaXoGiwxXUU1ub26uUfCor
+fdb3LHjnnFAHXy3MMDxRyyojTNsjVmwXOM4HrwDUtcvqcBu/iHo25h5NjaT3LA9AxKoD+ppYvHuk
+zHU5I5QbTTovMeYMP3h5GEXqRxjPc9KAOnxRiuYi8dWFxvaBHdIzh8EEk7A21R3OWVfqfaok8dRX
+d1pcVnat/pSPPdee2w2kSEqxb33DFAHWYoxXNaX4/wBC1NHP2tbYr5jBbj5SUQ4L+w+vNRyeMzNc
+6ZBp+nTvLqEx2LP+7PkLjdNjqBzxnGaAOmmljt4mlmkWONBlnc4AHqTTLW6gvbaO4tZUmgkG5JEO
+VYeoNct8QLaRrayvZrb7bpNnI0moWYJy8ZXG/HfZ1xU83jDS7Oxuf7LiM9vZWpkMkK4hjO35I8/3
+jkfKOmeaAOjW4he4eBZY2mjAZ4wwLKD0JHbNS4rzzw5rGn6Bokmq3sjXer6jP5ckEHzzPKOsYHqM
+nPYdO1ax+I+j77URpdyCZFeUpFkWoZtq+bz8uTQB1C3ELXDwLKhmQBnQMNyg9CR2zipcVyPgKzae
+O+8Q3CkXGryeYMnP7pSQn4Yrr6AExRilooATFGKWigBMUYpaKAExRilooATFGKWigBMUYpaKAExR
+ilooATFLRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFJQBk+JtVj0bRLm7kPEaFsevt
++JwK8BgtH1+S4uJL+3W/lk3CGZ9vm55OGPHsAa9E+MeqMlra6bGfmnbewHcL0/U/pXIromlXcKeX
+c27tCqiVEl8uRVCkyMysPmOemK6KCtFzfX9DCq+aXKuhc0vRZb6+0+0uoXNzZoBIsn94n5IzjjAx
+uPtXtGm2EenWSQR8kcs3dmPUmuH+GWjiG0S5kBLhd5Lddzev0XaK9DrCcuebfRf0zWEeWIUUUUig
+rJ8RXb2mmOyA4IO4jrtAyQPc1q5rkfFwni1GFwrTRSphY+SAw6+w4rDE1vY0nUtexUI8zsclrF7p
+V/o8d1bsBcCYKI2YlmjHZh9T1PvXTfD+LWGh36ruWGJNluGjGSp5+/1I9qpaTbPda1aqbUQPuLM2
+MkqOvP6V6CihFCqoCjoAOBWeDxH1inz2t+JE6LhUu2LS0UV1jEriPHWgmWP7bbHynLA7x1jlH3X/
+AKH2NdxVe+tUvbOW2lGUlUqal3Wq3Q9HozxCHYzWqW+mXV7JMWR4ckQ27E4kGByTnnk46VZ+Hmsf
+2N4on0wy74HkbyyDkFl4/UfyFNu7J7bxJJA6oIbpS1w8kzRBPL4c8EZyMHFc1eXVlZ6rDc6HHKIr
+VlPmuTiRxySB2B9K7LKrCy6nLdwlfsfSikFQR0I4paoaLdpe6VbTxnKugIP1Gav1yI6WFFFFMAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiik
+NAGRe+FtL1BkNzAXC3RusbjhnK7Tn1BHUdKWDwnodrdwXNvpltFNb58p4027c89qbod/cXt7rEc7
+hltr0xRADG1dinHvyTUc3ihBJcG10+9u7a2YpNcQqpVSPvBQTlsd8A0ALrHhLTdcv1u737Tv8kwM
+sc7IrpnOGAPPJplt4J0CzgSK306JDHA0Cv1bYevJ6nnqavWuuWd5fR20DljLbi5hkx8sqE4yp9uM
+j3FVj4otDZi4hjnm8y4a3gjjXLTsuQSvP3eDycDigA0TwnpHh9HXTrURl1RWYncTsGB16Hvx3qO3
+8FaBbG3ZNOiaS3JZJZMs+Sc5JPXn16VPbeIoGkuIr+GXT57eIzOlxjBjHVwwJBA7+lY2veLZ4fDs
+93b2N9aJIo+z3UiLgkkAZXJKg54yPyoAvyeBtAm0YaZLYI8ALOGY5kDt1fd13e9TDwhpDGB7q2N3
+PCwZbi4cvJn3b09untUl3rohv3srOzuL64iUPMsO0CIHpksQMnsOtZr+KF1Gex/s7z4guqCzuUlj
+2t/q2Yrg++PyoA1dX0C21qSD7ZLcmCEktbpKVjl/3wPvD26VnN4B0Vra6thFMtrcsX8hZSI4mPVk
+UcKeOvbtU8nimMLLPDYXtxYQsVku41UoMHDEDO5gMHJA7HrW1DMlxCksTB45FDKw6MDyCKAMWXwV
+oUnllLBIXSQSeZATG5IXbyw5OQTn1pE8EaClwJF0+MKFRfJBPlHYSVJToSMnk1H4te/tY7Sex1KW
+2ElzDbsixowIdwCeQTnBqEazd6f4nm0si61F1sopERFQEks4ZmPAHRRQBs6Xoen6KJRp1uIRK25g
+GJH4ZPA56DitCsUeJ7NtMjuljuDJJMbdbUJ+9MoJBTHTIwcnOMc5qaw1tbq9ayubSeyuwnmCKbB3
+pnBKspIOCRn0zQBqUVzHiPxFd6HrmnJHbmeykilku1QZdFUr86jvjPI9Kk1LWGOo2SWt1iyubG4n
+MkQDE7QpVlPtk0AdHRXJ6b4gFtJcy315JJYwafazK8iDexfdyQP4mwOB36VdfxUttLapf6Zf2gu5
+khgaRFIZmPAOCdp9jQBv0Vy1r4kjtHS0zfaldXVzcrCpjRSPLbDLnIAUZ4JpbPxALWLyl+3anczX
+NwEjKorIEb5gOQCFyAO5oA6iimRP5sSvtZdwB2sMEexHrT6ACiiigAooooAKKKKACiiigAooooAK
+KKKACiiigAooooAKKKKACiiigAooooAKQ9KWkNAHiPxFl+3/ABEjtfNKrCqJuC7tpPzE471DfXVx
+d2iQx6tp+oB8QysYwJyXfHGVBGBUPim9Sz+Jt9dTgssUvTGc/JgZHpzVCw1SG91OyhXS7K2c3KN5
+sCsGwD05J612Rj7iOVy95nt/hSBYdFRlH+tdmz7ZwP0ArbrN0AAaDZY/55CtKuCn8KZ1vcKKKKsR
+zHilr/8AtXSltUu5LbMhuEtm2sRxg1yrWnie41WbdFeCwBYqsx3Hb7c5zXoWoskTRSynEWGjc+gI
+/wDrVzVtrWlNviW+jeWdGiQNGygHp83PQ9qr2qgrNIccNOq7xvZdjl9uuXdulxoP2worGN848wN6
+E9CPpXVaO2of2/Yb4dQhtzAwm+0SblaTHbn61Vsriz0HSYdM1G78q7LmUjYWWPPY49RW9odxb3yW
+0lrJ5iIHkY7SvJ4AINJVlJWsrl1sI6UnKN3Ho31/4c3qKKKRmFIaWigDy3xvbJB4mjkMSv8Av1IU
+oHB8xSv3e/Kg4ritZg8RSac7anHss4mDBfLSMZzgEKOe9d58U3Ns32mMDzI1icZ7kPxXmE+sTTRv
+GI4UjZDGAFyVUtuIz9a6MMm4L1f5nPXaUnc9r+GF2brwXabjlo8xn8CQK6+uA+DxJ8KSDstw/wDS
+u/rGatJm0XeKCiiipKCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAKQ0tJQBzWnDUdK1fVQdKnmhu7zzkmjkjxtKKvIJB7Gm2I1XQLKTTYdLe8CS
+O1rOkiqjBmLDzMnIIzzgHOK1L7X4LS9+xRQXF5dhQ7Q2ybiinoWJIC57ZPNP03W7bU5JYUWWG6hx
+5tvOmyRQehx3B9RkUAYN54VvofDOnW+l3CJqliNqzEYUh+JB9MEke6ipda8Lp9l0cWdp9qi0vKfZ
+vM2GRGXaSGyPmGAeevNdTkdO9VF1KJtWk08B/OjhWcnHy7WJA59flNAHLp4XXU479Y9KGmRy2rQR
+STSGSYsxBORuIC8Djqak1o69rHhybTI9G8q6dVWWR5k8rAIzs5yc44yBiuvz+dG7jNAHPeVfaLrV
+/PBYSX1rfssuYXUPE4UKQQxGVIAII6c1m2ejavJeC5vLWOJn1kXZRJAwWLydg57nOAa7PNG7vQBw
+MHhhtOsn0/8AsA3k6llhuvtJWF1JJDON2R15ABzjjrXVWMj2d3baTDaBYILQM8qZEaHoqKD9CevA
+ArUzSA0AZPiWwuNQs7SO2QO0d7BMwJxhVcFj+QogsJ08W3t80Y8iW0iiV88llZyRj8RWvmjNAHE3
+fhe6mL3MtotwYdUnuVtjLt82J1C5DA8MOoz/AFq/oekImsG9TRRYQxRFI2mlLzMxIzgBiFXA+prp
+84GTVWLUoZtUuLBQ3nW8aSOSOMNnGD/wE0AUbzT7iXxXpt6qA28FvPHI2ehYpgY/A1jy+Erq01xp
+dPcHTGtbhUtjx5EsgGQv+ySM47H611d1Oba2eYRSzFRny4hlm+grP0bxBDrnmNb2l5EiFlLzxhVL
+KcEDnqCDQBzU2g3NtYSS3ckFr5VpYCOSZxs82EklWPYZIGferGuX+o3s2jQS6ctoH1GBm3zq7PtO
+TsC9gBkk44rr5USeJ45UV0YFWVhkEehFUbLQdL02fzrOxghlIwHVOQPQeg9hQBjaVod7ba7bXM0Q
+EUct8xbcDgSSKU/MA1VudGuo9Mmhl0qe4na8uJ7ea3nVHgZmJRgSRjIPPX3Brs93X1Has2x12O9u
+YbZra5triWBpxFOm0qqvt55655+lADdPvL0XMFhdReZJFaJJc3I4UynjaB3zhj7ceta1N9qXPSgB
+aKTNVP7Sh/tYadhvPMH2gHHy7d23r65NAFyikzS0AFFFU9S1S30qKJ7gsTNKsMaIu5ndjgAD9foD
+QBcoqK6uYbK1lubmRY4YlLu7HAVRyTWbN4ktUtrKWGG4uXvk8yCGFMuy4B3HJAAwR1PegDXoqnpm
+pwaraefbbwA7Ruki7WRwcFWHYis+58V2VtPMGhunt7eTy57pI8xRN3BOc8Z5IBA70AblFY194ltr
+K6lgS3u7prdBJcNbR7xCpGRnnrjnAycU658SWsbQJaxXF9JPF56Lapu/d/3iSQMHt3NAGvRVbT9Q
+t9UsYru0ffDKMqSMH0II7EHIqzQAUUUUAFFFFABRRRQAUUUUAFIelLSGgD5++JEBg8eajn+Mq4/F
+RWDps3kapaSnokyE/nXcfGGzEfiK2u0wVmh2MQejKeh/A1599K7qT5oI4qi5Zs+lPDcm/QrcZyUy
+n5HFatcd8PNVW/0oLnl1WUD3PDfqD+ddjXnxVly9tDuvfUKSlrnPGGqXFjBZWtjKIrq9nESv/dHe
+tIxcnZESlyq7N64gW5geJs4YdR2PY1z08MiXc5cbJWTbiNVBc4428ev5GnjQ9RLhnvR0wR5kh/XN
+ZNlrhsNVudG1qS5urlH328kachcZ4PWn7PmTtqCq8rVyDw/IbrQY45CZZEmb5GUFj83HJ6nOeldt
+ZW7QqzyACWQ5bb0HoB9K5HV/E9lplt5FoLpdRuFAhdogSoJxwOg/KrEXhjXDYzpPrrvPKQ0cp3Ax
+fTB70Qo8sVzOxdfE+1qylFefodfmlrjvDt3qWm+JJtE1e/8AtjNCJopCOntXY0px5XYiEuZXCkpa
+a7BVLE4A5JqSjyj4s3IaSdAf+eMf4/Mx/pXl9db8QdT+3amig/eZpj9D8q/oP1rkTwK7MMrU156/
+ecmId6jPcPhFCY/BokII8y4cj3HSu6rn/A1gdN8HabAww3lB2Hu3P9a6CuSTu2zqirJIKKKKQwoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACkpa
+KAOb8NOkGra5aXBC3z3rTkN96SJgNjD1AAx7EVV1y4d/E6S6SBLeWGn3DTleQNwHlo3uWGce1dDf
+6RYaqE+3WsUxT7rMOV+h6ipLLTrTTYPJsreOCPOdqLjJ9T6mgDjrmw0+28FprVpcOdS8pZo73zCZ
+JZjj5T65Py7fwxU0lkkXi/U76C0U6gmkpMg5P73Mnb8AK6KPw9pUV99sjsIFuA28OE6N/eA6A+9X
+RbQi5a4Ea+eyhDJjkqDkDPpkmgDhL7TtJ/4V3Pq5u3W7eyaVtQ80+a0pXkZz68bfwxV/T4INa1l7
+XVsyrb2du1tbOx2MGX55MfxHPGe2Pet1vDWjvcSTvpts0kmd5KDBJ6nHTJ9alvdE07UY4o7uzilW
+EYjyOUHoCORQBz2qxWljZ2lhZ3kiadNqAhu2WcnyQVJ8sNnKAsFHXjd702/0+w0jxd4disH+zPNL
+LvtY3O2RRE3zFfY9/eumj0mwisGsY7SBbRgQ0IQbTnrkd6is/D+lWDo9rYQRyI25XC5YHGOCeehN
+AHDR6Ykfw7tdUjmnGp+ZGVu/MJkQNMFwPbaSMVqaxYRaRqf2fS0eL7Zpl2JFVifMZVUqx/2uTz15
+rrP7Ns/sS2f2aL7MuMRbflGDkcfXmpGtYXuI52jUzRgqjkcqD1wffAoA5i+uRL4V8PmGbc89xZhS
+rcvypb68A5/Gq1jotrqUHiG4vjJPIt9cLCWkP7gADGzn5TnnNdLbeH9Ls7w3dtYwRT5JDqvQnrj0
+z7VajtIIVlWOJFWVi8gA+8x6k/WgDjtMceIb7TINacyxHSoriKFjhZ5DkOxH8RGF47bs1Z8PpZaf
+4w1+O2uB9nhgt9ys+Vg++SoJ6DvjtmugudE067tIbW4s4Xghx5SFf9Xjj5fT8Kik8OaY9jNaR2kc
+MMyqkgiG0uoOcE9x1/M0AaasGUMpBUjII71wkFzNa+Bbt4ZWhVtSlSWZPvRRtcEOwPbAJ57da7sK
+AoAGAOgHaoYrK2hgeGKCNYnLFkC/KxY5bI980Ach4g0rS9I/sWTT3+yyy6jboFilP+kru5Dc/N65
+/wAapyaZFN4b8SalK8rXkF1dvbymQ5tyjErs9ORn3rrrfw1o9q4eDTrdGDBlOzO0g5GPTn0q59gt
+fs81v5EfkzljKm3hy33sj3oA5Y2UWl3vhy7ty4uruby7mUsSZw0TMd3ryAR6dqwI5ZDo0knmv5v9
+g3hD7jkHzuOa9Jezt5PJ3wofIO6LI+4cYyPTg4qH+x9PEZj+xw7DG0O3YMbGOSv0J5oA5qfS4NHj
+0G8td4u5LqGGadnJaZXUhg3r6+2OKXR9PsNXsbzUNXbdfLcSrNI0hVrTaxCqvPyAKAffOea6uS0g
+mWJZIkZYmDxgj7rDoR7iqlzoGl3l4Lu5sYJJ+Muy8tjpn1/GgDi/DxTU7Lw5Y6hcyTWE1tPIpdyB
+dSiTChj3wpLY7/hTdbs7aw1nWrfS5WUpobuYEckQnzM/L/dyBnHtXcy6Lp09gtlJZwtaqcrFs4U5
+zkeh57UWejafp5zaWcMTbShZV5IJyQT359aAMrWrgSr4dFvLuM19Ew2N99AjEn3GK1tQl1CIR/2f
+awTk53+bMY8emMKc1HZaBpenXJuLOxghlII3KvIB6geg+laNAFDT5tTlkcahaW8CAfKYpzISffKj
+FcvfJfah4i1TU47+C2/sRPLt4Jowy5KB2kbnjd90Edga7es+90HTNRuVuLyyhmmUAB3XJIHQH1H1
+oA5PXtQutdsbZbjS77+zHshdTCOPcJZCuVjPI+Vep9eK1fDl9Dd+GdKsBNNZ3k2noY8oA+1QAWXO
+Qe3+FdI0aPGY2UFGG0qehHpVO60TTry0htrizieGDAiUrjy8DHy+nHpQBk+C42tLfUbBpPtBtbx1
+N33uGYBizf7QLYOPSqVhcQW3gHV0uWUPC13HOrdd5d8A+5yMeuRXV2tnb2NulvawpDCgwqIMAVWm
+0LTLi/F7NYwPcgg+YV5yOhPqR2oAwfBbCwtdUh1BxHcQyJJNvOCEMKYJ9uCPwNJ4Z23nhO30uK9l
+sr1rfzg0YHmJEzsUI3DHT8q6C+0PTdTnSa9soZ5EGAzrk464PqPY0t/oun6n5f220im8sYQsOVHo
+CO3tQBm+Cfk8OrbAIVtZpYBKnSba5HmfUnJPvmugqOCCK2hSGCNY4kG1UQYCj0AqSgAooooAKKKK
+ACiiigAooooAKa+dh2/exx9adSHpQB4BNa39xZa5p+ppL9ugmN9GX6uM7Xx+GD+FctXpPjCefSPF
+N3bsqz2suJUjkzgBhztPUc56VzEmnaPd5Mck9i5/hceYn5jn9KdDFRheMjtr5TUqRVSlqmjV+HPi
+A6de/Z3PCkuoz1U/fH4cN+Br2+N1lQOhBVhkEdxXzxD4fuYLiOfT9QspJI2DKRMFIP0bFem6B4sk
+0+0+z3lqzKACnlyoQp7gc9M9KVWcHPni99znp4PERXLKO3od7UFxZwXTKZoUcocqWHK854/KuYn8
+fwRg7bQDHeS5jUfzJrLuviSy5EbWUZ/2d8p/QAVHtIrqbRwNaf2T0HNU79NP2+ZqC2wA6NNgY/E1
+5be+P7ufKi4u3B4wm2Ff0yf1rFm1u8ncskMaMSBvZTIwz0+Z84qHXS2OqGU1JfG7HqZ1rw9Zyb7S
+FJ5F/it4N2P+BdB+dZ958Qo4gRHDbxH/AKbTgn/vlM159Lp2rXrul1JIzoCTG7En8FH9Kqabpx1B
+pkV1jZEyu7gM3ZfxqJVps66eW4eKu3c6y48dk3RuFli88/xw2fPTH3nP9KqS+Pb1yMXeoe+GjT/2
+U1ntpmmRr+8mZSYw3zNyp75H8utNkXSk8wRmAzAt5RLExsuRgt6NjNS5T6s3hQw6+GH4GhH47vVb
+Ju9S/GSNv021bPj24urSS2kv2QSKVLTWw6f7yH+lYKxaXIFMssUZaAgBM4EnJyfbgD8akTTLK6yk
+ZET+XGdwl3De3JGO+APzqby2uOVHDveNvkZOraLfX91NfW7Q3aOckW7bigHQbeuAPaqfhzSJNZ8R
+2dhsPzyDf7KOTWyNJnULcWTuCFVgGO2RSxwP5fka6HwHqLXXiyBLqKN7jY4+0DhyAOjY4b611wxc
+7ckjy8TlNJJ1aT21aPWI0WONUQYVQAB7U6kFLVHlhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABSGlpKAOAeaKfUfECyNrMl7FdMlt9kMu
+E/dqVAx8g5J61csbzW08R/ZDEk16dLt3nMspWGN8sGPAPJPoO1dBpGmSadc6nJJIrC8uzOgX+EFV
+XB9/lpYdMki8SXWol1Mc1vHCF7gqzEn/AMeoAz18UySWUSx2W7U5Ll7QW3mfKJEzuJfH3QBnOM8i
+pV1y7tLqS01a1ijnMDzwPDIWjmCD5l5AIIyPwNVv+EZu4XkurW4hW9TUJbuAsCUKuACjd+R3HTip
+m0jUNSu2u9Ua2ieO3khtoYCzKpcYZ2YgZPAAGPWgCvbeKL+XTbHVrjTY4dOujGpBmJmj3kAMRjGM
+kcZzjmlufFjvfXcFgdO22chikN3diJpHA5VRg9M4ye9WZ9Bml8J2elLLGJYFtwZCDtPlspOPrtqu
++gXtleXjafb6Zcw3crTj7WpDQu33ugO5c8446mgDY0TVoNc0qG/tsiOUHKkglWBII49CDT5prxdU
+t4orZHs3VzNOZMGNhjaAvfPP0pdMtHstPhgmlE0qL88ixhAx74UcCkmF/wD2pbmFrcWIV/PDA+YW
+427e2Ouc0AY/imXZfact7JPHpDGT7S8JYfPgbA5XkL978cZqnoKnXtJvYrXULv8Aspb3bbTBj5ks
+SgbkDHnbu3AHrgV0Gt2l3f6a9rY3AtpJiEeX+JEJ+Yr/ALWM4qG40y4tdNtLfQpI7b7IV2ROP3ci
+AYKNjkeuR3oAx/C1+qahrUTG4tLG22NHb3rHzIxg7n+YkhDjjk9D0pmjapqWs+Jb9nke2tJrBXsU
+2/Mil2AkIPc4yB6Yq8fDj6xcXc+vrCRcW62wt7d22iMNuOW4JJP04FRJ4PFvrVxe2d5cQb7IW8TG
+Z5GjfJO7DEggZHFAFO3H9k+MtOsLeS/VXjf7TcXcjGO7bbkBMkjfnnjHGaarNa61cXWu22pRRTX+
+y2uBcHyUXhYwVVuASOpHU1qf2Zq+pXFj/azWaQ2com3W5YtLIAQDyPlHOcc1DPo+t6lbQ6dqlxaP
+Zxyo8txHu824VGDKCuMKSQMkE+1AFDxZE+kRtepPqMl9NOpjugzCC0TcOHAOAmM5yDmr3iy0gW18
+6FrhtRvGW3tVjupFUuejYBxgDLH6VNeabrtxa3mnG4tJLS6LqLmTPmxxt1XYBhiASAcjtmrcOism
+tQ3UrhrezthBaR85Qn77n3wAB7Z9aAMDUEttMv47TxBe3iaXb2SeROZHVXkGfMZ2XnfjaRn3qXzr
+m++F891czXIlFtLLDLvKSlV3GNmIwclQpNbeu6TLrKW9o0qpYGTfdpzulUchB7E9fYY71Y1exbUd
+DvbGErG08DxISOFypA/CgCN9Si07w9HfXjtsSBWbHLMSBgD1JPA9zWZ4OvNSvJtYbVyFnW7G2FTk
+QqY1YJ9Rnn3zWjdaBaalp1na6gruLXYylJGTDqMBuCKy7bQLrw+NYudL3T3V5KpgWWZ3CDCrltx5
+xgn1xxQBt6y12mjXjacN14IXMI9XxxXJaTf2f9v6Tb6Nd3k1xNG76hFO7khAv3nDfdbfgDGO/au5
+XO0bjk9yBWVo2kS2U93fX0izX95Jl3UHakY+5GuewH5kk0AY19pEEniOx0+wmvUdT9ru3+1yHbGD
+8q4LY+Zv0BrG1TVCk2qvJPe/2tDeiO1njdvs0SkjaGI+QAD7wbnOfau10bS5LF7y5u3WW8vJjJI6
+5wFHCIM9guPxJrHPh/VodJu9FtXsTYXDSATybvMRJCSwK4wzDccHI7UAM8UeII11K30cTzQRhRcX
+9zAjN5MQPC5UHaWI69lBputXtk2tGTW7ueLRzaLJayxSOsTNkl2LJ/EBtxntmrg0XUtMurptIa0k
+iu440b7UW3RsiBAeAdwwBxxz9adL4Yd9F0zRluM6db7RdAghp1UcL7KT19uKAKujWd5r+iaXNqN3
+P9k8t2aMsY5Jxu/dM5GD9zkjuTUekWtzrFpPb29/ONHjvmEcm8mSaELyiv1278jPUgYzWn4l03VN
+UtYbPTZLaO1Zv9KWR2RpE/uKVHAPfvjiorux1+XQTY2P9m2MuRGrRO+1Ischfl4bsOOOtAEGkW0V
+zqesadbzXEmkxeWoPnv8k3JdEfOcAbcjPBJqla28gOu6lpV1LFBbQPbWpuLlnjaRcl5DuJGAcKD7
+Gta003VbXQp9Pto9PssRbLZoXd9hPVjkDJ757nrVi78OwT+FW0O3YwxeSI0bGcEYIJHfJHPrzQBz
+WgajFJrOmJpr38Xn2kkl2L8uBKQBtK7/ALzBuSV4xVXSNV8yfRmjnvRqk92Y7yeZn+zzKM7wpPyE
+HjaFrobrRNT1yS2TWDZwW9tvb/RWZnkYoyZBIG0YYnHPaoxoOrXOn2Ok3jWK2Vo8RM0O7zJFjIKg
+KRhScDJye+KAOqFLSCloAKKKKACiiigAooooAKKKKACiiigAooooA85+KWnobnTb6TKxFjDKwHIG
+c/41yEunWs9rNJbj99HnEcL7gRuAUnPtkmvZNb0e31zT2tLlFZSQwJHQiuBv/hlLExa0eQD/AGSG
+/wADXPUg73SPbwWMgqahOVmjj9T0sWC7hKXAfyyHTac4B49Rz1pItHlmvobWNkLSxiQMRgAEZ5rW
+u/B2qqf3rs+0cGRHGB+RFUJYrhP3E+r2ibAF2NMQQOwxjNY8uux6arrl0mh6aAi26TzXG1SoLIF+
+dfm2nj2birM+jWNn9oR5PMeJl2lpAAw53Dj0xWXKtoXL3WuQM+ckqHcn9Kha70SI5ae8uWzzsQIP
+zOTWkaU3tEwqYqnH46pqSzaZaxutpI6SMSBIFDNGAc4z0II7006uJ0lihtHnaeNY5g3O7aMAjHQ9
+DV/RU8PXMoIkg29snzHH1ViB+QNdvYQeHYlXM0h9pAUX8gAKThJaS0OaWYYdfDeR57Hb67cldqGI
+A5UOQu0kc4B57Vds/Aep3IyTJhuSFjPP4tgV6ZFqOi2S/uZLeMf7C81DdeLtNtkLF2YDuRtH5tiq
+UIvrc55ZrNfBFI5G2+GDHmZnyf70gH8gaW+8DaVpkf8ApEuZDysaOxZqTWvipBErJaSKW9IfnP8A
+30eB+tec6x4nvtXZw7mKJ/vIrEl/95up+nT2reGFc+ll5nHUzasvtfcaF/qWi2k/kw2bXG377x3B
+Cg+gPf61Cl/okx5F9aN2PyyAfyNc97Vq6H4fudakdkBjtIRumnI+VB3/ABrpnhqEY3kYU81xjlZS
+ubttDevE8+k3a3sWGVthO4bhg/K3OcDtmtH4doV8aW6sCrLHJlSMEcVx+u69HL5Wn6Tvt9OtWzGf
+uvK/99vf0Hau4+FU2rarrAub23822to2C3ki4fJ42g/xfj0rh9lqmj1P7S56UoTWrW6PXaWkpa3P
+ICiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACkpaSgDBTXdRu76+gsNKjmjs5/IaSS62bm2huBtP96tGfWLGyUfbry2t3yFZXlA2sRnHNch
+aro/9ua//aepvaSm+4QXrQ5Xy0wcAj860tJ0+1m8TeI5niSUusEYdxuynlDufXP40AdAdUsReLaG
+8t/tLjKxeYNxHXgUl1q1hYzJFd3tvBJJ91JJApP4GuJtbSK2+GWlyxxATrPbybyPn3ecoznr04+l
+aem3WmWF7rMetvBFeyXTuxuQMywn/V7c/eULxgd80AbOoau1syPbJbz24jmeRxOAwKLnCr/FzwfS
+runXf27TLW72bPPiWXbnO3cAcfrXm+mJENMsfs0MkcP/ABNfLR1IZV5wDnpXoHh7jw1pn/XpF/6A
+KALbXcCXKWzTRid1LrGWG5lHUgelFzdwWcDTXU0cMS9XkYKB+JqpLPpq69bwyiL+02gdocp8/lgj
+dg9hnHFZevtDB4i0m51Pb/ZsayAM4/dxznbsZuw43AE9DQBe1HxBbW2gXGq2bxXkUIz+6kBBOQMZ
+HTrVy81Wx08oL28t7dpPuiWQKT9M1w/iB7e7Ou3Gk7XszZIlxJD/AKuSbzBtwRwWC5yR6ite0udP
+0/xDrP8AbbwxXMsgaGS4wFe32gBUJ44O7IHegDYutaiivrCCHZMLuZoS6OCEIQt/T9anfWNPjvRZ
+ve2y3R4EJlG7PpiuE0NYTdWh0+J4YDrl2YQykYBhODg9Bnp7VbtrjRo/BEthfCP+0fLZLi3Yf6Q9
+yc8gfeJLcgj2oA7lJ45JHjR1Z4yA6g8rnkZ9Khl1KzgtTcy3UCQAlTI0gCg5xjPrmuR1JNW0SOxv
+baJpr6/tY7C5287Z8fJKfYEsCfpTdW0v+x9Q0GEXcdrp1rA8aTTQiRBOcfM2SACRuwT3J9aAOztb
+62vYBPaTxTRH+ONww/MVl33iiwhhDWdxb3kgnjhaOOYErvcLnj0zXLT2zXFprs9hevfI6wrc/ZLc
+RxygPl9hBO59mQcew61Z8SXugXlnpCacbeaVL63MItl5iXzBndj7oxxg96AOvu9WsLCRI7y8t4JH
++6skgUn86gm1mJNVsLSELMLsyqZFcEIUXJH9KxNPutN0/U9aXXHgivJLln3XOP3sGBsC56gDjA75
+rC0KPP8AZo0yJ4QbvU/s6upBTIO3OenbrQB3w1jTzffYhfW32rOPJ80b8+mPWoNS1f7IzxwrFujU
+PLLNJ5cUSnpub1PYCuEhigfwnFZTaxCs5ARrVLFTdLPnkgbt2/dzu/HpW54ggmtr62klRJ4luY7g
+iZgizFYyhUsflDA4YA8HmgDa07XftM0cUxtnWU4jntZvMjLYztPcHAJHrirkmsafDeC0lvrZLk/8
+smlAb8q5nQVa61S6RobeFnvGvG8iQSLwoVASvAPc1Bp9zo9p4VnsdWRP7RKyfa4JEzNNKc5YDq2e
+oI7YoA66bV9PtofNmvbeOMqHDNKACp6H6Uj6zp0bQK99bBrgAwgyr+8B6Y9a47whZQzanpE0sIZo
+tAhCbxnblzn8aSHTraLwP4nK267vtF3t+XkBWO0D0A7YoA7S91Oy01Va+u4LcOcL5rhc/TNQ3epk
+LA1gba43zpFJmcKFVucj1OMEDvmufsLqzs/EN3NrckUUs9vCbWa5ICmLYNyqTwDuySOpyKyLH7I9
+xdPp0LR2reIrdkGwgH5FywH90npQB3Gi6n/a+nC68ryv3kke3OfuuVz+OKdca1p1pci2uL62inPS
+N5VDflWJ4X1G2sdGtLa4mEc93d3McCsD87CRzj8hVPRL3RbPw/Nba41tHfBn+3xXABklck5ODywP
+GMZ4xigDrLzUbTT4hLe3MMEZOA0jhQT7ZpRf2rWyXC3MJgkxsk3ja2fQ1zQlsbLxSk+ohIbV7GNN
+PecbUjwTvX5vut93rzgVjXttb6gtz9mi3aPc6xaeUAMI7AjzGUf3Scc9CQaAO3XXNLe2luF1C1MM
+TbZJBKuFPoTmrUFxFdQpNbyJLE4yrowIYexrnJNOtT8RYH+zphNMYgBflyJAAcdMgE4+pqz4TURp
+q0artjj1OcIoGABweB6ZJoA36KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBMVy3izwHp
+/ieMyEeReAfLOg5/Ed66qik11DfRnzl4g8H6r4clIu7dngB4njGUP+FYdfU0kSSxlJEV1PVWGQa5
+HWfhjoWrM0kcBtJj/FAcDP06VvHEyWk1f0/r+uxzyoL7J4MRmtLR1nuZpYkvLmERwvKPLYn7ozjr
+3rtr/wCDOoRMTYahBMvYSgqf0rIPw28V2TsYLcZIKlopwMj0rX6xTa3t66Gfspp7EieH7pjGkmvX
+JkkUMqK5+Yfxc57dx1rmtbszZapJAZ2nQBWWRm3ZBGa6JvA/jOVSj28xU44M47fjUtv8KfEl2+64
+8iLPVpJdxpKvTT+JDcJNWUTiadFFJNII4kaSQ9FQZJ/CvVtM+DEK4bU9QeT/AGIV2j867nR/Cuk6
+EgFhZRI3dyMsfxqZYpfYX6f8EccO/tM8v8LfCu81Fo7nWiba26+SPvt9fSvXNO0u00qzS1soUihU
+Y2gdfrVvFLXO25O8nc6YxUVaJTl0jT53Dy2Nq7jozQqT/KrSRrGoVFCqOgAwBTqKBhRRRQAUUUUA
+FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
+lLRQBG0ETHLRoSe5UU4KB0Ap1FADdgxjAx6YprwxyMrOisV5UsoOPpUlFADdi+g/KlAwMUtFADdi
+7g2BuHGcc0MiupVgGU9QRkGnUUAMWJEjCIqqg6KAAPypJIY5dvmIr7TkblBwakooAbsGc4GevSmm
+CMyiUxoZAMB9oz+dSUUAJikeNZFKuoZT1BGQadRQA1I1jQKihVHQKMAU1YI0LFI0UscthQMn3qSi
+gCN4Y5CpkRWKnKllBwfanbBnOBn6U6igCPyI/N83YnmYxv2jP505kV1KsAynqCMinUUAMjiSJQsa
+Ki+ijArDl8NXLLJBHrV2lpJkGMqrSKp6qshG4D9R61v0UAQ29rFaW8UECBI4kCIo7KBgCpNgwRgY
+PUYp1FAEckMcqhZEV1ByAyginbF9B+VOooAb5a5B2jjpx0prQRPIrtGjOvRioJH41JRQAySFJVKy
+IrqezDIpdigAYGB0GOlOooAbtGc9/WlCgdO9LRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
+AFFFFABRRRQAUUUUAJRilooATFGKWigBKWiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
+KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
+KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//2Q==
+
+------=_NextPart_000_015F_01D8B89F.1967BF10--
+

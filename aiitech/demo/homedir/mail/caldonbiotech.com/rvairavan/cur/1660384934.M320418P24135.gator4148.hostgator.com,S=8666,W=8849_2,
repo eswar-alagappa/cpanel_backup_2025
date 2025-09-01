@@ -1,0 +1,183 @@
+Return-Path: <lucyparker@organicwebsolution.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id GJPjEaZ292JHXgAA7/vpDg
+	(envelope-from <lucyparker@organicwebsolution.com>); Sat, 13 Aug 2022 05:02:14 -0500
+Return-path: <lucyparker@organicwebsolution.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Sat, 13 Aug 2022 05:02:14 -0500
+Received: from mail-yw1-f194.google.com ([209.85.128.194]:45838)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <lucyparker@organicwebsolution.com>)
+	id 1oMny9-0009eU-RB
+	for customersupport@caldonbiotech.com;
+	Sat, 13 Aug 2022 05:02:14 -0500
+Received: by mail-yw1-f194.google.com with SMTP id 00721157ae682-3246910dac3so29642547b3.12
+        for <customersupport@caldonbiotech.com>; Sat, 13 Aug 2022 03:02:08 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=organicwebsolution-com.20210112.gappssmtp.com; s=20210112;
+        h=to:subject:message-id:date:from:sender:mime-version:from:to:cc;
+        bh=AXilQ0jjeVzQpLUPmQCVz5wgXf0HRhZMPWVmR2LYLLg=;
+        b=jdQo4Id4Np9OwDH784P7byCbpfOBlpEJ7Uqv6gMupQtJJ2mtZIFjMaXZjIXdJvK6fZ
+         NkmR1FLuUya7bl+0JfWzND0jtrSmpW7OcGuxVg5g0Jam199RfP9WBTuFWblplvUpamGa
+         tyVFk4ZVT831KNcx3vOfBuYlAuw+ePT5fMYNG/abvuoG6OJlIMDPjj6Yd7FN3wBrCpe4
+         u3mP7C0CYDTG/pdo/bfesqTxAlwfJyp/aSpqPUhy4ADUdODYmfGfxgqeUhfkoRLdcP8r
+         5laB+1VWiNCF9TfapWM33IjSOO/o8crVrFfIsV1Uy3CQBEZF6LDyqT+8ReBjIRKClVi0
+         aFYA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:sender:mime-version
+         :x-gm-message-state:from:to:cc;
+        bh=AXilQ0jjeVzQpLUPmQCVz5wgXf0HRhZMPWVmR2LYLLg=;
+        b=wIv7aY1myfTbIMo7N4l5nu+qWX96xuXYLVokG+sVCvFLhK+blrow5EWbaWZOwwA6y2
+         ZOvCexmyw/+sN5pKkbDUzYeD7yrFWMfoDWbIyKDDoMjKjIrwcRtgW49f9aW4R/zkbXhH
+         LCIqgCqUWnRlT7OU3BM9C9+c+N6xi58HHIJsAHYGsv1tj6l6ANTF4uO1BWM1rF3gK+ga
+         g8jdDiREzp58QeIS57Ri6ixh3OwBESQqJ7jOLWAhoMkvxawrBnUtvJ+riE6DSa5nFUGO
+         aMzomsv4IVbFA67aJiIDJr9L+YVZkqJJXXHgJBF+2wQIh6seaCyJ3QucWQPFZ5fYX64f
+         eg6w==
+X-Gm-Message-State: ACgBeo189AxZkucZz07iRTdzBMAp/QSRLYm8fGQnZM8G47d7splQVtCG
+	ByhuX7xWpi8SdaqaszbTrN1qgvVCq0/dO5mIET15HBohids=
+X-Google-Smtp-Source: AA6agR6m/E1lQHeh2p9m/pVP3qU9i2o+BtD1Yy/YT97BT/kOPo91MQcXhBwV40GwrlDTgg39iWZ/N/8ckSLr829KXsI=
+X-Received: by 2002:a81:bb41:0:b0:328:fd1b:5713 with SMTP id
+ a1-20020a81bb41000000b00328fd1b5713mr7007237ywl.238.1660384922370; Sat, 13
+ Aug 2022 03:02:02 -0700 (PDT)
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Sat, 13 Aug 2022 03:02:02 -0700
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Sat, 13 Aug 2022 03:02:01 -0700
+MIME-Version: 1.0
+Sender: lucyparker@organicwebsolution.com
+From: lucyparker@organicwebsolution.com
+Date: Sat, 13 Aug 2022 03:02:02 -0700
+X-Google-Sender-Auth: lu-tX2aU84qKxQ96_JYALDS3exs
+Message-ID: <CAL=0YmvHOgehe_kQDj+sBjqdQ_fOdKZRaZ09_c-7oM7=BNxx_g@mail.gmail.com>
+Subject: Re: caldonbiotech. com: Optimize your website!! Affordable Price with
+ Great ROI
+To: Customersupport <customersupport@caldonbiotech.com>
+Content-Type: multipart/alternative; boundary="0000000000007d07e505e61c7d91"
+X-Spam-Status: No, score=2.0
+X-Spam-Score: 20
+X-Spam-Bar: ++
+X-Spam-Flag: NO
+
+--0000000000007d07e505e61c7d91
+Content-Type: text/plain; charset="UTF-8"
+
+Hello *caldonbiotech. com*,
+
+Hope you are doing well.
+
+I was looking for Keywords and found your website on page 3-4 of Google. If
+you were on page #1, you'd get so many prospects/new clients every day.
+Most of your targeted keywords on page #3-5. You're so close! Do you mind
+if I sent a *SEO Packages* and *Price list* of your site to see why you're
+not on page #1?
+
+I can send the *past work details* in a couple hours. If you have any
+questions, feel free to ask me. I have more than 10 years of experience in
+digital marketing.
+
+Can I send it over?
+
+Look forward to your reply.
+
+Kind Regards
+
+*Lucy Parker**! Business Development Manager*
+
+--------------------------------------------------------
+
+*Note:* - Our next conversation will be on my corporate Email ID. If this
+is something you are interested, please respond to this email. If this is
+not your interest, don't worry, we will not email you again.
+[image: beacon]
+
+--0000000000007d07e505e61c7d91
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><p class=3D"MsoNormal" style=3D"margin:0cm 0cm 10pt;line-h=
+eight:115%;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><span=
+ style=3D"font-size:13.5pt;line-height:115%;font-family:Cambria,&quot;serif=
+&quot;">Hello
+<b>caldonbiotech. com</b>,=C2=A0</span></p><p class=3D"MsoNormal" style=3D"=
+margin:0cm 0cm 10pt;line-height:115%;font-size:11pt;font-family:Calibri,&qu=
+ot;sans-serif&quot;"><span style=3D"font-size:13.5pt;line-height:115%;font-=
+family:Cambria,&quot;serif&quot;">Hope
+you are doing well.=C2=A0</span></p><p class=3D"MsoNormal" style=3D"line-he=
+ight:normal;margin:0cm 0cm 10pt;font-size:11pt;font-family:Calibri,&quot;sa=
+ns-serif&quot;"><span style=3D"font-size:13.5pt;font-family:Cambria,&quot;s=
+erif&quot;">I
+was looking for=C2=A0Keywords=C2=A0and found your website on page 3-4 of
+Google. If you were on page #1, you&#39;d get so many prospects/new clients=
+ every
+day. Most of your targeted keywords on page #3-5. You&#39;re so close! Do y=
+ou mind
+if I sent a <b>SEO Packages</b> and <b>Price list</b> of your site to see w=
+hy
+you&#39;re not on page #1?</span></p><p class=3D"MsoNormal" style=3D"line-h=
+eight:normal;margin:0cm 0cm 10pt;font-size:11pt;font-family:Calibri,&quot;s=
+ans-serif&quot;"><span style=3D"font-size:13.5pt;font-family:Cambria,&quot;=
+serif&quot;">I
+can send the <b>past work details</b> in a
+couple hours. If you have any questions, feel free to ask me. I have more t=
+han
+10 years of experience in digital=C2=A0marketing.</span></p><p class=3D"Mso=
+Normal" style=3D"line-height:normal;margin:0cm 0cm 10pt;font-size:11pt;font=
+-family:Calibri,&quot;sans-serif&quot;"><span style=3D"font-size:13.5pt;fon=
+t-family:Cambria,&quot;serif&quot;">Can
+I send it over?</span></p><p class=3D"MsoNormal" style=3D"line-height:norma=
+l;margin:0cm 0cm 10pt;font-size:11pt;font-family:Calibri,&quot;sans-serif&q=
+uot;"><span style=3D"font-size:13.5pt;font-family:Cambria,&quot;serif&quot;=
+">Look
+forward to your reply.</span></p><p class=3D"MsoNormal" style=3D"margin:0cm=
+ 0cm 0.0001pt;line-height:normal;font-size:11pt;font-family:Calibri,&quot;s=
+ans-serif&quot;"><span style=3D"font-size:13.5pt;font-family:Cambria,&quot;=
+serif&quot;">Kind Regards</span></p><p class=3D"MsoNormal" style=3D"margin:=
+0cm 0cm 0.0001pt;line-height:normal;font-size:11pt;font-family:Calibri,&quo=
+t;sans-serif&quot;"><b><span style=3D"font-size:13.5pt;font-family:Cambria,=
+&quot;serif&quot;;background-image:initial;background-position:initial;back=
+ground-size:initial;background-repeat:initial;background-origin:initial;bac=
+kground-clip:initial">Lucy Parker</span></b><b><span style=3D"font-size:13.=
+5pt;font-family:Cambria,&quot;serif&quot;">! Business Development
+Manager</span></b></p><p class=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001=
+pt;line-height:normal;font-size:11pt;font-family:Calibri,&quot;sans-serif&q=
+uot;"><span style=3D"font-size:13.5pt;font-family:Cambria,&quot;serif&quot;=
+">--------------------------------------------------------</span></p><p cla=
+ss=3D"MsoNormal" style=3D"margin:0cm 0cm 0.0001pt;text-align:justify;line-h=
+eight:normal;font-size:11pt;font-family:Calibri,&quot;sans-serif&quot;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class=3D"MsoNormal" style=3D"margin:0cm 0cm 10pt;line-height:115%;fo=
+nt-size:11pt;font-family:Calibri,&quot;sans-serif&quot;"><b><span style=3D"=
+font-size:13.5pt;line-height:115%;font-family:Cambria,&quot;serif&quot;">No=
+te:</span></b><span style=3D"font-size:13.5pt;line-height:115%;font-family:=
+Cambria,&quot;serif&quot;">=C2=A0-
+Our next conversation will be on my corporate Email ID. If this is somethin=
+g
+you are interested, please respond to this email. If this is not your inter=
+est,
+don&#39;t worry, we will not email you again.=C2=A0=C2=A0</span></p></div>
+<img src=3D"https://organicwebsolution-dot-yamm-track.appspot.com/27n-ldsHD=
+RL_iaC4EwZQKz2nrwvG-n7kU1Ix3XLCRwTm3R6eWggE18XOGIbsCKeWzjb8WeNGapbCuA-WDEre=
+Ew-S4YvIMvonLtcjoaTjB26Dx5EgEJbt9_GvQrk4zfn9svHUu4be-eQi0dNHsZH5C1bWoylqwiz=
+ZAeCv6z1Djsw" width=3D"1" height=3D"1" alt=3D"beacon" style=3D"display:none=
+; display:none!important;">
+
+--0000000000007d07e505e61c7d91--

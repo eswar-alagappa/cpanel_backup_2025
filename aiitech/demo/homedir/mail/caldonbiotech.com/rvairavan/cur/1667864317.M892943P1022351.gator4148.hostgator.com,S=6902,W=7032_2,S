@@ -1,0 +1,130 @@
+Return-Path: <bill.hastings@seegenetech.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id KLDjNP2WaWOPmQ8A7/vpDg
+	(envelope-from <bill.hastings@seegenetech.com>)
+	for <rvairavan@caldonbiotech.com>; Mon, 07 Nov 2022 17:38:37 -0600
+Return-path: <bill.hastings@seegenetech.com>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Mon, 07 Nov 2022 17:38:37 -0600
+Received: from us-smtp-delivery-211.mimecast.com ([170.10.133.211]:39616)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <bill.hastings@seegenetech.com>)
+	id 1osBhN-000Wa8-Gw
+	for rvairavan@caldonbiotech.com;
+	Mon, 07 Nov 2022 17:38:37 -0600
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=seegenetech.com;
+	s=mimecast20221010; t=1667864306;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type;
+	bh=gYwpUs8bQd0e5li291VNkJ0+GkEzb358w+vx9h32TLA=;
+	b=hFo3aSTeIoIacbjvXbcJqf0OVycPtUwq/mDsTRv7uGTfrlK0KuVHc4DtvUxPo4E93yJzQN
+	cwwhq4F3PKjRFAiw9zrzFMKxFV3UciPnUb4YUJlyGI1aWzSXFYwYqK07kIu3F6JL+tH4W1
+	abAx0MNNUXx949tIn2cdBpsCGlJRD1g=
+Received: from mail-pj1-f70.google.com (mail-pj1-f70.google.com
+ [209.85.216.70]) by relay.mimecast.com with ESMTP with STARTTLS
+ (version=TLSv1.3, cipher=TLS_AES_128_GCM_SHA256) id
+ us-mta-248-rWI6fc_NN2WLX9N7Jey8IA-1; Mon, 07 Nov 2022 18:38:25 -0500
+X-MC-Unique: rWI6fc_NN2WLX9N7Jey8IA-1
+Received: by mail-pj1-f70.google.com with SMTP id r9-20020a17090a2e8900b0021409b8020cso11315753pjd.0
+        for <rvairavan@caldonbiotech.com>; Mon, 07 Nov 2022 15:38:25 -0800 (PST)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=JbPZA6Z1XNpDeKXzNpGtMatsl7NF6znLCDTeiTToNeo=;
+        b=RfnJIBD0ioVHtz2nOMQMrUwQN62I+TRRhltuvSFTG4la1k6/pgNmnvI924kfQqRfh6
+         cfNx/mwiZ+0vHoVdFqLy0411/FEggIEuOIzNStHyiF+oWMCAG+4E63aRz3hhrEzh0Pv2
+         vxe2kWbl+HmRkGQLDrursSKUDsQHw6amYtwcu6F+972WccoqUnsXIpEb4jhZ+IHqS1oz
+         ciTPJo2OPKeaUthXQAea91LyxXfTfETz0V9isgN6E8Aebq1Cd/ieaJjBBEZpJ7SlCzbr
+         tQuTQPxik0JYqOO2P6qiFPX9oGpX6PWvFNy7/4oF8kJ1zN0Dz4doMCV5YMSFcS2qqk1C
+         tgbA==
+X-Gm-Message-State: ANoB5pmpDfCvf8H/dKIxkJQ2aiapGxrgsQAmF/yv/O5x89fbu/3X5kFv
+	I/Wp+epULyFmoCRjuY9c5L353hDv0fUXpRKAaNy0DSUV6JYi+XSofEZIkDf7Zm/F7cO2/d8FHln
+	uFgIez54zeWGnqCm3U+fV+4IhMwaLJtPXkhzZhA4=
+X-Received: by 2002:a17:902:a98a:b0:188:86ff:a888 with SMTP id bh10-20020a170902a98a00b0018886ffa888mr4053115plb.124.1667864303979;
+        Mon, 07 Nov 2022 15:38:23 -0800 (PST)
+X-Google-Smtp-Source: AA0mqf7ZR0hN0mKk5quYvIvtOM3jek+pazqiVe1FzhFxR9JaCU8HcsL71G2H++ZihB9Jifq/M0mHBGzTceZSHXwoBoA=
+X-Received: by 2002:a17:902:a98a:b0:188:86ff:a888 with SMTP id
+ bh10-20020a170902a98a00b0018886ffa888mr4052801plb.124.1667864303480; Mon, 07
+ Nov 2022 15:38:23 -0800 (PST)
+MIME-Version: 1.0
+From: William Hastings <bill.hastings@seegenetech.com>
+Date: Mon, 7 Nov 2022 15:38:13 -0800
+Message-ID: <CAH5aTcf2ZjqL+3nthucWQgPWLGMVTDZuixuSqeteYuWShApBRQ@mail.gmail.com>
+Subject: Follow up on your interest in Seegene Technologies
+To: William Hastings <bill.hastings@seegenetech.com>
+Bcc: rvairavan@caldonbiotech.com
+X-Mimecast-Spam-Score: 0
+X-Mimecast-Originator: seegenetech.com
+Content-Type: multipart/alternative; boundary="00000000000057ca9205ece9ebef"
+X-Spam-Status: No, score=0.6
+X-Spam-Score: 6
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--00000000000057ca9205ece9ebef
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Please allow me to introduce myself as the new Area Director for Seegene
+Technologies.
+
+I would like to schedule an initial call with you to discuss your current
+or past interest in multiple Seegene assays for serving your client group.
+
+ Please let me know what would be a good time to reach out to you for a
+brief initial discussion. I look forward to meeting your assay needs.
+
+Regards
+
+--=20
+[image: http://www.seegenetech.com/] <http://www.seegenetech.com/>
+
+Bill Hastings
+Area Director, Seegene Technologies Inc.
+bill.hastings@seegenetech.com
+325 N Wiget Ln #140, Walnut Creek, CA 9459
+m: 805.310.2139
+
+--00000000000057ca9205ece9ebef
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div>Please allow me to introduce myself as the new Area D=
+irector for Seegene Technologies.</div><div><br></div><div>I would like to =
+schedule an initial call with you to discuss your current or past interest =
+in multiple Seegene assays for serving your client group.</div><div><br></d=
+iv><div>=C2=A0Please let me know what would be a good time to reach out to =
+you for a brief initial discussion. I look forward to meeting your assay ne=
+eds.</div><div><br></div><div>Regards</div><div><br></div>-- <br><div dir=
+=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_signature"><div =
+dir=3D"ltr"><table cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family=
+:Arial;line-height:1.15;color:rgb(0,0,0)"><tbody><tr><td style=3D"vertical-=
+align:top;padding-right:14px"><a href=3D"http://www.seegenetech.com/" style=
+=3D"color:rgb(17,85,204)" target=3D"_blank"><img alt=3D"http://www.seegenet=
+ech.com/  " src=3D"https://ci3.googleusercontent.com/mail-sig/AIorK4z39IV2J=
+F5mmXUiq1uBnMRp2hydlo0ufsEvBEkI9nWNZaBTrAgoOP9HM6OIxEwlva1nPa8vrwk"></a><br=
+></td><td bgcolor=3D"#45668E" height=3D"1" style=3D"width:1px;background-co=
+lor:rgb(69,102,142);height:1px;font-size:1pt">=C2=A0</td><td valign=3D"top"=
+ style=3D"padding-left:14px;vertical-align:top"><table cellpadding=3D"0" ce=
+llspacing=3D"0"><tbody><tr><td style=3D"padding-bottom:10px"><span style=3D=
+"font-family:Arial;text-transform:initial;font-weight:bold"><span style=3D"=
+color:rgb(100,100,100);font-size:16px">Bill Hastings=C2=A0</span></span><br=
+><span style=3D"font-size:12px;letter-spacing:0px;font-family:Arial;text-tr=
+ansform:initial;font-weight:bold;color:rgb(100,100,100)">Area Director,</sp=
+an>=C2=A0<span style=3D"font-size:12px;letter-spacing:0px;font-family:Arial=
+;text-transform:initial;font-weight:bold;color:rgb(100,100,100)">Seegene Te=
+chnologies Inc.=C2=A0</span>=C2=A0</td></tr><tr><td><a style=3D"color:rgb(1=
+41,141,141);white-space:pre-wrap;line-height:19px;font-family:Arial;font-si=
+ze:12px">bill.hastings@seegenetech.com</a></td></tr><tr><td></td></tr><tr><=
+td><table cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td><span style=3D=
+"line-height:19px;vertical-align:middle;color:rgb(141,141,141);font-family:=
+Arial;font-size:12px">325 N Wiget Ln #140, Walnut Creek, CA 9459<br>m: 805.=
+310.2139</span></td></tr></tbody></table></td></tr></tbody></table></td></t=
+r></tbody></table></div></div></div>
+
+--00000000000057ca9205ece9ebef--
+

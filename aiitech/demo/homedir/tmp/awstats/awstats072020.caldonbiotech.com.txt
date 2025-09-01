@@ -1,0 +1,690 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 202007 will be lost/reset.
+# Last config file used to build this data file was /home3/cbt/tmp/awstats/awstats.caldonbiotech.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2010                
+POS_TIME 2687                
+POS_VISITOR 22945               
+POS_DAY 24871               
+POS_DOMAIN 3486                
+POS_LOGIN 3867                
+POS_ROBOT 4022                
+POS_WORMS 4500                
+POS_EMAILSENDER 4631                
+POS_EMAILRECEIVER 4774                
+POS_SESSION 25693               
+POS_SIDER 25902               
+POS_FILETYPES 4909                
+POS_DOWNLOADS 5082                
+POS_OS 5264                
+POS_BROWSER 5390                
+POS_SCREENSIZE 5601                
+POS_UNKNOWNREFERER 5675                
+POS_UNKNOWNREFERERBROWSER 6051                
+POS_ORIGIN 6319                
+POS_SEREFERRALS 6459                
+POS_PAGEREFS 6624                
+POS_SEARCHWORDS 6772                
+POS_KEYWORDS 6924                
+POS_MISC 2351                
+POS_ERRORS 6983                
+POS_CLUSTER 3723                
+POS_SIDER_404 7164                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20200801002939 44 9094 5849169741682
+FirstTime 20200701002920
+LastTime 20200731172414
+LastUpdate 20200801084809 44 0 43 0 0
+TotalVisits 346                 
+TotalUnique 46                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 48                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+FlashSupport 0 0 0
+PDFSupport 0 0 0
+JavascriptDisabled 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 6 0
+DirectorSupport 0 0 0
+RealPlayerSupport 0 0 0
+JavaEnabled 0 0 0
+TotalMisc 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 23 23 95222 165 529 8101516
+1 25 25 49846 74 99 133993
+2 13 13 175 50 82 241930
+3 96 114 4729226 358 778 12848629
+4 22 22 49704 185 212 2849380
+5 9 9 0 88 116 887702
+6 13 13 47670 70 80 52209
+7 18 18 47618 155 181 2281141
+8 14 14 47610 85 116 1297107
+9 53 53 147974 244 268 997638
+10 15 15 0 87 118 438528
+11 16 16 0 61 101 54670
+12 27 27 47614 114 179 287084
+13 31 31 47618 78 144 127044
+14 51 51 6180 86 155 14106
+15 20 20 95224 162 313 3283941
+16 27 27 95224 190 348 4688491
+17 19 19 47614 73 120 8786
+18 50 50 36172 133 174 429371
+19 8 8 47604 74 278 467090
+20 14 14 52 62 86 262943
+21 30 30 1152 95 120 376337
+22 20 20 95226 65 88 228493
+23 85 85 6264 80 88 737597
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 12
+us 547 565 4865625
+tw 33 33 6798
+cn 33 33 6798
+ru 30 30 335528
+hk 16 16 190432
+si 11 11 2266
+ro 8 8 95218
+de 8 8 95224
+gb 4 4 47618
+ua 4 4 47606
+fr 4 4 47618
+th 1 1 206
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 9
+bot[\s_+:,\.\;\/\\-] 1136 20568225 20200731104917 180
+Googlebot/ 250 6500 20200731162457 250
+spider 86 3881080 20200731031041 0
+bingbot/ 58 1508 20200729232707 58
+unknown 50 1300 20200731001023 50
+YandexBot/ 12 312 20200731172412 12
+Applebot/ 8 208 20200725173208 8
+Mail\.RU_Bot/ 8 208 20200727154958 8
+facebookexternalhit/ 2 52 20200728200345 2
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 6
+php 538 1020441 0 0
+Unknown 90 7416 0 0
+html 67 4114692 0 0
+css 10 393822 0 0
+js 8 200334 0 0
+xml 4 4180 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 3
+/wp-content/plugins/js_composer/changes.txt 31 0 1619068
+//wp-content/plugins/js_composer/changes.txt 31 0 1619068
+/robots.txt 0 2 52
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 5
+win7 170 152
+winxp 1 1
+win10 88 88
+winnt 1 1
+Unknown 459 457
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 9
+chrome70.0.3538.77 2 2
+chrome56.0.2924.87 84 84
+msie9.0 84 66
+firefox53.0 2 2
+opera9.00 1 1
+chrome59.0.3071.109 86 86
+mozilla 72 72
+Unknown 387 385
+msie5.01 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 4
+facebookexternalhit/1.1_(_http://www.facebook.com/externalhit_uatext.php) 20200728200345
+Cpanel-HTTP-Client/1.0 20200711215936
+WordPress/5.0.10;_https://caldonbiotech.com 20200731172414
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20200711235212
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 3
+facebookexternalhit/1.1_(_http://www.facebook.com/externalhit_uatext.php) 20200728200345
+WordPress/5.0.10;_https://caldonbiotech.com 20200731172414
+Cpanel-HTTP-Client/1.0 20200711215936
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 266 268
+From1 0 0
+From2 66 84
+From3 0 0
+From4 367 367
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+www_google_com 66 84
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 8
+409 234 19422
+405 20 672
+301 918 242
+404 811 16373639
+403 316 42344
+302 18 0
+500 20 14920
+406 820 185094
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 301
+/.well-known/pki-validation/AA693C700370A95D6E10341BDEFC0DFC.txt 2 -
+/2019/wp-includes/wlwmanifest.xml 2 -
+/Hxnbfa.php 2 -
+/wp-content/mu-plugins/rms_unique_wp_mu_pl_fl_nm.php 2 caldonbiotech.com
+/kcfinder//browse.php 1 -
+/.well-known/pki-validation/263180C6E5416228EC86F242F0FF7663.txt 2 -
+/.well-known/pki-validation/195A952CF520DF79CEACEFBE6ACD1007.txt 2 -
+/templates/admin/js/kcfinder//browse.php 1 -
+/assets/kcfinder//browse.php 1 -
+/azra.php 2 -
+/admin/kcfinder//browse.php 1 -
+/cgi-bin/php5-cgi 12 -
+/.well-known/pki-validation/614DC1A35794E2928C8E1553CC6A55B8.txt 2 -
+/assets/kcfinder/browse.php 1 -
+/%23 2 http://www.caldonbiotech.com/#
+/wp-config.php_new2019 2 -
+/Wpwcwjqs.php 2 -
+/go.php 4 -
+/wp-content/plugins/apikey/apikey.php 1 -
+/a.php 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/au-2700%5C/%5C%22 1 http://www.google.com/url
+/.well-known/pki-validation/FE213F89E80043D5FD6F86CC115A4553.txt 2 -
+/.well-known/pki-validation/7E25AE18DCA4B527EAEC013278DCD70C.txt 2 -
+/ob.php 2 -
+/wp-content/plugins/stats/as.php 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/aldolase-reagent-pack-msds%5C/%5C%22 1 http://www.google.com/url
+/dep.php 2 -
+/ion.php 2 -
+/.well-known/pki-validation/CE94765AC9BB003F1979BB36C498DE92.txt 2 -
+/.well-known/pki-validation/3D2188E3C96D8C72D49EE2F89465B5E0.txt 2 -
+/cgi-bin/php5.cgi 16 -
+/.well-known/pki-validation/720FDE7CCC0F70D019DD4CFC47173B7B.txt 2 -
+/cgi-bin/php4 16 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/beckman-cx-7%5C/%5C%22 1 http://www.google.com/url
+/an$$99.php 2 -
+/.well-known/pki-validation/111C15936EA8C6D4E16A95E8DA54C1F0.txt 2 -
+/ajax-index.php 2 caldonbiotech.com
+/wp-content/themes/busify/db.php 2 -
+/wp-content/plugins/angwp/webpack.config.js 2 caldonbiotech.com
+/.well-known/pki-validation/312EA577F6EC5AB08B123E3777E0DDEB.txt 2 -
+/.well-known/pki-validation/A0C23244C06DD77B742993B37976A64E.txt 2 -
+/z.php 2 -
+/wp-configw 2 -
+/Pxcvsa.php 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/news%5C/%5C%22 1 http://www.google.com/url
+/.well-known/pki-validation/C5911979621255099F5088898440C8F9.txt 2 -
+/wp-content/plugins/easyrotator-for-wordpress/prv8.php 2 -
+/.well-known/pki-validation/3A7B67F9FEF5D86BFB05E55CD8144D53.txt 2 -
+/config.php 4 -
+/axt.php 2 -
+/.well-known/pki-validation/42C6F06E918BB83F0D9CFF3A5F90CBC4.txt 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/aldolase-liquid-control-product-highlight%5C/%5C%22 1 http://www.google.com/url
+/kcfinder/browse.php 1 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/doctors%5C/%5C%22 1 http://www.google.com/url
+/assets/ckeditor/kcfinder/browse.php 1 -
+/.well-known/pki-validation/B1A9E7A13041BB82219E1285F1D4DA58.txt 2 -
+/.well-known/pki-validation/D565A5596CE8BF9E50926DC44D30910A.txt 2 -
+/web/wp-includes/wlwmanifest.xml 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/aldolase-reagent-pack-highlights%5C/%5C%22 1 http://www.google.com/url
+/ 6 -
+/wp-config_new 2 -
+/.well-known/pki-validation/042FE7BAECDE69D0D0D344ECCE6E75D7.txt 2 -
+/.well-known/pki-validation/511A7DFC0182A7DA403C81C731AFB5E1.txt 2 -
+/cgi-bin/php4.cgi 16 -
+/index2.html 2 -
+/cgi-bin/php5 16 -
+/wp-content/uploads/wp-system.php 4 -
+/.well-known/pki-validation/A1E20DE6F51CC6CE424F57BCD286D370.txt 2 -
+/site/wp-includes/wlwmanifest.xml 2 -
+/.well-known/pki-validation/6AA9EA5EC2C6E89139CE5F598C5B1B90.txt 2 -
+/shop/wp-includes/wlwmanifest.xml 2 -
+/Kdgqnqvj.php 2 -
+/cool.php 2 -
+/wp-content/plugins/justsecure/justsecure.php 2 -
+/wp-config.phpwork 2 -
+/sitemap_index.xml 1 -
+/Mondo/lang/sys/login.aspx 2 -
+/wp-content/plugins/wpdiscuz/assets/js/wpdiscuz-mu-backend.js 4 -
+/used.php 2 -
+/.well-known/pki-validation/91BA0259671D7D5235E9976A16F6923B.txt 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/olympus-au-400-600-640-2700-5400%5C/%5C%22 1 http://www.google.com/url
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/our-clinic%5C/testimonials%5C/%5C%22 1 http://www.google.com/url
+/.well-known/pki-validation/4497DECDB89E8004CF5C6B18010A3EEF.txt 2 -
+/backup/wp-includes/wlwmanifest.xml 4 -
+/util/login.aspx 4 -
+/cgi-bin/php4-cgi 12 -
+/confjg.php 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/hitachi-717-aldolase%5C/%5C%22 1 http://www.google.com/url
+/%23go 2 http://www.caldonbiotech.com/#go
+/newsite/wp-includes/wlwmanifest.xml 2 -
+/templates/admin/js/kcfinder/browse.php 1 -
+/Gfedew.php 2 -
+/.well-known/pki-validation/946534317E0779D60E64BFC6ADE46A95.txt 2 -
+/.well-known/pki-validation/CB5807EA6FC29E7604CD021B6F2B1751.txt 2 -
+/.well-known/pki-validation/E83004EC998DDDA3AB4EF4849053E828.txt 2 -
+/.well-known/pki-validation/4397F1A5C1FBE55BF2D036445BE02F14.txt 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/package-insert-3%5C/%5C%22 1 http://www.google.com/url
+/1.php 2 -
+/.well-known/pki-validation/227F4E2F9024AC79FDCD083AE05867E4.txt 2 -
+/.well-known/pki-validation/B0841A5439843041DACE1C78FF84811D.txt 2 -
+/cgi/php5.cgi 12 -
+/.well-known/pki-validation/66687A2973916586D71E43006AC0B142.txt 2 -
+/.well-known/pki-validation/BD836F755971107BACB4664C37426F83.txt 2 -
+/php4.cgi 12 -
+/.well-known/pki-validation/495DE3DD898378093A55147F797A1E8D.txt 2 -
+/.well-known/pki-validation/5F55CE61A81AF24DF51881E1CF31FE67.txt 2 -
+/.well-known/pki-validation/A4B8450F4445565544775CA6549652E8.txt 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/about-us%5C/%5C%22 1 http://www.google.com/url
+/Wdgvx.php 2 -
+/Wcwfmqcs.php 2 -
+/imnus.php 2 -
+/.well-known/pki-validation/B89D0A12B691B115D099949EAC9BBC8D.txt 2 -
+/gtrn.php 2 -
+/Maggis.php 2 -
+/.well-known/pki-validation/1813265EB8F4E2BCD26D7C5A8F720DEE.txt 2 -
+/Boyces.php 2 -
+/.well-known/pki-validation/DFEDF5B217621D8340910B9FCD7B9E1B.txt 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/faq%5C/%5C%22 1 http://www.google.com/url
+/cgi-bin/php 15 -
+/.well-known/pki-validation/FC48CA3EDABC6C681CB899873E621759.txt 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/cobas-mira%5C/%5C%22 1 http://www.google.com/url
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/services%5C/%5C%22 1 http://www.google.com/url
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/au-600%5C/%5C%22 1 http://www.google.com/url
+/Msincs.php 2 -
+/.well-known/pki-validation/AB6CFDE6A9B4448E758FD1ADDDFFB1F2.txt 2 -
+/Ucsdva.php 2 -
+/Co0ds.php 2 -
+/Mgxun.php 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/aldolase-reagent-package-insert%5C/%5C%22 1 http://www.google.com/url
+/wp-content/uploads/upload.php 4 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/au-800%5C/%5C%22 1 http://www.google.com/url
+/wp-init.php 2 -
+/magento_version 4 -
+/cgi/php.cgi 12 -
+/.well-known/pki-validation/185C2A7EE74EDE5B06D6D0474541E429.txt 2 -
+/wp-upload.php 2 -
+/.well-known/pki-validation/E6747D9BEAB69098E6223DDD981B049C.txt 2 -
+/wp-includes/Requests/Cookie/helpers.php 1 caldonbiotech.com
+/.well-known/pki-validation/8D82A98B82477D5B68950651F3B265E4.txt 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/dt_gallery%5C/hospital%5C/%5C%22 1 http://www.google.com/url
+/system.php 2 -
+/wp/wp-includes/wlwmanifest.xml 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/our-clinic%5C/photo-gallery%5C/%5C%22 1 http://www.google.com/url
+/.well-known/pki-validation/1F7725CA4851620DE6006DF6188E93D3.txt 2 -
+/oldsite/wp-includes/wlwmanifest.xml 2 -
+/Dducfj.php 2 -
+/Xuinvc.php 2 -
+/.well-known/pki-validation/7727F593067E3CBD9080F11089A6453B.txt 2 -
+/nimas.php 2 -
+/adminer.php 2 -
+/wp-system.php 4 -
+/lol.php 2 -
+/main/wp-includes/wlwmanifest.xml 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/test-application%5C/%5C%22 1 http://www.google.com/url
+/.well-known/pki-validation/DC3FF7449146F29A81EA5B24E5478B01.txt 2 -
+/wp-tmp.php 4 -
+/Keiths.php 2 -
+/.well-known/pki-validation/C2CF1A160BD57CC702A299BA9953A2F6.txt 2 -
+/wp-content/plugins/wp-db-ajax-made/wp-ajax.php 2 caldonbiotech.com
+/.well-known/pki-validation/D8F8F6832289A26F616F0A8DA7523DC8.txt 2 -
+/siteindex.php 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/departments%5C/department-page%5C/%5C%22 1 http://www.google.com/url
+/php404.php 2 -
+/.well-known/pki-validation/64668AA536348D517BB9FA1D1A3AFA8B.txt 2 -
+/.well-known/pki-validation/3BAF24074DB7031AEA335E5991AB2985.txt 2 -
+/staging/wp-includes/wlwmanifest.xml 2 -
+/adminer/adminer.php 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/au-400%5C/%5C%22 1 http://www.google.com/url
+/Uncdsx.php 2 -
+/cb%22/ 8 -
+/wp-config.phpol 2 -
+/.well-known/pki-validation/3D1CAE1F6800E592976046D47C434A96.txt 2 -
+/wp-content/upgrade/wp/wp.php 2 caldonbiotech.com
+/.well-known/pki-validation/1451E7058E16EAC09C3EF358BF36D11D.txt 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/bayer-advia-1650%5C/%5C%22 1 http://www.google.com/url
+/sitemap 1 -
+/.well-known/pki-validation/2D6EEFB910A1968D6352521385C47DA0.txt 2 -
+/wso.php 2 -
+/.well-known/pki-validation/BB7654ADC18D61480E4F41498A08607E.txt 2 -
+/.well-known/pki-validation/42BB6F0F10C0749250C8FCB351C8EA81.txt 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/our-clinic%5C/prices%5C/%5C%22 1 http://www.google.com/url
+/store/wp-includes/wlwmanifest.xml 2 -
+/wp-content/indexx.php 2 -
+/.well-known/pki-validation/5ED142BBA100321EEB4339A2F90D1F6A.txt 2 -
+/sym.php 2 -
+/.well-known/pki-validation/96B3DFAD8BF5612F97FBAACE7F85F8E9.txt 2 -
+/.well-known/pki-validation/986954A34A615876F8EC06B2468039FD.txt 2 -
+/.well-known/pki-validation/60128EB54FDCA6CE39B95A1191675516.txt 2 -
+/tazz.php 2 -
+/tmp.php 4 -
+/wp-content/uploads/wp-dba.php 4 caldonbiotech.com
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/our-clinic%5C/%5C%22 1 http://www.google.com/url
+/.well-known/pki-validation/7AC07A82C46D281C5C865501A114800C.txt 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/client-testimonials%5C/%5C%22 1 http://www.google.com/url
+/language.php 2 -
+/Jshvasg.php 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/aldolase-control-package-insert%5C/%5C%22 1 http://www.google.com/url
+/Oxcdnv.php 2 -
+/.well-known/pki-validation/2D9853E4A7416FD15429FA87B74B1368.txt 2 -
+/.well-known/pki-validation/4E666C04853C10F6F5132B2D318AD1AE.txt 2 -
+/.well-known/pki-validation/C41C0B2AFF3B9C72E3A695B78310DC97.txt 2 -
+/php.cgi 12 -
+/hsgcxbf.php 2 -
+/shell.php 2 -
+/config/globals.inc 2 -
+/infectious.htm 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/sample-page%5C/%5C%22 1 http://www.google.com/url
+/.well-known/pki-validation/08A99D12E21537F89308782C995A6A97.txt 2 -
+/wp-config.php_new2017 2 -
+/wp-config.php_new2020 2 -
+/moa.php 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/sputolysin-product-highlight%5C/%5C%22 1 http://www.google.com/url
+/Mksfsxcb.php 2 -
+/.well-known/pki-validation/B12F0773620094E63CDE057A78563853.txt 2 -
+/.well-known/pki-validation/8EBBF9EC8AA5E81C49FC12F8DCAE12D5.txt 2 -
+/.well-known/pki-validation/8DD1605E555CAC59B101908B7655AD56.txt 2 -
+/vendor/phpunit/phpunit/LICENSE 2 -
+/.well-known/pki-validation/B6E2C74FC4F82C82073F70C237B2B6C0.txt 2 -
+/wp-confignew 2 -
+/.well-known/pki-validation/0EEBC69FFF8355D3DEC37ACDCE0D018A.txt 2 -
+/humans.txt 8 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/departments%5C/%5C%22 1 http://www.google.com/url
+/.well-known/pki-validation/C41D7B73BFD97F5654DC45C4875C32FE.txt 2 -
+/wp-admin/includes/helpers.php 1 caldonbiotech.com
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/contact%5C/%5C%22 1 http://www.google.com/url
+/.well-known/pki-validation/463ED0193D46B6A9C2F81D998DF1C057.txt 2 -
+/.well-known/pki-validation/48AB726D6D72C1765819011DC6F5D6CE.txt 2 -
+/.well-known/pki-validation/99F8DCA2DF009659BF799E53CA07F91F.txt 2 -
+/test/wp-includes/wlwmanifest.xml 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/msds%5C/%5C%22 1 http://www.google.com/url
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/aldolase-control-msds%5C/%5C%22 1 http://www.google.com/url
+/.well-known/pki-validation/D5899277C721C59C481230C14CDBCD51.txt 2 -
+/v2/wp-includes/wlwmanifest.xml 2 -
+/.well-known/pki-validation/D1A5C77221A7B5C1EC2ABF87896E3766.txt 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/significance-of-testing-aldolase%5C/%5C%22 1 http://www.google.com/url
+/ashdusc.php 2 -
+/App/ 22 -
+/wp-admin/maint/helpers.php 1 caldonbiotech.com
+/404.html 2 -
+/%23content 2 http://www.caldonbiotech.com/#content
+/www/wp-includes/wlwmanifest.xml 2 -
+/!adminer.php 2 -
+/.well-known/pki-validation/1A803142D6145F28E78CDD1370A49F79.txt 2 -
+/.well-known/pki-validation/DA692341DE9272BA8B8EE1B39AF6948A.txt 2 -
+/.well-known/pki-validation/5C7DACEB64E3258FEDB0AB9A2D253B32.txt 2 -
+/1/wp-includes/wlwmanifest.xml 2 -
+/Tmcnva.php 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/sputolysin-stat-pack%5C/%5C%22 1 http://www.google.com/url
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/olympus-b%5C/%5C%22 1 http://www.google.com/url
+/.well-known/pki-validation/26D481498D9DAE56A29126C767F1EDE7.txt 2 -
+/.well-known/pki-validation/5DB8486F5E5C7B659358E2EF7BD63524.txt 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/2016%5C/05%5C/12%5C/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer%5C/%5C%22 1 http://www.google.com/url
+/.well-known/pki-validation/5B37F04C04E5675A70DE65FE8462B642.txt 2 -
+/ads.txt 10 -
+/assets/ckeditor/kcfinder//browse.php 1 -
+/money.php 2 -
+/cgi/php4.cgi 12 -
+/page.php 2 -
+/dec.php 2 caldonbiotech.com
+/404.php 2 -
+/.well-known/pki-validation/9A50BD9A14101626DD6ECB0B4C15E232.txt 2 -
+/2018/wp-includes/wlwmanifest.xml 2 -
+/wp-config.php_new2018 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/services%5C/service-page%5C/%5C%22 1 http://www.google.com/url
+/.well-known/pki-validation/E4A869BE2AB93E8ECBAE9A9482AA724F.txt 2 -
+/wp-xmlrpc.php 2 -
+/.well-known/pki-validation/CC749928C1D453B6A027874339A95854.txt 2 -
+/install.php 4 -
+/.well-known/pki-validation/789AECD322042C96FA103A493C4D6B67.txt 2 -
+/wp-content/plugins/libravatar-replace/libravatar-replace.php 2 caldonbiotech.com
+/php5.cgi 12 -
+/.well-known/pki-validation/E1551CFE8B294EE80BDB4039FE18DF98.txt 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/%5C%22 1 http://www.google.com/url
+/.git/HEAD 20 -
+/Evnsjg.php 2 -
+/bdhbjs.php 2 -
+/.well-known/pki-validation/5B46B13477126B6A22C2751829F875EB.txt 2 -
+/.well-known/pki-validation/01BEBECFCA288093452563F26699C4D0.txt 2 -
+/Jvnmcxb.php 2 -
+/.well-known/pki-validation/D9A5E79FBA30F620949BA8F3F1206466.txt 2 -
+/.well-known/pki-validation/E42E3F4D1CD70F5074A4D2E9910B649E.txt 2 -
+/d.php 2 -
+/cgi-bin/php-cgi 16 -
+/.well-known/pki-validation/1F3A007E174304A88EF596A9FC6072BA.txt 2 -
+/.well-known/pki-validation/9927415122AC8798DB7CE60C160D1B8F.txt 2 -
+/Xudfel.php 2 -
+/.well-known/pki-validation/48F0C83A34A0F121A76BEF7F1B4CD140.txt 2 -
+/wp-admin.php 2 -
+/wp-config 4 -
+/old/wp-includes/wlwmanifest.xml 2 -
+/admin/kcfinder/browse.php 1 -
+/mide.php 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/dimension-rxl%5C/%5C%22 1 http://www.google.com/url
+/blogs/wp-includes/wlwmanifest.xml 2 -
+/js/mage/cookies.js 2 caldonbiotech.com
+/Maserin.php 2 -
+/bcvnmx.php 2 -
+/.well-known/pki-validation/AE84F8752239262A15B22C1AA9240C69.txt 2 -
+/wp-uploads.php 2 -
+/sitemap.xml 1 -
+/cgi-bin/php.cgi 16 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 48
+192.185.52.186 433 433 6431 20200731172414
+184.154.76.20 30 30 1920196 20200731031035
+184.154.139.49 18 36 1608376 20200726031024
+111.249.46.159 11 11 2266 20200730183145
+188.199.4.17 11 11 2266 20200730183328
+175.9.89.2 11 11 2266 20200730144204
+27.22.232.96 11 11 2266 20200727091557
+111.167.142.157 11 11 2266 20200730144343
+184.154.139.50 10 10 640068 20200728030600
+114.39.147.49 9 9 1854 20200727093844
+184.154.139.51 8 8 512048 20200725030749
+3.21.174.22 8 8 1648 20200730144730
+114.41.219.168 8 8 1648 20200730183739
+64.78.149.164 6 6 522 20200711235211
+111.243.214.223 5 5 1030 20200727092600
+89.34.27.37 4 4 47610 20200717035236
+103.234.220.197 4 4 47604 20200714192609
+150.129.8.6 4 4 47610 20200716160010
+199.249.230.154 4 4 47614 20200715165803
+87.98.156.62 4 4 47618 20200716225142
+185.220.100.254 4 4 47614 20200717120937
+185.220.102.251 4 4 47618 20200717063141
+3.14.255.131 4 4 348 20200711235211
+150.129.8.9 4 4 47610 20200714082451
+52.28.236.88 4 4 348 20200711235211
+183.88.191.97 1 1 206 20200730183351
+173.252.127.16 0 1 26 
+5.44.168.47 2 2 2240 20200731012749
+199.249.230.114 4 4 47614 20200715003231
+18.196.96.172 2 2 174 20200711235211
+150.129.8.25 4 4 47608 20200716004730
+185.220.101.135 4 4 47606 20200717092949
+185.220.101.134 4 4 47614 20200717174910
+107.152.237.101 2 2 29786 20200723183702
+132.148.106.2 2 2 2090 20200720040245
+185.220.101.233 4 4 47618 20200716075154
+52.15.254.228 2 2 174 20200711235211
+34.222.229.130 2 2 174 20200711235211
+185.220.101.138 4 4 47608 20200720222320
+34.209.232.166 4 4 348 20200711235211
+54.38.75.41 4 4 47614 20200720045623
+195.123.225.112 4 4 47606 20200717150835
+31.220.2.131 4 4 47606 20200720015601
+185.220.101.14 4 4 47610 20200720095554
+173.252.95.118 0 1 26 
+185.100.87.41 4 4 47608 20200715094113
+217.182.194.103 4 4 47618 20200714133928
+87.118.96.154 4 4 47618 20200720154941
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20200701 12 12 128014 10
+20200702 13 13 128014 10
+20200703 10 10 128014 6
+20200704 14 14 128014 9
+20200705 13 13 128014 11
+20200706 11 11 128012 6
+20200707 16 16 128014 11
+20200708 17 17 128942 9
+20200709 12 12 128012 8
+20200710 17 17 128014 12
+20200711 107 107 135430 16
+20200712 10 10 128014 6
+20200713 14 14 128014 9
+20200714 29 29 270846 14
+20200715 24 24 270850 12
+20200716 32 32 318468 16
+20200717 38 38 413855 18
+20200718 15 15 128014 13
+20200719 11 11 128014 8
+20200720 38 38 368160 17
+20200721 14 14 128014 10
+20200722 14 14 128014 12
+20200723 17 17 157846 12
+20200724 15 15 128012 11
+20200725 14 14 128014 11
+20200726 23 41 840294 11
+20200727 42 42 133164 14
+20200728 11 11 128066 10
+20200729 9 9 128014 7
+20200730 74 74 140568 18
+20200731 13 13 130254 9
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+2mn-5mn 1
+30s-2mn 9
+5mn-15mn 2
+0s-30s 265
+30mn-1h 47
+15mn-30mn 13
+1h+ 9
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 26
+/wp-cron.php 366 639 271 274
+/xmlrpc.php 86 17716 10 10
+/index.php 84 999846 21 21
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/ 62 3968408 31 30
+/.well-known/acme-challenge/f8o3wgOMrjxFsYyvTN21J8XglD4pY8-CthgIsH8uYCA 8 696 0 0
+/.well-known/acme-challenge/09fzwpoAqygKTg3GArXnwntCWxX-u5773r94xSwK5DI 8 696 0 0
+/.well-known/acme-challenge/LoMv-2COgse97heYdHPzfYu7CfmaVlQ1V36T8n3W72Y 8 696 0 0
+/.well-known/acme-challenge/X8MR6K_uDTYxfbQ4ZCZgk10zU3zSPg5zlq2mo0sTDNw 8 696 1 3
+/.well-known/acme-challenge/428aOvY-5_kr-KMefRUK3n3IhAgzjlxu8BrDuh0ISSU 8 696 1 0
+/.well-known/acme-challenge/oE374g7vRCtoJch7WELJz2lMp7rFdJnaG6PSHByAE-k 8 696 2 2
+/.well-known/acme-challenge/608r1N4DW5dwDLeclHTUJoRtE1dMi4_PzPCctgOnJw4 8 696 0 0
+/.well-known/acme-challenge/1qSzV7Hkn-nUF3tmhAd0JdOM4543yE4JD6d4RtjYPKE 8 696 4 2
+/.well-known/acme-challenge/2lh34N51P7bxYMp0hJOHFILWRxcSB_bM5RpBvCKekYI 8 696 0 0
+/contact/ 4 145820 1 1
+/wp-includes/wlwmanifest.xml 4 4180 1 2
+/.well-known/acme-challenge/UKSONVJPQVMCJM5YRCMDY-9LHV-TVCUJ 2 128 0 0
+/.well-known/acme-challenge/7FB-FXTFBQB43AYYDA9BM65LWX5DTZCQ 2 128 0 0
+/.well-known/acme-challenge/P18OP90TQT-LGR842LCSJXQKWYRPA-T8 2 128 0 0
+/.well-known/acme-challenge/DBE2F1XWKYQVUB278KY-0UHJM_RFCO28 2 128 1 0
+/.well-known/acme-challenge/76QW5VITBR_AYB3Y5MMKTUQM3K64--40 2 128 0 0
+/.well-known/acme-challenge/DKS383LL4GYXF60YFWBATYRHX8B3Y5O5 2 128 0 0
+/wp-admin/install.php 2 2240 1 1
+/.well-known/acme-challenge/IDYTDQ3GA16VB0ZF_KO5IM75BSPTRCVU 2 128 0 0
+/.well-known/acme-challenge/M21CBO9ZR-X5CDIKWFS8O8GC3-I3XH8E 2 128 0 0
+/.well-known/acme-challenge/KSDFCH153W162PQ1WM9UCRDJY7TK4N48 2 128 0 0
+/cgi-sys/500.html 1 464 1 0
+END_SIDER

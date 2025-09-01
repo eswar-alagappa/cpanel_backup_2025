@@ -1,0 +1,1979 @@
+Return-Path: <no-reply@hostgator.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id YEN8K/f2yWNv/AMA7/vpDg
+	(envelope-from <no-reply@hostgator.com>)
+	for <rvairavan@caldonbiotech.com>; Thu, 19 Jan 2023 20:05:43 -0600
+Return-path: <no-reply@hostgator.com>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Thu, 19 Jan 2023 20:05:43 -0600
+Received: from siteb-billmail.hostgator.com ([50.87.240.149]:44750)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <no-reply@hostgator.com>)
+	id 1pIgmk-001ViE-OJ
+	for rvairavan@caldonbiotech.com;
+	Thu, 19 Jan 2023 20:05:43 -0600
+Received: by siteb-cron2.billing.hostgator.com (Postfix, from userid 994)
+	id BA6F520103FD; Thu, 19 Jan 2023 20:05:31 -0600 (CST)
+DKIM-Filter: OpenDKIM Filter v2.11.0 siteb-billmail.hostgator.com C4434202564D
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hostgator.com;
+	s=billing; t=1674180331;
+	bh=c+/X1xvqfwgvhw/sdjQf4RYctmEu17TWQnH5LAx86fI=;
+	h=From:To:Subject:Date:From;
+	b=JlJTTB7QORwWM6Oy5tIpHtAw44SmPjmO+w/rL34pfWNLC1ebrB25oQs2wgMd4Nl40
+	 3u4bPblklDJWvkyQeuTsayzzDalbTMJRw7b4rxAm/fx2EP4OXQV2OdC7w8/Fq01gTA
+	 Se1c488+gxvYzK3W4yPIGaKRqZZXh/odQFkp1AgA=
+From: HostGator Billing <no-reply@hostgator.com>
+To: rvairavan@caldonbiotech.com
+Subject: HostGator - Payment Confirmation Notification
+Date: Thu, 19 Jan 2023 20:05:31 -0600
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: multipart/alternative;
+ boundary="-------------Boundary-------------"
+Message-Id: <20230120020531.BA6F520103FD@siteb-cron2.billing.hostgator.com>
+X-Spam-Status: No, score=1.1
+X-Spam-Score: 11
+X-Spam-Bar: +
+X-Spam-Flag: NO
+
+
+---------------Boundary-------------
+Date: Thu, 19 Jan 2023 20:05:31 -0600
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"; format="flowed"
+Content-ID: <16741803311.16103DB.2412@siteb-cron2.billing.hostgator.com>
+
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com: vml" xmlns:o="urn:schemas-microsoft-com: office: office">
+
+<head>
+
+    
+
+    <!-- utf-8 works for most cases -->
+    <meta charset="utf-8">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta name="viewport" content="width=device-width">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="x-apple-disable-message-reformatting">
+    <!-- Tell iOS not to automatically link certain text strings. -->
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <title></title>
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 23 - 41 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+    <style>
+        * {
+            font-family: sans-serif !important;
+        }
+    </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks.
+    More on that here: http: //stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Roboto: ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed: ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Open+Sans: ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+
+        /* What it does: Tells the email client that only light styles are provided
+        but the client can transform them to dark. A duplicate of meta color-scheme meta tag above. */
+        :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: forces Samsung Android mail clients to use the entire viewport */
+        #MessageViewBody, #MessageWebViewDiv{
+            width: 100% !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Replaces default bold style. */
+        th {
+            font-weight: normal;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS.
+        Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        a[x-apple-data-detectors],  /* iOS */
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        .im {
+            color: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        img.g-img + div {
+            display: none !important;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u ~ div .email-container {
+                min-width: 320px !important;
+            }
+        }
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u ~ div .email-container {
+                min-width: 375px !important;
+            }
+        }
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            u ~ div .email-container {
+                min-width: 414px !important;
+            }
+        }
+
+    </style>
+    <!-- CSS Reset : END -->
+
+
+    <!-- Main Styling : BEGIN -->
+    <style>
+        a {
+            color: #0069FF !important;
+            text-decoration: none !important;
+        }
+
+        a:hover {
+            color: #0059d9 !important;
+            text-decoration: underline !important;
+        }
+
+        a:visited {
+            color: #0059d9 !important;
+            text-decoration: underline !important;
+        }
+
+        body, td, input, textarea, select {
+            margin: 0;
+            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+            color: #000000;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+            color: #000000;
+            margin: 10px 0;
+            font-style: normal;
+            text-align: left;
+        }
+
+        h1 {
+            font-family: 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 23px;
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        li {
+            padding: 5px 0;
+            color: #000000;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 12px;
+        }
+
+        p {
+            padding: 5px 0;
+            color: #000000;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 15px;
+        }
+
+        /* What it does: Hover styles for buttons */
+        .btn-primary {
+            transition: all 100ms ease-in;
+            border-radius: 24px;
+            color: #FFFFFF !important;
+            padding: 8px 16px !important;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            white-space: nowrap !important;
+        }
+
+        .btn-primary:hover {
+            background-color: #0059d9 !important;
+            text-decoration: none !important;
+        }
+
+        .emoji img {
+            max-height: 32px !important;
+            vertical-align: baseline !important;
+        }
+
+        /* Override "auto" links in Gmail, Apple, Samsung, etc */
+        .nolink a {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        .nolink a:hover {
+            cursor: default !important;
+        }
+
+        .capitalize {
+            text-transform: capitalize !important;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .invoice-table {
+            max-width: 450px;
+        }
+
+        table.content-table > tbody > tr > td {
+            padding: 24px 10px;
+        }
+
+        table.footer-table {
+            background-color: #FFFFFF;
+        }
+
+        table.footer-table > tbody > tr > td.compliance-section {
+            background-color: #F5F6F8;
+        }
+
+        table.footer-table > tbody > tr > td.social-section {
+            background-color: #1F2142;
+        }
+
+        table.footer-table > tbody > tr > td.social-section > table {
+            background-color: #1F2142;
+        }
+
+        table.footer-table > tbody > tr > td.compliance-section > p {
+            font-size: 12px;
+            padding: 12px 10px;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        table.footer-table > tbody > tr > td.copyright-section > p {
+            font-size: 12px;
+            padding: 10px;
+            max-width: 750px;
+            margin: 0 auto;
+            color: #1F2142;
+            text-align: center;
+        }
+
+        table.footer-table > tbody > tr > td.copyright-section > div {
+            padding: 20px 10px;
+            max-width: 750px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        table.footer-table > tbody > tr > td.copyright-section > div > a {
+            font-size: 12px;
+            padding: 0 5px;
+            color: #4A93E7;
+            text-align: center;
+            display: inline;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        table.footer-table > tbody > tr > td.copyright-section > div > span.divider {
+            font-size: 12px;
+            padding: 0 5px;
+            color: #000000;
+        }
+    </style>
+    <!-- Main Styling : END -->
+
+
+    <!-- Media Query Sizing : BEGIN -->
+    <style>
+
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                max-width: 400px !important;
+            }
+
+            /* Force column stacking on tablet and smaller devices */
+            .stack-column,
+            .stack-column-center {
+                width: 100% !important;
+                /*max-width: 450px !important;*/
+            }
+
+            .stack-column table,
+            .stack-column-center table {
+                width: 100% !important;
+                /*max-width: 400px !important;*/
+            }
+        }
+
+        /* Tablet and smaller devices */
+        @media only screen and (max-width: 767px) {
+
+            .email-container {
+                max-width: 450px !important;
+            }
+
+            /* What it does: Adjust typography on small screens to improve readability */
+            .email-container p, .email-container li {
+                font-size: 14px !important;
+                margin: 0 !important;
+            }
+
+            .p-md-down-10 {
+                padding: 10px !important;
+            }
+        }
+
+        /* Desktop displays */
+        @media only screen and (min-width: 768px) {
+
+            .email-container {
+                max-width: 700px !important;
+            }
+
+            /* Prevent column stacking on desktop displays */
+            .stack-column,
+            .stack-column-center {
+                display: table-cell !important;
+            }
+        }
+
+        @media only screen and (max-width: 979px) {
+
+            .copyright-section .copyright-link {
+                display: block !important;
+                margin: 0 auto !important;
+                text-align: center !important;
+            }
+
+            .copyright-section .divider {
+                display: none !important;
+            }
+
+            .email-container {
+                max-width: 650px;
+            }
+
+            .invoice-table {
+                max-width: none !important;
+            }
+
+            .md-down-hidden {
+                display: none !important;
+            }
+
+            h1, h1 span {
+                font-size: 24px !important;
+                line-height: 32px !important;
+            }
+
+            h2 {
+                font-size: 20px !important;
+                line-height: 24px !important;
+            }
+
+            h3 {
+                font-size: 18px !important;
+                line-height: 22px !important;
+            }
+
+            h3.connect-with-us {
+                font-size: 32px!important;
+                line-height: 48px!important;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .social-icon {
+                max-width: 44px !important;
+            }
+
+            table.social-icons {
+                max-width: 240px !important;
+            }
+
+            table.social-icons td {
+                padding: 5px !important;
+                vertical-align: middle !important;
+            }
+
+            .w-100-md-down {
+                display: block !important;
+                width: 100% !important;
+            }
+
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+
+            /* Force column stacking on tablet and smaller devices */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                /*max-width: 100% !important;*/
+                direction: ltr !important;
+            }
+
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+
+            .stack-column-center table {
+                width: 100% !important;
+                margin: 15px auto !important;
+                display: table !important;
+            }
+
+        }
+
+    </style>
+    <!-- Progressive Enhancements : END -->
+
+</head>
+
+
+
+<body id="email-body" width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #FFFFFF;">
+
+<!-- Visually Hidden Preheader Text :: Text that will show up in the preview line in Gmail, but not be shown in the email-->
+<div style="max-height: 0; overflow: hidden; mso-hide: all;" aria-hidden="true">
+    Thank You For Your Payment!
+</div>
+
+<!-- Main Email Container -->
+<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+       class="email-container" style="margin: auto; max-width: 700px;">
+
+    <!-- Email Header : BEGIN -->
+    <tr>
+        <td style="padding: 0 0 0 0; text-align: center; background-color: #F5F6F8;" class="email-header-container">
+
+            <table class="email-header" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td style="width: 175px;" class="email-header-td-left md-down-hidden">
+                        &nbsp;
+                    </td>
+                    <td class="email-header-td-center" style="text-align: center; padding: 40px 0 0 0;">
+
+                        <!-- HostGator Logo (LEAVE ALT BLANK) -->
+                        <a href="https://www.hostgator.com?utm_source=regflow_transactional&utm_medium=email&utm_campaign=welcome" title="Hostgator.com">
+
+                            <img src="https://static.hostgator.com/img/mail/hg_logo_orange.png" alt=""
+                                 width="222" height="41" border="0" style="max-width: 222px; height: auto; background: #F5F6F8;" />
+                        </a>
+
+                    </td>
+                    <td class="email-header-td-right md-down-hidden" style="width: 175px; text-align: right;">
+                        <img src="https://static.hostgator.com/img/mail/triangle_blue.png" alt="Blue Triangle"
+                             width="175" height="132" border="0" style="max-width: 175px; height: auto; background: transparent;" class="md-down-hidden" />
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td style="background-color: #F5F6F8;">
+
+            <!-- Headline -->
+            <h1 style="font-style: normal; font-weight: bold; font-size: 32px;
+                    line-height: 48px; color: #000000; text-align: center;
+                    padding-bottom: 30px; margin-top: 0;">
+                <span style="border-bottom: solid 8px #4A93E7;">
+                    Thank You For Your Payment!
+                </span>
+            </h1>
+
+        </td>
+    </tr>
+    <!-- Email Header : END -->
+
+
+    <!-- Email Main Content : BEGIN -->
+    <tr>
+        <td style="padding: 0; background-color: #FFFFFF;">
+
+            <!-- 1 Column Layout : BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="content-table">
+                <tr>
+                    <!-- Column 1 (Text Information): BEGIN -->
+                    <th valign="top" width="100%" class="stack-column-center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 38px 0 0; text-align: left" class="p-md-down-10">
+
+                                    <p style="color: #000000; font-weight: 500; font-size: 16px; line-height: 24px;">
+                                        
+                                            We have successfully processed payment for the following items
+                                        
+                                    </p>
+
+                                    <!-- Invoice Table -->
+                                    <div class="invoice-table" style="padding: 24px; margin: 38px auto 0; background-color: #F5F6F8; color: #1F2142;">
+
+    
+    <div style="margin-bottom: 15px; color: #1F2142;">
+
+        <table cellpadding="0" cellspacing="0" role="presentation" border="0" style="margin: 10px 0 !important;width: 300px !important;">
+            <tbody>
+            <tr>
+                <td style="font-size: 16px; color: #1F2142;">
+                    Invoice
+                </td>
+                <td style="font-size: 16px; color: #1F2142;">
+                    
+                        Date Paid
+                    
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size: 12px; color: #1F2142;">
+                    
+                        85984845
+                    
+                </td>
+                <td style="font-size: 12px; color: #1F2142;">
+                    
+                        2023-01-20
+                    
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <table cellpadding="0" cellspacing="0" role="presentation" width="100%" border="0" style="margin: 10px auto;">
+        <thead>
+        <tr>
+            <th style="font-weight: 700; padding: 15px 0; font-size: 16px; color: #1F2142;">Item</th>
+            <th style="font-weight: 700; text-align: right;padding: 15px 0; font-size: 16px; color: #1F2142;">Price</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <th style="font-weight: 700;padding: 15px 0; font-size: 16px; color: #1F2142;">Subtotal</th>
+            <th style="font-weight: 700; text-align: right;padding: 15px 0; font-size: 16px; color: #1F2142;">
+                $53.85
+            </th>
+        </tr>
+        <tr>
+            <th style="font-weight: 700;padding: 15px 0; font-size: 16px; color: #1F2142;">Discount</th>
+            <th style="font-weight: 700; text-align: right;padding: 15px 0; font-size: 16px; color: #1F2142;">
+                $0.00
+            </th>
+        </tr>
+        
+        <tr>
+            <th style="font-weight: 700;padding: 15px 0; font-size: 16px; color: #1F2142;">Tax</th>
+            <th style="font-weight: 700; text-align: right;padding: 15px 0; font-size: 16px; color: #1F2142;">
+                $0.00
+            </th>
+        </tr>
+        <tr>
+            <th style="font-weight: 700;padding: 15px 0; font-size: 16px; color: #1F2142;">Total</th>
+            <th style="font-weight: 700; text-align: right;padding: 15px 0; font-size: 16px; color: #1F2142;">
+                $53.85
+            </th>
+        </tr>
+        </tfoot>
+        
+        <tbody>
+        <tr>
+            <td style="padding: 0 0 15px 0; color: #1F2142; vertical-align: top;">
+                            <span style="font-size: 16px; color: #1F2142; text-transform: capitalize">
+                                
+                                    Shared Business Plan
+                                
+                            </span>
+                <br>
+
+                
+
+                
+                    3 Months
+                
+            </td>
+            <td style="font-weight: 500; text-align: right;padding: 0 0 15px 0; font-size: 16px; color: #1F2142; vertical-align: top;">
+            	$53.85
+            </td>
+        </tr>
+        </tbody>
+        
+    </table>
+
+    
+    
+
+</div>
+
+
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                    <!-- Column 1 (Text Information): END -->
+                </tr>
+            </table>
+            <!-- 1 Column Layout : END -->
+
+        </td>
+    </tr>
+    <!-- Email Main Content : END -->
+
+</table>
+
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="email-container footer-table" style="width: 100%; max-width: 700px;">
+
+    <tbody>
+
+        <!-- Email Copyright : BEGIN -->
+        <tr>
+            <td class="compliance-section" style="padding: 24px 10px; background-color: #FFFFFF; color: #000000; font-size: 14px; line-height: 24px;">
+                <p>
+                    Auto Renewal Terms: <b>All plans and products automatically renew unless you cancel.</b>
+                    You may cancel at any time, prior to your rebill, to prevent recurring charges, by
+                    logging into your
+                    <a href="https://portal.hostgator.com/?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term=" title="HostGator Billing Portal" style="color: #0069FF !important;">
+                        billing portal</a>.
+                    Product Renewals will be for the same term length, except domains which renew annually, and at the
+                    <a href="https://www.hostgator.com/help/article/hosting-price-chart?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term=" title="regular rates" style="color: #0069FF !important;">
+                        regular rates
+                    </a>
+                    reflected in your
+                    <a href="https://portal.hostgator.com/?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term=" title="HostGator Billing Portal" style="color: #0069FF !important;">
+                        billing portal</a>.
+                </p>
+
+                <p>
+                    Your purchase and continued use of HostGator products and services are subject to:<br>
+                    Auto Renewal Terms,
+                    <a href="http://www.hostgator.com/tos?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term=" title="Terms of Service" style="color: #0069FF !important;">
+                        Terms of Service
+                    </a>,
+                    <a href="https://www.hostgator.com/tos#cancellations?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term=" title="Cancellation Policy" style="color: #0069FF !important;">
+                        Cancellation Policy
+                    </a>
+                    and
+                    <a href="https://newfold.com/privacy-center?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term=" title="Privacy Notice" style="color: #0069FF !important;">
+                        Privacy Notice</a>.
+                </p>
+            </td>
+        </tr>
+        <!-- Email Copyright : END -->
+
+        <!-- Email Social Section : BEGIN -->
+        <tr>
+            <td align="center" class="social-section" style="text-align: center; padding: 24px 0 10px 0; background-color: #1F2142;
+                    color: #000000; font-size: 12px; line-height: 24px; max-height: 143px;
+                    border-bottom: solid 7px #CFD8DE;">
+
+                <table align="center" class="" style="background-color: #1F2142;">
+                    <tr>
+                        <td style="text-align: center; padding: 12px;" class="stack-column-center">
+                            <h3 style="color: #FFFFFF; font-size: 32px;" class="connect-with-us">Connect with us!</h3>
+                        </td>
+                        <td style="text-align: center; padding: 12px;" class="stack-column-center">
+
+                            <table align="center" class="social-icons" style="text-align: center;">
+                                <tr>
+                                    <td align="center" style="text-align: center; padding-right: 15px;">
+
+                                        <!-- Facebook Icon -->
+                                        <a href="https://www.facebook.com/HostGator?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term="
+                                           title="View our Facebook Page">
+                                            <img src="https://static.hostgator.com/img/mail/facebook.png" alt="Facebook Icon"
+                                             border="0" style="max-width: 44px; height: auto; background: transparent;"
+                                            class="social-icon" />
+                                        </a>
+                                    </td>
+
+                                    <td align="center" style="text-align: center; padding-right: 15px;">
+
+                                        <!-- Twitter Icon -->
+                                        <a href="https://twitter.com/hostgator?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term="
+                                           title="View our Twitter Page">
+                                        <img src="https://static.hostgator.com/img/mail/twitter.png" alt="Twitter Icon"
+                                             border="0" style="max-width: 44px; height: auto; background: transparent;"
+                                             class="social-icon"/>
+                                        </a>
+                                    </td>
+
+                                    <td align="center" style="text-align: center; padding-right: 0;">
+
+                                        <!-- Instagram Icon -->
+                                        <a href="https://www.instagram.com/hostgator/?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term="
+                                           title="View our Instagram Page">
+                                        <img src="https://static.hostgator.com/img/mail/instagram.png" alt="Instagram Icon"
+                                             border="0" style="max-width: 44px; height: auto; background: transparent;"
+                                             class="social-icon"/>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="text-align: center; padding-right: 15px;">
+
+                                        <!-- Pinterest Icon -->
+                                        <a href="https://www.pinterest.com/hostgator/?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term="
+                                           title="View our Pinterest Page">
+                                        <img src="https://static.hostgator.com/img/mail/pinterest.png" alt="Pinterest Icon"
+                                             border="0" style="max-width: 44px; height: auto; background: transparent;"
+                                             class="social-icon"/>
+                                        </a>
+                                    </td>
+
+                                    <td align="center" style="text-align: center; padding-right: 15px;">
+
+                                        <!-- LinkedIn Icon -->
+                                        <a href="https://www.linkedin.com/company/hostgator-com/?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term="
+                                           title="View our LinkedIn Page">
+                                        <img src="https://static.hostgator.com/img/mail/linkedin.png" alt="LinkedIn Icon"
+                                             border="0" style="max-width: 44px; height: auto; background: transparent;"
+                                             class="social-icon"/>
+                                        </a>
+                                    </td>
+
+                                    <td align="center" style="text-align: center; padding-right: 0;">
+
+                                        <!-- YouTube Icon -->
+                                        <a href="https://www.youtube.com/user/hostgator?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term="
+                                        title="View our YouTube Channel">
+                                        <img src="https://static.hostgator.com/img/mail/youtube.png" alt="YouTube Icon"
+                                             border="0" style="max-width: 44px; height: auto; background: transparent;"
+                                             class="social-icon"/>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+        <!-- Email Social Section : END -->
+
+        <!-- Email Copyright : BEGIN -->
+        <tr>
+            <td class="copyright-section" style="padding: 24px 10px; background-color: #F5F6F8; color: #000000; font-size: 12px; line-height: 24px;">
+                <p>
+                    Copyright © 2023. All rights reserved.
+                </p>
+                <p>
+                    HostGator, 5335 Gate Pkwy, <br>Jacksonville, FL 32256
+                </p>
+
+                <div>
+                    <a class="copyright-link" href="https://www.hostgator.com/tos?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term=">Terms of Service</a>
+                    <span class="divider">|</span>
+                    <a class="copyright-link" href="https://newfold.com/privacy-center?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term=">Privacy Policy</a>
+                    <span class="divider">|</span>
+                    <a class="copyright-link" href="https://www.hostgator.com/tos#cancellations?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term=">Cancellation Policy</a>
+                    <span class="divider">|</span>
+                    <a class="copyright-link" href="https://support.hostgator.com/?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term=">Support</a>
+                    <span class="divider">|</span>
+                    <a class="copyright-link" href="https://helpchat.hostgator.com/?utm_source=regflow_transactional&utm_medium=email&utm_campaign=payment_confirmation_v2.tt&utm_layout=email_template&utm_term=">Contact Us</a>
+                </div>
+            </td>
+        </tr>
+        <!-- Email Copyright : END -->
+
+        <!-- Spacer Row at bottom to prevent compliance terms from truncating : BEGIN -->
+        <tr>
+            <td style="padding: 24px;"> </td>
+        </tr>
+        <!-- Spacer Row at bottom to prevent compliance terms from truncating : END -->
+
+    </tbody>
+
+</table>
+
+</body>
+</html>
+---------------Boundary-------------
+Date: Thu, 19 Jan 2023 20:05:31 -0600
+MIME-Version: 1.0
+Content-Type: text/html; charset="US-ASCII"; format="flowed"
+Content-Transfer-Encoding: quoted-printable
+Content-ID: <16741803312.E5489a6.2412@siteb-cron2.billing.hostgator.com>
+
+
+
+<!DOCTYPE html>
+<html lang=3D"en" xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:sch=
+emas-microsoft-com: vml" xmlns:o=3D"urn:schemas-microsoft-com: office: offi=
+ce">
+
+<head>
+
+=20=20=20=20
+
+    <!-- utf-8 works for most cases -->
+    <meta charset=3D"utf-8">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name=3D"x-apple-disable-message-reformatting">
+    <!-- Tell iOS not to automatically link certain text strings. -->
+    <meta name=3D"format-detection" content=3D"telephone=3Dno,address=3Dno,=
+email=3Dno,date=3Dno,url=3Dno">
+    <meta name=3D"color-scheme" content=3D"light dark">
+    <meta name=3D"supported-color-schemes" content=3D"light dark">
+
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <title></title>
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at c=
+orrect size. -->
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 23 - 41 can be safely r=
+emoved. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Time=
+s New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+    <style>
+        * {
+            font-family: sans-serif !important;
+        }
+    </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the =
+font and others will silently fail to the fallbacks.
+    More on that here: http: //stylecampaign.com/blog/2015/02/webfont-suppo=
+rt-in-email/ -->
+    <!--[if !mso]><!-->
+<!--    <link href=3D"https://fonts.googleapis.com/css2?family=3DRoboto: it=
+al,wght@0,400;0,700;1,400;1,700&display=3Dswap" rel=3D"stylesheet">-->
+<!--    <link href=3D"https://fonts.googleapis.com/css2?family=3DRoboto+Con=
+densed: ital,wght@0,400;0,700;1,400;1,700&display=3Dswap" rel=3D"stylesheet=
+">-->
+<!--    <link href=3D"https://fonts.googleapis.com/css2?family=3DOpen+Sans:=
+ ital,wght@0,400;0,700;1,400;1,700&display=3Dswap" rel=3D"stylesheet">-->
+    <link href=3D"https://fonts.googleapis.com/css2?family=3DMontserrat:ita=
+l,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,700&display=3Dswap" rel=3D"sty=
+lesheet">
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+
+        /* What it does: Tells the email client that only light styles are =
+provided
+        but the client can transform them to dark. A duplicate of meta colo=
+r-scheme meta tag above. */
+        :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
+
+        /* What it does: Remove spaces around the email design added by som=
+e email clients. */
+        /* Beware: It can remove the padding / margin and add a background =
+color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*=3D"margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: forces Samsung Android mail clients to use the ent=
+ire viewport */
+        #MessageViewBody, #MessageWebViewDiv{
+            width: 100% !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables.=
+ */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Replaces default bold style. */
+        th {
+            font-weight: normal;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links de=
+spite inline CSS.
+        Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        /* What it does: Uses a better rendering method when resizing image=
+s in IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* What it does: A work-around for email clients meddling in trigge=
+red links. */
+        a[x-apple-data-detectors],  /* iOS */
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from changing the text color in con=
+versation threads. */
+        .im {
+            color: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button o=
+n large, non-linked images. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+        /* If the above doesn't work, add a .g-img class to any image in qu=
+estion. */
+        img.g-img + div {
+            display: none !important;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://git=
+hub.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport s=
+ize you'd like to fix */
+
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-wi=
+dth: 374px) {
+            u ~ div .email-container {
+                min-width: 320px !important;
+            }
+        }
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-wi=
+dth: 413px) {
+            u ~ div .email-container {
+                min-width: 375px !important;
+            }
+        }
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            u ~ div .email-container {
+                min-width: 414px !important;
+            }
+        }
+
+    </style>
+    <!-- CSS Reset : END -->
+
+
+    <!-- Main Styling : BEGIN -->
+    <style>
+        a {
+            color: #0069FF !important;
+            text-decoration: none !important;
+        }
+
+        a:hover {
+            color: #0059d9 !important;
+            text-decoration: underline !important;
+        }
+
+        a:visited {
+            color: #0059d9 !important;
+            text-decoration: underline !important;
+        }
+
+        body, td, input, textarea, select {
+            margin: 0;
+            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+            color: #000000;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+            color: #000000;
+            margin: 10px 0;
+            font-style: normal;
+            text-align: left;
+        }
+
+        h1 {
+            font-family: 'Montserrat', 'Roboto', Helvetica, Arial, sans-ser=
+if;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 23px;
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        li {
+            padding: 5px 0;
+            color: #000000;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 12px;
+        }
+
+        p {
+            padding: 5px 0;
+            color: #000000;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 15px;
+        }
+
+        /* What it does: Hover styles for buttons */
+        .btn-primary {
+            transition: all 100ms ease-in;
+            border-radius: 24px;
+            color: #FFFFFF !important;
+            padding: 8px 16px !important;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            white-space: nowrap !important;
+        }
+
+        .btn-primary:hover {
+            background-color: #0059d9 !important;
+            text-decoration: none !important;
+        }
+
+        .emoji img {
+            max-height: 32px !important;
+            vertical-align: baseline !important;
+        }
+
+        /* Override "auto" links in Gmail, Apple, Samsung, etc */
+        .nolink a {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        .nolink a:hover {
+            cursor: default !important;
+        }
+
+        .capitalize {
+            text-transform: capitalize !important;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .invoice-table {
+            max-width: 450px;
+        }
+
+        table.content-table > tbody > tr > td {
+            padding: 24px 10px;
+        }
+
+        table.footer-table {
+            background-color: #FFFFFF;
+        }
+
+        table.footer-table > tbody > tr > td.compliance-section {
+            background-color: #F5F6F8;
+        }
+
+        table.footer-table > tbody > tr > td.social-section {
+            background-color: #1F2142;
+        }
+
+        table.footer-table > tbody > tr > td.social-section > table {
+            background-color: #1F2142;
+        }
+
+        table.footer-table > tbody > tr > td.compliance-section > p {
+            font-size: 12px;
+            padding: 12px 10px;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        table.footer-table > tbody > tr > td.copyright-section > p {
+            font-size: 12px;
+            padding: 10px;
+            max-width: 750px;
+            margin: 0 auto;
+            color: #1F2142;
+            text-align: center;
+        }
+
+        table.footer-table > tbody > tr > td.copyright-section > div {
+            padding: 20px 10px;
+            max-width: 750px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        table.footer-table > tbody > tr > td.copyright-section > div > a {
+            font-size: 12px;
+            padding: 0 5px;
+            color: #4A93E7;
+            text-align: center;
+            display: inline;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        table.footer-table > tbody > tr > td.copyright-section > div > span=
+.divider {
+            font-size: 12px;
+            padding: 0 5px;
+            color: #000000;
+        }
+    </style>
+    <!-- Main Styling : END -->
+
+
+    <!-- Media Query Sizing : BEGIN -->
+    <style>
+
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                max-width: 400px !important;
+            }
+
+            /* Force column stacking on tablet and smaller devices */
+            .stack-column,
+            .stack-column-center {
+                width: 100% !important;
+                /*max-width: 450px !important;*/
+            }
+
+            .stack-column table,
+            .stack-column-center table {
+                width: 100% !important;
+                /*max-width: 400px !important;*/
+            }
+        }
+
+        /* Tablet and smaller devices */
+        @media only screen and (max-width: 767px) {
+
+            .email-container {
+                max-width: 450px !important;
+            }
+
+            /* What it does: Adjust typography on small screens to improve =
+readability */
+            .email-container p, .email-container li {
+                font-size: 14px !important;
+                margin: 0 !important;
+            }
+
+            .p-md-down-10 {
+                padding: 10px !important;
+            }
+        }
+
+        /* Desktop displays */
+        @media only screen and (min-width: 768px) {
+
+            .email-container {
+                max-width: 700px !important;
+            }
+
+            /* Prevent column stacking on desktop displays */
+            .stack-column,
+            .stack-column-center {
+                display: table-cell !important;
+            }
+        }
+
+        @media only screen and (max-width: 979px) {
+
+            .copyright-section .copyright-link {
+                display: block !important;
+                margin: 0 auto !important;
+                text-align: center !important;
+            }
+
+            .copyright-section .divider {
+                display: none !important;
+            }
+
+            .email-container {
+                max-width: 650px;
+            }
+
+            .invoice-table {
+                max-width: none !important;
+            }
+
+            .md-down-hidden {
+                display: none !important;
+            }
+
+            h1, h1 span {
+                font-size: 24px !important;
+                line-height: 32px !important;
+            }
+
+            h2 {
+                font-size: 20px !important;
+                line-height: 24px !important;
+            }
+
+            h3 {
+                font-size: 18px !important;
+                line-height: 22px !important;
+            }
+
+            h3.connect-with-us {
+                font-size: 32px!important;
+                line-height: 48px!important;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .social-icon {
+                max-width: 44px !important;
+            }
+
+            table.social-icons {
+                max-width: 240px !important;
+            }
+
+            table.social-icons td {
+                padding: 5px !important;
+                vertical-align: middle !important;
+            }
+
+            .w-100-md-down {
+                display: block !important;
+                width: 100% !important;
+            }
+
+            /* What it does: Generic utility class for centering. Useful fo=
+r images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+
+            /* Force column stacking on tablet and smaller devices */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                /*max-width: 100% !important;*/
+                direction: ltr !important;
+            }
+
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+
+            .stack-column-center table {
+                width: 100% !important;
+                margin: 15px auto !important;
+                display: table !important;
+            }
+
+        }
+
+    </style>
+    <!-- Progressive Enhancements : END -->
+
+</head>
+
+
+
+<body id=3D"email-body" width=3D"100%" style=3D"margin: 0; padding: 0 !impo=
+rtant; mso-line-height-rule: exactly; background-color: #FFFFFF;">
+
+<!-- Visually Hidden Preheader Text :: Text that will show up in the previe=
+w line in Gmail, but not be shown in the email-->
+<div style=3D"max-height: 0; overflow: hidden; mso-hide: all;" aria-hidden=
+=3D"true">
+    Thank You For Your Payment!
+</div>
+
+<!-- Main Email Container -->
+<table align=3D"center" role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%"
+       class=3D"email-container" style=3D"margin: auto; max-width: 700px;">
+
+    <!-- Email Header : BEGIN -->
+    <tr>
+        <td style=3D"padding: 0 0 0 0; text-align: center; background-color=
+: #F5F6F8;" class=3D"email-header-container">
+
+            <table class=3D"email-header" align=3D"center" role=3D"presenta=
+tion" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%">
+                <tr>
+                    <td style=3D"width: 175px;" class=3D"email-header-td-le=
+ft md-down-hidden">
+                        &nbsp;
+                    </td>
+                    <td class=3D"email-header-td-center" style=3D"text-alig=
+n: center; padding: 40px 0 0 0;">
+
+                        <!-- HostGator Logo (LEAVE ALT BLANK) -->
+                        <a href=3D"https://www.hostgator.com?utm_source=3Dr=
+egflow_transactional&utm_medium=3Demail&utm_campaign=3Dwelcome" title=3D"Ho=
+stgator.com">
+
+                            <img src=3D"https://static.hostgator.com/img/ma=
+il/hg_logo_orange.png" alt=3D""
+                                 width=3D"222" height=3D"41" border=3D"0" s=
+tyle=3D"max-width: 222px; height: auto; background: #F5F6F8;" />
+                        </a>
+
+                    </td>
+                    <td class=3D"email-header-td-right md-down-hidden" styl=
+e=3D"width: 175px; text-align: right;">
+                        <img src=3D"https://static.hostgator.com/img/mail/t=
+riangle_blue.png" alt=3D"Blue Triangle"
+                             width=3D"175" height=3D"132" border=3D"0" styl=
+e=3D"max-width: 175px; height: auto; background: transparent;" class=3D"md-=
+down-hidden" />
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td style=3D"background-color: #F5F6F8;">
+
+            <!-- Headline -->
+            <h1 style=3D"font-style: normal; font-weight: bold; font-size: =
+32px;
+                    line-height: 48px; color: #000000; text-align: center;
+                    padding-bottom: 30px; margin-top: 0;">
+                <span style=3D"border-bottom: solid 8px #4A93E7;">
+                    Thank You For Your Payment!
+                </span>
+            </h1>
+
+        </td>
+    </tr>
+    <!-- Email Header : END -->
+
+
+    <!-- Email Main Content : BEGIN -->
+    <tr>
+        <td style=3D"padding: 0; background-color: #FFFFFF;">
+
+            <!-- 1 Column Layout : BEGIN -->
+            <table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0=
+" border=3D"0" width=3D"100%" class=3D"content-table">
+                <tr>
+                    <!-- Column 1 (Text Information): BEGIN -->
+                    <th valign=3D"top" width=3D"100%" class=3D"stack-column=
+-center">
+                        <table role=3D"presentation" cellspacing=3D"0" cell=
+padding=3D"0" border=3D"0" width=3D"100%">
+                            <tr>
+                                <td style=3D"padding: 38px 0 0; text-align:=
+ left" class=3D"p-md-down-10">
+
+                                    <p style=3D"color: #000000; font-weight=
+: 500; font-size: 16px; line-height: 24px;">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                                            We have successfully processed =
+payment for the following items
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                                    </p>
+
+                                    <!-- Invoice Table -->
+                                    <div class=3D"invoice-table" style=3D"p=
+adding: 24px; margin: 38px auto 0; background-color: #F5F6F8; color: #1F214=
+2;">
+
+=20=20=20=20
+    <div style=3D"margin-bottom: 15px; color: #1F2142;">
+
+        <table cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" bo=
+rder=3D"0" style=3D"margin: 10px 0 !important;width: 300px !important;">
+            <tbody>
+            <tr>
+                <td style=3D"font-size: 16px; color: #1F2142;">
+                    Invoice
+                </td>
+                <td style=3D"font-size: 16px; color: #1F2142;">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                        Date Paid
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                </td>
+            </tr>
+            <tr>
+                <td style=3D"font-size: 12px; color: #1F2142;">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                        85984845
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                </td>
+                <td style=3D"font-size: 12px; color: #1F2142;">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                        2023-01-20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <table cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=
+=3D"100%" border=3D"0" style=3D"margin: 10px auto;">
+        <thead>
+        <tr>
+            <th style=3D"font-weight: 700; padding: 15px 0; font-size: 16px=
+; color: #1F2142;">Item</th>
+            <th style=3D"font-weight: 700; text-align: right;padding: 15px =
+0; font-size: 16px; color: #1F2142;">Price</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <th style=3D"font-weight: 700;padding: 15px 0; font-size: 16px;=
+ color: #1F2142;">Subtotal</th>
+            <th style=3D"font-weight: 700; text-align: right;padding: 15px =
+0; font-size: 16px; color: #1F2142;">
+                $53.85
+            </th>
+        </tr>
+        <tr>
+            <th style=3D"font-weight: 700;padding: 15px 0; font-size: 16px;=
+ color: #1F2142;">Discount</th>
+            <th style=3D"font-weight: 700; text-align: right;padding: 15px =
+0; font-size: 16px; color: #1F2142;">
+                $0.00
+            </th>
+        </tr>
+=20=20=20=20=20=20=20=20
+        <tr>
+            <th style=3D"font-weight: 700;padding: 15px 0; font-size: 16px;=
+ color: #1F2142;">Tax</th>
+            <th style=3D"font-weight: 700; text-align: right;padding: 15px =
+0; font-size: 16px; color: #1F2142;">
+                $0.00
+            </th>
+        </tr>
+        <tr>
+            <th style=3D"font-weight: 700;padding: 15px 0; font-size: 16px;=
+ color: #1F2142;">Total</th>
+            <th style=3D"font-weight: 700; text-align: right;padding: 15px =
+0; font-size: 16px; color: #1F2142;">
+                $53.85
+            </th>
+        </tr>
+        </tfoot>
+=20=20=20=20=20=20=20=20
+        <tbody>
+        <tr>
+            <td style=3D"padding: 0 0 15px 0; color: #1F2142; vertical-alig=
+n: top;">
+                            <span style=3D"font-size: 16px; color: #1F2142;=
+ text-transform: capitalize">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20
+                                    Shared Business Plan
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20
+                            </span>
+                <br>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                    3 Months
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+            </td>
+            <td style=3D"font-weight: 500; text-align: right;padding: 0 0 1=
+5px 0; font-size: 16px; color: #1F2142; vertical-align: top;">
+            	$53.85
+            </td>
+        </tr>
+        </tbody>
+=20=20=20=20=20=20=20=20
+    </table>
+
+=20=20=20=20
+=20=20=20=20
+
+</div>
+
+
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                    <!-- Column 1 (Text Information): END -->
+                </tr>
+            </table>
+            <!-- 1 Column Layout : END -->
+
+        </td>
+    </tr>
+    <!-- Email Main Content : END -->
+
+</table>
+
+<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=3D"=
+0" width=3D"100%" class=3D"email-container footer-table" style=3D"width: 10=
+0%; max-width: 700px;">
+
+    <tbody>
+
+        <!-- Email Copyright : BEGIN -->
+        <tr>
+            <td class=3D"compliance-section" style=3D"padding: 24px 10px; b=
+ackground-color: #FFFFFF; color: #000000; font-size: 14px; line-height: 24p=
+x;">
+                <p>
+                    Auto Renewal Terms: <b>All plans and products automatic=
+ally renew unless you cancel.</b>
+                    You may cancel at any time, prior to your rebill, to pr=
+event recurring charges, by
+                    logging into your
+                    <a href=3D"https://portal.hostgator.com/?utm_source=3Dr=
+egflow_transactional&utm_medium=3Demail&utm_campaign=3Dpayment_confirmation=
+_v2.tt&utm_layout=3Demail_template&utm_term=3Drvairavan@caldonbiotech.com" =
+title=3D"HostGator Billing Portal" style=3D"color: #0069FF !important;">
+                        billing portal</a>.
+                    Product Renewals will be for the same term length, exce=
+pt domains which renew annually, and at the
+                    <a href=3D"https://www.hostgator.com/help/article/hosti=
+ng-price-chart?utm_source=3Dregflow_transactional&utm_medium=3Demail&utm_ca=
+mpaign=3Dpayment_confirmation_v2.tt&utm_layout=3Demail_template&utm_term=3D=
+rvairavan@caldonbiotech.com" title=3D"regular rates" style=3D"color: #0069F=
+F !important;">
+                        regular rates
+                    </a>
+                    reflected in your
+                    <a href=3D"https://portal.hostgator.com/?utm_source=3Dr=
+egflow_transactional&utm_medium=3Demail&utm_campaign=3Dpayment_confirmation=
+_v2.tt&utm_layout=3Demail_template&utm_term=3Drvairavan@caldonbiotech.com" =
+title=3D"HostGator Billing Portal" style=3D"color: #0069FF !important;">
+                        billing portal</a>.
+                </p>
+
+                <p>
+                    Your purchase and continued use of HostGator products a=
+nd services are subject to:<br>
+                    Auto Renewal Terms,
+                    <a href=3D"http://www.hostgator.com/tos?utm_source=3Dre=
+gflow_transactional&utm_medium=3Demail&utm_campaign=3Dpayment_confirmation_=
+v2.tt&utm_layout=3Demail_template&utm_term=3Drvairavan@caldonbiotech.com" t=
+itle=3D"Terms of Service" style=3D"color: #0069FF !important;">
+                        Terms of Service
+                    </a>,
+                    <a href=3D"https://www.hostgator.com/tos#cancellations?=
+utm_source=3Dregflow_transactional&utm_medium=3Demail&utm_campaign=3Dpaymen=
+t_confirmation_v2.tt&utm_layout=3Demail_template&utm_term=3Drvairavan@caldo=
+nbiotech.com" title=3D"Cancellation Policy" style=3D"color: #0069FF !import=
+ant;">
+                        Cancellation Policy
+                    </a>
+                    and
+                    <a href=3D"https://newfold.com/privacy-center?utm_sourc=
+e=3Dregflow_transactional&utm_medium=3Demail&utm_campaign=3Dpayment_confirm=
+ation_v2.tt&utm_layout=3Demail_template&utm_term=3Drvairavan@caldonbiotech.=
+com" title=3D"Privacy Notice" style=3D"color: #0069FF !important;">
+                        Privacy Notice</a>.
+                </p>
+            </td>
+        </tr>
+        <!-- Email Copyright : END -->
+
+        <!-- Email Social Section : BEGIN -->
+        <tr>
+            <td align=3D"center" class=3D"social-section" style=3D"text-ali=
+gn: center; padding: 24px 0 10px 0; background-color: #1F2142;
+                    color: #000000; font-size: 12px; line-height: 24px; max=
+-height: 143px;
+                    border-bottom: solid 7px #CFD8DE;">
+
+                <table align=3D"center" class=3D"" style=3D"background-colo=
+r: #1F2142;">
+                    <tr>
+                        <td style=3D"text-align: center; padding: 12px;" cl=
+ass=3D"stack-column-center">
+                            <h3 style=3D"color: #FFFFFF; font-size: 32px;" =
+class=3D"connect-with-us">Connect with us!</h3>
+                        </td>
+                        <td style=3D"text-align: center; padding: 12px;" cl=
+ass=3D"stack-column-center">
+
+                            <table align=3D"center" class=3D"social-icons" =
+style=3D"text-align: center;">
+                                <tr>
+                                    <td align=3D"center" style=3D"text-alig=
+n: center; padding-right: 15px;">
+
+                                        <!-- Facebook Icon -->
+                                        <a href=3D"https://www.facebook.com=
+/HostGator?utm_source=3Dregflow_transactional&utm_medium=3Demail&utm_campai=
+gn=3Dpayment_confirmation_v2.tt&utm_layout=3Demail_template&utm_term=3Drvai=
+ravan@caldonbiotech.com"
+                                           title=3D"View our Facebook Page">
+                                            <img src=3D"https://static.host=
+gator.com/img/mail/facebook.png" alt=3D"Facebook Icon"
+                                             border=3D"0" style=3D"max-widt=
+h: 44px; height: auto; background: transparent;"
+                                            class=3D"social-icon" />
+                                        </a>
+                                    </td>
+
+                                    <td align=3D"center" style=3D"text-alig=
+n: center; padding-right: 15px;">
+
+                                        <!-- Twitter Icon -->
+                                        <a href=3D"https://twitter.com/host=
+gator?utm_source=3Dregflow_transactional&utm_medium=3Demail&utm_campaign=3D=
+payment_confirmation_v2.tt&utm_layout=3Demail_template&utm_term=3Drvairavan=
+@caldonbiotech.com"
+                                           title=3D"View our Twitter Page">
+                                        <img src=3D"https://static.hostgato=
+r.com/img/mail/twitter.png" alt=3D"Twitter Icon"
+                                             border=3D"0" style=3D"max-widt=
+h: 44px; height: auto; background: transparent;"
+                                             class=3D"social-icon"/>
+                                        </a>
+                                    </td>
+
+                                    <td align=3D"center" style=3D"text-alig=
+n: center; padding-right: 0;">
+
+                                        <!-- Instagram Icon -->
+                                        <a href=3D"https://www.instagram.co=
+m/hostgator/?utm_source=3Dregflow_transactional&utm_medium=3Demail&utm_camp=
+aign=3Dpayment_confirmation_v2.tt&utm_layout=3Demail_template&utm_term=3Drv=
+airavan@caldonbiotech.com"
+                                           title=3D"View our Instagram Page=
+">
+                                        <img src=3D"https://static.hostgato=
+r.com/img/mail/instagram.png" alt=3D"Instagram Icon"
+                                             border=3D"0" style=3D"max-widt=
+h: 44px; height: auto; background: transparent;"
+                                             class=3D"social-icon"/>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align=3D"center" style=3D"text-alig=
+n: center; padding-right: 15px;">
+
+                                        <!-- Pinterest Icon -->
+                                        <a href=3D"https://www.pinterest.co=
+m/hostgator/?utm_source=3Dregflow_transactional&utm_medium=3Demail&utm_camp=
+aign=3Dpayment_confirmation_v2.tt&utm_layout=3Demail_template&utm_term=3Drv=
+airavan@caldonbiotech.com"
+                                           title=3D"View our Pinterest Page=
+">
+                                        <img src=3D"https://static.hostgato=
+r.com/img/mail/pinterest.png" alt=3D"Pinterest Icon"
+                                             border=3D"0" style=3D"max-widt=
+h: 44px; height: auto; background: transparent;"
+                                             class=3D"social-icon"/>
+                                        </a>
+                                    </td>
+
+                                    <td align=3D"center" style=3D"text-alig=
+n: center; padding-right: 15px;">
+
+                                        <!-- LinkedIn Icon -->
+                                        <a href=3D"https://www.linkedin.com=
+/company/hostgator-com/?utm_source=3Dregflow_transactional&utm_medium=3Dema=
+il&utm_campaign=3Dpayment_confirmation_v2.tt&utm_layout=3Demail_template&ut=
+m_term=3Drvairavan@caldonbiotech.com"
+                                           title=3D"View our LinkedIn Page">
+                                        <img src=3D"https://static.hostgato=
+r.com/img/mail/linkedin.png" alt=3D"LinkedIn Icon"
+                                             border=3D"0" style=3D"max-widt=
+h: 44px; height: auto; background: transparent;"
+                                             class=3D"social-icon"/>
+                                        </a>
+                                    </td>
+
+                                    <td align=3D"center" style=3D"text-alig=
+n: center; padding-right: 0;">
+
+                                        <!-- YouTube Icon -->
+                                        <a href=3D"https://www.youtube.com/=
+user/hostgator?utm_source=3Dregflow_transactional&utm_medium=3Demail&utm_ca=
+mpaign=3Dpayment_confirmation_v2.tt&utm_layout=3Demail_template&utm_term=3D=
+rvairavan@caldonbiotech.com"
+                                        title=3D"View our YouTube Channel">
+                                        <img src=3D"https://static.hostgato=
+r.com/img/mail/youtube.png" alt=3D"YouTube Icon"
+                                             border=3D"0" style=3D"max-widt=
+h: 44px; height: auto; background: transparent;"
+                                             class=3D"social-icon"/>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+        <!-- Email Social Section : END -->
+
+        <!-- Email Copyright : BEGIN -->
+        <tr>
+            <td class=3D"copyright-section" style=3D"padding: 24px 10px; ba=
+ckground-color: #F5F6F8; color: #000000; font-size: 12px; line-height: 24px=
+;">
+                <p>
+                    Copyright =A9 2023. All rights reserved.
+                </p>
+                <p>
+                    HostGator, 5335 Gate Pkwy, <br>Jacksonville, FL 32256
+                </p>
+
+                <div>
+                    <a class=3D"copyright-link" href=3D"https://www.hostgat=
+or.com/tos?utm_source=3Dregflow_transactional&utm_medium=3Demail&utm_campai=
+gn=3Dpayment_confirmation_v2.tt&utm_layout=3Demail_template&utm_term=3Drvai=
+ravan@caldonbiotech.com">Terms of Service</a>
+                    <span class=3D"divider">|</span>
+                    <a class=3D"copyright-link" href=3D"https://newfold.com=
+/privacy-center?utm_source=3Dregflow_transactional&utm_medium=3Demail&utm_c=
+ampaign=3Dpayment_confirmation_v2.tt&utm_layout=3Demail_template&utm_term=
+=3Drvairavan@caldonbiotech.com">Privacy Policy</a>
+                    <span class=3D"divider">|</span>
+                    <a class=3D"copyright-link" href=3D"https://www.hostgat=
+or.com/tos#cancellations?utm_source=3Dregflow_transactional&utm_medium=3Dem=
+ail&utm_campaign=3Dpayment_confirmation_v2.tt&utm_layout=3Demail_template&u=
+tm_term=3Drvairavan@caldonbiotech.com">Cancellation Policy</a>
+                    <span class=3D"divider">|</span>
+                    <a class=3D"copyright-link" href=3D"https://support.hos=
+tgator.com/?utm_source=3Dregflow_transactional&utm_medium=3Demail&utm_campa=
+ign=3Dpayment_confirmation_v2.tt&utm_layout=3Demail_template&utm_term=3Drva=
+iravan@caldonbiotech.com">Support</a>
+                    <span class=3D"divider">|</span>
+                    <a class=3D"copyright-link" href=3D"https://helpchat.ho=
+stgator.com/?utm_source=3Dregflow_transactional&utm_medium=3Demail&utm_camp=
+aign=3Dpayment_confirmation_v2.tt&utm_layout=3Demail_template&utm_term=3Drv=
+airavan@caldonbiotech.com">Contact Us</a>
+                </div>
+            </td>
+        </tr>
+        <!-- Email Copyright : END -->
+
+        <!-- Spacer Row at bottom to prevent compliance terms from truncati=
+ng : BEGIN -->
+        <tr>
+            <td style=3D"padding: 24px;"> </td>
+        </tr>
+        <!-- Spacer Row at bottom to prevent compliance terms from truncati=
+ng : END -->
+
+    </tbody>
+
+</table>
+
+</body>
+</html>=
+
+---------------Boundary---------------

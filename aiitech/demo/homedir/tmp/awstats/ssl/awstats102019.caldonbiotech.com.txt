@@ -1,0 +1,1024 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 201910 will be lost/reset.
+# Last config file used to build this data file was /home3/cbt/tmp/awstats/ssl/awstats.caldonbiotech.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2014                
+POS_TIME 2696                
+POS_VISITOR 21343               
+POS_DAY 33291               
+POS_DOMAIN 3619                
+POS_LOGIN 4246                
+POS_ROBOT 4401                
+POS_WORMS 5309                
+POS_EMAILSENDER 5440                
+POS_EMAILRECEIVER 5583                
+POS_SESSION 34224               
+POS_SIDER 34436               
+POS_FILETYPES 5718                
+POS_DOWNLOADS 6045                
+POS_OS 6208                
+POS_BROWSER 6578                
+POS_SCREENSIZE 8992                
+POS_UNKNOWNREFERER 9066                
+POS_UNKNOWNREFERERBROWSER 9628                
+POS_ORIGIN 10107               
+POS_SEREFERRALS 10258               
+POS_PAGEREFS 10480               
+POS_SEARCHWORDS 10957               
+POS_KEYWORDS 11109               
+POS_MISC 2360                
+POS_ERRORS 11168               
+POS_CLUSTER 4102                
+POS_SIDER_404 11369               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20191101000514 267 76916 12036665623912
+FirstTime 20191001005608
+LastTime 20191031231018
+LastUpdate 20191101092400 267 0 266 0 0
+TotalVisits 608                 
+TotalUnique 289                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 296                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+WindowsMediaPlayerSupport 0 0 0
+PDFSupport 0 0 0
+TotalMisc 0 0 0
+QuickTimeSupport 0 0 0
+AddToFavourites 0 0 0
+JavascriptDisabled 0 0 0
+FlashSupport 0 0 0
+RealPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+JavaEnabled 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 14 14 405731 75 87 2828241
+1 49 49 1359624 147 184 4595394
+2 179 367 14799246 195 385 9131199
+3 1777 2202 138016360 561 764 11042954
+4 95 581 17075741 45 83 332524
+5 42 134 4064301 119 703 17733558
+6 54 150 3917502 49 72 735388
+7 148 408 11216033 265 375 5985540
+8 57 295 8246266 131 612 15054112
+9 28 126 3665501 40 54 338777
+10 118 423 12253974 38 57 164453
+11 173 999 25523974 45 63 530097
+12 136 582 14007984 53 71 1051485
+13 195 947 26040329 116 150 1516945
+14 146 565 18659658 141 182 754401
+15 229 1208 32487652 125 167 87415
+16 367 1234 35430736 125 141 440217
+17 119 442 12076293 106 132 643948
+18 45 186 4413736 40 82 995922
+19 35 195 4968490 396 524 16006484
+20 40 180 5077833 116 140 897526
+21 25 25 565914 21 53 182140
+22 62 350 9242577 41 74 618821
+23 47 223 8699628 26 41 363150
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 26
+us 3290 9604 331921765
+lt 229 229 14690387
+ru 189 261 8311878
+cn 110 200 7347070
+gb 58 109 3103259
+hu 42 42 961920
+de 34 493 16122689
+in 34 203 6249185
+fr 32 32 1086402
+gr 31 183 5680362
+ca 25 248 7919969
+it 24 24 395986
+kr 16 16 888166
+nl 14 14 757643
+ir 12 110 3937592
+ua 11 11 111901
+bg 10 87 2338842
+ro 4 4 91622
+vg 2 2 156890
+dk 2 2 29630
+be 2 2 6771
+my 2 2 6765
+ch 2 2 45818
+sk 2 2 6771
+cl 2 2 45800
+au 1 1 0
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 19
+bot[\s_+:,\.\;\/\\-] 1372 37769286 20191031195359 60
+spider 362 7234943 20191031031956 0
+bingbot/ 226 51632 20191031223432 224
+PhantomJS 212 7037234 20191030024412 0
+Googlebot/ 177 65194 20191031210040 174
+(firefox/)([0-9]\.|[0-1][0]\.) 79 4624066 20191029192545 2
+no_user_agent 48 2682212 20191030090324 2
+unknown 26 676 20191028111646 26
+RukiCrawler/ 13 265346 20191029071938 0
+DuckDuckGo\-Favicons\-Bot/ 7 98685 20191018065246 0
+Python\-urllib/ 6 156 20191015123455 6
+facebookexternalhit/ 6 91618 20191024130649 0
+YandexBot/ 6 156 20191024120700 6
+Baiduspider/ 4 156894 20191015221430 0
+Applebot/ 4 104 20191012132753 4
+SurdotlyBot/ 3 68700 20191016072146 0
+bingpreview 2 156898 20191024032532 0
+crawl 2 45792 20191012115854 0
+Apache\-HttpClient/ 2 28632 20191025200123 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 13
+gif 10 8470 0 0
+woff 12 812272 0 0
+php 281 56595 0 0
+woff2 296 15746240 0 0
+xml 16 15558 0 0
+png 622 35453134 0 0
+html 3342 166533450 0 0
+eot 48 4266140 0 0
+ttf 139 2744512 0 0
+Unknown 46 56850 0 0
+js 3142 63889739 0 0
+jpg 592 60334148 0 0
+css 3339 62297975 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 2
+//wp-content/plugins/js_composer/changes.txt 31 0 1619068
+/wp-content/plugins/js_composer/changes.txt 31 0 1619068
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 21
+ios_ipad 104 13
+win10 4479 1261
+ios_iphone 174 21
+macosx9 2 2
+winunknown 1 1
+winlong 104 104
+Unknown 277 277
+winxp 189 15
+macosx8 9 8
+win8.1 118 42
+win2000 1 1
+win7 2781 1834
+macosx11 108 91
+macosx12 18 18
+linux 2902 350
+win8 2 2
+macosx7 4 4
+macosx6 4 4
+linuxandroid 151 30
+macosx10 272 62
+macosx 185 40
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 109
+chrome70.0.3538.77 2 2
+chrome70.0.3538.67 762 67
+firefox34.0 90 90
+chrome34.0.1847.131 2 2
+firefox52.0 81 64
+opera58.0.3135.107 16 16
+chrome77.0.3835.0 86 8
+chrome72.0.3626.119 99 9
+chrome72.0.3626.109 2 2
+chrome77.0.3865.90 1729 214
+chrome19.0.1042.0 2 2
+safari10.0 4 4
+msie7.0 2 2
+safari13.0.1 74 9
+firefox56.0 10 10
+chrome74.0.3729.131 2 2
+chrome45.0.2454.101 10 10
+chrome75.0.3770.142 223 12
+chrome73.0.3683.103 4 4
+chrome49.0.2623.112 1 1
+chrome40.0.2214.85 3 3
+chrome40.0.2214.93 2 2
+chrome73.0.3683.86 80 8
+chrome77.0.3865.120 1355 139
+chrome78.0.3904.62 76 8
+chrome39.0.2171.95 20 20
+chrome78.0.3882.0 190 64
+safari7.0.3 2 2
+chrome47.0.2526.106 46 46
+opera54.0.2952.54 2 2
+chrome76.0.3809.100 19 19
+chrome78.0.3904.70 73 18
+chrome66.0.3359.117 6 6
+chrome34.0.1847.114 16 16
+edge18 180 16
+chrome53.7.2482.8754 2 2
+edge36 2 2
+chrome36.0.1985.143 7 7
+firefox69.0 83 10
+firefox61.0 44 44
+mozilla 39 39
+chrome74.0.3729.157 6 6
+msie11.0 534 64
+edge17 82 22
+firefox53.0 97 8
+firefox68.0 7 7
+firefox47.0 26 26
+chrome26.0.1410.65 9 8
+firefox64.0 19 19
+safari12.1.1 102 11
+chrome57.0.2987.98 99 9
+opera55.0.2994.44 6 6
+firefox15.0 2 2
+chrome71.0.3578.80 76 25
+opera54.0.2952.64 8 8
+chrome23.0.1271.95 4 4
+msie9.0 1776 1662
+chrome17.0.963.66 2 2
+opera53.0.2907.99 6 6
+chrome63.0.3239.84 258 48
+chrome66.0.3359.139 228 228
+firefox50.0 470 11
+chrome67.0.3396.79 5 5
+chrome76.0.3809.132 103 14
+chrome67.0.3396.99 10 10
+chrome66.0.3359.30 59 6
+chrome65.0.3325.181 394 20
+chrome66.0.3359.181 96 96
+chrome23.0.1271.26 2 2
+chrome45.0.2454.93 2 2
+safari8.0.8 128 18
+msie6.0 2 2
+firefox30.0 8 8
+firefox66.0 54 54
+chrome68.0.3440.106 218 26
+chrome72.0.3617.0 256 23
+chrome17.0.963.84 2 2
+safari5.1.7 2 2
+chrome60.0.3112.113 314 238
+chrome46.0.2754.75 2 2
+chrome23.0.1271.64 3 3
+firefox62.0 4 4
+chrome65.0.3325.162 6 6
+msie8.0 2 2
+safari12.1.2 96 8
+firefox17.0 185 11
+chrome59.0.3071.114 2 2
+chrome59.0.3071.104 22 22
+chrome73.0.3683.75 24 24
+firefox36.0 1 1
+chrome67.0.3396.87 12 10
+chrome58.0.1145.75 4 4
+chrome72.0.3626.122 3 3
+opera53.0.2907.68 2 2
+chrome50.0.2661.102 1 1
+chrome74.0.3729.169 19 19
+chrome71.0.3578.98 4 4
+chrome64.0.3282.186 2 2
+chrome49.0.2623.75 7 4
+chrome34.0.1847.116 2 2
+chrome65.0.3325.146 4 4
+firefox67.0 2 2
+firefox54.0 2 2
+opera62.0.3331.99 6 6
+chrome10.0.648.133 2 2
+firefox63.0 84 20
+Unknown 270 270
+safari13.0.2 98 8
+chrome58.0.3029.110 94 17
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 10
+WordPress/5.0.7;_https://caldonbiotech.com 20191031210042
+WordPress/5.0.6;_https://caldonbiotech.com 20191015020401
+WordPress 20191021080837
+Go-http-client/2.0 20191028140155
+WordPress/4.9.2;_http://polres.settong.com 20191031002247
+Poster 20191019194944
+Go-http-client/1.1 20191030055013
+Python/3.6_aiohttp/3.6.0 20191001133843
+Mozilla/5.0_zgrab/0.x_(compatible;_Researchscan/t13rl;__http://researchscan.comsys.rwth-aachen.de) 20191027180600
+Faraday_v0.15.4 20191031074001
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 10
+WordPress/5.0.7;_https://caldonbiotech.com 20191031210042
+WordPress 20191021080837
+WordPress/5.0.6;_https://caldonbiotech.com 20191015020401
+Go-http-client/2.0 20191028140155
+WordPress/4.9.2;_http://polres.settong.com 20191031002247
+Poster 20191019194944
+Go-http-client/1.1 20191030055013
+Python/3.6_aiohttp/3.6.0 20191001133843
+Windows_Live_Writter 20191015092726
+Faraday_v0.15.4 20191031074001
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 1351 2281
+From1 6 6
+From2 1725 1839
+From3 62 139
+From4 1036 7620
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 4
+www_google_com 1715 1829
+bing 4 4
+r_search_yahoo_com 4 4
+www_google_co_in 2 2
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 8
+https://brandnewblogs.com 40 40
+https://192.185.52.186:443 8 8
+https://sandiegolifechanging.org/work/map/ 4 4
+https://na62.salesforce.com 2 2
+http://freevpn.express 2 79
+http://webspress.xyz/article/14367301/the-ultimate-guide-on-how-to-get-more-blog-traffic/ 2 2
+https://www.chaplinbaptist.org 2 2
+https://brandnewblogs.com 2 2
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 10
+302 3 0
+500 56 37332
+421 6 2340
+301 713 656
+406 68 15368
+404 919 31514885
+403 212 28408
+405 12 168
+409 636 52788
+400 14 522
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 156
+/author/admin/%20and%201%3E1 2 -
+/aldolase-control-package-insert/contact-form-7/v1 2 -
+/cod.php 1 -
+/Adminer.php 6 -
+/hitachi-717-aldolase/contact-form-7/v1 2 -
+/%20and%201%3E1 2 -
+/1572018479423373496 1 -
+/indes.php 1 -
+/author/admin/%22%20and%20%22x%22=%22y 1 -
+/wp-admin/maint/index.php 1 -
+/wp-content/themes/dt-the7/js/%url% 2 -
+/2016/05/%20and%201%3E1 2 -
+/seo_script.php 1 -
+/2016/05/%22%20and%20%22x%22=%22y 1 -
+/dt_gallery/hospital/%27%20or%20(1,2)=(select*from(select%20name_const(CHAR(97,120,118,103,111,122,108,105,72,101,68,86),1),name_const(CHAR(97,120,118,103,111,122,108,105,72,101,68,86),1))a)%20--%20%27x%27=%27x 1 -
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/%22%20and%20%22x%22%3D%22y 1 -
+/wp-content/themes/Aqua/404.php 2 -
+/wp-content/plugins/temp.php 1 -
+/2016/05/12/%27%20and%20%27x%27%3D%27y 1 -
+/%27%20and%20%27x%27%3D%27y 1 -
+/category/research/2121121121212.1 2 -
+/category/research/%22%20and%20%22x%22=%22y 1 -
+/2016/05/12/%20and%201%3E1 2 -
+/client-testimonials/contact-form-7/v1 2 -
+/dt_gallery/hospital/'%20and%20'x'='x 1 -
+/package-insert-3/contact-form-7/v1 2 -
+/2016/05/12/%22%20and%20%22x%22%3D%22y 1 -
+/wp-includes/indes.php 1 -
+/adm.php 6 -
+/2016/05/\"%20and%20\"x\"%3D\"x 1 -
+/wp-admin/css/colors/blue/system_m.php 1 -
+/ad.php 6 -
+/wp-content/themes/agregado/404.php 2 -
+//sitemap.html 2 -
+/dt_gallery/hospital/%20and%201%3E1 2 -
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/%27%20and%20%27x%27%3D%27y 1 -
+/store/ 4 -
+/sputolysin-stat-pack/contact-form-7/v1 2 -
+/dt_gallery/hospital/%27%20and%20%27x%27%3D%27y 1 -
+/%22%20and%20%22x%22=%22y 1 -
+/yt2.php 1 -
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/%22%20or%20(1,2)=(select*from(select%20name_const(CHAR(120,81,111,75,118,119,119,82,121,104,116,79),1),name_const(CHAR(120,81,111,75,118,119,119,82,121,104 2 -
+/2016/05/%22%20or%20(1,2)=(select*from(select%20name_const(CHAR(113,105,85,84,109,103,90,97,105,106,82),1),name_const(CHAR(113,105,85,84,109,103,90,97,105,106,82),1))a)%20--%20%22x%22=%22x 2 -
+/kup.php 2 -
+/%22%20or%20(1,2)=(select*from(select%20name_const(CHAR(98,89,115,85,100,103,102,78,72,76,66),1),name_const(CHAR(98,89,115,85,100,103,102,78,72,76,66),1))a)%20--%20%22x%22=%22x 2 -
+/wp-content/themes/template-parts/content-single.php 1 -
+/cart/ 4 -
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/\"%20and%20\"x\"%3D\"x 1 -
+/hook-filters.php 2 -
+/license.php 6 -
+/connect.php 6 -
+/author/admin/'%20and%20'x'='x 1 -
+/author/admin/%22%20and%20%22x%22%3D%22y 1 -
+/wp-content/plugins/ithemes-sync/js/settings-page.js 6 -
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/'%20and%20'x'='x 1 -
+/2121121121212.1 2 -
+/2016/05/%27%20and%20%27x%27%3D%27y 1 -
+/dt_gallery/hospital/'%20and%20'x'='y 1 -
+/%27%20and%20%27x%27%3D%27x 1 -
+/%22%20and%20%22x%22%3D%22y 1 -
+/ytt.php 1 -
+/category/research/%27%20or%20(1,2)=(select*from(select%20name_const(CHAR(78,102,98,83,101,88,77,103,99,85),1),name_const(CHAR(78,102,98,83,101,88,77,103,99,85),1))a)%20--%20%27x%27=%27x 1 -
+/400.shtml 3 -
+/2016/05/'%20or%20(1,2)=(select*from(select%20name_const(CHAR(113,105,85,84,109,103,90,97,105,106,82),1),name_const(CHAR(113,105,85,84,109,103,90,97,105,106,82),1))a)%20--%20'x'='x 1 -
+/website-sitemap.xml 4 -
+/wp-content/themes/better-mag/footer.php 1 -
+/wp-content/themes/cache/404.php 2 -
+/2016/05/12/'%20or%20(1,2)=(select*from(select%20name_const(CHAR(66,72,122,121,108,67,106,80,82,105,115,82),1),name_const(CHAR(66,72,122,121,108,67,106,80,82,105,115,82),1))a)%20--%20'x'='x 1 -
+/author/admin/'%20and%20'x'='y 1 -
+/p1as2.html 4 https://www.google.com/
+/wp-bb.php 2 -
+/sitemap.html 4 -
+/2016/05/%22%20and%20%22x%22%3D%22y 1 -
+/sitemap_index.xml 4 -
+/th1s_1s_a_4o4.html 62 -
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/%22%20and%20%22x%22=%22x 1 -
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/'%20and%20'x'='y 1 -
+/_adminer.php 6 -
+/category/research/%22%20or%20(1,2)=(select*from(select%20name_const(CHAR(78,102,98,83,101,88,77,103,99,85),1),name_const(CHAR(78,102,98,83,101,88,77,103,99,85),1))a)%20--%20%22x%22=%22x 2 -
+/%27%20or%20(1,2)=(select*from(select%20name_const(CHAR(98,89,115,85,100,103,102,78,72,76,66),1),name_const(CHAR(98,89,115,85,100,103,102,78,72,76,66),1))a)%20--%20%27x%27=%27x 1 -
+/author/admin/'%20or%20(1,2)=(select*from(select%20name_const(CHAR(71,120,80,105,84,105,82,75,105),1),name_const(CHAR(71,120,80,105,84,105,82,75,105),1))a)%20--%20'x'='x 1 -
+/category/research/%27%20and%20%27x%27%3D%27y 1 -
+/'%20or%20(1,2)=(select*from(select%20name_const(CHAR(98,89,115,85,100,103,102,78,72,76,66),1),name_const(CHAR(98,89,115,85,100,103,102,78,72,76,66),1))a)%20--%20'x'='x 1 -
+/dt_gallery/hospital/%22%20and%20%22x%22=%22x 1 -
+/author/admin/%22%20and%20%22x%22=%22x 1 -
+/shop/ 4 -
+/author/admin/%27%20or%20(1,2)=(select*from(select%20name_const(CHAR(71,120,80,105,84,105,82,75,105),1),name_const(CHAR(71,120,80,105,84,105,82,75,105),1))a)%20--%20%27x%27=%27x 1 -
+/2016/05/%22%20and%20%22x%22=%22x 1 -
+/category/research/'%20and%20'x'='x 1 -
+/category/research/'%20or%20(1,2)=(select*from(select%20name_const(CHAR(78,102,98,83,101,88,77,103,99,85),1),name_const(CHAR(78,102,98,83,101,88,77,103,99,85),1))a)%20--%20'x'='x 1 -
+/2016/05/2121121121212.1 2 -
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/2121121121212.1 2 -
+/about-us/contact-form-7/v1 2 -
+/wp-icoud.php 1 -
+/temp.php 1 -
+/2016/05/12/'%20and%20'x'='y 1 -
+/author/admin/\"%20and%20\"x\"%3D\"x 1 -
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/%27%20and%20%27x%27%3D%27x 1 -
+/sitemap.xml 4 -
+/wp-content/themes/dt-the7/js/%25url%25 1 -
+/author/admin/%27%20and%20%27x%27%3D%27x 1 -
+/category/research/%22%20and%20%22x%22=%22x 1 -
+/dt_gallery/hospital/\"%20and%20\"x\"%3D\"x 1 -
+/category/research/%20and%201%3E1 2 -
+/%22%20and%20%22x%22=%22x 1 -
+/2016/05/12/2121121121212.1 2 -
+/2016/05/'%20and%20'x'='x 1 -
+/dt_gallery/hospital/%27%20and%20%27x%27%3D%27x 1 -
+/ 590 -
+/author/admin/2121121121212.1 2 -
+/2016/05/%27%20and%20%27x%27%3D%27x 1 -
+/wp-content/plugins/log.php 1 -
+/author/admin/%27%20and%20%27x%27%3D%27y 1 -
+/dt_gallery/hospital/2121121121212.1 2 -
+/2016/05/12/%27%20and%20%27x%27%3D%27x 1 -
+/adminer.php 6 -
+/dt_gallery/hospital/%22%20and%20%22x%22%3D%22y 1 -
+/wp.php 2 -
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/%27%20or%20(1,2)=(select*from(select%20name_const(CHAR(120,81,111,75,118,119,119,82,121,104,116,79),1),name_const(CHAR(120,81,111,75,118,119,119,82,121,104 1 -
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/'%20or%20(1,2)=(select*from(select%20name_const(CHAR(120,81,111,75,118,119,119,82,121,104,116,79),1),name_const(CHAR(120,81,111,75,118,119,119,82,121,104,1 1 -
+/wp-content/plugins/background-image-cropper/image/ico/search.php 1 -
+/super-recent-posts/timthumb/timthumb.php 2 -
+/wp-conde.php 1 -
+/category/research/%22%20and%20%22x%22%3D%22y 1 -
+/dt_gallery/hospital/'%20or%20(1,2)=(select*from(select%20name_const(CHAR(97,120,118,103,111,122,108,105,72,101,68,86),1),name_const(CHAR(97,120,118,103,111,122,108,105,72,101,68,86),1))a)%20--%20'x'='x 1 -
+/2016/05/12/'%20and%20'x'='x 1 -
+/dt_gallery/hospital/%22%20or%20(1,2)=(select*from(select%20name_const(CHAR(97,120,118,103,111,122,108,105,72,101,68,86),1),name_const(CHAR(97,120,118,103,111,122,108,105,72,101,68,86),1))a)%20--%20%22x%22=%22x 2 -
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/%22%20and%20%22x%22=%22y 1 -
+/wp-content/plugins/cherry-plugin/admin/import-export/upload.php 2 -
+/significance-of-testing-aldolase/contact-form-7/v1 2 -
+/2016/05/%27%20or%20(1,2)=(select*from(select%20name_const(CHAR(113,105,85,84,109,103,90,97,105,106,82),1),name_const(CHAR(113,105,85,84,109,103,90,97,105,106,82),1))a)%20--%20%27x%27=%27x 1 -
+/wp-content/plugins/ithemes-sync/api.txt 1 -
+/category/research/'%20and%20'x'='y 1 -
+/dt_gallery/hospital/%22%20and%20%22x%22=%22y 1 -
+/msds/contact-form-7/v1 2 -
+/2016/05/12/%22%20and%20%22x%22=%22x 1 -
+/category/research/%27%20and%20%27x%27%3D%27x 1 -
+/category/research/\"%20and%20\"x\"%3D\"x 1 -
+/wp-admin/includes/index.php 1 -
+/'%20and%20'x'='x 1 -
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/%20and%201%3E1 2 -
+/2016/05/12/%22%20and%20%22x%22=%22y 1 -
+/2016/05/12/%22%20or%20(1,2)=(select*from(select%20name_const(CHAR(66,72,122,121,108,67,106,80,82,105,115,82),1),name_const(CHAR(66,72,122,121,108,67,106,80,82,105,115,82),1))a)%20--%20%22x%22=%22x 2 -
+/wp-logos.php 1 -
+/author/admin/%22%20or%20(1,2)=(select*from(select%20name_const(CHAR(71,120,80,105,84,105,82,75,105),1),name_const(CHAR(71,120,80,105,84,105,82,75,105),1))a)%20--%20%22x%22=%22x 2 -
+/wp-content/themes/BlackPower/404.php 2 -
+/news/contact-form-7/v1 2 -
+/\"%20and%20\"x\"%3D\"x 1 -
+/catalog/ 4 -
+/2016/05/12/%27%20or%20(1,2)=(select*from(select%20name_const(CHAR(66,72,122,121,108,67,106,80,82,105,115,82),1),name_const(CHAR(66,72,122,121,108,67,106,80,82,105,115,82),1))a)%20--%20%27x%27=%27x 1 -
+/2016/05/12/\"%20and%20\"x\"%3D\"x 1 -
+/products.html 2 -
+/wp-content/themes/twentytwelve/404.php 2 -
+/2016/05/'%20and%20'x'='y 1 -
+/'%20and%20'x'='y 1 -
+/wp-cache.php 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 296
+184.154.139.52 535 649 44621839 20191031031529
+184.154.139.51 392 392 27082788 20191030031210
+184.154.139.4 342 342 23690907 20191017031210
+192.185.52.186 247 247 1 20191031210042
+184.154.139.50 245 245 16926789 20191026031404
+88.222.184.114 228 228 14689984 20191016023623
+184.154.139.49 147 147 10156031 20191020031526
+34.218.75.223 129 163 2442896 20191005170816
+77.73.55.138 90 90 1512758 20191025070936
+66.57.215.91 90 768 17669801 20191029132344
+34.77.23.225 67 84 1444001 20191001133843
+34.69.171.175 64 190 5103460 20191019155656
+185.255.96.99 62 62 4324525 20191016034305
+47.92.170.98 57 57 1015202 20191016121648
+35.163.115.78 52 66 776800 20191005171745
+66.246.224.12 41 41 938974 20191031063106
+18.237.172.140 30 44 473845 20191005165312
+51.15.135.108 27 78 2149924 20191025104821
+79.107.130.128 27 179 5627799 20191029044328
+34.217.195.234 27 41 997269 20191005161807
+60.191.38.77 26 26 2039607 20191030214959
+216.30.32.65 26 134 3496039 20191009123745
+35.223.146.60 20 249 6675674 20191021134931
+12.181.27.178 20 83 3044441 20191011154606
+107.142.153.179 18 128 3978700 20191021132339
+54.184.254.138 3 3 68703 20191022110749
+35.247.80.163 4 4 313778 20191008165455
+54.80.150.86 13 13 230395 20191025022112
+52.70.48.63 2 2 45812 20191031175122
+163.172.182.111 2 2 45816 20191028023915
+35.161.72.240 3 3 68712 20191005112329
+157.33.183.205 2 92 3025196 20191029032515
+138.197.71.88 2 36 674274 20191014190624
+159.203.96.245 2 38 1711112 20191001170500
+185.12.5.50 2 2 45818 20191002203924
+185.224.138.108 1 1 403 20191031002247
+54.202.129.189 3 3 68718 20191008111510
+213.159.213.137 4 4 91596 20191030180621
+54.191.208.107 3 3 68682 20191011140150
+198.23.226.192 5 32 740398 20191012114253
+213.159.213.236 4 4 91598 20191014195910
+91.134.12.74 2 2 45804 20191018142754
+168.91.37.110 5 38 772043 20191012114228
+54.191.247.167 3 3 68706 20191013141625
+35.222.201.147 11 98 2618037 20191029040432
+34.219.30.159 3 3 68715 20191009144449
+35.237.51.66 3 3 68721 20191026214939
+34.219.50.167 3 3 68715 20191029101311
+35.239.84.214 2 2 32322 20191021134846
+50.201.215.130 16 120 3667142 20191002162038
+45.76.16.135 2 2 45802 20191010050300
+34.70.168.15 2 2 29630 20191021134844
+34.219.221.91 3 3 68712 20191031125219
+62.210.83.78 2 2 45804 20191015153002
+188.165.148.31 4 4 72840 20191022051212
+91.134.112.254 6 6 108130 20191029124109
+34.214.121.235 2 2 156892 20191017182122
+51.255.138.172 2 2 30600 20191015063034
+51.255.138.178 4 4 68912 20191014111836
+192.99.38.186 2 2 156847 20191011012221
+54.70.159.218 3 3 68721 20191010113233
+123.148.243.48 2 2 45806 20191027225137
+107.6.171.130 2 2 45800 20191017105412
+54.68.133.140 3 3 68715 20191021085545
+18.213.220.102 6 6 105638 20191017060818
+151.138.254.21 2 2 45802 20191022215949
+185.231.174.251 2 2 45816 20191023192419
+123.125.67.152 2 2 156878 20191018080917
+185.46.229.171 2 2 156850 20191010203506
+35.165.52.148 4 4 91596 20191012102813
+178.164.164.35 2 2 45806 20191010042548
+24.147.71.70 10 86 3067821 20191007133206
+193.106.30.99 9 9 223 20191030044832
+167.71.40.191 4 4 11900 20191018062112
+104.202.234.175 5 30 670472 20191012114236
+35.231.66.161 3 3 68709 20191010182540
+146.244.46.235 9 99 2714969 20191022175158
+137.226.113.27 2 2 45816 20191001150809
+62.210.89.11 4 4 91600 20191006224529
+107.77.230.23 2 18 115182 20191015085300
+18.222.116.192 4 81 1454661 20191015123449
+172.114.177.204 10 108 3436058 20191007225511
+18.237.185.117 2 2 45808 20191002131745
+23.105.36.13 10 108 3891796 20191023111007
+107.6.183.162 2 2 45812 20191031113540
+35.225.6.248 2 2 30220 20191021134846
+99.11.18.85 8 98 2700091 20191021155435
+157.51.150.44 2 84 2978542 20191005030654
+52.53.239.212 8 86 1624124 20191031074010
+34.221.44.88 3 3 68691 20191015084759
+166.70.102.82 6 55 1688392 20191009154850
+46.101.9.216 2 2 45812 20191029160853
+159.65.37.98 2 42 1743358 20191010134340
+107.77.227.215 7 56 1700524 20191014171214
+96.65.21.145 10 108 3436052 20191025094408
+82.54.6.229 4 4 46600 20191012031106
+34.222.150.189 3 3 68700 20191025121849
+115.118.128.202 2 2 30591 20191015023557
+35.167.164.104 9 105 3408431 20191002065632
+176.57.217.71 2 2 45810 20191008041528
+193.70.102.145 2 2 35002 20191019141832
+193.70.102.143 2 2 39370 20191024172842
+34.68.180.149 7 94 2446476 20191029161006
+211.56.145.140 16 16 888166 20191002235354
+67.248.134.230 11 102 2760396 20191019155804
+68.7.7.192 12 118 3616582 20191022145430
+34.70.170.217 2 2 36874 20191021134839
+34.219.238.146 3 3 68715 20191028135756
+80.84.57.104 2 2 156896 20191009075545
+185.36.195.13 2 2 45800 20191002192517
+213.183.54.65 8 80 1610722 20191013044858
+37.221.112.88 10 108 3891792 20191015074401
+107.178.200.203 8 70 2082868 20191008033702
+83.136.216.201 2 2 6771 20191019012624
+104.198.183.80 13 109 3500034 20191030161817
+66.102.6.115 0 2 4718 
+18.237.120.179 2 2 45812 20191030055014
+54.213.254.37 2 2 45822 20191026054315
+47.75.203.17 3 3 29774 20191002142115
+1.186.48.58 2 2 45802 20191010215933
+137.226.113.28 4 4 91588 20191027180600
+68.8.246.82 8 96 2478759 20191010173228
+174.195.214.154 8 76 2097965 20191025144129
+104.177.112.172 12 110 1855269 20191005222335
+34.221.208.60 3 3 68712 20191020133842
+138.197.111.19 2 38 684044 20191004174644
+173.252.87.5 0 2 9310 
+5.135.143.224 2 2 156820 20191005000926
+104.62.159.33 16 71 2049876 20191029151546
+52.53.125.9 1 1 0 20191031074007
+183.83.152.44 8 100 3392904 20191022225355
+54.71.187.124 6 70 1478714 20191009124044
+204.9.73.219 2 2 30210 20191003050350
+82.202.161.133 2 2 45816 20191028011550
+92.63.111.27 6 6 137436 20191026042701
+164.132.3.81 8 8 133598 20191031073104
+34.210.84.11 2 2 45812 20191026094035
+52.12.94.75 7 103 3378694 20191005112333
+198.46.145.40 7 46 931887 20191012114247
+35.243.130.152 3 3 68709 20191030224424
+173.252.87.32 0 12 1382508 
+52.27.60.106 3 3 68718 20191017100322
+107.178.231.241 8 98 3283124 20191009021111
+223.196.85.235 18 95 2616231 20191006034837
+98.174.129.242 10 99 2599848 20191004110305
+123.148.211.220 1 1 1144 20191006110926
+91.148.141.162 2 79 2184908 20191011185143
+142.93.69.151 2 2 45808 20191016105603
+165.227.208.121 2 38 684050 20191024190905
+5.196.74.5 4 4 313630 20191021120312
+18.237.0.119 2 2 156892 20191011013548
+137.226.113.26 2 2 45814 20191010164514
+54.203.27.252 3 3 68715 20191014083757
+98.102.50.243 12 84 2278019 20191016145822
+1.186.125.234 2 2 156886 20191027151927
+34.83.246.133 4 4 313744 20191018104910
+35.192.129.36 7 62 1795030 20191028160432
+64.233.172.238 2 2 45828 20191028172949
+104.154.49.231 2 2 34694 20191021134846
+142.93.184.133 2 38 1711100 20191006040255
+134.209.84.73 2 2 45824 20191024015827
+3.92.212.144 2 2 45818 20191028140155
+18.217.31.171 4 82 1456984 20191011151805
+77.234.68.49 14 14 320658 20191027182911
+47.153.247.41 8 106 3406324 20191028132543
+173.252.87.39 0 6 25898 
+34.212.169.30 3 3 68691 20191023104642
+71.85.53.119 18 78 2213415 20191009110454
+34.212.250.35 3 3 68715 20191018113930
+66.27.78.146 14 106 3528824 20191025164434
+193.70.102.144 2 2 35020 20191031221640
+172.241.82.38 2 2 45802 20191011204207
+35.231.231.82 3 3 68709 20191006175450
+54.245.31.70 2 2 156898 20191024083207
+92.249.191.43 10 10 229040 20191031231018
+34.222.103.228 2 2 156904 20191021161112
+176.110.134.2 2 2 156904 20191005073146
+54.201.130.158 3 3 68712 20191030105125
+80.84.57.106 1 1 78448 20191009075601
+132.239.155.253 10 83 2495151 20191009151426
+167.99.212.214 2 2 45798 20191031104234
+34.222.151.92 3 3 68718 20191027101204
+101.224.150.150 7 7 549097 20191023015613
+107.178.232.160 7 88 2434806 20191007081036
+62.165.226.17 4 4 91600 20191020161201
+51.255.128.218 2 2 40554 20191021152236
+172.96.94.102 2 10 115991 20191012114239
+216.51.137.66 10 107 3433693 20191018102840
+153.92.6.27 1 1 403 20191021080837
+51.15.83.217 2 2 45814 20191016071222
+108.238.23.67 12 112 3710234 20191026170305
+137.226.113.34 11 470 15757564 20191027203823
+129.78.110.131 1 1 0 20191008120925
+193.70.102.147 2 2 34696 20191020134916
+75.98.175.88 2 2 6771 20191011025639
+51.68.152.26 4 4 91612 20191005051213
+173.252.87.2 0 6 135860 
+86.3.131.121 2 2 45810 20191030100428
+37.44.219.92 2 2 45800 20191017061118
+18.236.203.234 3 3 68721 20191006135552
+34.220.50.110 3 3 68706 20191004154156
+34.68.23.248 7 55 1761481 20191030042016
+35.168.239.160 2 2 45794 20191004064502
+111.7.100.22 9 99 3290830 20191003190152
+80.84.57.40 1 1 78448 20191009075608
+18.210.72.98 1 1 0 20191024170013
+34.69.60.120 2 2 32354 20191021134839
+165.227.212.78 2 42 1743372 20191023232139
+178.33.34.7 4 4 76434 20191030031247
+54.36.98.35 6 6 90268 20191031062417
+110.4.45.236 2 2 6765 20191014103851
+52.41.204.211 10 107 3889433 20191017161539
+178.128.171.197 2 2 45792 20191031072811
+195.242.80.31 2 2 111678 20191017114008
+173.252.87.19 2 32 798766 20191021051914
+35.223.229.165 2 2 28942 20191021134844
+80.84.57.98 1 1 78448 20191009075625
+51.75.95.185 14 14 286227 20191023014735
+51.158.97.148 2 2 45816 20191023103215
+76.80.118.234 9 97 2537455 20191021151925
+204.44.86.194 2 2 45816 20191023233736
+213.32.113.142 2 2 29630 20191020083404
+37.9.169.11 2 2 6771 20191022070432
+123.148.241.169 2 2 45808 20191028125713
+68.111.231.124 12 112 3532738 20191010232937
+193.92.40.224 2 2 6771 20191025112804
+46.101.202.17 2 2 5950 20191004061624
+193.70.102.148 4 4 71700 20191017070327
+52.26.51.220 3 3 68721 20191016102839
+216.85.5.244 12 117 2509215 20191018151318
+35.243.210.108 3 3 68703 20191014185254
+71.121.169.6 16 124 3920504 20191016114518
+159.203.81.23 2 42 1743366 20191019123228
+18.237.132.178 3 3 68715 20191002065628
+51.255.128.206 2 2 32358 20191022023351
+34.220.20.135 2 2 156882 20191003223228
+173.252.87.22 0 4 239286 
+23.245.227.59 10 88 1758922 20191012114219
+54.88.41.70 2 2 45800 20191006212930
+96.127.158.234 2 2 45814 20191006033310
+213.136.67.9 2 2 156900 20191021215204
+188.166.188.152 10 10 705881 20191017142308
+93.188.160.11 1 1 403 20191020180242
+89.35.29.38 2 2 156890 20191011182423
+103.53.40.92 2 2 6771 20191030014426
+35.243.222.254 3 3 68721 20191026220501
+35.237.116.101 3 3 68709 20191002172557
+165.227.158.27 2 2 156846 20191010203730
+54.234.233.155 4 4 0 20191027064030
+144.76.199.138 4 4 11902 20191012114300
+66.246.224.10 3 3 68727 20191003182814
+159.65.46.162 2 38 1711112 20191014235608
+138.246.253.5 2 2 0 20191027123101
+54.188.178.29 1 1 78451 20191031074043
+34.222.219.104 3 3 68715 20191007110615
+34.221.74.60 3 3 68727 20191004054948
+37.120.217.85 4 4 91622 20191011171609
+179.61.183.57 2 2 45800 20191031071047
+50.113.89.87 7 58 1871980 20191014154412
+207.99.15.87 2 2 45806 20191017032118
+35.231.10.251 3 3 68712 20191018192612
+52.44.240.86 2 2 45810 20191018200703
+167.8.109.8 8 106 3406304 20191014145647
+92.249.191.221 12 12 274816 20191017000518
+158.69.26.58 8 97 2570116 20191001165306
+34.216.165.120 3 3 68712 20191024101714
+18.207.156.78 2 2 45808 20191008113420
+34.66.212.9 1 1 22898 20191021134838
+173.252.87.33 4 34 744136 20191021051915
+144.76.219.94 2 2 5948 20191031061612
+183.253.80.98 4 4 202698 20191016133409
+52.39.23.167 2 2 30597 20191011083220
+50.202.38.5 8 8 627580 20191025050706
+185.253.96.5 2 2 156902 20191018044157
+18.222.106.62 4 60 1088799 20191001204139
+35.238.195.67 11 56 1937115 20191030041833
+78.136.201.162 2 2 45792 20191010032507
+45.55.255.88 2 42 1743378 20191028111639
+18.236.208.196 2 2 45810 20191003082824
+52.34.100.174 3 3 68706 20191010110341
+3.209.248.24 0 1 6884 
+35.162.125.228 3 3 68724 20191019132458
+156.67.222.67 1 1 403 20191015092726
+174.127.135.130 4 4 202716 20191005160045
+35.202.244.209 13 109 3500047 20191031041759
+34.67.84.219 2 2 41524 20191021134840
+35.229.52.190 3 3 68703 20191022195350
+194.59.164.2 1 1 403 20191019194944
+54.185.23.174 2 2 45810 20191025130528
+34.70.51.226 2 2 30206 20191021134838
+54.183.122.243 3 3 158065 20191031074001
+148.251.120.94 2 2 5948 20191017051030
+64.233.172.240 2 3 48165 20191017151146
+34.68.112.132 7 92 2278135 20191028160326
+35.224.1.17 13 109 3500058 20191031161814
+173.252.87.43 2 4 57094 20191021051910
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20191001 224 563 22686316 14
+20191002 106 306 11209646 18
+20191003 74 164 6983746 12
+20191004 91 292 9979738 16
+20191005 333 685 17062743 18
+20191006 95 292 11069124 18
+20191007 100 412 14473818 13
+20191008 90 152 6105001 22
+20191009 239 947 29218490 25
+20191010 110 430 13710460 26
+20191011 108 410 13954427 23
+20191012 109 319 8570960 18
+20191013 68 140 5146821 9
+20191014 164 432 16720335 24
+20191015 147 338 12967318 20
+20191016 268 523 21042004 17
+20191017 107 206 8896193 23
+20191018 109 304 10790162 25
+20191019 150 407 13306408 19
+20191020 74 74 3924164 15
+20191021 158 767 23818531 33
+20191022 125 559 18785833 23
+20191023 89 227 9618288 16
+20191024 92 226 6548853 15
+20191025 236 545 16904862 22
+20191026 84 184 7462099 14
+20191027 80 164 7148115 20
+20191028 111 390 13941337 20
+20191029 129 600 17518807 19
+20191030 113 302 11100605 23
+20191031 197 525 21549879 28
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+5mn-15mn 10
+30s-2mn 54
+1h+ 10
+30mn-1h 27
+15mn-30mn 6
+2mn-5mn 14
+0s-30s 487
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 85
+/ 874 32593294 335 232
+/wp-cron.php 246 0 195 195
+/wp-content/themes/dt-the7/fonts/icomoon-the7-social/fonts/icomoon-the7-social-icons-16x16.ttf 123 1456320 1 14
+/contact/ 110 4663123 4 6
+/hitachi-717-aldolase/ 104 5122794 3 3
+/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.woff2 104 7870320 0 21
+/aldolase-reagent-package-insert/ 102 5965776 2 7
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-solid-900.woff2 100 6537800 2 4
+/package-insert-3/ 99 4793193 5 2
+/news/ 98 4224136 4 1
+/faq/ 98 6046590 2 2
+/sputolysin-product-highlight/ 97 4532787 1 3
+/client-testimonials/ 96 4290480 2 2
+/significance-of-testing-aldolase/ 94 3939870 2 3
+/aldolase-reagent-pack-highlights/ 93 4197743 2 3
+/au-600/ 92 5814804 3 2
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-regular-400.woff2 92 1338120 0 6
+/msds/ 92 4230208 1 2
+/sputolysin-stat-pack/ 90 4866790 1 1
+/cobas-mira/ 89 6132891 1 1
+/au-2700/ 88 5180400 2 2
+/beckman-cx-7/ 87 5468422 0 1
+/au-800/ 87 5323769 2 2
+/dimension-rxl/ 86 5827240 1 30
+/aldolase-liquid-control-product-highlight/ 86 4055110 0 3
+/wp-admin/admin-post.php 1 0 1 0
+/wp-json/oembed/1.0/embed 45 56740 0 2
+/page/2/ 4 242160 0 0
+/departments/department-page/ 4 290876 0 0
+/sample-page/feed/ 4 2848 0 0
+/sample-page/ 4 208812 0 0
+/2016/ 6 229078 0 0
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/ 16 468958 0 0
+/our-clinic/photo-gallery/ 4 236020 0 0
+/search/1/feed/rss2/ 4 1474116 0 0
+/about-us/ 59 1480410 4 8
+/2016/05/12/ 14 336310 0 0
+/our-clinic/prices/ 4 270092 0 0
+/page/4/ 4 241492 0 0
+/services/ 4 288376 0 0
+/wp-content/themes/dt-the7/fonts/icomoon-the7-social/fonts/icomoon-the7-social-icons-16x16.eot 14 173544 0 1
+/wp-includes/wlwmanifest.xml 16 15558 0 0
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-solid-900.eot 14 2530080 0 2
+/xmlrpc.php 13 7691 5 5
+/home/image010-2/ 4 191484 0 0
+/test-application/ 8 479638 0 0
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/feed/ 4 3912 0 0
+/olympus-b/ 28 1605798 1 1
+/2016/05/ 10 282628 0 0
+/wp-json/ 36 2622709 0 0
+/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.eot 6 994452 0 2
+/home/unnamed/ 4 191380 0 2
+/author/admin/ 18 506822 1 2
+/wp-login.php 16 48680 8 9
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-regular-400.eot 14 568064 0 0
+/our-clinic/testimonials/ 4 278290 0 0
+/our-clinic/ 4 255098 0 0
+/wp-content/themes/twentyseventeen/inc/color-patterns.php 1 0 1 0
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-regular-400.woff 4 72672 0 0
+/dt_gallery/hospital/ 10 305940 0 0
+/departments/ 4 267996 0 0
+/page/3/ 4 247900 0 0
+/aldolase-control-package-insert/ 32 1196434 1 1
+/wp-content/plugins/revslider/public/assets/js/ 2 0 0 0
+/dt_gallery/feed/ 4 4992 0 0
+/category/research/ 12 309650 0 1
+/wp-load.php 2 0 1 1
+/olympus-au-400-600-640-2700-5400/ 84 7470144 2 4
+/aldolase-reagent-pack-msds/ 36 1533284 1 1
+/home/ourmission/ 4 191524 0 0
+/comments/feed/ 16 10136 0 1
+/author/admin/feed/ 4 27850 0 0
+/wp-content/uploads/smile_fonts/icomoon-brankic-32x32/icomoon-brankic-32x32.ttf 16 1288192 0 4
+/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.woff 4 392096 0 0
+/dt_gallery/ 4 207144 0 0
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-solid-900.woff 4 347504 0 0
+/services/service-page/ 4 282312 0 0
+/bayer-advia-1650/ 85 12569855 1 1
+/category/research/feed/ 4 26308 0 0
+/wp-admin/upgrade.php 1 1 1 1
+/doctors/ 4 388128 0 0
+/wp-json/contact-form-7/v1/contact-forms/1365/feedback 1 110 0 1
+/au-400/ 32 1544710 2 3
+/feed/ 84 492416 6 6
+/wp-content/themes/twentyseventeen/footer.php 1 223 1 1
+END_SIDER

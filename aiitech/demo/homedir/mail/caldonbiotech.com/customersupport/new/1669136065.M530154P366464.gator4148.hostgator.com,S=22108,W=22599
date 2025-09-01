@@ -1,0 +1,491 @@
+Return-Path: <stephanie.lewis@globalzestleads.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id qOwUH8H+fGOAlwUA7/vpDg
+	(envelope-from <stephanie.lewis@globalzestleads.com>); Tue, 22 Nov 2022 10:54:25 -0600
+Return-path: <stephanie.lewis@globalzestleads.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Tue, 22 Nov 2022 10:54:25 -0600
+Received: from mail-maxind01on2078.outbound.protection.outlook.com ([40.107.222.78]:18064 helo=IND01-MAX-obe.outbound.protection.outlook.com)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <stephanie.lewis@globalzestleads.com>)
+	id 1oxWXQ-001yvR-KF
+	for customersupport@caldonbiotech.com;
+	Tue, 22 Nov 2022 10:54:25 -0600
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=QVIFnP3DMFqYA+jXSsBItOqf4/T8n+O51kN3eyCisQwe3wwO5kewgtUROTR8cXjI3c3R2aVnC31nESTfmVxnK0UtymHqftrrJeXX5hmS1H8IJo7KFK2/2kLCAqmdt/K5PgtR6S1j1VcU01o+JWf5us9foEZ/qe069KEsSAWHAddEjdF5kPu9SgFjd950EVcvVQHt+DCLTBqvb0DL7I0r8/IPG3o//OKBOtktnXKq7i7kAUyTp0Mb57KleIwYV3HQ8nmp3FGfMwYqBmCRpfo7FvDI+cQUASme6MmEuBdqd+i9LX+8YhnrK0UMOzA9w6yJUPhbfWl5fpg9UcERv0tCvA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=n6VJngS1wlOSkp0iBKThPibtsOIEMPnx6xod7N4XBs0=;
+ b=Nr2WX8C5Pg1whAgke6CB/rPNzn4wNLkIkuD3OCX1Au5r7j/6a9XE/ToPYkR4L2Mo0jI75WLKtRyXuuM8hleBH5fFTvCAqkcLd+o79JHNoqsz2FVIhu/S75msZC6pGcxah3Dbs9cvGDgKVQ+tfRs4/iEp/7XbB2QHlYFIXyhJFEXEPWylPD3XBeJEpkmiUOa6drZMJoMl9ppfzfEM8KgEa7wCxA8u5zqm00mm9n44cU9A2W68NklhOEU0SddqmPq13nsFV63d1mhjA/UmYCmibgQwkeGi1gp27uZFyfpwF20LoETaxnCQqp2481esgxu0VKXi8l75jzsv6TodchsCsA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=globalzestleads.com; dmarc=pass action=none
+ header.from=globalzestleads.com; dkim=pass header.d=globalzestleads.com;
+ arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=globalbizleads.onmicrosoft.com; s=selector1-globalbizleads-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=n6VJngS1wlOSkp0iBKThPibtsOIEMPnx6xod7N4XBs0=;
+ b=H85fOLBPCPygq2uI5/PoxDurVC4+nADA0XKUlMXisqdUOSITBrV2mYF3SQnMTlCbQId3SDd/75psBXCWlyOPzNHaARhr5dKu5hexmzWwDqthNFvnvae5l56SCThagdrr8geaKDa1Pkjc+hj/p/FvuI/pNwKqN8cB6pIa4GKXS2I=
+Received: from MA1PR01MB2793.INDPRD01.PROD.OUTLOOK.COM (2603:1096:a00:3e::16)
+ by MAZPR01MB8280.INDPRD01.PROD.OUTLOOK.COM (2603:1096:a01:a7::7) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5834.15; Tue, 22 Nov
+ 2022 16:54:10 +0000
+Received: from MA1PR01MB2793.INDPRD01.PROD.OUTLOOK.COM
+ ([fe80::f02b:eff3:9382:1093]) by MA1PR01MB2793.INDPRD01.PROD.OUTLOOK.COM
+ ([fe80::f02b:eff3:9382:1093%3]) with mapi id 15.20.5834.015; Tue, 22 Nov 2022
+ 16:54:10 +0000
+From: Stephanie Lewis <stephanie.lewis@globalzestleads.com>
+To: "customersupport@caldonbiotech.com" <customersupport@caldonbiotech.com>
+Subject: Pharma and Healthcare Professionals
+Thread-Topic: Pharma and Healthcare Professionals
+Thread-Index: Adj+ksqkHU/MNrFaTt2LZ9XO03AH0A==
+Disposition-Notification-To: Stephanie Lewis
+	<stephanie.lewis@globalzestleads.com>
+Return-Receipt-To: <stephanie.lewis@globalzestleads.com>
+Date: Tue, 22 Nov 2022 16:53:30 +0000
+Message-ID:
+ <MA1PR01MB27939D708E99F7F53DB65C31EA0D9@MA1PR01MB2793.INDPRD01.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=globalzestleads.com;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: MA1PR01MB2793:EE_|MAZPR01MB8280:EE_
+x-ms-office365-filtering-correlation-id: 1dc55c73-ee4c-43fe-b5d4-08daccaa2d64
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ lbiwD6bzcmv6H1O6m9lLtXwwWSWXmk1V51S/zWywTXRhC5Tv0V00dsr7xZh2FZo+m+cEd28kDVDDcK1vkUmrHUJI2+uDLgYgxdV4KNPrKWlZFLmFNSYIbyGjASXHZCd4y3FAmhB7NZHgv4XA00pF+Z1RmLRmyajhUQZaB68OHuIwQj5xFqNCiy+o1XeJTKVNyspiYOJkNaDbUrgkAqb/wPX42NujjwW1cl0xhcnCF7qZ/+qUSxJp45FK9D9zex0IydHgFL9u6b93VOb9t78tDCZF7oq6eQxMJMFNbF/PxeVAxlpZYhyPeE0yeGTmTjmSeZIJWn6gMdUAIbI/TFkq3Dv84HoV94rIG9t972Otxi6stKIg4X8fJ+3dvVGUvcVMsLRGdiRlnRr2FcgtEcdreeqFQ1kp1xvgMX5+xx2Wv9zyvNdcZ7+97A6aVVjzukNI8hfVwOUSNDIcWgAq2tejBcSaPg2UismIE8DQMD7HuIkqlnZPnE3cTcZaY8GwfOGr7HPccJIMyTnxbRY1oDmRQIpUIyCgf+ynMqSQaW4RiGu2FmRalGVT8vDls51iN8zg7b/QX98il0+ffLpGehW1evt1CzV32GtPkVJMVxygUD0MwgP4ZBRM7EdYphIoAPKbIqcX9Oks3K8ft826BSS5VMpqmloQS8tzCeZCw86vycn1twVg1LrRCw5rG73NORCZ
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:MA1PR01MB2793.INDPRD01.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230022)(376002)(136003)(396003)(39850400004)(346002)(366004)(451199015)(33656002)(86362001)(38070700005)(76116006)(64756008)(41300700001)(66556008)(122000001)(66446008)(316002)(66946007)(66476007)(8676002)(83380400001)(38100700002)(3480700007)(55016003)(71200400001)(6916009)(44832011)(478600001)(8936002)(4744005)(9326002)(52536014)(2906002)(5660300002)(186003)(9686003)(26005)(7696005)(6506007)(6666004);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?us-ascii?Q?xovvgV8HZ1quPkezWoilzgqfkXge27wQEK0fmDAuFob6Ap3AIdeYYRQhVsjE?=
+ =?us-ascii?Q?uZMHqFJ/TbBYDYWulth40z6dAxns3msHaYtd/8unVbtWwWOauLTbYV+/zGHZ?=
+ =?us-ascii?Q?4z2S+zQKm+rCQqBHG1f3R2rsEHEbR9EmnNl/i+NYZozh7w+7cywN2BTPlfEC?=
+ =?us-ascii?Q?ejk6VAVaHwbI5DEkyfZmxdeLPMSd1XgL5RvkWTZpHE1QN+y7bkqn043na6jJ?=
+ =?us-ascii?Q?FkTxaFHVKuRmOmxRypuUGQ/3ReMzsfogRr+DHkhgtViz3eMzg3dI+ZVWEckU?=
+ =?us-ascii?Q?KGvDSkRbRoU21X72TtnJs/ZKywx+fPAAGNczbWjs7p1+TUF5a/L+5aOL9fPI?=
+ =?us-ascii?Q?MV6x3nTtMrShUkCWwUwU2slLTQ2gSXp+3DROLAzoUzH6DzUtTrCs0u482gTM?=
+ =?us-ascii?Q?z34D8Q4Q747lfWe2GMmigpT47FIvnuV6qN+8hvc7PCKo/5yWJl+Aazu2UaBM?=
+ =?us-ascii?Q?3RZfgmuuGyY4cB7N5d0xMAgMmlMkvA0DakJIpj7G5aErJJz3bNjlWAR7zqmN?=
+ =?us-ascii?Q?iX+rBhu3nJB1oYWKMieYhvB6YVFBrWRQS7HKn+/UCdVspK79FhcuOL3do+wq?=
+ =?us-ascii?Q?YsstLK38+1k0bwhB0/RXbhBiJwS2dUPGyl44U/kVLvUbau1QhbFUpVeqszPg?=
+ =?us-ascii?Q?9dsfCQzmKZEtO/zJWKhHT1+R0zLrUPqRt7QbHt/LeSDhSLl2MzgrQ8rqE343?=
+ =?us-ascii?Q?W9xLxoz5z0AQ9A6Ojd4HyhV/gIfvYM1V6A9/y8dBdIra+ZAC8y4lpKdteH1d?=
+ =?us-ascii?Q?YZeDdJQPTRuNGlP/tFcGjlttRdhmZj0bI05Sy2USfZFpQ2wKZVIfSkFB9sEz?=
+ =?us-ascii?Q?XCNAtJ6fY0JoiTBiro7GjshUU6j+GFf+RWHtek7IfiqFIiztZ6sw8Pu3hTJk?=
+ =?us-ascii?Q?GmbmPDGlMsn5hBlunc5UOCuI+nmtaonOeBEu+1v0/xy0CnThAQc8f4LYwYuJ?=
+ =?us-ascii?Q?qXcvBHjCY4wod7ZbwH4G2hQM+5k3x9ZZX9pkDX9J/gnxHP2insgYIYbCwRhI?=
+ =?us-ascii?Q?Gou+aR2nqIP0j+lGlTZFbR7MNxo5KMd/Rlr1ZJo7a0uggHJj10fI8viS3z8+?=
+ =?us-ascii?Q?BiUqvFn3mFHTooLQsSgVTtlYug6reIAWFhTRJC39W1zsuzm7WVDI99P5AKtG?=
+ =?us-ascii?Q?pw8rUuU/oezWVnxk/YAe/vJTVfnfZ7uAqw3fcPPFiKvNy0c8MVS6QFoEM7lm?=
+ =?us-ascii?Q?XRbEhIHguVbAu3jLDhYO2Bvx2vjcnNkznYB4nytcL6TJdV7RwQJ59sGBH/VG?=
+ =?us-ascii?Q?eezI3Dt9EqZmhXjHzqTwvEd8z+ZWZjdqOE/6ev8eBX5cGMRpoFEJd9X04ywS?=
+ =?us-ascii?Q?qC0Ubs4DGR/pfaigERXRmQr/K7HEsWV463nl00OL9uuDVxW635SqaRvtNjxd?=
+ =?us-ascii?Q?jUlk33weQyiICOdgEh2mXQdAp/NfzkxqUOCf3g8LgHEc3bzpWKwK9xlxx6lQ?=
+ =?us-ascii?Q?NkqIj8otrHp5CmTWZPBZ7GXqdbQDxpa1u91rpDzOs81LCQb+Rfq08nl/eM3d?=
+ =?us-ascii?Q?eY4qR/U8UojXIArzodKAWXSHOcrQigeLYD78HMRiwhJsAYsMjNmWSc+WIF7M?=
+ =?us-ascii?Q?ufyQTosIC8ifGP4aUljc/dapQHcUtpjCXbi3lH+KbJo1PLLOFdl1J3nd1djk?=
+ =?us-ascii?Q?7ngK51l0ESgFyW0s7eb3DiI=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_MA1PR01MB27939D708E99F7F53DB65C31EA0D9MA1PR01MB2793INDP_"
+MIME-Version: 1.0
+X-OriginatorOrg: globalzestleads.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: MA1PR01MB2793.INDPRD01.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: 1dc55c73-ee4c-43fe-b5d4-08daccaa2d64
+X-MS-Exchange-CrossTenant-originalarrivaltime: 22 Nov 2022 16:53:30.3676
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 38f797e5-63ad-46b4-8a7f-709a5606412c
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: znKJA/1G3NZKEDliDqkMd/zQKkGF8D/9Dt+ONZNs/D8zle2X1ecCXaIfXZZINF81YCXero8TFCBs8GzbqNZnTHuej/DwtyfiyoUS4WGOiBszqMm9UHAPUb3IN0x4Uqzk
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MAZPR01MB8280
+X-Spam-Status: No, score=-0.5
+X-Spam-Score: -4
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--_000_MA1PR01MB27939D708E99F7F53DB65C31EA0D9MA1PR01MB2793INDP_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+I hope you are doing well!
+
+Would you be interested in reaching latest contact information of Pharma an=
+d Healthcare Professionals?
+
+Reach:
+
+*         Pharmaceutical - Pharmacist, Pharmacy Stores, Pharmacy Distributo=
+rs
+
+*         Hospital-Executives List
+
+*         Medical Device Manufacturers
+
+*         Physician & Surgeons List and other healthcare professionals...
+
+If that sound useful, kindly send us your target requirement so that we can=
+ get back to you more details along counts and pricing.
+
+Target Industry/Specialty: __________? Target Geography: __________? Target=
+ Titles: __________?
+
+List Includes: Contact Name, Company Name, Company URL, Title/Specialty, Ph=
+ysical Address, Phone Number, Fax Number, Industry, and verified Email etc.=
+..
+
+Curious to hear your thoughts about it.
+
+Regards
+Stephanie Lewis |Marketing Analyst.
+
+________________________________
+
+To Opt-Out, please respond "Leave Out" in the Subject line.
+
+
+
+--_000_MA1PR01MB27939D708E99F7F53DB65C31EA0D9MA1PR01MB2793INDP_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 1 6 1 0 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@PMingLiU";
+	panose-1:2 1 6 1 0 1 1 1 1 1;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.m-5677365474839892878xxxxmsonormal, li.m-5677365474839892878xxxxmsonormal=
+, div.m-5677365474839892878xxxxmsonormal
+	{mso-style-name:m-5677365474839892878xxxxmsonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.xxxmsonormal, li.xxxmsonormal, div.xxxmsonormal
+	{mso-style-name:xxxmsonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:393164506;
+	mso-list-type:hybrid;
+	mso-list-template-ids:822791372 1074331649 1074331651 1074331653 107433164=
+9 1074331651 1074331653 1074331649 1074331651 1074331653;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:1829393854;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1491993136 1074331649 1074331651 1074331653 10743316=
+49 1074331651 1074331653 1074331649 1074331651 1074331653;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:83.25pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:119.25pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:155.25pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:191.25pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:227.25pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:263.25pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:299.25pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:335.25pt;
+	text-indent:-18.0pt;
+	font-family:"Courier New";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:371.25pt;
+	text-indent:-18.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+--></style>
+</head>
+<body lang=3D"EN-IN" style=3D"word-wrap:break-word">
+<div class=3D"WordSection1">
+<p class=3D"m-5677365474839892878xxxxmsonormal"><span style=3D"font-size:11=
+.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#1F4E79">Hi,</span><s=
+pan style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif">
+</span><span style=3D"font-family:&quot;PMingLiU&quot;,serif"><o:p></o:p></=
+span></p>
+<p class=3D"m-5677365474839892878xxxxmsonormal"><span style=3D"font-size:11=
+.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#1F4E79">I hope you a=
+re doing well!</span><span style=3D"font-size:11.0pt;font-family:&quot;Cali=
+bri&quot;,sans-serif">
+</span><span style=3D"font-family:&quot;PMingLiU&quot;,serif"><o:p></o:p></=
+span></p>
+<p class=3D"m-5677365474839892878xxxxmsonormal"><span style=3D"font-size:11=
+.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#1F4E79">Would you be=
+ interested in reaching latest contact information of
+<b>Pharma and Healthcare Professionals</b>?</span><span style=3D"font-size:=
+11.0pt;font-family:&quot;Calibri&quot;,sans-serif">
+</span><span style=3D"font-family:&quot;PMingLiU&quot;,serif"><o:p></o:p></=
+span></p>
+<p class=3D"m-5677365474839892878xxxxmsonormal"><u><span style=3D"font-size=
+:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#1F4E79">Reach:
+</span></u><span style=3D"font-family:&quot;PMingLiU&quot;,serif"><o:p></o:=
+p></span></p>
+<p class=3D"xxxmsonormal" style=3D"mso-margin-top-alt:0cm;margin-right:0cm;=
+margin-bottom:10.0pt;margin-left:83.25pt;text-indent:-18.0pt;line-height:11=
+.2pt;mso-list:l1 level1 lfo2;background:white">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roman&quot;"=
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b><span style=3D"font-size:11.0pt;font-fami=
+ly:&quot;Calibri&quot;,sans-serif;color:#1F4E79">Pharmaceutical &#8211; Pha=
+rmacist, Pharmacy Stores, Pharmacy Distributors
+</span></b><o:p></o:p></p>
+<p class=3D"xxxmsonormal" style=3D"mso-margin-top-alt:0cm;margin-right:0cm;=
+margin-bottom:10.0pt;margin-left:83.25pt;text-indent:-18.0pt;line-height:11=
+.2pt;mso-list:l1 level1 lfo2;background:white">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roman&quot;"=
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b><span style=3D"font-size:11.0pt;font-fami=
+ly:&quot;Calibri&quot;,sans-serif;color:#1F4E79">Hospital-Executives List
+</span></b><o:p></o:p></p>
+<p class=3D"xxxmsonormal" style=3D"mso-margin-top-alt:0cm;margin-right:0cm;=
+margin-bottom:10.0pt;margin-left:83.25pt;text-indent:-18.0pt;line-height:11=
+.2pt;mso-list:l1 level1 lfo2;background:white">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roman&quot;"=
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b><span style=3D"font-size:11.0pt;font-fami=
+ly:&quot;Calibri&quot;,sans-serif;color:#1F4E79">Medical Device Manufacture=
+rs
+</span></b><o:p></o:p></p>
+<p class=3D"xxxmsonormal" style=3D"mso-margin-top-alt:0cm;margin-right:0cm;=
+margin-bottom:10.0pt;margin-left:83.25pt;text-indent:-18.0pt;line-height:11=
+.2pt;mso-list:l1 level1 lfo2;background:white">
+<![if !supportLists]><span style=3D"font-family:Symbol"><span style=3D"mso-=
+list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roman&quot;"=
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b><span style=3D"font-size:11.0pt;font-fami=
+ly:&quot;Calibri&quot;,sans-serif;color:#1F4E79">Physician &amp; Surgeons L=
+ist and other healthcare professionals...
+</span></b><o:p></o:p></p>
+<p class=3D"m-5677365474839892878xxxxmsonormal"><span style=3D"font-size:11=
+.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#1F4E79">If that soun=
+d useful, kindly send us your target requirement so that we can get back to=
+ you more details along counts and pricing.</span><span style=3D"font-size:=
+11.0pt;font-family:&quot;Calibri&quot;,sans-serif">
+</span><span style=3D"font-family:&quot;PMingLiU&quot;,serif"><o:p></o:p></=
+span></p>
+<p class=3D"m-5677365474839892878xxxxmsonormal"><span style=3D"font-size:11=
+.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#1F4E79">Target Indus=
+try/Specialty: __________? Target Geography: __________?</span><span style=
+=3D"font-family:&quot;PMingLiU&quot;,serif">
+</span><span style=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans=
+-serif;color:#1F4E79">Target Titles: __________?</span><span style=3D"font-=
+family:&quot;PMingLiU&quot;,serif">
+<o:p></o:p></span></p>
+<p class=3D"xxxmsonormal" style=3D"margin:0cm;background:white"><span style=
+=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#1F4E=
+79">List Includes:&nbsp;Contact Name, Company Name, Company URL, Title/Spec=
+ialty, Physical Address, Phone Number, Fax Number, Industry,
+ and verified Email etc... </span><o:p></o:p></p>
+<p class=3D"m-5677365474839892878xxxxmsonormal"><span style=3D"font-size:11=
+.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#1F4E79">Curious to h=
+ear your thoughts about it.<br>
+<br>
+Regards<br>
+Stephanie Lewis<b> </b>|Marketing Analyst.</span><span style=3D"font-size:1=
+1.0pt;font-family:&quot;Calibri&quot;,sans-serif">
+</span><span style=3D"font-family:&quot;PMingLiU&quot;,serif"><o:p></o:p></=
+span></p>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-h=
+eight:105%">
+<b><span style=3D"font-size:11.0pt;line-height:105%;font-family:&quot;Calib=
+ri&quot;,sans-serif;color:#1F4E79">
+<hr size=3D"2" width=3D"100%" align=3D"center">
+</span></b></div>
+<p class=3D"m-5677365474839892878xxxxmsonormal"><span style=3D"font-size:11=
+.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#BDD6EE">To Opt-Out, =
+please respond &#8220;Leave Out&#8221; in the Subject line.</span><span sty=
+le=3D"font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif">
+</span><span style=3D"font-family:&quot;PMingLiU&quot;,serif"><o:p></o:p></=
+span></p>
+<p class=3D"MsoNormal">&nbsp;<span style=3D"font-family:&quot;PMingLiU&quot=
+;,serif"> <o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_MA1PR01MB27939D708E99F7F53DB65C31EA0D9MA1PR01MB2793INDP_--

@@ -1,0 +1,280 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202303 will be lost/reset.
+# Last config file used to build this data file was /home3/cbt/tmp/awstats/awstats.caldonbiotech.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2010                
+POS_TIME 2692                
+POS_VISITOR 7841                
+POS_DAY 8055                
+POS_DOMAIN 3244                
+POS_LOGIN 3470                
+POS_ROBOT 3625                
+POS_WORMS 3892                
+POS_EMAILSENDER 4023                
+POS_EMAILRECEIVER 4166                
+POS_SESSION 8155                
+POS_SIDER 8317                
+POS_FILETYPES 4301                
+POS_DOWNLOADS 4395                
+POS_OS 4443                
+POS_BROWSER 4540                
+POS_SCREENSIZE 4616                
+POS_UNKNOWNREFERER 4690                
+POS_UNKNOWNREFERERBROWSER 4836                
+POS_ORIGIN 4977                
+POS_SEREFERRALS 5109                
+POS_PAGEREFS 5253                
+POS_SEARCHWORDS 5401                
+POS_KEYWORDS 5553                
+POS_MISC 2356                
+POS_ERRORS 5612                
+POS_CLUSTER 3326                
+POS_SIDER_404 5761                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20230302052008 160 36254 12056684412851
+FirstTime 20230301010243
+LastTime 20230302052008
+LastUpdate 20230302062656 160 0 160 0 0
+TotalVisits 12                  
+TotalUnique 3                   
+MonthHostsKnown 0                   
+MonthHostsUnknown 3                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+RealPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+JavaEnabled 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+TotalMisc 0 0 0
+PDFSupport 0 0 0
+JavascriptDisabled 0 0 0
+FlashSupport 0 0 0
+AddToFavourites 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 3 3 22921 5 5 226
+1 4 4 0 7 14 189872
+2 2 2 22927 1 5 770
+3 0 0 0 1 1 83
+4 2 2 0 8 12 94866
+5 2 2 0 9 9 71210
+6 1 1 0 4 4 0
+7 0 0 0 2 3 141858
+8 0 0 0 7 9 95000
+9 0 0 0 0 0 0
+10 0 0 0 0 0 0
+11 2 2 0 2 4 92
+12 2 2 0 19 35 486460
+13 1 1 0 14 18 165144
+14 1 1 0 0 4 184
+15 0 0 0 2 4 47937
+16 0 0 0 2 4 94664
+17 2 2 0 8 8 47286
+18 0 0 0 16 20 568202
+19 0 0 0 0 0 0
+20 0 0 0 0 0 0
+21 0 0 0 0 0 0
+22 0 0 0 6 8 205
+23 1 1 0 4 4 0
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+us 23 23 45848
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 4
+Googlebot/ 26 1196 20230302041411 26
+unknown 2 92 20230301010242 2
+Mail\.RU_Bot/ 2 52 20230301130953 2
+Applebot/ 2 92 20230301144002 2
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 2
+html 2 45848 0 0
+php 21 0 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 2
+androidkitkat 2 2
+Unknown 21 21
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 2
+android 2 2
+Unknown 21 21
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 1
+WordPress/5.0.18;_https://caldonbiotech.com 20230302052008
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+WordPress/5.0.18;_https://caldonbiotech.com 20230302052008
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 2 2
+From1 0 0
+From2 0 0
+From3 0 0
+From4 21 21
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 7
+404 65 1997693
+406 17 3842
+409 1 83
+302 1 0
+502 1 559
+403 1 450
+301 53 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 33
+/.well-known/pki-validation/73C7698BF7E9F39DD1D16279672CD36A.txt 2 -
+/wp-content/themes/twentynineteen/bala.php 4 http://simplesite.com
+/wp-content/plugins/ai-seo-fix/wwdv.php 1 http://simplesite.com
+/wp-includes/css/dist/wwdv.php 6 http://simplesite.com
+/wp-content/plugins/download-3awXo6/admin/texts.php 4 -
+/.well-known/pki-validation/9E47E3BA20BA0C60B9A7CD96F3E66BC7.txt 2 -
+/wp-content/themes/twentynineteen/wso112233.php 2 http://simplesite.com
+/owa/auth/logon.aspx 4 -
+/radio.php 1 http://www.facebook.net/
+/wp-plain.php 1 www.google.com
+/.well-known/pki-validation/B1087640743F5487DF03DD3B90F92067.txt 2 -
+/_profiler/phpinfo 2 -
+/.well-known/pki-validation/B803248EAAED46B83BDCA9A2240FA67E.txt 2 -
+/.well-known/pki-validation/7ACF98F5C59356B496CA653F61389417.txt 2 -
+/wp-content/plugins/ccx/ 2 http://caldonbiotech.com//wp-content/plugins/ccx/index.php
+/alfacgiapi/perl.alfa 1 www.google.com
+/wp-admin/wwdv.php 2 http://simplesite.com
+/class.php 2 http://simplesite.com
+/wp-includes/images/xit-3x.gif 1 caldonbiotech.com
+/.well-known/pki-validation/024698FB157F46C8F35356C5E8F715D6.txt 2 -
+/xxnaorxa.php 2 www.google.com
+/blog.php 2 http://simplesite.com
+/502.shtml 1 -
+/wp-content/themes/ccx/ 2 http://caldonbiotech.com/wp-content/themes/ccx/index.php
+/wordpress/ 2 -
+/ALFA_DATA/alfacgiapi/perl.alfa 1 www.google.com
+/ccx/ 2 http://caldonbiotech.com/ccx/index.php
+/.well-known/pki-validation/2F3E7E87A8CA5577BAC1BFD54AF69536.txt 2 -
+/assets/global/plugins/jquery-file-upload/server/php/ 1 -
+/assets/plugins/jquery-file-upload/server/php/ 1 -
+/.well-known/pki-validation/9BFABD24ECEAEB342F53204F901C81F8.txt 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/aldolase-control-package-insert%5C/%5C%22 1 http://www.google.com/url
+/.env.example 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 3
+192.185.52.186 21 21 0 20230302052008 20230302052008 /wp-cron.php
+131.226.2.65 1 1 22921 20230302000051
+20.21.100.54 1 1 22927 20230301022919
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 2
+20230301 15 15 22927 7
+20230302 8 8 22921 5
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 3
+30mn-1h 2
+1h+ 2
+0s-30s 7
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 2
+/wp-cron.php 21 0 10 9
+/ 2 45848 2 2
+END_SIDER

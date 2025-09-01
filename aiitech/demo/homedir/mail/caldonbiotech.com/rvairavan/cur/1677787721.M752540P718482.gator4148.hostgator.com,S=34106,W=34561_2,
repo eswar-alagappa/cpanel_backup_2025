@@ -1,0 +1,455 @@
+Return-Path: <01010186a3f0c143-163e6739-f4d5-4844-8c61-fb5f675952bd-000000@amazonses.messaging.squareup.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id qNTELEkCAWSS9goA7/vpDg
+	(envelope-from <01010186a3f0c143-163e6739-f4d5-4844-8c61-fb5f675952bd-000000@amazonses.messaging.squareup.com>)
+	for <rvairavan@caldonbiotech.com>; Thu, 02 Mar 2023 14:08:41 -0600
+Return-path: <01010186a3f0c143-163e6739-f4d5-4844-8c61-fb5f675952bd-000000@amazonses.messaging.squareup.com>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Thu, 02 Mar 2023 14:08:41 -0600
+Received: from a116-239.smtp-out.us-west-2.amazonses.com ([54.240.116.239]:53259)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+	(Exim 4.95)
+	(envelope-from <01010186a3f0c143-163e6739-f4d5-4844-8c61-fb5f675952bd-000000@amazonses.messaging.squareup.com>)
+	id 1pXpEH-0035hP-9Z
+	for rvairavan@caldonbiotech.com;
+	Thu, 02 Mar 2023 14:08:41 -0600
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=clz7t3pgfbh32jgz3sgosjlq64ni7aba; d=messaging.squareup.com;
+	t=1677787709;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:List-Unsubscribe;
+	bh=TfveVxqjwogimKZDtC4NNf7Q5figTfcbo/95kbMtjvM=;
+	b=E4meHE/SyOvI7SdI61tGiu6dXUrhMe8eGtnakfAOdrdiKFQCaFTJYzCB8OUeqF2T
+	zf3Bae7JCtu3SB67AzYko11xOwvwlrSCVW5qXAKdpYIWH39301dq56If5Sybwh+zeHm
+	mIRlyUJdsrJpY1/HhD2jKbMZmE4OpKnUQmB5eBl4=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1677787709;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:List-Unsubscribe:Feedback-ID;
+	bh=TfveVxqjwogimKZDtC4NNf7Q5figTfcbo/95kbMtjvM=;
+	b=SlYGa+MMmVmZKn6RXOiRnZ71gL8Jg3r3bgTS5h2B6lBWGIaUoua40syNRDdGmlRz
+	WCf6u3TYGMPCBJdei515iJ0SLnlXO+mBnk+Pvab9z32JwzEwwdTo7H8N/YKwLi7N5YM
+	98rzfJPw4B8fGFsA5W3RBC0ekbvo60Yhg381YvJU=
+Date: Thu, 2 Mar 2023 20:08:29 +0000
+From: Square <noreply@messaging.squareup.com>
+To:  <rvairavan@caldonbiotech.com>
+Message-ID: <01010186a3f0c143-163e6739-f4d5-4844-8c61-fb5f675952bd-000000@us-west-2.amazonses.com>
+Subject: Updates to your Square Account
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+X-EMS-Request-ID: 324_6202b7c6-bc3c-46c6-b4bd-c69df839fd9b
+X-ERS-Token: CDwQqJC1+b+Vs5CvARjr19e3q9eZop0B
+List-Unsubscribe: <mailto:CAEaagooMzI0XzYyMDJiN2M2LWJjM2MtNDZjNi1iNGJkLWM2OWRmODM5ZmQ5YhIcCg10cmFuc2FjdGlvbmFsEgtwcmljaW5nX3NldhogQ0R3UXFKQzErYitWczVDdkFSanIxOWUzcTllWm9wMEIiIOCUcghVc8d1Y1AR+JtH6WkOMa9u/ZOo5h5H8Sn44nOZ@reply2.squareup.com>,
+ <https://squareup.com/email/subscriptions/unsubscribe?scope=transactional&subcategory=pricing_sev&locale=&request_id=324_6202b7c6-bc3c-46c6-b4bd-c69df839fd9b&recipient=CDwQqJC1%2Bb%2BVs5CvARjr19e3q9eZop0B>
+Feedback-ID: 1.us-west-2.+kCNGv0wlznHgVfb/dmZu6QdzMqHR+fLcxV3+TNug8w=:AmazonSES
+X-SES-Outgoing: 2023.03.02-54.240.116.239
+X-Spam-Status: No, score=-0.5
+X-Spam-Score: -4
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+<!DOCTYPE html> <html xmlns=3D"http://www.w3.org/1999/xhtml"> <head> <meta =
+name=3D"viewport" content=3D"width=3Ddevice-width"> <meta http-equiv=3D"Con=
+tent-Type" content=3D"text/html;charset=3Dutf-8"> <title>Square</title> <!-=
+-[if mso]><style type=3D"text/css" data-premailer=3D"ignore">.codelink a{co=
+lor:#006aff;text-decoration:none}a{color:#006aff;text-decoration:none}.butt=
+on td{background-color:#006aff}.nomso{display:none;font-size:0;line-height:=
+0}table{font-size:1px;line-height:0;mso-margin-top-alt:1px}table.MsoNormalT=
+able{font-family:SquareSansDisplay-Regular,Helvetica,sans-serif}.durv{line-=
+height:14px!important}</style><![endif]--> <!--[if !mso]><!--> <link rel=3D=
+"stylesheet" type=3D"text/css" href=3D"https://square-mailstrom-production-=
+s.squarecdn.com/_shared/fonts/square-sans/square-sans.css" data-premailer=
+=3D"ignore"> <!--<![endif]--> <style type=3D"text/css" data-premailer=3D"ig=
+nore">.button td td:hover,.button a:hover{background-color:#05c!important}.=
+button a:hover{border:1px solid #05c!important}.invert .button td td:hover,=
+.invert .button a:hover{border:1px solid!important}a[x-apple-data-detectors=
+]{color:inherit!important;text-decoration:none!important;font-size:inherit!=
+important;font-family:inherit!important;font-weight:inherit!important;line-=
+height:inherit!important}.invert a,.invert a[href^=3D"tel"],.invert a[href^=
+=3D"mailto"],.invert a[href*=3D"//maps.apple.com"]{color:#fff;text-decorati=
+on:none}b a{color:#121212}#hero a{color:#fff}#outlook a{padding:0}body{widt=
+h:100%!important;margin:0 auto!important;padding:0}.ExternalClass{width:100=
+%;line-height:100%}.ExternalClass p,.ExternalClass span,.ExternalClass font=
+,.ExternalClass td,.ExternalClass div{line-height:100%}table,td{border-coll=
+apse:collapse;mso-table-lspace:0;mso-table-rspace:0}@media only screen and =
+(min-width:281px){#container{position:relative;top:0;left:0;right:0;bottom:=
+0}}div[style*=3D"margin: 16px 0"]{margin:0!important}@media screen and (max=
+-width:480px){u~div{min-width:100vw}}</style> <style type=3D"text/css" data=
+-premailer=3D"ignore">@media screen and (max-width:599px){#container .fullW=
+idth a{display:block!important}#container .column{width:inherit!important}#=
+container .column .embiggen{width:420px!important;max-width:420px!important=
+}#container .column .embiggen .list td:first-child{width:inherit!important}=
+#container .column .embiggen .list td:last-child{width:500px!important}#con=
+tainer .column .embiggen .button td{width:inherit!important}#container .col=
+umn .embiggen img{max-width:100%!important}#container .column .embiggen .ic=
+on{max-width:inherit!important}.h1{font-size:26px!important;line-height:36p=
+x!important}.h2{font-size:20px!important;line-height:30px!important;padding=
+-top:4px!important}}</style> <meta expires_at=3D"2023-08-22 22:53:03" lifec=
+ycle_stage_id message_format=3D"Transactional" message_format_id=3D"696c0d9=
+c-b961-4076-a8a2-bbec5d5d7c0d" message_id=3D"7ad9404f-5986-4fee-a39e-a4f2ae=
+8f4c8e" name=3D"commsplat-data" sender=3D"Payments" subscription_category=
+=3D"transactional::pricing_sev" is_best_time_to_send=3D"false" can_best_tim=
+e_to_send=3D"false"> </head> <body style=3D"padding: 0; background-color: #=
+ffffff; width: 100% !important; margin: 0 auto !important;" bgcolor=3D"#fff=
+fff"><span style=3D"color:transparent;visibility:hidden;display:none;opacit=
+y:0;height:0;width:0;font-size:0;">Important policy changes starting on Apr=
+il 11, 2023.</span><img src=3D"https://links.squareupmessaging.com/e/eo?_t=
+=3Dd3359b52bac54899b79aca6957872390&amp;_m=3D02051e2bf3344ac4ab1d8299224811=
+a6&amp;_e=3DIR13QJne7hAOq4VmG7w_-I6s8S6R_uau_914bOFQftdsE_Gc0WlNISKEzpCQvOP=
+D78-kFGUvL67K-z3CuRlQzCB80ywJPgobPQ0JaTNvUKKHaj7hjiYzB2FegOpm0tPITs1bEmspNE=
+LpDbQxroaesQ%3D%3D" style=3D"border:0;width:1px;height:1px;border-width:0px=
+!important;display:none!important;line-height:0!important;" width=3D"1" hei=
+ght=3D"1"/> <div id=3D"blank" style=3D"display: none;"> =CD=8F=E2=80=8C=C2=
+=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=
+=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=
+=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=
+=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=
+=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=
+=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=
+=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=
+=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=
+=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=
+=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=
+=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=
+=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=
+=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=
+=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=
+=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=
+=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=
+=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=
+=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=
+=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=
+=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=
+=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=
+=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=
+=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=
+=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=
+=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=
+=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=
+=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=
+=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=
+=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=
+=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=
+=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=
+=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=
+=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=
+=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=
+=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=
+=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=80=8C=C2=A0=CD=8F=E2=
+=80=8C=C2=A0 </div> <div id=3D"container" style=3D"background-color: #fffff=
+f;-webkit-text-size-adjust: none;-ms-text-size-adjust: none;-webkit-font-sm=
+oothing: antialiased"> <!-- Light header begins--> <table style=3D"border-c=
+ollapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background=
+-color: #ffffff; table-layout: fixed;" width=3D"100%" class=3D"single defau=
+lt" bgcolor=3D"#ffffff" cellpadding=3D"0" cellspacing=3D"0"> <tbody> <tr> <=
+td align=3D"center" style=3D"border-collapse: collapse; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt; padding: 0 20px;" class=3D"singlePadding"> <tabl=
+e cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse; m=
+so-table-lspace: 0pt; mso-table-rspace: 0pt;"> <tbody> <tr> <td width=3D"60=
+0" style=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt; padding: 0px 0 8px;" class=3D"singleCell"> <table width=3D"100%" =
+class=3D"left" style=3D"border-collapse: collapse; mso-table-lspace: 0pt; m=
+so-table-rspace: 0pt; text-align: left;" cellpadding=3D"0" cellspacing=3D"0=
+" align=3D"left"> <tbody> <tr> <td align=3D"left" style=3D"border-collapse:=
+ collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 40px 0 0p=
+x;"> <table style=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-=
+table-rspace: 0pt; text-align: left;" cellpadding=3D"0" cellspacing=3D"0" a=
+lign=3D"left"> <tbody> <tr> <td width=3D"88" align=3D"left" style=3D"border=
+-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mix-blen=
+d-mode: difference;" class=3D"fluidImage"><a id=3D"logo-white" href=3D"http=
+s://kjfjb2yk.r.us-west-2.awstrack.me/L0/https:%2F%2Flinks.squareupmessaging=
+.com%2Fu%2Fclick%3F_t=3Dd3359b52bac54899b79aca6957872390%26_m=3D02051e2bf33=
+44ac4ab1d8299224811a6%26_e=3D6oGKpymqcQ6_aJRfO2Fwx_uAxPyLFm9yEZwdJcRBLa_ERj=
+jLUAQXHGN9olus3uxiDaWdIZV2vi04BfWlkjIJ--FyVsTuDbu1DPIssKO6e2woDnz__jiDRb3Vn=
+2ppFd2Y-5Kv5C7_KYxLlSQoG7IZNkDbjS0D4Yaev4ClwllXMDa-qFE3msJd-3Prk7MnLnemrcw6=
+09cf5C3e-7GRVLnJ9Q%253D%253D/1/01010186a3f0c143-163e6739-f4d5-4844-8c61-fb5=
+f675952bd-000000/uTfvZNkZ6NOhDpky-TmLaYlDyNk=3D312" style=3D"display: inher=
+it; text-decoration: none;"><!--[if !mso]><!--><img src=3D"https://square-m=
+ailstrom-production-s.squarecdn.com/_shared/logo/sans-white.png" width=3D"8=
+8" height=3D"22" alt=3D"Square" style=3D"mix-blend-mode: difference;display=
+: block"><!--<![endif]--><!--[if gte mso 9]><img src=3D"https://square-mail=
+strom-production-s.squarecdn.com/_shared/logo/sans-black.png" width=3D"88" =
+height=3D"22" alt=3D"Square"/><![endif]--></a></td> </tr> </tbody> </table>=
+ </td> </tr> <!-- Begin headline--> <tr style=3D"display: table-row;"> <td =
+style=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace=
+: 0pt; color: #121212; font-family: SquareSansDisplay-Medium, -apple-system=
+, BlinkMacSystemFont, Helvetica, sans-serif; font-weight: bold; font-size: =
+36px; line-height: 48px; letter-spacing: 0; padding: 32px 0 0px;" class=3D"=
+h1">Updates to your Square Account</td> </tr> <!-- End headline--> <!-- Beg=
+in product eyebrow headline CTA--> <tr style=3D"display: none;"> <td style=
+=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt=
+; color: #121212; font-family: SquareSansText-Medium, -apple-system, BlinkM=
+acSystemFont, Helvetica, sans-serif; font-weight: bold; font-size: 24px; li=
+ne-height: 34px; letter-spacing: 0; padding: 8px 0 0px;" class=3D"h2"></td>=
+ </tr> <!-- End product eyebrow headline CTA--> </tbody> </table> </td> </t=
+r> </tbody> </table> </td> </tr> </tbody> </table> <!-- Light header ends--=
+> <!-- Body begins--> <table style=3D"border-collapse: collapse; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff; table-layout=
+: fixed;" width=3D"100%" class=3D"single default" bgcolor=3D"#ffffff" cellp=
+adding=3D"0" cellspacing=3D"0"> <tbody> <tr> <td align=3D"center" style=3D"=
+border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; pa=
+dding: 0 0px;" class=3D"singlePadding"> <table cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-tabl=
+e-rspace: 0pt;"> <tbody> <tr> <td width=3D"640" style=3D"border-collapse: c=
+ollapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 8px 0 24px;=
+" class=3D"singleCell"> <table width=3D"100%" class=3D"left" style=3D"borde=
+r-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-al=
+ign: left;" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"> <tbody> <tr=
+> <td style=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-table-=
+rspace: 0pt; padding-top: 24px;"> <table width=3D"100%" style=3D"border-col=
+lapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: =
+left;" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"> <tbody> <!-- Beg=
+in body button--> <tr> <td style=3D"border-collapse: collapse; mso-table-ls=
+pace: 0pt; mso-table-rspace: 0pt; padding: 0 20px 16px;"> <table style=3D"b=
+order-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; tex=
+t-align: left;" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"> <tbody>=
+ <tr> <td style=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; padding: 0px 0;" align=3D"center"> <table width=3D"inherit=
+" align=3D"left" style=3D"border-collapse: collapse; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; text-align: left;" class=3D"buttonTable" cellpaddin=
+g=3D"0" cellspacing=3D"0"> <tbody> <tr> <td style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"> <table align=3D"left" =
+style=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace=
+: 0pt; text-align: left;" cellpadding=3D"0" cellspacing=3D"0"> <tbody> <tr =
+style=3D"display: none;"> <td style=3D"border-collapse: collapse; mso-table=
+-lspace: 0pt; mso-table-rspace: 0pt; background-color: #006aff; width: 100%=
+; text-align: center; font-family: SquareSansDisplay-SemiBold, -apple-syste=
+m, BlinkMacSystemFont, Helvetica, sans-serif; font-weight: bold; -webkit-bo=
+rder-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; font-size: 1=
+6px; line-height: 20px;" align=3D"center" bgcolor=3D"#006aff" class=3D"butt=
+on" width=3D"100%"><a href style=3D"background-color: #006aff;padding: 13px=
+ 16px;border: 1px solid #006aff;color: #ffffff;text-decoration: none;-webki=
+t-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;display: in=
+line-block" id=3D"button-1"> </a></td> </tr> </tbody> </table> </td> </tr> =
+</tbody> </table> </td> </tr> </tbody> </table> </td> </tr> <!-- End body b=
+utton--> <!-- Begin additional body copy field--> <tr> <td style=3D"border-=
+collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: =
+8px 20px 0;"> <table style=3D"border-collapse: collapse; mso-table-lspace: =
+0pt; mso-table-rspace: 0pt; text-align: left;" cellpadding=3D"0" cellspacin=
+g=3D"0" align=3D"left"> <tbody> <tr style=3D"display: table-row;"> <td widt=
+h=3D"550" style=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; font-size: 16px; line-height: 28px; letter-spacing: -0.002=
+em; font-family: SquareSansText-Regular, -apple-system, BlinkMacSystemFont,=
+ Helvetica, sans-serif; font-weight: normal; color: #333333; padding: 0 0 1=
+6px;" class=3D"p"> <p>Hi Ram,</p> <p>We are writing to inform you of an upc=
+oming change to the Square refund policy, as well as updates to Square=E2=
+=80=99s Terms of Service, all of which will be effective as of April 11, 20=
+23.</p> <p>Occasionally, we update our policies and pricing for our product=
+s to better align to evolving costs from our network and payments partners.=
+ In these scenarios, we make pricing changes so that we can invest in our p=
+latform, create new features, and continue expanding the value Square provi=
+des to sellers like you.</p> <p><strong>Processing fees will no longer be r=
+efunded to your account when you issue full or partial refunds to your cust=
+omers.</strong></p> <p>We are making this change to reflect that Square inc=
+urs processing fees from our network and payments partners in instances of =
+refunds, and to match current industry standards. You do not need to take a=
+ny action and there will be no change in the experience for your customer.<=
+/p> <p>You may wish to update your return policy for your customers in orde=
+r to account for this policy change. We recommend visiting our <strong><a h=
+ref=3D"https://kjfjb2yk.r.us-west-2.awstrack.me/L0/https:%2F%2Flinks.square=
+upmessaging.com%2Fu%2Fclick%3F_t=3Dd3359b52bac54899b79aca6957872390%26_m=3D=
+02051e2bf3344ac4ab1d8299224811a6%26_e=3D6oGKpymqcQ6_aJRfO2Fwxy9f-p7cG4In6ZM=
+F8Vm12BLLYBbHHMmedw_D8YbraCj6CsGmmwDuUnG9Pe-2VdR9c0vMX4pDIkEu137fnVW8F-nv9i=
+bhzwtQ0GSiDUG9y0I_qpYD6Gr3jvRiWlJLxVY1s73XePDPjltXc8Lt3ekKyWGvp_t91_3zmo_2h=
+MKl--YqdRx7YZ86dDStxg06L2LPjuKNRjZy74AIg-C0o41X4FNQ_A_NfPaLX79lFNNftKDqDwY2=
+S0_SQ989LdJi7imthQ%253D%253D/1/01010186a3f0c143-163e6739-f4d5-4844-8c61-fb5=
+f675952bd-000000/zqCC0bYoHqkVyBY4fDVNRUe-8SI=3D312" target=3D"_blank" style=
+=3D"color: #006aff;text-decoration: none;font-family: SquareSansDisplay-Sem=
+iBold, -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;font-weight=
+: bold">Return Policy Guide &amp; Templates </a></strong>for guidance on ho=
+w to create a return policy that works best for your business. You can also=
+ find additional information on the refund process through Square by visiti=
+ng our <strong><a href=3D"https://kjfjb2yk.r.us-west-2.awstrack.me/L0/https=
+:%2F%2Flinks.squareupmessaging.com%2Fu%2Fclick%3F_t=3Dd3359b52bac54899b79ac=
+a6957872390%26_m=3D02051e2bf3344ac4ab1d8299224811a6%26_e=3D6oGKpymqcQ6_aJRf=
+O2Fwx6CrysF6uuuqbORqexqTZ3vr49y4oNh8umTUvbh_WJ-FmW_K_-ObD2BgoyqB8Lz2vyYYy95=
+QstV1nLZO9Wf_4Hb33IgoJSTn8mFJ90T8aoH3vFkGPXLcxXpYr-E4m12zfxvQsZhnluyuErFxxc=
+C8wp5KRXpo7ykH7m3E8fzbwFNcH9cGR_m066swvRGlgz1hn2UwhX5oOauuiW8RAwMj4cu3TA7aS=
+chaJttda0C-_P-TV8cN0QmJqYibFvGR0X-r8_q8st_wh6F74493ups0_IjEAWJ-nGnVukVcKTR4=
+YUhQ_0NSj0XpaiZFMJgvM8GkA1gYEnw_CvWxGxZ8xW7JiMAf6in6_QQBhICacQja4g-E/1/0101=
+0186a3f0c143-163e6739-f4d5-4844-8c61-fb5f675952bd-000000/Kp7pggHV8PkPn59CAb=
+A8g6fw748=3D312" target=3D"_blank" style=3D"color: #006aff;text-decoration:=
+ none;font-family: SquareSansDisplay-SemiBold, -apple-system, BlinkMacSyste=
+mFont, Helvetica, sans-serif;font-weight: bold">Help Center.</a></strong></=
+p> <p>In addition, we=E2=80=99ve modified language in our taxes and indemni=
+ties provisions in the <strong><a href=3D"https://kjfjb2yk.r.us-west-2.awst=
+rack.me/L0/https:%2F%2Flinks.squareupmessaging.com%2Fu%2Fclick%3F_t=3Dd3359=
+b52bac54899b79aca6957872390%26_m=3D02051e2bf3344ac4ab1d8299224811a6%26_e=3D=
+6oGKpymqcQ6_aJRfO2Fwxy9f-p7cG4In6ZMF8Vm12BLih2VSQGwQGhwu69RjFCsjvnJ8axKb1r8=
+mEl_5LkFQ6ZT3sBJ-XOXvmtNXjgLsopG58fbrLmMzBlfYdacgjaasLt1ZIr1QI_IAVsy-A8bMFO=
+R9IvNlK2G-FofsOmrTNAzPbVei0IIRHG0IEiSGBVjZoSNLtKKo3MSfxbV5ouDuWelJFNPfcT3fq=
+S_BxxvZ53o%253D/1/01010186a3f0c143-163e6739-f4d5-4844-8c61-fb5f675952bd-000=
+000/2hK10eXbo1aZNXdtWAKvnrb5nY0=3D312" target=3D"_blank" style=3D"color: #0=
+06aff;text-decoration: none;font-family: SquareSansDisplay-SemiBold, -apple=
+-system, BlinkMacSystemFont, Helvetica, sans-serif;font-weight: bold">Squar=
+e general terms of service</a></strong> and <strong><a href=3D"https://kjfj=
+b2yk.r.us-west-2.awstrack.me/L0/https:%2F%2Flinks.squareupmessaging.com%2Fu=
+%2Fclick%3F_t=3Dd3359b52bac54899b79aca6957872390%26_m=3D02051e2bf3344ac4ab1=
+d8299224811a6%26_e=3D6oGKpymqcQ6_aJRfO2Fwxy9f-p7cG4In6ZMF8Vm12BLih2VSQGwQGh=
+wu69RjFCsjk8aPH1fWNPGCO6r_8-8SyCmjXdSkweAYcT6eQyFTHwndlfHkyHRGMgf6H3MyyUL_C=
+xcqvH0mpNcLXppRQUsItVhg_iC1cboUjug4yo8dd5mqrZ6kLc0oqdR_cswdy-UdeeFt12PR_-wi=
+SL703Pw_KtCSH676R3gtry4S3GPjuf3n-vDWzO_gPf7z0cicu2Em/1/01010186a3f0c143-163=
+e6739-f4d5-4844-8c61-fb5f675952bd-000000/YNcr9UgUBouNHU_in0DDKVsqGkI=3D312"=
+ target=3D"_blank" style=3D"color: #006aff;text-decoration: none;font-famil=
+y: SquareSansDisplay-SemiBold, -apple-system, BlinkMacSystemFont, Helvetica=
+, sans-serif;font-weight: bold">Square Payment Terms </a></strong>related t=
+o our legal obligations.</p> <p><a href=3D"https://kjfjb2yk.r.us-west-2.aws=
+track.me/L0/https:%2F%2Flinks.squareupmessaging.com%2Fu%2Fclick%3F_t=3Dd335=
+9b52bac54899b79aca6957872390%26_m=3D02051e2bf3344ac4ab1d8299224811a6%26_e=
+=3D6oGKpymqcQ6_aJRfO2Fwxy9f-p7cG4In6ZMF8Vm12BKtgdn9jbVc8z2uAIEIzvqvUV_zWZE8=
+3jDuROGRqoOJr-dP9UXG20A8DzEZz4cTItbk0Bbu9M6vG5TbPP5nUJ4hwXOsNSPV35AYtzKuXKp=
+DHzFrxxM7TqQHo-6SAfbPbebxh0TvnVoh5cksv8ATXsUBFhj7c5hl_yJgk-cphWpOF4l2CbBBjV=
+T9DSJENDiSbEownq53dyxxYOqQop1u2eiW/1/01010186a3f0c143-163e6739-f4d5-4844-8c=
+61-fb5f675952bd-000000/c6d60RJjAbLDq1hQgg6DRZkEBnI=3D312" target=3D"_blank"=
+ style=3D"color: #006aff;text-decoration: none;font-family: SquareSansDispl=
+ay-SemiBold, -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;">Rea=
+d more about the upcoming pricing and policy changes here =E2=80=BA</a></p>=
+ <p>Thank you for selling with Square.</p> </td> </tr> <tr style=3D"display=
+: none;"> <td style=3D"border-collapse: collapse; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; background-color: #006aff; text-align: center; font-fa=
+mily: SquareSansText-SemiBold, -apple-system, BlinkMacSystemFont, Helvetica=
+, sans-serif; font-weight: bold; -webkit-border-radius: 6px; -moz-border-ra=
+dius: 6px; border-radius: 6px; font-size: 16px; line-height: 20px; display:=
+ inline-block;" align=3D"center" bgcolor=3D"#006aff" class=3D"button"><a hr=
+ef style=3D"background-color: #006aff;padding: 13px 16px;border: 1px solid =
+#006aff;color: #ffffff;text-decoration: none;-webkit-border-radius: 6px;-mo=
+z-border-radius: 6px;border-radius: 6px;display: inline-block" id=3D"button=
+-2"> </a></td> </tr> <tr style=3D"display: none;"> <td width=3D"550" style=
+=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt=
+; font-size: 16px; line-height: 28px; letter-spacing: -0.002em; font-family=
+: SquareSansText-Regular, -apple-system, BlinkMacSystemFont, Helvetica, san=
+s-serif; font-weight: normal; color: #333333; padding: 16px 0 16px;" class=
+=3D"p"></td> </tr> </tbody> </table> </td> </tr> <!-- End additional body c=
+opy field--> </tbody> </table> </td> </tr> </tbody> </table> </td> </tr> </=
+tbody> </table> </td> </tr> </tbody> </table> </div> <img alt=3D"" src=3D"h=
+ttps://kjfjb2yk.r.us-west-2.awstrack.me/I0/01010186a3f0c143-163e6739-f4d5-4=
+844-8c61-fb5f675952bd-000000/5jeePLsYm6dD_wtrzPhX_uYMjkk=3D312" style=3D"di=
+splay: none; width: 1px; height: 1px;">
+</body> <table class=3D"footerSnippet" style=3D"border-collapse: collapse; =
+mso-table-lspace: 0pt; mso-table-rspace: 0pt; table-layout: fixed; backgrou=
+nd-color: white; display: table;" width=3D"100%" cellpadding=3D"0" cellspac=
+ing=3D"0" bgcolor=3D"white"> <tbody> <tr> <td align=3D"center" style=3D"bor=
+der-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; paddi=
+ng: 0 16px 24px;"> <table cellpadding=3D"0" cellspacing=3D"0" style=3D"bord=
+er-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"> <tbo=
+dy> <tr> <td align=3D"center" width=3D"600" style=3D"border-collapse: colla=
+pse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;"> <table width=3D"100%" =
+style=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace=
+: 0pt; text-align: left;" cellpadding=3D"0" cellspacing=3D"0" align=3D"left=
+"> <tbody> <tr> <td class=3D"footer" style=3D"border-collapse: collapse; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; border-top-width: 1px; border-t=
+op-color: #d9d9d9; border-top-style: solid;"> <table style=3D"border-collap=
+se: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: lef=
+t;" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"> <tbody> <tr> <td st=
+yle=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: =
+0pt; font-size: 0; line-height: 0; padding: 40px 0;"><a href=3D"https://kjf=
+jb2yk.r.us-west-2.awstrack.me/L0/https:%2F%2Flinks.squareupmessaging.com%2F=
+u%2Fclick%3F_t=3Dd3359b52bac54899b79aca6957872390%26_m=3D02051e2bf3344ac4ab=
+1d8299224811a6%26_e=3D6oGKpymqcQ6_aJRfO2Fwxy9f-p7cG4In6ZMF8Vm12BIgWUmKYY2wN=
+Nj59IarOqtwADSvC65QvWBwVgSfPbwKROr6OP2qz-8rjuhIOdqw_IJqo6GrYP3pf2ydf7j5FAut=
+FsjRHXbV7RdZRNGUg8HjeQEkPb6cRwKr187SkrkGaD4gKQE5yicZrQJF09UR9a8T2ztkc1MfoWW=
+MQEqAXmpYQg%253D%253D/1/01010186a3f0c143-163e6739-f4d5-4844-8c61-fb5f675952=
+bd-000000/SLNYB3IoTqwiEcYrdNTLYjtT8sE=3D312" style=3D"display: inherit; tex=
+t-decoration: none;"><!--[if !mso]><!--><img src=3D"https://square-mailstro=
+m-production-s.squarecdn.com/_shared/logo/sans-white.png" width=3D"88" heig=
+ht=3D"22" alt=3D"Square" style=3D"mix-blend-mode: difference;display: block=
+"><!--<![endif]--><!--[if gte mso 9]><img src=3D"https://square-mailstrom-p=
+roduction-s.squarecdn.com/_shared/logo/sans-black.png" width=3D"88" height=
+=3D"22" alt=3D"Square"/><![endif]--></a></td> </tr> <tr> <td style=3D"borde=
+r-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding=
+-bottom: 40px; display: none;" class=3D"social"> <table style=3D"border-col=
+lapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: =
+left;" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"> <tbody> <tr> <td=
+ style=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspac=
+e: 0pt; padding-right: 24px;"><a target=3D"_blank" rel=3D"noopener noreferr=
+er" href=3D"https://kjfjb2yk.r.us-west-2.awstrack.me/L0/https:%2F%2Flinks.s=
+quareupmessaging.com%2Fu%2Fclick%3F_t=3Dd3359b52bac54899b79aca6957872390%26=
+_m=3D02051e2bf3344ac4ab1d8299224811a6%26_e=3D6oGKpymqcQ6_aJRfO2Fwx85izpMTKP=
+FqfVyAk76Qow5twAAuWE_a4R8pBuZ50Wg87jA5y8vOgTETfF7P6a_5SzS6kezz1o_kv931k1A7w=
+E6YVw9BOMEUTWjUQxWa4hgWrOcoD9iTby8o4FTb9Niva7Yp9o95C4gdrtxL_r-6RA3yX5StgeOA=
+kAO7DcoUF3iDPNQ9YLdB4pDwNgsKJgU9Lw%253D%253D/1/01010186a3f0c143-163e6739-f4=
+d5-4844-8c61-fb5f675952bd-000000/duybTpYXtiGcGKy-tOWbNZkQ37M=3D312" style=
+=3D"text-decoration: none; color: rgb(26, 26, 26); display: inherit;"><img =
+src=3D"https://square-mailstrom-production-s.squarecdn.com/_shared/commspla=
+t/facebook.png" width=3D"12" height=3D"25" style=3D"mix-blend-mode: differe=
+nce;display: block"></a></td> <td style=3D"border-collapse: collapse; mso-t=
+able-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 24px;"><a target=3D=
+"_blank" rel=3D"noopener noreferrer" href=3D"https://kjfjb2yk.r.us-west-2.a=
+wstrack.me/L0/https:%2F%2Flinks.squareupmessaging.com%2Fu%2Fclick%3F_t=3Dd3=
+359b52bac54899b79aca6957872390%26_m=3D02051e2bf3344ac4ab1d8299224811a6%26_e=
+=3D6oGKpymqcQ6_aJRfO2FwxyYfmQWDmtaw--CqIaAy7XIRKsK4T-jYDV7OsjZIb5R88JOiv5OJ=
+oE2P1x4fZ1QPthDPvoLK_xy_5c6roEs-w_pRUGOeqASf9j9H7v5I9fBjbH0mj6GHAWT-GqJ25JM=
+FLyHxCXWBiQO6XNejcx17dhLDtmbC5KrNmMbkZkNLZHDDGkXJLyQNWyxxhMYO2jRpSQ%253D%25=
+3D/1/01010186a3f0c143-163e6739-f4d5-4844-8c61-fb5f675952bd-000000/5TOV2ilfo=
+2KcCMoZacsVgnBkLHY=3D312" style=3D"text-decoration: none; color: rgb(26, 26=
+, 26); display: inherit;"><img src=3D"https://square-mailstrom-production-s=
+.squarecdn.com/_shared/commsplat/instagram.png" width=3D"24" height=3D"25" =
+style=3D"mix-blend-mode: difference;display: block"></a></td> <td style=3D"=
+border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; pa=
+dding-right: 24px;"><a target=3D"_blank" rel=3D"noopener noreferrer" href=
+=3D"https://kjfjb2yk.r.us-west-2.awstrack.me/L0/https:%2F%2Flinks.squareupm=
+essaging.com%2Fu%2Fclick%3F_t=3Dd3359b52bac54899b79aca6957872390%26_m=3D020=
+51e2bf3344ac4ab1d8299224811a6%26_e=3D6oGKpymqcQ6_aJRfO2Fwx3msCOeyyhcrstqnWL=
+2nOup2UKLB0dFmLI6VudsA3k7z_13DD1ZZvY3jw7AM76dZ1xdPcYowfShtAhSKU-8q1VxDiJSU0=
+HesMEqZuCRI5VkXreLebeesSeEqkAbJwMZNirhGOxk8TytzvHfaXQPNVp90JTyaey2Ke092UsWA=
+P1YPM-vjis9ykkXFHQkjHAZUHQ%253D%253D/1/01010186a3f0c143-163e6739-f4d5-4844-=
+8c61-fb5f675952bd-000000/rgmTuI6eO6YSrQ0LY09WYhnLhtY=3D312" style=3D"text-d=
+ecoration: none; color: rgb(26, 26, 26); display: inherit;"><img src=3D"htt=
+ps://square-mailstrom-production-s.squarecdn.com/_shared/commsplat/twitter.=
+png" width=3D"26" height=3D"25" style=3D"mix-blend-mode: difference;display=
+: block"></a></td> </tr> </tbody> </table> </td> </tr> <tr> <td style=3D"bo=
+rder-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font=
+-family: SquareSansText-Regular, Helvetica, Arial, 'Hiragino Kaku Gothic Pr=
+o', Meiryo, sans-serif; font-weight: regular; font-size: 14px; line-height:=
+ 24px; color: #1a1a1a; padding: 0px 0 16px;" class=3D"standard-address">Squ=
+are<br> <a style=3D"text-decoration: none; color: #1a1a1a">1455 Market Stre=
+et, Suite 600,<br>San Francisco, CA 94103</a> </td> <td style=3D"border-col=
+lapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family:=
+ SquareSansText-Regular, Helvetica, Arial, 'Hiragino Kaku Gothic Pro', Meir=
+yo, sans-serif; font-size: 14px; line-height: 24px; color: rgb(26, 26, 26);=
+ padding: 0px 0px 16px; display: none;" class=3D"banking-address">Square Fi=
+nancial Services, Inc.<br> <a style=3D"text-decoration: none; color: #1a1a1=
+a">3165 E Millrock Drive, Suite 160,<br>Salt Lake City, UT 84121</a> </td> =
+<td style=3D"border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rs=
+pace: 0pt; font-family: SquareSansText-Regular, Helvetica, Arial, 'Hiragino=
+ Kaku Gothic Pro', Meiryo, sans-serif; font-size: 14px; line-height: 24px; =
+color: rgb(26, 26, 26); padding: 0px 0px 16px; display: none;" class=3D"oak=
+land-address">Square<br> <a style=3D"text-decoration: none; color: #1a1a1a"=
+>1955 Broadway, Ste 600, MSC 715,<br>Oakland, CA 94612</a> </td> </tr> <tr =
+style=3D"display: none;"> <td style=3D"border-collapse: collapse; mso-table=
+-lspace: 0pt; mso-table-rspace: 0pt; font-family: SquareSansText-Regular, H=
+elvetica, Arial, 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif; font-weigh=
+t: regular; font-size: 14px; line-height: 24px; color: #1a1a1a; padding: 0p=
+x 0 16px;" class=3D"p"> </td> </tr> <tr> <td style=3D"border-collapse: coll=
+apse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-family: SquareSans=
+Text-Regular, Helvetica, Arial, 'Hiragino Kaku Gothic Pro', Meiryo, sans-se=
+rif; font-weight: regular; font-size: 14px; line-height: 24px; color: #1a1a=
+1a; padding: 0px 0 16px;" class=3D"body privacyPolicy"><a href=3D"https://k=
+jfjb2yk.r.us-west-2.awstrack.me/L0/https:%2F%2Flinks.squareupmessaging.com%=
+2Fu%2Fclick%3F_t=3Dd3359b52bac54899b79aca6957872390%26_m=3D02051e2bf3344ac4=
+ab1d8299224811a6%26_e=3D6oGKpymqcQ6_aJRfO2Fwxy9f-p7cG4In6ZMF8Vm12BLih2VSQGw=
+QGhwu69RjFCsjeD1nEyVTSh0GhsuxGDc8J4nJrb5Z_Eg1L_TdjuHDEVaZlI9D4LVCx6n6j2VvQF=
+7gNGYWiCKdUzbjib_NjogWPrlhVcsfs0qEDow8J9jnWzU_3LKJfoKe5srHMP7uLjmyRpagt-tLh=
+y2B-X3JS7uZOFO7mBkrLnXxazutKza7402rxKFCirhKii0zLMWkmYYs/1/01010186a3f0c143-=
+163e6739-f4d5-4844-8c61-fb5f675952bd-000000/CCY8JBdQCftslyy-B-wZXmglTyY=3D3=
+12" style=3D"text-decoration: none;font-family: SquareSansText-SemiBold, He=
+lvetica, Arial, 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif; font-weight=
+: bold; color: #1a1a1a">Square Privacy Policy</a></td> </tr> <tr style=3D"d=
+isplay: none;"> <td style=3D"border-collapse: collapse; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt; font-family: SquareSansText-Regular, Helvetica, =
+Arial, 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif; font-weight: regular=
+; font-size: 14px; line-height: 24px; color: #1a1a1a; padding: 0px 0 16px;"=
+ class=3D"body unsub"><a href=3D"https://kjfjb2yk.r.us-west-2.awstrack.me/L=
+0/https:%2F%2Flinks.squareupmessaging.com%2Fe%2Feh%3F_t=3Dd3359b52bac54899b=
+79aca6957872390%26_m=3D02051e2bf3344ac4ab1d8299224811a6%26_e=3D6oGKpymqcQ6_=
+aJRfO2Fwx4lJXo2yLmXsHcn5jyAkGa404XAqpUDJYDxXT0leTGWplTF6hninrUQnEd0UbIfDkEj=
+3LOQLY9YkVGG4C9vEJz0jT4Le6mEavt4F5i51IeDloHSwUA34MYvk_jSOBxueJGj7vwW_83qlCX=
+eL1HzT9Bg4TMkQ0nkI3exfB9_JIIT9Ipb9KdZWnfCNUc_CwP1VKwivJDGw9233d4pQ_qS_9hyVb=
+TxkXICECymZNdVXhRYEeeHBN13Qi5qyolavU7xpow%253D%253D/1/01010186a3f0c143-163e=
+6739-f4d5-4844-8c61-fb5f675952bd-000000/GcyV7hRafsl-TK6JuVG2vsusfiA=3D312" =
+style=3D"text-decoration: none;font-family: SquareSansText-SemiBold, Helvet=
+ica, Arial, 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif; font-weight: bo=
+ld; color: #1a1a1a">Unsubscribe or manage your preferences</a></td> </tr> <=
+/tbody> </table> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table=
+> </td> </tr> </tbody> </table> </html>

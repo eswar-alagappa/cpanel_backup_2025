@@ -1,0 +1,129 @@
+<?php include "header.php"; ?>
+<script>
+var $ = jQuery.noConflict();
+</script>
+<div class="container">
+<div class="row">
+<div class="main-page">
+<div class="col-lg-6 col-xs-12 half-slider">
+   <div class="slider_container">
+		<div class="flexslider">
+	      <ul class="slides">
+	      	<!--
+	    	<li>
+	    		<img src="img/slider1.jpg" alt="" title=""/>
+	    		<div class="flex-caption">
+                     <div class="caption_title_line"><h2>Graduated Function</h2><p>Last Year graduate Students in college campus.</p></div>
+                </div>
+	    	</li>
+	    	<li>
+	    		<img src="img/slider2.jpg" alt="" title=""/>
+	    		<div class="flex-caption">
+                     <div class="caption_title_line"><h2>Student Group Discussing</h2><p>Student Group Discussing in College campus for upcoming semester.</p></div>
+                </div>
+	    	</li>
+	    	-->
+<?php
+	$sql = "select s.*  ";
+	$sql .= " from slider s " ;
+	$sql .= " order by s.id desc  ";
+	$query = $this->db->query($sql);
+	$rows = $query->result_array();
+	foreach($rows as $row){
+?>
+	    	<li>
+	    		<img src="<?php echo $IMAGE_DIR . $row['image_url'];?>" alt="" title=""/>
+	    		<div class="flex-caption">
+                     <div class="caption_title_line"><h2>Job Fair in Alagappa Institute of Technology</h2><p>Students Registering name for job Fair.</p></div>
+                </div>				
+	    	</li>
+
+<?php		
+	}
+?>
+
+
+	    </ul>
+	  </div>
+   </div>
+</div>
+<?php include 'social.php'; ?>
+<div class="col-lg-6 col-xs-12 page-content">
+<h1>AT A GLANCE</h1>
+<p>The Alagappa Institute of Technology (AIT) is a service-oriented institution with the primary focus on providing education in emerging academic disciplines, vocational programs and in the field of performing arts. It was founded in September 2001 by Mr. R. Vairavan, the grandson of Dr. RM. Alagappa Chettiar, the founder of the Alagappa Schools, Colleges and the Alagappa University, Karaikudi, Tamil Nadu, India.</p>
+<ul class="col-list">
+<li><i style="color:#F4A32A;" class="fa fa-university"></i>&nbsp;&nbsp; Alagappa University, Karaikudi, Tamil Nadu.</li>
+<li><i style="color:#F4A32A;" class="fa fa-university"></i>&nbsp;&nbsp; Pondicherry University, Pondicherry.</li>
+<li><i style="color:#F4A32A;" class="fa fa-university"></i>&nbsp;&nbsp; Tamil Nadu Open University, Chennai.</li>
+<li><i style="color:#F4A32A;" class="fa fa-university"></i>&nbsp;&nbsp; Anna University, Coimbatore.</li>
+<li><i style="color:#F4A32A;" class="fa fa-university"></i>&nbsp;&nbsp; University Of Madras</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-xs-12 univer-list">
+<div class="university">
+<div class="col-lg-2 col-xs-12 width">
+<div class="animateblock left"><i class="fa fa-building"></i><div class="break">Alagappa University, Karaikudi.</div>
+</div></div>
+<div class="col-lg-2 col-xs-12 width">
+<div class="animateblock left"><i class="fa fa-building"></i><div class="break">Pondicherry University, Pondicherry.</div></div>
+</div>
+<div class="col-lg-2 col-xs-12 width">
+<div class="animateblock left"><i class="fa fa-building"></i><div class="break">Tamil Nadu Open University, Chennai.</div></div>
+</div>
+<div class="col-lg-2 col-xs-12 width">
+<div class="animateblock left"><i class="fa fa-building"></i><div class="break">Anna University, Coimbatore.</div>
+</div></div>
+<div class="col-lg-2 col-xs-12 width">
+<div class="animateblock left"><i class="fa fa-building"></i><div class="break">University Of Madras.</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="row">
+<div class="latest-news">
+
+<div class="col-lg-4 col-xs-12 area">
+<?php include 'major_links.php'; ?>
+</div>
+<div class="col-lg-4 col-xs-12 news">
+<h3>Latest News</h3>
+<marquee id='scroll_news' direction="up">
+<div class="latest-news" style="height:243px;" onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();">
+<h5><i  class="fa fa-graduation-cap"></i> <span style="color:#0396FF;">Exam Application Publiched</span></h5>
+<p>December 2016 exam application published in the alagappa university website last date - 5/12/16</p>
+<h5><i  class="fa fa-graduation-cap"></i> <span style="color:#0396FF;">Admission Open for 2016-2017</span></h5>
+<h5><i  class="fa fa-graduation-cap"></i> <span style="color:#0396FF;">ELECTIVES FOR 5YEARS MBA</span></h5>
+<p>MARKETING</p><p>FINANCE</p><p>PERSONNEL</p><p>SYSTEMS</p><p>PROJECT(COMPULSORY)</p>
+<h5><i class="fa fa-graduation-cap"></i> <span style="color:#0396FF;">MBA GENERAL</span></h5>
+<p>HUMAN RESOUTCE</p><p>MARKETING</p><p>FINANCE</p><p>PROJECT(COMPULSORY)</p>
+<h5><i class="fa fa-graduation-cap"></i> <span style="color:#0396FF;">PAPER 1 FOR BA &amp; B.SC</span></h5>
+<p>TAMIL</p><p>HINDI</p><p>COMMUNICATION SKILL</p>
+<h5><i class="fa fa-graduation-cap"></i> <span style="color:#0396FF;">MEDIUM</span></h5>
+<p>TAMIL</p><p>ENGLISH</p>
+</marquee>
+</div>
+</div>
+
+
+<div class="col-lg-4 col-xs-12 technology">
+<h3>Welcome to Alagappa Institute of Technology</h3>
+<p><img class="img-border" src="img/news1.jpg" alt="ImageMissing"><span class="hints">AIT has been designed to provide an academic ambience,conducive for learning.<span></p>
+<h5>Our Institution</h5>
+<p><img class="img-border" src="img/news2.jpg" alt="ImageMissing"><span class="hints">AIT has been designed to provide an academic ambience,conducive for learning. The Institutes in Chennai and Karaikudi have been equipped with state of the art hardware and software, which clearly distinguish it from the rest of such centers in the city.</span></p>
+
+
+</div>
+</div>
+</div>
+</div>
+
+<?php include "footer.php"; ?>

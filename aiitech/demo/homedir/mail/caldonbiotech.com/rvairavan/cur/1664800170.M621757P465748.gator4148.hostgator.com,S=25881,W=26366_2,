@@ -1,0 +1,485 @@
+Return-Path: <uch_purch@uchicagomedicine.org>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id 6Ez7JKrVOmNUGwcA7/vpDg
+	(envelope-from <uch_purch@uchicagomedicine.org>)
+	for <rvairavan@caldonbiotech.com>; Mon, 03 Oct 2022 07:29:30 -0500
+Return-path: <uch_purch@uchicagomedicine.org>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Mon, 03 Oct 2022 07:29:30 -0500
+Received: from prfsmtppr03dar.uchospitals.edu ([165.68.14.57]:42962)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <uch_purch@uchicagomedicine.org>)
+	id 1ofKZd-001wjG-Pu
+	for customersupport@caldonbiotech.com;
+	Mon, 03 Oct 2022 07:29:30 -0500
+Received: from pps.filterd (prfsmtppr03dar.uchospitals.edu [127.0.0.1])
+	by prfsmtppr03dar.uchospitals.edu (8.17.1.5/8.17.1.5) with ESMTP id 2936faMv018156;
+	Mon, 3 Oct 2022 07:28:49 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=uchicagomedicine.org; h=from : to :
+ subject : date : message-id : content-type : mime-version; s=ucm-20220726;
+ bh=WALXcdKEotvlUGSIw9+d4OPEDiOUBjdGyeeXQOf1WOE=;
+ b=VtsFtmcv/lsszxyWh6rblL0hPSqZbVF6e8jy6py/CD+iAFxaKMXaenTg89ymvGVspDyW
+ TlFrCgKhstIEPOhTFlD/vbykAWbkn4tHWSJG41IANKXXHnx3jigfGZrT45S/wu5vjKf7
+ q89G4Qw+qeakH0g6YfSccWzKCfmndOSox0pQE3GscSoWvZT3H4Ho+mnCyhS40I4aqyCP
+ VnyUcu+9D5PrQm4w9s1odd256BdrxwqgcdEngbZuDDYO9dRH/A93/9jBMcufRm90FA6l
+ VoMocUxGLZkMdtOb2VLtpQvRXf7a1vksuZTFv8TvUv0r6kciiRBI6Mcr9da18lmFe/29 kg== 
+Received: from nam02-sn1-obe.outbound.protection.outlook.com (mail-sn1anam02lp2043.outbound.protection.outlook.com [104.47.57.43])
+	by prfsmtppr03dar.uchospitals.edu (PPS) with ESMTPS id 3jxh9hecjf-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT);
+	Mon, 03 Oct 2022 07:28:49 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=bUrx2xEsvE4SCszwb7gAqq7il5v7O+Z7Ap7JHHwmiBg94LQocFsmeiSMIqTiAYxSPUGreZ0UWmXaAK2dXWY33ays4OD3AVfFEV5Y4wtGau+LZc3HveyG3RWUl1unmL4S4eTI3JACMV72fn1EF8/5ZH9cBgDHY5GKVqQAdLae3SXoPGsFZbTT2LAnw//fRvNqRNPa8WkiSvAiGhaCcvKM3lsv5qtLlmkP9TNXe1faI9a8qpRNZGHEyzeZ0FxnjKfsQ27cHo9j/Tqx/b50TPtXOnuIkRTleHHvVsBypF6x9Ce4Mswje6qZJW6YPeh1ovIdfs8Z7mkxfgptsvKBHdYERQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=WALXcdKEotvlUGSIw9+d4OPEDiOUBjdGyeeXQOf1WOE=;
+ b=A2gS9fB4hI7W754/3zpAkEx5OD3N7PX2tcFX+YINshozr3xQM2eOxD2QZI7oz7rM8Z2alt8XSd54Eqdy44mjfogshFbChHExXUNk8yB96tL/D7Ko50zzvCVz0zkqmgcQ7pVMOJyiiKK7ppyAxyXUHyRit+byaa2ziRFW5MjvYiHtDqJIRIQvUI8OXN8KBBEfn3nUJ+rmiltnyAEgVbdXkajm5OMUvm7q2Py3/kneyxJI6YSJL2Ie4oUCkx5PcPjrHqddyBK6qP0QYY6lQ2a3lZynlTI/wVy+4F4xm6sB0Xt00sHepxeL4Dtw3eM8RjJbMOSXoZpaDdB3SqdCeqJnAQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=uchicagomedicine.org; dmarc=pass action=none
+ header.from=uchicagomedicine.org; dkim=pass header.d=uchicagomedicine.org;
+ arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ucmed.onmicrosoft.com;
+ s=selector1-ucmed-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=WALXcdKEotvlUGSIw9+d4OPEDiOUBjdGyeeXQOf1WOE=;
+ b=aSEkouwBZoN+UuShDiA4sRy2Ptf3bckGfs9JOpHAOJO2vW6MCHhFuQ2XCpnRee+dljddzHp9AcMeOzlErz+FbEs0TnBv/mu7hj1jK9A4FrJRRKtDaJRJEGPFrzzkFwU74s/poIi9gAKuS5whJSN8y1pgd2RwST0I6LgBqSutMRM=
+Received: from CH2PR04MB6572.namprd04.prod.outlook.com (2603:10b6:610:65::14)
+ by MN2PR04MB6335.namprd04.prod.outlook.com (2603:10b6:208:1a4::20) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5676.24; Mon, 3 Oct
+ 2022 12:28:43 +0000
+Received: from CH2PR04MB6572.namprd04.prod.outlook.com
+ ([fe80::1cd8:2b4f:776e:ff9e]) by CH2PR04MB6572.namprd04.prod.outlook.com
+ ([fe80::1cd8:2b4f:776e:ff9e%7]) with mapi id 15.20.5676.030; Mon, 3 Oct 2022
+ 12:28:43 +0000
+From: UCH_PURCH <uch_purch@uchicagomedicine.org>
+To: UCH_PURCH <uch_purch@uchicagomedicine.org>
+Subject: UChicago Medicine Oracle Cloud ERP Software is Live!
+Thread-Topic: UChicago Medicine Oracle Cloud ERP Software is Live!
+Thread-Index: AdjXI0+y7MKw3BnLRcS3M7fGrGpRJA==
+Date: Mon, 3 Oct 2022 12:28:41 +0000
+Message-ID: 
+ <CH2PR04MB65721338E1C0BEE1692A4F25FD5B9@CH2PR04MB6572.namprd04.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+x-ms-exchange-messagesentrepresentingtype: 1
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: CH2PR04MB6572:EE_|MN2PR04MB6335:EE_
+x-ms-office365-filtering-correlation-id: 684cd6a8-fe65-4227-5335-08daa53ace9f
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: 
+ rQCBikiQZgza2Wvd1JSRN2/PaiYbzfztB9N9jwFPy/63XcVmVGCCf6pzBefPKsri5S0gsomlmHkN2kTQ8wfD3wnZVWx5wkKtX+aKH7MbGRZlmcPN4I0cgCUjhftju7IvB++W7fniN7klAmLcYgPR/G3rcnLqnN8WPadXOOfWvCFyfO1Olhe4ESmC9/FgBewXitoJsYJRokXnX41eEK1GgeWoHThFEL5l7RSWypw6lno7EWLjqI+b++xvToVl8n9Z8vWqlHbTZ/CoyHUQCTgi3ZKPkWSYyS3xsk1HA4MHbQRfdAnh+cis5if22bs/Powf+nZRGKreKNOWpmlMTl3itL/KdIPQwDdHuFTB2b4PjxIjDwnbgfQAZ2cJdGb5LvILqgu4IjIBpRmCCxdT3D78QEg0s5gMO17oVzcwKAM5AcN2kDofjhcdaLZ/n3cDiMbDUL/Qq75fz73b2r7JCSwDVp216kxturQIwK/HaMVR2bFJSl094zz5IM6poIs/1PojkxF8Jk/9MuNPolbOxYnkTVpaMk7Ttt+K23OqMuM1ElU7KUuFmmFXs1vadP6NGlWoPtSLu5aXm7pLQvJrSXNIl1raYeE/59jFW0eFAwCzx09v4Oa+YvkLb15NFXl7iAkwNW6pMCEWtHfJyIwvo9YZFBGQ2DYHQDTKw+PhPeuWcXBzLnt6GZQYRwwVU0gkPE7uQ9Z29JmTWXW1kI3kXtUXTxaMNV0eISc6729VJ45CiRHbbliq4xualLWJtRXpQlfyiJczoG7nG7O47oNQzE8xsg==
+x-forefront-antispam-report: 
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CH2PR04MB6572.namprd04.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230022)(396003)(366004)(346002)(39850400004)(136003)(376002)(451199015)(89122003)(478600001)(55016003)(76576003)(65686005)(88732003)(66899015)(786003)(316002)(296002)(71200400001)(26005)(7696005)(66946007)(66556008)(6506007)(41300700001)(76116006)(99936003)(9686003)(7416002)(7406005)(7336002)(7276002)(52536014)(5660300002)(7366002)(8676002)(64756008)(66446008)(66476007)(2906002)(33656002)(6862004)(8936002)(186003)(83380400001)(6200100001)(86362001)(38100700002)(122000001)(38070700005)(41320700001);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: 
+ =?us-ascii?Q?uzR/03f6/oLDCqaW2hMI5Up6lZbduw8nD6N4wyLIdt2ythICbXnFTf4XfYDq?=
+ =?us-ascii?Q?65qM7TRr/yjL14mnKnkM8/Fzmwrx4Jiwj5ydwr0zt48lRZL9BCssYugVBsMN?=
+ =?us-ascii?Q?BoUk4s1EU36SEOHJCZXsZ9995kkNKUyFN+IBVnLf4eyzSkYff7pbss//ZXFZ?=
+ =?us-ascii?Q?ILy16vg9Il5EObOmSS7d1hkCGRq42kd2salLEtOggC7IdfzJp5xAcXFg77wW?=
+ =?us-ascii?Q?m4ePxd0ZgSV0WVFFfu7QOJfnIJW2B60mTSZqkWUzL1iQ6UBj4bAx38jaYVJf?=
+ =?us-ascii?Q?pyKcBL0zU0P12wm0MQe2bLdHcycdeSDYmPmSvxpnvHeJzX+/h5cuSu62bgDl?=
+ =?us-ascii?Q?zO25X18FPqYvkIuSa6uaT2ktyO0gYrHbCKdtltq51pk1q9t/XPpdPj1zDnEj?=
+ =?us-ascii?Q?k22DDp2dBI5bmuxD76Rej1cOTq2+t7ode/KsEYrnRxtK3n37Kk8uUGYQoFlV?=
+ =?us-ascii?Q?R7Hxn75hyDz2OsBJIRa/O+0/lzPpk42ygjZRjCfcJCg4YZpMwYltEQE8HYBS?=
+ =?us-ascii?Q?uAU20UeItEYGhCLttZlOp8zEYJXkGD2/Z6fbS/BvpaqKVXRmrG6dGQaN6Q3/?=
+ =?us-ascii?Q?WufeOuyHb/9wC13VVfm8jnDfnJKR8Ns/tk69B2X4LNxv76OQD7/GYh13TH65?=
+ =?us-ascii?Q?jaCqEavyeQywD+ddGTajKcwOrvkYCGabNoPJd9OaIVHmiUgKIg4OBuUiiqet?=
+ =?us-ascii?Q?qxiG6el/4P+umccXTaDyv2IpwQeSfjxIrvzyNK/sBqXQhGZMWZZBDW6aF+8Z?=
+ =?us-ascii?Q?1cQiYFCUUNSD+X/hZnonUEfNW5iVy3lPUL8K0aU3ZbLRpIEaZyw0ywJViaqV?=
+ =?us-ascii?Q?5a3dbwkpRhUjTjqxO9WDmwWmrsmCh+SnILcioGSxcOU1dEjjc8Fjv/50LI83?=
+ =?us-ascii?Q?0FDg/4uqgcCGl54lZJfGnS1u03sLiI1gHVntLgY4AkV1/x1yCPz6T8SUy+OI?=
+ =?us-ascii?Q?ODj4oa95TsH4q0NnAFIxettS7dgfkPoJFshoet+mGNhvEfb8+WAZGZKwzDps?=
+ =?us-ascii?Q?CdsXfDXjMzhVrmOhGLEB1yU01Fz9pRj1z4L1yTkIdO2ITG3Uj3mFlcY6rvRU?=
+ =?us-ascii?Q?g7lTCunvCLPwEtdcdfAszy+/SI6mzD53B60+fRvo1C3CICM0gsjIjFkTlb3v?=
+ =?us-ascii?Q?3NYW2xvXEOHxBfia8pShsvI8IQiAoYff2A9Le4mLg7xJoQcwGfVXn2p/RJFy?=
+ =?us-ascii?Q?jOUGS2ivPjsbNywTANIWhyJCbUCY/II6oy+MxwcTRoh0zlfJxBk2ztxB9G0b?=
+ =?us-ascii?Q?C3b5RSgAxLh4iZ34LBuFZKdG5j7Xy7B58Gps6mq3ZYuBLCJCi2KmOsLHm4yk?=
+ =?us-ascii?Q?JjnloYqnaN5+Qt85C42iIkKpC7zhCCVJV0mZe6oxcTP+MZHCCyoSAGfKrPNE?=
+ =?us-ascii?Q?BP9+HHwOU6llo+oaVTrMz4cD7hzGvVP2rmSMrzZdBzNmQgflaZhKi2OcILKw?=
+ =?us-ascii?Q?5fC6tm4GOh3LjJ5KcmVL59vVfBNaFeyhdgfJ9GM/K8LjGXgtDNnwLpA3HXar?=
+ =?us-ascii?Q?6a5BJEhsKW8MN90rtkQzVzq3Xil9KeEloZmZfMqpdnQbIU30ijjZ0goch74q?=
+ =?us-ascii?Q?NxxwE3l3RJPZ1kTeouZWWos1dI18bU/Yy1Hgrbow?=
+Content-Type: multipart/related;
+	boundary="_004_CH2PR04MB65721338E1C0BEE1692A4F25FD5B9CH2PR04MB6572namp_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-OriginatorOrg: uchicagomedicine.org
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: CH2PR04MB6572.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 684cd6a8-fe65-4227-5335-08daa53ace9f
+X-MS-Exchange-CrossTenant-originalarrivaltime: 03 Oct 2022 12:28:41.9424
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 365047f9-76f3-4e80-b41c-098ab1b6113b
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: wDOCjRWBOXKtlknNUZudG/NN41ILUoXMzAYwRzqdnPqhyhYLTzVM7l8gRykJKDzIMrAKOHEiH++kuVsZn9gz3dSIYpqDWOEa3F2NjimfC84=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MN2PR04MB6335
+X-Proofpoint-ORIG-GUID: mdQmLljUOZTZcyp9hxIRqCOcgUoTkXBn
+X-Proofpoint-GUID: mdQmLljUOZTZcyp9hxIRqCOcgUoTkXBn
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.205,Aquarius:18.0.895,Hydra:6.0.528,FMLib:17.11.122.1
+ definitions=2022-10-03_02,2022-09-29_03,2022-06-22_01
+X-Proofpoint-Spam-Details: rule=outbound_notspam policy=outbound score=0 suspectscore=0 mlxscore=0
+ lowpriorityscore=0 malwarescore=0 priorityscore=1501 bulkscore=0
+ adultscore=0 impostorscore=0 clxscore=1011 mlxlogscore=999 phishscore=0
+ spamscore=0 classifier=spam adjust=0 reason=mlx scancount=1
+ engine=8.12.0-2209130000 definitions=main-2210030076
+X-Spam-Status: No, score=-0.7
+X-Spam-Score: -6
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--_004_CH2PR04MB65721338E1C0BEE1692A4F25FD5B9CH2PR04MB6572namp_
+Content-Type: multipart/alternative;
+	boundary="_000_CH2PR04MB65721338E1C0BEE1692A4F25FD5B9CH2PR04MB6572namp_"
+
+--_000_CH2PR04MB65721338E1C0BEE1692A4F25FD5B9CH2PR04MB6572namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+[cid:image001.jpg@01D8D6F9.C23CB9B0]
+
+October 3rd, 2022
+
+Supplier Partners:
+
+UChicago Medicine is live Oracle Cloud ERP Software for HR, Finance and Pro=
+cure-to-Pay.
+
+As we go live in our new system, we wanted to give notice that the e-mail a=
+ddress that our Purchase Orders will come from has changed.
+
+Please note that all PO's that are sent automatically through our system wi=
+ll now be sent from: etnf.fa.sender@workflow.mail.us2.cloud.oracle.com<mail=
+to:etnf.fa.sender@workflow.mail.us2.cloud.oracle.com>.
+
+What you need to know for October 3rd, 2022 Go-live
+Purchase Order Numbers
+New Purchase Order (PO) Numbers will be 11 character long and will start wi=
+th text UCH, example UCH00009426. We are converting legacy Open PO data to =
+Oracle Cloud and PO numbers will be the same as they are in our legacy syst=
+em. This will allow invoicing and payment against existing PO's during the =
+transition.
+UCM Issued Purchase Order Numbers are Required on Invoices to Reduce Paymen=
+t Lead Time
+Accounts payable is the primary point of contact to get invoices processed.=
+ Integrated workflows will allow respective department leaders to approve w=
+ithin Oracle Cloud and eliminate the need for routing invoices through depa=
+rtments. Having a purchase order number on invoices will allow teams to mat=
+ch, approve and pay invoices within contracted payment terms and reduce exc=
+eptions.
+
+QUESTIONS?
+Contact UChicago Medicine Purchasing & Accounts Payable teams below.
+
+Accounts Payable: accounts@uchicagomedicine.org<mailto:accounts@uchicagomed=
+icine.org>
+Purchasing: uch_purch@uchicagomedicine.org<mailto:uch_purch@uchicagomedicin=
+e.org>
+
+Thanks,
+
+UChicago Medicine Team
+
+
+--_000_CH2PR04MB65721338E1C0BEE1692A4F25FD5B9CH2PR04MB6572namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:1660422875;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2085270140 67698689 67698691 67698693 67698689 67698=
+691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><img width=3D"152" height=3D"52" style=3D"width:1.58=
+33in;height:.5416in" id=3D"Picture_x0020_1" src=3D"cid:image001.jpg@01D8D6F=
+9.C23CB9B0"><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">October 3rd, 2022<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Supplier Partners:<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">UChicago Medicine is live Oracle Cloud ERP Software =
+for HR, Finance and Procure-to-Pay.
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">As we go live in our new system, we wanted to give n=
+otice that the e-mail address that our Purchase Orders will come from has c=
+hanged.
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><u>Please note that all PO&#8217;s that are sent =
+automatically through our system will now be sent from:
+<span style=3D"color:#1F497D"><a href=3D"mailto:etnf.fa.sender@workflow.mai=
+l.us2.cloud.oracle.com">etnf.fa.sender@workflow.mail.us2.cloud.oracle.com</=
+a>.</span></u></b><o:p></o:p></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:14.0pt;color:#990000"><o=
+:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:14.0pt;color:#990000">Wh=
+at you need to know for October 3<sup>rd</sup>, 2022 Go-live<o:p></o:p></sp=
+an></b></p>
+<p class=3D"MsoNormal"><b>Purchase Order Numbers<o:p></o:p></b></p>
+<p class=3D"MsoNormal">New Purchase Order (PO) Numbers will be 11 character=
+ long and will start with text UCH, example UCH00009426. We are converting =
+legacy Open PO data to Oracle Cloud and PO numbers will be the same as they=
+ are in our legacy system. This will
+ allow invoicing and payment against existing PO&#8217;s during the transit=
+ion.<o:p></o:p></p>
+<p class=3D"MsoNormal"><b>UCM Issued Purchase Order Numbers are Required on=
+ Invoices to Reduce Payment Lead Time<o:p></o:p></b></p>
+<p class=3D"MsoNormal">Accounts payable is the primary point of contact to =
+get invoices processed. Integrated workflows will allow respective departme=
+nt leaders to approve within Oracle Cloud and eliminate the need for routin=
+g invoices through departments. Having
+ a purchase order number on invoices will allow teams to match, approve and=
+ pay invoices within contracted payment terms and reduce exceptions.<o:p></=
+o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-size:14.0pt;color:#990000">QU=
+ESTIONS?<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal">Contact UChicago Medicine Purchasing &amp; Accounts =
+Payable teams below.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Accounts Payable: <a href=3D"mailto:accounts@uchicag=
+omedicine.org">
+accounts@uchicagomedicine.org</a><o:p></o:p></p>
+<p class=3D"MsoNormal">Purchasing: <a href=3D"mailto:uch_purch@uchicagomedi=
+cine.org">
+uch_purch@uchicagomedicine.org</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thanks,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">UChicago Medicine Team<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_CH2PR04MB65721338E1C0BEE1692A4F25FD5B9CH2PR04MB6572namp_--
+
+--_004_CH2PR04MB65721338E1C0BEE1692A4F25FD5B9CH2PR04MB6572namp_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=4446;
+	creation-date="Mon, 03 Oct 2022 12:28:41 GMT";
+	modification-date="Mon, 03 Oct 2022 12:28:41 GMT"
+Content-ID: <image001.jpg@01D8D6F9.C23CB9B0>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIf
+IiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7
+Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAA0AJgDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDmbe38
+Xa1pp1GG6vruCOXycm7JIbbu6Fs4xXXD4faY8puLy91W8SMfvCxVAv1JycdTwOnNcNp8OgS6U/8A
+aWoXtvdefgRwwh02bfvckc546169eW6RTLNeCyhg24R7y8wCpA5255zluD6AVywSa1PcxVScJJR0
+36WOeb4a6HcMbq2XU44likk+yyOitJtK4wxBwGDZ5pbj4e6PDcM1nfatprb0jGAJBliMcjB7gn0r
+cE+mS2oka7tDAG3ZF+NrbTH/ABZ478HqAKls2j1CXdYtbuJyJJDZ6iuN527uOSOh6e9acsexye3r
+dZM8017T/E3hm6unjvtSSySYwx3P2gp5uDjgBs9a910N3l0HT5JGZ3a1iLMxySSoySa8O8fnRzrV
++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
+
+--_004_CH2PR04MB65721338E1C0BEE1692A4F25FD5B9CH2PR04MB6572namp_--

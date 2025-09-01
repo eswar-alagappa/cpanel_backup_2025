@@ -1,0 +1,396 @@
+Return-Path: <bounces+679336c1-b5e6-11ed-b346-525400d4bb1c_vt1@sender9.zohocrm.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id iOrpKmd0+2O8KgcA7/vpDg
+	(envelope-from <bounces+679336c1-b5e6-11ed-b346-525400d4bb1c_vt1@sender9.zohocrm.com>); Sun, 26 Feb 2023 09:01:59 -0600
+Return-path: <bounces+679336c1-b5e6-11ed-b346-525400d4bb1c_vt1@sender9.zohocrm.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Sun, 26 Feb 2023 09:01:59 -0600
+Received: from sendera177.zohocrm.com ([135.84.80.177]:62279)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <bounces+679336c1-b5e6-11ed-b346-525400d4bb1c_vt1@sender9.zohocrm.com>)
+	id 1pWIXH-0026Yr-5k
+	for customersupport@caldonbiotech.com;
+	Sun, 26 Feb 2023 09:01:59 -0600
+ARC-Seal: i=1; a=rsa-sha256; t=1677423703; cv=none; 
+	d=us.zohomail360.com; s=zohoarc; 
+	b=HLQdv7jjNx6+PTGbeTgK7Gl1fbdKuPbpMSTLcR90+XG+5idCI5k2s1VYdHNGOK0fGimQwMbZN1rYxP1ezT+wE6szgOOzzZZ5tTA2JhBZcLxsIJp3x7lIiSrW/lGemKez9x9cVi/y8fWUOBD+8u6FblubaUOFEMj4IiOLj1UUu0Y=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=us.zohomail360.com; s=zohoarc; 
+	t=1677423703; h=Content-Type:Date:From:MIME-Version:Message-ID:Subject:To; 
+	bh=oD0yL0bBh7WGs2/xJiSY28D6pWSSgzuMDjrAEKNU6Lk=; 
+	b=M80BYkOzSbdXXm9hCZi3EbDITBpZim6+QkQ2HSiFQM9p3z+lfByePvgL+ZKfUZD4QXfSb7a6Xfqo1MHtBq04f9HIVRpIN4Pu4i6ELXq35zcr8FfduEJT84DZWrOg8cTzt8KDknodYqAQWxJMb1m8Nyp2jojCeco775PofsaPGLU=
+ARC-Authentication-Results: i=1; mx.us.zohomail360.com;
+	dkim=pass  header.i=nationalmarketingsolutions.com;
+	spf=pass  smtp.mailfrom=bounces+679336c1-b5e6-11ed-b346-525400d4bb1c_vt1@sender9.zohocrm.com;
+	dmarc=pass header.from=<clark@nationalmarketingsolutions.com>
+Received: from [10.47.36.165] (10.47.36.165 [10.47.36.165]) by mx.zohomail.com
+	with SMTPS id 1677423672476425.1641900177283; Sun, 26 Feb 2023 07:01:12 -0800 (PST)
+DKIM-Signature: a=rsa-sha256; b=aHDPTo1KGZm3jO5T4CXZn3Tk/D8kP8HTC/wfm6dTBqPbMSzD84OmzZNLJpztrsxSTh+ovgpsI1a1xOjnajJvhQ5SG3FuQkEFVd7ovFqOr7X1YZ2wxgGO62uHNw++8CeieefI09PkG+EnMCU86CzwT+tzIeTQHfhTOCLIVK+vPAs=; c=relaxed/relaxed; s=1231711; d=sender9.zohocrm.com; v=1; bh=oD0yL0bBh7WGs2/xJiSY28D6pWSSgzuMDjrAEKNU6Lk=; h=date:from:reply-to:to:cc:message-id:subject:mime-version:content-type:date:from:reply-to:to:cc:message-id:subject;
+Date: Sun, 26 Feb 2023 07:01:12 -0800 (PST)
+From: Robert Clark <clark@nationalmarketingsolutions.com>
+To: customersupport@caldonbiotech.com
+Message-ID: <2d6f.327230a.m1.679336c1-b5e6-11ed-b346-525400d4bb1c.1868e3df42c@sender9.zohocrm.com>
+Subject: Merge or Acquire?
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_6310983_1772615235.1677423672413"
+X-ZCORGID: 72a9c6aeaf4b02103f285b7b7a77b25bc2f57563ad0ef05cc0e786331fc0c9ce
+Original-Envelope-Id: 2d6f.327230a.m1.679336c1-b5e6-11ed-b346-525400d4bb1c.1868e3df42c
+X-Report-Abuse: <mailto:abuse+2d6f.327230a.m1.679336c1-b5e6-11ed-b346-525400d4bb1c.1868e3df42c@zeptomail.com>
+TM-MAIL-JID: 2d6f.327230a.m1.679336c1-b5e6-11ed-b346-525400d4bb1c.1868e3df42c
+X-JID: 2d6f.327230a.m1.679336c1-b5e6-11ed-b346-525400d4bb1c.1868e3df42c
+X-App-Message-ID: 2d6f.327230a.m1.679336c1-b5e6-11ed-b346-525400d4bb1c.1868e3df42c
+X-ZohoMailClient: External
+X-Spam-Status: No, score=-0.3
+X-Spam-Score: -2
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+------=_Part_6310983_1772615235.1677423672413
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,=20
+ As a fellow business owner, we understand that the journey can be challeng=
+ing, and it&#39;s normal to feel like giving up on some days. However, we b=
+elieve that with the right strategy and support, any business can grow and =
+thrive.=20
+ Have you considered exploring new opportunities for expansion? One option =
+could be acquiring a business in a different city, county, or state, which =
+could open up new markets and revenue streams. Another possibility is mergi=
+ng your business with another, combining resources and expertise to achieve=
+ even greater success.=20
+ If you are interested in learning more about how we can help, please don&#=
+39;t hesitate to reach out. We would be honored to speak with you and explo=
+re ways to support your business.=20
+ Thank you for your time, and we look forward to hearing back from you soon=
+.=20
+  =20
+ Robert ClarkNational Marketing SolutionsOffice 702-203-5091Clark@nationalm=
+arketingsolutions.comwww.Nationalmarketingsolutions.com=E2=80=8B
+
+------=_Part_6310983_1772615235.1677423672413
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html;charset=3DUTF-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width">
+<style>
+=09@media only screen and (max-width: 480px){
+=09=09table[class=3DcontentOuter] {background:rgba(0,0,0,0) !important;}
+=09=09table[class=3DcontentInner] {width:100% !important;padding:0px;margin=
+:0px;}
+=09=09img[class=3DzpImage]{width:260px !important;max-width: 360px !importa=
+nt;text-align:center;margin:0px;padding:0px;}=20
+=09=09body, table, td, p, a, li,div,span, blockquote{-webkit-text-size-adju=
+st:none !important;}
+=09=09blockquote{outline:none !important;border: none !important;}
+        body{margin: 0px;}
+        pre{white-space: pre-wrap;}
+=09=09table[class=3DzpImageCaption]{text-align:left;}
+=09=09table[class=3Dcols]{width:100% !important;max-width:100% !important;t=
+ext-align:left;}
+=09=09table[class=3Dzpcolumns] {text-align:left;margin:0px;}=20
+=09=09table[class=3Dzpcolumn] {text-align:left;margin:0px;}=20
+=09=09table[class=3DzpAlignPos]{width:100%;text-align:left;margin:0px;}=20
+=09=09.table table img{width: auto !important;max-width: 100% !important;mi=
+n-width: auto;max-height: none !important;}
+=09=09td[class=3Dtxtsize]{font-size:18px !important;}
+=09=09td[class=3Dpaddingcomp]{padding-left:15px !important;padding-right: 1=
+5px !important;}
+=09=09td[class=3Dbannerimgpad]{padding:0px !important;}
+=09=09span[class=3Dtxtsize]{font-size:18px !important;}
+=09=09img.imgsize_B{width: 100% !important;max-width:100% !important;margin=
+: 0px !important;padding:0px !important;}
+=09=09img.imgsize_F{width: 100% !important;max-width:100% !important;margin=
+: 0px !important;padding:0px !important;}
+=09=09img.imgsize_S{width: 100% !important;max-width:105px !important;heigh=
+t:auto; margin:0px auto !important;padding:0px !important;}
+=09=09img.imgsize_M{width: 100% !important;max-width:227.869px !important;h=
+eight:auto; margin:0px auto !important;padding:0px !important;}
+=09=09img.imgsize_O{max-width: 100% !important;width: auto !important;heigh=
+t: auto !important;}
+=09=09.buttonInnerLink{
+    =09=09width: 100% !important;
+            max-width: 250px !important;
+   =09=09=09display: inline-block !important;
+            word-wrap:break-word !important;
+            text-align: center !important;
+=09=09}
+        .buttonOuterLink{
+    =09=09width: 100% !important;
+            max-width: 290px !important;
+   =09=09=09display: inline-block !important;
+            word-wrap:break-word !important;
+            text-align: center !important;
+=09=09}
+=09=09h1{
+=09=09=09font-size:28px !important;
+=09=09=09line-height:100% !important;
+=09=09}
+=09=09h2{
+=09=09=09font-size:24px !important;
+=09=09=09line-height:100% !important;
+=09=09}
+=09=09h3{
+=09=09=09font-size:20px !important;
+=09=09=09line-height:100% !important;
+=09=09}
+=09=09h4{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:100% !important;
+=09=09}
+=09=09=09#contentOuter .contentmaintd{
+    =09=09=09vertical-align: top;
+    =09=09=09padding: 0px !important;
+=09=09=09}
+=09=09}=09=09
+=09=09@media only screen and (max-width: 480px){
+=09=09.zpImage{
+=09=09=09height:auto !important;
+=09=09=09width:100% !important;
+=09=09}}
+=09=09@media only screen and (max-width: 480px){
+=09=09.contentInner,.cols,.zpAlignPos{
+=09=09=09width:100% !important;
+=09=09=09max-width:100% !important;
+=09=09}}
+=09=09@media only screen and (max-width: 480px){
+=09=09.paddingcomp{
+=09=09=09padding-left:15px !important;
+=09=09=09padding-right:15px !important;
+=09=09}
+=09=09.bannerimgpad{
+=09=09=09padding:0px !important;
+=09=09}
+=09}
+=09=09@media screen and (max-width: 480px)
+        {
+                .tmplheader,.tmplfooter{width:100% !important;max-width:400=
+px !important;margin:0px auto;text-align:center;}
+        }
+=09=09a[x-apple-data-detectors] {
+=09=09    color: inherit !important;
+=09=09    text-decoration: none !important;
+=09=09    font-size: inherit !important;
+=09=09    font-family: inherit !important;
+=09=09    font-weight: inherit !important;
+=09=09    line-height: inherit !important;
+=09=09}
+</style>
+</head>
+<body><div class=3D"zppage-container"><style>
+=09@media only screen and (max-width: 480px){
+=09=09table[class=3DcontentOuter] {background:rgba(0,0,0,0) !important;}
+=09=09table[class=3DcontentInner] {width:100% !important;padding:0px;margin=
+:0px;}
+=09=09img[class=3DzpImage]{width:260px !important;max-width: 360px !importa=
+nt;text-align:center;margin:0px;padding:0px;}=20
+=09=09body, table, td, p, a, li,div,span, blockquote{-webkit-text-size-adju=
+st:none !important;}
+=09=09blockquote{outline:none !important;border: none !important;}
+        body{margin: 0px;}
+        pre{white-space: pre-wrap;}
+=09=09table[class=3DzpImageCaption]{text-align:left;}
+=09=09table[class=3Dcols]{width:100% !important;max-width:100% !important;t=
+ext-align:left;}
+=09=09table[class=3Dzpcolumns] {text-align:left;margin:0px;}=20
+=09=09table[class=3Dzpcolumn] {text-align:left;margin:0px;}=20
+=09=09table[class=3DzpAlignPos]{width:100%;text-align:left;margin:0px;}=20
+=09=09.table table img{width: auto !important;max-width: 100% !important;mi=
+n-width: auto;max-height: none !important;}
+=09=09td[class=3Dtxtsize]{font-size:18px !important;}
+=09=09td[class=3Dpaddingcomp]{padding-left:15px !important;padding-right: 1=
+5px !important;}
+=09=09td[class=3Dbannerimgpad]{padding:0px !important;}
+=09=09span[class=3Dtxtsize]{font-size:18px !important;}
+=09=09img.imgsize_B{width: 100% !important;max-width:100% !important;margin=
+: 0px !important;padding:0px !important;}
+=09=09img.imgsize_F{width: 100% !important;max-width:100% !important;margin=
+: 0px !important;padding:0px !important;}
+=09=09img.imgsize_S{width: 100% !important;max-width:105px !important;heigh=
+t:auto; margin:0px auto !important;padding:0px !important;}
+=09=09img.imgsize_M{width: 100% !important;max-width:227.869px !important;h=
+eight:auto; margin:0px auto !important;padding:0px !important;}
+=09=09img.imgsize_O{max-width: 100% !important;width: auto !important;heigh=
+t: auto !important;}
+=09=09.buttonInnerLink{
+    =09=09width: 100% !important;
+            max-width: 250px !important;
+   =09=09=09display: inline-block !important;
+            word-wrap:break-word !important;
+            text-align: center !important;
+=09=09}
+        .buttonOuterLink{
+    =09=09width: 100% !important;
+            max-width: 290px !important;
+   =09=09=09display: inline-block !important;
+            word-wrap:break-word !important;
+            text-align: center !important;
+=09=09}
+=09=09h1{
+=09=09=09font-size:28px !important;
+=09=09=09line-height:100% !important;
+=09=09}
+=09=09h2{
+=09=09=09font-size:24px !important;
+=09=09=09line-height:100% !important;
+=09=09}
+=09=09h3{
+=09=09=09font-size:20px !important;
+=09=09=09line-height:100% !important;
+=09=09}
+=09=09h4{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:100% !important;
+=09=09}
+=09=09=09#contentOuter .contentmaintd{
+    =09=09=09vertical-align: top;
+    =09=09=09padding: 0px !important;
+=09=09=09}
+=09=09}=09=09
+=09=09@media only screen and (max-width: 480px){
+=09=09.zpImage{
+=09=09=09height:auto !important;
+=09=09=09width:100% !important;
+=09=09}}
+=09=09@media only screen and (max-width: 480px){
+=09=09.contentInner,.cols,.zpAlignPos{
+=09=09=09width:100% !important;
+=09=09=09max-width:100% !important;
+=09=09}}
+=09=09@media only screen and (max-width: 480px){
+=09=09.paddingcomp{
+=09=09=09padding-left:15px !important;
+=09=09=09padding-right:15px !important;
+=09=09}
+=09=09.bannerimgpad{
+=09=09=09padding:0px !important;
+=09=09}
+=09}
+=09=09@media screen and (max-width: 480px)
+        {
+                .tmplheader,.tmplfooter{width:100% !important;max-width:400=
+px !important;margin:0px auto;text-align:center;}
+        }
+=09=09a[x-apple-data-detectors] {
+=09=09    color: inherit !important;
+=09=09    text-decoration: none !important;
+=09=09    font-size: inherit !important;
+=09=09    font-family: inherit !important;
+=09=09    font-weight: inherit !important;
+=09=09    line-height: inherit !important;
+=09=09}
+</style>
+
+<table class=3D"contentOuter" id=3D"contentOuter" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"100%" style=3D"width:100%;border:0px;font-family:Arial,=
+ Helvetica, sans-serif;color:rgb(17, 17, 17);font-size:13px;border-collapse=
+:collapse;letter-spacing:normal;text-rendering: optimizeLegibility;backgrou=
+nd-color:rgb(240, 240, 240);">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"contentmaintd" style=3D"border:0px;padding-to=
+p:10px;padding-bottom:20px;">
+<table class=3D"contentInner" id=3D"contentInner" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"600px" style=3D"width:600px;border:0px;border-collapse:=
+collapse;table-layout:fixed;background-color:rgb(255, 255, 255);">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"border:0px;word-wrap:break-word;word-break:brea=
+k-word;">
+<div class=3D"zpcontent-wrapper" id=3D"page-container">
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"min-width:100%;max-widt=
+h:100%;table-layout:fixed;border:0px;border-collapse:collapse;" width=3D"10=
+0%">
+<tbody>
+<tr>
+<td class=3D"txtsize" valign=3D"top" style=3D"border:0px;">
+<div class=3D"zpelement-wrapper text">
+<table title=3D"" cellspacing=3D"0" cellpadding=3D"0" style=3D"text-renderi=
+ng: optimizeLegibility;font-size:13px;letter-spacing:normal;font-family:Ari=
+al, Helvetica, sans-serif;min-width:100%;max-width:100%;table-layout:fixed;=
+border:0px;border-collapse:collapse;background-color:rgba(0, 0, 0, 0);" wid=
+th=3D"100%">
+<tbody>
+<tr>
+<td style=3D"word-wrap:break-word;word-break:break-word;border:0px;padding:=
+6px 16px;border-top:0px none rgb(17, 17, 17);border-bottom:0px none rgb(17,=
+ 17, 17) ;font-family:Arial, Helvetica, sans-serif">
+<p style=3D"padding: 0px; margin: 0px">Hello,</p>
+<p style=3D"padding: 0px; margin: 0px"><br></p>
+<p style=3D"padding: 0px; margin: 0px">As a fellow business owner, we under=
+stand that the journey can be
+challenging, and it's normal to feel like giving up on some days. However, =
+we
+believe that with the right strategy and support, any business can grow and
+thrive.</p>
+<p style=3D"padding: 0px; margin: 0px"><br></p>
+<p style=3D"padding: 0px; margin: 0px">Have you considered exploring new op=
+portunities for expansion? One option
+could be acquiring a business in a different city, county, or state, which
+could open up new markets and revenue streams. Another possibility is mergi=
+ng
+your business with another, combining resources and expertise to achieve ev=
+en
+greater success.</p>
+<p style=3D"padding: 0px; margin: 0px"><br></p>
+<p style=3D"padding: 0px; margin: 0px">If you are interested in learning mo=
+re about how we can help, please don't
+hesitate to reach out. We would be honored to speak with you and explore wa=
+ys
+to support your business.</p>
+<p style=3D"padding: 0px; margin: 0px"><br></p>
+<p style=3D"padding: 0px; margin: 0px">Thank you for your time, and we look=
+ forward to hearing back from you soon.</p>
+<p style=3D"padding: 0px; margin: 0px"><br></p>
+<p style=3D"padding: 0px; margin: 0px">
+</p>
+<p style=3D"padding: 0px; margin: 0px"><br></p>
+<div style=3D"padding: 0px; margin: 0px"><span style=3D"padding: 0px; margi=
+n: 0px"><font face=3D"Georgia, Times New Roman, Times, serif" style=3D"padd=
+ing: 0px; margin: 0px"><span style=3D"padding: 0px; margin: 0px">Robert Cla=
+rk</span><br style=3D"padding: 0px; margin: 0px"></font></span></div><div s=
+tyle=3D"padding: 0px; margin: 0px"><font face=3D"Georgia, Times New Roman, =
+Times, serif" style=3D"padding: 0px; margin: 0px"><span style=3D"padding: 0=
+px; margin: 0px">National Marketing Solutions</span><span style=3D"padding:=
+ 0px; margin: 0px"><br style=3D"padding: 0px; margin: 0px"></span></font></=
+div><div style=3D"padding: 0px; margin: 0px"><font face=3D"Georgia, Times N=
+ew Roman, Times, serif" style=3D"padding: 0px; margin: 0px"><span style=3D"=
+padding: 0px; margin: 0px">Office 702-203-5091</span><span style=3D"padding=
+: 0px; margin: 0px"><br style=3D"padding: 0px; margin: 0px"></span></font><=
+/div><div style=3D"padding: 0px; margin: 0px"><font face=3D"Georgia, Times =
+New Roman, Times, serif" style=3D"padding: 0px; margin: 0px"><span style=3D=
+"padding: 0px; margin: 0px"><a target=3D"_blank" rel=3D"noopener noreferrer=
+" href=3D"mailto:Clarke@nationalmarketingsolutions.com" style=3D"padding: 0=
+px; margin: 0px; text-decoration: none">Clark@nationalmarketingsolutions.co=
+m</a></span><br style=3D"padding: 0px; margin: 0px"></font></div><div style=
+=3D"padding: 0px; margin: 0px"><span style=3D"padding: 0px; margin: 0px"><f=
+ont face=3D"Georgia, Times New Roman, Times, serif" style=3D"padding: 0px; =
+margin: 0px">www.Nationalmarketingsolutions.com=E2=80=8B</font></span></div=
+>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div><img src=3D"https://sender9.zohoinsights.com/ocimage/2d6f.327230a/mk6=
+79336c1-b5e6-11ed-b346-525400d4bb1c_hk698caff61469b7a9fd528a008863af98041c6=
+13310aadadd9612dfb92fd3825d.gif" height=3D"1" width=3D"1" alt=3D""></body><=
+/html>
+------=_Part_6310983_1772615235.1677423672413--

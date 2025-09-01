@@ -1,0 +1,81 @@
+Return-Path: <>
+Delivered-To: cbt@gator4148.hostgator.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id YPj9DVvD42NgWgYA7/vpDg
+	(envelope-from <>)
+	for <cbt@gator4148.hostgator.com>; Wed, 08 Feb 2023 09:44:27 -0600
+Return-path: <>
+Envelope-to: cbt@gator4148.hostgator.com
+Delivery-date: Wed, 08 Feb 2023 09:44:27 -0600
+Received: from mailnull by gator4148.hostgator.com with local (Exim 4.95)
+	id 1pPmcV-001r2b-5a
+	for cbt@gator4148.hostgator.com;
+	Wed, 08 Feb 2023 09:44:27 -0600
+X-Failed-Recipients: raj_singh635@yahoo.co.in
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@gator4148.hostgator.com>
+To: cbt@gator4148.hostgator.com
+References: <9e8fafe87bf0ff310989e2152f4254d8@caldonbiotech.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1675871067-eximdsn-250766389
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1pPmcV-001r2b-5a@gator4148.hostgator.com>
+Date: Wed, 08 Feb 2023 09:44:27 -0600
+
+--1675871067-eximdsn-250766389
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  raj_singh635@yahoo.co.in
+    host eig-west.smtp.a.cloudfilter.net [34.223.136.48]
+    SMTP error from remote mail server after end of data:
+    550 PmcQps0yUEHSdPmcRpYUhJ - <cbt@gator4148.hostgator.com> message rejected AUP#SNDR
+
+--1675871067-eximdsn-250766389
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; gator4148.hostgator.com
+
+Action: failed
+Final-Recipient: rfc822;raj_singh635@yahoo.co.in
+Status: 5.0.0
+Remote-MTA: dns; eig-west.smtp.a.cloudfilter.net
+Diagnostic-Code: smtp; 550 PmcQps0yUEHSdPmcRpYUhJ - <cbt@gator4148.hostgator.com> message rejected AUP#SNDR
+
+--1675871067-eximdsn-250766389
+Content-type: message/rfc822
+
+Return-path: <cbt@gator4148.hostgator.com>
+Received: from cbt by gator4148.hostgator.com with local (Exim 4.95)
+	(envelope-from <cbt@gator4148.hostgator.com>)
+	id 1pPmcQ-001qxB-JV
+	for raj_singh635@yahoo.co.in;
+	Wed, 08 Feb 2023 09:44:22 -0600
+To: raj_singh635@yahoo.co.in
+Subject: Cladon Biotech ""
+X-PHP-Script: caldonbiotech.com/index.php for 104.245.145.36, 104.245.145.36
+X-PHP-Originating-Script: 990:class-phpmailer.php
+Date: Wed, 8 Feb 2023 15:44:22 +0000
+From: Cladon Biotech <wordpress@andy1.ecommercewebstore.us>
+Reply-To: JimmieKornprobst@gmail.com
+Message-ID: <9e8fafe87bf0ff310989e2152f4254d8@caldonbiotech.com>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+From: Tobi Sanner <JimmieKornprobst@gmail.com>
+Subject: 
+
+Message Body:
+Maximize your new website's potential by submitting it to our directory.  http://bit.ly/3JEP48y
+
+-- 
+This e-mail was sent from a contact form on Cladon Biotech (http://andy1.ecommercewebstore.us)
+
+
+--1675871067-eximdsn-250766389--

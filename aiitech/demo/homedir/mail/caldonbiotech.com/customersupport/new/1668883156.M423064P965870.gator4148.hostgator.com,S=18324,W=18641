@@ -1,0 +1,317 @@
+Return-Path: <bounce@nds.fedex.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id yLZUGNQieWPuvA4A7/vpDg
+	(envelope-from <bounce@nds.fedex.com>); Sat, 19 Nov 2022 12:39:16 -0600
+Return-path: <bounce@nds.fedex.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Sat, 19 Nov 2022 12:39:16 -0600
+Received: from pvma00765.prod.fedex.com ([204.135.8.97]:38584 helo=mx5-out.infosec.fedex.com)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <bounce@nds.fedex.com>)
+	id 1owSkF-0044QF-WD
+	for customersupport@caldonbiotech.com;
+	Sat, 19 Nov 2022 12:39:16 -0600
+Received: from pps.filterd (mx5-out.infosec.fedex.com [127.0.0.1])
+	by mx5-out.infosec.fedex.com (8.16.1.2/8.16.1.2) with SMTP id 2AJIXjni025332
+	for <customersupport@caldonbiotech.com>; Sat, 19 Nov 2022 12:39:04 -0600
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fedex.com; h=date : from : reply-to
+ : to : message-id : subject : mime-version : content-type; s=smtp-out;
+ bh=/RjL5OON5SavHwB/FGdT0s74YFycp8qjuDBZUbICibU=;
+ b=uAz1syhzXc13Sj6fhLoa1wHheqMpcuejR4yZMM+HMwrRq50gZTUuom2g/WhcKTHEXJjT
+ TLQgtzoGCz/0+sip1QqjbOHUi6to4gTAUPQywTIajqJzG/ZvjRT7km1bTaXUEA4APbkd
+ PLnzDKt3ASIfSqs2CGjYps3DS001FYP5UNPA/0PWtpNqe7hh+dJTVjliI8PKfX/Llbbp
+ TTE5quBDXkj9AlOxMfRpsERuzyqCEm2Qk8KaT9eVBpS9BFctA5As4VIZ57fzh6gmV8Zx
+ IiOpQkyCAhs6881Bdrwweiu9gTpHO+bhyk8TQhcmiJJ8wtwih4rvgVNQgm/ri5Qq/zNz hw== 
+Received: from pvma00012.prod.fedex.com (pvma00012.prod.fedex.com [204.135.242.203])
+	by mx5-out.infosec.fedex.com with ESMTP id 3kxv8htmxk-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <customersupport@caldonbiotech.com>; Sat, 19 Nov 2022 12:39:04 -0600
+Received: from pje33444.sac.fedex.com (pje33444.sac.fedex.com [10.242.202.185])
+	by pvma00012.prod.fedex.com (Sentrion-MTA-4.5.7/Sentrion-MTA-4.5.7) with ESMTPS id 2AJIciKL030236
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NO)
+	for <customersupport@caldonbiotech.com>; Sat, 19 Nov 2022 18:39:04 GMT
+Received: from pje33444.sac.fedex.com (localhost [127.0.0.1])
+	by pje33444.sac.fedex.com (8.14.7/8.14.7) with ESMTP id 2AJIcixU056269
+	for <customersupport@caldonbiotech.com>; Sat, 19 Nov 2022 18:39:03 GMT
+Date: Sat, 19 Nov 2022 12:39:03 -0600 (CST)
+From: BillingOnline <BillingOnline@fedex.com>
+Reply-To: donotreply@fedex.com
+To: customersupport@caldonbiotech.com
+Message-ID: <646499606.49458201668883143940.JavaMail.nds@pje33444.sac.fedex.com>
+Subject: FedEx Billing Online Payment Reference 68049536
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_4945820_370367021.1668883143940"
+X-FX-NDS-ID: PzLXLg0oD0Am/Oj4dDdrdp+BocI/qtW/wSRnB5n2OyzQemQ1QcXj4A==
+X-FX-NDS-MSG-POS: t3PMvj8ykslkGim8WXulpOv5sWAYVehoKxhq//IGqrsGSAcf/tayIaZtRJKBSaaQ0HpkNUHF4+A=
+X-FX-NDS-MSG-ID: 7cO8XZfn1Waf6yJNnk0nJk/khlJmG+9wXS0YA6QU6Ohh0/M7J8DGsg==
+X-FX-NDS-ORIGIN: XWeebQJlH3Q=
+X-FX-NDS-ORIGIN-GENESIS: 7/KmiGfNUcY=
+X-FX-NDS-RG-LG-ENV: UzL99LvXCAM=
+X-FX-NDS-LEVEL-ENV: R+mLbZi/7ko=
+X-FX-NDS-CLIENT-ID-ENCRYPT: ORwr2sv/Xg0Z7KV5O2ope7jD406azQv/xY8prUAOPpUMjDSZie6WKw==
+X-Proofpoint-ORIG-GUID: TyRwQ9bfdyGn9PuMO1jW9s5uTqW5FpzE
+X-Proofpoint-GUID: TyRwQ9bfdyGn9PuMO1jW9s5uTqW5FpzE
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:6.0.545,18.0.895
+ definitions=2022-11-18_08:2022-11-17,2022-11-18 signatures=0
+X-Proofpoint-Spam-Reason: safe
+X-Spam-Status: No, score=-13.5
+X-Spam-Score: -134
+X-Spam-Bar: -------------
+X-Spam-Flag: NO
+
+------=_Part_4945820_370367021.1668883143940
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<html xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:ens="http://xmlns.fedex.com/ens/notification">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<style type="text/css">
+					.sagimage {
+						width: 100%;
+						height: auto;
+					}
+					@media only screen and (max-device-width: 480px), screen and (max-width: 600px) {
+						body[layout] .hideonmobile {
+							display: none !important;
+						}
+						body[layout] .showonmobile {
+							display: block !important;
+							overflow: visible !important;
+							width: auto !important;
+							max-height: inherit !important;
+						}
+						body[layout] .showonmobilelogo {
+							display: block !important;
+							overflow: visible !important;
+							width: 165px !important;
+							height: 68px !important;
+							max-height: 68px !important;
+						}
+						body[layout] .showonmobilespacer {
+							display: block !important;
+							overflow: visible !important;
+							width: 1px !important;
+							height: 10px !important;
+							max-height: 10px !important;
+						}
+						body[layout] table[class=mobile] {
+							width: 100% !important;
+						}
+						body[layout] .navcol,
+						body[layout] .desktopcol {
+							display: block !important;
+							width: 100% !important;
+						}
+						body[layout] .navcol {
+							line-height: 40px !important;
+							min-height: 40px !important;
+							text-align: left !important;
+						}
+						body[layout] .navcenter {
+							border-top: 1px solid #DDD;
+							border-bottom: 1px solid #DDD;
+						}
+						body[layout] .mobilenoborder {
+							border: none !important;
+						}
+						body[layout] .mobilepadded {
+							width: 90% !important;
+							margin: 0 auto;
+						}
+						body[layout] td.intro {
+							font-size: 26px !important;
+						}
+						body[layout] td.subintro {
+							font-size: 18px !important;
+						}
+						body[layout] .mobileimg {
+							width: 60% !important;
+							height: auto !important;
+						}
+						body[layout] .sagdualimage,
+						body[layout] .mobilebanner,
+						body[layout] .mobilefullbanner {
+							width: 100% !important;
+							height: auto !important;
+						}
+						body[layout] .logo-left {
+							width:165px !important;
+							max-width:165px !important;
+							height:80px !important;
+							display: block !important;
+							max-height: inherit !important;
+						}
+						body[layout] .mobile-rewards {
+							width:98px !important;
+							max-width:98px !important;
+						}
+						body[layout] .lockup-spacer {
+							width: auto !important;
+						}
+					}
+					@media only screen and (max-device-width: 480px), screen and (max-width: 480px) {
+						body[layout] .sagimage {
+							width: 100% !important;
+							height: auto !important;
+						}
+						body[layout] .sagcol {
+							display: block !important;
+							width: 100% !important;
+						}
+					}
+				</style>
+</head>
+<body style="table-layout:fixed;width:100% !important;background:#FFFFFF;-webkit-text-size-adjust:none;margin:0;font-family:Arial,Helvetica,sans-serif;" marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" bgcolor="#FFFFFF" layout="responsive">
+<table bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td align="center" width="100%" bgcolor="#FFFFFF">
+<table border="0" cellspacing="0" cellpadding="0" class="mobile" width="600">
+<tr>
+<td style="line-height:0px; font-size:0px;" class="hideonmobile" width="145" dir="rtl" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="1" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td><td class="mobile" width="428" dir="rtl" valign="top">
+<table border="0" cellspacing="0" cellpadding="0" class="mobilepadded hideonmobile" width="100%">
+<tr>
+<td style="line-height:0px; font-size:0px;" height="5" dir="rtl" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="5" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+<tr>
+<td style="font-size: 14px; font-family: Arial, Helvetica, sans-serif; color: #4D148C; text-decoration: none;" dir="rtl" valign="top">FedEx payment scheduled. <a style="color: #4D148C;" href="https://www.fedex.com/us">Log in to review</a>.</td>
+</tr>
+</table>
+</td><td style="line-height:0px; font-size:0px;" class="hideonmobile" width="27" dir="rtl" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="1" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" class="mobile" width="600">
+<tr>
+<td class="hideonmobile" width="145" align="left" valign="top">
+<table border="0" cellspacing="0" cellpadding="0" height="10" width="100%">
+<tr>
+<td style="line-height:0px; font-size:0px;" height="10" align="left" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="10" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+</table>
+<table style="text-align:center;" border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td align="center" valign="top"><a style="text-align:center;" target="_blank" href="http://www.fedex.com/us" description="Fedex Logo"><img style="display:inline-block; color: #4D148C;" alt="FedEx" height="157" width="44" border="0" src="http://www.fedex.com/ENS/images/fedex_collective_logo_desktop.png"></a></td>
+</tr>
+</table>
+</td><td class="mobile" width="428" align="left" valign="top">
+<div style="display:none;width:0px;max-height:0px;overflow:hidden;" class="showonmobile">
+<table border="0" cellspacing="0" cellpadding="0" style="display:none;width:0px;max-height:0px;overflow:hidden;" class="mobilepadded showonmobile" width="100%">
+<tr>
+<td align="left" valign="top"><a class="showonmobile" style="display:none;width:0px;max-height:0px;overflow:hidden;" target="_blank" href="http://www.fedex.com/us" description="Fedex Logo"><img alt="FedEx" border="0" class="showonmobilelogo" style="display:none;width:0px;max-height:0px;overflow:hidden;" height="1" width="1" src="http://www.fedex.com/ENS/images/fedex_collective_logo_mobile.png"></a></td>
+</tr>
+<tr>
+<td style="line-height:0px; font-size:0px;" align="left" valign="top"><img class="showonmobilespacer" style="line-height:0px; font-size:0px; display:none;width:0px;max-height:0px;overflow:hidden;" height="1" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+<tr>
+<td style="line-height:0px; font-size:0px;" align="left" valign="top"><img class="showonmobilespacer" style="line-height:0px; font-size:0px; display:none;width:0px;max-height:0px;overflow:hidden;" height="1" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+</table>
+</div>
+<table border="0" cellspacing="0" cellpadding="0" height="80" class="hideonmobile" width="100%">
+<tr>
+<td style="line-height:0px; font-size:0px;" height="80" align="left" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="80" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" class="mobilepadded" width="100%">
+<tr>
+<td style="font-size: 34px; font-family: Arial, Helvetica, sans-serif; color: #4D148C;" class="intro" align="left" valign="top">Payment Scheduled</td>
+</tr>
+</table>
+</td><td style="line-height:0px; font-size:0px;" class="hideonmobile" width="27" align="left" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="1" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" class="mobile" width="600">
+<tr>
+<td style="line-height:0px; font-size:0px;" class="hideonmobile" width="145" align="left" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="1" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td><td class="mobile" width="428" align="left" valign="top">
+<table class="mobilepadded" border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td style="line-height:0px; font-size:0px;" height="30" align="left" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="30" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+<tr>
+<td style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: #333333; line-height: 145%;" align="left" valign="top">Dear Alamelu Vairavan,</td>
+</tr>
+<tr>
+<td style="line-height:0px; font-size:0px;" height="30" align="left" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="30" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+<tr>
+<td style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: #333333; line-height: 145%;" align="left" valign="top">An automatic payment has been scheduled for your FedEx account number ending in 7852 using payment profile Autopay.Log in to FedEx<sup>®</sup> Billing Online to review the invoices included in this payment.</td>
+</tr>
+<tr>
+<td style="line-height:0px; font-size:0px;" height="30" align="left" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="30" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+<tr>
+<td style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: #333333; line-height: 145%;" align="left" valign="top">
+<table align="left" cellspacing="0" cellpadding="10" id="data-table" width="100%">
+<tr style="font-weight:bold; color: #666666; text-align:center;">
+<th style="font-family: Arial, sans-serif; font-size:14px; font-weight:bold; color:#333333; vertical-align:top; text-align: center;" width="50%">Invoice Number</th><th style="font-family: Arial, sans-serif; font-size:14px; font-weight:bold; color:#333333; vertical-align:top; text-align: center;" width="50%">Amount</th>
+</tr>
+<tr bgcolor="#F5F5F5">
+<td style="padding: 5px 10px 5px 10px; font-size: 14px; font-family: Arial, Helvetica, sans-serif; color: #000000;" height="10" align="center"><a style="color: #4D148C; " href="https://www.fedex.com/fedexbillingonline?locale=en_US&amp;deeplinkFlag=true&amp;deeplinkScreenName=paymentdetail&amp;paymentReferenceNumber=68049536">2-104-49828</a></td><td style="padding: 5px 10px 5px 10px; font-size: 14px; font-family: Arial, Helvetica, sans-serif; color: #000000;" height="10" align="center">121.12 USD</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="line-height:0px; font-size:0px;" height="30" align="left" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="30" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+<tr>
+<td align="left" valign="top">
+<table border="0" cellspacing="0" cellpadding="0" width="150">
+<tr>
+<td style="line-height:0px; font-size:0px;" height="15" align="left" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="15" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+<tr>
+<td style="-webkit-border-radius: 4px; border-radius: 4px; text-align:center;" height="40" width="150" bgcolor="#4D148C" align="left" valign="middle"><a style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; color: #FFF; text-decoration: none; width: 100%; height: 40px; display: block; line-height: 40px; text-align:center;" target="_blank" href="https://www.fedex.com/us" description="CTA:"><strong style="color:#FFF; font-weight:normal;">Log in</strong></a></td>
+</tr>
+<tr>
+<td style="line-height:0px; font-size:0px;" height="15" align="left" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="15" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="line-height:0px; font-size:0px;" height="30" align="left" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="30" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+<tr>
+<td style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: #333333; line-height: 145%;" align="left" valign="top">Thank you for your business,</td>
+</tr>
+<tr>
+<td style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: #333333; line-height: 145%;" align="left" valign="top">FedEx</td>
+</tr>
+</table>
+</td><td style="line-height:0px; font-size:0px;" class="hideonmobile" width="27" align="left" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="1" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" class="mobile" width="600">
+<tr>
+<td style="line-height:0px; font-size:0px;" class="hideonmobile" width="145" align="left" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="1" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td><td class="mobile" width="428" align="left" valign="top">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td style="line-height:0px; font-size:0px;" height="30" align="left" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="30" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+</table>
+<table style="border-top:1px solid #DDD;" border="0" cellspacing="0" cellpadding="0" class="mobilepadded" width="100%">
+<tr>
+<td style="line-height:0px; font-size:0px;" height="10" align="left" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="10" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+<tr>
+<td style="font-size: 11px; font-family: Arial, Helvetica, sans-serif; color: #999999; line-height: 135%;" align="left" valign="top">&copy;2022 FedEx. The content of this message is protected by copyright and trademark laws under U.S. and international law.<br>
+<br>Review our <a style="color: #4D148C;" href="http://www.fedex.com/us/security/index.html">privacy policy</a>. All rights reserved.<br>
+<br>This message has been sent by an auto responder system. Please do not reply to this message.</td>
+</tr>
+</table>
+</td><td style="line-height:0px; font-size:0px;" class="hideonmobile" width="27" align="left" valign="top"><img style="line-height:0px; font-size:0px; display:block;" height="1" width="1" border="0" src="http://www.fedex.com/ENS/images/spacer.gif"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+
+------=_Part_4945820_370367021.1668883143940--
+

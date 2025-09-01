@@ -1,0 +1,224 @@
+Return-Path: <lory.chen@pan-asia-bio.com.tw>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id QDutEzNniGNxLwgA7/vpDg
+	(envelope-from <lory.chen@pan-asia-bio.com.tw>)
+	for <rvairavan@caldonbiotech.com>; Thu, 01 Dec 2022 02:34:59 -0600
+Return-path: <lory.chen@pan-asia-bio.com.tw>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Thu, 01 Dec 2022 02:34:59 -0600
+Received: from smtp6.hibox.hinet.net ([210.71.187.232]:10442)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <lory.chen@pan-asia-bio.com.tw>)
+	id 1p0f21-002Jx5-Vj
+	for rvairavan@caldonbiotech.com;
+	Thu, 01 Dec 2022 02:34:59 -0600
+IronPort-SDR: 4eFQduYD8a7RNMQF+As6wSlqkl/rDRw0ism0rv46N7hqlUAxkl8mIKJ2RLAMGyC/SiPrn7sTWM
+ e8WF2EqN2XSFOtvA/vIUgVOprwv24MfTrymTXUHwm2istYSq2shY8MQZylui8bhxS95gcQaIlX
+ YHSOgOfc+GuNhw3CRGCU1pb7kzP6BRW8OMBAsDwbuMKUPyCwmXje0mDrd4QWqtqQoY1fy2d7w2
+ 7BJkniXfcIaNLuaXZ6S006ryVE+vV7qfRS/MkviZWT1RUL/GNlSa1+7G/RifFMvjMTId8r1woD
+ ofE=
+X-MID: 165821539
+X-EnvelopeFrom: lory.chen@pan-asia-bio.com.tw
+IronPort-Data: A9a23:Az+yRaN0DSmfnEPvrR1ilcFynXyQoLVcMsEvi/4bfWQNrUp31GAFx
+ mAWWG2ObKuLamryfIh1Oo+/9k5QusSGz95hT3M5pCpnJ55ogZScWYjBdi8cHM8zwunrFh8PA
+ /3z5rAsFehsJpPmjk7F3oPJ8D8ti8lkepKmULSeY3opHFc9IMscoUsLd9AR09YAbeeRW2thi
+ fuqyyHuEAfNNwxcawr42IrbwP9bh8kejRtD1rAIiVGni3eF/5UdJMp3yahctBIUSKEMdgKxb
+ 76rIL1UYgrkExkR5tONyt4Xc2UKSOSXJg2SknBVWvD7xBhDrCsilKY6MvcAL0Fal11lnfgol
+ 48L7Mz2F19vZ/SkdOc1CnG0Fwl6OrdXvrTHLH6XqcWVikTdcnKpyfRpSkoxOMsE5Y6bBEkXq
+ 6FIcmlQNUHra+WehejTpvNXrt49JcjxNZ0WvFlrxDXVCvAsQJffTq7Ko9Rf2V8NampmdRrFT
+ 5NGM3w2PFKeO1sWYz8q5FsFtL/ArhHCn/dw8jp5eYJfD7Dv8TFM
+IronPort-HdrOrdr: A9a23:2cO5W69J+nvrVSOWOnduk+DoI+orL9Y04lQ7vn2ZOiYlFvBw9v
+ re/8jzsCWftN9/Yh8dcLy7VZVoIkm9yXcW2+gs1N6ZNWGMhILCFu5fBP7Zsljd8kPFmtK0TM
+ 1bAs5DIey1J3xToYLB6g+iH78bsb66GdiT9IXj80s=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A2DhBABCZIhj/ws8EqxaHgEBCxIMQAm?=
+ =?us-ascii?q?BOwuBKoIFAoFYln+HRokni0iBag8BAQFEDwQBAYUFhQ4mNwYOAQIEAQEBAQM?=
+ =?us-ascii?q?CDAEBBgEBAQEBAQYEgR2FLzkNhlYBAwgCHgUxGw0FFlI+AQEEHgWCboIWgQy?=
+ =?us-ascii?q?wHIEDMRoCZaE+gUABgWWHH4gSN4FVRIEVNoI9B4FzAYMEBYEChXEEgU2HOYM?=
+ =?us-ascii?q?bijQHNgMJAwcFLB0FCzADCxgNFAIyBQUQAgEwNRxMKxwbB4EMKigVAwQEAwI?=
+ =?us-ascii?q?GEwMiAg0oMRQEKRMNKydvCQIDImYDAwQoLAMJQAcmJA4uB1Y3BQMCDyA4BgM?=
+ =?us-ascii?q?JAwIiU3IvEhQFAwsVJQgFSQQIOQUGUxICChEDEg8sRQ5IPjkWBidCAQYqDg4?=
+ =?us-ascii?q?TA11LHYEBBIIuLy6YHINZggOTIZAEYYtDkz80BwODaYFQAgqfMIN4jFaGTAO?=
+ =?us-ascii?q?RfYdkhFWLA6Iwd4ZJgQ9whCcJNxIZjkaLToJ4aDsCBwsBAQMJhkeDWAEB?=
+X-IronPort-AV: E=Sophos;i="5.96,207,1665417600"; 
+   d="scan'208,217";a="165821539"
+Received: from unknown (HELO hb2-smtpbki01.hibox.hinet.net) ([172.18.60.11])
+  by smtp2.hibox.hinet.net with ESMTP; 01 Dec 2022 16:34:41 +0800
+IronPort-SDR: V6CRqXzIlPYDdAtzuq54LdsONgajYsHgy4B5SVcQ3sDjII77UhQkKLpd6g4ACAXQQkhCHAWZ0J
+ Fczz/RgDyLVvNaLjEyv6CHPF21kVyUf4nqQxJ5tY8KHKjMqQCdD7U4YnFvsmK0Q1eE0sBqx0Vc
+ kVWgBRGXXFemKA2EDFULonVEZ4ckDtWGvcthqdhmoyfQTOHbFrp8BVvAO24Z30WfkXYGoAaLbq
+ MUWSezMwKrH77QEvLMf/JlTcflU6G739rfShSHkXMnynloefGeLzRQu05wyv9F4J6CXza+/EFY
+ 4JWrZo3eOts86jAqiGqwYHWu
+X-Remote-IP: 36.224.31.76
+X-Remote-Host: 36-224-31-76.dynamic-ip.hinet.net
+X-SBRS: -10.0
+X-MID: 458176823
+X-Auth-ID: lory.chen@pan-asia-bio.com.tw
+X-EnvelopeFrom: lory.chen@pan-asia-bio.com.tw
+X-Amp-Result: SKIPPED(no attachment in message)
+X-Amp-File-Uploaded: False
+Received: from 36-224-31-76.dynamic-ip.hinet.net (HELO DESKTOPQ5RT6D2) ([36.224.31.76])
+  by hb2-smtpclt01.hibox.hinet.net with ESMTP; 01 Dec 2022 16:34:40 +0800
+From: "Lory chen" <lory.chen@pan-asia-bio.com.tw>
+To: <dharrington@carolinachemistries.com>
+Cc: "Office" <office@pan-asia-bio.com.tw>,
+	<jack.yu@pan-asia-bio.com.tw>,
+	"Mr. Kao" <david.kao@pan-asia-bio.com.tw>,
+	<rvairavan@caldonbiotech.com>
+In-Reply-To: 
+Subject: [Order] Inquire about the expiration date of Sputolysin from Taiwan PanAsia
+Date: Thu, 1 Dec 2022 16:34:40 +0800
+Message-ID: <008401d9055f$c17395f0$445ac1d0$@pan-asia-bio.com.tw>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0085_01D905A2.CF9946F0"
+X-Mailer: Microsoft Outlook 16.0
+Thread-index: AdkFX5oaPJtRRIgOTz+cIsVIjuey6Q==
+Content-language: zh-tw
+X-Spam-Status: No, score=-0.5
+X-Spam-Score: -4
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_0085_01D905A2.CF9946F0
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Dear DeeDee,
+
+ 
+
+Hope my email find you well.
+
+  
+
+We would like to order the 10 or 12 kits of Sputolysin: product code:
+CSPU-010, but we hope to know the expiration date of stocks to evaluate this
+order quantity.
+
+Would you please help us to inquire about the expiration date of Sputolysin?
+
+If the expiration date is as long as over 1 year, we expect to order over 10
+kits.
+
+ 
+
+Thank you very much in advance and looking forward to reading your reply.
+
+Best Regards,
+
+Lory
+
+ 
+
+Lory Chen 
+
+Product Specialist 
+
+Clinical Division  
+
+PAN ASIA BIOMEDICAL TECHNOLOGY INC. 
+
+http://www.pan-asia-bio.com.tw 
+
+NO.7, ALLEY 3, LANE 217, SEC3, CHUNG HSIAO EAST ROAD,TAIPEI, 10653, TAIWAN 
+
+TEL: +886-2-2741-8169 
+
+
+------=_NextPart_000_0085_01D905A2.CF9946F0
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><meta =
+http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Dus-ascii"><meta name=3DGenerator content=3D"Microsoft Word 15 =
+(filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 2 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@PMingLiU";
+	panose-1:2 1 6 1 0 1 1 1 1 1;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+span.EmailStyle21
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DZH-TW =
+link=3D"#0563C1" vlink=3D"#954F72" =
+style=3D'word-wrap:break-word;text-justify-trim:punctuation'><div =
+class=3DWordSection1><p class=3DMsoNormal><span lang=3DEN-US>Dear =
+DeeDee,<o:p></o:p></span></p><p class=3DMsoNormal><span =
+lang=3DEN-US><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span =
+lang=3DEN-US>Hope my email find you well.<o:p></o:p></span></p><p =
+class=3DMsoNormal><span lang=3DEN-US>&nbsp; <o:p></o:p></span></p><p =
+class=3DMsoNormal><span lang=3DEN-US>We would like to order the 10 or 12 =
+kits of Sputolysin: product code: CSPU-010, but we hope to know the =
+expiration date of stocks to evaluate this order =
+quantity.<o:p></o:p></span></p><p class=3DMsoNormal><span =
+lang=3DEN-US>Would you please help us to inquire about the expiration =
+date of Sputolysin?<o:p></o:p></span></p><p class=3DMsoNormal><span =
+lang=3DEN-US>If the expiration date is as long as over 1 year, we expect =
+to order over 10 kits.<o:p></o:p></span></p><p class=3DMsoNormal><span =
+lang=3DEN-US><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span =
+lang=3DEN-US>Thank you very much in advance and looking forward to =
+reading your reply.<o:p></o:p></span></p><p class=3DMsoNormal><span =
+lang=3DEN-US>Best Regards,<o:p></o:p></span></p><p =
+class=3DMsoNormal><span lang=3DEN-US>Lory<o:p></o:p></span></p><p =
+class=3DMsoNormal><span lang=3DEN-US><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><span lang=3DEN-US style=3D'font-size:11.0pt'>Lory =
+Chen <o:p></o:p></span></p><p class=3DMsoNormal><span lang=3DEN-US =
+style=3D'font-size:11.0pt'>Product Specialist <o:p></o:p></span></p><p =
+class=3DMsoNormal><span lang=3DEN-US style=3D'font-size:11.0pt'>Clinical =
+Division&nbsp; <o:p></o:p></span></p><p class=3DMsoNormal><span =
+lang=3DEN-US style=3D'font-size:11.0pt'>PAN ASIA BIOMEDICAL TECHNOLOGY =
+INC. <o:p></o:p></span></p><p class=3DMsoNormal><span lang=3DEN-US =
+style=3D'font-size:11.0pt'><a =
+href=3D"http://www.pan-asia-bio.com.tw">http://www.pan-asia-bio.com.tw</a=
+> <o:p></o:p></span></p><p class=3DMsoNormal><span lang=3DEN-US =
+style=3D'font-size:11.0pt'>NO.7, ALLEY 3, LANE 217, SEC3, CHUNG HSIAO =
+EAST ROAD,TAIPEI, 10653, TAIWAN <o:p></o:p></span></p><p =
+class=3DMsoNormal><span lang=3DEN-US style=3D'font-size:11.0pt'>TEL: =
++886-2-2741-8169 <o:p></o:p></span></p></div></body></html>
+------=_NextPart_000_0085_01D905A2.CF9946F0--
+

@@ -1,0 +1,295 @@
+Return-Path: <Jessica.businesslists@outlook.com>
+Delivered-To: info@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id oKnZHfSfCGOweQEA7/vpDg
+	(envelope-from <Jessica.businesslists@outlook.com>)
+	for <info@caldonbiotech.com>; Fri, 26 Aug 2022 05:27:00 -0500
+Return-path: <Jessica.businesslists@outlook.com>
+Envelope-to: info@caldonbiotech.com
+Delivery-date: Fri, 26 Aug 2022 05:27:00 -0500
+Received: from mail-mw2nam10olkn2014.outbound.protection.outlook.com ([40.92.42.14]:52704 helo=NAM10-MW2-obe.outbound.protection.outlook.com)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <Jessica.businesslists@outlook.com>)
+	id 1oRWY9-001Fyk-Nq
+	for info@caldonbiotech.com;
+	Fri, 26 Aug 2022 05:27:00 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=nAxplQaKmXrQ6t3mZohVFzJErCDrZZ8RZViDrjnKGfhgAhNp+UoTW4PRqf1D+jw/KUnD41lvHwnUfPKJdZGrHRktE0f3EIgVN1VzeF819kX45DUB33s1PMTDQYbfoozi6XxPJtGWe6Yo4yc72xgfM02Dyh+cd6prIqOkSjUVfjnbY4QVLbX7oykz2+mBYDd+zaXUqjdijil7UYZZyVjif6uzjgAa8eyJKnfQ9xLA7jnvl9gxkodLuH0q7c5YExcm0AC8j0JpP5OXEQQFtoHP26Kd5PDtCjTR13UuClDaAFlm7rwYJsaXfN6BpunixoxpzpOryriJ0oG5+bFjqj9ETQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=CvqPZoR74mmsVAgMJRjdmvIbDFWm+QBgzni2Lxstzfg=;
+ b=m4f3N5C/RoSPRLSYreCYzxRAdYzsjBA/YKbGlu7x1YVPFk9MQHlyNUG9r165Xw+i1FTrldK0/kKGwv/wggv0S6A8anZXbWhO1RRZfq/Lla/jprYJPOj6aITlGkZSNVJKqMGBZ403yz1Y2O2k7vRXq6QF1lySvnHwfCo5wFkKbTI7de1azVVe4B3NL79L3f7wCdm7ZbpYwmOLVEaV2oUchH//vOVrpPsLNkFA06n6b0KmosXp2NLfZtVu2tsUaBSgkKLQO7td9JaAAkgBlC5VQfbthQz2qwugLLs6HsFuk3IeejYhJkvd70a4cuZnIqI6oxZ4dsxyddMtq+CqMAxtxw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=outlook.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=CvqPZoR74mmsVAgMJRjdmvIbDFWm+QBgzni2Lxstzfg=;
+ b=PzV25GAy8rQwHdVHo6eTFQMNeKSZSPst28Ladd/xJpnLO0H1swziSdoYTfn2Li5YYhsDbbUkNKN4VN+9gp7wt6YLDq0KMi/deDM1+IC3mUxbDpfidbgNkTpgxALriLmaFINKpO2xyVEuWI/PL0/8nJb3yTQHhiLnWVRGDPyZ24VCcAvsHds2wG+fhtOUi9yxFzES49w52E5k0m4VikamYQ3f64hZQm55Ol2tf/5fzkJEiwy0q0QLBwnyAN/kra6UH71EuH9DmPm+A41rmvPVW2UF6pCb+AH36/l9+l7UuBq8FoxkvORFq5zXnB8yO0kBVnM0XpTa9/9Zn8r1V0dF1Q==
+Received: from MN2PR14MB2671.namprd14.prod.outlook.com (2603:10b6:208:cf::23)
+ by BL0PR14MB3713.namprd14.prod.outlook.com (2603:10b6:208:1c6::17) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5566.14; Fri, 26 Aug
+ 2022 10:26:26 +0000
+Received: from MN2PR14MB2671.namprd14.prod.outlook.com
+ ([fe80::405e:47e8:3537:48bc]) by MN2PR14MB2671.namprd14.prod.outlook.com
+ ([fe80::405e:47e8:3537:48bc%6]) with mapi id 15.20.5566.015; Fri, 26 Aug 2022
+ 10:26:26 +0000
+From: Jessica Parker <Jessica.businesslists@outlook.com>
+Subject: RE: Biotechnology Email Contacts
+Thread-Topic: Biotechnology Email Contacts
+Thread-Index: Adi22wESACh0AugeTKSboxKahwG+CgCWzadw
+Return-Receipt-To: <Jessica.businesslists@outlook.com>
+Date: Fri, 26 Aug 2022 10:26:25 +0000
+Message-ID:
+ <MN2PR14MB267160EC7FE376F018F1119DE1759@MN2PR14MB2671.namprd14.prod.outlook.com>
+References:
+ <MN2PR14MB2671016D28C8E13BF24CB743E1709@MN2PR14MB2671.namprd14.prod.outlook.com>
+In-Reply-To:
+ <MN2PR14MB2671016D28C8E13BF24CB743E1709@MN2PR14MB2671.namprd14.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-tmn: [rDeiglUSKpUG0gya8sjDBKdGIzX6gSST+WofkMb6eUc9Xojz9hj5aNITPGUBYDnG]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: b5000e33-82ba-4531-66ee-08da874d6e5f
+x-ms-traffictypediagnostic: BL0PR14MB3713:EE_
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ sqpIcf70f14zKhiYPZgTabgPC5eNjnRS8gjF4931BrsS+1CWv1GnZYTb1ZbuEwEwMSiy8FbAJhPztoy9SptwtfZalTpwhwI3Nxh32W+dhpvJ+bRFZwmphdW//yur2J6y3rk5+VvxneZcGQaEkjQ7VMozV+6XicRO/bjCt3MOg3WOaP/Lq+vyMXFRehBo4qp0tucEuk7LcwOG42ldh/IIJ4W1sIi4ULef3Q/USCfZsJqZZBrFIuIAVvvBLZGrhGD5J3w/nW2ABRfTsMKuDeMe0KjF2OiTWnQfIEv7X0lIs38xEBzvMhWPQDc/dIh9cnF0Savtf3fFdHpbTWpj2y5SVlSW+8uGbMomdRonqxuWlNCTt95q95mQ+vkBlTM+5NeuzlwRcAFgWHf7kTCUDtQ621xQBvoW8NBXtFs7eukgIxNuc81YfJRoStKoMzovC2cxC5+gJ9xuN9+cHnz59Jj1gvYrN5jr0D/jZKdAgcuZSSSr5mSPR3EdtzILjcWUiiTsnm30TOQCZoct0jicmNILdR+lXwkfKLYfCSx3FtEC6VK/BHaWWcTLTamwyB/W3lRpzA/dmxLjSvWbiZmUtieOMkEl1GLyxyX+p0YIwRihuaRNWrMg+Ee+9ZWNhbkxsTVzoxXG0Tk/+GrHUq5G0/nzSU0yw3txMuBIcuPqR0aYQxypHqoizH+hyAxlGqVMgv9q
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-2022-jp?B?WStTNDdINWh3bHlyYVdHV040M0xyZWx6cStLYW9nR0Z0Y0dwaVVKYUZX?=
+ =?iso-2022-jp?B?NGtBNDVDVFF3OHArUTRrK3VzYUt5WW84RytwR2ZrdmNhRjlZTWQ3UUpl?=
+ =?iso-2022-jp?B?Smh0MkdNTlhCcHhnZXJWNVh6YSt5QytxS3V5R2VBZklBdVZQdm5FNHph?=
+ =?iso-2022-jp?B?N1lSZnNBMDhjbjA5blhkK3dmMnRKc2QrbWpMWmRueTBoMm15VWNPM3lM?=
+ =?iso-2022-jp?B?UTJjbTBpME1DNXRRVFlFZTFiakpoelJNNUNGTGxpWUo1UGpMQXZYVjhj?=
+ =?iso-2022-jp?B?WTZ4V3piZUJlZDJLcVRqdnFiTG1pcnFHNU90WWFSZjdrNUNZZ2NMOGZi?=
+ =?iso-2022-jp?B?NEFXZmVSZkRhWlloalNlQldzblc5Rkd2MVRxRU9YNWxNSGx6YXFKeFZn?=
+ =?iso-2022-jp?B?VUdLTXFlVGo4YndKVmEvdVdGR25BK2c1alVpYTMxTm9nK0poajgwclVm?=
+ =?iso-2022-jp?B?ZjM1MldmV3h1NmFJL1h3L1BvWisveHpqcE44NUw0TVBLMDlYZE9iOGl6?=
+ =?iso-2022-jp?B?Z1FWeDc2K0NGeDdON1FveWRKN1laZXdKcWY5ZEJ1ZjBFNGx4Q2JXK0hk?=
+ =?iso-2022-jp?B?bHF1YzZZSTVsWDFaZ25tZ3FCS1BoMytmbmpCRWFRTXZ2c1RpK0RDNm9E?=
+ =?iso-2022-jp?B?MUZ5OFdZTzZzRmxQM2ZjeDJnY1J5YU11KzlLWGNJaTFtbWxFbDYyUzYx?=
+ =?iso-2022-jp?B?c08yTzVJT0NtcHFCQ3ROdjNDR0cySGpCV2dXV0JMUVJBVFBMNE4xRHNa?=
+ =?iso-2022-jp?B?bEhqYU5KeVpsZVNMdFdORVRLRHo5TGhJQjdiZ3Z4Y0RLNGNrQjNza2Iz?=
+ =?iso-2022-jp?B?WUtSeGNIcVhpU2hOYStweVR6M0U4YUI1ME0vL1FUMkhJenlLVm9LNXAr?=
+ =?iso-2022-jp?B?aWVlaHc1amg5ZHFRNUNmaHQ0SEtKcEFGdFJhNUlzYmw1cUVreFAvUkow?=
+ =?iso-2022-jp?B?bEdSckRoNmpBMm9vL1FuTlFSOUU2Tm9DWFRSbVlFQjM0R3FBcUkwNUQ4?=
+ =?iso-2022-jp?B?V0NDc2RRT3JUUW10dFVyRlU2bEJ2U0FZTXZWaHRjYWlsM21OU2RFZ0p3?=
+ =?iso-2022-jp?B?Z043bDJZK2RlSnRyYlZpZ2htT1N0RXNTWEZKY1NucVVJMVB6dHhkQU1Q?=
+ =?iso-2022-jp?B?Q2x1S3dhTG42QmxZbFptLzJJOStVM3ljbDRPWDY2T2JJRjc2eVU1b0Vl?=
+ =?iso-2022-jp?B?YWhraldiOWtvQ2dab01PUWNUVFVOOU5Kc1Y1TnpEL1grMzJvZCs5SStW?=
+ =?iso-2022-jp?B?dFI4M2Njd3NuL3k1YmhlZ0lTWGM3bVJtSWF1V1FleFVHTTNGUUJUQWYw?=
+ =?iso-2022-jp?B?WVo0WCsrTGp1bzRqeWo5U0pNanRRcnppQlJVbk9UQUE4SEpKTzhtTHh6?=
+ =?iso-2022-jp?B?b1cwdmFMK3RIaHRjSWVvektyakZzb0Ezb2o3ZjF6UDk5QUpZYmtTNHpO?=
+ =?iso-2022-jp?B?ZCt3TUlwU1NZSlBUZk1YTit3NUR6OGZLa3B1c05ocFc0M3lvcHIwZjlE?=
+ =?iso-2022-jp?B?c2lHZDIwcTgyUGJCaThsdDFZb3M1YXpRWVhoVW5UZjNxZnFNb09nVXEv?=
+ =?iso-2022-jp?B?OVp6MlpPVzBhRGRNOG1xTlRnZ3YwV3VYS0VKeVZZa0Q3Y2duNU85VDRv?=
+ =?iso-2022-jp?B?YkptQi8xNW9sMDdaOGdIRFhTVHI2VFlvMlpIVkNyY0p0N1YxOG9TcVd6?=
+ =?iso-2022-jp?B?MFJJelR5OFI4Uis4NHNPeTRKTDdodHdocVdwWCtzaHo3V3dCZGdXNVF1?=
+ =?iso-2022-jp?B?M3g3cWNMbk1VYWluOUozRFlISUMwY0N2VmlxbTNpSFQzTVFSNXVsbkN1?=
+ =?iso-2022-jp?B?RjBLZ0N1TUNDbElhZHBPbWRQTXJMOHRrNXhqb01udzR2NGhBeEw5cFBR?=
+ =?iso-2022-jp?B?aHFKMkhQWkpPZysrSHJyRWJnTmIzaXRiNU1VYmh3SVpienNmbjhZUHpV?=
+ =?iso-2022-jp?B?NENGZkYxalZRNlVLYzFnWDNaZXNNdkxTVVFvUWQ2eUM0MUozcDdMNDh5?=
+ =?iso-2022-jp?B?VT0=?=
+Content-Type: multipart/alternative;
+	boundary="_000_MN2PR14MB267160EC7FE376F018F1119DE1759MN2PR14MB2671namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: MN2PR14MB2671.namprd14.prod.outlook.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: b5000e33-82ba-4531-66ee-08da874d6e5f
+X-MS-Exchange-CrossTenant-originalarrivaltime: 26 Aug 2022 10:26:25.9699
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BL0PR14MB3713
+X-Spam-Status: No, score=1.0
+X-Spam-Score: 10
+X-Spam-Bar: +
+X-Spam-Flag: NO
+
+--_000_MN2PR14MB267160EC7FE376F018F1119DE1759MN2PR14MB2671namp_
+Content-Type: text/plain; charset="iso-2022-jp"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+This is in regards to my previous email I hope you had a chance to review t=
+he same. If yes then please let me know your thoughts to secure this market=
+ing list.
+
+Look forward to hearing from you.
+
+Best Regards,
+Jessica
+
+
+From: Jessica Parker
+Sent: 23 August 2022 06:28
+Subject: Biotechnology Email Contacts
+
+Hi,
+
+Would you be interested in acquiring Biotechnology Email Contacts?
+
+We will get you customized contacts list of Decision makers, Scientists, Se=
+nior Scientist, senior researcher, researcher, lab managers and many from L=
+ife Sciences, Healthcare, Biotechnology, Pharmaceuticals, CDMO, CMO, CRO, P=
+harma Service and more.
+
+We recently updated our database of Bispecific antibody, CD3, bispecific T-=
+cell engager, T-cell receptor, t-lymphocytes, cancer therapy, immunotherapy=
+, cancer diagnostic, Immunobiology, Cell therapy, Adoptive T cell transfer =
+therapy, ACT, Tumor-specific T cell receptors, TCRs, Chimeric antigen recep=
+tors, CD19 CAR=1B$B!$=1B(BCAR-T, Antibodies, proteins, gene-edited cell lin=
+es, knockout cell lines, immunoassays, monoclonal antibodies, Research, dru=
+g discovery, diagnostics, immunology, Stem Cell Research, Cancer Research, =
+Neuroscience, Cell Isolation, Cell Sorting, Sample Preparation, Tissue Diss=
+ociation, Cell Culture, Cytokines, Imaging Agents, Molecular Analysis, Bior=
+eactor systems, biologics manufacturing & Core Laboratory.
+
+Looking forward to your response soon.
+
+Regards,
+Jessica
+
+--_000_MN2PR14MB267160EC7FE376F018F1119DE1759MN2PR14MB2671namp_
+Content-Type: text/html; charset="iso-2022-jp"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-2022-=
+jp">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"MS PGothic";
+	panose-1:2 11 6 0 7 2 5 8 2 4;}
+@font-face
+	{font-family:"\@MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:"\@MS PGothic";}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:105%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:JA;}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-IN" link=3D"#0563C1" vlink=3D"#954F72" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Hi,<span style=3D"mso-fareast-language:EN-IN"><o:p><=
+/o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:EN-US"><o:p>&nbs=
+p;</o:p></span></p>
+<p class=3D"MsoNormal">This is in regards to my previous email I hope you h=
+ad a chance to review the same. If yes then please let me know your thought=
+s to secure this marketing list.<span style=3D"mso-fareast-language:EN-IN">=
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:EN-US"><o:p>&nbs=
+p;</o:p></span></p>
+<p class=3D"MsoNormal">Look forward to hearing from you.<span style=3D"mso-=
+fareast-language:EN-IN"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Best Regards,<o:p></o:p></p>
+<p class=3D"MsoNormal">Jessica<o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:EN-US"><o:p>&nbs=
+p;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:EN-US"><o:p>&nbs=
+p;</o:p></span></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0cm =
+0cm 0cm">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0cm;line-height:normal"><b><s=
+pan lang=3D"EN-US">From:</span></b><span lang=3D"EN-US"> Jessica Parker
+<br>
+<b>Sent:</b> 23 August 2022 06:28<br>
+<b>Subject:</b> Biotechnology Email Contacts<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0cm">Hi,<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0cm"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0cm">Would you be interested =
+in acquiring
+<b>Biotechnology Email Contacts</b>?<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0cm"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0cm">We will get you customiz=
+ed contacts list of Decision makers, Scientists, Senior Scientist, senior r=
+esearcher, researcher, lab managers and many from Life Sciences, Healthcare=
+, Biotechnology, Pharmaceuticals, CDMO,
+ CMO, CRO, Pharma Service and more.<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0cm"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0cm">We recently updated our =
+database of Bispecific antibody<span style=3D"font-family:&quot;MS Gothic&q=
+uot;">,
+</span>CD3, bispecific T-cell engager, T-cell receptor, t-lymphocytes, canc=
+er therapy, immunotherapy, cancer diagnostic, Immunobiology, Cell therapy, =
+Adoptive T cell transfer therapy, ACT, Tumor-specific T cell receptors, TCR=
+s, Chimeric antigen receptors, CD19
+ CAR<span lang=3D"JA" style=3D"font-family:&quot;MS Gothic&quot;">=1B$B!$=
+=1B(B</span>CAR-T, Antibodies, proteins, gene-edited cell lines, knockout c=
+ell lines, immunoassays, monoclonal antibodies, Research, drug discovery, d=
+iagnostics, immunology, Stem Cell Research, Cancer Research,
+ Neuroscience, Cell Isolation, Cell Sorting, Sample Preparation, Tissue Dis=
+sociation, Cell Culture, Cytokines, Imaging Agents, Molecular Analysis, Bio=
+reactor systems, biologics manufacturing &amp; Core Laboratory.<o:p></o:p><=
+/p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0cm"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0cm">Looking forward to your =
+response soon.<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0cm"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0cm">Regards,<o:p></o:p></p>
+<p class=3D"MsoNormal">Jessica<span style=3D"mso-fareast-language:EN-US"><o=
+:p></o:p></span></p>
+</div>
+</body>
+</html>
+
+--_000_MN2PR14MB267160EC7FE376F018F1119DE1759MN2PR14MB2671namp_--

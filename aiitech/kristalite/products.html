@@ -1,0 +1,439 @@
+<!--#includefile=adovbs.inc-->
+<!--#includefile=conn.asp-->
+<%
+dim con,rs,
+currentpage=trim(request.querystring("currentpage"))
+ctr = trim(request.querystring("ctr"))
+title = trim(request.querystring("loginname"))
+cti =trim(request.querystring("ctr"))
+Set rs=Server.CreateObject("ADODB.RecordSet")
+rs.cursortype=adOpenstatic
+rs.open "Select * from Product",con
+currentpage=trim(request.querystring("currentpage"))
+rs.pagesize=rs.recordcount
+%>
+<%if not rs.eof then
+rs.absolutepage=cint(currentpage)
+end if%>
+<html>
+<head>
+<title>Kristalite Imports</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF"leftMargin=0 link=#ffffff rightmargin=0 topMargin=0 
+vLink=#ffffff marginheight="0" marginwidth="0">
+<table width="749" height="350" cellspacing="0" cellpadding="0">
+ <tr align="right" valign="top" > 
+    <td height="110"background="klogo1.gif" colspan="2"><a href="index.html"><img src="home.gif" width="83" height="64" border="0"></a></td>
+  </tr>
+  <tr> 
+    <td width="168" align="right" height="2">&nbsp;</td>
+    <td height="2" width="667" align="right"><img src="krisadd.gif" width="471" height="15"></td>
+  </tr>
+  <tr> 
+    <td height="2" colspan="2"><img src="hr.gif" width="790" height="5"></td>
+  </tr>
+  <tr> 
+    <td height="218" align="center" width="168" valign="top"> 
+      <table width="75%" cellspacing="1">
+        <tr> 
+          <td height="50">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td height="30"><a href="about.html"><img src="about.gif" width="160" height="25" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td height="30"><a href="product.html"><img src="products.gif" width="160" height="25" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td height="30"><a href="products.html"><img src="proddet.gif" width="160" height="25" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td height="34"><a href="order.html"><img src="order.gif" width="160" height="25" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td height="30"><a href="key.html"><img src="key.gif" width="160" height="25" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td height="30"><a href="orderfm.html"><img src="orderfm.gif" width="160" height="25" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td height="30"><a href="bond.html"><img src="bond.gif" width="160" height="25" border="0"></a></td>
+        </tr>
+      </table>
+    </td>
+    <td height="300" width="667" valign="top" rowspan="2"> 
+      <table width="617" height="100">
+        <tr> 
+          <td height="166" width="348" align="center"><img src="prodimg.gif" width="300" height="182"></td>
+        </tr>
+        <tr> 
+          <td height="909"> 
+            <table width="607" border="1" cellspacing="0" cellpadding="0" bordercolor="#000000">
+              <tr bgcolor="#52B5BD"> 
+                <td height="30" width="603" align="left"><font face="Arial, Helvetica, sans-serif" size="3" color="#FFFFFF"><b>&nbsp;Products</b></font></td>
+                <form name="search" action="stafsear.asp?currentpage=1&member=<%=member%>&ctr=1" method="post">
+                </form>
+              </tr>
+              <tr valign="middle"> 
+                <td height="609" align="center" width="603"> 
+                  <table width="605" border="1" cellspacing="0" cellpadding="0" bordercolor="#333333" bgcolor="#FFFFFF">
+                    <tr> 
+                      <td height="10" align="left" width="37" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"><b><font color="#CC3300">&nbsp;Sl.no</font></b></font></td>
+                      <td height="10" align="left" width="182" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"><b><font color="#CC3300">&nbsp;Product</font></b></font></td>
+                      <td height="25" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2"><b><font color="#CC3300">&nbsp;Specification</font></b></font></td>
+                      <td height="25" width="185" valign="middle" bordercolor="#000000" align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><font color="#CC3300">Pharmacological 
+                        use</font></b></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="44" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">1</font></font></td>
+                      <td height="44" align="left" width="182" valign="middle"><font size="2">&nbsp;<font face="Arial, MS Sans Serif" color="#000000"><font face="arial"><font face="Arial, Helvetica, sans-serif">Adhatoda 
+                        Vasica</font></font></font></font> </td>
+                      <td height="44" width="191" valign="middle" align="left"><font size="2" color="#000000"><font face="Arial, Helvetica, sans-serif">&nbsp;Vasicine 
+                        0.5%,Vasicinone 0.25%&nbsp; &nbsp;Vasicine &nbsp;95-98% 
+                        Vasicinone 95-98%</font></font><font face="Arial, MS Sans Serif" size="2" color="#000000"><%=rs("stafftype")%></font></td>
+                      <td height="44" width="185" valign="middle" align="left"><font face="Arial, MS Sans Serif" size="2" color="#000000">&nbsp;Bronchodilator,Antiasthmatic<%=rs("staffdob")%></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="20" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">2</font></font></td>
+                      <td height="19" align="left" width="182" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Andrographis 
+                        Paniculata</font></td>
+                      <td height="19" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Andrographolides 
+                        8%</font></td>
+                      <td height="19" width="185" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Hepatoprotective&nbsp;</font></td>
+                    </tr>
+                    <tr> 
+                      <td height="17" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">3</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Asparagus 
+                        racemosus</font></td>
+                      <td height="17" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;ProdSpec 
+                        Saponins 20%</font></td>
+                      <td height="17" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Galactagogue,adaptogenic</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="17" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">4</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Aswagandha</font></td>
+                      <td height="17" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Withanolides 
+                        2.5%, Saponins 15%</font></td>
+                      <td height="17" width="185" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;NullCNS 
+                        depressant, aphrodisiac</font></td>
+                    </tr>
+                    <tr> 
+                      <td height="18" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">5</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Bacopa 
+                        monniera</font></td>
+                      <td height="18" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Bacosides 
+                        20%</font></td>
+                      <td height="18" width="185" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Brain 
+                        tonic, nervine tonic</font></td>
+                    </tr>
+                    <tr> 
+                      <td height="16" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">6</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Boswellia 
+                        serrata</font></td>
+                      <td height="16" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Boswellic 
+                        acid 60%, 75%</font></td>
+                      <td height="16" width="185" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Antiarthritic,anti-inflammatory</font></td>
+                    </tr>
+                    <tr> 
+                      <td height="17" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">7</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Capsicum 
+                        annuum</font></td>
+                      <td height="17" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Capsaicin 
+                        3 - 10%</font></td>
+                      <td height="17" width="185" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Anti-oxidant, 
+                        stimulant</font></td>
+                    </tr>
+                    <tr> 
+                      <td height="19" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">8</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Centella 
+                        asiatica</font></td>
+                      <td height="19" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Asiatic 
+                        acid 1.5%</font></td>
+                      <td height="19" width="185" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Brain 
+                        tonic</font></td>
+                    </tr>
+                    <tr> 
+                      <td height="7" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">9</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Coleus 
+                        forskohlii</font></td>
+                      <td height="7" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Forskolins 
+                        1%,10%</font></td>
+                      <td height="7" width="185" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Cardiovascular 
+                        tonic</font></td>
+                    </tr>
+                    <tr> 
+                      <td height="16" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">10</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Curcumin 
+                        from Curcuma longa</font></td>
+                      <td height="16" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Curcuminoids 
+                        95%</font></td>
+                      <td height="16" width="185" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Antioxidant.anti-inflammatory 
+                        anti &nbsp;cancer</font></td>
+                    </tr>
+                    <tr> 
+                      <td height="20" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">11</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Emblica 
+                        officinalis</font></td>
+                      <td height="12" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Ascorbic 
+                        acid 6 - 10%</font></td>
+                      <td height="12" width="185" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Cardiotonic</font></td>
+                    </tr>
+                    <tr> 
+                      <td height="20" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">12</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Garcinia 
+                        cambogia</font></td>
+                      <td height="12" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;HCA>50%,55%,60%</font></td>
+                      <td height="12" width="185" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Anti-obesity</font></td>
+                    </tr>
+                    <tr> 
+                      <td height="20" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">13</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Garlic 
+                        (Allium Sativum)</font></font></td>
+                      <td height="10" width="191" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Alliin 
+                        1.5%</font></font></td>
+                      <td height="10" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Stimulant, 
+                        anti-bacterial</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="19" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">14</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Glycyrrhiza 
+                        glabra</font></font></td>
+                      <td height="19" width="191" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Glycyrrhizinic 
+                        acid 25%</font></font></td>
+                      <td height="19" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Demulcent</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="18" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">15</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Green 
+                        Tea Leaf</font></font></td>
+                      <td height="18" width="191" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Polyphenols 
+                        60%,75%,Caffeine 2-8%</font></font></td>
+                      <td height="18" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif"> 
+                        &nbsp;Anti-oxidant, anti cancer</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="19" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">16</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Griffonia 
+                        simplicifolia</font></font></td>
+                      <td height="19" width="191" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;5-Hydroxytryptophane 
+                        >95%</font></font></td>
+                      <td height="19" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Anti-depressant</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="20" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">17</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Guggul 
+                        (commiphora mukul)</font></font></td>
+                      <td height="20" width="191" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Guggulsterones 
+                        2.5%</font></font></td>
+                      <td height="20" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Anti-inflammatory</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="18" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">18</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Gymnema 
+                        sylvestre</font></font></td>
+                      <td height="18" width="191" valign="middle" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Gymnemic 
+                        acid>25%,50%,75%</font></font></td>
+                      <td height="18" width="185" valign="middle" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Anti-diabetic</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="20" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">19</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Holarrhena 
+                        antidysenterica</font></font></td>
+                      <td height="20" width="191" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Alkaloids 
+                        2.5 - 6%</font></font></td>
+                      <td height="20" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Anti-amoebic</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="16" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">20</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Hypericum 
+                        perforatum (St.John's wort)</font></font></td>
+                      <td height="16" width="191" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Hypericin 
+                        0.3%</font></font></td>
+                      <td height="16" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Anti-depressant,anti-viral</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="15" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">21</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Morinda 
+                        citrifolia</font></font></td>
+                      <td height="15" width="191" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;5:1</font></font></td>
+                      <td height="15" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Rejuvenative</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="20" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">22</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Neem 
+                        Leaf (Azadirachta indica)</font></font></td>
+                      <td height="20" width="191" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Bitters 
+                        2.5%</font></font></td>
+                      <td height="20" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Anti 
+                        fungal</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="3" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">23</font></font></td>
+                      <td height="25" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Piper 
+                        longum</font></font></td>
+                      <td height="3" width="191" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Piperine 
+                        >95% 4 : 1</font></font></td>
+                      <td height="3" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Hepatic 
+                        microsomal enzymme inhibitor, &nbsp;Digestive</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="25" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">24</font></font></td>
+                      <td height="25" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Piper 
+                        nigrum</font></font></td>
+                      <td height="25" width="191" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Piperine 
+                        >95% 4 : 1</font></font></td>
+                      <td height="25" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Hepatic 
+                        microsomal enzymme inhibitor, &nbsp;Digestive</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="18" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">25</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Senna</font></font></td>
+                      <td height="18" width="191" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Sennosides 
+                        6-8%,20%</font></font></td>
+                      <td height="18" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Laxative</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="18" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">26</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Terminalia 
+                        Chebula</font></font></td>
+                      <td height="18" width="191" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Tannins</font></font></td>
+                      <td height="18" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Laxative</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="20" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">27</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Tinospora 
+                        cordifolia</font></font></td>
+                      <td height="20" width="191" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Bitters 
+                        3%</font></font></td>
+                      <td height="20" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Antipyretic,antidiabetic</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="18" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">28</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Tribulus 
+                        terrestris</font></font></td>
+                      <td height="18" width="191" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Saponins 
+                        20%, 40%</font></font></td>
+                      <td height="18" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Aphrodisiac, 
+                        urolithiatic</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="20" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">29</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Trigonella 
+                        foenum-graecum</font></font></td>
+                      <td height="20" width="191" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Saponins</font></font></td>
+                      <td height="20" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Anti-diabetic</font></font></td>
+                    </tr>
+                    <%
+                rownumber=0
+                ctr=trim(request.querystring("ctr"))  
+                do while not rs.eof and rownumber < rs.pagesize
+                 %> <%
+ctr=ctr+1
+r=rs.absolutepage
+rownumber=rownumber+1
+rs.movenext
+loop
+%> 
+                  </table>
+                </td>
+              </tr>
+              <tr bgcolor="#52B5BD"> 
+                <td height="20" width="603">&nbsp;</td>
+              </tr>
+            </table>
+            <br>
+            <br>
+            <table width="607" border="1" cellspacing="0" cellpadding="0" bordercolor="#000000">
+              <tr bgcolor="#52B5BD"> 
+                <td height="30" width="603" align="left"><font face="Arial, Helvetica, sans-serif" size="3" color="#FFFFFF"><b>&nbsp;Shortly 
+                  Introducing</b></font></td>
+                <form name="search" action="stafsear.asp?currentpage=1&member=<%=member%>&ctr=1" method="post">
+                </form>
+              </tr>
+              <tr valign="middle"> 
+                <td height="61" align="center" width="603"> 
+                  <table width="605" border="1" cellspacing="0" cellpadding="0" bordercolor="#333333" bgcolor="#FFFFFF">
+                    <tr> 
+                      <td height="10" align="left" width="37" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"><b><font color="#CC3300">&nbsp;Sl.no</font></b></font></td>
+                      <td height="10" align="left" width="182" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"><b><font color="#CC3300">&nbsp;Product</font></b></font></td>
+                      <td height="25" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2"><b><font color="#CC3300">&nbsp;Specification</font></b></font></td>
+                      <td height="25" width="185" valign="middle" bordercolor="#000000" align="center"><font face="Arial, Helvetica, sans-serif" size="2"><b><font color="#CC3300">Pharmacological 
+                        use</font></b></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="25" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">1</font></font></td>
+                      <td height="25" align="left" width="182" valign="middle"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Mono 
+                        Ammonium Glycyrrhizinate</font></td>
+                      <td height="25" width="191" valign="middle" align="left"><font size="2" color="#000000"><font face="Arial, Helvetica, sans-serif">&nbsp;>97%</font></font><font face="Arial, MS Sans Serif" size="2" color="#000000"><%=rs("stafftype")%></font></td>
+                      <td height="25" width="185" valign="middle" align="left"><font face="Arial, MS Sans Serif" size="2" color="#000000"><font face="Arial, Helvetica, sans-serif">&nbsp;Sweetening 
+                        agent</font><%=rs("staffdob")%></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="20" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">2</font></font></td>
+                      <td height="19" align="left" width="182" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Ginger</font></td>
+                      <td height="19" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Gingerols 
+                        6%</font></td>
+                      <td height="19" width="185" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Carminative, 
+                        digestive</font></td>
+                    </tr>
+                    <tr> 
+                      <td height="17" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">3</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Ginseng</font></td>
+                      <td height="17" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Ginsenosides 
+                        5%, 8%, 15%</font></td>
+                      <td height="17" width="185" valign="middle" bordercolor="#000000" align="left"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Rejuvenative</font></font></td>
+                    </tr>
+                    <tr> 
+                      <td height="17" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">4</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Ginkgo 
+                        biloba</font></td>
+                      <td height="17" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Ginkgoflavone 
+                        Glycosides 24%, <br>
+                        &nbsp;Terpene Lactones 6%</font></td>
+                      <td height="17" width="185" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Antioxidant,used 
+                        in central and &nbsp;peripheral vascular diseases.</font></td>
+                    </tr>
+                    <tr> 
+                      <td height="18" align="center" width="37" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">5</font></font></td>
+                      <td height="20" align="left" width="182" valign="middle" bordercolor="#000000"><font size="2"><font face="Arial, Helvetica, sans-serif">&nbsp;Grape 
+                        seed</font></font></td>
+                      <td height="18" width="191" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Proanthocyanidins 
+                        95%</font></td>
+                      <td height="18" width="185" valign="middle" bordercolor="#000000" align="left"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;Antioxidant</font></td>
+                    </tr>
+                    <%
+                rownumber=0
+                ctr=trim(request.querystring("ctr"))  
+                do while not rs.eof and rownumber < rs.pagesize
+                 %> <%
+ctr=ctr+1
+r=rs.absolutepage
+rownumber=rownumber+1
+rs.movenext
+loop
+%> 
+                  </table>
+                </td>
+              </tr>
+              <tr bgcolor="#52B5BD"> 
+                <td height="20" width="603">&nbsp;</td>
+              </tr>
+            </table>     
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="824" align="center" width="168">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td height="3" align="center" colspan="2"><font face="Arial, Helvetica, sans-serif" size=1><b><font 
+      color=#000066>Copyright © 2002-2003 by <a 
+      href="mailto:info@alagappa.com"><font color=#3333ff>Aiitech</font><font color=#99ccff>.</font></a></font></b></font></td>
+  </tr>
+</table>
+</body>
+</html>

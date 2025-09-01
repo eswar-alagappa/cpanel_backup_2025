@@ -1,0 +1,427 @@
+Return-Path: <LOrlow@CarolinaChemistries.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id qBjNDS34DGNZyQMA7/vpDg
+	(envelope-from <LOrlow@CarolinaChemistries.com>)
+	for <rvairavan@caldonbiotech.com>; Mon, 29 Aug 2022 12:32:29 -0500
+Return-path: <LOrlow@CarolinaChemistries.com>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Mon, 29 Aug 2022 12:32:29 -0500
+Received: from mail-mw2nam10on2069.outbound.protection.outlook.com ([40.107.94.69]:57734 helo=NAM10-MW2-obe.outbound.protection.outlook.com)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <LOrlow@CarolinaChemistries.com>)
+	id 1oSice-001pyZ-AX
+	for rvairavan@caldonbiotech.com;
+	Mon, 29 Aug 2022 12:32:29 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=J/0ujQVnCse3VECxQoGz0QQt3OmPxijK4SnyEh0M/13IlWsp3KlzJXoy0nAW/vOA90tkYIOHMGSPUUOb4JTY7ddG3hCb6R9lrpItkiaN+t2Q4Ci4xHNFPcXeCao2onTYygY/7qX1KZ5C37yRpk0sz2Ym6HdcCgJBKbQBE/rPLrwFgEFlq0E6fs76Mb7EdDYmAKbVvJlvDkSDnQ+kea6nnwkSW8P0/2tmYKR2ER2ECyi40oQALN98Vjb72w4jBbPO+MB0MyVJGK6q7lMm3AXQLR72Q2U7q8zPhV0M5rjmcv/tOC9soZkllTfGmB1EehbEEWWOoXidUIo39vjCdRUBAw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=gB3gP4jMJijNfLn8wRNLMbJ+5as+dnpL0gdL9d9PFgo=;
+ b=SASTYN5R0pxOa5Y5IyzrY0r2rqtasHcF0Aqqh6Y/dwy1iKHB+xCaM9fBrwI3CfoPXkJniDB8DRkPxhKIsyaVY4pTaS7u0tthf9XziNVpKB7w8N2cH9MSy+XdTke9ASnZ25cnXrFxwuMNx9Av6Yz6UZrnKttYiLnjxVel+LV5LhiwVE3HXADBw13HmLEZuyvq/76YdO3ciJXrjD+1Xrc6tB07zEnOEqBoVh0WZXni83s0Zj64JGCZMVgt1Q3MPd04tZxAeOsIkKaQk2nS+QCA1/jbpbqxMaNCbLGs/34KlAwGDKRf/WJAnZRBM7CYLNIpoymfC5z8fhBhykIRIexTjA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=carolinachemistries.com; dmarc=pass action=none
+ header.from=carolinachemistries.com; dkim=pass
+ header.d=carolinachemistries.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=carolinachemistries.onmicrosoft.com;
+ s=selector2-carolinachemistries-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=gB3gP4jMJijNfLn8wRNLMbJ+5as+dnpL0gdL9d9PFgo=;
+ b=E9iv53/A1Ho2NrcaILOJxfOBUpuCbmHwIOZwkcTmHtRz1LyZwQDDtTSwe2PzNguhel02exouUYyZ6xdUqzoHly29IybukrqJWZTCAZZghQHlRYSe+QRwQ6jMrazFOuYy3brQThC8TPbRRfuYq9sdd6YrX7m/TQpVniS0K4LICbQ=
+Received: from SJ0PR22MB2672.namprd22.prod.outlook.com (2603:10b6:a03:318::17)
+ by DM5PR22MB0954.namprd22.prod.outlook.com (2603:10b6:3:13b::17) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5566.21; Mon, 29 Aug
+ 2022 17:32:14 +0000
+Received: from SJ0PR22MB2672.namprd22.prod.outlook.com
+ ([fe80::4922:eb34:d38e:b48c]) by SJ0PR22MB2672.namprd22.prod.outlook.com
+ ([fe80::4922:eb34:d38e:b48c%9]) with mapi id 15.20.5566.021; Mon, 29 Aug 2022
+ 17:32:13 +0000
+From: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com>
+To: "rvairavan@caldonbiotech.com" <rvairavan@caldonbiotech.com>
+CC: Patti Shugart <pattigaull@aol.com>, Christina Gonzales
+	<CGonzales@CarolinaChemistries.com>
+Subject: RE: CALDON PO for APPROVAL for CAP order due Sept 2022
+Thread-Topic: CALDON PO for APPROVAL for CAP order due Sept 2022
+Thread-Index: Adi363zfyPIYZgexTDmt7XMKKA7rzQC/MxKAADk6b3A=
+Date: Mon, 29 Aug 2022 17:32:13 +0000
+Message-ID:
+ <SJ0PR22MB2672CBDC6575969DB9940946C5769@SJ0PR22MB2672.namprd22.prod.outlook.com>
+References:
+ <SJ0PR22MB2672E59EB6D6052172F09BF3C5739@SJ0PR22MB2672.namprd22.prod.outlook.com>
+ <001a01d8bae8$4adf8050$e09e80f0$@caldonbiotech.com>
+In-Reply-To: <001a01d8bae8$4adf8050$e09e80f0$@caldonbiotech.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=CarolinaChemistries.com;
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: b5c8a505-5617-4e2d-44ed-08da89e46957
+x-ms-traffictypediagnostic: DM5PR22MB0954:EE_
+x-ld-processed: f27d3a9c-1dc4-4139-a0c3-b8b63548fe8c,ExtAddr
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ O2VaNzNcHc0qcM+PdqECOotCUtje4oTmi0rpOrBkMmvULdCYYDyLsz2KYCFsuOrENYjIGQGtVw1Uhqh8C1oVwJUx/v7ttiDF1XyGRI340AALVXnXAPbtHrjYq7Bxs+GXK+kd7ZRrcGxdl0x6CFHcAn2PWpWKOrnSZ9J7B1oKRGLv7Lmv/AJ68RyP/tgIlCcLXFQK/rTDHvABFfXoVLkCM6Sib3xO0AjVnuoe5PAtFkKECWKym+et88MEgEJiwSBqQI1+BQDi1YXETBxNc/LQ9aEq9SuVOjVQYSQOuwSu1TxMTfpzBO3N2D4Vp8XiL1oZnMrLEROgeSC400sWOyH04zrW4fW6o6hJZcOu23YR/piHOAD5WNQL3AfyKSOgsb+mjsg27e4vFHXAo14jpGOPWjaWOPx7Gb4VgHQ82epBDhG49DRbuQqNVV3hSfvSMjd+izGacttGbs1lTeopa6+C6I0T4CsM5Fo8uDYpSGLjlR8sPkcVbz7RoXN4460pKqJywZfeSl6FnRvINee94wYNo4iy5VIK6k1CTViRhgfqupn+T8XV57Oq6oFHdmX9g00fNOu1v5bNQbfo/FeTPxTEptsf6yiYIeEF54sjdfT/TpLUIYuMp7DL9+RFr82qWdXTNOxA9NhsfA8PGb7K/GuaimxgfwxRwfZOYhWz0CIsbUlmiHk4EcRdVouJ5iJjrRlTBGUvgHgtpZf0idJlKFafXkaeoiu7ChMgeZe7Mrepm032/mD1U/tATabj7Fw9qoHIZ0t9y7gHKIyQGGwUGcCHRQo8u3aw3klbGBNXK77Tdj0ahj8TUNWINv1AOWUOmvFU
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SJ0PR22MB2672.namprd22.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230016)(376002)(136003)(346002)(39840400004)(396003)(366004)(76116006)(2906002)(107886003)(64756008)(66946007)(66446008)(66556008)(53546011)(40140700001)(7696005)(8676002)(33656002)(66476007)(6506007)(8936002)(52536014)(4326008)(41300700001)(5660300002)(55016003)(186003)(83380400001)(478600001)(86362001)(166002)(9686003)(38070700005)(26005)(122000001)(38100700002)(54906003)(6916009)(71200400001)(316002)(85282002);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?us-ascii?Q?+NUXI4j/CLOJEhSLm/gw4gd1k44wjzGjDwf0qzpASxFwP5m+tRRMmSObk6/T?=
+ =?us-ascii?Q?9ZN6YYS7WXYbh1rWi+8JZj+o4WZ/LVFZ0WGSPufzbBQMkghdR9mKhyJXFphg?=
+ =?us-ascii?Q?65xKzjClrpbMjljLFQkLXaWJ3riK8bmdPCrltXnAZVIylPuybRzEW7doGYMp?=
+ =?us-ascii?Q?iGmxC3fXiCjrkO8lksCW9ZHzgQx8FKCrFdCZq+BH4WV0216z8PT5mp20iaDv?=
+ =?us-ascii?Q?nSB7fWA1E3miUfZn4jKcbgodXQR8kmPp/NAF+kGsaSJkpMiWM+pgvkZM0Y1d?=
+ =?us-ascii?Q?hPCl2/ocjIeMvn0UuTEnKt47x+JJRePVlAOAls9IuCBy7s6RuxT4jek+P4wR?=
+ =?us-ascii?Q?ygv7uVK8e49UPtxcDkC8Nhd8PQVA6d0SxyaGhLeU+FqVVltzoyIi/lHfkCkB?=
+ =?us-ascii?Q?WbnPrLZbSLwfLEqGBD5wfsWEX+sfIDKa5ct6fkiuRr0TTW9JwdhA9uqaD4o9?=
+ =?us-ascii?Q?Dk8nkN711rY6nk7653Jq6xp1+QcR0ghOjZy44JGSxmCe47PgF0Lgin33Jic0?=
+ =?us-ascii?Q?sB0WXalXYW0t1dFv1qcY5ssOSqB3eRuTA7srl5NtSKbZv3eBK2n2s9Oa2JMJ?=
+ =?us-ascii?Q?TpX4vLPeBNiCbTtgAeUBxF0yIs94d8AU2WgZ5F7OOwL0w3WcR/Yc47Bbwiki?=
+ =?us-ascii?Q?JRTkHdYQkY1JzlAC26s5tSlSsCPd4b00Q5D9K2JInS0e+zZAvJ0Si9zDAFlB?=
+ =?us-ascii?Q?1z8FksYLbmOPfG0cD2puM/pToJc/ydOtRRm76abKk3tQrQKT1eGtTfXMHBqj?=
+ =?us-ascii?Q?qcnXDPQq70KoY1IR/mbu+uqoI3DGwPX7WtemY5FiuKIfCSq66TvZl+PWUXP9?=
+ =?us-ascii?Q?sJ4PwHH24bxIClAyPpj9/wPBIB1vwCG1CodVZXW8UM2q3AbQyGOM7ura0IHV?=
+ =?us-ascii?Q?OUi7Kr8cG+SBYk9H/coY/cd7leGb4ceU7KA1TsCTI1nE98Ew67zya7LlgRXB?=
+ =?us-ascii?Q?XkMqQnI7i6dI/DwEuwlGndMFS8nRlW3JQSNllZwgETb7mW/BwFehDPmDLURf?=
+ =?us-ascii?Q?VjyWaFnsnbdwtPbB6OYr93QsrtZXQnrfPYnD/nXA52X0ABeXb5QdKbbb4DUj?=
+ =?us-ascii?Q?sQHtlrQUuDhpTnPqv86WW1cJ2M81wbYw0mlxFk/cyqExI2vp6fz8TIvsV9+f?=
+ =?us-ascii?Q?9svlpOhVJis5pqvj3Igw/KzIidNMhuyvcFF1YuGWtuTWx5kkq1a0Ho3XMglX?=
+ =?us-ascii?Q?ImGwRrMAx9lWsXE3yv7KV487uRGqPdO2gp/FWT+Ydsaim5hX9n7L5xPUVfFr?=
+ =?us-ascii?Q?1ifrjtqTd3jRKnmBV5EQArDdC59yXalqUVSbvChNeUP5IYdArLFEiAK0c7vw?=
+ =?us-ascii?Q?+BHY1i18hZoL4/8OE05699+DLGCkioqe37Fd5KQJmliXr/XmuyIs8U76iCjl?=
+ =?us-ascii?Q?i7G11ZX6I54oDai7x4FEFtQuPmy/bsnGzz3wgjf243om8XHduDNsejmD4+TS?=
+ =?us-ascii?Q?7KXVdAoqMEPMO/rC9ODaM6nP6xMy3j8iSnyGwIVgaWjg9TqopXhQUOGj0Sht?=
+ =?us-ascii?Q?z2srExHMrfYGchrgjzbP+N7cpwmwekoOV4ycwTT7RxwuC4hOY0gmpWlYkl+s?=
+ =?us-ascii?Q?IWeIwZLl5xyBdaBrMwoLHU3cZT6KHHiBm0T3Il87YaqdFnUV/faCctqnfuQP?=
+ =?us-ascii?Q?EHoKmcyeGpKm4EFjmderzkM=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_SJ0PR22MB2672CBDC6575969DB9940946C5769SJ0PR22MB2672namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: carolinachemistries.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SJ0PR22MB2672.namprd22.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: b5c8a505-5617-4e2d-44ed-08da89e46957
+X-MS-Exchange-CrossTenant-originalarrivaltime: 29 Aug 2022 17:32:13.8597
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: f27d3a9c-1dc4-4139-a0c3-b8b63548fe8c
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: AoL8CGIm5230z6MXXI4Y5hsT35UuCchoUVqIyoyHZ8RotQORcaai3YpiRUyWs4HBXaHu4Fgnxx07Y2gY3w/2hzl0aN1PMKgppSnTGSg1QMswfD9+120xwYVqxiXi09xV
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM5PR22MB0954
+X-Spam-Status: No, score=-0.5
+X-Spam-Score: -4
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--_000_SJ0PR22MB2672CBDC6575969DB9940946C5769SJ0PR22MB2672namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Thank you Ram.  We will proceed as planned.
+
+Have a great day,
+
+
+Laura Orlow-Kojac
+Carolina Liquid Chemistries Corp.
+510 W. Central Avenue
+Suite  C
+Brea CA 92821
+714-529-7125   fax 714-529-7274
+
+
+
+From: rvairavan@caldonbiotech.com <rvairavan@caldonbiotech.com>
+Sent: Sunday, August 28, 2022 7:13 AM
+To: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com>
+Cc: Patti Shugart <pattigaull@aol.com>; Christina Gonzales <CGonzales@Carol=
+inaChemistries.com>
+Subject: FW: CALDON PO for APPROVAL for CAP order due Sept 2022
+
+Dear Laura
+
+Thank you for your mail. I approve the order. Kindly start the production a=
+s planned
+
+Sincerely yours
+
+Ram
+
+Ramanath Vairavan Ph.D
+President
+Caldon Biotech
+Mobile: 760-402-6335; rvairavan@caldonbiotech.com<mailto:rvairavan@caldonbi=
+otech.com>
+www.caldonbiotech.com<https://urldefense.proofpoint.com/v2/url?u=3Dhttps-3A=
+__nam04.safelinks.protection.outlook.com_-3Furl-3Dhttp-253A-252F-252Fwww.di=
+acarta.com-252F-26data-3D01-257C01-257Ceisenbm-2540labcorp.com-257Cb84ab9ac=
+12c84e33eba208d7101527c9-257C7b3bf3a5ce934afbabec7bf49544d250-257C1-26sdata=
+-3DJBxYSwQlgWm1b6OAMGpqfkHV8iGuwk9X1Ks2aWuwF3w-253D-26reserved-3D0&d=3DDwMF=
+_g&c=3DuhUSuyNScXHb_F2nn0PKeY0q4oY6FfjGrtpKpaZYX9Y&r=3Dn9qe1kpx8Rqz4bAJd9cJ=
+Iw&m=3DGlMtmaha6McdnPRI3w16Pp5HY27OY05J0GGo1Z-wy7tWqTyQmKh9N6frjr-Py4Qu&s=
+=3Db6JYoJibAULXnAUqOwlm3YogQhBWGoSYoKvM9v6zZQY&e=3D>
+
+From: Laura Orlow-Kojac <LOrlow@CarolinaChemistries.com<mailto:LOrlow@Carol=
+inaChemistries.com>>
+Sent: Wednesday, August 24, 2022 12:03 PM
+To: rvairavan@caldonbiotech.com<mailto:rvairavan@caldonbiotech.com>
+Cc: Patti Shugart <pattigaull@aol.com<mailto:pattigaull@aol.com>>; Christin=
+a Gonzales <CGonzales@CarolinaChemistries.com<mailto:CGonzales@CarolinaChem=
+istries.com>>
+Subject: CALDON PO for APPROVAL for CAP order due Sept 2022
+
+
+
+
+Hello Ram,
+
+
+
+Hope all is well.  We are getting ready for the Fall CAP order.
+
+
+
+Please see attached the Purchase Order I created for you. From Caldon Biote=
+ch to CLC.
+
+
+
+Noting all the important information for CAP (their PO is also attached for=
+ reference) .
+
+
+
+I used last order as the template.  I used the information you gave me for =
+the Survey #.
+
+
+
+Please review then EMAIL back your APPROVAL. I will then forward to Custome=
+r Service for them to put I the Computer.
+
+
+
+We will be manufacturing the week of September 5-9.
+
+Laura Orlow-Kojac
+Carolina Liquid Chemistries Corp.
+510 W. Central Avenue
+Suite  C
+Brea CA 92821
+714-529-7125   fax 714-529-7274
+
+
+--_000_SJ0PR22MB2672CBDC6575969DB9940946C5769SJ0PR22MB2672namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Mistral;
+	panose-1:3 9 7 2 3 4 7 2 4 3;}
+@font-face
+	{font-family:"Lucida Handwriting";
+	panose-1:3 1 1 1 1 1 1 1 1 1;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+p.xmsonormal, li.xmsonormal, div.xmsonormal
+	{mso-style-name:x_msonormal;
+	margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle21
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Thank you Ram.&nbsp; We will proceed as planned. <o:=
+p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Have a great day, <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-family:&quot;Lucida Handwriti=
+ng&quot;;color:navy">Laura Orlow-Kojac<o:p></o:p></span></i></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:navy">Carolina Liquid Chemistries Corp.<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:navy">510 W. Central Avenue<o:p></o:p></span></p=
+>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:navy">Suite&nbsp; C&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:navy">Brea CA 92821<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:navy">714-529-7125&nbsp;&nbsp; fax 714-529-7274<=
+o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b>From:</b> rvairavan@caldonbiotech.com &lt;rvairav=
+an@caldonbiotech.com&gt;
+<br>
+<b>Sent:</b> Sunday, August 28, 2022 7:13 AM<br>
+<b>To:</b> Laura Orlow-Kojac &lt;LOrlow@CarolinaChemistries.com&gt;<br>
+<b>Cc:</b> Patti Shugart &lt;pattigaull@aol.com&gt;; Christina Gonzales &lt=
+;CGonzales@CarolinaChemistries.com&gt;<br>
+<b>Subject:</b> FW: CALDON PO for APPROVAL for CAP order due Sept 2022<o:p>=
+</o:p></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Dear Laura<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thank you for your mail. I approve the order. Kindly=
+ start the production as planned<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Sincerely yours<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Ram<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:22.0pt;font-family:Mistral;=
+color:#4472C4">Ramanath Vairavan Ph.D</span><o:p></o:p></p>
+<p class=3D"MsoNormal">President<o:p></o:p></p>
+<p class=3D"MsoNormal">Caldon Biotech<o:p></o:p></p>
+<p class=3D"MsoNormal">Mobile: 760-402-6335; <a href=3D"mailto:rvairavan@ca=
+ldonbiotech.com">
+<span style=3D"color:blue">rvairavan@caldonbiotech.com</span></a><o:p></o:p=
+></p>
+<p class=3D"MsoNormal"><u><span style=3D"color:blue"><a href=3D"https://url=
+defense.proofpoint.com/v2/url?u=3Dhttps-3A__nam04.safelinks.protection.outl=
+ook.com_-3Furl-3Dhttp-253A-252F-252Fwww.diacarta.com-252F-26data-3D01-257C0=
+1-257Ceisenbm-2540labcorp.com-257Cb84ab9ac12c84e33eba208d7101527c9-257C7b3b=
+f3a5ce934afbabec7bf49544d250-257C1-26sdata-3DJBxYSwQlgWm1b6OAMGpqfkHV8iGuwk=
+9X1Ks2aWuwF3w-253D-26reserved-3D0&amp;d=3DDwMF_g&amp;c=3DuhUSuyNScXHb_F2nn0=
+PKeY0q4oY6FfjGrtpKpaZYX9Y&amp;r=3Dn9qe1kpx8Rqz4bAJd9cJIw&amp;m=3DGlMtmaha6M=
+cdnPRI3w16Pp5HY27OY05J0GGo1Z-wy7tWqTyQmKh9N6frjr-Py4Qu&amp;s=3Db6JYoJibAULX=
+nAUqOwlm3YogQhBWGoSYoKvM9v6zZQY&amp;e=3D">www.caldonbiotech.com</a></span><=
+/u><o:p></o:p></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b>From:</b> Laura Orlow-Kojac &lt;<a href=3D"mailto=
+:LOrlow@CarolinaChemistries.com">LOrlow@CarolinaChemistries.com</a>&gt;
+<br>
+<b>Sent:</b> Wednesday, August 24, 2022 12:03 PM<br>
+<b>To:</b> <a href=3D"mailto:rvairavan@caldonbiotech.com">rvairavan@caldonb=
+iotech.com</a><br>
+<b>Cc:</b> Patti Shugart &lt;<a href=3D"mailto:pattigaull@aol.com">pattigau=
+ll@aol.com</a>&gt;; Christina Gonzales &lt;<a href=3D"mailto:CGonzales@Caro=
+linaChemistries.com">CGonzales@CarolinaChemistries.com</a>&gt;<br>
+<b>Subject:</b> CALDON PO for APPROVAL for CAP order due Sept 2022<o:p></o:=
+p></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"xmsonormal">&nbsp;<o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:14.0pt">Hello Ram,<o:p></o=
+:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:14.0pt"><o:p>&nbsp;</o:p><=
+/span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:14.0pt">Hope all is well.&=
+nbsp; We are getting ready for the Fall CAP order.
+</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:14.0pt">&nbsp;</span><o:p>=
+</o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:14.0pt">Please see attache=
+d the Purchase Order I created for you. From Caldon Biotech to CLC.
+</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:14.0pt">&nbsp;</span><o:p>=
+</o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:14.0pt">Noting all the imp=
+ortant information for CAP (their PO is also attached for reference) .
+<o:p></o:p></span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:14.0pt"><o:p>&nbsp;</o:p><=
+/span></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:14.0pt">I used last order =
+as the template. &nbsp;I used the information you gave me for the Survey #.
+</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:14.0pt">&nbsp;</span><o:p>=
+</o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:14.0pt;background:yellow;m=
+so-highlight:yellow">Please review then EMAIL back your APPROVAL. I will th=
+en forward to Customer Service for them to put I the Computer</span><span s=
+tyle=3D"font-size:14.0pt">.
+</span><o:p></o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:14.0pt">&nbsp;</span><o:p>=
+</o:p></p>
+<p class=3D"xmsonormal"><span style=3D"font-size:14.0pt">We will be manufac=
+turing the week of September 5-9.</span><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><i><span style=3D"font-family:&quot;Lucida Handwriti=
+ng&quot;;color:navy">Laura Orlow-Kojac<o:p></o:p></span></i></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:navy">Carolina Liquid Chemistries Corp.<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:navy">510 W. Central Avenue<o:p></o:p></span></p=
+>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:navy">Suite&nbsp; C&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:navy">Brea CA 92821<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:navy">714-529-7125&nbsp;&nbsp; fax 714-529-7274<=
+o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_SJ0PR22MB2672CBDC6575969DB9940946C5769SJ0PR22MB2672namp_--

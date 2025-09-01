@@ -1,0 +1,185 @@
+Return-Path: <>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id EAl1F06zeWOZpQ8A7/vpDg
+	(envelope-from <>)
+	for <rvairavan@caldonbiotech.com>; Sat, 19 Nov 2022 22:55:42 -0600
+Return-path: <>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Sat, 19 Nov 2022 22:55:42 -0600
+Received: from mx0a-000c9301.pphosted.com ([67.231.144.225]:16302)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	id 1owcMn-004Kqs-VB
+	for rvairavan@caldonbiotech.com;
+	Sat, 19 Nov 2022 22:55:42 -0600
+Received: from pps.filterd (m0166658.ppops.net [127.0.0.1])
+	by mx0a-000c9301.pphosted.com (8.17.1.9/8.17.1.9) with ESMTP id 2AK4s1cn019726
+	for <rvairavan@caldonbiotech.com>; Sat, 19 Nov 2022 22:55:31 -0600
+Received: from nam10-bn7-obe.outbound.protection.outlook.com (mail-bn7nam10lp2100.outbound.protection.outlook.com [104.47.70.100])
+	by mx0a-000c9301.pphosted.com (PPS) with ESMTPS id 3kxwbf8e26-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <rvairavan@caldonbiotech.com>; Sat, 19 Nov 2022 22:55:30 -0600 (CST)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=cejx9Wj4pk94ohActrF/S+1kNgxIT4JxQTvtEZpOgGI0UpxtzZ1zabNpS7dXPJgXDJ/ODdBfk3LyZKYgr1PXxtudSJpVPaR+J0HbO6hBvqwT1DcDTKvOZOHCOckDI/Xj+w5H4btM1cwY8a231ooY/y+phqweIGwbrShuWS7mcNs+XtXCkdwLn6GFxnAMqJaBG2/AqNyjyTiFHvFC1EUs0UX/DW/MiwO/V7AVon8bVFCw8NEnGM49QAuDy9rAmBzKu4UPWqkzH1k4tFK0ay5m2LJAqtHcayH06jb4eSWCq4Lt3ypdCQDKWEo2lPNw/tLRYvrXyQsWaxiTeUm8DdNvEg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=1Z2I+7CU4Sbyjk4YN96LZ1HPYb3BDI4fOqAChLDQllw=;
+ b=eoLwTPSoCc2BCc4MNzqbn9mcLVtjSsDF+jc7W82UAu8V5fgtHAH0PFfz4DJXZ21h67QU4+ivToB3ft2huQb+jDz6NV6yQYjab+9BIdV38dwS9F5AWOEoVxneOmrBtw4e64q09IyheKFV+y4OCXywHl3vOxx2RqEC3bcyvM6pZj3v0Yx5xlKvchJ+HQMX2jDJI8d+WzzUeygnyNvSdK+ZQjLpX+nQSVFVHQOBlbi+i4WDph0SyLBsBGZedMrcm3yC37vQYktZXSgiu8pconot5Me0hjYlZcJXiK7sbO1U2ObhZj7RrWvAfTre1zEFdhCV4sQOXwJBkrV4+3F7fZu3RA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=pass
+ action=none header.from=cap.org; dkim=pass header.d=cap.org; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=thecap.onmicrosoft.com; s=selector2-thecap-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=1Z2I+7CU4Sbyjk4YN96LZ1HPYb3BDI4fOqAChLDQllw=;
+ b=WPCCYDke3PeTaxjD5p4MAWz+V5aREfoLuYHgdoAYJxohD1eQ7RGe1QCUhHsC2gwoQKhaGFchdQeL8UBkDMdOFX2qIuR6NeIJPwjmm5elMzFoJjJH/3Y6iev8HuVKuQpcfTDabJYCY8i/zTExvnehv8R5inA4cVwkUVABKPlByIw=
+Received: from SA2PR11MB4955.namprd11.prod.outlook.com (2603:10b6:806:fa::16)
+ by SN7PR11MB7042.namprd11.prod.outlook.com (2603:10b6:806:299::5) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5813.20; Sun, 20 Nov
+ 2022 04:55:28 +0000
+Received: from SA2PR11MB4955.namprd11.prod.outlook.com ([::1]) by
+ SA2PR11MB4955.namprd11.prod.outlook.com ([fe80::5a1f:b0f4:c479:31e%4]) with
+ Microsoft SMTP Server id 15.20.5834.015; Sun, 20 Nov 2022 04:55:28 +0000
+From: "Diane Dial (s)" <DDIAL@cap.org>
+To: "rvairavan@caldonbiotech.com" <rvairavan@caldonbiotech.com>
+Subject: Automatic reply: ADL-B 2022 CAP Headquarters - Standard Purchase
+ Order 97999, 0
+Thread-Topic: ADL-B 2022 CAP Headquarters - Standard Purchase Order 97999, 0
+Thread-Index: 
+ AdiMirdn82IPWG+KS2mfExGr4dnLhAHBNV/EAaKgNJ0BXPL7YgGQt7LGAc8iYioCdJg8PQMUg1tkAjq/49MCoDVT5gI7xfvFAWAvDKsCAVxwDgIp1BK9rZ6YXIDSbywMoQ==
+Date: Sun, 20 Nov 2022 04:55:28 +0000
+Message-ID: 
+ <2180be41f54541cf8868f1e77580173f@SA2PR11MB4955.namprd11.prod.outlook.com>
+References: 
+ <SN6PR11MB2782D887B3B7A9E00D13D975B6BA9@SN6PR11MB2782.namprd11.prod.outlook.com>
+  <001601d8d791$062afd20$1280f760$@caldonbiotech.com>
+ <CH2PR11MB45019E949A517049DAA1D78DB55A9@CH2PR11MB4501.namprd11.prod.outlook.com>
+ <SN6PR11MB2782B41813BA1A39E8A32EEFB65A9@SN6PR11MB2782.namprd11.prod.outlook.com>
+ <CH0PR11MB5348576CF18AA67E8CEC22C5B65A9@CH0PR11MB5348.namprd11.prod.outlook.com>
+ <SN6PR11MB2782A0056A9306B36C8BAF10B65A9@SN6PR11MB2782.namprd11.prod.outlook.com>
+ <CH0PR11MB5348CBAB22183743F1CBADAEB6249@CH0PR11MB5348.namprd11.prod.outlook.com>
+ <CH0PR11MB53487CE05894960A9CDB240BB62B9@CH0PR11MB5348.namprd11.prod.outlook.com>
+  <SN6PR11MB2782E43F14F1D55F0E6B38D5B62D9@SN6PR11MB2782.namprd11.prod.outlook.com>
+ <006b01d8e5b3$bd23db20$376b9160$@caldonbiotech.com>
+ <SN6PR11MB278216E4B1BDAA2E517CF1F2B62E9@SN6PR11MB2782.namprd11.prod.outlook.com>
+ <CH0PR11MB53486BA176936943F3206A43B62E9@CH0PR11MB5348.namprd11.prod.outlook.com>
+  <SN6PR11MB278269DEA46027477635E6E5B62E9@SN6PR11MB2782.namprd11.prod.o
+ utlook.com>  <01bd01d8fc9c$49bb50a0$dd31f1e0$@caldonbiotech.com>
+In-Reply-To: <01bd01d8fc9c$49bb50a0$dd31f1e0$@caldonbiotech.com>
+X-MS-Has-Attach: 
+X-Auto-Response-Suppress: All
+X-MS-Exchange-Inbox-Rules-Loop: ddial@cap.org
+X-MS-TNEF-Correlator: 
+x-ms-exchange-parent-message-id: 
+ <01bd01d8fc9c$49bb50a0$dd31f1e0$@caldonbiotech.com>
+auto-submitted: auto-generated
+x-ms-exchange-generated-message-source: Mailbox Rules Agent
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SA2PR11MB4955:EE_|SN7PR11MB7042:EE_
+x-ms-office365-filtering-correlation-id: 048bd701-c042-4db2-aee1-08dacab371e6
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: 
+ 3biJ/bvXijAsdzRWOCTPFNglYu9ijlr3sK1JJS6OR49aq/+BmqP/gkr0LvJf3vYpuCuHvaZh9eqexR85E/Cerd/XvqBeivvRgjnnulMGJcHbYIx8X8FTHyrSiCHU3dDrbkNWdQ4Kw1sUhNEmr3e2vpcuZtMG2OGpbtnyNEvn/3TSDOKavrhLQ05eEsAYhkjDuw2tX3SEJM9HgHJY7LwqJGfipw9IwL35mzKJYrg+0wSMMgYFkIHXscCQ/WG/HBNl3XQUcvwck3/DVN/Q0cq5FROduDBevtVkkWAQ+/xo0a7XOjwdsEH0jXnLbhWI38BN4Gk+JIB66nP57N84a3aTHt/Ho8pCOpXNgDZDRZ7sItRAw9nekQtwxkWazcV89YQYELjHN0mGBEH1hkd1SC5FsfOYARO2gVY/ISjhSB7W832FOvfRKVEXt3qKmEEiCyqcK3ulQRiqnW1R7c6L4wiW095gYksNRsewIeVmWrsBgVjrj7AWdhzocQl1ie/pHJaFmNl1X3wYwEZNrSSezi54N88VcsO96BlWyq1nLMoKcEQG7/AvTBfgb4nYNCWlrojyyLG7lIFEZSFa/depikfbvBpY5/tJLO12t2QKNlC4QPEPZn5MmGOCskSTiISRqVYO
+x-forefront-antispam-report: 
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SA2PR11MB4955.namprd11.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230022)(50650200009)(376002)(39850400004)(366004)(396003)(136003)(346002)(451199015)(2906002)(558084003)(55016003)(498600001)(71200400001)(122000001)(5660300002)(9686003)(7696005)(8936002)(6506007)(786003)(24736004)(108616005)(66946007)(64756008)(78352004)(8676002)(66556008)(6916009)(66446008)(42882007)(316002)(66476007)(41300700001)(88996005)(111220200005)(80100003);DIR:OUT;SFP:1501;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: 
+ o8FtuIMnMd9X2amM2TBDGMf4Ikj+BZw+Az2ZVZTkQjNM/nYYrVhNT0/9g1O6GBMCUNc4VsW6I6jLUitTERdPUd5ervBs+Az83SeF1v8zvGmwcGj0R4W0h+e7Z01xFLaQx0CQDkIM/pIsFdsOfbSWx0cVRhcIpj5qV2YMlsmhSUQpC4zf6KJoXJe25obLTEJNFR47T6zcWG12qIwif6+qJnM7Mc907ham15xcJkka++K/7vLoI56viYc5ac+Yo5yIG42yuEV8OKMhAxBs5o/3+YHvleBAQc+bzrObQqBPjCmE0ok/UgwmaNn94brnqRL4
+Content-Type: multipart/alternative;
+	boundary="_000_2180be41f54541cf8868f1e77580173fSA2PR11MB4955namprd11pr_"
+MIME-Version: 1.0
+X-OriginatorOrg: cap.org
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SA2PR11MB4955.namprd11.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 048bd701-c042-4db2-aee1-08dacab371e6
+X-MS-Exchange-CrossTenant-originalarrivaltime: 20 Nov 2022 04:55:28.4934
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 4503f2e1-c310-4ce0-95cc-fe3d26359fc4
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN7PR11MB7042
+X-Proofpoint-GUID: AaM9tv2p7V3EKnzPGu2JT9UocF9xeiZU
+X-Proofpoint-ORIG-GUID: AaM9tv2p7V3EKnzPGu2JT9UocF9xeiZU
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.219,Aquarius:18.0.895,Hydra:6.0.545,FMLib:17.11.122.1
+ definitions=2022-11-20_01,2022-11-18_01,2022-06-22_01
+X-Proofpoint-Spam-Details: rule=outbound_notspam policy=outbound score=0 lowpriorityscore=0
+ bulkscore=0 mlxlogscore=718 impostorscore=0 spamscore=0 malwarescore=0
+ adultscore=0 suspectscore=0 ndrscore=0 priorityscore=1501 adjustscore=0
+ phishscore=0 mlxscore=0 clxscore=1031 classifier=spam adjust=0 reason=mlx
+ scancount=1 engine=8.19.0-2210310000 definitions=main-2211200043
+X-Spam-Status: No, score=2.7
+X-Spam-Score: 27
+X-Spam-Bar: ++
+X-Spam-Flag: NO
+
+--_000_2180be41f54541cf8868f1e77580173fSA2PR11MB4955namprd11pr_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+I am currently out of the office. I will return on 11/28/22.
+
+
+Diane
+
+--_000_2180be41f54541cf8868f1e77580173fSA2PR11MB4955namprd11pr_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office" xmlns:w=3D"urn:sc=
+hemas-microsoft-com:office:word" xmlns:m=3D"http://schemas.microsoft.com/of=
+fice/2004/12/omml" xmlns=3D"http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Times New Roman",serif;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style>
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal" style=3D"text-autospace:none"><span style=3D"font-si=
+ze:12.0pt;font-family:&quot;Times New Roman&quot;,serif">I am currently out=
+ of the office.&nbsp;I will return on 11/28/22.<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"text-autospace:none"><span style=3D"font-si=
+ze:12.0pt;font-family:&quot;Times New Roman&quot;,serif"><o:p>&nbsp;</o:p><=
+/span></p>
+<p class=3D"MsoNormal" style=3D"text-autospace:none"><span style=3D"font-si=
+ze:12.0pt;font-family:&quot;Times New Roman&quot;,serif"><o:p>&nbsp;</o:p><=
+/span></p>
+<p class=3D"MsoNormal" style=3D"text-autospace:none"><span style=3D"font-si=
+ze:12.0pt;font-family:&quot;Times New Roman&quot;,serif">Diane<o:p></o:p></=
+span></p>
+</div>
+</body>
+</html>
+
+--_000_2180be41f54541cf8868f1e77580173fSA2PR11MB4955namprd11pr_--

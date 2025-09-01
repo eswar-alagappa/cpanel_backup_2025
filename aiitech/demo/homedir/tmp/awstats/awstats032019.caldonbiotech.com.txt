@@ -1,0 +1,1011 @@
+AWSTATS DATA FILE 7.6 (build 20161204)
+# If you remove this file, all statistics for date 201903 will be lost/reset.
+# Last config file used to build this data file was /home3/cbt/tmp/awstats/awstats.caldonbiotech.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2010                
+POS_TIME 2693                
+POS_VISITOR 20692               
+POS_DAY 26088               
+POS_DOMAIN 3555                
+POS_LOGIN 4085                
+POS_ROBOT 4240                
+POS_WORMS 5030                
+POS_EMAILSENDER 5161                
+POS_EMAILRECEIVER 5304                
+POS_SESSION 26915               
+POS_SIDER 27126               
+POS_FILETYPES 5439                
+POS_DOWNLOADS 5780                
+POS_OS 5886                
+POS_BROWSER 6183                
+POS_SCREENSIZE 7331                
+POS_UNKNOWNREFERER 7405                
+POS_UNKNOWNREFERERBROWSER 8200                
+POS_ORIGIN 8896                
+POS_SEREFERRALS 9040                
+POS_PAGEREFS 9207                
+POS_SEARCHWORDS 9413                
+POS_KEYWORDS 9565                
+POS_MISC 2356                
+POS_ERRORS 9624                
+POS_CLUSTER 3941                
+POS_SIDER_404 9806                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20190401001949 131 29942 12481185000128
+FirstTime 20190301004413
+LastTime 20190331232944
+LastUpdate 20190401071151 131 0 130 0 0
+TotalVisits 490                 
+TotalUnique 133                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 134                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+TotalMisc 0 0 0
+JavaEnabled 0 0 0
+FlashSupport 0 0 0
+AddToFavourites 0 18 0
+QuickTimeSupport 0 0 0
+DirectorSupport 0 0 0
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 34 35 191664 53 109 1569549
+1 41 84 2768632 56 114 684510
+2 22 22 76947 114 174 2417796
+3 162 183 9756062 305 389 3564383
+4 27 27 611372 71 102 576738
+5 29 49 1302535 51 89 661061
+6 248 1035 112963946 76 122 1593901
+7 320 924 168106852 49 77 716691
+8 202 491 112147521 90 136 1373302
+9 73 267 15456938 41 80 542658
+10 28 49 1315519 148 192 1328318
+11 99 360 17389730 94 143 712784
+12 78 239 9999425 55 95 1082639
+13 58 132 6837074 100 153 852723
+14 86 159 9243561 32 66 332846
+15 28 90 4531424 55 87 777519
+16 19 19 403 57 82 684841
+17 24 44 94211 28 56 425036
+18 31 31 564185 27 55 569926
+19 15 15 0 40 70 636575
+20 26 26 196037 96 139 1838172
+21 40 55 2466039 46 81 643618
+22 27 27 386751 108 140 533579
+23 38 38 1460 47 92 750375
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 24
+us 1577 4026 454275730
+ca 68 68 4067367
+lt 31 31 1662933
+in 25 222 14633542
+de 13 13 845229
+fr 9 9 414598
+ru 5 5 118226
+nl 4 4 59393
+za 2 2 114585
+no 2 2 806
+cl 2 2 56217
+ch 2 2 806
+cn 2 2 78697
+ua 2 2 828
+sg 2 2 806
+vn 1 1 403
+br 1 1 403
+es 1 1 403
+vg 1 1 403
+mu 1 1 75301
+au 1 1 403
+it 1 1 403
+ro 1 1 403
+hk 1 1 403
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 17
+spider 149 2477532 20190331030251 0
+Googlebot/ 143 3718 20190331200727 143
+bot[\s_+:,\.\;\/\\-] 65 38388 20190331015259 63
+Baiduspider/ 44 1217327 20190322113404 11
+bingbot/ 39 1014 20190331220857 39
+unknown 34 19192 20190331190209 34
+Applebot/ 22 572 20190330093126 22
+(firefox/)([0-9]\.|[0-1][0]\.) 20 56154 20190326153106 18
+Mail\.RU_Bot/ 14 9518 20190329151850 14
+no_user_agent 11 136026 20190330120820 9
+YandexBot/ 10 9414 20190330053548 10
+Exabot/ 6 156 20190331065421 6
+aiHitBot/ 2 52 20190326181402 2
+[\s_+:,\.\;\/\\-]bot 2 52 20190311051636 2
+MojeekBot/ 1 26 20190313090603 1
+Uptimebot/ 1 0 20190302183948 0
+Python\-urllib/ 1 1117 20190314232634 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 14
+xml 2 2090 0 0
+jpg 149 8619077 0 0
+svg 59 174216 0 0
+html 501 36804906 0 0
+woff 15 268248 0 0
+js 868 32986638 0 0
+gif 68 207699 0 0
+Unknown 30 415785 0 0
+woff2 39 2272932 0 0
+php 1107 310738005 0 0
+ttf 44 804764 0 0
+png 260 5426664 0 0
+eot 17 857616 0 0
+css 1242 76829648 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+//wp-content/plugins/js_composer/changes.txt 30 0 1566840
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 17
+ios_ipad 1 1
+macosx11 6 6
+macosx5 2 2
+win8 4 4
+macosx10 3 3
+ios_iphone 102 14
+macosx12 3 3
+win7 421 178
+linuxandroid 89 8
+winxp 57 57
+macosx 9 6
+win2003 13 13
+Unknown 529 529
+linux 71 13
+win10 3076 903
+macosx7 1 1
+winunknown 14 14
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 56
+chrome23.0.1271.95 1 1
+msie8.0 1 1
+chrome73.0.3683.27 3 3
+firefox64.0 1 1
+chrome73.0.3683.75 42 4
+mozilla 7 7
+chrome72.0.3626.119 411 115
+chrome65.0.3325.181 47 4
+chrome69.0.3497.92 1 1
+chrome51.0.2704.106 21 21
+chrome64.0.3282.186 1 1
+firefox66.0 2 2
+chrome47.0.2534.17 1 1
+chrome72.0.3626.105 89 8
+firefox50.0 8 8
+chrome71.0.3578.80 2 2
+firefox33.0 2 2
+edge17 254 34
+opera12.14 1 1
+opera41.9.3743.8471 2 2
+msie9.0 143 135
+chrome31.0.1650.57 1 1
+safari12.0 98 11
+edge18 29 2
+firefox46.0 1 1
+safari9.0 1 1
+netscape5.8 7 7
+edge34 2 2
+chrome72.0.3626.121 1 1
+chrome72.0.3626.81 1 1
+chrome34.0.1847.131 1 1
+chrome49.0.2623.75 1 1
+firefox63.0 1 1
+chrome66.0.3359.117 1 1
+safari12.0.3 3 1
+safari 4 3
+chrome56.0.2924.87 3 3
+chrome65.0.3325.162 2 2
+msie10.0 1 1
+msie6.1 55 55
+chrome72.0.3626.109 2 2
+firefox58.0 1 1
+chrome66.0.3359.139 31 31
+Unknown 529 529
+msie6.0 13 13
+chrome70.0.3538.67 1 1
+chrome45.0.2454.93 1 1
+chrome60.0.3112.113 4 4
+firefox65.0 2389 688
+firefox43.0 60 5
+chrome60.0.3112.101 2 2
+chrome73.0.3679.0 18 3
+firefox62.0 8 8
+chrome50.0.2661.102 1 1
+opera36.0.2130.32 2 2
+msie11.0 86 14
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 14
+WordPress/5.0.3;_http://caldonbiotech.com 20190305183856
+WordPress/5.0.4;_https://caldonbiotech.com 20190331232944
+WordPress/5.1;_http://caldonbiotech.com 20190301111630
+python-requests/2.18.4 20190330050634
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20190301232826
+Y2FsZG9uYmlvdGVjaC5jb20_print(238947899389478923-34567343546345); 20190302184145
+WordPress 20190331172200
+Poster 20190329175255
+WordPress/5.0.3;_https://caldonbiotech.com 20190313015829
+Y2FsZG9uYmlvdGVjaC5jb20{${print(238947899389478923-34567343546345)}} 20190302184143
+AHC/2.1 20190303081413
+Mozilla/5.8 20190302184213
+Cpanel-HTTP-Client/1.0 20190301232824
+python-requests/2.18.1 20190301120021
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 13
+Y2FsZG9uYmlvdGVjaC5jb20{${print(238947899389478923-34567343546345)}} 20190302184143
+WordPress/5.0.3;_https://caldonbiotech.com 20190313015829
+AHC/2.1 20190303081413
+python-requests/2.18.1 20190301120021
+Cpanel-HTTP-Client/1.0 20190301232824
+WordPress/5.0.4;_https://caldonbiotech.com 20190331232944
+WordPress/5.0.3;_http://caldonbiotech.com 20190305183856
+Y2FsZG9uYmlvdGVjaC5jb20_print(238947899389478923-34567343546345); 20190302184145
+Windows_Live_Writter 20190331120749
+WordPress/5.1;_http://caldonbiotech.com 20190301111630
+python-requests/2.18.4 20190330050634
+WordPress 20190331172200
+Poster 20190329175255
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 331 363
+From1 2 2
+From2 138 146
+From3 1 1
+From4 1283 3889
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+www_google_com 138 146
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 1
+https://www.biocompare.com/101719-Caldon-Biotech-Inc/ 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 9
+400 2 2
+302 98 0
+409 70 5810
+405 6 168
+301 576 0
+404 518 20705969
+500 9 8045
+406 515 116164
+403 467 63124
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 341
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/aldolase-reagent-pack-highlights%5C/%5C%22 1 http://www.google.com/url
+/1/wp-login.php 1 -
+/bkp.rar 1 -
+/.well-known/autoconfig/mail/config-v1.1.xml 1 -
+/2.rar 1 -
+/wp/wp-content/themes/AdvanceImage5/functions.php 2 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/test-application%5C/%5C%22 1 http://www.google.com/url
+/site.gz 1 -
+/a.zip 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/dimension-rxl%5C/%5C%22 1 http://www.google.com/url
+/www/back.zip 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/about-us%5C/%5C%22 1 http://www.google.com/url
+/.git/head 1 -
+/111.tar.gz 1 -
+/123456.tar.gz 1 -
+/new.zip 1 -
+/source.zip 1 -
+/mysqladmin/ 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/doctors%5C/%5C%22 1 http://www.google.com/url
+/2018/wp-login.php 1 -
+/Ordering.html 9 http://caldonbiotech.com
+/x/ 1 -
+/upload/ 1 -
+/b/back.zip 1 -
+/555.zip 1 -
+/new/wp-admin/install.php 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/our-clinic%5C/testimonials%5C/%5C%22 1 http://www.google.com/url
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/au-800%5C/%5C%22 1 http://www.google.com/url
+/temp.rar 1 -
+/upload/back.zip 1 -
+/config.gz 1 -
+/p1pi.html 6 -
+/reserv.rar 1 -
+/123.zip 1 -
+/backup/ 3 -
+/drupal.rar 1 -
+/www.rar 1 -
+//plus/mytag_js.php 9 http://www.caldonbiotech.com//plus/mytag_js.php
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/news%5C/%5C%22 1 http://www.google.com/url
+/old/wp-admin/ 4 -
+/wp1/wp-login.php 1 -
+/mysite/wp-login.php 1 -
+/upl.zip 1 -
+/test/wp-login.php 1 -
+/files/back.zip 1 -
+/th1s_1s_a_4o4.html 5 -
+/system.tar.gz 1 -
+/2017.rar 1 -
+/site.zip 1 -
+/images/body_bg.gif 1 http://caldonbiotech.com/style.css
+/1111.tar.gz 1 -
+/new.tar.gz 1 -
+/bkp.tar.gz 1 -
+//plus/read.php 1 http://www.caldonbiotech.com//plus/read.php
+/blog/wp-admin/ 4 -
+/1111.gz 1 -
+/products.html 7 -
+/source.tar.gz 1 -
+/11.zip 1 -
+/www.tar.gz 1 -
+/scripts.zip 1 -
+/res.rar 1 -
+/wp.tar.gz 1 -
+/source.rar 1 -
+/php.zip 2 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/aldolase-reagent-package-insert%5C/%5C%22 1 http://www.google.com/url
+/b.rar 1 -
+/reserv/back.zip 2 -
+/1/ 2 -
+/back/back.zip 1 -
+/bkup.tar.gz 1 -
+/arch/ 2 -
+/orig.zip 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/significance-of-testing-aldolase%5C/%5C%22 1 http://www.google.com/url
+/old.zip 1 -
+/backup/1.zip 1 -
+/dump.zip 1 -
+/x.tar.gz 1 -
+/arch/back.zip 1 -
+/123456.zip 1 -
+/wp-craft-report.php 1 http://www.google.com
+/123.rar 1 -
+/old/wp-content/themes/AdvanceImage5/functions.php 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/services%5C/service-page%5C/%5C%22 1 http://www.google.com/url
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/%5C%22 1 http://www.google.com/url
+/style.css 9 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/our-clinic%5C/photo-gallery%5C/%5C%22 1 http://www.google.com/url
+/res/back.zip 2 -
+/11111.gz 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/bayer-advia-1650%5C/%5C%22 1 http://www.google.com/url
+/config.rar 1 -
+/dump/back.zip 1 -
+/de/wp-login.php 1 -
+/111111.gz 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/departments%5C/%5C%22 1 http://www.google.com/url
+/backup.tar.gz 1 -
+/file/back.zip 1 -
+/reserv/1.zip 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/au-2700%5C/%5C%22 1 http://www.google.com/url
+/wordpress/back.zip 1 -
+/back/ 2 -
+/config.tar.gz 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/contact%5C/%5C%22 1 http://www.google.com/url
+/2018.rar 1 -
+/images/New_Aldolase_Frozen_Control.jpg 26 -
+/file/ 1 -
+/1111111.rar 1 -
+/drupal.zip 1 -
+/123/1.zip 1 -
+/sql.tar.gz 1 -
+/2.zip 1 -
+/origin.rar 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/sputolysin-stat-pack%5C/%5C%22 1 http://www.google.com/url
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/cobas-mira%5C/%5C%22 1 http://www.google.com/url
+/11.tar.gz 1 -
+/new.rar 1 -
+/arx/ 5 -
+/1/1.zip 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/msds%5C/%5C%22 1 http://www.google.com/url
+/dump.tar.gz 1 -
+/script.zip 1 -
+/orig.rar 1 -
+/images/New_Aldolase_Test.jpg 4 -
+/111.zip 2 -
+/site.rar 1 -
+/origin.zip 1 -
+/old.tar.gz 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/aldolase-reagent-pack-msds%5C/%5C%22 1 http://www.google.com/url
+/main.zip 1 -
+/2019.zip 1 -
+/site.tar.gz 1 -
+/js/mage/cookies.js 1 caldonbiotech.com
+/555.tar.gz 1 -
+/p1as10.html 1 -
+/form.html 2 -
+/p1as12.html 1 -
+/wordpress/wp-content/themes/AdvanceImage5/functions.php 2 -
+/install.php 1 -
+/11.rar 1 -
+/tmp.zip 1 -
+//data/cache/asd.php 1 http://www.caldonbiotech.com//data/cache/asd.php
+/arx/back.zip 3 -
+/phpMyAdmin/ 1 -
+/arch/1.zip 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/dt_gallery%5C/hospital%5C/%5C%22 1 http://www.google.com/url
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/sputolysin-product-highlight%5C/%5C%22 1 http://www.google.com/url
+/1.tar.gz 1 -
+/111.gz 1 -
+/reserv.zip 1 -
+/3.tar.gz 1 -
+/ 44 http://caldonbiotech.com/
+/b.tar.gz 1 -
+/site1.zip 2 -
+/system.rar 1 -
+/r.zip 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/olympus-au-400-600-640-2700-5400%5C/%5C%22 1 http://www.google.com/url
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/olympus-b%5C/%5C%22 1 http://www.google.com/url
+/t&c.html 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/client-testimonials%5C/%5C%22 1 http://www.google.com/url
+/teststite/wp-login.php 1 -
+/reserv.tar.gz 1 -
+/3.zip 1 -
+/111111.tar.gz 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/au-600%5C/%5C%22 1 http://www.google.com/url
+/2016.tar.gz 1 -
+/wordpress.tar.gz 1 -
+/ftp.tar.gz 1 -
+/arch.tar.gz 1 -
+/files.rar 1 -
+/mambots/editors/fckeditor/editor/filemanager/browser/default/connectors/php/connector.php 1 -
+/origin.tar.gz 1 -
+/reserv/ 3 -
+/p2.html 2 -
+/back/1.zip 1 -
+/wp-content/themes/AdvanceImage5/functions.php 2 -
+/r/back.zip 1 -
+/phpmyadmin/ 2 -
+/php.gz 1 -
+/admin/FCKeditor/editor/filemanager/browser/default/connectors/php/connector.php 1 -
+/scripts.tar.gz 1 -
+/admin.rar 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/services%5C/%5C%22 1 http://www.google.com/url
+/11.gz 1 -
+/b.zip 1 -
+/arx.tar.gz 1 -
+/src.zip 1 -
+/wp.zip 1 -
+/wp/ 1 -
+/2016.zip 1 -
+/2019/wp-login.php 1 -
+/p1as4.html 1 -
+/system.zip 1 -
+/1/back.zip 1 -
+/p1ph.html 1 -
+/images/page_bg.jpg 1 http://caldonbiotech.com/style.css
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/sample-page%5C/%5C%22 1 http://www.google.com/url
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/faq%5C/%5C%22 1 http://www.google.com/url
+/files.tar.gz 1 -
+/111111.zip 1 -
+/admin.zip 1 -
+/admin.tar.gz 1 -
+/wp/wp-admin/ 4 -
+/temp.tar.gz 1 -
+/temp.zip 1 -
+/dump/ 1 -
+/tmp.rar 1 -
+/wordpress/wp-content/plugins/ubh/up.php 2 -
+/mambots/editors/fckeditor/editor/filemanager/upload/php/upload.php 1 -
+/file.tar.gz 1 -
+/site/wp-login.php 1 -
+/res.tar.gz 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/our-clinic%5C/%5C%22 1 http://www.google.com/url
+/sql/ 1 -
+/123456.rar 1 -
+/site1.rar 1 -
+/2018.zip 1 -
+/1111111.gz 1 -
+/wp-content/plugins/wordfence/images/logo.png 1 -
+/catalog.html 1 -
+/scripts.rar 1 -
+/r.tar.gz 1 -
+/11111.rar 1 -
+/shop/wp-login.php 1 -
+/Contact.html 6 https://duckduckgo.com/
+/111.rar 2 -
+/www.zip 1 -
+/ftp.rar 1 -
+/master.rar 1 -
+/restore.tar.gz 1 -
+/joomla.zip 1 -
+/upl.rar 1 -
+/script.tar.gz 1 -
+/upl/ 1 -
+/config.zip 1 -
+/sql.rar 1 -
+/arx.rar 1 -
+/temp.php 1 -
+/files/ 1 -
+/drupal.tar.gz 1 -
+/wordpress.zip 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/departments%5C/department-page%5C/%5C%22 1 http://www.google.com/url
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/hitachi-717-aldolase%5C/%5C%22 1 http://www.google.com/url
+/wp/back.zip 1 -
+/res/ 3 -
+/ftp.zip 1 -
+/back.rar 1 -
+/wp/wp-admin/install.php 1 -
+/git.zip 1 -
+/res.zip 1 -
+/arx.zip 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/beckman-cx-7%5C/%5C%22 1 http://www.google.com/url
+/tmp.tar.gz 1 -
+/ads.txt 1 -
+/myadmin/ 1 -
+/p1.html 1 -
+/bkup.zip 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/au-400%5C/%5C%22 1 http://www.google.com/url
+/testblog/wp-login.php 1 -
+/123.tar.gz 1 -
+/magento_version 1 -
+/2019.tar.gz 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/2016%5C/05%5C/12%5C/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer%5C/%5C%22 1 http://www.google.com/url
+/dump.rar 1 -
+/upload.rar 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/aldolase-liquid-control-product-highlight%5C/%5C%22 1 http://www.google.com/url
+/wordpress/wp-admin/ 4 -
+/1.rar 1 -
+/3.rar 1 -
+/backup/back.zip 2 -
+/master.zip 1 -
+/1111111.zip 1 -
+/util/login.aspx 1 -
+/2.tar.gz 1 -
+/php.rar 2 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/package-insert-3%5C/%5C%22 1 http://www.google.com/url
+/user.rar 1 -
+/2018.tar.gz 1 -
+/site1.gz 1 -
+/2017.tar.gz 1 -
+/uploads.zip 1 -
+/wordpress/wp-admin/install.php 1 -
+/humans.txt 1 -
+/2019.rar 1 -
+/upload.tar.gz 1 -
+/php.tar.gz 1 -
+/wordpress/ 1 -
+/uploads.rar 1 -
+/restore.zip 1 -
+/x/back.zip 1 -
+/joomla.tar.gz 1 -
+//plus/90sec.php 1 http://www.caldonbiotech.com//plus/90sec.php
+/arx/1.zip 2 -
+/a.rar 1 -
+/123/ 2 -
+/file.rar 1 -
+/test/wp-admin/ 4 -
+/main.rar 1 -
+/sys.tar.gz 1 -
+/Support.html 7 -
+/p3ph.html 1 -
+/www/ 1 -
+/1111.zip 1 -
+/.env 1 -
+/Dockerfile 1 -
+/git.rar 1 -
+/webconfig.txt.php 4 http://www.google.com.hk
+/arch.rar 1 -
+/uploads.tar.gz 1 -
+/p3pi.html 1 https://www.google.com/
+/file.zip 1 -
+/upl/back.zip 1 -
+/sys.zip 1 -
+/sql.zip 1 -
+/pma/ 2 -
+/11111.tar.gz 1 -
+/wp.rar 1 -
+/123/back.zip 1 -
+/user/register/ 5 -
+/mailto:customersupport@caldonbiotech.com 2 -
+/2017.zip 1 -
+/admin/fckeditor/editor/filemanager/browser/default/connectors/php/connector.php 1 -
+/bkup.rar 1 -
+/user.tar.gz 1 -
+/com/wp-login.php 1 -
+/2016.rar 1 -
+/res/1.zip 1 -
+/bkp.zip 1 -
+/wp-content/plugins/wp-symposium/server/php/index.php 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/our-clinic%5C/prices%5C/%5C%22 1 http://www.google.com/url
+/wordpress.rar 1 -
+/old.rar 1 -
+/11111.zip 1 -
+/wp-json/oembed/1.0/%5C%22http:%5C/%5C/caldonbiotech.com%5C/aldolase-control-package-insert%5C/%5C%22 1 http://www.google.com/url
+/backup.rar 1 -
+/upload.zip 1 -
+/orig.tar.gz 1 -
+/cb 1 -
+/2017/wp-login.php 1 -
+/a.tar.gz 1 -
+/1111111.tar.gz 1 -
+/p4pi.html 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 134
+192.185.52.186 489 489 796 20190331232944
+169.149.235.144 255 822 154660057 20190304072149
+169.149.231.205 142 297 87267219 20190304082204
+169.149.211.103 119 295 52784486 20190304082056
+169.149.237.77 85 233 56179458 20190304083928
+184.154.139.49 64 72 4043553 20190312030626
+47.244.14.125 55 55 3446453 20190301142521
+184.154.139.4 50 50 3039899 20190326030319
+169.149.202.55 43 287 11649515 20190304062009
+73.115.120.169 36 265 19028640 20190305212111
+169.149.227.71 32 121 6935022 20190301121033
+169.149.199.141 32 119 4218060 20190301120131
+88.222.184.114 31 31 1662933 20190302090539
+169.149.241.208 24 74 2453640 20190301124142
+169.149.201.254 22 80 3548086 20190301124127
+104.208.141.243 21 21 1667991 20190302212305
+169.149.233.111 19 228 13391400 20190304062043
+27.5.233.90 11 165 11589098 20190302093318
+5.189.184.58 11 11 844423 20190304084444
+198.50.172.219 10 10 619705 20190302040141
+98.207.32.242 10 57 3764175 20190301140321
+5.135.230.129 9 9 414598 20190302184213
+184.154.139.51 8 8 461815 20190327030249
+12.226.164.218 7 45 3063894 20190310181632
+76.88.20.54 7 58 3452521 20190301155827
+138.197.96.107 1 19 929687 20190304092733
+141.138.169.219 1 1 403 20190331172200
+104.238.138.211 1 1 571 20190312051045
+52.38.242.182 1 1 9221 20190301032422
+198.50.119.122 1 1 403 20190321111602
+184.154.139.50 6 6 380888 20190330030314
+103.13.50.62 1 1 403 20190325130611
+155.98.131.2 4 51 3192833 20190301134904
+107.173.0.32 1 1 59200 20190303215943
+107.175.108.37 1 1 58427 20190303215940
+54.86.8.95 1 1 79671 20190301120021
+120.78.204.92 1 1 403 20190327145954
+107.155.141.227 2 2 114998 20190313200230
+35.207.36.157 3 18 1029752 20190303211620
+196.52.65.21 1 1 55784 20190303215941
+198.23.212.18 1 1 403 20190326130056
+198.71.240.39 1 1 403 20190327000520
+209.51.207.2 1 1 403 20190319120725
+173.239.201.186 1 1 55692 20190303215944
+207.90.37.16 1 1 64221 20190303215947
+159.203.42.143 1 1 77160 20190302093018
+128.65.195.130 1 1 403 20190322174749
+150.242.173.203 4 42 2708175 20190320010029
+149.56.175.201 1 1 571 20190312082541
+159.203.111.221 2 7 117150 20190301012451
+179.188.51.133 1 1 403 20190330080457
+184.175.167.193 2 28 1948661 20190318114145
+165.124.34.191 1 4 70783 20190301110741
+138.68.15.94 1 1 571 20190321110131
+192.227.174.122 1 1 61447 20190303215945
+103.21.58.240 1 1 403 20190321060438
+198.252.45.10 1 1 98161 20190303215940
+134.119.45.154 1 1 403 20190328132903
+174.212.27.54 1 1 33958 20190304120912
+172.58.97.43 3 38 2604331 20190304073055
+192.227.224.213 1 1 75222 20190303215940
+27.5.238.117 6 9 221898 20190301094341
+34.239.253.34 1 1 9221 20190301054159
+138.197.202.197 1 1 67400 20190302093017
+172.56.15.63 2 2 18442 20190301092852
+78.47.250.179 1 1 403 20190329175255
+185.224.142.22 1 1 58497 20190303215949
+192.145.239.42 1 1 403 20190326002502
+3.8.150.233 2 2 88649 20190303081413
+172.56.15.115 6 75 3302764 20190301172053
+159.65.87.133 4 4 312887 20190304061150
+66.133.109.36 3 3 261 20190301232826
+198.71.236.69 1 1 403 20190326200215
+184.154.47.2 1 1 79416 20190302151627
+91.207.172.102 2 2 58587 20190302005644
+89.38.211.164 1 1 403 20190328041112
+149.126.4.82 1 1 403 20190319155025
+154.16.141.120 1 1 75301 20190303220007
+172.245.63.226 1 1 77021 20190303215944
+169.149.253.246 0 7 819161 
+107.175.136.60 1 1 59789 20190303215944
+196.55.29.70 1 1 58801 20190303215943
+159.122.240.195 1 1 57158 20190312135547
+67.215.235.18 1 1 403 20190324212248
+168.151.92.7 1 1 60138 20190303220013
+50.62.176.38 1 1 403 20190327204850
+192.3.176.18 1 1 59416 20190303220007
+141.138.169.222 1 1 403 20190327043833
+91.210.144.145 1 1 425 20190312101412
+49.207.180.142 1 2 40002 20190301084909
+3.84.27.174 2 2 115635 20190303183854
+170.130.63.80 2 2 114995 20190330050634
+180.76.15.149 1 1 78294 20190304220229
+103.9.64.146 1 1 403 20190320062847
+198.15.117.106 1 1 403 20190322111231
+184.168.200.201 1 1 403 20190328200338
+112.213.86.37 1 1 403 20190331120749
+185.2.4.43 1 1 403 20190324093039
+52.165.150.117 2 2 157721 20190305110151
+182.50.135.20 1 1 403 20190326162028
+45.79.140.12 1 1 403 20190323154129
+169.149.195.157 4 27 1809826 20190303064424
+198.71.227.10 1 1 403 20190328083418
+54.234.233.155 1 1 0 20190302145552
+167.99.48.238 1 21 931893 20190302101048
+104.152.168.25 1 1 403 20190323011407
+168.151.50.67 1 1 58943 20190303215942
+95.216.151.38 1 1 403 20190321172540
+223.228.128.52 2 3 73966 20190301004558
+207.90.12.89 1 1 58662 20190303215944
+205.170.235.246 3 28 2100458 20190318140744
+144.168.162.250 1 1 78294 20190305092000
+107.175.74.148 1 1 58856 20190303215943
+185.182.57.34 1 1 571 20190319125055
+13.231.238.251 1 1 9221 20190301044217
+91.206.14.10 1 1 571 20190313173906
+208.91.198.167 1 1 403 20190320005244
+8.28.16.254 5 5 342796 20190307103912
+134.119.249.38 1 1 403 20190331011419
+186.64.114.90 1 1 403 20190326100810
+173.239.201.176 1 1 54552 20190303220007
+207.90.18.108 1 1 59295 20190303215944
+63.141.32.89 1 1 59050 20190303220001
+64.91.226.161 1 1 403 20190320201849
+23.245.126.83 1 1 63956 20190303215950
+185.92.244.45 1 1 403 20190328001511
+182.50.135.74 1 1 403 20190327093957
+176.52.246.112 1 1 403 20190323082847
+159.89.201.166 1 1 403 20190323234810
+83.97.23.181 2 2 58587 20190302024121
+184.154.139.52 6 6 380889 20190331030244
+191.101.236.48 1 1 55814 20190303215945
+107.174.32.177 1 1 58643 20190303215948
+167.160.73.145 1 1 72083 20190303215943
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20190301 278 873 42586596 40
+20190302 104 278 16949956 23
+20190303 67 105 6020536 39
+20190304 728 2464 396809379 24
+20190305 75 88 4951916 14
+20190306 13 13 63482 10
+20190307 18 18 406278 12
+20190308 6 6 63481 5
+20190309 11 11 63482 10
+20190310 19 19 97434 12
+20190311 12 12 63479 10
+20190312 18 18 122207 15
+20190313 23 23 179051 14
+20190314 18 18 63479 11
+20190315 21 21 63482 11
+20190316 15 15 63482 11
+20190317 11 11 63482 9
+20190318 17 68 4112601 14
+20190319 16 16 64859 13
+20190320 26 64 2772866 17
+20190321 20 20 65262 16
+20190322 20 20 64288 14
+20190323 19 19 65094 16
+20190324 25 25 64288 17
+20190325 22 23 63884 13
+20190326 29 29 65497 20
+20190327 28 28 65497 17
+20190328 25 25 65497 17
+20190329 20 20 63882 13
+20190330 26 26 178880 19
+20190331 25 25 64691 14
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+0s-30s 348
+2mn-5mn 6
+5mn-15mn 15
+30mn-1h 63
+30s-2mn 5
+15mn-30mn 28
+1h+ 25
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 114
+/wp-cron.php 477 0 314 314
+/wp-admin/admin-ajax.php 421 13901510 2 4
+/wp-admin/post.php 88 280385429 0 1
+/ 84 5368453 32 27
+/xmlrpc.php 46 616681 39 39
+/hitachi-717-aldolase/ 39 2883354 3 1
+/au-400/ 30 2608417 2 1
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/ 27 1713892 26 26
+/wp-content/themes/dt-the7/fonts/icomoon-the7-social/fonts/icomoon-the7-social-icons-16x16.ttf 23 266992 5 7
+/olympus-b/ 21 1774863 1 3
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-solid-900.woff2 18 1213200 3 2
+/wp-admin/load-styles.php 18 5849322 1 0
+/au-600/ 18 1338656 2 1
+/bayer-advia-1650/ 17 3105046 2 2
+/dimension-rxl/ 16 1209245 1 1
+/olympus-au-400-600-640-2700-5400/ 16 1500355 1 1
+/beckman-cx-7/ 16 1146770 1 3
+/au-800/ 15 1057599 1 1
+/au-2700/ 14 934387 4 2
+/wp-admin/load-scripts.php 14 2667726 0 0
+/wp-login.php 13 40953 4 4
+/cobas-mira/ 12 942098 1 1
+/webmail 12 407532 8 6
+/wp-admin/admin.php 12 1782391 2 1
+/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.woff2 11 848760 1 3
+/dt_gallery/ 1 51648 0 0
+/doctors/ 1 96864 0 0
+/dt_gallery/hospital/ 1 56429 0 0
+/wp-json/wp/v2/users 1 571 1 1
+/our-clinic/prices/ 1 67391 0 0
+/wp-json/oembed/1.0/embed 3 6625 0 1
+/wp-admin/options-general.php 2 335737 0 0
+/msds/ 7 389559 1 1
+/client-testimonials/ 6 333019 1 2
+/.well-known/acme-challenge/Y2ZBL94ONXA94RHPIH2ZROO7ZSYM5RAN 1 64 0 0
+/sample-page/feed/ 1 710 0 0
+/sputolysin-stat-pack/ 5 319976 1 1
+/page/2/ 1 60400 0 0
+/services/ 1 71960 0 0
+/dt_gallery/feed/ 1 1245 0 0
+//wp-json/wp/v2/users/ 4 2284 4 4
+/.well-known/acme-challenge/5L1FKJ4W7HIS7_S_IEVB3M_WTDKLBRC3 1 64 0 0
+/our-clinic/photo-gallery/ 1 58849 0 0
+/wp-content/themes/dt-the7/inc/admin/assets/fonts/the7-dashboard-icons/the7-dashboard-icons.ttf 1 2412 0 0
+/search/1/feed/rss2/ 1 368413 0 0
+/wp-admin/customize.php 3 1639161 0 0
+/.well-known/acme-challenge/305J-0612R4E10TO8OAYWZIOEKB7Z9PV 1 64 0 0
+/wp-includes/js/tinymce/wp-tinymce.php 1 355036 0 0
+/wp-includes/js/tinymce/skins/lightgray/fonts/tinymce.woff 6 112320 0 0
+/wp-content/plugins/optinmonster/assets/fonts/archie.woff 1 2840 0 0
+/services/service-page/ 1 70440 0 0
+/wp-admin/upgrade.php 1 1269 0 0
+/our-clinic/testimonials/ 1 69424 0 0
+/wp-admin/install.php 1 11651 0 0
+/.well-known/acme-challenge/aJ0seDYkQOIOkIUvGM3PFqOu1jWNhnWnvD8A76ZTrGE 1 87 0 1
+/page/3/ 1 61821 0 0
+/author/admin/feed/ 1 6954 0 0
+/.well-known/acme-challenge/0g5mJdDxLHGmiQNqhNhsiHLoT7YpeU4dFz7GEZe2Jso 1 87 0 0
+/.well-known/acme-challenge/v7AnNnjmF6Qj8Wg7G46oGzOaAF6rB2F9mn7EvlHlwdQ 1 87 1 0
+/.well-known/acme-challenge/yDdNWl2B20AhR2N3VDxF32Wi02aSOQoA4dQfIyCT16M 1 87 0 1
+/wp-content/themes/dt-the7/fonts/icomoon-the7-social/fonts/icomoon-the7-social-icons-16x16.eot 2 24792 0 0
+/aldolase-reagent-package-insert/ 9 673674 2 1
+/wp-content/uploads/smile_fonts/icomoon-free-social-contact-16x16/icomoon-free-social-contact-16x16.ttf 1 26928 0 0
+/.well-known/acme-challenge/XJV8HBQ33HZXJK40V9WBBV-D-C06_T7S 1 64 0 0
+/wp-admin/async-upload.php 1 3875 0 0
+/wp-content/themes/dt-the7/fonts/icomoon-arrows-the7/fonts/icomoon-arrows-carousel-32x32.ttf 3 21408 0 0
+/our-clinic/ 1 63651 0 0
+/wp-content/themes/dt-the7/inc/admin/assets/fonts/dt-icons/dt-icons.ttf 10 77000 0 0
+/wp-admin/nav-menus.php 9 3147264 0 0
+/.well-known/acme-challenge/cqXwk1ISUxIizZBAyo6Eu9RfF7WGmE3uLEF5VQBMMdc 1 87 0 0
+/.well-known/acme-challenge/EZP-1BVGJ4OEMHSR275B08DPG2E9C5_2 1 64 0 0
+/wp-includes/wlwmanifest.xml 2 2090 0 0
+/2016/05/ 1 50663 0 0
+/wp-content/plugins/duplicator/assets/fonts/fontawesome-webfont.woff2 1 77160 0 0
+/category/research/feed/ 1 6568 0 0
+/departments/ 1 66862 0 0
+/page/4/ 1 60226 0 0
+/test-application/ 11 1104878 1 1
+/category/research/ 1 50755 0 0
+/2016/05/12/ 1 50790 0 0
+/sputolysin-product-highlight/ 8 468034 1 2
+/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.eot 1 165742 0 0
+/wp-admin/ 6 863908 0 0
+/faq/ 8 613981 2 2
+/.well-known/acme-challenge/Wyd9Vc1NDmY-WpZD24C-ie90tqCdvbO9TyuFsaA0zwQ 1 87 0 0
+/feed/ 5 32665 1 0
+/.well-known/acme-challenge/AY27_CLBAX-8YQ-W43DDK4CLQ2VIQM1_ 1 64 1 0
+/wp-content/plugins/Ultimate_VC_Addons/admin/fonts/ultimate.woff 6 7800 0 0
+/wp-content/uploads/smile_fonts/Defaults/Defaults.woff 1 144232 0 0
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/feed/ 1 976 0 0
+/2016/ 1 50535 0 0
+/wp-content/uploads/smile_fonts/icomoon-brankic-32x32/icomoon-brankic-32x32.ttf 5 402560 0 3
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-solid-900.eot 2 361440 0 1
+/comments/feed/ 2 1420 0 0
+/wp-content/plugins/js_composer/assets/fonts/vc_icons_v2/fonts/vcpb-plugin-icons.ttf 1 7464 0 0
+/package-insert-3/ 7 429012 1 3
+/aldolase-control-package-insert/ 7 446556 1 1
+/news/ 5 271627 1 1
+/about-us/ 10 592282 3 1
+/wp-json/ 5 371955 0 1
+/sample-page/ 1 52079 0 0
+/contact/ 11 645205 4 3
+/aldolase-reagent-pack-msds/ 5 375426 1 1
+/aldolase-reagent-pack-highlights/ 10 580959 1 1
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-regular-400.eot 2 81152 1 0
+/author/admin/ 3 167106 0 2
+/departments/department-page/ 1 72584 0 0
+/.well-known/acme-challenge/0G4HB6WENq2Kghtc6cvrH17DjEnG05tJjTz0RP1V9t8 1 87 0 0
+/wp-content/plugins/jetpack/_inc/fonts/jetpack/jetpack.woff 1 1056 0 0
+/aldolase-liquid-control-product-highlight/ 8 471261 1 1
+/.well-known/acme-challenge/2T806YJRJST23UV8BKZ8XZ8WEG-XYNOJ 1 64 0 0
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-regular-400.woff2 9 133812 2 1
+/wp-includes/fonts/dashicons.eot 10 224490 0 0
+/significance-of-testing-aldolase/ 9 498747 1 1
+END_SIDER

@@ -1,0 +1,548 @@
+Return-Path: <bethany.db@pro-greenus.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id kCISLJ5QUl2FyAwA7/vpDg
+	(envelope-from <bethany.db@pro-greenus.com>); Tue, 13 Aug 2019 00:54:38 -0500
+Return-path: <bethany.db@pro-greenus.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Tue, 13 Aug 2019 00:54:38 -0500
+Received: from mail-pl1-f193.google.com ([209.85.214.193]:34031)
+	by gator4148.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.92)
+	(envelope-from <bethany.db@pro-greenus.com>)
+	id 1hxPlV-003YJO-Vc
+	for customersupport@caldonbiotech.com; Tue, 13 Aug 2019 00:54:38 -0500
+Received: by mail-pl1-f193.google.com with SMTP id i2so48858974plt.1
+        for <customersupport@caldonbiotech.com>; Mon, 12 Aug 2019 22:54:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=pro-greenus-com.20150623.gappssmtp.com; s=20150623;
+        h=message-id:from:to:subject:date:mime-version:thread-index
+         :content-language;
+        bh=e+dZl6NGz6vKYUGNwvPIP4xuRzxq+mKUTXjVTfmirJc=;
+        b=pkOjpusUPEsaXBr9s54YecFCgzVX9AwOR9BKbH8VjhzNgKc1EnL9hPgnmKCwmmFzxg
+         MCCLma7VqT/lr72vQde7lSU8nrKwIKfi5jvAh7gQcj8CtxaJFBbR75jqchxO6Pwmpa0z
+         V+iueBCREuvSu/9OQX2zn3UVH7rtfFYBXz06/eiI4awTlML/pwjcY4sC74h2VlhNwU1C
+         IDVmzOL6ntMXSrNNqDTD6VrDI+BsmRleSXjNy9qcz6c5Tr4EpogtbmfgoBQdBuwk5M+U
+         RNs3mEVNl4KIX/lM1j18uAmDHBl1pRF8mQ1iXWFhBflXDc5ZsUhrKTe9AcrO93loElMU
+         Q9Pw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:message-id:from:to:subject:date:mime-version
+         :thread-index:content-language;
+        bh=e+dZl6NGz6vKYUGNwvPIP4xuRzxq+mKUTXjVTfmirJc=;
+        b=JICen0vh67mtf/nX5JEwRdzeWhPJ7bnfV4U0u42jG4L8OjQEiaoPU6PSSWI8BOBoLT
+         pTq7TUXydnlZ0S2ndKkqdD2MXI4fbx9yZByB4LkqQUFcXcv5FJux4MqV+XLHjHY9jf8Z
+         GjCH2Rfp502bPIfRZMPuoHqlYO6EGkrYiOzrdlz+GJfPvgH73cK22aaV5vgZhzxzVugX
+         RiXViLKfJQpy7yjCBKJt4+ytiORlJWaFS1i/LwKunrmdXks3AnXytSdYtE2RRtWE1p7W
+         V96uXOIyZKtrtyXaVQYHLaTJx6BcPWaZOOuiD1nswOwitIItu6ASvJNLBBItFVDQ3tEL
+         3Hcg==
+X-Gm-Message-State: APjAAAUK3AJLGsyJmHBG6cLQSGagP045w1C37rwsoxE79qh5s1vD4VeS
+	0Hdr/MRblB6nRBqVoi5NMeqNLhkdJ8c=
+X-Google-Smtp-Source: APXvYqy2FotLQOtHGkzI/HJD2C1AZMGrbzzKsbBFZY3Ceh6ATE9y3Qu9zwwSE19ffX6jO30KEWiL7Q==
+X-Received: by 2002:a17:902:8c98:: with SMTP id t24mr36977119plo.320.1565675666359;
+        Mon, 12 Aug 2019 22:54:26 -0700 (PDT)
+Received: from pdg15PC ([125.22.105.103])
+        by smtp.gmail.com with ESMTPSA id p90sm1447723pjp.7.2019.08.12.22.54.24
+        for <customersupport@caldonbiotech.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Mon, 12 Aug 2019 22:54:25 -0700 (PDT)
+Message-ID: <5d525091.1c69fb81.eec2c.3477@mx.google.com>
+X-Google-Original-Message-ID: <08e401d5519b$8f423800$adc6a800$@db@pro-greenus.com>
+From: "Bethany Davis" <bethany.db@pro-greenus.com>
+To: <customersupport@caldonbiotech.com>
+Subject: Life Sciences and Biotechnology Updated B2B Data Info 
+Date: Tue, 13 Aug 2019 11:24:23 +0530
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_08E5_01D551C9.A8FA7400"
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: AdVRm407W2420Mi+Q66wnjk6Gq1A0Q==
+Content-Language: en-us
+x-cr-hashedpuzzle: AA5d ADZ8 BarB BwGl B2Bz CeXH EYw6 Eelz E/Kg G1W0 HFjs IMTi IfNh IyBc Jrbq KNoZ;1;YwB1AHMAdABvAG0AZQByAHMAdQBwAHAAbwByAHQAQABjAGEAbABkAG8AbgBiAGkAbwB0AGUAYwBoAC4AYwBvAG0A;Sosha1_v1;7;{E7F84FEB-A878-4E07-9458-4C90A4CAE809};YgBlAHQAaABhAG4AeQAuAGQAYgBAAHAAcgBvAC0AZwByAGUAZQBuAHUAcwAuAGMAbwBtAA==;Tue, 13 Aug 2019 05:54:20 GMT;TABpAGYAZQAgAFMAYwBpAGUAbgBjAGUAcwAgAGEAbgBkACAAQgBpAG8AdABlAGMAaABuAG8AbABvAGcAeQAgAFUAcABkAGEAdABlAGQAIABCADIAQgAgAEQAYQB0AGEAIABJAG4AZgBvAA==
+x-cr-puzzleid: {E7F84FEB-A878-4E07-9458-4C90A4CAE809}
+X-Spam-Status: No, score=1.5
+X-Spam-Score: 15
+X-Spam-Bar: +
+X-Spam-Flag: NO
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_08E5_01D551C9.A8FA7400
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+ 
+
+ 
+
+Hi,
+
+ 
+
+Greetings of the day!
+
+ 
+
+I am writing to check if you would be interested to acquire the newly
+released Life Sciences and Biotechnology Updated B2B Data Info with all
+verified contact information.
+
+ 
+
+Some of our Popular Lists with complete Information along with business
+emails.
+
+ 
+
+Target Titles/Functions: 
+
+ 
+
+*	Biotech CEOs
+*	Researcher/Investor
+*	Decision Makers of Biotechnology and Medical Device, Pharmaceutical 
+*	Bio Scientist/ Microbiologists
+*	Bioscience Managers 
+*	Research Scientist
+*	Chemist/Druggist/Pharmacist
+*	Pharmacy Consultants/Manager
+*	Biomedical Engineer
+*	Bio-Technologist
+*	R&D Scientists/Engineer
+*	Manufacturing Scientist/Director/Manager
+*	Biotechnology Researchers
+*	Laboratory Manager/Director/Technicians
+*	Plant Operations Manager
+*	Procurement/Product Development Manager
+*	Scientists/Regulatory Officer
+*	Packaging Design/Manager/Director
+*	Analytical Research & Development Manager
+*	Bioprocess Manufacturing Technician
+*	Microbiology Lab Technician
+*	Scientific Officer - Medicinal Chemistry
+*	Innovators
+
+ 
+
+Segments:
+
+ 
+
+*	Medical Device Companies
+*	Pharmaceutical Companies
+*	Investment Organizations
+*	Research Institutions
+*	Biotechnology Centers 
+*	Research/ Testing / Medical Laboratories
+*	Consultancies/ Suppliers/ Other Support Organizations
+
+*	And Many More
+
+ 
+
+Please reply with "interested" so we can provide more details today.
+
+ 
+
+I'd be happy to send over few sample records on your request, and set up a
+time to discuss in detail. 
+
+ 
+
+Our list includes: Name, Job title, Company Name, Permission Based E-mail
+address, Contact number, Physical address and many more.
+
+We guarantee up to 90% on our lists. If anything does not meet our guarantee
+agreement, we would replace with fresh records and complete Ownership of
+list.
+
+  
+
+Looking forward to hearing from you soon.
+
+ 
+
+Warm Regards,
+
+Bethany Davis
+
+Marketing Executive
+
+US New List - Canadian New List -Appending
+
+12840 NE 21st Place, Bellevue, WA 98005, United States
+
+Email: bethany.db@pro-greenus.com
+
+  _____  
+
+If you're not interested please reply subject line as "Leave Out".
+
+ 
+
+
+------=_NextPart_000_08E5_01D551C9.A8FA7400
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii">
+<meta name=3DGenerator content=3D"Microsoft Word 12 (filtered medium)">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1586260970;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1600697630 67698689 67698691 67698693 67698689 =
+67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:1906715499;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-2126064794 67698689 67698691 67698693 67698689 =
+67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext=3D"edit">
+  <o:idmap v:ext=3D"edit" data=3D"1" />
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=3DEN-US link=3Dblue vlink=3Dpurple>
+
+<div class=3DSection1>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal>Hi,<o:p></o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal>Greetings of the day!<o:p></o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal>I am writing to check if you would be interested to =
+acquire
+the newly released <b>Life Sciences and Biotechnology Updated B2B Data =
+Info</b>
+with all verified contact information.<o:p></o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal>Some of our Popular Lists with complete Information =
+along
+with business emails.<o:p></o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal>Target Titles/Functions: <o:p></o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<ul style=3D'margin-top:0in' type=3Ddisc>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Biotech =
+CEOs<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 =
+lfo1'><i>Researcher/Investor<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Decision =
+Makers of
+     Biotechnology and Medical Device, Pharmaceutical =
+<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Bio =
+Scientist/
+     Microbiologists<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Bioscience =
+Managers <o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Research =
+Scientist<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 =
+lfo1'><i>Chemist/Druggist/Pharmacist<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Pharmacy
+     Consultants/Manager<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Biomedical =
+Engineer<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 =
+lfo1'><i>Bio-Technologist<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>R&amp;D
+     Scientists/Engineer<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 =
+lfo1'><i>Manufacturing
+     Scientist/Director/Manager<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 =
+lfo1'><i>Biotechnology
+     Researchers<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Laboratory
+     Manager/Director/Technicians<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Plant =
+Operations
+     Manager<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 =
+lfo1'><i>Procurement/Product
+     Development Manager<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 =
+lfo1'><i>Scientists/Regulatory Officer<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Packaging
+     Design/Manager/Director<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Analytical =
+Research
+     &amp; Development Manager<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Bioprocess
+     Manufacturing Technician<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Microbiology =
+Lab
+     Technician<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Scientific =
+Officer -
+     Medicinal Chemistry<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 =
+lfo1'><i>Innovators<o:p></o:p></i></li>
+</ul>
+
+<p class=3DMsoNormal><i><o:p>&nbsp;</o:p></i></p>
+
+<p class=3DMsoNormal>Segments:<o:p></o:p></p>
+
+<p class=3DMsoNormal><i><o:p>&nbsp;</o:p></i></p>
+
+<ul style=3D'margin-top:0in' type=3Ddisc>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Medical =
+Device
+     Companies<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 =
+lfo1'><i>Pharmaceutical Companies<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Investment
+     Organizations<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Research =
+Institutions<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 =
+lfo1'><i>Biotechnology Centers <o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 lfo1'><i>Research/ =
+Testing /
+     Medical Laboratories<o:p></o:p></i></li>
+ <li class=3DMsoNormal style=3D'mso-list:l0 level1 =
+lfo1'><i>Consultancies/
+     Suppliers/ Other Support Organizations<o:p></o:p></i></li>
+</ul>
+
+<ul style=3D'margin-top:0in' type=3Ddisc>
+ <li class=3DMsoNormal style=3D'mso-list:l1 level1 lfo2'><i>And Many =
+More<o:p></o:p></i></li>
+</ul>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal>Please reply with &#8220;interested&#8221; so we =
+can provide
+more details today.<i><o:p></o:p></i></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><span lang=3DEN-IN>I&#8217;d be happy to send over =
+few <b>sample
+records</b> on your request, and set up a time to discuss in detail. =
+<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:white'><span =
+style=3D'color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal =
+style=3D'line-height:12.65pt;background:white'><b><span
+style=3D'color:black'>Our list includes:</span></b><span =
+style=3D'color:black'>&nbsp;Name,
+Job title, Company Name, Permission Based E-mail address, Contact =
+number,
+Physical address and many more.<o:p></o:p></span></p>
+
+<p class=3DMsoNormal =
+style=3D'line-height:12.65pt;background:white'><span
+style=3D'color:black'>We guarantee up to 90% on our lists. If anything =
+does not
+meet our guarantee agreement, we would replace with fresh records and =
+complete
+Ownership of list.<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:white'><span =
+style=3D'color:black'>&nbsp;&nbsp;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'background:white'><span =
+style=3D'color:black'>Looking
+forward to hearing from you soon.<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal style=3D'line-height:115%'>Warm =
+Regards,<o:p></o:p></p>
+
+<p class=3DMsoNormal><b>Bethany Davis<o:p></o:p></b></p>
+
+<p class=3DMsoNormal>Marketing Executive<b><o:p></o:p></b></p>
+
+<p class=3DMsoNormal>US New List - Canadian New List =
+-Appending<o:p></o:p></p>
+
+<p class=3DMsoNormal>12840 NE 21st Place, Bellevue, WA 98005, United =
+States<o:p></o:p></p>
+
+<p class=3DMsoNormal>Email: <a =
+href=3D"mailto:bethany.db@pro-greenus.com">bethany.db@pro-greenus.com</a>=
+<o:p></o:p></p>
+
+<div class=3DMsoNormal align=3Dcenter style=3D'text-align:center'>
+
+<hr size=3D2 width=3D"100%" align=3Dcenter>
+
+</div>
+
+<p class=3DMsoNormal align=3Dcenter =
+style=3D'margin-left:.25in;text-align:center'><span
+style=3D'font-size:10.0pt'>If you're not interested please reply subject =
+line as
+&quot;<b>Leave Out</b>&quot;.<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_000_08E5_01D551C9.A8FA7400--
+

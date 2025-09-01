@@ -1,0 +1,925 @@
+Return-Path: <response@na.netsuite.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id +OZ1CmPhCGOAlg4A7/vpDg
+	(envelope-from <response@na.netsuite.com>)
+	for <rvairavan@caldonbiotech.com>; Fri, 26 Aug 2022 10:06:11 -0500
+Return-path: <response@na.netsuite.com>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Fri, 26 Aug 2022 10:06:11 -0500
+Received: from mail02.na.netsuite.com ([129.145.20.53]:49354)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <response@na.netsuite.com>)
+	id 1oRauQ-004NwA-HE
+	for rvairavan@caldonbiotech.com;
+	Fri, 26 Aug 2022 10:06:11 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dk2016; d=na.netsuite.com;
+ h=Message-ID:List-Unsubscribe:From:Reply-To:To:Subject:Date:MIME-Version:
+ Content-Type; i=netsuite@na.netsuite.com;
+ bh=hOlns7rMMWc0mczpEZyzPuq1BKq9S72Mp/TjlHRJzYc=;
+ b=aVN4JMkfTc6L1kk0ZszDpl9D4bJUQmr3kFz1loA1iyf1hg0yseRWatMyinZHp9tdwV++lGUSlVNp
+   dryPaOSZF4Djz7t7bwk/zrqmb62rW2KecG6/sCcK3/qvaMRLJmfRNrlVc7bynlVW0DHcsQlC6Tyi
+   +4x07k59XRlo2kTansk=
+Received: from [10.34.27.223] (10.34.140.5) by mail02.na.netsuite.com id h13gle2tlo82 for <rvairavan@caldonbiotech.com>; Fri, 26 Aug 2022 11:05:58 -0400 (envelope-from <response@na.netsuite.com>)
+Message-ID: <8afe6c87d30f4f1587e605c90461334c@1439730185>
+X-Binding: 1439730185
+X-elqSiteID: 1439730185
+X-elqPod: 0xF1B94DB93BE5675EF0A64610BCE5945D8F0CC1F9D072032A60E02D51CEF3F9E5
+X-cid: 9157-22144
+List-Unsubscribe: =?utf-8?q?=3Cmailto=3Aspamproc=40fbl=2Een25=2Ecom=3Fsubject=3DListUnsub=5F1439730185=5F8a?=
+ =?utf-8?q?fe6c87d30f4f1587e605c90461334c=3E=2C?=
+ =?utf-8?q?_=3Chttp=3A=2F=2Fapp=2Eoracle=2Enetsuite=2Ecom=2Fe=2Fu=3Fs=3D1439730185&elq=3D8afe6c87?=
+ =?utf-8?q?d30f4f1587e605c90461334c&t=3D17=3E?=
+From: Oracle NetSuite <netsuite@na.netsuite.com>
+Reply-To: Oracle NetSuite <netsuite@na.netsuite.com>
+To: rvairavan@caldonbiotech.com
+Subject: CFO Guide: 4 Inflation Metrics to Watch Now
+Date: Fri, 26 Aug 2022 11:05:58 -0400
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=-GMye+4LGf9wqTfZQFOLBqA=="
+X-Spam-Status: No, score=2.0
+X-Spam-Score: 20
+X-Spam-Bar: ++
+X-Spam-Flag: NO
+
+--=-GMye+4LGf9wqTfZQFOLBqA==
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+Content-Id: <a842e52e-2344-42bf-993e-946d77bb54bf>
+
+DQoNClZpZXcgT25saW5lIDxodHRwOi8vYXBwLm9yYWNsZS5uZXRzdWl0ZS5jb20vZS9lcz9z
+PTE0Mzk3MzAxODUmZT0xOTg3ODExJmVscVRyYWNrSWQ9ZTE4MWMyZjhjZTM2NDUxYmFiMGZh
+NzM2MDNhNmExMTkmZWxxPThhZmU2Yzg3ZDMwZjRmMTU4N2U2MDVjOTA0NjEzMzRjJmVscWFp
+ZD0yMjE0NCZlbHFhdD0xPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgIA0KDQoNCg0KDQoiT3JhY2xlIE5ldFN1aXRlIiA8aHR0cHM6Ly93d3cubmV0
+c3VpdGUuY29tLz9lbHFUcmFja0lkPTE0NjBjOWEzMzA5MjRkYzE4ZTk1YjU3MmM3NTAzMjcy
+JmVscT04YWZlNmM4N2QzMGY0ZjE1ODdlNjA1YzkwNDYxMzM0YyZlbHFhaWQ9MjIxNDQmZWxx
+YXQ9MSZlbHFDYW1wYWlnbklkPTkxNTc+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgDQpCdXNpbmVzcyBHdWlkZQ0KDQpDRk8gR3VpZGU6IDQgSW5mbGF0aW9uIE1l
+dHJpY3MgdG8gV2F0Y2ggTm93DQoNCkNyaXRpY2FsIE1ldHJpY3MgUHJlcGFyZSBmb3IgUHJp
+Y2luZyBTd2luZ3MNCg0KTGVhcm4gTW9yZSA8aHR0cHM6Ly9nby5uZXRzdWl0ZS5jb20vTFA9
+MTI0NjU/Y2FtcGFpZ25JZD05MTU3JmVscUNhbXBhaWduTmFtZT1FbWFpbF9Ib3Jpel9DRk9J
+bmZsYXRpb25fMDgyMiZuc0NhbXBhaWduQ29kZT1FbWFpbF9Ib3Jpel9DRk9JbmZsYXRpb25f
+MDgyMiZyZWdzb3VyY2U9ZW0mZWxxVHJhY2tJZD0yMzczYzcwNmY2YzY0NDMwYTg0MTZhYjJl
+ZGRkYWVhNyZlbHE9OGFmZTZjODdkMzBmNGYxNTg3ZTYwNWM5MDQ2MTMzNGMmZWxxYWlkPTIy
+MTQ0JmVscWF0PTEmZWxxQ2FtcGFpZ25JZD05MTU3PiAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgIA0KDQoiVGh1bWJuYWlsIiAgICAgICAgICAgICAg
+ICA8aHR0cHM6Ly9nby5uZXRzdWl0ZS5jb20vTFA9MTI0NjU/Y2FtcGFpZ25JZD05MTU3JmVs
+cUNhbXBhaWduTmFtZT1FbWFpbF9Ib3Jpel9DRk9JbmZsYXRpb25fMDgyMiZuc0NhbXBhaWdu
+Q29kZT1FbWFpbF9Ib3Jpel9DRk9JbmZsYXRpb25fMDgyMiZyZWdzb3VyY2U9ZW0mZWxxVHJh
+Y2tJZD00NWI2OTUyNWUzZDk0NDMxYTZhYjAxYzU3YjczODdhMCZlbHE9OGFmZTZjODdkMzBm
+NGYxNTg3ZTYwNWM5MDQ2MTMzNGMmZWxxYWlkPTIyMTQ0JmVscWF0PTEmZWxxQ2FtcGFpZ25J
+ZD05MTU3PiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KDQpVUyBpbmZsYXRp
+b24gaXMgbm93IGF0IGEgZm91ci1kZWNhZGUgaGlnaC4gRm9yIENGT3MsIHRyYWNraW5nIGV4
+dGVybmFsIGluZmxhdGlvbiBpbmRpY2F0b3JzIGlzIG9mIGhpZ2hlc3QgcHJpb3JpdHkuDQpU
+aGlzIGd1aWRlIDxodHRwczovL2dvLm5ldHN1aXRlLmNvbS9MUD0xMjQ2NT9jYW1wYWlnbklk
+PTkxNTcmZWxxQ2FtcGFpZ25OYW1lPUVtYWlsX0hvcml6X0NGT0luZmxhdGlvbl8wODIyJm5z
+Q2FtcGFpZ25Db2RlPUVtYWlsX0hvcml6X0NGT0luZmxhdGlvbl8wODIyJnJlZ3NvdXJjZT1l
+bSZlbHFUcmFja0lkPTdiYzgwNDRmYjdmYjRmMDE5OTA5OTBkODgzOTZiZGM1JmVscT04YWZl
+NmM4N2QzMGY0ZjE1ODdlNjA1YzkwNDYxMzM0YyZlbHFhaWQ9MjIxNDQmZWxxYXQ9MSZlbHFD
+YW1wYWlnbklkPTkxNTc+IGJyZWFrcyBkb3duIHRoZSBmb3VyIG1haW4gaW5mbGF0aW9uIG1l
+YXN1cmVzIHByb3ZpZGVkIGJ5IHRoZSBGZWRlcmFsIEdvdmVybm1lbnQsIGFzIHdlbGwgYXMg
+c3VwcGxlbWVudGFsIGluZGljYXRvcnMgdGhhdCBjb3VsZCBwcm92ZSBjcml0aWNhbCBpbiBw
+cmVkaWN0aW5nIHRyZW5kcyBhbmQgZ3VpZGluZyBkZWNpc2lvbnMuDQoNCkxlYXJuIE1vcmUg
+PGh0dHBzOi8vZ28ubmV0c3VpdGUuY29tL0xQPTEyNDY1P2NhbXBhaWduSWQ9OTE1NyZlbHFD
+YW1wYWlnbk5hbWU9RW1haWxfSG9yaXpfQ0ZPSW5mbGF0aW9uXzA4MjImbnNDYW1wYWlnbkNv
+ZGU9RW1haWxfSG9yaXpfQ0ZPSW5mbGF0aW9uXzA4MjImcmVnc291cmNlPWVtJmVscVRyYWNr
+SWQ9MDJhMmJjMjJlZWUwNGVhMmFmYzk0MDhmZGNlN2Y3NjAmZWxxPThhZmU2Yzg3ZDMwZjRm
+MTU4N2U2MDVjOTA0NjEzMzRjJmVscWFpZD0yMjE0NCZlbHFhdD0xJmVscUNhbXBhaWduSWQ9
+OTE1Nz4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQoNClRydXN0
+ZWQgYnk6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiJDYW1wIENoZWYiICAgIk15
+c3RlcnkgUmFuY2giICAgIlAzIE1lZGljYWwiICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICANCg0KDQoNCg0KIk9yYWNsZSBOZXRTdWl0ZSIgPGh0dHBzOi8vd3d3Lm5ldHN1aXRlLmNv
+bS8/ZWxxVHJhY2tJZD01ZjIwYjdkMWExMmI0YWYyYTg4MjdiNGFiZmY2MDBlZSZlbHE9OGFm
+ZTZjODdkMzBmNGYxNTg3ZTYwNWM5MDQ2MTMzNGMmZWxxYWlkPTIyMTQ0JmVscWF0PTEmZWxx
+Q2FtcGFpZ25JZD05MTU3PiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAN
+CjIzMDAgT3JhY2xlIFdheQ0KQXVzdGluLCBUWCA3ODc0MQ0KVW5pdGVkIFN0YXRlcw0KKzEg
+NzM3Ljg2Ny4xMDAwIDx0ZWw6KzE3Mzc4NjcxMDAwPg0KDQpGb2xsb3cgTmV0U3VpdGUgb24g
+c29jaWFsIG1lZGlhIQ0KDQoiRmFjZWJvb2siICA8aHR0cDovL3d3dy5mYWNlYm9vay5jb20v
+TmV0U3VpdGU/ZWxxVHJhY2tJZD04NmM5YTAwN2E5ZjE0YzgxOWNiZjgwNzNiNGNiNmNmZSZl
+bHE9OGFmZTZjODdkMzBmNGYxNTg3ZTYwNWM5MDQ2MTMzNGMmZWxxYWlkPTIyMTQ0JmVscWF0
+PTEmZWxxQ2FtcGFpZ25JZD05MTU3PiAiTGlua2VkSW4iICA8aHR0cHM6Ly93d3cubGlua2Vk
+aW4uY29tL2NvbXBhbnkvbmV0c3VpdGU/ZWxxVHJhY2tJZD1jYzBjNWVmZTEzOGY0NDFjOWFh
+Zjg3MGRkMzQ2YTUwNyZlbHE9OGFmZTZjODdkMzBmNGYxNTg3ZTYwNWM5MDQ2MTMzNGMmZWxx
+YWlkPTIyMTQ0JmVscWF0PTEmZWxxQ2FtcGFpZ25JZD05MTU3PiAiVHdpdHRlciIgIDxodHRw
+Oi8vd3d3LnR3aXR0ZXIuY29tL05ldFN1aXRlP2VscVRyYWNrSWQ9ZDI5MTU2Y2Q5ZTQ5NGQ2
+MmE5NDE0MTRlM2YyNDI5ZjgmZWxxPThhZmU2Yzg3ZDMwZjRmMTU4N2U2MDVjOTA0NjEzMzRj
+JmVscWFpZD0yMjE0NCZlbHFhdD0xJmVscUNhbXBhaWduSWQ9OTE1Nz4gIkluc3RhZ3JhbSIg
+PGh0dHA6Ly93d3cuaW5zdGFncmFtLmNvbS9vcmFjbGVuZXRzdWl0ZT9lbHFUcmFja0lkPTcz
+NDlmZDI2ZmM1NTRmYjY4YzNmMzNiNDY3MjhhYTIzJmVscT04YWZlNmM4N2QzMGY0ZjE1ODdl
+NjA1YzkwNDYxMzM0YyZlbHFhaWQ9MjIxNDQmZWxxYXQ9MSZlbHFDYW1wYWlnbklkPTkxNTc+
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KwqkgT3JhY2xlLCBhbmQv
+b3IgaXRzIGFmZmlsaWF0ZXMuIDxodHRwczovL3d3dy5vcmFjbGUuY29tL2xlZ2FsL2NvcHly
+aWdodC5odG1sP2VscVRyYWNrSWQ9NGUwNTUwMzIzM2UxNGQ3YTkwODIyNDNjN2UxNGI4ZWUm
+ZWxxPThhZmU2Yzg3ZDMwZjRmMTU4N2U2MDVjOTA0NjEzMzRjJmVscWFpZD0yMjE0NCZlbHFh
+dD0xJmVscUNhbXBhaWduSWQ9OTE1Nz4NClRlcm1zIG9mIFVzZSBhbmQgUHJpdmFjeSA8aHR0
+cHM6Ly93d3cub3JhY2xlLmNvbS9sZWdhbC9wcml2YWN5L2luZGV4Lmh0bWw/ZWxxVHJhY2tJ
+ZD0zMzc4ZDU1OTJhZDc0NGYzYjQyZDI0YTY3OGIzOTMxOCZlbHE9OGFmZTZjODdkMzBmNGYx
+NTg3ZTYwNWM5MDQ2MTMzNGMmZWxxYWlkPTIyMTQ0JmVscWF0PTEmZWxxQ2FtcGFpZ25JZD05
+MTU3PiB8IENvbnRhY3QgVXMgPGh0dHBzOi8vd3d3Lm9yYWNsZS5jb20vY29ycG9yYXRlL2Nv
+bnRhY3QvZ2xvYmFsLmh0bWw/ZWxxVHJhY2tJZD05MTJiZTAwZjExMjc0MDdjYjc0OGJiNDBl
+OTdiODY1NiZlbHE9OGFmZTZjODdkMzBmNGYxNTg3ZTYwNWM5MDQ2MTMzNGMmZWxxYWlkPTIy
+MTQ0JmVscWF0PTEmZWxxQ2FtcGFpZ25JZD05MTU3Pg0KQ29kZSBvZiBDb25kdWN0IDxodHRw
+czovL3d3dy5vcmFjbGUuY29tL2NvcnBvcmF0ZS9ldmVudC1jb2RlLW9mLWNvbmR1Y3QuaHRt
+bD9lbHFUcmFja0lkPTIyOTVhNGI2Y2JiMjRjNzBhMDhhMmQ4ODZjZjBjM2U2JmVscT04YWZl
+NmM4N2QzMGY0ZjE1ODdlNjA1YzkwNDYxMzM0YyZlbHFhaWQ9MjIxNDQmZWxxYXQ9MSZlbHFD
+YW1wYWlnbklkPTkxNTc+IHwgTWFuYWdlIEVtYWlsIFByZWZlcmVuY2VzIDxodHRwczovL2dv
+Lm5ldHN1aXRlLmNvbS9TdWJzY3JpcHRpb25DZW50ZXI/ZWxxVHJhY2tJZD1kZDY0YTU4MTY3
+NTg0YTcwODc5MmYwNTRlZmNhZDljMCZlbHE9OGFmZTZjODdkMzBmNGYxNTg3ZTYwNWM5MDQ2
+MTMzNGMmZWxxYWlkPTIyMTQ0JmVscWF0PTEmZWxxQ2FtcGFpZ25JZD05MTU3PiB8IFVuc3Vi
+c2NyaWJlIGZyb20gQWxsIDxodHRwczovL2dvLm5ldHN1aXRlLmNvbS9TdWJzY3JpcHRpb25D
+ZW50ZXI/ZWxxVHJhY2tJZD1lNDcyMTlmODlkYjc0ODVkYjFmMGVhODZjMjE2MTYyOSZlbHE9
+OGFmZTZjODdkMzBmNGYxNTg3ZTYwNWM5MDQ2MTMzNGMmZWxxYWlkPTIyMTQ0JmVscWF0PTEm
+ZWxxQ2FtcGFpZ25JZD05MTU3Pg0KDQo=
+
+--=-GMye+4LGf9wqTfZQFOLBqA==
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+Content-Id: <f9bb2cf7-aa43-40f4-9932-a8c68c3e790f>
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+
+    <meta property="og:title" content="">
+
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="NetSuite">
+    <meta property="article:publisher" content="https://www.facebook.com/NetSuite">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@NetSuite">
+    <meta name="twitter:url" content="http://www.netsuite.com">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+
+    <meta name="twitter:image" content="http://www.netsuite.com/portal/images/ns-logo-for-email-thumbnail.jpg">
+
+    <title>CFO Guide: 4 Inflation Metrics to Watch Now</title>
+
+    <!--[if mso]>
+    <style>
+      * {
+      font-family: sans-serif;
+      }
+    </style>
+    <![endif]-->
+
+    <!--[if !mso]><!-->
+    <link href="http://images.oracle.netsuite.com/Web/OracleAmericaIncInternal/{0fa4c338-3f7d-4da0-8fb4-9c524872edc7}_OracleSans-Eloqua.css" rel="stylesheet" type="text/css">
+
+    <link href="https://nlcorp.app.netsuite.com/c.NLCORP/portal/common/form/landing_pages/css/OracleSans.css" rel="stylesheet" type="text/css">
+    <!--<![endif]-->
+
+    <style>
+
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        #MessageViewBody,
+        #MessageWebViewDiv {
+            width: 100% !important;
+        }
+
+        
+table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        th {
+            font-weight: normal;
+        }
+
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            
+-ms-interpolation-mode: bicubic;
+        }
+
+        a[x-apple-data-detectors],
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+     
+   .im {
+            color: inherit !important;
+        }
+
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+
+        img.g-img+div {
+            display: none !important;
+        }
+
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+
+        .button-td-primary:hover,
+        .button-a-primary:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+  
+      }
+
+
+        /* Media Queries */
+
+        @media screen and (max-device-width: 768px) { 
+
+            .left-header {
+                height: auto !important;
+                background-image: none !important;
+                background-color: transparent !important;
+                vertical-align: middle !important;
+            }
+
+            .left-header td {
+                
+            }
+
+            .right-header {
+                height: auto !important;
+                
+background-image: none !important;
+                background-color: transparent !important;
+                vertical-align: middle !important;
+            }
+
+            .right-header td {
+                
+            }
+
+            .top-right-thumb {
+                padding: 15px 15px 15px 15px !important;
+            }
+
+            .top-right-thumb img {
+                max-width: 100% !important;
+                height: auto !important;                    
+            }
+
+            
+.email-comp-logo {
+                padding-right: 5px !important;
+            }
+
+            .email-comp-logo img {
+
+            }
+
+            .email-cat {
+                padding-right: 5px !important;
+            }
+
+            .email-cat p { 
+
+            }
+
+            .email-title {
+                padding-right: 5px !important;
+            }
+
+            .email-title p { 
+
+            }
+            
+            .email-subtitle {
+                padding-right: 5px 
+!important;
+            }
+
+            .email-subtitle p {
+
+            }
+
+            .header-mob {
+                background-image: url('https://nlcorp.app.netsuite.com/c.NLCORP/portal/common/form/landing_pages/img/misc/bg-pattern-01.jpg') !important;
+                background-size: contain !important;
+                background-position: center center !important;
+                background-repeat: repeat !important;
+                background-color: #312d2a !important;
+            }
+
+ 
+       }
+
+        @media screen and (max-width: 595px) {
+            .email-container {
+                width: 100% !important;
+                margin: auto !important;
+            }
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+            .stack-column-center {
+                text-align: 
+center !important;
+                height: auto !important;
+            }
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+            .desktop-only {
+                
+display: none !important;
+            }
+            .trusted-sec {
+                width: 100% !important;
+                box-sizing: border-box;
+            }
+            .trust-left,
+            .trust-right {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                text-align: center !important;
+            }
+            .trust-left {
+                padding: 0 0 15px !important;
+            }
+            .feedback-sec {
+    
+            width: 100% !important;
+            }
+            .footer-tr {
+                padding-top: 0 !important;
+            }
+            .left-footer td,
+            .right-footer td {
+                text-align: center !important;
+                padding-left: 30px !important;
+                padding-right: 30px !important;
+                font-size: 15px !important;
+                line-height: 1.75 !important;
+            }
+            .left-footer td font,
+            
+.right-footer td font {
+                font-size: 15px !important;
+                line-height: 1.75 !important;
+            }
+            .left-footer td a,
+            .right-footer td a {
+                color: #fff !important;
+            }
+
+            .left-header {
+                height: auto !important;
+                background-image: none !important;
+                background-color: transparent !important;
+                vertical-align: middle !important;
+            }
+
+    
+        .left-header td {
+                
+            }
+
+            .right-header {
+                height: auto !important;
+                background-image: none !important;
+                background-color: transparent !important;
+                vertical-align: middle !important;
+            }
+
+            .right-header td {
+                
+            }
+
+            .top-right-thumb {
+                padding: 15px 10px 15px 10px !important;
+            }
+
+            
+.top-right-thumb img {
+                max-width: 100% !important;
+                height: auto !important;                    
+            }
+
+            .email-comp-logo {
+                padding-right: 5px !important;
+            }
+
+            .email-comp-logo img {
+
+            }
+
+            .email-cat {
+                padding-right: 5px !important;
+            }
+
+            .email-cat p { 
+
+            }
+
+            .email-title {
+                padding-right: 5px 
+!important;
+            }
+
+            .email-title p { 
+
+            }
+            
+            .email-subtitle {
+                padding-right: 5px !important;
+            }
+
+            .email-subtitle p {
+
+            }
+
+            .header-mob {
+                background-image: url('https://nlcorp.app.netsuite.com/c.NLCORP/portal/common/form/landing_pages/img/misc/bg-pattern-01.jpg') !important;
+                background-size: contain !important;
+                
+background-position: center center !important;
+                background-repeat: repeat !important;
+                background-color: #312d2a !important;
+            }
+
+        }
+
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u~div .email-container {
+                min-width: 320px !important;
+            }
+        }
+
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u~div 
+.email-container {
+                min-width: 375px !important;
+            }
+        }
+
+        @media only screen and (min-device-width: 414px) {
+            u~div .email-container {
+                min-width: 414px !important;
+            }
+        }
+
+        @media screen and (max-width: 575px) { 
+
+            .email-title p { 
+                font-size: 20px !important;
+                line-height: 24px !important;
+            }
+
+            .email-cat p { 
+                
+font-size: 12px !important;
+            }
+
+            .email-subtitle p {
+                font-size: 14px !important;
+                line-height: 16px !important;
+            }
+
+            .em-cta p a {
+                font-size: 12px !important;
+            }
+            
+        }
+
+        @media screen and (max-width: 425px) { 
+
+            .top-right-thumb {
+                padding: 15px 10px 15px 10px !important;
+            }
+
+        }
+
+        @media screen and 
+(max-width: 320px) { 
+
+            .email-title p {
+                font-size: 13px !important;
+                line-height: 15px !important;
+            }
+
+        }
+    </style>
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+  </head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #dadee0; font-family: 'Oracle Sans', sans-serif;"><div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    Inflation is here. Here&#39;s how you track it to make better financial decisions.
+</div><!-- Email Header (Redwood) - Start -->
+<center style="width: 100%;">
+    <!--[if mso | IE]>
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%"">
+        <tr>
+            <td>
+                <![endif]--><!-- Email Body : BEGIN -->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="email-container" style="margin: auto;" width="600">
+                    <tbody>
+                        <tr>
+                            <td style="padding: 0; color: #ffffff;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" style="font-family: 'Oracle Sans', Arial, sans-serif; font-size: 12px; line-height: 1; color: #666666; padding: 15px 30px;">
+
+                                                <a data-targettype="sysaction" href="http://app.oracle.netsuite.com/e/es?s=1439730185&e=1987811&elqTrackId=e181c2f8ce36451bab0fa73603a6a119&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1" style="color: #00b5ef; text-decoration: underline !important;" target="_blank">View Online</a><!--&nbsp;<a href="http://oracle.netsuite.com/SubscriptionCenter?elqTrackId=a6df4506191646e391b8221359f71c43">List-Unsubscribe</a>-->
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- Footer Section - End -->
+                    </tbody>
+                </table>
+                <!-- Email Body : END --><!--[if mso | IE]>
+            </td>
+        </tr>
+    </table>
+    <![endif]-->
+</center>
+
+<!-- Email Header (Redwood) - End -->
+
+  
+    <center style="width: 100%; background-color: #dadee0;">
+      <!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #dadee0;">
+        <tr>
+          <td>
+            <![endif]-->
+            <!-- Email Body : BEGIN -->
+
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto;" class="email-container">
+              <!-- Top Background Strip - Start -->
+              <tbody><tr>
+
+                <td valign="middle" style="background-color: #351c2a; height: 15px; background-image: url('https://nlcorp.app.netsuite.com/c.NLCORP/portal/common/form/landing_pages/img/misc/bg-strip_01.jpg'); background-position: center center !important; background-size: 100% 100% !important; text-align: center;">
+                  <!--[if gte mso 9]>
+
+                  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="background-color: #351c2a; width: 600px; height: 15px; background-position: 100% 100% !important;">
+                    <v:fill type="tile" src="https://nlcorp.app.netsuite.com/c.NLCORP/portal/common/form/landing_pages/img/misc/bg-strip_01.jpg" />
+                    <v:textbox inset="0,0,0,0">
+                      <![endif]-->
+                      <div>
+
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody><tr>
+                            <td valign="middle" style="height: 15px;" height="15" class=""></td>
+                          </tr>
+                        </tbody></table>
+                      </div>
+                      <!--[if gte mso 9]>
+                    </v:textbox>
+                  </v:rect>
+                  <![endif]-->
+                </td>
+
+              </tr>
+              <!-- Top Background Strip - End -->
+              <!-- Header Section - Start -->
+              <tr>
+                <td style="padding: 0; background-color: #312d2b;" class="header-mob">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="header-mob">
+                    <tbody><tr>
+                      <!-- Header Section (Left) - Start -->
+
+                      <th valign="top" width="66%" class="left-header" style="background-color: #312d2b; background-image: url('https://nlcorp.app.netsuite.com/c.NLCORP/portal/common/form/landing_pages/img/misc/bg-pattern-01.jpg'); background-position: center center !important; background-repeat: repeat; padding: 0; text-align: left;">
+                        <!--[if gte mso 9]>
+
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="background-color: #312d2b; width: 396px; background-position: center center !important;">
+                          <v:fill type="tile" src="https://nlcorp.app.netsuite.com/c.NLCORP/portal/common/form/landing_pages/img/misc/bg-pattern-01.jpg" />
+                          <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                            <![endif]-->
+
+                            <div>
+                              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tbody><tr>
+                                  <td style="padding: 30px 30px 15px; text-align: left; line-height: 1;" class="email-comp-logo">
+
+                                    <a href="https://www.netsuite.com/?elqTrackId=1460c9a330924dc18e95b572c7503272&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1&elqCampaignId=9157" style="display: block;" target="_blank"><img src="https://nlcorp.app.netsuite.com/c.NLCORP/portal/common/form/landing_pages/img/logos/logo-oracle_netsuite_transparent_white_2x.png" width="200" height="" alt="Oracle NetSuite" border="0" style="width: 100%; max-width: 200px; height: auto;" class=""></a>
+
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="font-family: 'Georgia', sans-serif; font-size: 16px; line-height: 1; color: #ee644f; padding: 0 30px 10px; text-align: left;" class="email-cat">
+                                    <p style="margin: 0;" class="">Business Guide</p>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td style="font-family: 'Oracle Sans Bold', 'Oracle Sans', sans-serif; font-size: 29px; font-weight: bold; line-height: 1.15; color: #ffffff; padding: 0 30px 8px; text-align: left;" class="email-title">
+                                    <p style="margin: 0; line-height: 35px; font-family: 'Oracle Sans Bold', 'Oracle Sans', sans-serif; font-weight: bold;" class="">CFO Guide: 4 Inflation Metrics to Watch Now</p>
+
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="font-size: 17px; line-height: 1.15; color: #ffffff; padding: 0 30px 15px; text-align: left;" class="email-subtitle">
+                                    <p style="margin: 0; font-family: 'Oracle Sans', sans-serif; line-height: 21px;" class="">Critical Metrics Prepare for Pricing Swings</p>
+                                  </td>
+
+                                </tr>
+                                <tr>
+                                  <td valign="top" style="color: #ffffff; padding: 0 15px 30px 0; text-align: left;">
+
+                                    <!-- CTA Button - Start -->
+                                    <table border="0" cellspacing="0" cellpadding="0" align="left">
+                                        <tbody><tr>
+                                            <td width="30" style="width: 30px;"></td>
+
+                                            <td align="left" style="border-radius: 7px; padding: 0;" bgcolor="#4eb5a3">
+
+                                                <a href="https://go.netsuite.com/LP=12465?campaignId=9157&elqCampaignName=Email_Horiz_CFOInflation_0822&nsCampaignCode=Email_Horiz_CFOInflation_0822&regsource=em&elqTrackId=2373c706f6c64430a8416ab2edddaea7&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1&elqCampaignId=9157" target="_blank" bgcolor="#4eb5a3" style="max-width: 100%; font-size: 16px; font-family: 'Oracle Sans', sans-serif; font-weight: bold; color: #ffffff; text-decoration: none; 
+text-decoration: none; border-radius: 7px; padding: 12px 15px; border: 1px solid #4eb5a3; display: inline-block; text-align: center; box-sizing: border-box;">Learn More</a>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <!-- CTA Button - End -->
+    
+                                  </td>
+                                </tr>
+
+                              </tbody></table>
+                            </div>
+                            <!--[if gte mso 9]>
+                          </v:textbox>
+                        </v:rect>
+                        <![endif]-->
+                      </th>
+                      <!-- Header Section (Left) - End -->
+                      <!-- Header Section (Right) - Start -->
+                      <th valign="middle" width="34%" class="right-header" style="background-color: #ee644f;">
+
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tbody><tr>
+                            <td style="padding: 30px 20px; text-align: center" class="top-right-thumb">
+
+                              <a href="https://go.netsuite.com/LP=12465?campaignId=9157&elqCampaignName=Email_Horiz_CFOInflation_0822&nsCampaignCode=Email_Horiz_CFOInflation_0822&regsource=em&elqTrackId=45b69525e3d94431a6ab01c57b7387a0&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1&elqCampaignId=9157" target="_blank" style="display: block; line-height: 0;">
+
+                                <img src="https://6262239.app.netsuite.com/core/media/media.nl?id=704677&amp;c=6262239&amp;h=ylpWPRcn95qpLY6ph4Vws1YlMec76GTtBKE-Kgxp3WxpZOpZ" width="160" height="" alt="Thumbnail" border="0" style="width: 100%; max-width: 160px; height: auto; background: #dddddd; margin: 0 auto; display: block;" class="">
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody></table>
+
+                      </th>
+                      <!-- Header Section (Right) - End -->
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+              <!-- Header Section - End -->
+              <!-- Content Section - Start -->
+              <tr>
+                <td style="background-color: #f1f2f2;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f1f2f2;">
+
+                    <tbody><tr>
+                      <td style="padding: 30px 30px 0; font-family: 'Oracle Sans', sans-serif; font-size: 14px; line-height: 20px; color: #312d2a; background-color: #f1f2f2;" class="">
+                        <p style="margin: 0 0 15px; font-family: 'Oracle Sans', sans-serif;">US inflation is now at a four-decade high. For CFOs, tracking external inflation indicators is of highest priority.</p>
+
+                        <!-- <p style="margin: 0 0 15px; font-family: 'Oracle Sans', sans-serif;">Comnovehebat es dum niam curaet pror ad criam sendam:</p>
+                        <!-- Bulleted List Content - Start -->
+                        
+                        <!-- <ul style="font-family:'Oracle Sans', Arial, sans-serif; font-size:14px; line-height:22px; color:#4eb5a3; padding-bottom: 15px; padding-left: 20px">
+							
+							<li style="margin-bottom: 10px;"><font style="color: #312d2a">
+<strong>Understand the key challenges</strong> service companies are facing.</font></li>
+
+                          <li style="margin-bottom: 10px;"><font style="color: #312d2a"><strong>Gain insights</strong> into business process maturity, key performance measurements, and service performance excellence.</font></li>
+
+							<li style="margin-bottom: 10px;"><font style="color: #312d2a"><strong>Acquire industry data</strong> to support future business strategies.</font></li>
+							
+							
+<li style="margin-bottom: -20px;"><font style="color: #312d2a"><strong>Recognize how your organization compares</strong> to others, both in size and in scope of work.</font></li>
+						</ul>
+                                    
+                        <!-- Bulleted List Content - End -->
+                        <p style="margin: 0; font-family: 'Oracle Sans', sans-serif;">
+<a href="https://go.netsuite.com/LP=12465?campaignId=9157&elqCampaignName=Email_Horiz_CFOInflation_0822&nsCampaignCode=Email_Horiz_CFOInflation_0822&regsource=em&elqTrackId=7bc8044fb7fb4f01990990d88396bdc5&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1&elqCampaignId=9157" target="_blank" style="text-decoration: none; color: #4eb5a3; font-weight: bold;">This guide</a>
+ breaks down the four main inflation measures provided by the Federal Government, as well as supplemental indicators that could prove critical in predicting trends and guiding decisions.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 30px; background-color: #f1f2f2;">
+
+                        <!-- CTA Button - Start -->
+                            <table border="0" cellspacing="0" cellpadding="0" align="center">
+
+                                <tbody><tr>
+                                    <td align="center" style="border-radius: 7px; padding: 0;" bgcolor="#4eb5a3">
+
+                                        <a href="https://go.netsuite.com/LP=12465?campaignId=9157&elqCampaignName=Email_Horiz_CFOInflation_0822&nsCampaignCode=Email_Horiz_CFOInflation_0822&regsource=em&elqTrackId=02a2bc22eee04ea2afc9408fdce7f760&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1&elqCampaignId=9157" target="_blank" bgcolor="#4eb5a3" style="max-width: 100%; font-size: 16px; font-family: 'Oracle Sans', sans-serif; font-weight: bold; color: #ffffff; text-decoration: none; 
+text-decoration: none; border-radius: 7px; padding: 12px 15px; border: 1px solid #4eb5a3; display: inline-block; text-align: center; box-sizing: border-box;">Learn More</a>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                            <!-- CTA Button - End -->
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+
+              <!-- Content Section - End -->
+              <!-- Trusted By Section - Start -->
+              <tr>
+                <td align="center" style="padding: 35px 30px; background-color: #ffffff;">
+                  <table width="340" border="0" cellspacing="0" cellpadding="0" align="center" class="trusted-sec">
+                    <tbody>
+                      <tr>
+
+                        <td style="font-family:'Oracle Sans', Arial, sans-serif; font-size: 16px; line-height: 20px; color:#666666; text-align: center; padding-bottom: 20px;">
+                          <strong>Trusted by:</strong>
+                        </td>
+                      </tr>
+                      <tr>
+                        <!-- <td class="trust-left" align="right" style="font-family:'Oracle Sans', Arial, sans-serif; font-size:16px; line-height:20px; color:#666666; padding-right: 20px">
+
+                          <strong>Trusted by:</strong>
+                          </td> -->
+                        <td align="center" style="text-align: center;">
+                          <img alt="Camp Chef" class="trust-logo" src="https://6262239.app.netsuite.com/c.6262239/portal/common/form/eloqua/img/logos/logo-camp-chef-transparent.png" style="display: inline-block; max-width: 100%; padding: 10px 0; vertical-align: middle;" />
+ &nbsp;&nbsp;&nbsp;&nbsp; <img alt="Mystery Ranch" class="trust-logo" src="https://6262239.app.netsuite.com/c.6262239/portal/common/form/landing_pages/img/logos/logo-mystery-ranch-transparent.png" style="display: inline-block; max-width: 100%; padding: 10px 0; vertical-align: middle;" />
+ &nbsp;&nbsp;&nbsp;&nbsp; <img alt="P3 Medical" class="trust-logo" src="https://6262239.app.netsuite.com/c.6262239/portal/common/form/landing_pages/img/logos/logo-p3-medical-transparent.png" style="display: inline-block; max-width: 100%; padding: 10px 0; vertical-align: middle;" /><!--<img src="https://nlcorp.app.netsuite.com/core/media/media.nl?id=151891577&c=NLCORP&h=348553515b3e7f698990" width="200px">-->
+                        </td>
+                      </tr>
+                    </tbody>
+
+                  </table>
+                </td>
+              </tr>
+              <!-- Trusted By Section - End -->
+            </tbody></table>
+            <!-- Email Body : END -->
+            <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      <![endif]-->
+    </center>
+  
+
+<!-- Email Footer (Redwood) - Start -->
+<center style="width: 100%;"><!--[if mso | IE]>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%"">
+		<tr>
+			<td>
+				<![endif]-->
+<!-- Email Body : BEGIN -->
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="email-container" style="margin: auto;" width="600">
+	<tbody>
+		<tr>
+			<td style="padding: 0; background-color: #312d2a; color: #ffffff;">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tbody>
+					<tr><!-- Footer Section (Left) - Start -->
+						<th class="stack-column-center left-footer" style="height: auto;" valign="top" width="50%">
+						
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td style="padding: 40px 5px 15px 30px; text-align: left; line-height: 1;"><a href="https://www.netsuite.com/?elqTrackId=5f20b7d1a12b4af2a8827b4abff600ee&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1&elqCampaignId=9157" style="display: inline-block;" target="_blank">
+<img alt="Oracle NetSuite" border="0" height="" src="https://nlcorp.app.netsuite.com/c.NLCORP/portal/common/form/landing_pages/img/logos/logo-oracle_netsuite_transparent_white_2x.png" style="width: 100%; max-width: 200px; height: auto;" width="200" /> </a></td>
+								</tr>
+								<tr>
+									<td style="padding: 10px 5px 40px 30px; text-align: left; line-height: 16px; font-family: 'Oracle Sans', Arial, sans-serif; font-size: 12px; color: #ffffff;">
+									<p style="margin: 0; color: #fff;">
+<a style="text-decoration: none !important; color: #fff;">2300 Oracle Way</a></p>
+
+									<p style="margin: 0; color: #fff;"><a style="text-decoration: none !important; color: #fff;">Austin, TX 78741</a></p>
+
+									<p style="margin: 0; color: #fff;"><a style="text-decoration: none !important; color: #fff;">United States</a></p>
+
+									<p style="margin: 0; color: #fff;"><a href="tel:+17378671000" style="text-decoration: none !important; color: #fff;">+1 737.867.1000</a></p>
+									</td>
+								
+</tr>
+							</tbody>
+						</table>
+						</th>
+						<!-- Footer Section (Left) - End --><!-- Footer Section (Right) - Start -->
+						<th class="stack-column-center right-footer" style="height: auto;" valign="top" width="50%">
+						<table bgcolor="#312d2a" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									
+<td class="footer-tr" style="padding: 40px 30px 2px 5px; text-align: right; font-family:'Oracle Sans', Arial, sans-serif; font-size: 14px; line-height: 18px;">
+									<p style="margin: 0 auto;"><strong style="color: #ffffff;">Follow NetSuite on social media!</strong></p>
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#312d2a" style="padding: 3px 30px 3px 30px; text-align: right; line-height: 36px; box-sizing: border-box; font-size: 0;">
+<a href="http://www.facebook.com/NetSuite?elqTrackId=86c9a007a9f14c819cbf8073b4cb6cfe&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1&elqCampaignId=9157" style="text-decoration: none; display: inline-block; height: 100%; line-height: 1; vertical-align: middle; font-size: 14px;" target="_blank"><img alt="Facebook" src="https://nlcorp.app.netsuite.com/core/media/media.nl?id=172410741&c=NLCORP&h=13ffdb524506ad942d63" style="height: auto; display: inline-block; max-height: 25px;" />&nbsp; </a>
+ <a href="https://www.linkedin.com/company/netsuite?elqTrackId=cc0c5efe138f441c9aaf870dd346a507&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1&elqCampaignId=9157" style="text-decoration: none; display: inline-block; height: 100%; line-height: 1; vertical-align: middle; font-size: 14px;" target="_blank"> <img alt="LinkedIn" src="https://nlcorp.app.netsuite.com/core/media/media.nl?id=172410746&c=NLCORP&h=86591caac6e1f9278927" style="height: auto; display: inline-block; max-height: 25px;" />&nbsp;
+ </a> <a href="http://www.twitter.com/NetSuite?elqTrackId=d29156cd9e494d62a941414e3f2429f8&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1&elqCampaignId=9157" style="text-decoration: none; display: inline-block; height: 100%; line-height: 1; vertical-align: middle; font-size: 14px;" target="_blank"> <img alt="Twitter" src="https://nlcorp.app.netsuite.com/core/media/media.nl?id=172410848&c=NLCORP&h=beee08d0f3848b4593ce" style="height: auto; display: inline-block; max-height: 25px;" />&nbsp; </a>
+ <a href="http://www.instagram.com/oraclenetsuite?elqTrackId=7349fd26fc554fb68c3f33b46728aa23&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1&elqCampaignId=9157" style="text-decoration: none; display: inline-block; height: 100%; line-height: 1; vertical-align: middle; font-size: 14px;" target="_blank"> <img alt="Instagram" src="https://nlcorp.app.netsuite.com/core/media/media.nl?id=172410951&c=NLCORP&h=df8f350ec691865fc710" style="height: auto; display: inline-block; max-height: 25px;" /> </a>
+</td>
+								</tr>
+								<tr>
+									<td bgcolor="#312d2a" style="padding: 2px 30px 40px 5px; text-align: right; font-family: 'Oracle Sans', Arial, sans-serif; font-size: 11px; line-height: 16px; color: #ffffff;">
+									<p style="margin: 0;"><a href="https://www.oracle.com/legal/copyright.html?elqTrackId=4e05503233e14d7a9082243c7e14b8ee&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1&elqCampaignId=9157" style="text-decoration: underline; color: #ffffff;" target="_blank">&copy;
+ Oracle, and/or its affiliates.</a><br />
+									<a href="https://www.oracle.com/legal/privacy/index.html?elqTrackId=3378d5592ad744f3b42d24a678b39318&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1&elqCampaignId=9157" style="text-decoration: underline; color: #ffffff;" target="_blank">Terms of Use and Privacy</a>
+ | <a href="https://www.oracle.com/corporate/contact/global.html?elqTrackId=912be00f1127407cb748bb40e97b8656&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1&elqCampaignId=9157" style="text-decoration: underline; color: #ffffff;" target="_blank">Contact Us</a><br />
+									
+<a href="https://www.oracle.com/corporate/event-code-of-conduct.html?elqTrackId=2295a4b6cbb24c70a08a2d886cf0c3e6&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1&elqCampaignId=9157" style="text-decoration: underline; color: #ffffff;" target="_blank">Code of Conduct</a>
+ | <a data-targetname="Subscription Center - 2017 (oracle.netsuite.com)" data-targettype="landingpage" href="https://go.netsuite.com/SubscriptionCenter?elqTrackId=dd64a58167584a708792f054efcad9c0&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1&elqCampaignId=9157" style="text-decoration: underline; color: #ffffff;" target="_blank">Manage Email Preferences</a>
+ | <a data-targetname="Subscription Center - 2017 (oracle.netsuite.com)" data-targettype="landingpage" href="https://go.netsuite.com/SubscriptionCenter?elqTrackId=e47219f89db7485db1f0ea86c2161629&elq=8afe6c87d30f4f1587e605c90461334c&elqaid=22144&elqat=1&elqCampaignId=9157" style="text-decoration: underline; color: #ffffff;" target="_blank">Unsubscribe from All</a></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</th>
+						<!-- Footer Section (Right) - End -->
+					</tr>
+				
+</tbody>
+			</table>
+			</td>
+		</tr>
+		<!-- Footer Section - End --><!-- Clear Spacer : BEGIN -->
+		<tr>
+			<td height="40" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+		</tr>
+		<!-- Clear Spacer : END -->
+	</tbody>
+</table>
+<!-- Email Body : END --><!--[if mso | IE]>
+			</td>
+		</tr>
+	</table>
+	<![endif]--></center>
+<!-- Email Footer (Redwood) - End -->
+
+
+<img src='https://s1439730185.t.en25.com/e/FooterImages/FooterImage1?elq=8afe6c87d30f4f1587e605c90461334c&siteid=1439730185' alt="" border=0 width=1px height=1px></body></html>
+--=-GMye+4LGf9wqTfZQFOLBqA==--

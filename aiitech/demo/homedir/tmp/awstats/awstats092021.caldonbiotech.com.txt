@@ -1,0 +1,1102 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 202109 will be lost/reset.
+# Last config file used to build this data file was /home3/cbt/tmp/awstats/awstats.caldonbiotech.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2010                
+POS_TIME 2690                
+POS_VISITOR 33099               
+POS_DAY 35024               
+POS_DOMAIN 3504                
+POS_LOGIN 3875                
+POS_ROBOT 4030                
+POS_WORMS 4669                
+POS_EMAILSENDER 4800                
+POS_EMAILRECEIVER 4943                
+POS_SESSION 35751               
+POS_SIDER 35951               
+POS_FILETYPES 5078                
+POS_DOWNLOADS 5315                
+POS_OS 5419                
+POS_BROWSER 5596                
+POS_SCREENSIZE 6095                
+POS_UNKNOWNREFERER 6169                
+POS_UNKNOWNREFERERBROWSER 6634                
+POS_ORIGIN 6991                
+POS_SEREFERRALS 7133                
+POS_PAGEREFS 7277                
+POS_SEARCHWORDS 7425                
+POS_KEYWORDS 7577                
+POS_MISC 2353                
+POS_ERRORS 7636                
+POS_CLUSTER 3731                
+POS_SIDER_404 7816                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20211001000413 97 20281 18721743488480
+FirstTime 20210901005815
+LastTime 20210930232425
+LastUpdate 20211001074524 97 0 96 0 0
+TotalVisits 361                 
+TotalUnique 48                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 50                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+JavaEnabled 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+FlashSupport 0 0 0
+DirectorSupport 0 0 0
+JavascriptDisabled 0 0 0
+QuickTimeSupport 0 0 0
+AddToFavourites 0 63 0
+WindowsMediaPlayerSupport 0 0 0
+PDFSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 22 22 0 102 139 1636735
+1 53 53 28452 140 185 986794
+2 24 24 6492 297 492 4310341
+3 22 22 0 141 181 826521
+4 15 15 0 102 121 1137783
+5 15 15 0 93 116 737291
+6 26 52 756919 110 146 1068227
+7 23 23 540 126 163 644814
+8 25 25 5400 113 137 405123
+9 16 16 0 77 104 1138069
+10 21 21 0 94 110 940075
+11 19 20 117907 97 127 714844
+12 101 101 66176 90 137 632445
+13 57 57 18316 176 290 2380192
+14 126 126 197106 138 181 1021676
+15 65 65 28548 110 153 972509
+16 31 31 115641 185 268 242514
+17 29 32 5372 228 259 299058
+18 23 23 52350 325 604 5243449
+19 35 35 120912 143 344 960449
+20 23 23 52 71 94 425708
+21 19 19 0 117 143 1128108
+22 53 53 234258 164 182 1382108
+23 23 23 2090 136 161 2086974
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 12
+us 546 546 494108
+in 173 173 136932
+ru 91 91 289436
+fr 25 25 10350
+cn 10 10 58842
+zz 6 6 0
+ca 4 5 117647
+gr 3 29 641728
+de 2 2 0
+nl 2 2 0
+gb 2 5 7462
+it 2 2 0
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 14
+Googlebot/ 402 10452 20210930163826 402
+unknown 70 1820 20210930114645 70
+no_user_agent 64 1862860 20210930102220 8
+bingbot/ 54 1404 20210930200221 54
+bot[\s_+:,\.\;\/\\-] 30 624 20210929131804 30
+oBot/ 8 208 20210926174157 8
+YandexBot/ 4 104 20210910111017 4
+MojeekBot/ 4 104 20210922124240 4
+aiHitBot/ 4 104 20210907182155 4
+crawl 2 115954 20210908200549 0
+Applebot/ 2 52 20210918000503 2
+spider 2 52 20210930165425 2
+[\s_+:,\.\;\/\\-]bot 2 52 20210930124838 2
+facebookexternalhit/ 1 26 20210926200638 1
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 10
+js 11 266435 0 0
+woff2 1 67400 0 0
+xml 6 6270 0 0
+txt 2 928 0 0
+jpg 1 2359 0 0
+ttf 2 24272 0 0
+php 489 46848 0 0
+css 16 287391 0 0
+html 323 1051316 0 0
+Unknown 45 3260 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 2
+/wp-includes/ID3/license.txt 2 0 928
+/robots.txt 0 1 26
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 9
+Unknown 516 515
+win7 13 12
+linux 2 2
+macosx11 1 1
+win10 331 302
+macosx9 10 10
+macosx 20 20
+winxp 3 3
+win8.1 1 1
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 21
+chrome36.0.1985.125 10 10
+chrome74.0.3729.169 2 2
+chrome89.0.3945.117 23 23
+chrome93.0.4577.82 29 3
+chrome49.0.2623.112 3 2
+Unknown 508 507
+chrome76.0.3809.132 4 4
+chrome63.0.3239.132 6 6
+chrome76.0.3809.100 4 4
+chrome50.0.2661.75 8 8
+safari11.1.2 1 1
+mozilla 8 8
+msie6.0 3 3
+chrome90.0.4430.85 256 256
+firefox77.0 20 20
+firefox91.0 2 2
+chrome91.0.4472.114 1 1
+chrome67.0.3396.79 2 2
+chrome88.0.4240.193 2 2
+chrome91.0.4472.124 3 0
+firefox45.0 2 2
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 6
+WordPress/5.0.13;_https://caldonbiotech.com 20210921131539
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20210914224721
+WordPress/5.0.14;_https://caldonbiotech.com 20210930232425
+facebookexternalhit/1.1_(_http://www.facebook.com/externalhit_uatext.php) 20210926200638
+Cpanel-HTTP-Client/1.0 20210930221453
+ALittle_Client 20210929163138
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 5
+WordPress/5.0.13;_https://caldonbiotech.com 20210921131539
+WordPress/5.0.14;_https://caldonbiotech.com 20210930232425
+Cpanel-HTTP-Client/1.0 20210930221453
+ALittle_Client 20210929163138
+facebookexternalhit/1.1_(_http://www.facebook.com/externalhit_uatext.php) 20210926200638
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 128 133
+From1 264 264
+From2 0 0
+From3 0 0
+From4 474 500
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 8
+403 34 10876
+405 4 168
+301 1758 1470
+404 1633 29192605
+409 183 15189
+406 469 105994
+500 1 1237
+302 27 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 627
+/app/login.jsp 3 -
+/login/Jeecms.do 4 -
+/rss.php 4 -
+/.well-known/pki-validation/3F3FBB903D8FDDE95CC158D17061498A.txt 2 -
+/client/api/findConfigByKey 2 -
+/fckeditor/license.txt 4 -
+/base/login/login.php 4 -
+/.well-known/pki-validation/195E238707EE19782875E7F474E94654.txt 2 -
+/wp-admin/css/colors/modern/ 3 binance.com
+/js/chat/chat.js 1 -
+/doc.php 4 http://simplesite.com
+/template/css/login.css 1 -
+/user/getAllNicknames 1 -
+/wp-content/themes/cubed_v1.2/style.css 1 -
+/app/images/login/logo.png 3 -
+/.well-known/pki-validation/85D64D15E2087C616A7B8C91277EDEC3.txt 2 -
+/Template/Default/Skin/user/images/login_back.jpg 3 -
+/skin/main/onload.js 1 -
+/tpl/login/user/images/login_bg_1.jpg 3 -
+/media-admin.php 6 http://simplesite.com
+/admin.php 8 -
+/Images/login/biaoti.jpg 3 -
+/Public/home/common/js/index.js 1 -
+/api/wallet/redDetail 2 -
+/list.php 4 -
+/wp-content/plugins/super-forms/uploads/php/ 2 caldonbiotech.com
+/_profiler/phpinfo 2 -
+/wp-content/plugins/cherry-plugin/admin/css/tinymce-shortcodes.css 1 -
+/inc/Templates/rss.xslt 4 -
+/downloader 4 -
+/admin/login.asp 4 -
+/replacedb2/ 2 -
+/Content/Wap/base.css 1 -
+/.well-known/pki-validation/D4A8162C774BEC9F7B74785DD76704F0.txt 2 -
+/Public/css/errorCss.css 1 -
+/room/script/face.js 1 -
+/wp-content/plugins/gatewayapi/inc/security_two_factor.php 2 http://simplesite.com
+/wordpress/wp-content/plugins/ubh/o.php 6 http://simplesite.com
+/app/js/source/wcmlib/WCMConstants.js 3 -
+/wp-content/languages/ 6 binance.com
+/backup/ 2 -
+/.well-known/pki-validation/569C0FFEB7CC641325D732E78BD90910.txt 2 -
+/CuteSoft_Client/CuteEditor/Images/log.gif 3 -
+/app/Tpl/fanwe_1/js/DD_belatedPNG_0.0.8a-min.js 3 -
+/admin/js/IdSUtil.js 3 -
+/wp-content/themes/piccione-theme/style.css 1 -
+/master/login.aspx 4 -
+/wp-content/plugins/background-image-cropper/content-post.php 4 http://simplesite.com
+/FCKeditor/editor/filemanager/connectors/test.html 4 -
+/api/v/index/queryOfficePage 2 -
+http://caldonbiotech.com/ 1 http://caldonbiotech.com/
+/public/admin.php/api/index/loansList 2 -
+/-/~/code87/5.php 2 http://simplesite.com
+/admin/login.php 4 -
+/ids/admin/userhome/forgetPwd.jsp 3 -
+/wp-admin/sitas.php 1 http://simplesite.com
+/Images/login/lefttu.jpg 3 -
+/script/login.js 3 -
+/examples/index.html 4 -
+/public/about.html 4 -
+/.well-known/pki-validation/A161CA1B19147DA1FF3A5165EBFD9471.txt 2 -
+/max-templates/classic/styles/app.css 3 -
+/bencandy.php 4 -
+/old/ 2 -
+/wp-content/plugins/joomjs/_inc/lrds.php 2 caldonbiotech.com
+/member/space/company/info.txt 4 -
+/.well-known/pki-validation/71076EDE204BA97E59D02E9073459A7D.txt 2 -
+/siteserver/login.aspx 4 -
+/ckeditor/ckfinder/ckfinder.html 4 -
+/wp-content/plugins/indeed-wp-superbackup/extensions_plus/inc/files/admin.js 1 caldonbiotech.com
+/wp-sitemap-posts-post-1.xml 2 -
+/.well-known/pki-validation/463C9C35067316EE9875DE706AF5F84C.txt 2 -
+/login/kefuxian.mvc 1 -
+/Public/Mobile/ecshe_css/wapmain.css 1 -
+/wp-content/themes/dp_evolve/js/back-end/libraries/fileuploader/upload_handler.php 2 -
+/wp-content/plugins/whmcs-bridge/cc.css 2 -
+/ckfinder/install.txt 4 -
+/images/login/eyoumail.gif 3 -
+/wp-admin/langar.php 1 http://simplesite.com
+/wordpress/2index.php 4 http://simplesite.com
+/.well-known/pki-validation/6F40497B65D69F192770EA5A206659BD.txt 2 -
+/.well-known/pki-validation/39CA397D77BA88630E2BBB752C175858.txt 2 -
+/fckeditor/fckeditor.js 3 -
+/wordpress/wp-content/plugins/xnxx/noob.php 4 http://simplesite.com
+/Public/Home/ecshe_css/main.css 1 -
+/Public/Admin/Images/login_main_bg.jpg 3 -
+/resources/css/headernav.css 1 -
+/wp-content/themes/bordeaux-theme/style.css 1 -
+/digg.php 4 -
+/config.php 6 -
+/nobody/mobile.htm 4 -
+/2017/ 2 -
+/.well-known/pki-validation/D1A1E7284638ADC03179606650BD4E3E.txt 2 -
+/Templates/user/js/global.js 1 -
+/.well-known/pki-validation/47A7FBE7821B1A6CEFCBAD0EDBE0F1D4.txt 2 -
+/admin_user/m_tixian.php 2 -
+/manager/js/left.js 1 -
+/.well-known/pki-validation/4272C121FD86FD7BA73C3CAF3CA66A31.txt 2 -
+/static/wap/js/common.js 1 -
+/getConfig/listPopFrame.do 4 -
+/new_gb/help/images/usage/3.3.gif 3 -
+/searchbd/ 2 -
+/api/system/system/config/get 1 -
+/.well-known/pki-validation/20749EA5C1D255968846BACF5D5D4BF9.txt 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/aldolase-reagent-package-insert%5C/%5C%22 1 http://www.google.com/url
+/wordpress/ 6 -
+/assets/dist/static/js/vendor_prod.js 1 -
+/.well-known/pki-validation/5141BFCEDC59ED148A331845169DC168.txt 2 -
+/fckeditor.js 3 -
+/CuteSoft_Client/CuteEditor/Help/default.htm 4 -
+/m 2 -
+/wp-content/themes/Dandelion/style.css 1 -
+/blog// 1 -
+/wp-content/themes/wp-avatar/admin/uploadify/uploadify.css 1 -
+/wp-content/themes/Nova/_tbs.php 2 http://simplesite.com
+/API/DW/Dwplugin/SystemLabel/SiteConfig.htm 4 -
+/.well-known/pki-validation/0A5DFB4E0DFDD72A976C4DE987E8DC55.txt 2 -
+/wp-content/plugins/wp-automatic/css/jquery.gcomplete.default-themes.css 3 caldonbiotech.com
+/wp-content/themes/rockstar-theme/style.css 1 -
+/.well-known/pki-validation/222C58B794C2B7BB8ACDE74859C8DB7C.txt 2 -
+/wp-admin/local.php 1 http://simplesite.com
+/whir_system/login.aspx 4 -
+/dialog/dialog.js 3 -
+/imagesschool/style1/flash2.jpg 3 -
+/static/images/logo/webserver_small.gif 3 -
+/.well-known/pki-validation/2952AE57A1A78E7F5DB88929EB42DF0C.txt 2 -
+//contact-us 1 -
+/static/home/js/rooms.js 1 -
+/template/home.htm 4 -
+/assets/res/mods/room.js 1 -
+/kkrps/im_group/show_members 2 -
+/replacebd/ 2 -
+/user/userlist 2 -
+/plus/download.php 4 -
+/wp-class.php 2 -
+/asp.net/README.txt 4 -
+/public/appapi/images/error.jpg 1 -
+/.well-known/pki-validation/08872F4512717D22FE451FC70C8C8F47.txt 2 -
+/plus/sitemap.html 4 -
+/wp-trackback.php 2 http://simplesite.com
+/assets/extension/market/css/mt4.css 1 -
+/1index.php 6 www.google.com
+/jcms/index_jcms.jsp 3 -
+/.well-known/pki-validation/F92DE749F4F4CD4553138A521F4AE532.txt 2 -
+/coremail/common/help/images/helplogo_zh.gif 3 -
+/js/ 1 -
+/wp-admin/link-edd.php 1 http://simplesite.com
+/themes/default/graphics/horde-power1.png 3 -
+/api/web/user/getIndexData.php 2 -
+/.well-known/pki-validation/AC4C2B48527D174228437AC110DCB016.txt 2 -
+/magmi-importer/conf/magmi.ini 2 -
+/blog/robots.txt 2 -
+/.well-known/pki-validation/988CBF95926CF0DF0A1AAD2B4375BA08.txt 2 -
+/wp-includes/css/wp-pointer.php 2 http://simplesite.com
+/images/hwem.css 3 -
+/Home/GetInitSource 2 -
+/static/index/css/iindex.css 1 -
+/static/index/js/lk/order.js 1 -
+/humans.txt 8 -
+/addons/theme/stv1/_static/ts2/layout.css 3 -
+/templates/jsn_glass_pro/ext/hikashop/jsn_ext_hikashop.css 3 -
+/wp-content/plugins/wp-pinterest-automatic/css/jquery.gcomplete.default-themes.css 3 caldonbiotech.com
+/login/img/nyyh/chkjs.js 1 -
+/api/product/topRank 2 -
+/images/login9/login_33.jpg 3 -
+/wp-includes/PHPMailer/ 6 binance.com
+/forum/ 4 -
+/stindex.php 2 http://simplesite.com
+/style/default/hdwiki.css 3 -
+/wp-content/uploads/estate_templates/doc.php 2 http://simplesite.com
+/CHANGELOG.txt 4 -
+/.well-known/pki-validation/BE2729B4F7D6FEBE816B09815DF20E22.txt 2 -
+/siteserver/upgrade/default.aspx 4 -
+/images/logo_88x31.gif 3 -
+/htcache.php 2 http://simplesite.com
+/doc.php/404.php 2 http://simplesite.com
+/wp-content/themes/radial-theme/style.css 1 -
+/.well-known/pki-validation/0531A1E3ABC24132D32A2955585F7D56.txt 2 -
+/language/index.html 4 -
+/data/admin/ver.txt 4 -
+/CuteSoft_Client/CuteEditor/ImageEditor/listfiles.aspx 4 -
+/.well-known/pki-validation/84E77617288F0032A2DBAF80DCBEBA0B.txt 2 -
+/wp-content/themes/dandelion/style.css 1 -
+/libraries/joomla/template/content-post.php.suspected 2 http://simplesite.com
+/data/images/wap_logo.gif 3 -
+/wp-content/plugins/wpml-translation-management/vendor/twig/twig/lib/macedes.php 2 http://simplesite.com
+/web/ 2 -
+/wp-includes/sitemaps/providers/ 6 binance.com
+/misc/drupal.js 3 -
+/.well-known/pki-validation/6DE1659ED31B403899CCDDA92C7E129C.txt 2 -
+/1.php 2 http://simplesite.com
+/.well-known/pki-validation/831AF540695FCC79F4152524E8107E5B.txt 2 -
+/.well-known/pki-validation/B348E910C2F0564BFCEC66B23AC60C46.txt 2 -
+/.well-known/pki-validation/37EE92DDF200F762B862A4231E5820FB.txt 2 -
+/.well-known/pki-validation/4A9FD7A20DECA9316512C38DF867317A.txt 2 -
+/.well-known/pki-validation/1717E8293D3EA7070A3D1C30988C792C.txt 2 -
+/wp-includes/sitemaps/ 6 binance.com
+/index.php/api/other/appSetting 1 -
+/wordpress/wp-content/plugins/kamrul13/wp-load.php 2 http://simplesite.com
+/media/com_hikashop/js/hikashop.js 3 -
+/wp-content/themes/distance-lite/languages/namespaces.php 4 http://simplesite.com
+/cms/ 2 -
+/ckeditor/ckfinder/install.txt 4 -
+/plugin.php 4 -
+/.well-known/pki-validation/3814499C422F61C5669164728786794B.txt 2 -
+/wp-content/themes/holding_pattern/admin/options-tab-sample.txt 2 -
+/images/default/post_bt.gif 3 -
+/include/dialog/config.php 4 -
+/admin/inc/xml.xslt 4 -
+/API/DW/Dwplugin/TemplateManage/save_template.htm 4 -
+/doku.php 4 -
+/wordpress/files.php 2 http://simplesite.com
+/wap/trading/get_newallorder_ajax 2 -
+/system/Login.aspx 4 -
+/gank.php.PhP 4 http://simplesite.com
+/helpnew/faq/faq_simple_zh_CN.jsp 3 -
+/coremail/common/help/images/helplogo.gif 3 -
+/themes/README.txt 2 -
+/site/get-hq 2 -
+/.well-known/pki-validation/3756BEF87ECD6145AB4FB5284AB4A895.txt 2 -
+/static/xianyu/js/bankCheck.js 1 -
+/wordpress/wp-logins.php 1 http://simplesite.com
+/wordpress/wp-content/plugins/m4d/shx.php 2 http://simplesite.com
+/css/info.css 1 -
+/Promotions/list.mvc 2 -
+/api/v1/invest 2 -
+/wp-config.txt 6 -
+/advfile/ad12.js 3 -
+/sites/all/libraries/elfinder/src/connectors/php/connector.php 2 -
+/_Media/sitemps.php 4 http://simplesite.com
+/.well-known/pki-validation/F6A4F38FD970D49B2B6C8510242A7788.txt 2 -
+/assets/room/css/room_mobile.css 1 -
+/template/js/comm/Confrim.js 1 -
+/js/basic.js 1 -
+/README.txt 4 -
+/h5/ 2 -
+/examples/file-manager.html 4 -
+/index/Mobile/fenshi 2 -
+/js/home.js 1 -
+/Admin/Common/HelpLinks.xml 4 -
+/Admin/Login.aspx 4 -
+/changelog.txt 4 -
+/wordpress/wp-content/plugins/fighter/shx.php 4 http://simplesite.com
+/e/master/login.aspx 4 -
+/friendGroup/list 2 -
+/.well-known/pki-validation/AD2EA4762120B9804F36F694FAD09CDC.txt 2 -
+/admin/login.aspx 4 -
+/api/v1/member/kefu 2 -
+/kindeditor-min.js 3 -
+/wordpress/wp-admins.php 1 http://simplesite.com
+/editor/js/fckeditorcode_ie.js 3 -
+/customdir/images/english_logo.jpg 3 -
+/wp-content/plugins/ts-visual-composer-extend/assets/ts_vcsc_upload.php 2 caldonbiotech.com
+/wordpress/wp-content/plugins/ElingKuatSlamet/wp-load.php 2 http://simplesite.com
+/wp-content/themes/reganto-theme/style.css 1 -
+/help/en/h_authenticate.html 4 -
+/searchdb2/ 2 -
+/temp/ 2 -
+/resources/main/common.js 1 -
+/images/zh-CN/logo.ico 4 -
+/files/pub_reset.css 1 -
+/wp-content/uploads/index.php 1 -
+/.well-known/pki-validation/E1F59F598EA4A0DD7DF5722AD980C6E1.txt 2 -
+/js/a.script 2 -
+/.well-known/pki-validation/759F5B6E0466A945C0A159C7452B1013.txt 2 -
+/images/logo_product-cml.png 3 -
+/wp-content/plugins/dzs-zoomsounds/savepng.php 4 -
+/zz/address.php 2 -
+/.well-known/pki-validation/70158F0BA61B7EB263C73910A99F999B.txt 2 -
+/Editor.js 3 -
+/common/member/js/user.util.js 1 -
+/Public/Home/js/cls.js 1 -
+/.well-known/pki-validation/990257D736BCCF0D4F170FA05892474C.txt 2 -
+/.well-known/pki-validation/705CA01E8BBF6644B8C55D06FEF35583.txt 2 -
+/images/login/icon-up.gif 3 -
+/public/js/ipb.js 3 -
+/libraries/joomla/template/tools.php 4 http://simplesite.com
+/.well-known/pki-validation/4665889F10A3C3D14CC28F5792ABFC82.txt 2 -
+/CuteSoft_Client/CuteEditor/Style/IE.css 3 -
+/app/images/login/toplogo.gif 3 -
+/inc/rsd.php 4 -
+/licence.txt 4 -
+/.well-known/pki-validation/134DC6D5F762797497C4985AAB898228.txt 2 -
+/fckeditor/editor/js/fckeditorcode_ie.js 3 -
+/.well-known/pki-validation/FF85B2C7F3C468269C27E5EB51DF4A2D.txt 2 -
+/util/login.aspx 4 -
+/ads.txt 10 -
+/leftDao.php 2 -
+/2.php 4 http://simplesite.com
+/.well-known/pki-validation/79E45AFC36ACF398E3B197C965588A4A.txt 2 -
+/.well-known/pki-validation/CEB109786F48B85F157623EEE1A1B5CE.txt 2 -
+/Public/Home/images/game/pk10.png 1 -
+/Images/login/mainlogo.gif 3 -
+/fckeditor/editor/dtd/fck_dtd_test.html 4 -
+/wp-content/plugins/wp-pinterest-automatic/process_form.php 2 -
+/data/json/config.json 1 -
+/css/view/main/style.css 1 -
+/404.jpg 3 -
+/blog/ 5 -
+/.well-known/pki-validation/F8F0F86FFAFB0EFB619CF5F833684EE5.txt 2 -
+/wp-content/plugins/wp-automatic/process_form.php 5 -
+/wp-content/themes/Ghost/includes/uploadify/upload_settings_image.php 2 -
+/app/home/skins/default/style.css 3 -
+/templates/index.html 2 -
+/index/index/purchase.html 2 -
+/ckeditor/ckeditor.js 3 -
+/License.txt 4 -
+/wp-mails.php 2 http://simplesite.com
+/extman/default/images/logo.gif 3 -
+/pub/skins/pmwiki/pmwiki.css 3 -
+/small.php 2 http://simplesite.com
+/Site/Pages/WebResources.ashx/PoweredByKodakImage 4 -
+/s-r/ 2 -
+/system/skins/default/system.login.htm 2 -
+/wp-info.php 2 http://simplesite.com
+/web2/login_template/1.files/Logo1.jpg 3 -
+/bk 3 -
+/.well-known/pki-validation/67F2C519207B2F8C5A375E8946AE3629.txt 2 -
+/images/branding/logo.gif 3 -
+/uc_server/control/admin/db.php 4 -
+/ 9 -
+/images/2_11.gif 3 -
+/wp-content/plugins/itr-popup/scripts/jscolor/itro-admin-scripts-RT1PIO.php 2 caldonbiotech.com
+/getConfig/getArticle.do 2 -
+/.well-known/pki-validation/040D7566F55D261E33AFE8582CAF24FC.txt 2 -
+/auth/login 4 -
+/issmall/ 4 -
+/addons/theme/stv2/_static/ts2/layout.css 3 -
+/wordpress/wp-content/plugins/masterx/wp-blog.php 2 http://simplesite.com
+/phpmyadmin/docs.css 3 -
+/Templates/user/finance/css/userPay.css 1 -
+/local.php 4 http://simplesite.com
+/wp-content/themes/anthology/style.css 1 -
+/bbs/ 4 -
+/archive/archive.css 3 -
+/static/local/img/userCenter/hourlyPrivilege.svg 1 -
+/wp-content/plugins/wpml-string-translation/vendor/twig/twig/test/Twig/Tests/Node/Expression/Unary/mavevasd.php 2 http://simplesite.com
+/plugins/anchor/anchor.js 3 -
+/ex-full 10 -
+/dup-installer/main.installer.php 2 -
+/main 3 -
+/tpl/user/tpl1/css/skins/blue.css 3 -
+/wordpress/wp-content/plugins/masterx/upx.php 4 http://simplesite.com
+/Scripts/jquery/maticsoft.jquery.min.js 3 -
+/.well-known/pki-validation/90F64F727557EB928CEAAE02C632DA11.txt 2 -
+/css/dafa.css 1 -
+/wp-content/themes/elemin/themify/js/utils.js 4 -
+/jcms/index.jsp 3 -
+/mini.php 4 http://simplesite.com
+/.well-known/pki-validation/5CF60033A2C25A82206A413707661C57.txt 2 -
+/.well-known/pki-validation/9CDC553E3A6BEE967DCA443E24C93BD2.txt 2 -
+/tools/rss.aspx 4 -
+/banner.do 2 -
+/skin/js/common.js 1 -
+/contact-us 1 -
+/Admin/Images/LoginImages/admin_top.gif 3 -
+/search-replace-bd/ 2 -
+/examples/readonly.html 4 -
+/sites/all/libraries/elfinder/connectors/php/connector.php 2 -
+/magento_version 4 -
+/wp-content/plugins/wp-automatic/js/main-front.js 1 -
+/wordpress 3 -
+/wcm/ 4 -
+/.well-known/pki-validation/8BF43CC2CC9B1142B12040D3DBB322B4.txt 2 -
+/docs.css 3 -
+/.well-known/pki-validation/D19255642539F9A7A864DD6809F1D9FB.txt 2 -
+/api/uploads/apimap 2 -
+/lib/client/etc/hometu.jpg 1 -
+/.well-known/pki-validation/09C7444E6A2E46304E490EDAF9A7C3CE.txt 2 -
+/wp-content/themes/bulteno-theme/functions/Readme!.txt 2 -
+/.well-known/pki-validation/48492EC449FF870B47F52ED2C375B518.txt 2 -
+/admin/webadmin.php 2 -
+/wp-content/themes/sportimo-theme/style.css 1 -
+/help/ch_gb/images/help-title.gif 3 -
+/admin/template/article_more/config.htm 4 -
+/.well-known/pki-validation/65117CA32DD1B1DA5B2E1BAA974ECE6E.txt 2 -
+/magmi/conf/magmi.ini 2 -
+/images/login_Name.jpg 3 -
+/images/src_images_but_dianz_s.png 1 -
+/install 4 -
+/.env.example 2 -
+/wp-admin/network/network.php 3 http://simplesite.com
+/kindeditor.js 3 -
+/.well-known/pki-validation/4D21597CEFD8E6457BD094DD4145F6F3.txt 2 -
+/core/misc/drupal.js 3 -
+/info.php 2 -
+/oldsite/ 2 -
+/ids/admin/login.jsp 3 -
+/static/home/css2/login--1.css 1 -
+/admin/admin_login.php 4 -
+/next/img/logo.gif 3 -
+/.well-known/pki-validation/A0C4B5196B17F54132B5731C29967269.txt 2 -
+/.well-known/pki-validation/4FA27FC1065908E65C295C0BAD66DA77.txt 2 -
+/includes/general.js 3 -
+/mh/phone.do 2 -
+/API/DW/Dwplugin/TemplateManage/login_site.htm 4 -
+/whir_system/module/security/login.aspx 4 -
+/wp/wp-apps.php 2 http://simplesite.com
+/infe/rest/fig/advertise/common.json 1 -
+/wp-content/uploads/smile_fonts/icomoon-free-social-contact-16x16/icomoon-f 2 -
+/.well-known/pki-validation/D94C21A66A1F4CDF7D7574FC725C0375.txt 2 -
+/stock/search.html 2 -
+/old 3 -
+/.well-known/pki-validation/147D3C7F69E0F58CDBC6605D9B7A162D.txt 2 -
+/Include/EcsServerApi.js 3 -
+/.well-known/pki-validation/54E6C35B867C503CB060EF03B90A1404.txt 2 -
+/wordpress/wp-content/plugins/kamrul13/k.php 2 http://simplesite.com
+/.well-known/pki-validation/5DF5224829185539D70E4E969298447F.txt 2 -
+/lang/en.js 3 -
+/S-R/ 2 -
+/archiver 4 -
+/back/scripts/jspxcms_choose.js 3 -
+/old-site 3 -
+/API/DW/Dwplugin/TemplateManage/manage_site.htm 4 -
+/skin/frontend/default/modern/css/styles.css 3 -
+/js/ajax_x.js 3 -
+/plus/heightsearch.php 4 -
+/feed.asp 4 -
+/wp-content/pluginsOFF/advanced_file_manager_5/php/connector.minimal.php 2 -
+/wp-content/plugins/cherry-plugin/admin/import-export/download-content.php 2 -
+/api/index/webconfig 2 -
+/wordpress/wp-content/plugins/ubh/up.php 2 http://simplesite.com
+/searchdb/ 2 -
+/adminsoft/templates/images/login_bg_top.jpg 3 -
+/API/DW/Dwplugin/ThirdPartyTags/SiteFactory.xml 4 -
+/phpmyadmin/ 4 -
+/static/admincp/js/common.js 1 -
+/.well-known/pki-validation/156ED7628D8F8C0AD0D9E4AB97BAB70C.txt 2 -
+/.well-known/pki-validation/261F451D789AD4A4E96C3699D8865982.txt 2 -
+/.well-known/pki-validation/D9870BF83E3017C7A631F722FA3BA4CB.txt 2 -
+/common/help/images/helplogo.gif 3 -
+/wordpress/doc.php 2 http://simplesite.com
+/ckfinder/ckfinder.html 4 -
+/maintlogin.jsp 3 -
+/wp-content/themes/satoshi/styles/functions.css 1 -
+/wp/ 4 -
+/.well-known/security.txt 2 -
+/public/static/css/denglu.css 1 -
+/wordpress/wp-content/plugins/masterx/shx.php 2 http://simplesite.com
+/wordpress/wp-content/plugins/fighter/upx.php 6 http://simplesite.com
+http://caldonbiotech.com/js/ 1 -
+/script/valid_formdata.js 3 -
+/.git/config 2 http://caldonbio.tech/.git/config
+/.well-known/pki-validation/DF849F85907D86B8572F8B6D95B7A437.txt 2 -
+/.well-known/pki-validation/614FBC97528DEA032E45FC1C1A45FC51.txt 2 -
+/replace-db/ 2 -
+/google-site-verification-content-fpk8ez12pdbewljjo9xhbxlv7lhxa9nplpcode87.php 2 http://simplesite.com
+/index2.html 4 -
+/sitemap.xml 2 -
+/blackhat.php.suspected 2 http://simplesite.com
+/.well-known/pki-validation/20E7BA5AB767E10E39EBA8B6C55D71AC.txt 2 -
+/.well-known/pki-validation/8C92C9338242760528E9B00FA90CCEF3.txt 2 -
+/Admin/Images/LoginImages/admin_text.gif 3 -
+/history.txt 4 -
+/assets/images/doc.php 2 http://simplesite.com
+/static/hgicon.png 3 -
+/rss.aspx 4 -
+/.well-known/pki-validation/717787951899AFCF1CC6F4E605206602.txt 2 -
+/.git/index 10 -
+/.well-known/pki-validation/040485360F24CBE1FE3C01CC31995563.txt 2 -
+/libraries/joomla/template/mide.php 2 http://simplesite.com
+/plug/publish 4 -
+/wp-content/themes/kernel-theme/style.css 1 -
+/div/ 2 -
+/.well-known/pki-validation/E655C0F33094F640F504181B5E64390E.txt 2 -
+/sr_db.php 2 -
+/oldsite 3 -
+/stylesheet.css 3 -
+/wp-content/plugins/background-image-cropper/ups.php 2 http://simplesite.com
+/images/login/logo.gif 3 -
+/wp-admin/links.php 1 http://simplesite.com
+/mobile/v3/appSuperDownload.do 2 -
+/wp-menus.php 2 http://simplesite.com
+/phpmyadmin/themes/original/img/logo_right.png 3 -
+/wp-content/themes/MoneyTheme/uploads/upload.php 2 -
+/wp-admin/wp-admin.php 2 http://simplesite.com
+/js/json.js 1 -
+/common/template/lottery/lecai/css/style.css 1 -
+/.well-known/pki-validation/4D58AFB78DDD66AAAD43D0BAFEFA9D6A.txt 2 -
+/pub/guiedit/guiedit.js 3 -
+/wp-content/themes/Brainstorm/functions/jwpanel/scripts/uploadify/uploadify.css 2 -
+/Content/css/wzwstylel.css 1 -
+/deptWebsiteAction.do 4 -
+/app/etc/local.xml 2 -
+/fckeditor/fckconfig.js 3 -
+/Help 4 -
+/wp-content/plugins/redirection/models/wp-contentt.php 2 http://simplesite.com
+/old-index.php 8 caldonbiotech.com
+/User/Login.aspx 4 -
+/.well-known/pki-validation/E6420F2C7A1BE72677D6C32F4672C9FA.txt 2 -
+/forum.php 4 -
+/Search.html 4 -
+/Ntalker/lawfirm.aspx 4 -
+/ws/index/getTheLotteryInitList 2 -
+/backup 3 -
+/common/common.js 3 -
+/Site/SystemThemes/7917A0869761B5458281E407AE0090F5/Images/ISBanner58px.jpg 3 -
+/system/Update.aspx 4 -
+/admin/SouthidcEditor/ButtonImage/standard/componentmenu.gif 3 -
+/web/api/getBanner 2 -
+/.well-known/pki-validation/57109BB91993691F61A002F74CF75B90.txt 2 -
+/console/js/CWCMDialogHead.js 3 -
+/wp-content/plugins/wp-automatic/wp-pinterest-automatic 2 -
+/proxy/games 2 -
+/forums/list.page 4 -
+/Install/logo.gif 3 -
+/portal/index/protocol.html 2 -
+/include/dedeajax2.js 3 -
+/static/guide/ab.css 1 -
+/wp-content/plugins/prdctfltr/lib/css/prdctfltr.css 1 -
+/wordpress/wp-content/plugins/Luxury/wp-load.php 2 http://simplesite.com
+/images/logo-white.png 3 -
+/wp-content/themes/u-design/scripts/admin/uploadify/uploadify.css 2 -
+/wp-includes/Requests/Marvins.php 2 http://simplesite.com
+/wp-content/plugins/3dprint-lite/includes/js/3dprint-lite-backend.js 1 caldonbiotech.com
+/public/web/css/add/index.css 1 -
+/wp-content/themes/alternate-lite/inc/network.php 2 http://simplesite.com
+/Wq_StranJF.js 3 -
+/.well-known/pki-validation/4CCB4873C83F0362D01357F55E9C6301.txt 2 -
+/.well-known/pki-validation/EEDB72C8F22619320F2FFF192CF9FBCB.txt 2 -
+/webbuilder/script/locale/wb-lang-zh_CN.js 3 -
+/Res/font/font.css 1 -
+/cgi/index.cgi 4 -
+/ymail/images/index_r1_c4.jpg 3 -
+/.well-known/pki-validation/4862BA6BA35E914BE960A01CFFC477E0.txt 2 -
+/console/js/CTRSRequestParam.js 3 -
+/misc/print.css 1 -
+/img/zllqdk.png 1 -
+/common/help/images/helplogo_zh.gif 3 -
+/wp-content/themes/theagency/includes/uploadify/uploadify.css 2 -
+/.well-known/pki-validation/B6BFF2EE048A60A142E38C19284235FE.txt 2 -
+/.env.testing 2 -
+/wordpress/wp-includes/customize/class-wp-customize-media-controI.php 2 http://simplesite.com
+/extern.php 4 -
+/admin/editor/ 4 -
+/srdb2.php 2 -
+/replace-db.php 2 -
+/ipl/app/flash/publicbmw/ball/FigLeaf.js 1 -
+/default/css/em_css.css 3 -
+/wordpress/wp-content/plugins/Luxury/content.php 4 http://simplesite.com
+/xy/ 2 -
+/archiver/ 4 -
+/appxz/index.html 2 -
+/Error.aspx 4 -
+/Prompt/images/P_Wrong.gif 3 -
+/UserCenter/css/admin/bgimg/admin_all_bg.png 3 -
+/ups.php 2 http://simplesite.com
+/back/ 2 -
+/api/config-init 2 -
+/help/user/index.html 4 -
+/themes/default/default.css 3 -
+/mtja.html 2 -
+/xx.js 1 -
+/.well-known/pki-validation/31D4389D18C38526D644F22485B9C665.txt 2 -
+/admin/SouthidcEditor/Dialog/dialog.js 3 -
+/client/api/findFreeTrade 2 -
+/ks_inc/ajax.js 3 -
+/template/1/bluewise/_files/jspxcms.css 3 -
+/js/dianzan.js 1 -
+/wp 3 -
+/js/buttons.js 3 -
+/themes/graphics/horde-power1.png 3 -
+/public/img/cz1.png 1 -
+/.well-known/pki-validation/984FA5C0E22DD194632E56BFA954DFF7.txt 2 -
+/apps/admin/_static/image/login_box_bg.png 3 -
+/docs/DOCUMENTATION.txt 4 -
+/wp-config-samsples.php 2 http://simplesite.com
+/views/home/home.js 1 -
+/install.php 4 -
+/index.cgi 4 -
+/fox-style.php 2 caldonbiotech.com
+/.well-known/pki-validation/EC854A55CCA0324FF8B860F21777A916.txt 2 -
+/js/base1.js 1 -
+/wordpress/wp-content/plugins/fighter/config.php 2 http://simplesite.com
+/admin/SouthidcEditor/ewebeditor.asp 4 -
+/site/ 2 -
+/.well-known/pki-validation/C820CD6DFFC84A925F0B97F61C57F954.txt 2 -
+/wp-includes/class.wp.php 2 caldonbiotech.com
+/wordpress/wp-content/plugins/xnxx/xd.php 2 http://simplesite.com
+/.well-known/pki-validation/6F79926C6A6D795FF5A9A386AF1BA0F0.txt 2 -
+/FCK/fckeditor.js 3 -
+/console/include/not_login.htm 4 -
+/editor/fckeditor.js 3 -
+/wp-content/uploads/estate_templates/wpbricks/doc.php 2 http://simplesite.com
+/myConfig.js 1 -
+/plugins/filemanager/filemanager/js 4 -
+/.well-known/pki-validation/A0D60991CF903CF18027C56DF0638C6C.txt 2 -
+/im/h5/ 2 -
+/var/cache/mage--2/ 2 -
+/register 2 -
+/n/news/banner 2 -
+/wordpress/wp-content/themes/twentytwentyone/404.php 2 http://simplesite.com
+/.well-known/pki-validation/FD482A0CD8DB1B9AC970E654023B6CF0.txt 2 -
+/wp-content/themes/oxygen-theme/style.css 1 -
+/.well-known/pki-validation/3CFEE6A6CC9E442EF13199D990A8975E.txt 2 -
+/member/js/lang_zh_CN.js 1 -
+/clientscript/vbulletin_ajax_htmlloader.js 3 -
+/template/920ka/js/woodyapp.js 1 -
+/autoload_classmap.php 4 http://simplesite.com
+/ycportal/js/wbTextBox/showimg.jsp 3 -
+/plus/rssmap.html 4 -
+/.well-known/pki-validation/BA4B85ADB2F371939E74FD996DD7A5DD.txt 2 -
+/FCK/editor/js/fckeditorcode_ie.js 3 -
+/wordpress/wp-content/plugins/523453244/mini.php 4 http://simplesite.com
+/system/language/zh-cn.xml 4 -
+/home/login/login_index.html 2 -
+/essay_writing/essay_tips/ 2 -
+/docs/ 4 -
+/api/api_user.xml 4 -
+/2018/ 2 -
+/inc/playerKinds.xml 4 -
+/api/index/loansList 2 -
+/wp-content/themes/Anthology/style.css 1 -
+/test_404_page/ 4 -
+/wp-content/themes/evolve/js/back-end/libraries/fileuploader/upload_handler.php 2 -
+/.well-known/pki-validation/0054743C09E1046F137FA40639053C91.txt 2 -
+/default/images/logo.gif 3 -
+/Public/Wchat/css/index.css 1 -
+/static/mobile/user.html 2 -
+/bc 3 -
+/base/exchange_article/index/classid/1/id/1 2 -
+/wp-content/themes/purevision/scripts/admin/uploadify/uploadify.css 2 -
+/wp-content/themes/brainstorm/functions/jwpanel/scripts/uploadify/uploadify.css 2 -
+/datacenter/downloadApp/showDownload.do 4 -
+/console/auth/reg_newuser.jsp 3 -
+/common/download.js 1 -
+/phpinfo.php 2 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 50
+192.185.52.186 505 505 2304 20210930232425
+45.144.225.59 87 87 70756 20210905150652
+45.144.225.29 85 85 66176 20210902123434
+212.192.246.214 84 84 65196 20210909141121
+52.179.85.187 10 10 226202 20210919063221
+23.146.241.19 6 6 0 20210917195119
+125.64.94.213 6 6 52350 20210903182631
+125.64.94.212 4 4 6492 20210928022326
+23.99.11.135 4 4 231258 20210925220451
+84.254.44.76 3 29 641728 20210924064519
+77.111.247.128 2 2 900 20210917190927
+77.111.247.82 2 2 900 20210917190927
+185.31.65.56 2 2 0 20210913043636
+77.111.247.39 2 2 900 20210917190927
+94.23.198.111 2 2 0 20210921091132
+104.248.153.4 2 2 2090 20210910163552
+194.246.93.113 2 2 0 20210928011050
+77.111.244.209 2 2 900 20210925084122
+34.219.87.132 2 2 174 20210914224721
+77.111.247.129 2 2 900 20210917190927
+47.56.227.159 2 3 117647 20210925110928
+77.111.247.64 2 2 900 20210925084122
+198.46.81.18 2 2 0 20210906131519
+167.172.78.186 2 2 2090 20210914232153
+77.111.247.81 2 2 900 20210925084122
+77.111.247.250 2 2 900 20210925084122
+194.226.142.151 2 2 115962 20210901193206
+128.90.90.18 1 1 540 20210903072141
+185.220.100.241 2 2 0 20210927183650
+67.205.133.39 2 2 0 20210928100453
+185.88.100.137 1 1 260 20210926113728
+37.0.11.92 2 2 0 20210922201937
+70.39.116.226 2 2 0 20210926035634
+3.120.130.29 2 2 174 20210914224721
+77.111.247.90 2 2 900 20210925084122
+77.111.247.67 1 1 450 20210917190927
+207.148.73.242 2 2 0 20210924234757
+3.19.56.43 2 2 174 20210914224721
+20.109.124.185 2 2 0 20210909115453
+77.111.247.181 2 2 900 20210925084122
+34.207.122.143 2 2 28452 20210926011403
+103.195.141.244 1 1 0 20210908144144
+64.78.149.164 2 2 174 20210914224721
+78.85.139.174 2 2 108018 20210907141857
+66.220.149.117 0 1 26 
+23.228.109.147 2 2 450 20210929163138
+167.71.214.42 2 2 0 20210917033840
+35.232.20.215 2 2 2090 20210930064340
+51.81.173.226 0 3 5372 
+77.111.247.31 2 2 900 20210917190927
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 30
+20210901 22 22 115962 12
+20210902 104 104 66176 13
+20210903 25 25 52890 10
+20210904 19 19 0 11
+20210905 106 106 70756 15
+20210906 18 18 0 11
+20210907 21 21 108018 13
+20210908 21 21 0 13
+20210909 101 101 65196 12
+20210910 15 15 2090 10
+20210911 16 16 0 9
+20210912 14 14 0 11
+20210913 14 14 0 9
+20210914 43 43 3938 14
+20210915 13 13 0 9
+20210916 12 12 0 8
+20210917 29 29 4950 19
+20210918 20 20 113101 13
+20210919 19 19 113101 11
+20210920 15 15 0 13
+20210921 19 19 0 9
+20210922 14 14 0 9
+20210923 18 18 0 11
+20210924 21 47 641728 13
+20210925 35 36 354305 19
+20210926 22 22 28764 17
+20210927 15 18 5372 10
+20210928 27 27 6492 14
+20210929 14 14 450 11
+20210930 34 34 3242 12
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+5mn-15mn 6
+15mn-30mn 22
+1h+ 31
+30mn-1h 54
+2mn-5mn 1
+0s-30s 247
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 85
+/wp-cron.php 473 0 308 308
+/wp-content/ 20 0 10 10
+/wp-includes/Text/Diff/ 12 4860 0 0
+/wp-includes/ 12 49776 0 0
+/wp-includes/IXR/ 12 6816 0 0
+/wp-includes/Text/Diff/Engine/ 12 5508 0 0
+/wp-includes/ID3/ 12 8580 0 0
+/wp-includes/Text/ 12 4632 0 0
+/wp-includes/widgets/ 12 7740 0 0
+/wp-includes/pomo/ 12 5880 0 0
+/cgi-sys/403.html 11 4950 11 0
+/wp-includes/blocks/ 10 4860 0 0
+/wp-includes/Text/Diff/Renderer/ 10 3690 0 0
+/.well-known/acme-challenge/XUcVbOk4k7fX7yp5t8vi0Q_ORB9lWATUGgUl5HqZsyE 8 696 4 4
+/wp-load.php 8 0 4 4
+/wp-admin/css/ 6 9558 3 0
+/wp-includes/js/codemirror/ 6 3132 0 0
+/.well-known/ 6 2106 0 3
+/wp-includes/css/dist/ 6 2826 0 0
+/wp-includes/wlwmanifest.xml 6 6270 3 3
+/wp-admin/maint/ 6 2136 0 0
+/contact/ 6 347886 2 3
+/wp-includes/images/wlw/ 6 2532 0 0
+/wp-includes/images/smilies/ 6 4986 0 0
+/wp-includes/css/ 6 5568 0 0
+/.well-known/acme-challenge/EWRARU0E8YU55S_7IZTW7IRWWJIE82HI 2 128 0 0
+/readme.html 4 12984 0 2
+/wp-json/wp/v2/users 1 260 1 1
+/.well-known/acme-challenge/MFFDL0S1V_-VAA-OIW8U8M07XP_GQTLF 2 128 0 0
+/admin/fckeditor/editor/filemanager/connectors/test.html 2 900 0 2
+/wp-admin/css/colors/ectoplasm/ 3 1359 0 0
+/.well-known/acme-challenge/UEJ0EGZX4EDO-2B-Q8G6P_S86_P55PK7 2 128 0 0
+/wp-admin/css/colors/coffee/ 3 1353 0 0
+/wp-admin/css/colors/blue/ 3 1356 0 0
+/wp-admin/images/ 3 4890 0 0
+/.well-known/acme-challenge/__JJ_313G7FPXEGD9P1CQ0PSF2_SZY-H 2 128 0 0
+/.well-known/acme-challenge/TO-5HNJ61NO_LWE5SSXVYSGVOZ75VED8 2 128 0 0
+/wp-content/plugins/ 2 0 1 1
+/.well-known/acme-challenge/NC5M_ZKGBL7U3XJR1LAR790ZETRRCYBR 2 128 0 0
+/wp-admin/js/widgets/ 2 1248 0 0
+/news/ 4 136470 2 2
+/wp-includes/js/plupload/ 4 2188 0 0
+/wp-admin/css/colors/ 3 1626 0 0
+/.well-known/acme-challenge/Z0YV6RJJ419197-CCPU6LUKMYLIBBK81 2 128 0 0
+/.well-known/acme-challenge/Y7MIUPVGD5ZRH85GEF29I8P50WXP763K 2 128 0 0
+/.well-known/acme-challenge/A3YW6SLIPWD07RE69241E46OIHS0-3_D 2 128 0 0
+/.well-known/acme-challenge/70SUYPB5__GIMS3GCXQQEBU8W8I114JJ 2 128 0 0
+/include/fckeditor/editor/filemanager/connectors/test.html 2 900 0 2
+/.well-known/acme-challenge/A8M0FF7EHLQY44F1F78K7GNGZDO_D_H9 2 128 0 0
+/.well-known/acme-challenge/_BSLC_IUTGMR-Z-AXEONM8LKJP3HUUUT 2 128 0 0
+/.well-known/acme-challenge/9O2VZ_31WRZOY3LXI73Z-D9LY75V3US_ 2 128 1 0
+/wp-admin/install.php 1 540 1 1
+/fckeditor/editor/filemanager/connectors/test.html 2 900 0 2
+/.well-known/acme-challenge/-Y9J3-7-A1KDX2_2DNOTM2Z_O6QBM249 2 128 0 0
+/wp-json/wp/v2/users/ 2 1142 0 2
+/sites/all/modules/fckeditor/fckeditor/editor/filemanager/connectors/test.html 2 900 0 2
+/wp-admin/css/colors/midnight/ 3 1356 0 0
+/about-us/ 2 115296 1 0
+/wp-admin/includes/ 6 12348 0 0
+/js/fckeditor/editor/filemanager/connectors/test.html 2 900 0 2
+/.well-known/acme-challenge/SSAGV61K8QB-S21ON9469O932WFOG6M2 2 128 0 0
+/wp-content/uploads/2021/08/ 6 1950 0 0
+/wp-comments-post.php 1 0 1 1
+/sites/all/libraries/fckeditor/editor/filemanager/connectors/test.html 2 900 1 2
+/wp-admin/css/colors/light/ 3 1353 0 0
+/wp-admin/css/colors/ocean/ 3 1359 0 0
+/wp-content/uploads/2021/09/ 6 1950 0 0
+/index.php 2 45858 1 0
+/wp-includes/fonts/ 6 2574 0 0
+/.well-known/acme-challenge/8_GF58GRGB_8HF-TIPFV_AK2DF72BTSK 2 128 0 0
+/wp-content/themes/dt-the7/fonts/FontAwesome/webfonts/fa-solid-900.woff2 1 67400 0 1
+/wp-admin/css/colors/sunrise/ 3 1362 0 0
+/wp-includes/images/crystal/ 6 3570 0 0
+/wp-content/upgrade/ 6 1890 0 0
+/wp-includes/images/media/ 6 3174 0 0
+/wp-content/uploads/ 6 3066 0 0
+/ 4 225060 2 0
+/.well-known/acme-challenge/XJ2IVGJU7WAXBB9949_IWUECAC36YT85 2 128 1 0
+/wp-config.php 2 0 1 1
+/wp-admin/js/ 3 6036 0 0
+/.well-known/acme-challenge/CHITZX7JW8PJSY6X9ZAAE0JRNGHFVAO4 2 128 0 1
+/wp-includes/js/ 2 4814 0 0
+/wp-links-opml.php 2 450 1 1
+/wp-content/themes/dt-the7/fonts/icomoon-the7-social/fonts/icomoon-the7-social-icons-16x16.ttf 2 24272 1 0
+/wp-includes/images/ 6 6120 0 0
+END_SIDER

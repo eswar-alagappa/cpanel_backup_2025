@@ -1,0 +1,834 @@
+Return-Path: <mail.ihtwdyecafavyhjuwlton@messaging.aacc.org>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id KOZqHWtEfmPi8AoA7/vpDg
+	(envelope-from <mail.ihtwdyecafavyhjuwlton@messaging.aacc.org>)
+	for <rvairavan@caldonbiotech.com>; Wed, 23 Nov 2022 10:03:55 -0600
+Return-path: <mail.ihtwdyecafavyhjuwlton@messaging.aacc.org>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Wed, 23 Nov 2022 10:03:55 -0600
+Received: from mta32-144.msgfocus.com ([162.212.32.144]:37969)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <mail.ihtwdyecafavyhjuwlton@messaging.aacc.org>)
+	id 1oxsE6-0035vE-U0
+	for rvairavan@caldonbiotech.com;
+	Wed, 23 Nov 2022 10:03:55 -0600
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=msgf; d=msgfocus.com;
+ h=Subject:Message-ID:Reply-To:To:List-Unsubscribe:From:Date:MIME-Version:
+ Content-Type;
+ bh=WTUbfwdvBNxseAEzPE1tusMrovVqN0kVEleBYJNFh1E=;
+ b=B1CQsc/AHCx915YYOoMAMYThpgWV/5U8qfbEHPxKzhW9dBZcNVI0jxxqOBnHfd3pwlnPpIvDUWSl
+   r+1pnOQdQaCJyCLtvQn8XLaYn81oVKNU7o+5Bn7+NdQAoP9lEN9vu+d2VF/4EAdkX+z0x7XNxArq
+   ATbf5zJ9FMxktseVgcc=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=aacc.org; s=amf-dkim; t=1669219423;
+	bh=WTUbfwdvBNxseAEzPE1tusMrovVqN0kVEleBYJNFh1E=;
+	h=Subject:Message-ID:Reply-To:To:List-Unsubscribe:From:Date:
+	 MIME-Version:Content-Type;
+	b=QYqg0tXDt4o+iOTjeVPVsVuIrNw/bG/xM4FtTO02ICYYLgH6PFImT7kwNlGc+2KsU
+	 kZfUFETwhhLZV2eVfu6BBF5X7my45LPMLcw584yyGtyZH/fAZeasduMEQRUgMXNfTs
+	 g+GwzKtq6KO/nLlXD5Q16h0EiGqB64S7ggOZgy+E=
+Subject: Expand your knowledge of respiratory tract infections
+Message-ID: <1OEW1-7dzXjCXUf-kzks-1uRlEWWt3fjlSSxZ0S@messaging.aacc.org>
+Reply-To: "AACC - American Association for Clinical Chemistry"
+ <eservices@aacc.org>
+To: rvairavan@caldonbiotech.com
+List-Unsubscribe:
+ <mailto:mail.ihtwdyecafavyhjuwlton@messaging.aacc.org?subject=Unsubscribe>
+From: "AACC - American Association for Clinical Chemistry"
+ <eservices@aacc.org>
+Date: Wed, 23 Nov 2022 16:03:43 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="--129F6578EAEF16C09263C56E58021B0"
+X-Virtual-MTA: mta32-144
+X-Spam-Status: No, score=2.7
+X-Spam-Score: 27
+X-Spam-Bar: ++
+X-Spam-Flag: NO
+
+
+----129F6578EAEF16C09263C56E58021B0
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html xmlns=3D"https://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-micros=
+oft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+<head>
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<title>Learn how LC-MS is taking clinical research to the next level </titl=
+e>
+    <!-- Email Name: CMD_XX_AACC-MSACL-Webinars-Clinical-Lab-Manager-3rd_E1=
+729324_WI_2210_PS_JP_CV102 -->
+    <!--[if !mso]><!-- -->
+        <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+    <!--<![endif]-->
+    <style type=3D"text/css">
+        html {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+        body {
+            /*
+            Yahoo ignores the body tag so it will create a wrapper
+            around our template and inherit the CSS body ruleset
+            NOTE: This isn't really working!
+            */
+            background: #FFFFFF !important;
+            font-family: sans-serif;
+            font-size: 13px;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+        a {
+            color: #6caae3;
+        }
+        .element-paragraph a {
+            /* https://css-tricks.com/snippets/css/prevent-long-urls-from-b=
+reaking-out-of-container/ */
+            /* These are technically the same, but use both */
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            -ms-word-break: break-all;
+            /* This is the dangerous one in WebKit, as it breaks things whe=
+rever */
+            word-break: break-all;
+            /* Instead use this non-standard one: */
+            word-break: break-word;
+            display: inline-block;
+            /*display: inline-block;*/
+            /*max-width: 185px;*/
+            /*overflow-x: hidden;*/
+        }
+        .header-notes {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .header-notes p {
+            margin: 0px;
+            padding: 0px;
+        }
+        .msoFix {
+            mso-table-lspace:-1pt;
+            mso-table-rspace:-1pt;
+        }
+        .w400 {
+            width: 400px;
+        }
+        .w370 {
+            width: 370px;
+        }
+        .w300 {
+			width: 300px;
+		}
+        .w270 {
+            width: 270px;
+        }
+		.w200 {
+			width: 200px;
+		}
+		.w170px {
+			width: 170px;
+		}
+		.container {
+			width: 600px;
+		}
+        @media only screen and (max-width: 620px) {
+            [class=3Dcontainer] {
+                width: 100% !important;
+            }
+            .full-column {
+                float: none !important;
+                width: 100% !important;
+                height: auto !important;
+                display:table !important;
+            }
+            .left-column,
+            .right-column,
+            .center-column {
+                float: none !important;
+                width: 100% !important;
+                height: auto !important;
+                display:table !important;
+            }
+            .column-td {
+                padding:0px 10px !important;
+            }
+            .column-td-panel {
+                padding:0 10px !important;
+            }
+            .column-td-panel-caption {
+                padding:5px 10px 0px !important;
+            }
+            .column-td-ribbon {
+                padding:0 10px !important;
+            }
+            .mobile-line-br {
+                line-height:10px !important;
+            }
+            .hide {
+                display: none !important;
+            }
+            .show {
+                display: block !important;
+            }
+            img {
+                border: 0px;
+            }
+            img.full-width {
+                width: 100% !important;
+                height: auto !important;
+            }
+            img[class=3Dfull-width] {
+                width: 100% !important;
+                height: auto !important;
+            }
+            .h1 {
+                font-size: 16px !important;
+            }
+            .text_h4 {
+                font-size: 18px !important;
+            }
+            .font-small {
+                font-size: 15px !important;
+            }
+            .font-large {
+                font-size: 22px !important;
+            }
+            .mobile-icons {
+                /*width: 32px !important;*/
+                max-width: 50px !important;
+            }
+            .footer-copy {
+                line-height: 15px !important;
+            }
+            .footer-right-column {
+            	/*margin-left: 50px !important;*/
+            }
+        }
+        /* Colors
+         * #00558A =3D Dark Blue
+         * #6caae3 =3D Light Blue
+         * #f3f3f3 =3D Light Grey - Background
+         * #333333 =3D Dark Grey - Body Copy
+         * #555759 =3D Sub Header Grey
+         * #ee3134 =3D Red - Thermo Scientific Red
+         --------------------------------------------- */
+    </style>
+</head>
+<body style=3D"margin:0; margin-top:50px; background-color: #FFFFFF;">
+		  <center>
+			<table width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bg=
+color=3D"#FFFFFF" style=3D"">
+			  <tr >
+				<td colspan=3D"1" align=3D"">
+
+<tr>
+<td style=3D"border-collapse: collapse; color: #FFFFFF; word-break: break-w=
+ord; text-align: center; font-family: Arial, sans-serif; font-size: 12px; p=
+adding: 10px 0px; margin-bottom: 0px; line-height: 135%;" align=3D"center" =
+valign=3D"top"><a href=3D"https://messaging.aacc.org/q/1thNDpdM8yB7G2HNka7F=
+UseY/wv">View in Browser</a></td>
+</tr>
+<tr>
+<td class=3D"mobpad-8-12-8-12" style=3D"padding-top: 0px; padding-right: 24=
+px; padding-bottom: 12px; padding-left: 24px;" width=3D"100%" valign=3D"top=
+">
+<table style=3D"font-family: Arial, Helvetica, sans-serif; font-size: 10px;=
+ line-height: 12px; color: #222222; text-align: center;" align=3D"center" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%">
+
+<tr>
+<td style=3D"padding: 0px; font-family: 'Century Gothic', sans-serif; font-=
+style: italic; font-size: 14px; line-height: 130%;" align=3D"center">This i=
+s a paid advertisement for CLN readers. The views expressed do not necessar=
+ily represent AACC&rsquo;s views, and their inclusion in CLN is not an endo=
+rsement by CLN or AACC.</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td><a href=3D"https://messaging.aacc.org/c/11C4XSGDhjkCbmSTChgVucsLoh5CnP"=
+ target=3D"_blank"><img style=3D"max-width: 100%;" src=3D"http://messaging.=
+aacc.org/files/amf_highroad_solution/workspace_32/CLN_Sponsored_Content/CLN=
+-AACC-sponsored-header-600x84_opt10.png" alt=3D"" width=3D"600"></a></td>
+</tr>
+<body style=3D"margin:0; background: #FFFFFF;" bgcolor=3D"#FFFFFF">
+    <!--[if !mso]><!--><div style=3D"display: none; max-height: 0px; overfl=
+ow: hidden;">New on-demand content available</div><!--<![endif]-->
+    <!--[if !mso]><!--><div style=3D"display: none; max-height: 0px; overfl=
+ow: hidden;">&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&n=
+bsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&z=
+wnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&z=
+wnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&z=
+wnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&z=
+wnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&z=
+wnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&z=
+wnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp=
+;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&z=
+wnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj=
+;&nbsp;</div><!--<![endif]-->
+<!-- 2017 HEADER -->
+<center><table><tr><td>
+    <!--[if mso]><table width=3D"600" cellspacing=3D"0" cellpadding=3D"0" b=
+order=3D"0"><tr><td><![endif]-->
+    <table class=3D"container" style=3D"margin: auto; border-collapse: coll=
+apse;" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+        <tr>
+            <td class=3D"header-notes" style=3D"background:#FFFFFF; font-fa=
+mily: sans-serif; font-size:11px; text-align: left; padding-left: 20px; pad=
+ding-right: 20px;">
+                                            </td>
+        </tr>
+        <tr>
+            <td style=3D"background:#ee3134; border-top: 1px solid #FFFFFF;=
+ text-align: left; padding: 0px;">
+                <!-- BRAND BAR / LOGO -------------------------------------=
+--------------------- -->
+                                                            <a href=3D"http=
+s://messaging.aacc.org/c/11C4XTDWrr60Y6m8vgShEwqOfTHdXB" target=3D"_blank" =
+style=3D"text-decoration:none;">
+                            <table style=3D"background:#ffffff; min-width:1=
+00%;" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+                                <tr>
+                                    <td bgcolor=3D"#ee3134" width=3D"10">&n=
+bsp;</td>
+                                    <td bgcolor=3D"#ee3134" width=3D"155"><=
+img src=3D"https://emailscience7.wpengine.com/wp-content/themes/shared_serv=
+ices_emails/app/assets/images/thermo-fisher-scientific-2021.png" width=3D"1=
+55"></td>
+                                    <td bgcolor=3D"#ee3134" width=3D"10">&n=
+bsp;</td>
+                                    <td>&nbsp;</td>
+                                    <td width=3D"101"></td>
+                                    <td width=3D"40">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </a>
+            </td>
+        </tr>
+        <tr>
+            <td style=3D"background: #ffffff;">
+                <!-- HEADER -->
+                                    <!-- Wrapper table is percent width, no=
+ inline style needed -->
+                    <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"=
+0" border=3D"0">
+                        <tr>
+                            <td align=3D"center">
+                                <table cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" style=3D"">
+                                    <tr>
+                                        <td style=3D"background: #fff; text=
+-align: center">
+                                            <a href=3D"https://messaging.aa=
+cc.org/c/11C4XU7B1uYImt5KWLFXJGpPGI01Ku" target=3D"_blank">                =
+                                <img class=3D"full-width" alt=3D"Watch the =
+latest clinical research webinars and find out how mass spectrometry-based =
+tools are empowering the state of healthcare &#8211; today and tomorrow." h=
+eight=3D"320" style=3D"display: block; height:320px; vertical-align: bottom=
+;" border=3D"0" src=3D"https://emailscience7.wpengine.com/wp-content/upload=
+s/2022/10/BA000177-LCMS-Clinical-Research-Email-Standard-Header-600x320.jpg=
+" />
+                                            </a>                           =
+             </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                                <!-- END HEADER -->
+            </td>
+        </tr>
+<tr>
+    <td style=3D"background: #ffffff; ">
+<!-- full column -->
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"width: 100=
+%; background: #ffffff; border-collapse: collapse;">
+=20=20=20=20
+        <tr>
+            <td class=3D"column-td w560 font-small" style=3D"padding-left: =
+20px; padding-right: 20px; padding-top: 0px; padding-bottom: 0px; font-fami=
+ly: sans-serif; font-size: 13px; color:#333333; line-height: 20px; text-ali=
+gn: left;" valign=3D"top"><div class=3D"mobile-line-br" style=3D"line-heigh=
+t: 20px">&nbsp;</div><div class=3D"text_h2" style=3D"font-size: 20px; line-=
+height: 28px; color: #ee3134; font-weight: bold;">Watch the latest clinical=
+ research webinars</div><div class=3D"text_h4" style=3D"font-size: 16px; co=
+lor: #555759; font-weight: bold;">Discover how mass spectrometry-based tool=
+s are empowering the state of healthcare &#8211; today and tomorrow</div><d=
+iv class=3D"mobile-line-br" style=3D"line-height: 20px">&nbsp;</div></td>  =
+      </tr>
+=20=20=20=20
+</table>
+    </td>
+</tr>
+<tr>
+    <td style=3D"background: #ffffff; ">
+<!-- 2 column (33/66) -->
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"background=
+: #ffffff; border-collapse: collapse;">
+=20=20=20=20
+        <tr>
+            <td>
+                <!--[if mso]>
+                <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" sty=
+le=3D"width:100%">
+                    <tr>
+                        <td width=3D"200" valign=3D"top">
+                <![endif]-->
+                <table class=3D"left-column w200" style=3D"float: left; dis=
+play: table-cell; border-collapse: collapse;" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                        <tr>
+                            <td class=3D"column-td w170 font-small" style=
+=3D"padding-left: 20px; padding-right: 10px; padding-top: 0px; padding-bott=
+om: 0px; font-family: sans-serif; font-size: 13px; color:#333333; line-heig=
+ht: 20px; text-align: left;" valign=3D"top"><div class=3D"mobile-line-br" s=
+tyle=3D"line-height: 20px">&nbsp;</div>        <table style=3D"width: 100%;=
+" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+            <tr>
+                <td class=3D"font-small" valign=3D"top" style=3D"font-famil=
+y: sans-serif; font-size: 13px; color: #333333; line-height: 20px; text-ali=
+gn: left;"><a style=3D"color: #555759; text-decoration: none;" target=3D"_b=
+lank" href=3D"https://messaging.aacc.org/c/11C4XUBfByRpKPPnogtDOQoR7wiPxn">=
+<img class=3D"full-width" width=3D"168" src=3D"https://emailscience7.wpengi=
+ne.com/wp-content/uploads/2022/10/Mary_King_headshot.png" style=3D"vertical=
+-align: bottom; width:100%; min-width:100%; height: auto; border: 1px solid=
+ #e3e3e3" border=3D"0" /></a><div class=3D"mobile-line-br" style=3D"line-he=
+ight: 20px">&nbsp;</div>                </td>
+            </tr>
+        </table></td>                        </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                </table>
+                <!--[if mso]>
+                </td>
+                <td width=3D"400" valign=3D"top">
+                <![endif]-->
+                <table class=3D"right-column w400" style=3D"float: left; di=
+splay: table-cell; border-collapse: collapse;" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                        <tr>
+                            <td class=3D"column-td w370 font-small" style=
+=3D"padding-left: 10px; padding-right: 20px; padding-top: 0px; padding-bott=
+om: 0px; font-family: sans-serif; font-size: 13px; color:#333333; line-heig=
+ht: 20px; text-align: left;" valign=3D"top"><div class=3D"mobile-line-br" s=
+tyle=3D"line-height: 20px">&nbsp;</div><div class=3D"element-paragraph"><st=
+rong>From the OR to the Microbiology Lab: Advanced Development of the MasSp=
+ec Pen for Broad Clinical Use </strong><br />
+<em>Presented by &#8211; Mary King, PhD Candidate &#8211; Prof. Livia S. Eb=
+erlin Group, The University of Texas at Austin</em></div><div class=3D"mobi=
+le-line-br" style=3D"line-height: 20px">&nbsp;</div>
+<div class=3D"element-paragraph">An overview of several ongoing clinical pr=
+ojects related to the development of a handheld MS-based device, the MasSpe=
+c Pen technology, for improving patient care will be discussed. In particul=
+ar, results for intraoperative tissue analysis and cancer detection, identi=
+fication of infectious microorganisms, and the detection of drugs of abuse.=
+</div>
+<a href=3D"https://messaging.aacc.org/c/11C4XV4UbCK79cyZPLhjU0nSykBDkg" nam=
+e=3D"" target=3D"_blank" style=3D"color: #6caae3; text-decoration: none;"><=
+span style=3D"vertical-align: top; text-decoration: underline;">Watch now</=
+span> &rsaquo;</a><div class=3D"mobile-line-br" style=3D"line-height: 20px"=
+>&nbsp;</div></td>                        </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                </table>
+                <!--[if mso]>
+                        </td>
+                    </tr>
+                </table>
+                <![endif]-->
+            </td>
+        </tr>
+=20=20=20=20
+</table>
+    </td>
+</tr>
+<tr>
+    <td style=3D"background: #ffffff; border-top: 1px solid #e3e3e3;">
+<!-- 2 column (33/66) -->
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"background=
+: #ffffff; border-collapse: collapse;">
+=20=20=20=20
+        <tr>
+            <td>
+                <!--[if mso]>
+                <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" sty=
+le=3D"width:100%">
+                    <tr>
+                        <td width=3D"200" valign=3D"top">
+                <![endif]-->
+                <table class=3D"left-column w200" style=3D"float: left; dis=
+play: table-cell; border-collapse: collapse;" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                        <tr>
+                            <td class=3D"column-td w170 font-small" style=
+=3D"padding-left: 20px; padding-right: 10px; padding-top: 0px; padding-bott=
+om: 0px; font-family: sans-serif; font-size: 13px; color:#333333; line-heig=
+ht: 20px; text-align: left;" valign=3D"top"><div class=3D"mobile-line-br" s=
+tyle=3D"line-height: 20px">&nbsp;</div>        <table style=3D"width: 100%;=
+" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+            <tr>
+                <td class=3D"font-small" valign=3D"top" style=3D"font-famil=
+y: sans-serif; font-size: 13px; color: #333333; line-height: 20px; text-ali=
+gn: left;"><a style=3D"color: #555759; text-decoration: none;" target=3D"_b=
+lank" href=3D"https://messaging.aacc.org/c/11C4XVyyLGCOxziChg4ZZamTZ8Ur79">=
+<img class=3D"full-width" width=3D"168" src=3D"https://emailscience7.wpengi=
+ne.com/wp-content/uploads/2022/10/Y.Ruben_Luo_Headshot.png" style=3D"vertic=
+al-align: bottom; width:100%; min-width:100%; height: auto; border: 1px sol=
+id #e3e3e3" border=3D"0" /></a><div class=3D"mobile-line-br" style=3D"line-=
+height: 20px">&nbsp;</div>                </td>
+            </tr>
+        </table></td>                        </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                </table>
+                <!--[if mso]>
+                </td>
+                <td width=3D"400" valign=3D"top">
+                <![endif]-->
+                <table class=3D"right-column w400" style=3D"float: left; di=
+splay: table-cell; border-collapse: collapse;" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                        <tr>
+                            <td class=3D"column-td w370 font-small" style=
+=3D"padding-left: 10px; padding-right: 20px; padding-top: 0px; padding-bott=
+om: 0px; font-family: sans-serif; font-size: 13px; color:#333333; line-heig=
+ht: 20px; text-align: left;" valign=3D"top"><div class=3D"mobile-line-br" s=
+tyle=3D"line-height: 20px">&nbsp;</div><div class=3D"element-paragraph"><st=
+rong>A Therapeutic Drug Monitoring assay of Immunosuppressants using TurboF=
+low LC and High-Resolution Mass Spectrometry</strong><br />
+<em>Presented by: Ruben Luo, PhD &#8211; Assistant Professor at Stanford Un=
+iversity</em></div><div class=3D"mobile-line-br" style=3D"line-height: 20px=
+">&nbsp;</div>
+<div class=3D"element-paragraph">Thermo Scientific TurboFlow online SPE eff=
+iciently extracts analytes while removing other components in a crude super=
+natant, significantly simplifying sample preparation. The use of full-scan =
+data-dependent MS2 acquisition allows for high-resolution selected-ion moni=
+toring quantitation of the analytes, confirming the analytes using MS2 frag=
+mentation, as well as monitoring the signal intensities of major immunosupp=
+ressant metabolites.</div>
+<a href=3D"https://messaging.aacc.org/c/11C4XW2dlKvvVW2eIKSG4klVpXdeU2" nam=
+e=3D"" target=3D"_blank" style=3D"color: #6caae3; text-decoration: none;"><=
+span style=3D"vertical-align: top; text-decoration: underline;">Watch now</=
+span> &rsaquo;</a><div class=3D"mobile-line-br" style=3D"line-height: 20px"=
+>&nbsp;</div></td>                        </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                </table>
+                <!--[if mso]>
+                        </td>
+                    </tr>
+                </table>
+                <![endif]-->
+            </td>
+        </tr>
+=20=20=20=20
+</table>
+    </td>
+</tr>
+<tr>
+    <td style=3D"background: #ffffff; border-top: 1px solid #e3e3e3;">
+<!-- 2 column (33/66) -->
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"background=
+: #ffffff; border-collapse: collapse;">
+=20=20=20=20
+        <tr>
+            <td>
+                <!--[if mso]>
+                <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" sty=
+le=3D"width:100%">
+                    <tr>
+                        <td width=3D"200" valign=3D"top">
+                <![endif]-->
+                <table class=3D"left-column w200" style=3D"float: left; dis=
+play: table-cell; border-collapse: collapse;" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                        <tr>
+                            <td class=3D"column-td w170 font-small" style=
+=3D"padding-left: 20px; padding-right: 10px; padding-top: 0px; padding-bott=
+om: 0px; font-family: sans-serif; font-size: 13px; color:#333333; line-heig=
+ht: 20px; text-align: left;" valign=3D"top"><div class=3D"mobile-line-br" s=
+tyle=3D"line-height: 20px">&nbsp;</div>        <table style=3D"width: 100%;=
+" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+            <tr>
+                <td class=3D"font-small" valign=3D"top" style=3D"font-famil=
+y: sans-serif; font-size: 13px; color: #333333; line-height: 20px; text-ali=
+gn: left;"><a style=3D"color: #555759; text-decoration: none;" target=3D"_b=
+lank" href=3D"https://messaging.aacc.org/c/11C4XWvRVOodkiLRafGm9ukWQLw2GV">=
+<img class=3D"full-width" width=3D"168" src=3D"https://emailscience7.wpengi=
+ne.com/wp-content/uploads/2022/10/Chris_Gill_Headshot.png" style=3D"vertica=
+l-align: bottom; width:100%; min-width:100%; height: auto; border: 1px soli=
+d #e3e3e3" border=3D"0" /></a><div class=3D"mobile-line-br" style=3D"line-h=
+eight: 20px">&nbsp;</div>                </td>
+            </tr>
+        </table></td>                        </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                </table>
+                <!--[if mso]>
+                </td>
+                <td width=3D"400" valign=3D"top">
+                <![endif]-->
+                <table class=3D"right-column w400" style=3D"float: left; di=
+splay: table-cell; border-collapse: collapse;" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                        <tr>
+                            <td class=3D"column-td w370 font-small" style=
+=3D"padding-left: 10px; padding-right: 20px; padding-top: 0px; padding-bott=
+om: 0px; font-family: sans-serif; font-size: 13px; color:#333333; line-heig=
+ht: 20px; text-align: left;" valign=3D"top"><div class=3D"mobile-line-br" s=
+tyle=3D"line-height: 20px">&nbsp;</div><div class=3D"element-paragraph"><st=
+rong>High Throughput Paper-Spray Mass Spectrometry (PS-MS) for Validated Cl=
+ozapine Therapeutic Drug Monitoring in Human Serum </strong><br />
+<em>Presented by: Chris Gill, PhD &#8211; Chemistry Professor at Vancouver =
+Island University (Nanaimo, BC) and Co-director of the Applied Environmenta=
+l Research Laboratories (AERL)</em></div><div class=3D"mobile-line-br" styl=
+e=3D"line-height: 20px">&nbsp;</div>
+<div class=3D"element-paragraph">A high throughput, validated paper spray m=
+ass spectrometry assay using the Thermo Scientific VeriSpray source is pres=
+ented as a facile and rapid therapeutic drug monitoring (TDM) strategy for =
+the direct, quantitative analysis of clozapine and its metabolite in human =
+serum samples.</div>
+<a href=3D"https://messaging.aacc.org/c/11C4XWZwvSgUIFvtBKu2eEjYhzOQtO" nam=
+e=3D"" target=3D"_blank" style=3D"color: #6caae3; text-decoration: none;"><=
+span style=3D"vertical-align: top; text-decoration: underline;">Watch now</=
+span> &rsaquo;</a><div class=3D"mobile-line-br" style=3D"line-height: 20px"=
+>&nbsp;</div></td>                        </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                </table>
+                <!--[if mso]>
+                        </td>
+                    </tr>
+                </table>
+                <![endif]-->
+            </td>
+        </tr>
+=20=20=20=20
+</table>
+    </td>
+</tr>
+<tr>
+    <td style=3D"background: #ffffff; ">
+<!-- full column -->
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"width: 100=
+%; background: #ffffff; border-collapse: collapse;">
+=20=20=20=20
+        <tr>
+            <td class=3D"column-td w560 font-small" style=3D"padding-left: =
+20px; padding-right: 20px; padding-top: 0px; padding-bottom: 0px; font-fami=
+ly: sans-serif; font-size: 13px; color:#333333; line-height: 20px; text-ali=
+gn: left;" valign=3D"top"><div class=3D"mobile-line-br" style=3D"line-heigh=
+t: 20px">&nbsp;</div></td>        </tr>
+=20=20=20=20
+</table>
+    </td>
+</tr>
+<tr>
+    <td style=3D"background: #E2E3E4; ">
+<!-- full column -->
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"width: 100=
+%; background: #E2E3E4; border-collapse: collapse;">
+=20=20=20=20
+        <tr>
+            <td class=3D"column-td w560 font-small" style=3D"padding-left: =
+0px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; font-family=
+: sans-serif; font-size: 13px; color:#333333; line-height: 20px; text-align=
+: left;" valign=3D"top"><div class=3D"mobile-line-br" style=3D"line-height:=
+ 20px">&nbsp;</div>        <table style=3D"width: 100%;" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0">
+            <tr>
+                <td class=3D"font-small" valign=3D"top" style=3D"font-famil=
+y: sans-serif; font-size: 13px; color: #333333; line-height: 20px; text-ali=
+gn: left;"><a style=3D"color: #555759; text-decoration: none;" target=3D"_b=
+lank" href=3D"https://messaging.aacc.org/c/11C4XXtb5W9C72f63fhIjOiZIo7EgH">=
+<img class=3D"full-width" width=3D"558" src=3D"https://emailscience7.wpengi=
+ne.com/wp-content/uploads/2022/10/Productivity-redefined-footer.png" style=
+=3D"vertical-align: bottom; width:100%; min-width:100%; height: auto; " bor=
+der=3D"0" /></a><div class=3D"mobile-line-br" style=3D"line-height: 20px">&=
+nbsp;</div>                </td>
+            </tr>
+        </table></td>        </tr>
+=20=20=20=20
+</table>
+    </td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td></tr></table></center>
+<br>
+<center><table style=3D"width:100%; background:#54585A;">
+<tr>
+    <td style=3D"background:#54585A;">
+        <center>
+        <!-- FOOTER -------------------------------------------------------=
+------------- -->
+        <table class=3D"container" cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" style=3D"width:600px;">
+            <tr>
+                <td>
+            <!--[if gte mso 9]>
+            <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=
+=3D"width:100%">
+                <tr>
+                    <td width=3D"400" valign=3D"top">
+            <![endif]-->
+            <table class=3D"left-column" style=3D"float: left; display: tab=
+le-cell; width: 400px;" border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+                <tr>
+                    <td class=3D"column-td" style=3D"padding-left: 20px; pa=
+dding-right: 10px; padding-top: 0px; padding-bottom: 0px; width: 370px; fon=
+t-family: sans-serif; font-size: 13px; color: #f3f3f3; line-height: 20px; t=
+ext-align: left;" valign=3D"top">
+                        <div class=3D"mobile-line-br" style=3D"line-height:=
+ 20px">&nbsp;</div>
+                        <table style=3D"width: 100%;" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+                            <tr>
+                                <td class=3D"mobile-icons" style=3D"width: =
+50px; font-family: sans-serif; font-size: 13px; color: #333333; line-height=
+: 20px; text-align: left;" valign=3D"top">
+                                    <table width=3D"32" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0">
+                                        <tr style=3D"padding-bottom: 5px;">=
+<td><a href=3D"https://messaging.aacc.org/c/11C4XXWPG02jvoYIuK5ooYi19cqs3A"=
+ target=3D"_blank"><img src=3D"https://img.en25.com/eloquaimages/clients/Th=
+ermoFisherCorporate/{08a17eb7-a9e0-4fec-b0bb-fd19cef98703}_blogger-32x32.gi=
+f" width=3D"32" height=3D"32" border=3D"0" /></a></td></tr><tr style=3D"pad=
+ding-bottom: 5px;"><td><a href=3D"https://messaging.aacc.org/c/11C4XYU8Q7NI=
+i8rXnJGKzig40P23Dm" target=3D"_blank"><img src=3D"https://img.en25.com/eloq=
+uaimages/clients/ThermoFisherCorporate/{a91448c1-e58a-4bdc-9cfd-dbe9acde8a1=
+1}_facebook-32x32.gif" width=3D"32" height=3D"32" border=3D"0" /></a></td><=
+/tr><tr style=3D"padding-bottom: 5px;"><td><a href=3D"https://messaging.aac=
+c.org/c/11C4XZnNqbGpGvbzPeuqEsf5rDkRqf" target=3D"_blank"><img src=3D"https=
+://img.en25.com/eloquaimages/clients/ThermoFisherCorporate/{6f42471f-bd39-4=
+f38-8410-eed4307efc67}_twitter-32x32.gif" width=3D"32" height=3D"32" border=
+=3D"0" /></a></td></tr><tr style=3D"padding-bottom: 5px;"><td><a href=3D"ht=
+tps://messaging.aacc.org/c/11C4XZRs0fz74RVcgJi6JCe6SrDFd8" target=3D"_blank=
+"><img src=3D"https://img.en25.com/eloquaimages/clients/ThermoFisherCorpora=
+te/{2aa61a1e-9f81-4262-addd-a2291bcc3297}_linkedin-32x32.gif" width=3D"32" =
+height=3D"32" border=3D"0" /></a></td></tr><tr style=3D"padding-bottom: 5px=
+;"><td><a href=3D"https://messaging.aacc.org/c/11C4Y0l6AjrOteEOIe5MOMd8jfWt=
+01" target=3D"_blank"><img src=3D"https://img.en25.com/eloquaimages/clients=
+/ThermoFisherCorporate/{011b86d8-7f9b-48b5-8b96-6afea05d4308}_youttube32x32=
+.gif" width=3D"32" height=3D"32" border=3D"0" /></a></td></tr>             =
+                       </table>
+                                </td>
+                                <td class=3D"footer-copy" style=3D"width: 3=
+20px; font-family: sans-serif; font-size: 10px; color:#f3f3f3; line-height:=
+ 12px; text-align: left;" valign=3D"top">
+                                                                           =
+                                     <p>&copy; 2022 Thermo Fisher Scientifi=
+c Inc. All rights reserved. All trademarks are the property of Thermo Fishe=
+r Scientific and its subsidiaries unless otherwise specified. We hereby dis=
+close that this email communication is for commercial purposes.</p>
+                                        <p>View our <a href=3D"https://mess=
+aging.aacc.org/c/11C4Y0OLankvRBor9ITsTWc9K4fgMU" target=3D"_blank" style=3D=
+"color: #f3f3f3; text-decoration:underline;">privacy policy</a> and <a href=
+=3D"https://messaging.aacc.org/c/11C4Y1ipKrddfY83BdH8Z6bbaSy4zN" target=3D"=
+_blank" style=3D"color: #f3f3f3; text-decoration:underline;">trademarks</a>=
+.</p>
+                                                                           =
+ <strong>Thermo Fisher Scientific</strong><br />
+                                        168 Third Avenue<br />
+                                        Waltham, MA 02451<br />
+                                        United States<br />
+                                        <a href=3D"https://messaging.aacc.o=
+rg/c/11C4Y1M4kv5UEkRG2IuP4gacBGQSmG" target=3D"_blank" style=3D"color: #f3f=
+3f3; text-decoration:underline;">thermofisher.com</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class=3D"mobile-line-br" style=3D"line-height:=
+20px">&nbsp;</div>
+                    </td>
+                </tr>
+            </table>
+            <!--[if gte mso 9]>
+                    </td>
+                    <td width=3D"200" valign=3D"top">
+            <![endif]-->
+            <table class=3D"right-column footer-right-column" style=3D"floa=
+t: left; display: table-cell; width: 200px;" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0">
+                <tr>
+                    <td class=3D"column-td" style=3D"padding-left: 10px; pa=
+dding-right: 20px; padding-top: 0px; padding-bottom: 0px; width: 170px; fon=
+t-family: sans-serif; font-size: 13px; color:#333333; line-height: 20px; te=
+xt-align: center; vertical-align: middle" valign=3D"middle">
+                        <div class=3D"mobile-line-br" style=3D"line-height:=
+ 20px">&nbsp;</div>
+                        <img src=3D"https://emailscience7.wpengine.com/wp-c=
+ontent/themes/shared_services_emails/app/assets/images/thermo-fisher-scient=
+ific-2021-footer.png" width=3D"120" height=3D"28" alt=3D"Thermo Fisher Scie=
+ntific" border=3D"0" style=3D"display: block; margin:0 auto;" />
+                        <div class=3D"mobile-line-br" style=3D"line-height:=
+ 20px">&nbsp;</div>
+                                            </td>
+                </tr>
+            </table>
+            <!--[if gte mso 9]>
+                    </td>
+                </tr>
+            </table>
+            <![endif]-->
+                </td>
+            </tr>
+        </table>
+        </center>
+    </td>
+</tr>
+</table></center>
+<html dir=3D"ltr">
+    <head>
+        <title></title>
+    </head>
+    <body>=09=09=09=09=09
+<p><font size=3D"1" face=3D"Verdana, Arial, Helvetica, sans-serif" color=3D=
+"#999999">
+						This message was intended for: <a href=3D"mailto:rvairavan@caldonbiot=
+ech.com">rvairavan@caldonbiotech.com</a>
+							<br />
+        American Association For Clinical Chemistry<br />
+        900 Seventh Street, NW Suite 400 | Washington DC 20001&nbsp;<br />
+        202.857.0717   | Fax: 202.887.5093 | <a href=3D"https://messaging.a=
+acc.org/c/11C4Y2fIUyYC2HBiudiv9q9e2v9G9z">www.aacc.org</a>
+							<br />
+							<br />
+							<a href=3D"https://messaging.aacc.org/c/11C4Y2JnuCRjr4kUVI6beA8ftjst=
+Ws">Manage your e-communications or unsubscribe</a></font>
+					</p>
+    </body>
+</html></body>
+</html>=
+
+----129F6578EAEF16C09263C56E58021B0--

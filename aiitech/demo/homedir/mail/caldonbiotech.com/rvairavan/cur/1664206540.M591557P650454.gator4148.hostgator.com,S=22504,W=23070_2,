@@ -1,0 +1,566 @@
+Return-Path: <prvs=7268b7741e=jennifer.m.bailey@hitchcock.org>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id GLnKIszGMWPW7AkA7/vpDg
+	(envelope-from <prvs=7268b7741e=jennifer.m.bailey@hitchcock.org>); Mon, 26 Sep 2022 10:35:40 -0500
+Return-path: <prvs=7268b7741e=jennifer.m.bailey@hitchcock.org>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Mon, 26 Sep 2022 10:35:40 -0500
+Received: from mx0b-00396101.pphosted.com ([148.163.137.232]:4250)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <prvs=7268b7741e=jennifer.m.bailey@hitchcock.org>)
+	id 1ocq8y-002izr-0c
+	for customersupport@caldonbiotech.com;
+	Mon, 26 Sep 2022 10:35:40 -0500
+Received: from pps.filterd (m0174514.ppops.net [127.0.0.1])
+	by mx0b-00396101.pphosted.com (8.17.1.5/8.17.1.5) with ESMTP id 28QDIAGv030751
+	for <customersupport@caldonbiotech.com>; Mon, 26 Sep 2022 11:35:28 -0400
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hitchcock.org; h=from : to :
+ subject : date : message-id : references : in-reply-to : content-type :
+ mime-version; s=hitchcock20220214;
+ bh=lpdT7grSfE4inGezceIL7p/E5HiGVzCJtQcQVU96+aw=;
+ b=B03AsyCtvy+cNDg1icxBsNvis4STOlYv9Sk9QgiWMMgpfVWnRItYAUT8DXZCpNxwDzkE
+ q4FDzsYPaMQTuGXIvnJfgZ+mCA0HYLQGaz+WD/FKLAhz5BPH64motGAgOgqGLeeQX1ZZ
+ STVx7uZcZ0tCf2/79Qe1QeMV73JBLdWMQkkUT7BKqrtPjRGLvJP1T/SF18+mR6WT9NP3
+ /nRURxoYNEpiHl8X6jNQws1Z9uvSqb5C5eTc6FSv99C5I2zyvXa7rP54VYaL48w9VhIT
+ 3hbtEQ2caobmLfNAxDKKaU4Kr7ckqV606ok+G0DtXdoOpY7KVtUPIPPXHcz0CO8ASjvy tQ== 
+Received: from exleb105.dhmcmaster.dh.hitchcock.org ([130.189.175.200])
+	by mx0b-00396101.pphosted.com (PPS) with ESMTPS id 3jstm43wbu-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <customersupport@caldonbiotech.com>; Mon, 26 Sep 2022 11:35:28 -0400
+Received: from EXLEB106.dhmcmaster.dh.hitchcock.org (10.189.202.236) by
+ EXLEB105.DHMCMaster.DH.Hitchcock.org (10.189.202.235) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.2.986.29; Mon, 26 Sep 2022 11:35:27 -0400
+Received: from EXLEB106.dhmcmaster.dh.hitchcock.org
+ ([fe80::4053:92b4:90ef:223b]) by EXLEB106.DHMCMaster.DH.Hitchcock.org
+ ([fe80::4053:92b4:90ef:223b%11]) with mapi id 15.02.0986.029; Mon, 26 Sep
+ 2022 11:35:27 -0400
+From: "Jennifer M. Bailey" <Jennifer.M.Bailey@Hitchcock.ORG>
+To: "customersupport@caldonbiotech.com" <customersupport@caldonbiotech.com>
+Subject: Dartmouth Health, AP Request; CALDON BIO
+Thread-Topic: Dartmouth Health, AP Request; CALDON BIO
+Thread-Index: AQHY0b2akIBfLnVELEyxgLDFufryew==
+Date: Mon, 26 Sep 2022 15:35:27 +0000
+Message-ID: <3916f31feb1c4ecf99cb8e903e2a03a4@Hitchcock.ORG>
+References: 
+	<6edeae4514fa4a0f922d3d3de5a4070a@Hitchcock.ORG>,<27a3d506261c4a3a91c0b4e12456f0b9@Hitchcock.ORG>,<e442f8e2af6d4ee699e942e8e1b6289f@Hitchcock.ORG>,<e2d593bc9e354cab914e48daa1a2de97@Hitchcock.ORG>,<8263270eebaa4a2c8a11a201033a2dff@Hitchcock.ORG>,<d4200e57a5bf4b55848d7d3b775d4a9f@Hitchcock.ORG>,<ff254e5106fd44da884fc768a64c6150@Hitchcock.ORG>,<f252d7f0709b4c89a1cc3284b5a5bf12@Hitchcock.ORG>,<ee88266b896640aa89d08866ddd50f92@Hitchcock.ORG>,<17261c8d52c34f34bc06417823f71cc5@Hitchcock.ORG>,<63b5df928b9c447fbd2d7390704b44e1@Hitchcock.ORG>,<153301e6ca96487ea623612b14614831@Hitchcock.ORG>,<76c325aef8d0463c80913acf21373af8@Hitchcock.ORG>,<e6f63ed9295641489b7bdd8329f38404@Hitchcock.ORG>,<4827a9f248964241a7722242bf80bee6@Hitchcock.ORG>,<74b6dc5db6444fc59f12e15f470a438d@Hitchcock.ORG>,<3bc065ebb5f342b6acf96afd7ed3027d@Hitchcock.ORG>,<ce0d4500ce5d403fb9b73f1955991ff6@Hitchcock.ORG>,<a6e2fd7dc33e484aba3da3179a9b87fb@Hitchcock.ORG>,<6bfbd87916a74064a4edc1976689b254@Hitchcock.ORG>,<b96e02edc83a41ef
+	b0f1b6e953c12aa1@Hitchcock.ORG>,<2e963d07256b4cbba74068cf9b40b635@Hitchcock.ORG>,<e8f716a4815f488a967fe0ded9fc4327@Hitchcock.ORG>,<e3b7351300ca429a8b5faefbaca3417d@Hitchcock.ORG>,<38b1012f10fb4ce2892b433cb0370b2c@Hitchcock.ORG>,<a41319b0a24849b0a7f8a2d2e5638b0e@Hitchcock.ORG>,<8e83b6b1eac0481a97a33c309a35b16d@Hitchcock.ORG>,<cd554e3ce82a45af936afa0bb9231985@Hitchcock.ORG>,<1c508fcd070e490992abf77f2f710354@Hitchcock.ORG>,<5f441c52ca9d4084b146d0975adfc59a@Hitchcock.ORG>,<406487538e9844168545f5b2dc94839a@Hitchcock.ORG>,<041393bb9caa4893b9921f0edd2997d8@Hitchcock.ORG>,<37dae8e4bddb4e1b86974e67b02b7767@Hitchcock.ORG>,<e614140929644b659becdd92895a4514@Hitchcock.ORG>,<d7dccfe108b646da9522b1747d94f9bd@Hitchcock.ORG>,<2683b1c292ca4eaca391674b2f8cef7e@Hitchcock.ORG>,<cc2334d5d9da4983882a13903ca576ea@Hitchcock.ORG>,<7386ba7256944e5d90bd6aa582c10344@Hitchcock.ORG>,<4b9eb894ff5a46bca421f4c6384f2300@Hitchcock.ORG>,<f192d6617b22487094481bf273502136@Hitchcock.ORG>,<9cae222318094a0493483b5634e1a642@
+	Hitchcock.ORG>,<c90caa9ac9a245138751c4afc3bc2006@Hitchcock.ORG>,<23ed885f2c864a299702e08ba6a39b84@Hitchcock.ORG>,<8759b5fb8d18469aa2bbabda80fe5bde@Hitchcock.ORG>,<cc313efbbbe64d36965a07e122c18757@Hitchcock.ORG>,<ff374889e012414cb664fd719f0a4865@Hitchcock.ORG>
+In-Reply-To: <ff374889e012414cb664fd719f0a4865@Hitchcock.ORG>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [130.189.128.111]
+Content-Type: multipart/alternative;
+	boundary="_000_3916f31feb1c4ecf99cb8e903e2a03a4HitchcockORG_"
+MIME-Version: 1.0
+X-Proofpoint-GUID: cYdoQILYdBGUzLBMlddbYoi1kn9Trr9T
+X-Proofpoint-ORIG-GUID: cYdoQILYdBGUzLBMlddbYoi1kn9Trr9T
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.205,Aquarius:18.0.895,Hydra:6.0.528,FMLib:17.11.122.1
+ definitions=2022-09-26_08,2022-09-22_02,2022-06-22_01
+X-Proofpoint-Spam-Details: rule=outbound_notspam policy=outbound score=0 suspectscore=0 phishscore=0
+ impostorscore=0 adultscore=0 bulkscore=0 priorityscore=1501 malwarescore=0
+ clxscore=1031 mlxscore=0 spamscore=0 mlxlogscore=658 lowpriorityscore=0
+ classifier=spam adjust=0 reason=mlx scancount=1 engine=8.12.0-2209130000
+ definitions=main-2209260099
+X-Spam-Status: No, score=0.0
+X-Spam-Score: 0
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--_000_3916f31feb1c4ecf99cb8e903e2a03a4HitchcockORG_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Dartmouth Health Vendor,
+
+Currently we are reviewing all open accounts with Dartmouth Health.
+To complete this review, we are asking that all our vendors provide a curre=
+nt statement of accounts detailing any open invoices, balances, returns or =
+credits as well as an updated W-9.
+
+Please provide this for any Dartmouth Health facilities you work with, incl=
+uding but not limited to;
+
+  *   Dartmouth Hitchcock Medical Center
+  *   Alice Peck Day Memorial Hospital
+  *   Cheshire Medical Center
+  *   New London Hospital
+  *   Mt. Ascutney Hospital and Health Center
+  *   Visiting Nurse and Hospice
+Additionally, please complete the form below.
+
+  *   Statement of Accounts:               Please Attach.
+  *   W-9:                                          Please Attach
+  *   Company Name:                        __________________________
+  *   Sales Rep Name:                       __________________________
+  *   Sales Rep Contact Info:              __________________________
+
+Information can be returned to the below:
+
+FAX:                 (856) 544-1011
+EMAIL:             Jennifer.M.Bailey@Hitchcock.Org
+
+If you have questions regarding this request, please reach out to me. We ap=
+preciate your participation in this review.
+
+Thank you,
+Jennifer Bailey
+Jennifer.M.Bailey@Hitchcock.ORG
+
+
+
+
+
+
+IMPORTANT NOTICE REGARDING THIS ELECTRONIC MESSAGE:
+
+This message is intended for the use of the person to whom it is addressed =
+and may contain information that is privileged, confidential, and protected=
+ from disclosure under applicable law. If you are not the intended recipien=
+t, your use of this message for any purpose is strictly prohibited. If you =
+have received this communication in error, please delete the message and no=
+tify the sender so that we may correct our records.
+
+--_000_3916f31feb1c4ecf99cb8e903e2a03a4HitchcockORG_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"><!-- P {margin-top:0;margi=
+n-bottom:0;} --></style>
+</head>
+<body dir=3D"ltr">
+<div id=3D"divtagdefaultwrapper" style=3D"font-size:12pt;color:#000000;font=
+-family:Calibri,Helvetica,sans-serif;" dir=3D"ltr">
+<p><span style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 1=
+2pt;">Hello Dartmouth&nbsp;Health Vendor,</span><br>
+</p>
+<div style=3D"color: rgb(0, 0, 0);">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div style=3D"color:rgb(0,0,0)">
+<div>
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;Apple=
+ Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Segoe UI=
+ Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<p class=3D"MsoNormal">&nbsp;</p>
+<p class=3D"MsoNormal">Currently we are reviewing all open accounts with Da=
+rtmouth Health.
+</p>
+<p class=3D"MsoNormal">To complete this review, we are asking that all our =
+vendors provide a current statement of accounts detailing any open invoices=
+, balances, returns or credits as well as an updated W-9.
+</p>
+<p class=3D"MsoNormal"><br>
+</p>
+<p class=3D"MsoNormal">Please provide this for any Dartmouth Health facilit=
+ies you work with, including but not limited to;
+</p>
+<ul>
+<li><span style=3D"font-size:9.5pt; font-family:&quot;Arial&quot;,sans-seri=
+f; color:#242424; background:white">Dartmouth Hitchcock Medical Center
+</span><span style=3D"font-size:9.5pt; font-family:&quot;Arial&quot;,sans-s=
+erif"></span></li><li><span style=3D"font-size:9.5pt; font-family:&quot;Ari=
+al&quot;,sans-serif; color:#242424; background:white">Alice Peck Day Memori=
+al Hospital</span><span style=3D"font-size:9.5pt; font-family:&quot;Arial&q=
+uot;,sans-serif"></span></li><li><span style=3D"font-size:9.5pt; font-famil=
+y:&quot;Arial&quot;,sans-serif; color:#242424; background:white">Cheshire M=
+edical Center</span><span style=3D"font-size:9.5pt; font-family:&quot;Arial=
+&quot;,sans-serif"></span></li><li><span style=3D"font-size:9.5pt; font-fam=
+ily:&quot;Arial&quot;,sans-serif; color:#242424; background:white">New Lond=
+on Hospital</span><span style=3D"font-size:9.5pt; font-family:&quot;Arial&q=
+uot;,sans-serif"></span></li><li><span style=3D"font-size:9.5pt; font-famil=
+y:&quot;Arial&quot;,sans-serif; color:#242424; background:white">Mt. Ascutn=
+ey Hospital and Health Center</span><span style=3D"font-size:9.5pt; font-fa=
+mily:&quot;Arial&quot;,sans-serif"></span></li><li><span style=3D"color:#24=
+2424; background:white">Visiting Nurse and Hospice</span></li></ul>
+<p class=3D"MsoNormal">Additionally, please complete the form below. </p>
+<ul>
+<li>Statement of Accounts: <span style=3D"">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Please Attach. </li>=
+<li>W-9: <span style=3D"">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Please Attach</li><li>Comp=
+any Name: <span style=3D"">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; </span>__________________________</li><li>Sales Rep Name: <span s=
+tyle=3D"">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>______=
+____________________</li><li>Sales Rep Contact Info: <span style=3D"">&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>=
+__________________________</li></ul>
+<p class=3D"MsoNormal">&nbsp;</p>
+<p class=3D"MsoNormal">Information can be returned to the below: </p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">&nbsp;</p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">FAX: <span style=3D"">&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;
+</span>(856) 544-1011 </p>
+<p class=3D"MsoNormal" style=3D"margin-left:.5in">EMAIL: <span style=3D""><=
+/span><span style=3D"">&nbsp;</span><span style=3D"">&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Jennifer.M.Bailey@Hitchcock.Org</p>
+<p class=3D"MsoNormal">&nbsp;</p>
+<p class=3D"MsoNormal">If you have questions regarding this request, please=
+ reach out to me. We appreciate your participation in this review.
+</p>
+<p class=3D"MsoNormal">&nbsp;</p>
+<p class=3D"MsoNormal">Thank you, </p>
+<p class=3D"MsoNormal">Jennifer Bailey</p>
+<p class=3D"MsoNormal">Jennifer.M.Bailey@Hitchcock.ORG</p>
+<span id=3D"ms-rterangepaste-end"></span><br>
+<p></p>
+<div id=3D"Signature">
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:rgb(0,0,0); font-family:Calibri,Helvetica,sans-serif,EmojiFont,&quot;Apple=
+ Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,NotoColorEmoji,&quot;Segoe UI=
+ Symbol&quot;,&quot;Android Emoji&quot;,EmojiSymbols">
+<br>
+<p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt">&nbsp;</span></p>
+<br>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<font face=3D"Verdana" color=3D"Black" size=3D"1"><br>
+IMPORTANT NOTICE REGARDING THIS ELECTRONIC MESSAGE:<br>
+<br>
+This message is intended for the use of the person to whom it is addressed =
+and may contain information that is privileged, confidential, and protected=
+ from disclosure under applicable law. If you are not the intended recipien=
+t, your use of this message for
+ any purpose is strictly prohibited. If you have received this communicatio=
+n in error, please delete the message and notify the sender so that we may =
+correct our records.<br>
+</font>
+</body>
+</html>
+
+--_000_3916f31feb1c4ecf99cb8e903e2a03a4HitchcockORG_--

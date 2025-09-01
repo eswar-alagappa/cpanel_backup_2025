@@ -1,0 +1,240 @@
+Return-Path: <nora@prospects-db.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id IMI6AWEo4WOAegEA7/vpDg
+	(envelope-from <nora@prospects-db.com>); Mon, 06 Feb 2023 10:18:41 -0600
+Return-path: <nora@prospects-db.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Mon, 06 Feb 2023 10:18:41 -0600
+Received: from beetle.elm.relay.mailchannels.net ([23.83.212.15]:31918)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <nora@prospects-db.com>)
+	id 1pP4CW-000qmw-1u
+	for customersupport@caldonbiotech.com;
+	Mon, 06 Feb 2023 10:18:40 -0600
+X-Sender-Id: dreamhost|x-authsender|nora@prospects-db.com
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 3B5BA6C0D9E
+	for <customersupport@caldonbiotech.com>; Mon,  6 Feb 2023 16:18:27 +0000 (UTC)
+Received: from pdx1-sub0-mail-a289.dreamhost.com (unknown [127.0.0.6])
+	(Authenticated sender: dreamhost)
+	by relay.mailchannels.net (Postfix) with ESMTPA id D10766C0DDA
+	for <customersupport@caldonbiotech.com>; Mon,  6 Feb 2023 16:18:26 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1675700306; a=rsa-sha256;
+	cv=none;
+	b=6XLYTQiF0hkKQ9pcv9dO9oGdH75JSWvJfWH6GxvuoyF4LpuwztzEZMqG8hFkw5RfqFDZPQ
+	rYAjTBu6ts8jYm73geA3kYmAoEApaDKkwT8AAnwMCrsBjHkHTbbU2FeYV8Uw0vUnfN8AZl
+	jIYx1m4iih2vFw63K9pQacIXBDfeDUMSeU1x9tSod3l6rtlPW3sAOatkoxvgA3SeGzCJum
+	KWIPXgZFX/+lSY+w3yrNZDNz6yYg/YKbHvmCsTxN4rVvsYGyGaRQeUMI76eX7GmPP3VYIU
+	R6QTwSxudrTju7yEjxQPaOQbQpTznfmbkABvG80e/W1gYGoRr1LaUvojYs7Z5w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1675700306;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 dkim-signature; bh=VjLZggUJxXz+ZWEDWQD/fapEYFVrz0kBu6g2jwvU4Hk=;
+	b=XGUK19yT+q88haYwSj4BD5p3k41Qlxdsnt976ts2S7qqzR3fVf04gaIZmc9b+H1H2FUV9R
+	S5WSMntWu/x2wVwxYoQVqNbIwb955UvC0UXXb3GupS9Cys33YJ7LB0uwunjG4wDwWSKkkO
+	Inl8hjBEffLa0NS1d4pfHZZj9uHHQd2hI749QhgX0ivy1yPi9VwPc4hiqjMi1mlukP00L8
+	lMmC6CY4Cg978tBf5sgHfMfazxNkLd9v5fqvdCOJww2moC7KrZTq1M+ZDjNSsJzZt22JVa
+	5RvgLsc76ihtch40fDeYEzd1fb+CqnF8ClUmQXz6DvBdO/XfqnMghNScQeghfQ==
+ARC-Authentication-Results: i=1;
+	rspamd-544f66f495-hnskj;
+	auth=pass smtp.auth=dreamhost smtp.mailfrom=nora@prospects-db.com
+X-Sender-Id: dreamhost|x-authsender|nora@prospects-db.com
+X-MC-Relay: Junk
+X-MailChannels-SenderId: dreamhost|x-authsender|nora@prospects-db.com
+X-MailChannels-Auth-Id: dreamhost
+X-Decisive-Supply: 5c6e10d713295456_1675700307062_711023326
+X-MC-Loop-Signature: 1675700307062:1343088372
+X-MC-Ingress-Time: 1675700307061
+Received: from pdx1-sub0-mail-a289.dreamhost.com (pop.dreamhost.com
+ [64.90.62.162])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.120.227.134 (trex/6.7.1);
+	Mon, 06 Feb 2023 16:18:27 +0000
+Received: from LAPTOP7R75HQNO (unknown [122.171.18.40])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	(Authenticated sender: nora@prospects-db.com)
+	by pdx1-sub0-mail-a289.dreamhost.com (Postfix) with ESMTPSA id 4P9Wds6JXFz3V
+	for <customersupport@caldonbiotech.com>; Mon,  6 Feb 2023 08:18:25 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=prospects-db.com;
+	s=dreamhost; t=1675700306;
+	bh=6jcxdAbMkddvnn8kh0qsY/T1yfHE9cpyxH8EvDJzyLk=;
+	h=From:To:Subject:Date:Content-Type;
+	b=HlWgQCzTEmqkPnZd96UGi8rwYlH4nEqt8oiyPbqYsEXezenfeIHE1EfD0ZvIqnF/C
+	 9ShNsBX1cJ+RsZfoC6P3hfT6kZlrhr0nfHZgeCq6T9yecClz3sZib3kROPvChYnhBv
+	 g0sycYYqhUaXLhbphy3Knr8a4UaeVXIklBQ0s8LTJbho8XaC+2Ncz3zK+TPPq7UN9f
+	 Ct2smi+pbHS/HWkMgo6zECHmr6udRxZ4dZOquvzBwXsTFZr2qBdjv0+hwvDjPQ2Qrb
+	 MM9DZJF6kt0DlssZeYRw1WPDqFeV5At11paBuIFu255Bsnt4bfeADwU35BV9BrNu2o
+	 YKjTyKW/8/0tw==
+From: "Nora Lockwood" <nora@prospects-db.com>
+To: <customersupport@caldonbiotech.com>
+Subject: caldonbiotech - Physicians - Doctors - Surgeons
+Date: Mon, 6 Feb 2023 21:44:31 +0530
+Message-ID: <071301d93a46$a8ee94f0$facbbed0$@prospects-db.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0715_01D93A74.C2A91AE0"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: Adk6RbYGR82N39deQXutJnFQ3EspTw==
+Content-Language: en-us
+X-Spam-Status: No, score=-0.7
+X-Spam-Score: -6
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_0715_01D93A74.C2A91AE0
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+ 
+
+ 
+
+Hello,
+
+ 
+
+Would you be interested in acquiring Email Database of
+Physicians/Doctors/Surgeons from Hospitals or Private Practices at
+economical cost for your unlimited use and ownership?
+
+
+We can customize and provide a list of contacts from Hospitals or Private
+Practices from any specific locations based on the Specific Specialties you
+target.
+
+ 
+
+Benefits of buying from us:
+
+Cost: We charge $0.10 per contact  
+
+List Guarantees: We guarantee 90% accuracy on all the data attributes
+
+Replacement/Refund Policy: If you fail to achieve 90% accuracy, we will
+provide replacements or provide a credit for next purchase or give you a
+refund for bad records.
+
+List Delivery: The list will be delivered after receiving the signed
+purchase order
+
+Payment:  You can process the payment by credit card or wire after receiving
+the list
+
+ 
+
+Let me know if you are looking for any Specific Specialties from any
+Specific Locations and I will send you samples, counts and cost details to
+evaluate our list services.
+
+ 
+
+I look forward to your response.
+
+ 
+
+Thanks
+
+Nora Lockwood
+Data Consultant  
+
+Prospects Database
+
+
+
+If you do not wish to receive future emails from us, please reply as 'leave
+out'
+
+ 
+
+
+------=_NextPart_000_0715_01D93A74.C2A91AE0
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><META =
+HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii"><meta name=3DGenerator content=3D"Microsoft Word 15 =
+(filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US =
+link=3D"#0563C1" vlink=3D"#954F72" style=3D'word-wrap:break-word'><div =
+class=3DWordSection1><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal>Hello,<o:p></o:p></p><p =
+class=3DMsoNormal><b><o:p>&nbsp;</o:p></b></p><p class=3DMsoNormal>Would =
+you be interested in acquiring Email Database of =
+<b>Physicians/Doctors/Surgeons </b>from Hospitals or Private Practices =
+at economical cost for your unlimited use and =
+ownership?<o:p></o:p></p><p class=3DMsoNormal><b><br></b>We can =
+customize and provide a list of contacts from Hospitals or Private =
+Practices from any specific locations based on the Specific Specialties =
+you target.<o:p></o:p></p><p =
+class=3DMsoNormal><b><o:p>&nbsp;</o:p></b></p><p =
+class=3DMsoNormal><b>Benefits of buying from us:<o:p></o:p></b></p><p =
+class=3DMsoNormal><b>Cost:</b> We charge $0.10 per contact&nbsp; =
+<o:p></o:p></p><p class=3DMsoNormal><b>List Guarantees:</b> We guarantee =
+90% accuracy on all the data attributes<o:p></o:p></p><p =
+class=3DMsoNormal><b>Replacement/Refund Policy:</b> If you fail to =
+achieve 90% accuracy, we will provide replacements or provide a credit =
+for next purchase or give you a refund for bad records.<o:p></o:p></p><p =
+class=3DMsoNormal><b>List Delivery:</b> The list will be delivered after =
+receiving the signed purchase order<o:p></o:p></p><p =
+class=3DMsoNormal><b>Payment:</b>&nbsp; You can process the payment by =
+credit card or wire after receiving the list<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>Let me know =
+if you are looking for any Specific Specialties from any Specific =
+Locations and I will send you samples, counts and cost details to =
+evaluate our list services.<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>I look =
+forward to your response.<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal><b>Thanks<o:p></o:p></b></p><p =
+class=3DMsoNormal><b>Nora Lockwood<br>Data Consultant&nbsp; =
+<o:p></o:p></b></p><p class=3DMsoNormal><b>Prospects =
+Database</b><br><br><o:p></o:p></p><p class=3DMsoNormal>If you do not =
+wish to receive future emails from us, please reply as 'leave =
+out'<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p></div></body></html>
+------=_NextPart_000_0715_01D93A74.C2A91AE0--
+

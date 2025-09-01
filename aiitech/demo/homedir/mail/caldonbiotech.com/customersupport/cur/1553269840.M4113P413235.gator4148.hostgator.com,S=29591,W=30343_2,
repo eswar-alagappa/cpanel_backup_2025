@@ -1,0 +1,752 @@
+Return-Path: <frankie.gilbertdata@outlook.com>
+Delivered-To: customersupport@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP id YH1COk8ElVwzTgYA7/vpDg
+	for <customersupport@caldonbiotech.com>; Fri, 22 Mar 2019 10:50:40 -0500
+Return-path: <frankie.gilbertdata@outlook.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Fri, 22 Mar 2019 10:50:40 -0500
+Received: from mail-oln040092254015.outbound.protection.outlook.com ([40.92.254.15]:3420 helo=APC01-PU1-obe.outbound.protection.outlook.com)
+	by gator4148.hostgator.com with esmtps (TLSv1.2:ECDHE-RSA-AES256-SHA384:256)
+	(Exim 4.91)
+	(envelope-from <frankie.gilbertdata@outlook.com>)
+	id 1h7MRL-001kgu-65
+	for customersupport@caldonbiotech.com; Fri, 22 Mar 2019 10:50:39 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=outlook.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=HrZnO51pP5XfCzkDvv7Cd6QuBODBVfYIhZOFqMlEkhI=;
+ b=J/PMiNLK0GyfAdTfcJREt64S9w/uAMBOFA+Eun9ooAf1NAwJhudZLHXJVJnjne1Xm5RuRKyfQlqfCjgZTd+5/uXdcbDQk2LroPZfd5Ohu20yUBtO8qAlRsTLzCCmoocTVopBq8E5NKrhHJumoT/SIZc6x9DCtVxAWTmrUraw2zqV2UauJltfxSKInulxb1xDlVUJQEXQPR0NXUPKWI/eoCGkfS/EYYDWoDxNrMCm5xmBbGXu1nTeMtcjcjlHf2LrZhocgx4ZKIbZDLY2bo8s76pC3JfmIzwbt2QcsY9tN6BlKK7+2JRq1ErY8K2NsdDXnfj1hygFtORQ/ngQyfcopQ==
+Received: from PU1APC01FT042.eop-APC01.prod.protection.outlook.com
+ (10.152.252.57) by PU1APC01HT204.eop-APC01.prod.protection.outlook.com
+ (10.152.252.175) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.1730.9; Fri, 22 Mar
+ 2019 15:49:29 +0000
+Received: from HK0PR02MB2722.apcprd02.prod.outlook.com (10.152.252.54) by
+ PU1APC01FT042.mail.protection.outlook.com (10.152.253.96) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.1730.9 via Frontend Transport; Fri, 22 Mar 2019 15:49:28 +0000
+Received: from HK0PR02MB2722.apcprd02.prod.outlook.com
+ ([fe80::949d:c2b:bdb4:cf09]) by HK0PR02MB2722.apcprd02.prod.outlook.com
+ ([fe80::949d:c2b:bdb4:cf09%2]) with mapi id 15.20.1730.017; Fri, 22 Mar 2019
+ 15:49:28 +0000
+From: Frankie Gilbertdata <frankie.gilbertdata@outlook.com>
+Subject: Healthcare Industry Email list
+Thread-Topic: Healthcare Industry Email list
+Thread-Index: AdTgxtBqFp6DQFWxTvG4q199CPz5JQ==
+Importance: high
+X-Priority: 1
+Disposition-Notification-To: Frankie Gilbertdata
+	<frankie.gilbertdata@outlook.com>
+Return-Receipt-To: <frankie.gilbertdata@outlook.com>
+Sensitivity: company-confidential
+Date: Fri, 22 Mar 2019 15:49:28 +0000
+Message-ID: <HK0PR02MB2722DC506E773003076D1B42FD430@HK0PR02MB2722.apcprd02.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-incomingtopheadermarker: OriginalChecksum:34BAA72E805CAC309A65C69ADFD3FF5154060451C077A49FB84EA29F7A644242;UpperCasedChecksum:4CB22183FDD64BA6DFB9895F54D7695A5780A3A1E6BEFF1687734DEC06EED362;SizeAsReceived:24298;Count:45
+x-tmn: [YYnCTHRFa2bm8g0ZD3rAM9HsTf7q3EQP]
+x-ms-publictraffictype: Email
+x-incomingheadercount: 45
+x-eopattributedmessage: 0
+x-ms-exchange-slblob-mailprops: 0TRxAplA31GcOrheAVB0E5x20cLXM/a1YvqVJpXSTrHYkFoam3OUjc8Pa0K6IK24k0KeDgDX0qnax2v8lfSq9kcVmopJ5OYYVyxdppfuw89HW7zzTPi3xTPQk9XqOIrCfW+b9cJ3QsMANDOPa1N2C9daBYNJYM1FWm7GDKaDNtwQ9eRgjv2IzEJUtdtLQJRfrmMXEGCsiLMYuHOKk5oQ2T0UCJU83peOkN26m0GPXKAK3gcYpOtol41/oAUKe56ZK2284+7Uhy7DQuKwfbcaF+v2XwFiPCunFOUwFB9CIUjZR/4Qju+ATEoZan+vHDrmaooqnhC2zCv9jXWwx2zAypBHVDPh/yNLe8yoRQ1sCpogX6nUCpud/vftXTmSU9slTKqLG5XYzTdeFteOz/idwoPCsQt/U0UrbQS3OA8gaZHZc9sG3UKaocLletTBvSBCke8dneQGo4/admYo0E3sdlZsBxKW7BMyZeEXiUJyXc53gUqOENTGNK5+wOohufpGp0nqGpEDxXIiODr4dQBQ9LMxeC7hmSRvHTf1F+4RllfLAFcdcxxG+mU3ETLbqTulfvC7VOGvIe+ul899ddiP8eCYedTddyCtkTGjPB4MyUkNgx1k8V5H6woZv2I8dshB8YODmccH+4fVtJQ9H40m4A==
+x-microsoft-antispam: BCL:0;PCL:0;RULEID:(2390118)(7020095)(20181119110)(201702061078)(5061506573)(5061507331)(1603103135)(2017031320274)(2017031323274)(2017031324274)(2017031322404)(201702181274)(1601125500)(1603101475)(1701031045);SRVR:PU1APC01HT204;
+x-ms-traffictypediagnostic: PU1APC01HT204:
+x-microsoft-antispam-message-info: rh++yN/r3XX35+vaWrmfgrt+NULZrLagHV9NwclUJLqRBhuCRf9+aOJ3mhZa8yVb
+Content-Type: multipart/alternative;
+	boundary="_000_HK0PR02MB2722DC506E773003076D1B42FD430HK0PR02MB2722apcp_"
+MIME-Version: 1.0
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 90c986f2-60a2-4449-5a28-08d6aeddf7e4
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-originalarrivaltime: 22 Mar 2019 15:49:28.8226
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Internet
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PU1APC01HT204
+X-Spam-Status: No, score=4.7
+X-Spam-Score: 47
+X-Spam-Bar: ++++
+X-Spam-Flag: NO
+
+--_000_HK0PR02MB2722DC506E773003076D1B42FD430HK0PR02MB2722apcp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+
+I am contacting you to know if you would be interested in" Healthcare Indus=
+try Email list" and to know if you are looking for any other Physicians lis=
+t.
+
+Few of our lists mention below:
+
+
+
+Industry
+
+
+Job Title
+
+
+Physicians, Doctors
+
+
+Chiropractic Doctors
+
+
+Health Care
+
+
+CXOs and VPs, CEO, CFO
+
+
+Specialty Hospitals
+
+
+Medical Physicians
+
+
+Health Insurance
+
+
+VPs of Medical Affairs
+
+
+Chiropractic Care
+
+
+Registered Nurses
+
+
+Medical Supplies
+
+
+Nursing Administrators
+
+
+Physical Therapy
+
+
+Neurologists
+
+
+Public Health
+
+
+Clinical Directors
+
+
+Dermatology Doctors
+
+
+Psychiatry Doctors
+
+
+Food Industry
+
+
+Presidents
+
+
+Home health agencies
+
+
+Pediatrics Doctors
+
+
+Biotechnology
+
+
+Health Systems Engineers
+
+
+Cardiology Doctors
+
+
+Dentist Lists
+
+
+Health/Fitness facilities
+
+
+GMs
+
+
+Family Practice Doctors
+
+
+Gastroenterology Doctors
+
+
+Packaging Industry
+
+
+VPs of Medical Affairs
+
+
+OB/Gyn Doctors
+
+
+Sporting Goods Retailers
+
+
+Health & Allied Services
+
+
+Technical Directors
+
+
+Health Food Stores
+
+
+Oncologists
+
+
+Dental Laboratories
+
+
+Professors
+
+
+Acupuncture
+
+
+Dealers and Consultants
+
+
+Health Institutions
+
+
+Administrators and Trainers
+
+
+Oncology Doctors
+
+
+Orthopedic Surgery Doctors
+
+
+
+
+Our Healthcare Industry Professionals email list is the most comprehensive,=
+ accurate and precise list of key healthcare professionals available in the=
+ list rental marketplace. This list contains Healthcare Managers, Professio=
+nals, Administrators, Staff Working in Hospitals, Physician's Offices, Ambu=
+latory Care, Nursing Home Cares, Senior Care Facilities, Long-Term Care and=
+ Assisted Living Facilities.
+
+
+Each record in the list contains Contact Name (First, Middle and Last Name)=
+, Company Name, Address, Job Title, Phone Number and Email address.
+
+Kindly let me know which target criteria you would like to acquire. So, I c=
+an give you more information about counts, pricing and few samples on same.
+
+Target Industry:  ____________?? (Any Industry)
+Target Geography: ______________?? (Example : USA, UK, Canada, Australia, e=
+tc...)
+Target Job Title:  __________________?? (Example: CEO, VP, Managers, Nurses=
+, Directors, etc...)
+
+Please let me know your thoughts towards procuring Healthcare email list.
+
+Best Regards,
+Frankie Smith
+Marketing Coordinator
+
+--_000_HK0PR02MB2722DC506E773003076D1B42FD430HK0PR02MB2722apcp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-IN" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-family:&quot;Cali=
+bri Light&quot;,sans-serif;color:black">Hi,&nbsp;<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-family:&quot;Cali=
+bri Light&quot;,sans-serif;color:black">&nbsp;&nbsp;<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-family:&quot;Cali=
+bri Light&quot;,sans-serif;color:black">I am contacting you to know if you =
+would be interested in&quot;
+<b>Healthcare Industry Email list</b>&quot; and to know if you are looking =
+for any other
+<b>Physicians list</b>.&nbsp;<o:p></o:p></span></p>
+<p class=3D"MsoNoSpacing"><span lang=3D"EN-US" style=3D"font-family:&quot;C=
+alibri Light&quot;,sans-serif"><br>
+<b>Few of our lists mention below:<o:p></o:p></b></span></p>
+<p class=3D"MsoNoSpacing"><span lang=3D"EN-US" style=3D"font-family:&quot;C=
+alibri Light&quot;,sans-serif">&nbsp;<o:p></o:p></span></p>
+<table class=3D"MsoNormalTable" border=3D"1" cellspacing=3D"3" cellpadding=
+=3D"0" width=3D"671" style=3D"width:503.6pt;border:outset 2.25pt">
+<tbody>
+<tr style=3D"height:5.9pt">
+<td width=3D"151" style=3D"width:113.3pt;background:#CCFFCC;padding:.75pt .=
+75pt .75pt .75pt;height:5.9pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><b><span lang=3D"EN-US=
+" style=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Industry<o:p><=
+/o:p></span></b></p>
+</td>
+<td width=3D"171" style=3D"width:128.3pt;background:#CCFFCC;padding:.75pt .=
+75pt .75pt .75pt;height:5.9pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><b><span lang=3D"EN-US=
+" style=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Job Title<o:p>=
+</o:p></span></b></p>
+</td>
+<td width=3D"5" style=3D"width:4.0pt;padding:.75pt .75pt .75pt .75pt;height=
+:5.9pt"></td>
+<td width=3D"145" style=3D"width:108.6pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:5.9pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Physicians, Docto=
+rs<o:p></o:p></span></p>
+</td>
+<td width=3D"182" style=3D"width:136.2pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:5.9pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Chiropractic Doct=
+ors<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:12.2pt">
+<td width=3D"151" style=3D"width:113.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Health Care<o:p><=
+/o:p></span></p>
+</td>
+<td width=3D"171" style=3D"width:128.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">CXOs and VPs, CEO=
+, CFO<o:p></o:p></span></p>
+</td>
+<td width=3D"5" style=3D"width:4.0pt;padding:.75pt .75pt .75pt .75pt;height=
+:12.2pt"></td>
+<td width=3D"145" style=3D"width:108.6pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Specialty Hospita=
+ls<o:p></o:p></span></p>
+</td>
+<td width=3D"182" style=3D"width:136.2pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Medical Physician=
+s<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:12.2pt">
+<td width=3D"151" style=3D"width:113.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Health Insurance
+<o:p></o:p></span></p>
+</td>
+<td width=3D"171" style=3D"width:128.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">VPs of Medical Af=
+fairs<o:p></o:p></span></p>
+</td>
+<td width=3D"5" style=3D"width:4.0pt;padding:.75pt .75pt .75pt .75pt;height=
+:12.2pt"></td>
+<td width=3D"145" style=3D"width:108.6pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Chiropractic Care=
+<o:p></o:p></span></p>
+</td>
+<td width=3D"182" style=3D"width:136.2pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Registered Nurses=
+<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:12.2pt">
+<td width=3D"151" style=3D"width:113.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Medical Supplies<=
+o:p></o:p></span></p>
+</td>
+<td width=3D"171" style=3D"width:128.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Nursing Administr=
+ators<o:p></o:p></span></p>
+</td>
+<td width=3D"5" style=3D"width:4.0pt;padding:.75pt .75pt .75pt .75pt;height=
+:12.2pt"></td>
+<td width=3D"145" style=3D"width:108.6pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Physical Therapy<=
+o:p></o:p></span></p>
+</td>
+<td width=3D"182" style=3D"width:136.2pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Neurologists<o:p>=
+</o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:5.9pt">
+<td width=3D"151" style=3D"width:113.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:5.9pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Public Health<o:p=
+></o:p></span></p>
+</td>
+<td width=3D"171" style=3D"width:128.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:5.9pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Clinical Director=
+s<o:p></o:p></span></p>
+</td>
+<td width=3D"5" style=3D"width:4.0pt;padding:.75pt .75pt .75pt .75pt;height=
+:5.9pt"></td>
+<td width=3D"145" style=3D"width:108.6pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:5.9pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Dermatology Docto=
+rs<o:p></o:p></span></p>
+</td>
+<td width=3D"182" style=3D"width:136.2pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:5.9pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Psychiatry Doctor=
+s<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:6.25pt">
+<td width=3D"151" style=3D"width:113.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:6.25pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Food Industry<o:p=
+></o:p></span></p>
+</td>
+<td width=3D"171" style=3D"width:128.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:6.25pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Presidents<o:p></=
+o:p></span></p>
+</td>
+<td width=3D"5" style=3D"width:4.0pt;padding:.75pt .75pt .75pt .75pt;height=
+:6.25pt"></td>
+<td width=3D"145" style=3D"width:108.6pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:6.25pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Home health agenc=
+ies<o:p></o:p></span></p>
+</td>
+<td width=3D"182" style=3D"width:136.2pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:6.25pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Pediatrics Doctor=
+s<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:12.2pt">
+<td width=3D"151" style=3D"width:113.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Biotechnology<o:p=
+></o:p></span></p>
+</td>
+<td width=3D"171" style=3D"width:128.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Health Systems En=
+gineers<o:p></o:p></span></p>
+</td>
+<td width=3D"5" style=3D"width:4.0pt;padding:.75pt .75pt .75pt .75pt;height=
+:12.2pt"></td>
+<td width=3D"145" style=3D"width:108.6pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Cardiology Doctor=
+s<o:p></o:p></span></p>
+</td>
+<td width=3D"182" style=3D"width:136.2pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Dentist Lists<o:p=
+></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:12.2pt">
+<td width=3D"151" style=3D"width:113.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Health/Fitness fa=
+cilities<o:p></o:p></span></p>
+</td>
+<td width=3D"171" style=3D"width:128.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">GMs<o:p></o:p></s=
+pan></p>
+</td>
+<td width=3D"5" style=3D"width:4.0pt;padding:.75pt .75pt .75pt .75pt;height=
+:12.2pt"></td>
+<td width=3D"145" style=3D"width:108.6pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Family Practice D=
+octors<o:p></o:p></span></p>
+</td>
+<td width=3D"182" style=3D"width:136.2pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Gastroenterology =
+Doctors<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:11.85pt">
+<td width=3D"151" style=3D"width:113.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:11.85pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Packaging Industr=
+y<o:p></o:p></span></p>
+</td>
+<td width=3D"171" style=3D"width:128.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:11.85pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">VPs of Medical Af=
+fairs<o:p></o:p></span></p>
+</td>
+<td width=3D"5" style=3D"width:4.0pt;padding:.75pt .75pt .75pt .75pt;height=
+:11.85pt">
+</td>
+<td width=3D"145" style=3D"width:108.6pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:11.85pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">OB/Gyn Doctors<o:=
+p></o:p></span></p>
+</td>
+<td width=3D"182" style=3D"width:136.2pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:11.85pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Sporting Goods Re=
+tailers<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:12.2pt">
+<td width=3D"151" style=3D"width:113.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Health &amp; Alli=
+ed Services<o:p></o:p></span></p>
+</td>
+<td width=3D"171" style=3D"width:128.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Technical Directo=
+rs<o:p></o:p></span></p>
+</td>
+<td width=3D"5" style=3D"width:4.0pt;padding:.75pt .75pt .75pt .75pt;height=
+:12.2pt"></td>
+<td width=3D"145" style=3D"width:108.6pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Health Food Store=
+s<o:p></o:p></span></p>
+</td>
+<td width=3D"182" style=3D"width:136.2pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:12.2pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Oncologists<o:p><=
+/o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:6.25pt">
+<td width=3D"151" style=3D"width:113.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:6.25pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Dental Laboratori=
+es<o:p></o:p></span></p>
+</td>
+<td width=3D"171" style=3D"width:128.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:6.25pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Professors<o:p></=
+o:p></span></p>
+</td>
+<td width=3D"5" style=3D"width:4.0pt;padding:.75pt .75pt .75pt .75pt;height=
+:6.25pt"></td>
+<td width=3D"145" style=3D"width:108.6pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:6.25pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Acupuncture<o:p><=
+/o:p></span></p>
+</td>
+<td width=3D"182" style=3D"width:136.2pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:6.25pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Dealers and Consu=
+ltants<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:11.85pt">
+<td width=3D"151" style=3D"width:113.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:11.85pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Health Institutio=
+ns<o:p></o:p></span></p>
+</td>
+<td width=3D"171" style=3D"width:128.3pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:11.85pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Administrators an=
+d Trainers<o:p></o:p></span></p>
+</td>
+<td width=3D"5" style=3D"width:4.0pt;padding:.75pt .75pt .75pt .75pt;height=
+:11.85pt">
+</td>
+<td width=3D"145" style=3D"width:108.6pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:11.85pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Oncology Doctors<=
+o:p></o:p></span></p>
+</td>
+<td width=3D"182" style=3D"width:136.2pt;padding:.75pt .75pt .75pt .75pt;he=
+ight:11.85pt">
+<p class=3D"MsoNoSpacing" style=3D"line-height:105%"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif">Orthopedic Surger=
+y Doctors<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNoSpacing"><span lang=3D"EN-US" style=3D"font-family:&quot;C=
+alibri Light&quot;,sans-serif">&nbsp;<o:p></o:p></span></p>
+<p class=3D"MsoNoSpacing"><span lang=3D"EN-US" style=3D"font-family:&quot;C=
+alibri Light&quot;,sans-serif">Our Healthcare Industry Professionals email =
+list is the most comprehensive, accurate and precise list of key healthcare=
+ professionals available in the list rental marketplace.
+ This list contains <b>Healthcare Managers, Professionals, Administrators, =
+Staff Working in Hospitals, Physician's Offices, Ambulatory Care, Nursing H=
+ome Cares, Senior Care Facilities, Long-Term Care and Assisted Living Facil=
+ities.</b><o:p></o:p></span></p>
+<p class=3D"MsoNoSpacing"><b><span lang=3D"EN-US" style=3D"font-family:&quo=
+t;Calibri Light&quot;,sans-serif"><o:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span lang=3D"EN-US" style=3D"font-family:&quot;C=
+alibri Light&quot;,sans-serif">Each record in the list contains Contact Nam=
+e (First, Middle and Last Name), Company Name, Address, Job Title, Phone Nu=
+mber and Email address.<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-family:&quot;Cali=
+bri Light&quot;,sans-serif;color:black">&nbsp;<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-family:&quot;Cali=
+bri Light&quot;,sans-serif;color:black">Kindly let me know which target cri=
+teria you would like to acquire. So, I can give you more information about =
+counts, pricing and few samples on same.&nbsp;<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-family:&quot;Cali=
+bri Light&quot;,sans-serif;color:black">&nbsp;<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span lang=3D"EN-US" style=3D"font-family:&quot;C=
+alibri Light&quot;,sans-serif;color:black">Target Industry:&nbsp;
+<span style=3D"background:yellow;mso-highlight:yellow">____________</span>?=
+?</span></b><span lang=3D"EN-US" style=3D"font-family:&quot;Calibri Light&q=
+uot;,sans-serif;color:black"> (Any Industry)&nbsp; &nbsp;<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><b><span lang=3D"EN-US" style=3D"font-family:&quot;C=
+alibri Light&quot;,sans-serif;color:black">Target Geography:
+<span style=3D"background:yellow;mso-highlight:yellow">______________</span=
+>??</span></b><span lang=3D"EN-US" style=3D"font-family:&quot;Calibri Light=
+&quot;,sans-serif;color:black">
+</span><span lang=3D"FR" style=3D"font-family:&quot;Calibri Light&quot;,san=
+s-serif;color:black">(Example : USA, UK, Canada, Australia, etc&#8230;)<o:p=
+></o:p></span></p>
+<p class=3D"MsoNormal"><b><span lang=3D"EN-US" style=3D"font-family:&quot;C=
+alibri Light&quot;,sans-serif;color:black">Target Job Title:&nbsp;
+<span style=3D"background:yellow;mso-highlight:yellow">__________________</=
+span>??</span></b><span lang=3D"EN-US" style=3D"font-family:&quot;Calibri L=
+ight&quot;,sans-serif;color:black"> (Example: CEO, VP, Managers, Nurses, Di=
+rectors, etc&#8230;)<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-family:&quot;Cali=
+bri Light&quot;,sans-serif;color:black">&nbsp;<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-family:&quot;Cali=
+bri Light&quot;,sans-serif;color:black">Please let me know your thoughts to=
+wards procuring
+<b>Healthcare email list</b>.&nbsp;<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-family:&quot;Cali=
+bri Light&quot;,sans-serif;color:black">&nbsp;<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"text-autospace:none"><span lang=3D"EN-US" s=
+tyle=3D"font-family:&quot;Calibri Light&quot;,sans-serif;color:black">Best =
+Regards,<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"text-autospace:none"><b><span lang=3D"EN-US=
+" style=3D"font-family:&quot;Calibri Light&quot;,sans-serif;color:black">Fr=
+ankie Smith</span></b><span lang=3D"EN-US" style=3D"font-family:&quot;Calib=
+ri Light&quot;,sans-serif;color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span lang=3D"EN-US" style=3D"font-family:&quot;C=
+alibri Light&quot;,sans-serif;color:black">Marketing Coordinator</span></b>=
+<o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_HK0PR02MB2722DC506E773003076D1B42FD430HK0PR02MB2722apcp_--

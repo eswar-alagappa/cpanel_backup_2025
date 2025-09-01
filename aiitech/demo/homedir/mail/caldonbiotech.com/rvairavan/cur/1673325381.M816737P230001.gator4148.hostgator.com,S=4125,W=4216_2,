@@ -1,0 +1,91 @@
+Return-Path: <kristen@srbooster.io>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id eJH9L0XrvGNxggMA7/vpDg
+	(envelope-from <kristen@srbooster.io>); Mon, 09 Jan 2023 22:36:21 -0600
+Return-path: <kristen@srbooster.io>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Mon, 09 Jan 2023 22:36:21 -0600
+Received: from mail-qt1-f182.google.com ([209.85.160.182]:45870)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <kristen@srbooster.io>)
+	id 1pF6N3-001ZXO-FA
+	for customersupport@caldonbiotech.com;
+	Mon, 09 Jan 2023 22:36:21 -0600
+Received: by mail-qt1-f182.google.com with SMTP id h21so9891087qta.12
+        for <customersupport@caldonbiotech.com>; Mon, 09 Jan 2023 20:36:16 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=srbooster-io.20210112.gappssmtp.com; s=20210112;
+        h=content-transfer-encoding:date:mime-version:message-id:subject
+         :reply-to:to:from:from:to:cc:subject:date:message-id:reply-to;
+        bh=TUF9WjD6xdmoTGNmaJnzcOOZoMpt/vmCRRgkBP/OM2I=;
+        b=yhhBvOwjvUTYu1U5B30r3slK0ojhFtUi9WURbCuwzzD+3tfcGQ16jw3ghRXUfi9GGN
+         myoisrAOJzrTxHL+/LIMMj5hNGofK57G6QnopvfpjjYd27JcCwaTtHFqhO6XFtBckLOE
+         CI6oiiEOY2EoS/+19daEcO+SLZCHnwJRNPzyVgNqTZCnkWBoIoKFkyI6MNjDwutdfDvl
+         RSKpllPPdILu+M3Zxu9lazjjYbmuciPKxPlDD8D+q6UG6YE67D//TABnul+ela8SnF/d
+         JWBHafNX6V9Y7evub/qB4aW5n2yPBz696tbMShUag/SHausXYEACG3Xuu50oT1p6AnKE
+         zofA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=content-transfer-encoding:date:mime-version:message-id:subject
+         :reply-to:to:from:x-gm-message-state:from:to:cc:subject:date
+         :message-id:reply-to;
+        bh=TUF9WjD6xdmoTGNmaJnzcOOZoMpt/vmCRRgkBP/OM2I=;
+        b=JtEfACVnsUqTBWb9sDRXwFcu1BTwDER+jXD9JpAOXgEENTcTJ/Fv4KzyQ3NDre4V8e
+         qN7Yi5NgIyVHgkD+dXOVK/e0TaVoQRglWx9hV0R560L+6qMUahSuFAf6OEUtR63hty/1
+         J/F7X+YPuwDQhOvnhunXW2xCoueI0Io4d+rwnqKSKGUujWjCb0mWkkChwxjfyFonD5D5
+         rojWZgekJn36NE9nYrlqdWfkibGpaN9ARgnNMcKKmbt9XLCEZsN+I3vus2bF0KfZL3qz
+         ngt1OoDJX0BVJE1FSHuDfVNXV4ROPRjsxPLFn+zgNX0DuouJ3YxBpqQcDIATd6/2nbYM
+         xT9g==
+X-Gm-Message-State: AFqh2koi7tX9bNRD+TQOeGwszSYqzd40dzrp7+8L7v2PayUfFcKgtF7g
+	J3A6BSV73xesl76YXflclXkUD8uqBt7Eb9gN
+X-Google-Smtp-Source: AMrXdXvXRcWeynqOKuYTubOa6yTUEYvWADpz8hzPoN4hMHHDW7UlskJOmbE2amwIFGIxS2gByK0yWg==
+X-Received: by 2002:a05:622a:4:b0:3ac:5748:54b3 with SMTP id x4-20020a05622a000400b003ac574854b3mr17492436qtw.62.1673325370497;
+        Mon, 09 Jan 2023 20:36:10 -0800 (PST)
+Received: from [127.0.0.1] (ec2-52-5-208-59.compute-1.amazonaws.com. [52.5.208.59])
+        by smtp.gmail.com with ESMTPSA id t1-20020ac86a01000000b003a7e4129f83sm5506998qtr.85.2023.01.09.20.36.09
+        for <customersupport@caldonbiotech.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 09 Jan 2023 20:36:09 -0800 (PST)
+From: Kristen Martin <kristen@srbooster.io>
+To: Caldon Biotech <customersupport@caldonbiotech.com>
+Reply-To: Kristen Martin <kristen@srbooster.io>
+Subject: Caldon Biotech, December directory list update
+ =?utf-8?Q?=F0=9F=8C=8E?=
+Message-ID: <07d76f7106405c3b9cb0b50ae0a3616a@srbooster.io>
+MIME-Version: 1.0
+Date: Mon, 09 Jan 2023 23:36:09 -0500
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=-0.5
+X-Spam-Score: -4
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+Hi Caldon Biotech,
+
+
+We have updated our list of 80+ high-quality sta=
+rtup directories for December, where you can submit "Caldon Biotech" to inc=
+rease organic traffic, grow your online visibility, and improve your Off-pa=
+ge SEO. =F0=9F=9A=80
+
+New Directories (3): BharathListing, Link Centre,=
+ and FreeListingIndia.
+
+You can see the directory list here: https://ww=
+w.srbooster.com/ck/36/628458/SRB-directory-list
+
+Also, we can do the wo=
+rk for you: https://www.srbooster.com/ck/36/628458/SRB
+
+
+Warm regards=
+,
+SR Booster Team
+
+
+PS: If you know about any other directory, let =
+us know about it.
+

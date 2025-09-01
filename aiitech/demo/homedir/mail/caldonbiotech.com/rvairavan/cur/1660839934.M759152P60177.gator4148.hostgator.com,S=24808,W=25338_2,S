@@ -1,0 +1,530 @@
+Return-Path: <mabarca@eastridge.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id 4JiHLP5n/mIR6wAA7/vpDg
+	(envelope-from <mabarca@eastridge.com>); Thu, 18 Aug 2022 11:25:34 -0500
+Return-path: <mabarca@eastridge.com>
+Envelope-to: gloria@caldonbiotech.com
+Delivery-date: Thu, 18 Aug 2022 11:25:34 -0500
+Received: from mail-il1-f172.google.com ([209.85.166.172]:42597)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <mabarca@eastridge.com>)
+	id 1oOiKs-000HK2-0H
+	for gloria@caldonbiotech.com;
+	Thu, 18 Aug 2022 11:25:34 -0500
+Received: by mail-il1-f172.google.com with SMTP id z13so1048662ilq.9
+        for <gloria@caldonbiotech.com>; Thu, 18 Aug 2022 09:25:28 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=eastridge.com; s=google;
+        h=to:subject:message-id:date:mime-version:references:in-reply-to:from
+         :from:to:cc;
+        bh=RINGBNNKPtOqeaO+5NGritpLG6as5KdoDemhl6MiprE=;
+        b=bPoo61qiGEUxNI+AStH2CDnlzFcMeKp9l1WR+6AbB4RHXLRd549I6oAI0W/YY8Yd/4
+         vSJDE7hThfDkEIjsHCzoW8VSc+VqoMnUcdUUsX7o4J1RYM4yVmnoNfPOIOkLsJTeXJ17
+         YO0pq+6oHSJRpjqBSSMMjc+xoEGRWdyd7Dezo82jw70UfeD0sDSr5yKcRP+Icd+Siz9r
+         UZi1k2AbVvW+pwESSTdYnUG9BzpNzM/fKxQO9eTq82YFKJUJIAFCxG/jHb2G/cUyNahf
+         r6KIVFV86WgZJuImVSHjSYBlHP1EXxw+UF41DWu/U4X6p00hmj3lH/KTFnbm1HNfUpsS
+         1NUA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:mime-version:references:in-reply-to:from
+         :x-gm-message-state:from:to:cc;
+        bh=RINGBNNKPtOqeaO+5NGritpLG6as5KdoDemhl6MiprE=;
+        b=1b2THQK1Qekq3DXZ0u7tI0+KaroJVJRfTtAkxfdY4NDroOGafWauo8FuD6CJfuybZp
+         0vawarqJE/HVw6Mk/SKyROX2FLMzqIM8KbaV7oIh+ILLbkeFPBRouOchExM4/eMkddTK
+         eIZ+GnGwxPze/ghtPBb+qBGwx9wWXATPwMF/i6/O3T+IRSC6/LSN4+Iz18o2qB5o3/Q0
+         wcu3BrTUUaMsfuOKBlIF+NdH3cByjhqMhYJ4fwrYLHttls9GSl3lCDSYYMgAOmS1XhIR
+         71fRjpZMb78sGsRYCD12tFAP2k5JCRQ6nTuNXofbHa8q+ah22bx7tpxeB7ZLW/dSYXD6
+         0VhQ==
+X-Gm-Message-State: ACgBeo1LHYo1zNcpMNHfbokZp9h6iSI4no+GDrZ5+xJ0XwwnIShZa3P+
+	GtJ8Y1CHDaKOGwrtK6ynrR/VDlrnyk3AOHLXDz5wqFlns/Y=
+X-Google-Smtp-Source: AA6agR5ypMSbrllek/DAtuuxvXi64o3jatrKbtYwIx7ktiCOOjpJHKX+oml8yRfADNokSzcdSN3uijkfybbiQqSYung=
+X-Received: by 2002:a05:6e02:174c:b0:2e6:abe6:8427 with SMTP id
+ y12-20020a056e02174c00b002e6abe68427mr1789892ill.269.1660839922340; Thu, 18
+ Aug 2022 09:25:22 -0700 (PDT)
+Received: from 466680526474 named unknown by gmailapi.google.com with
+ HTTPREST; Thu, 18 Aug 2022 11:25:21 -0500
+From: Milena Abarca <mabarca@eastridge.com>
+In-Reply-To: <CAAM5Fa32M2HuAiTHK78eJ6AZXqxhtu39Y9afFjyeCd5UDmBNmg@mail.gmail.com>
+References: <CAAM5Fa2pJadR5gDx8tgSA-=C24K=-5iU0zwZEVyHaROLdycdRw@mail.gmail.com>
+ <CAAM5Fa32M2HuAiTHK78eJ6AZXqxhtu39Y9afFjyeCd5UDmBNmg@mail.gmail.com>
+MIME-Version: 1.0
+X-HS-Fax-Cid: 1ckyr4lg3ftx8ich1aj4rwg7pptdcs1w143nnug6in9ee1jpqb61tvlh9e40q4gms7caoyb9rp18mshecuvnwi2ci7dmr7kix9j6zo48pxo52mng6amss2agxsf8ir73q
+Date: Thu, 18 Aug 2022 11:25:21 -0500
+Message-ID: <CAAM5Fa2Lt39nORg6NzXkscRhyGOuw-Ke5o+jL7WLQzN0rxdSmw@mail.gmail.com>
+Subject: Customer Service Professionals - Fully Vetted!
+To: gloria@caldonbiotech.com
+Content-Type: multipart/alternative; boundary="00000000000099a5ea05e6866d6d"
+X-Spam-Status: No, score=-0.7
+X-Spam-Score: -6
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--00000000000099a5ea05e6866d6d
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+ Hi Gloria=E2=80=8B,
+
+Staffing and recruiting uncertainty are among the top pandemic challenges
+for organizations across North America. In a recent survey of organizations
+across North America, the top 3 responses when asking about recruiting and
+staffing:
+
+   - We can=E2=80=99t find enough workers to staff our business.
+   - No one wants to work anymore.
+   - I can=E2=80=99t get anyone to show up.
+   - Top talent is exiting out the door faster than we can replace them.
+
+Book a meeting with me
+<https://t.sidekickopen08.com/s3t/c/5/f18dQhb0S7kF8c7ZN1VxN7L359hl3kW7_k284=
+1CX6NGW36PYBb2Q2yc6W7s-thm45CT6Mf197v5Y04?te=3DW3R5hFj4cm2zwW3_SMKM3T1k87W1=
+JzCRv4cNDSbW1JxwY51LBcG6W3K76BG3z7YWF38yJ2&si=3D8000000022253646&pi=3D971fd=
+40c8599c3ed66efa3d974cf74ad>
+or reply to this email, if you find yourself saying any of these things.
+During the severe labor shortage of 2021 & 2022, Eastridge has dramatically
+increased our weekly candidate engagement by over 300%. We have invested
+more resources than ever in our people, processes, and technology to drive
+candidate engagement and fill our client's open positions faster. I have
+numerous candidates available now in Las Vegas that are ready to be
+deployed at your organization.
+
+Thanks,
+Milena=E2=80=8B
+
+
+
+On Mon, Aug 15, 2022 at 5:33 PM, Milena Abarca <mabarca@eastridge.com>
+wrote:
+
+Hi Gloria=E2=80=8B,
+
+Following up on my previous note, below are additional candidates we are
+representing. These candidates are in significant demand, they tend to get
+scooped quickly and have multiple offers at once! Can you use their skill
+set on your team now or in the future?
+
+Please reach out if you are interested in learning more about the below
+talent. Here is a link to my calendar to book a meeting, I would love to
+discuss your needs in more detail!
+<https://t.sidekickopen08.com/s3t/c/5/f18dQhb0S7kF8c7ZN1VxN7L359hl3kW7_k284=
+1CX6NGW36PYBb2Q2yc6W7s-thm45CT6Mf197v5Y04?te=3DW3R5hFj4cm2zwW3_SMKM3T1k87W1=
+JzCRv4cNDSbW1JxwY51LBcG6W3K76BG3z7YWF38yJ2&si=3D8000000022253646&pi=3D971fd=
+40c8599c3ed66efa3d974cf74ad>
+
+*Customer Service #1:*
+
+   - 4+ months as a Customer Service Representative
+   - Experience includes working remotely, anticipating customer needs,
+   inbound customer service calls, setting up auto-ship, placing orders,
+   providing tracking, resolving customer concerns, utilizing Slack for
+   internal communication, and more.
+   - Philosophy is to handle all needs within the first interaction and
+   make each customer feel that they're in the best place they can be
+   - Skills include being customer service oriented, time management,
+   accountability, communication, and a team player
+
+*Customer Service #2:*
+
+   - Customer Engagement Coordinator - focused on making customers feel
+   special during difficult times and creating a memorable experience
+   - Internal Card Writer - focused on writing cards to ensure all
+   customers have a unique and personalized experience
+   - Understands a high level of service and experience while in previous
+   role
+   - Has experience with Slack, Amazon Workspaces, Oracle, Microsoft Office
+   and more
+   - Skills include typing 70 WPM, customer experience, attention to
+   detail, and reliability
+
+
+*Customer Service #3:*
+
+   - 10 years of customer service experience in various roles
+   - Experience includes inbound calls/outbound, supervisor calls,
+   resolving customer issues, taking payments, reminding customers about
+   overdue bills, sales, tracking, placing orders, lost package, taking
+   payments, and other tasks
+   - Candidate is tech-savvy and has used Oracle and Slack - learns
+   softwares quickly
+   - Skills include being a self-starter, time management, detail-oriented,
+   customer service, and being resourceful
+
+
+Thanks,
+Milena=E2=80=8B
+
+
+
+On Wed, Aug 10, 2022 at 9:04 AM, Milena Abarca <mabarca@eastridge.com>
+wrote:
+
+Hi Gloria=E2=80=8B,
+
+I wanted to bring to your attention the top talent your company may be
+looking for. Below are Customer Service professionals who are actively
+looking for their next opportunity, do you have any needs within your teams
+for their skill set? These candidates are fully vetted and screened with
+active interviews set up in the following weeks. If you are interested
+please let me know immediately!
+
+Please reach out if you are interested in learning more about the below
+talent. Here is the link to my calendar to schedule a time that works best
+for you!
+<https://t.sidekickopen08.com/s3t/c/5/f18dQhb0S7kF8c7ZN1VxN7L359hl3kW7_k284=
+1CX6NGW36PYBb2Q2yc6W7s-thm45CT6Mf197v5Y04?te=3DW3R5hFj4cm2zwW3_SMKM3T1k87W1=
+JzCRv4cNDSbW1JxwY51LBcG6W3K76BG3z7YWF38yJ2&si=3D8000000022253646&pi=3D971fd=
+40c8599c3ed66efa3d974cf74ad>
+
+*Customer Service #1:*
+
+   - Has experience with ZenDesk and LiveChat through his current role and
+   others as well as experience working remotely
+   - Currently handles a 100 member book of business for gyms, spas, and
+   similar businesses
+   - Constantly hit retention KPIs to current members along
+   - Philosophy - all about creating a positive lasting experience for the
+   customer
+   - Skills include being tech-savvy, learning quickly, customer service,
+   and communication
+
+
+*Customer Service #2:*
+
+   - 1+ years technical support experience working remotely
+   - 1-year sales support experience
+   - 8 months Fulfillment Associate experience with Amazon
+   - 3 years experience as a Distribution Associate
+   - 2 years experience as a Client Relationship Manager where she honed in
+   on building relationships and retention
+   - 6 months customer service with animal related company - experience
+   includes sales, helping search for items, taking payments, making produc=
+t
+   recommendations, placing orders, dealing with pharmacy and suspected fra=
+ud,
+   working through various customer needs and problems, and more.
+   - Skills include being resilient, communication, embracing change,
+   reliable and creative problem solving
+
+
+*Customer Service #3:*
+
+   - 6+ months experience in a Customer Service role.
+   - Experience includes technical support in terms of working through
+   account issues and then any website issues before submitting a ticket to
+   IT, team collaboration meetings focused on problem-solving, handling
+   inbound calls, placing orders, working with tracking, assisting with
+   account management, setting up auto-ship, and more.
+   - Philosophy and goal is always to wow every customer and provides the
+   best service possible, along with first contact resolution
+   - Interested in broadening her experience and knowledge and providing
+   excellent service
+   - Proficient with Slack - utilize it for internal communication, asking
+   for help, problem-solving and more
+   - Skills include communication, being a fast learner, time management,
+   and multitasking
+
+
+Thanks,
+Milena=E2=80=8B
+
+--00000000000099a5ea05e6866d6d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div class=3D"hs_reply_wrap">
+ <div>
+  <span style=3D"font-family:sans-serif"><span style=3D"font-size:14.6667px=
+;line-height:17.60004px">Hi Gloria=E2=80=8B,</span></span>
+ </div>
+ <br>
+ <div>
+  <span style=3D"font-family:sans-serif"><span style=3D"font-size:14.6667px=
+;line-height:17.60004px">Staffing and recruiting uncertainty are among the =
+top pandemic challenges for organizations across North America. In a recent=
+ survey of organizations across North America, the top 3 responses when ask=
+ing about recruiting and staffing: </span></span>
+ </div>
+ <ul>
+  <li><span style=3D"font-family:sans-serif"><span style=3D"font-size:14.66=
+67px;line-height:17.60004px">We can=E2=80=99t find enough workers to staff =
+our business.</span></span></li>
+  <li><span style=3D"font-family:sans-serif"><span style=3D"font-size:14.66=
+67px;line-height:17.60004px">No one wants to work anymore.</span></span></l=
+i>
+  <li><span style=3D"font-family:sans-serif"><span style=3D"font-size:14.66=
+67px;line-height:17.60004px">I can=E2=80=99t get anyone to show up. </span>=
+</span></li>
+  <li><span style=3D"font-family:sans-serif"><span style=3D"font-size:14.66=
+67px;line-height:17.60004px">Top talent is exiting out the door faster than=
+ we can replace them. </span></span></li>
+ </ul>
+ <div>
+  <span style=3D"font-family:sans-serif"><span style=3D"font-size:14.6667px=
+;line-height:17.60004px"><a href=3D"https://t.sidekickopen08.com/s3t/c/5/f1=
+8dQhb0S7kF8c7ZN1VxN7L359hl3kW7_k2841CX6NGW36PYBb2Q2yc6W7s-thm45CT6Mf197v5Y0=
+4?te=3DW3R5hFj4cm2zwW3_SMKM3T1k87W1JzCRv4cNDSbW1JxwY51LBcG6W3K76BG3z7YWF38y=
+J2&amp;si=3D8000000022253646&amp;pi=3D971fd40c8599c3ed66efa3d974cf74ad">Boo=
+k a meeting with me</a> or reply to this email, if you find yourself saying=
+ any of these things. During the severe labor shortage of 2021 &amp; 2022, =
+Eastridge has dramatically increased our weekly candidate engagement by ove=
+r 300%. We have invested more resources than ever in our people, processes,=
+ and technology to drive candidate engagement and fill our client&#39;s ope=
+n positions faster. I have numerous candidates available now in Las Vegas t=
+hat are ready to be deployed at your organization. </span></span>
+ </div>
+ <br>
+ <div>
+  <span style=3D"font-family:sans-serif"><span style=3D"font-size:14.6667px=
+;line-height:17.60004px">Thanks, </span></span>
+ </div>
+ <div>
+  <span style=3D"font-size:14.6667px;line-height:17.60004px"><span style=3D=
+"font-family:sans-serif">Milena</span>=E2=80=8B</span>
+ </div>
+ <br>
+ <div></div>
+ <br>
+ <div class=3D"hs_reply">
+  <br>
+  <div>
+   On Mon, Aug 15, 2022 at 5:33 PM, Milena Abarca=20
+   <span dir=3D"ltr">&lt;<a href=3D"mailto:mabarca@eastridge.com" target=3D=
+"_blank">mabarca@eastridge.com</a>&gt;</span> wrote:
+   <br>
+   <blockquote class=3D"hs_reply_quote" style=3D"margin:0 0 0 .8ex;border-l=
+eft:1px #ccc solid;padding-left:1ex">
+    <div class=3D"hs_reply_wrap">=20
+     <div>
+       Hi Gloria=E2=80=8B,=20
+     </div>=20
+     <br>=20
+     <div>
+       Following up on my previous note, below are additional candidates we=
+ are representing. These candidates are in significant demand, they tend to=
+ get scooped quickly and have multiple offers at once! Can you use their sk=
+ill set on your team now or in the future?=20
+     </div>=20
+     <br>=20
+     <div>
+       Please reach out if you are interested in learning more about the be=
+low talent.=20
+      <a href=3D"https://t.sidekickopen08.com/s3t/c/5/f18dQhb0S7kF8c7ZN1VxN=
+7L359hl3kW7_k2841CX6NGW36PYBb2Q2yc6W7s-thm45CT6Mf197v5Y04?te=3DW3R5hFj4cm2z=
+wW3_SMKM3T1k87W1JzCRv4cNDSbW1JxwY51LBcG6W3K76BG3z7YWF38yJ2&amp;si=3D8000000=
+022253646&amp;pi=3D971fd40c8599c3ed66efa3d974cf74ad">Here is a link to my c=
+alendar to book a meeting, I would love to discuss your needs in more detai=
+l!</a>=20
+     </div>=20
+     <br>=20
+     <div>=20
+      <u><strong>Customer Service #1:</strong></u>=20
+     </div>=20
+     <ul>=20
+      <li><span style=3D"background-color:#ffffff"><span style=3D"color:#22=
+2222">4+ months as a Customer Service Representative</span></span></li>=20
+      <li><span style=3D"background-color:#ffffff"><span style=3D"color:#22=
+2222">Experience includes working remotely, anticipating customer needs, in=
+bound customer service calls, setting up auto-ship, placing orders, providi=
+ng tracking, resolving customer concerns, utilizing Slack for internal comm=
+unication, and more.</span></span></li>=20
+      <li><span style=3D"background-color:#ffffff"><span style=3D"color:#22=
+2222">Philosophy is to handle all needs within the first interaction and ma=
+ke each customer feel that they&#39;re in the best place they can be</span>=
+</span></li>=20
+      <li><span style=3D"background-color:#ffffff"><span style=3D"color:#22=
+2222">Skills include being customer service oriented, time management, acco=
+untability, communication, and a team player</span></span></li>=20
+     </ul>=20
+     <div style=3D"text-align:start">=20
+      <span style=3D"background-color:#ffffff"><span style=3D"color:#222222=
+"><u><strong>Customer Service #2:</strong></u></span></span>=20
+     </div>=20
+     <ul>=20
+      <li><span style=3D"background-color:#ffffff"><span style=3D"color:#22=
+2222">Customer Engagement Coordinator - focused on making customers feel sp=
+ecial during difficult times and creating a memorable experience</span></sp=
+an></li>=20
+      <li><span style=3D"background-color:#ffffff"><span style=3D"color:#22=
+2222">Internal Card Writer - focused on writing cards to ensure all custome=
+rs have a unique and personalized experience</span></span></li>=20
+      <li><span style=3D"background-color:#ffffff"><span style=3D"color:#22=
+2222">Understands a high level of service and experience while in previous =
+role</span></span></li>=20
+      <li><span style=3D"background-color:#ffffff"><span style=3D"color:#22=
+2222">Has experience with Slack, Amazon Workspaces, Oracle, Microsoft Offic=
+e and more</span></span></li>=20
+      <li><span style=3D"background-color:#ffffff"><span style=3D"color:#22=
+2222">Skills include typing 70 WPM, customer experience, attention to detai=
+l, and reliability</span></span></li>=20
+     </ul>=20
+     <br>=20
+     <div>=20
+      <span style=3D"background-color:#ffffff"><span style=3D"color:#222222=
+"><u><strong>Customer Service #3:</strong></u></span></span>=20
+     </div>=20
+     <ul>=20
+      <li><span style=3D"background-color:#ffffff"><span style=3D"color:#22=
+2222">10 years of customer service experience in various roles</span></span=
+></li>=20
+      <li><span style=3D"background-color:#ffffff"><span style=3D"color:#22=
+2222">Experience includes inbound calls/outbound, supervisor calls, resolvi=
+ng customer issues, taking payments, reminding customers about overdue bill=
+s, sales, tracking, placing orders, lost package, taking payments, and othe=
+r tasks</span></span></li>=20
+      <li><span style=3D"background-color:#ffffff"><span style=3D"color:#22=
+2222">Candidate is tech-savvy and has used Oracle and Slack - learns softwa=
+res quickly</span></span></li>=20
+      <li><span style=3D"background-color:#ffffff"><span style=3D"color:#22=
+2222">Skills include being a self-starter, time management, detail-oriented=
+, customer service, and being resourceful</span></span></li>=20
+     </ul>=20
+     <br>=20
+     <div>=20
+      <span style=3D"background-color:#ffffff"><span style=3D"color:#222222=
+">Thanks,</span></span>=20
+     </div>=20
+     <div>=20
+      <span style=3D"background-color:#ffffff"><span style=3D"color:#222222=
+">Milena</span></span>=E2=80=8B=20
+     </div>=20
+     <br>=20
+     <div></div>=20
+     <br>=20
+     <div class=3D"hs_reply">=20
+      <br>=20
+      <div>
+        On Wed, Aug 10, 2022 at 9:04 AM, Milena Abarca=20
+       <span dir=3D"ltr">&lt;<a href=3D"mailto:mabarca@eastridge.com" targe=
+t=3D"_blank">mabarca@eastridge.com</a>&gt;</span> wrote:=20
+       <br>=20
+       <blockquote class=3D"hs_reply_quote" style=3D"margin:0 0 0 .8ex;bord=
+er-left:1px #ccc solid;padding-left:1ex">=20
+        <div>
+          Hi Gloria=E2=80=8B,=20
+        </div>=20
+        <br>=20
+        <div>
+          I wanted to bring to your attention the top talent your company m=
+ay be looking for. Below are Customer Service professionals who are activel=
+y looking for their next opportunity, do you have any needs within your tea=
+ms for their skill set? These candidates are fully vetted and screened with=
+ active interviews set up in the following weeks. If you are interested ple=
+ase let me know immediately!=20
+        </div>=20
+        <br>=20
+        <div>
+          Please reach out if you are interested in learning more about the=
+ below talent.=20
+         <a href=3D"https://t.sidekickopen08.com/s3t/c/5/f18dQhb0S7kF8c7ZN1=
+VxN7L359hl3kW7_k2841CX6NGW36PYBb2Q2yc6W7s-thm45CT6Mf197v5Y04?te=3DW3R5hFj4c=
+m2zwW3_SMKM3T1k87W1JzCRv4cNDSbW1JxwY51LBcG6W3K76BG3z7YWF38yJ2&amp;si=3D8000=
+000022253646&amp;pi=3D971fd40c8599c3ed66efa3d974cf74ad">Here is the link to=
+ my calendar to schedule a time that works best for you!</a>=20
+        </div>=20
+        <br>=20
+        <div>=20
+         <u><strong>Customer Service #1:</strong></u>=20
+        </div>=20
+        <ul>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">Has experience with ZenDesk and LiveChat through his current role =
+and others as well as experience working remotely</span></span></li>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">Currently handles a 100 member book of business for gyms, spas, an=
+d similar businesses</span></span></li>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">Constantly hit retention KPIs to current members along </span></sp=
+an></li>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">Philosophy - all about creating a positive lasting experience for =
+the customer</span></span></li>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">Skills include being tech-savvy, learning quickly, customer servic=
+e, and communication</span></span></li>=20
+        </ul>=20
+        <br>=20
+        <div>=20
+         <span style=3D"background-color:#ffffff"><span style=3D"color:#222=
+222"><u><strong>Customer Service #2:</strong></u></span></span>=20
+        </div>=20
+        <ul>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">1+ years technical support experience working remotely</span></spa=
+n></li>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">1-year sales support experience</span></span></li>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">8 months Fulfillment Associate experience with Amazon</span></span=
+></li>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">3 years experience as a Distribution Associate</span></span></li>=
+=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">2 years experience as a Client Relationship Manager where she hone=
+d in on building relationships and retention</span></span></li>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">6 months customer service with animal related company - experience=
+ includes sales, helping search for items, taking payments, making product =
+recommendations, placing orders, dealing with pharmacy and suspected fraud,=
+ working through various customer needs and problems, and more.</span></spa=
+n></li>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">Skills include being resilient, communication, embracing change, r=
+eliable and creative problem solving</span></span></li>=20
+        </ul>=20
+        <br>=20
+        <div>=20
+         <span style=3D"background-color:#ffffff"><span style=3D"color:#222=
+222"><strong><u>Customer Service #3:</u></strong></span></span>=20
+        </div>=20
+        <ul>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">6+ months experience in a Customer Service role.</span></span></li=
+>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">Experience includes technical support in terms of working through =
+account issues and then any website issues before submitting a ticket to IT=
+, team collaboration meetings focused on problem-solving, handling inbound =
+calls, placing orders, working with tracking, assisting with account manage=
+ment, setting up auto-ship, and more.</span></span></li>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">Philosophy and goal is always to wow every customer and provides t=
+he best service possible, along with first contact resolution</span></span>=
+</li>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">Interested in broadening her experience and knowledge and providin=
+g excellent service</span></span></li>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">Proficient with Slack - utilize it for internal communication, ask=
+ing for help, problem-solving and more</span></span></li>=20
+         <li><span style=3D"background-color:#ffffff"><span style=3D"color:=
+#222222">Skills include communication, being a fast learner, time managemen=
+t, and multitasking</span></span></li>=20
+        </ul>=20
+        <br>=20
+        <div>=20
+         <span style=3D"background-color:#ffffff"><span style=3D"color:#222=
+222">Thanks,</span></span>=20
+        </div>=20
+        <div>=20
+         <span style=3D"background-color:#ffffff"><span style=3D"color:#222=
+222">Milena</span></span>=E2=80=8B=20
+        </div>=20
+        <br>=20
+        <div></div>=20
+        <br>=20
+       </blockquote>=20
+      </div>=20
+     </div>=20
+    </div>
+   </blockquote>
+  </div>
+ </div>
+</div><img width=3D"1" height=3D"1" style=3D"display:none" alt=3D"" src=3D"=
+https://t.sidekickopen08.com/s3t/o/5/f18dQhb0S7n28c7ZN1VxN7L359hl0VW7_jsyP5=
+JR-jdW22J7zH57jVF_N7w3-c2VmBvwf1SlRV602?si=3D8000000022253646&amp;pi=3D971f=
+d40c8599c3ed66efa3d974cf74ad"></body></html>
+
+--00000000000099a5ea05e6866d6d--

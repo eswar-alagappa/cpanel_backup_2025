@@ -1,0 +1,164 @@
+Return-Path: <>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id IKQ4FzGFC2PYMw4A7/vpDg
+	(envelope-from <>)
+	for <rvairavan@caldonbiotech.com>; Sun, 28 Aug 2022 10:09:37 -0500
+Return-path: <>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Sun, 28 Aug 2022 10:09:37 -0500
+Received: from mx0a-000c9301.pphosted.com ([67.231.144.225]:38266)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	id 1oSJuq-000qCb-Pg
+	for rvairavan@caldonbiotech.com;
+	Sun, 28 Aug 2022 10:09:37 -0500
+Received: from pps.filterd (m0166658.ppops.net [127.0.0.1])
+	by mx0a-000c9301.pphosted.com (8.17.1.5/8.17.1.5) with ESMTP id 27SDRAcR006243
+	for <rvairavan@caldonbiotech.com>; Sun, 28 Aug 2022 10:09:25 -0500
+Received: from nam12-dm6-obe.outbound.protection.outlook.com (mail-dm6nam12lp2171.outbound.protection.outlook.com [104.47.59.171])
+	by mx0a-000c9301.pphosted.com (PPS) with ESMTPS id 3j7ecf0t01-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <rvairavan@caldonbiotech.com>; Sun, 28 Aug 2022 10:09:25 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=WYlQ1NLI6C/EygRYblTH9/yCtjO7LCzD0gf3CGtuZftvNhGb1GqLs71Ofk53ANSk4Dvo0xYDThxvOwP14CYeRrnC997tAheSr4f+BcfnolfMh9YXGWy888PC3hqa/5Wc2d2wfAijNG1vAzPJ5WqJCydDC+Z1VUZuerpOvrahARSKTFcUodxUZiAOXE7J8U9N5bu7PfswqzkM3ANrdKZjpomAqaI5TNM0z2cUtxG2Cf5zFQSCYw7k3dPpKHFUnDsb6Mt/K//LhFoGiX4MJeeTznxl652FbdQzRQVGGe5UWB1fiF4aHhYDQ4yl+dKQ9JkcZBOiVxx2BLn0wtEvbwS5Eg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=EC8f1IoRB4OJqfwk0Tkww4MGKKTe3e+ooRjS4tG+90E=;
+ b=Xshx4Z7pMmynhBPMW0FP9JoUVIwWw7Wg7T6wjghdgSN/7ZHZy+EhCI6+5M0x5ZlhR4obyCcwAGO+wQyslKsvuVIwaOFGyM47cWRBYgwSrwxrSRSwdgK4rX03ErrMySYOvdRwlWLRyotoCoKVO5bys24M45JX2gSE0gyr1EVaY79Wm4zVrBx3312csbzxgf0thtzazQLP5XqI87rpM06ZU5ayoLCMywyK7xGCSSG2j/2bo4QgJXbKwqGuNwpE39QW01/8OTk93gqujJAfAfcVo/ylWEa1xO5WnXnYGophdah2Ek67PYO2W149dVaWpOgpnUVX/QjUOIEnUFRFY0co1g==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=pass
+ action=none header.from=cap.org; dkim=pass header.d=cap.org; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=thecap.onmicrosoft.com; s=selector2-thecap-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=EC8f1IoRB4OJqfwk0Tkww4MGKKTe3e+ooRjS4tG+90E=;
+ b=evggN3i0+p243a10ILFz3hMbfs9NykJuH32ijb19+Wv9O5wHeo6RnG4FFfjHL11EzEveHUgO6JoP8IYFKG8cHYt5N1e7Oh1nnvMKQ4wtQPLYBPIaGIX5YKacyP7XhJDZPITtMkpadSIg8ZWb/PvTXGRQzYQLqExcWwMe93s/mxQ=
+Received: from SN6PR11MB2782.namprd11.prod.outlook.com (2603:10b6:805:63::11)
+ by DS0PR11MB6424.namprd11.prod.outlook.com (2603:10b6:8:c4::8) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.5566.21; Sun, 28 Aug 2022 15:09:23 +0000
+Received: from SN6PR11MB2782.namprd11.prod.outlook.com ([::1]) by
+ SN6PR11MB2782.namprd11.prod.outlook.com ([fe80::25b5:7a98:cd91:97a3%7]) with
+ Microsoft SMTP Server id 15.20.5566.021; Sun, 28 Aug 2022 15:09:23 +0000
+From: "AnnMarie Di Prima (s)" <ADIPRIM@cap.org>
+To: "rvairavan@caldonbiotech.com" <rvairavan@caldonbiotech.com>
+Subject: Automatic reply: ADL-B 2022 CAP Headquarters - Standard Purchase
+ Order 97999, 0
+Thread-Topic: ADL-B 2022 CAP Headquarters - Standard Purchase Order 97999, 0
+Thread-Index: AdiMirdn82IPWG+KS2mfExGr4dnLhAuZWnUAAAABxAw=
+Date: Sun, 28 Aug 2022 15:09:23 +0000
+Message-ID: 
+ <6495943fb07e4f36a8e785f653eb3a59@SN6PR11MB2782.namprd11.prod.outlook.com>
+References: 
+ <SN6PR11MB2782D887B3B7A9E00D13D975B6BA9@SN6PR11MB2782.namprd11.prod.outlook.com>
+ <000901d8baf0$22ad9bf0$6808d3d0$@caldonbiotech.com>
+In-Reply-To: <000901d8baf0$22ad9bf0$6808d3d0$@caldonbiotech.com>
+X-MS-Has-Attach: 
+X-Auto-Response-Suppress: All
+X-MS-Exchange-Inbox-Rules-Loop: adiprim@cap.org
+X-MS-TNEF-Correlator: 
+x-ms-exchange-parent-message-id: 
+ <000901d8baf0$22ad9bf0$6808d3d0$@caldonbiotech.com>
+auto-submitted: auto-generated
+x-ms-exchange-generated-message-source: Mailbox Rules Agent
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: a6980f3a-6633-4c24-8faa-08da89074ac8
+x-ms-traffictypediagnostic: DS0PR11MB6424:EE_
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: 
+ 7RpxXy/hYbuwQa5iMfgcCFVvDsFCiQdiaUVovGFLrV+yPUvci7MCp4Te5wpV+kLlW/0jq4vD0jnyIjbBrilFAbOKdOEiSpvnoyvQ6BJ9vVSGLSDttFyALvLsxuTS89IYDScy2jR+GnBajHVoS4YUKxRn+IY9Z2NoCKGeNZyKNCe5BOMSrDgITKpVUELH3lKW5qAu2eYH6xFnjWFi2bI4aKysna+ItytxynyQl5oxvIdRF1PTD6E+UnEALZZR37i1Rfjm5++/BIwAHc60X0/YrX/SJExjfAI7XcRl8+vON/dtg//mfTxwlth8z6Ix+/7wb0ElhQI0PPMMaHm6qkFuE5JQ6ZhQaooTgktNcdzKlWklJ4pKVomZdqaRE1zwAINlPDhxv56tNMwnB9e8MlEXNLy8D7TgnERFZd0YR5xDLrVGIO08M5qZp/f5Am/jrL7bR7AjChT3FE+JITLV4yk7sPiUKZLSIKI0sqqq/yEkNiqO7duwb+HVgQ4AOu0uePQ2tUQp0cJkqyWTEemvg5ZlDlppjjW1Y0MtI6v1gCiIvE+C+tVPn2rSy+mE28gOUoE+Lft1Ndgp0KXVsYrInjkYcPiKY6EG0FZCBUaDbKVDzJXQHszDKrqdPiMv/KnT4YporSnWhhsoHW4E3PaTr809/QEj+Y/BeYkJLbHHb6svEeFml5U7VhDE42eNK0z7q3HP
+x-forefront-antispam-report: 
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SN6PR11MB2782.namprd11.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230016)(50650200002)(376002)(136003)(366004)(396003)(39840400004)(346002)(88996005)(786003)(316002)(8676002)(66946007)(66556008)(66476007)(66446008)(64756008)(71200400001)(6916009)(78352004)(5660300002)(8936002)(498600001)(41300700001)(24736004)(7696005)(122000001)(108616005)(6506007)(9686003)(2906002)(558084003)(42882007)(55016003)(111220200005)(80100003);DIR:OUT;SFP:1501;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: 
+ 9zn31OiNh2649ZH9Q6scjrJbFbs63L/jn298T+gpWUxE0Ja+SIrvEj6PnEewbDKpJGhZklngk1MWwiwtQnPZUnJ5SU6V9VcetbCkbED310zpYMLsyHMorzPVrbFQmcImxiIrPHLYCP9ZjZ9LFQ3hJ80JBhgCj17LXv8mR2sA9JlVx6RUBdwJegHzDhHrjBoYTpd0Ni3JtFUop4BV5W5pMX/aomSgxarJJbBiUXZAdGAZv7ii0gFLH5ORqGKD5oF0l/x4a6p/OkOOVvUfx6+vcX/7adRO28hvOccBTig4DwbbazvEuSWaQ/0Vye6SvwUP
+Content-Type: multipart/alternative;
+	boundary="_000_6495943fb07e4f36a8e785f653eb3a59SN6PR11MB2782namprd11pr_"
+MIME-Version: 1.0
+X-OriginatorOrg: cap.org
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SN6PR11MB2782.namprd11.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: a6980f3a-6633-4c24-8faa-08da89074ac8
+X-MS-Exchange-CrossTenant-originalarrivaltime: 28 Aug 2022 15:09:23.8468
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 4503f2e1-c310-4ce0-95cc-fe3d26359fc4
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS0PR11MB6424
+X-Proofpoint-GUID: PLUM-tz8Ht9XPBwQ_KT38r101SgGO5VF
+X-Proofpoint-ORIG-GUID: PLUM-tz8Ht9XPBwQ_KT38r101SgGO5VF
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.205,Aquarius:18.0.895,Hydra:6.0.517,FMLib:17.11.122.1
+ definitions=2022-08-28_10,2022-08-25_01,2022-06-22_01
+X-Proofpoint-Spam-Details: rule=outbound_notspam policy=outbound score=0 adjustscore=0 mlxlogscore=720
+ bulkscore=0 spamscore=0 lowpriorityscore=0 phishscore=0 adultscore=0
+ priorityscore=1501 impostorscore=0 ndrscore=0 clxscore=1031 suspectscore=0
+ mlxscore=0 malwarescore=0 classifier=spam adjust=0 reason=mlx scancount=1
+ engine=8.12.0-2207270000 definitions=main-2208280066
+X-Spam-Status: No, score=0.2
+X-Spam-Score: 2
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--_000_6495943fb07e4f36a8e785f653eb3a59SN6PR11MB2782namprd11pr_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello, I am out of the office, returning Tuesday, August 30th, 2022.  If yo=
+u need immediate assistance, please contact purchasing@cap.org.
+
+--_000_6495943fb07e4f36a8e785f653eb3a59SN6PR11MB2782namprd11pr_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office" xmlns:w=3D"urn:sc=
+hemas-microsoft-com:office:word" xmlns:m=3D"http://schemas.microsoft.com/of=
+fice/2004/12/omml" xmlns=3D"http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Tahoma",sans-serif;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style>
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple" style=3D"word-wrap:brea=
+k-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal" style=3D"text-autospace:none"><span style=3D"font-si=
+ze:8.5pt;font-family:&quot;Tahoma&quot;,sans-serif">Hello, I am out of the =
+office, returning Tuesday, August 30th, 2022.&nbsp; If you need immediate a=
+ssistance, please contact purchasing@cap.org.<o:p></o:p></span></p>
+</div>
+</body>
+</html>
+
+--_000_6495943fb07e4f36a8e785f653eb3a59SN6PR11MB2782namprd11pr_--

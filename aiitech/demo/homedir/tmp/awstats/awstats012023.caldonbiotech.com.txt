@@ -1,0 +1,1948 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202301 will be lost/reset.
+# Last config file used to build this data file was /home3/cbt/tmp/awstats/awstats.caldonbiotech.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2010                
+POS_TIME 2693                
+POS_VISITOR 56932               
+POS_DAY 66631               
+POS_DOMAIN 3543                
+POS_LOGIN 4441                
+POS_ROBOT 4596                
+POS_WORMS 5167                
+POS_EMAILSENDER 5298                
+POS_EMAILRECEIVER 5441                
+POS_SESSION 67411               
+POS_SIDER 67621               
+POS_FILETYPES 5576                
+POS_DOWNLOADS 5800                
+POS_OS 6060                
+POS_BROWSER 6323                
+POS_SCREENSIZE 6973                
+POS_UNKNOWNREFERER 7047                
+POS_UNKNOWNREFERERBROWSER 7402                
+POS_ORIGIN 7649                
+POS_SEREFERRALS 7788                
+POS_PAGEREFS 7952                
+POS_SEARCHWORDS 8100                
+POS_KEYWORDS 8252                
+POS_MISC 2356                
+POS_ERRORS 8311                
+POS_CLUSTER 4297                
+POS_SIDER_404 8522                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20230201002312 463 80063 12389517136033
+FirstTime 20230101014204
+LastTime 20230131235811
+LastUpdate 20230201062412 463 0 462 0 0
+TotalVisits 564                 
+TotalUnique 243                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 260                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+QuickTimeSupport 0 0 0
+TotalMisc 0 0 0
+PDFSupport 0 0 0
+JavaEnabled 0 0 0
+AddToFavourites 0 26 0
+FlashSupport 0 0 0
+DirectorSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 28 29 2732 138 142 880695
+1 24 24 1060 248 263 2266027
+2 18 18 0 132 150 1060192
+3 19 19 22930 255 331 4358530
+4 34 34 22935 135 159 953003
+5 23 23 4118 164 181 1328971
+6 18 18 0 134 142 1129431
+7 17 17 116502 225 237 1602864
+8 24 24 0 141 163 1165965
+9 107 107 175507 1319 1381 8631139
+10 30 30 23185 270 296 2608631
+11 33 33 192173 216 243 1634843
+12 30 30 0 144 646 2317347
+13 18 19 118694 93 104 532677
+14 37 37 71578 265 316 2795206
+15 28 29 85381 343 398 2158388
+16 25 25 48033 179 209 1447876
+17 26 26 68786 432 464 4559016
+18 49 49 6514 550 570 4473162
+19 41 46 322516 506 556 11737587
+20 27 29 16367 171 212 955665
+21 25 27 91130 242 274 1917119
+22 115 140 3322298 396 490 4111533
+23 65 65 125328 396 405 564424
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 57
+us 606 630 2833864
+cn 38 41 706979
+in 29 29 99249
+ca 19 19 22953
+ua 14 15 49408
+sc 13 14 307428
+tr 12 12 2472
+ru 9 9 32526
+ro 9 12 315926
+vn 9 9 1854
+gb 7 7 115775
+dz 7 7 1442
+pk 7 7 1442
+br 7 7 29726
+eg 5 6 59396
+id 4 4 824
+th 4 4 824
+ao 3 3 32636
+ae 3 3 618
+kr 3 3 79264
+ve 3 3 618
+gr 3 5 16367
+my 3 3 618
+ph 2 2 412
+zz 2 2 174
+me 1 1 206
+sa 1 1 206
+cr 1 1 206
+de 0 1 58366
+qa 1 1 206
+ma 2 2 412
+za 2 2 412
+kw 1 1 206
+au 1 1 206
+et 1 1 206
+np 1 1 206
+cl 1 1 206
+pl 2 2 412
+tw 1 1 206
+nl 1 1 206
+ge 1 1 206
+si 1 1 206
+bd 1 1 206
+al 1 1 206
+co 2 2 412
+ly 1 1 206
+mx 2 2 412
+lk 2 2 412
+hn 1 2 58572
+mg 1 1 206
+rs 2 2 412
+ar 2 2 412
+ba 1 1 206
+jp 2 2 412
+hu 1 1 206
+nz 1 1 206
+so 1 1 206
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 12
+Googlebot/ 236 40488 20230131221401 234
+no_user_agent 58 1968814 20230131181503 0
+bingbot/ 57 2622 20230131093927 57
+unknown 43 1898 20230131102530 43
+bot[\s_+:,\.\;\/\\-] 38 1318 20230130215307 38
+Applebot/ 24 1104 20230131194654 24
+spider 10 429271 20230131221956 0
+Go\-http\-client/ 8 5502 20230131170440 0
+Mail\.RU_Bot/ 6 156 20230127142654 6
+robot 4 184 20230131065205 4
+crawl 2 92 20230123011816 2
+MixrankBot 2 632 20230110170423 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 9
+html 120 1916118 0 0
+js 8 292046 0 0
+pdf 1 90107 0 0
+Unknown 30 3468 0 0
+css 10 1301700 0 0
+jpg 9 525294 0 0
+png 3 280554 0 0
+txt 6 8136 0 0
+php 711 420344 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 4
+/wp-includes/ID3/license.txt 6 0 8136
+//wp-content/plugins/js_composer/changes.txt 4 0 208912
+/wp-content/plugins/js_composer/changes.txt 4 0 208912
+/wp-content/uploads/2020/03/SDS-Aldolase-Control.pdf 1 0 90107
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 15
+linux 3 3
+android 1 1
+Unknown 531 531
+win8.1 2 2
+androidnougat 2 2
+macosx10 1 1
+macosx8 1 0
+win10 68 59
+winnt 1 0
+androidkitkat 9 9
+winvista 1 1
+win7 248 223
+winxp 1 0
+macosx15 10 10
+winlong 19 19
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 29
+firefox77.0 10 10
+chrome81.0.4044.129 2 2
+Unknown 525 525
+edge12 3 3
+chrome37.0.2049.0 1 0
+chrome54.0.2866.71 1 0
+chrome43.0.2357.134 1 1
+chrome35.0.2117.157 1 0
+android 9 9
+msie9.0 16 1
+chrome108.0.0.0 37 37
+chrome104.0.5112.97 1 1
+chrome48.0.2564.116 3 0
+chrome79.2.4 1 1
+chrome65.0.3152.119 19 19
+chrome90.0.4430.85 2 2
+chrome39.0.2171.95 1 1
+chrome90.0.4430.93 2 2
+chrome74.0.3729.169 3 3
+chrome83.0.4103.97 78 68
+chrome79.0.3945.88 1 1
+firefox73.0 1 1
+chrome60.0.3112.107 2 2
+chrome80.0.3987.149 2 2
+mozilla 6 6
+chrome95.0.4638.69 15 9
+firefox52.0 1 1
+firefox96 3 3
+chrome59.0.3071.109 151 151
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 5
+Mozilla/5.0_(compatible;_Let's_Encrypt_validation_server;__https://www.letsencrypt.org) 20230118223545
+Cpanel-HTTP-Client/1.0 20230118223542
+Python/3.8_aiohttp/3.8.1 20230108115640
+WordPress/5.0.18;_https://caldonbiotech.com 20230131235811
+axios/0.27.2 20230124113951
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 4
+WordPress/5.0.18;_https://caldonbiotech.com 20230131235811
+axios/0.27.2 20230124113951
+Cpanel-HTTP-Client/1.0 20230118223542
+Python/3.8_aiohttp/3.8.1 20230108115640
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 349 371
+From1 2 2
+From2 0 15
+From3 0 0
+From4 510 510
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+www_google_com 0 15
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 10
+405 13 546
+502 85 28576
+406 819 183964
+301 1415 732
+400 13 10407
+500 15 5800
+409 1992 163842
+403 101 64908
+302 37 0
+404 3327 62279435
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 1216
+/wp-content/themes/bolster/include/lang_upload.php 2 https://www.google.com/search
+/2index.php 4 -
+/backend/.env.local 2 -
+/integration/saveGangster.action 1 -
+/client/.env.staging 2 -
+/wordpress 9 -
+/.well-knownold/ 2 -
+/.well-known/pki-validation/929ABA7FE1EF7F8AA1B4EC35A1430911.txt 2 -
+/.env.test 2 -
+//radio.php 2 -
+/.well-known/pki-validation/E8464C76AF380BE4D7FCD637037743A4.txt 2 -
+/.well-known/pki-validation/9B4DF1EAC3E29DD71E454D379CA4F367.txt 2 -
+/.jupyter/jupyter_notebook_config.json 1 -
+/.well-known/pki-validation/93BD7D29E43F39723831CC8175CE6C7F.txt 2 -
+/public/la.php 2 -
+/wp-admin/shell20211028.php 6 http://simplesite.com
+/ini.php 2 -
+/php-info.php 2 -
+/.well-known/pki-validation/1BA3F8295249B47C81A75BCCE18F09AA.txt 2 -
+/api/.env.staging 2 -
+/xml.php 2 -
+/.well-known/pki-validation/EB66C4612E531FE9475AAB6154BFA247.txt 2 -
+/apis/.env.local 2 -
+/inputs1122.php 2 http://simplesite.com
+/.well-known/pki-validation/725D6FCC579F26AE527F30EEE77C2CDC.txt 2 -
+/wp-content/wsoyanzorng.php 2 www.google.com
+/wp-config.php_1 2 -
+//development/iinfo.php 1 -
+//wp-2018.php 2 -
+/assets/elfinder/elfinder.html 2 -
+/doc.php 2 -
+/dashboard/phpinfo.php 2 -
+/old/2017/ 2 -
+/plugins/web/service/search/auto-completion/domain/en.xml 2 -
+/wp-content/plugins/whatsmyrank-devenc/php-ofc-library/ofc_upload_image.php 2 -
+/.well-known/pki-validation/2122FE1EDE0A9E55A072DD8B8035F53E.txt 2 -
+/wp-content/plugins/armember/documentation/index.html 4 https://www.google.com/search
+/.env.save 2 -
+/.well-known/pki-validation/8B249C238C96CE0B698F28B81DA5F7DE.txt 2 -
+/xampp/.env.local 2 -
+/backup/.env.staging 2 -
+//wp-content/themes/seotheme/db.php 8 -
+/hehe.php 2 -
+/cong.php 4 http://simplesite.com
+/.well-known/pki-validation/52CA9050B3165AA1CFA2047033F123B7.txt 2 -
+/console/base/config.json 1 -
+/functionRouter 1 -
+/wp-content/plugins/ioptimization/IOptimize.php 11 www.google.com
+/wp-content/plugins/wp-live-chat-support-pro/css/wplc_styles_pro.css 2 https://www.google.com/search
+/new/blog/ 4 -
+/scripts/filemanager/dialog.php 2 -
+/product/.env.staging 2 -
+/wordpress/wp-json/wp/v2/users 3 -
+/temp.php 2 -
+/th1s_1s_a_4o4.html 8 http://www.google.com/url
+/.deployment-config.json 1 -
+/current/.env.local 2 -
+/.well-known/pki-validation/2BF07D8CBF2A7D08C331EA3ECC0F73FC.txt 2 -
+/xampp/phpinfo.php 1 -
+/%20-%20Copy.env 2 -
+/misc/drupal.js 3 -
+/wp-includes/about.php 2 www.google.com
+/env.js 1 -
+/env.config.js 1 -
+/service/info.php 1 -
+/.well-known/pki-validation/24A2903A5B142BB8D1267D2BFDD17362.txt 2 -
+/wp-admin/auto_seo.php 2 caldonbiotech.com
+/wp-content/themes/spikes/include/lang_upload.php 2 https://www.google.com/search
+/wp-content/auto_seo.php 4 caldonbiotech.com
+/wp-content/plugins/wpyii2/wpyii2.php 12 -
+//autoload_classmap.php 2 -
+/.well-known/pki-validation/C3420D9EEBBE0A417A368F3831F5A02D.txt 2 -
+/.well-known/pki-validation/C8F2E0B9559B9A9DA264897CD07761AA.txt 2 -
+/wp-content/themes/twentytwenty/content.php 6 http://simplesite.com
+/payout.php 2 -
+/api/info.php 1 -
+//1337.php 2 -
+/wordpress/ 14 -
+/wp-content/plugins/fastest-cache/css/fonts/ 6 http://caldonbiotech.com/wp-content/plugins/fastest-cache/css/fonts/index.php
+/upload/image/ 2 -
+/blog/xmlrpc.php 18 -
+/stg/.env.production 2 -
+/wp-config.bkp 2 -
+/portal/.env.staging 2 -
+/image/screenshot_1.php 2 -
+/server/phpinfo.php 1 -
+//reminder.php 2 -
+/phpversion.php 2 -
+//dev/phpinfo.php 1 -
+/.well-known/pki-validation/AC8EC60C22B4243937235F76E13EC7E8.txt 2 -
+/.well-known/pki-validation/9E8F7485241D4F6031D028F3647D17C9.txt 2 -
+/apis/.env.production 2 -
+//mad.php 2 -
+//02.php 2 -
+/wp-admin/css/colors/midnight/wp-crons.php 1 -
+/modules/mod_araticlws/mod_araticlws.php 2 -
+/.well-known/pki-validation/B3EC41EB3922C05EFC54C95D4A927EBC.txt 2 -
+/wp-class.php 8 http://simplesite.com
+/shell.php 5 -
+//wp-includes/assets/pi.php 2 -
+/wp-admin/images/atomlib.php 1 http://simplesite.com
+/backend/backend/auth/signin 6 -
+/.well-known/pki-validation/8400F61DE355AF738A64796B8E908BE5.txt 2 -
+//crm/info.php 1 -
+//marijuana.php 2 -
+//development/phpinfo.php 1 -
+/blog/wp-json/wp/v2/users 4 -
+/develop/.env.staging 2 -
+/wp-content/themes/listingo/readme.txt 4 https://www.google.com/search
+/new/wordpress/ 4 -
+/.well-known/pki-validation/618C86CD64B275E6666A02600BEF5E3A.txt 2 -
+/wp-content/themes/wp-pridmag/init.php 2 -
+/fw.php 4 -
+/plugins/kcfinder/upload.php 2 -
+/wp_logx.php 2 -
+/laravel/core/.env.staging 2 -
+/blog/wp-admin/css/colors/blue/blue.php 2 -
+/wso112233.php 10 http://simplesite.com
+/.well-known/pki-validation/F110A4E8ABC62DD63FB9DF84AB1F0E98.txt 2 -
+/wordpress/wp/ 2 -
+/wp-config.phpold 2 -
+/.well-known/pki-validation/F1775ECD025452AA1E6625B68E38C1B7.txt 2 -
+/backup.wp-config.php 2 -
+/mqz.php 4 -
+/wp-content/plugins/wp-user-avatar/changelog.txt 4 https://www.google.com/search
+//403.php 2 -
+/.well-known/pki-validation/A6351E52ECA4F87F945DA193E466A01A.txt 2 -
+/test/wp-admin/install.php 1 -
+/.well-known/pki-validation/A003DA5E9CFED0C62609AC3F38225C32.txt 2 -
+/.well-known/pki-validation/F6D87677E981D652EFA66DF9A3D5E79F.txt 2 -
+/.well-known/pki-validation/94AF0D34FD73E6D294F79A5ECD032C4A.txt 2 -
+/wp-admin/2x.php 1 http://simplesite.com
+/403.php 2 -
+/.well-known/pki-validation/69A06858C433DE4C04301C3B433AEFE2.txt 2 -
+/wp-commentin.php 6 -
+//doc.php 2 -
+//wp-content/plugins/ioptimization/IOptimize.php 1 -
+/patior/ 4 http://caldonbiotech.com/patior/index.php
+/old/xmlrpc.php 17 -
+/.well-known/pki-validation/98BA7B8C6CFB2C0C697A8F38167170C9.txt 2 -
+/wp/wp-admin/setup-config.php 1 -
+/var/resource_config.json 1 -
+/services/info.php 1 -
+/service/phpinfo.php 1 -
+/.well-known/pki-validation/C870AB989A31E5872BD4708A36114222.txt 2 -
+/.env.local 4 -
+/.well-known/pki-validation/CAF7615CF03B4ADF407158BA11832CD9.txt 2 -
+/phpinfo.php 3 -
+/linusadmin-phpinfo.php 2 -
+/old/wp-json/wp/v2/users 3 -
+/config.json 3 -
+/old/wp-admin/install.php 1 -
+/wp-content/plugins/pretty-link/app/views/admin/upgrade/categories.php 2 http://simplesite.com
+/old/.env.local 2 -
+/tinymce/plugins/filemanager/dialog.php 2 -
+/admin/.env.staging 2 -
+/wp/wordpress/ 2 -
+/wp-content/plugins/wp-business-intelligence-lite/resources/open-flash-chart/php-ofc-library/ofc_upload_image.php 2 -
+/production/.env.staging 2 -
+/.well-known/pki-validation/0119594A4CD600943A4C3E6010006EB1.txt 2 -
+/wp-config.php__ 2 -
+/wp-content/themes/rocky-theme/include/lang_upload.php 2 https://www.google.com/search
+/new 3 -
+/wp-content/plugins/civicrm/civicrm/packages/OpenFlashChart/php-ofc-library/ofc_upload_image.php 1 -
+/.well-known/pki-validation/48020F70220D6893553A42871487EDBE.txt 2 -
+/new/.env.staging 2 -
+/client/.env.local 2 -
+/wp_wrong_datlib.php 2 -
+/.env.stage 2 -
+/backend/.env.staging 2 -
+/wp-config.zip 1 -
+/.well-known/pki-validation/4D030A2800114C46820A59464F17FC47.txt 2 -
+/.env.staging 2 -
+/.well-known/pki-validation/7B36A6FC452E15339848C009BF927A16.txt 2 -
+/include/shopcar.class.php 2 -
+//ini.php 2 -
+/.well-known/pki-validation/3C451CBD4D62D1AF7948A043BCA03CF3.txt 2 -
+/.well-known/pki-validation/3DE491604C48B01AEB4163FD0005FB6B.txt 2 -
+/radio.php 4 -
+/reminder.php 2 -
+/wp-blog.php 6 -
+/wordpress/blog/ 2 -
+/.well-known/pki-validation/A3BA78A3E3489A3DA28E3329F9F59F2E.txt 2 -
+/.well-known/pki-validation/AB2253D7908B92E63BD420D431556CFD.txt 2 -
+//helper/info.php 1 -
+/wp-content/plugins/sid/sidwso.php 4 http://simplesite.com
+/.well-known/pki-validation/2FF6A305E2FC0B6133EFB20D3F9C23EA.txt 2 -
+/current/.env.staging 2 -
+/wp-content/plugins/woopra/inc/php-ofc-library/ofc_upload_image.php 2 -
+/server/.env.production 2 -
+/wp-content/themes/soccer-theme/include/lang_upload.php 2 https://www.google.com/search
+/.well-known/pki-validation/933FB0D6315285718B77921832769D02.txt 2 -
+/.well-known/pki-validation/34C72D282FEE8D509E0E54F0817FF6DF.txt 2 -
+/wp-content/plugins/ioptimizations/IOptimizes.php 2 www.google.com
+//mini.php 2 -
+//backend/info.php 1 -
+/.well-known/pki-validation/70F200C1FE5D293D4E9A2FF17630ACE8.txt 2 -
+/.well-known/pki-validation/98354A645EDF8E223AA8F44DBDFCEBC0.txt 2 -
+/public/wsa.php 2 -
+/bala.php 2 -
+/crm/.env.production 2 -
+/wp-content/wp-content.php 2 -
+/product/.env.local 2 -
+/.env.php 2 -
+/.well-known/pki-validation/D386267ECB5DCDE221E32653404DDBF4.txt 2 -
+/.well-known/pki-validation/C8DBD998D666F3E6850485D919A0981A.txt 2 -
+/wordpress/wp-admin/css/colors/blue/blue.php 2 -
+/backup/.env.local 2 -
+/.well-known/pki-validation/DAC9926E3FD07D9FE55D53BC3925CA5E.txt 2 -
+/service/.env.production 2 -
+/old/old/ 2 -
+/wp-includes/customize/class-wp-customize-nav-menu.php 2 -
+/wp-content/themes/pridmag/db.php 2 www.google.com
+/pinfo.php 2 -
+/core/misc/drupal.js 3 -
+/development/phpinfo.php 1 -
+/apis/.env.staging 2 -
+/vendor/phpunit/phpunit/src/Util/PHP/ 2 -
+/.well-known/pki-validation/DE6BAB76F6CD7A6B9C01B71353F92656.txt 2 -
+/.well-known/pki-validation/FFC664DF543E4E2AA676CE0DF6E95CA3.txt 2 -
+/wp-config.tar 1 -
+/data/backupdata/dede_a~1.txt 6 -
+/inc/gel.php 1 http://simplesite.com
+/time.php 2 -
+/wp-content/plugins/formidable/pro/js/ofc-library/ofc_upload_image.php 2 -
+/frontend_dev.php/$ 2 -
+/wp-config.htm 2 -
+/wp-content/themes/twenty/twenty.php 4 http://simplesite.com
+/portal/.env.local 2 -
+/wp-config.php_old2017 2 -
+/console/payments/config.json 1 -
+/404.php 4 -
+/wp-content/plugins/TOPXOH/OH.php 4 http://simplesite.com
+/templates/beez3/ 2 -
+/wp-content/plugins/superstorefinder-wp/ssf-wp-admin/pages/SSF_WP_UPLOADS_PATH/csv/import/abruzi.php 2 www.google.com
+/database.yml 2 -
+/.well-known/pki-validation/1AC3AA091033E19AF8CA3F9A629146B1.txt 2 -
+/wp-content/themes/churchlife/include/lang_upload.php 2 https://www.google.com/search
+//ups.php 2 -
+/wp-content/plugins/wp-file-manager/lib/php/connector.minimal.php 4 www.google.com
+//fw.php 2 -
+/wp-content/plugins/press/wp-class.php 3 http://simplesite.com
+/.well-known/pki-validation/0CB82F510939303849DC35ABECE6A5FD.txt 2 -
+/.well-known/pki-validation/490CB6B3D7E4FEAE283C5D6D9C124F98.txt 2 -
+/wp.php 2 -
+/ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application 2 -
+/.well-known/pki-validation/958AF7FB6493EC07D083E801CF96133E.txt 2 -
+/wp-content/plugins/easybusy/wp-blog.php 2 -
+/old/2018/ 2 -
+/public/suw.php 2 -
+/portal/displayAPSForm.action 4 -
+/wp-config 2 -
+/pi.php 2 -
+/.well-known/pki-validation/571B1566E577028E7E97C8243227C0E7.txt 2 -
+/hbk_ios.php/ 1 -
+/.well-known/pki-validation/1008BDD5E4EBA520340B3F4C6DFD08B5.txt 2 -
+//xampp/info.php 1 -
+/wp-content/plugins/spamtask/chart/php-ofc-library/ofc_upload_image.php 2 -
+//1index.php 3 -
+/site/wp-admin/css/colors/blue/blue.php 2 -
+/.well-known/pki-validation/B9E52CD273AD16A9C678AFCCB4E7AB7D.txt 2 -
+/.well-known/pki-validation/569E321E22F9DC21D15E4E85444BB3BF.txt 2 -
+/good.php 2 -
+/.well-known/pki-validation/932AB41FDAF6BD5483CB827ADFC6E237.txt 2 -
+/.well-known/pki-validation/54F1AEEF94D2FAF94F5C97D8F99DB3C2.txt 2 -
+/wp-config%20copy.php 2 -
+/wp-god.php 2 -
+/.well-known/pki-validation/613E8D48F4B1999A3E82B39CF4C7DA44.txt 2 -
+/wp-content/plugins/wp-file-manager-pro/lib/php/connector.minimal.php 4 www.google.com
+/.well-known/pki-validation/BA715F4808A5E6D4034B1091693C04C4.txt 2 -
+//lara/phpinfo.php 1 -
+/.well-known/pki-validation/72627A949C6E060C56517A44C6D84CD2.txt 2 -
+//wp-easy.php 2 -
+/wp-config.temp 2 -
+/autoload_classmap.php 2 -
+/wp-plain.php 3 www.google.com
+/struts2-rest-showcase/orders/3 2 -
+/.well-known/pki-validation/DE33585866F1DCA7CA2C923560640012.txt 2 -
+/.well-known/pki-validation/5CEAB87B4CBE78BC053D9DCAD2E94632.txt 2 -
+/blog 2 -
+/infophp.php 2 -
+/admin/.env.production 2 -
+/develop/.env.local 2 -
+/wp-x.php 2 -
+/backup/wp-admin/install.php 1 -
+/wp-content/themes/aidreform/include/lang_upload.php 2 https://www.google.com/search
+/.well-known/pki-validation/0C4B0C3A44F1B304D76CCA820C8CC343.txt 2 -
+//wp-content/fw.php 2 -
+/e/data/js/ajax.js 1 -
+/install.php 4 -
+/wp/wp-content/themes/seotheme/mar.php 2 -
+/wp-content/plugins/masterx/wpx.php 2 -
+/wp-content/uploads/html2wp/abruzi.php 4 www.google.com
+/js/tinymce4/plugins/filemanager/dialog.php 2 -
+/dev/.env.staging 2 -
+//C.php 2 -
+/wp-admin/css/colors/colors.php 1 -
+/.well-known/pki-validation/B965FED500E4085F569057486BE7B45D.txt 2 -
+/wp-content/themes/blogood/doc.php 2 http://simplesite.com
+/web/.env.staging 2 -
+/plugins/ 2 -
+/wp-content/plugins/wp-automatic/changelog 4 https://www.google.com/search
+/.well-known/pki-validation/AC5A27C24D94CE1F900568D2506C5617.txt 2 -
+/cron/.env.local 2 -
+/adminer.php 2 -
+/login.action 8 -
+/wp-2021.php 2 -
+/wordpress/xmlrpc.php 17 -
+/wp-admin/maint/atomlib.php 2 http://simplesite.com
+/xampp/info.php 3 -
+/5.php 2 -
+/div/ 2 -
+/.envs 1 -
+/dz.php 2 -
+/backup/info.php 1 -
+/wp-content/themes/onelife/include/lang_upload.php 2 https://www.google.com/search
+/old/.env.production 2 -
+/asset/kcfinder/upload.php 2 -
+/test/.env.production 2 -
+//Deadcode1975xxxxxxxxxxxxxxxxxxxxxxxxxxxx.php 2 -
+/develop/.env.production 2 -
+/wordpress/temp/ 2 -
+/new/back/ 4 -
+/crm/.env.local 2 -
+/wp-content/themes/snapture/include/lang_upload.php 2 https://www.google.com/search
+/crypted.php 2 -
+/.well-known/pki-validation/8E71A1EB11E893385B91B09D69E8EC98.txt 2 -
+/wp-config-backup.txt 2 -
+/wp-content/plugins/superstorefinder-wp/css/ssf-wp-admin.css 2 https://www.google.com/search
+/wp-includes/blocks/quote/ 2 caldonbiotech.com
+/wp-content/phpmailer.lang-sv.php 2 http://simplesite.com
+/wordpress/2017/ 2 -
+/develop/phpinfo.php 1 -
+//uploads/up.php 2 -
+/02.php 2 -
+/data/backupdata/dede_a~5.txt 4 -
+/plus/ad_js.php 2 -
+/.docker/config.json 1 -
+/2.php 2 -
+/.well-known/pki-validation/3E7772A5A98697EF5B3DB2740B5CFE91.txt 2 -
+/wp-admin/css/colors/sunrise/wp-crons.php 1 -
+/.well-known/pki-validation/7AF2BCC7D11433694575D4ECC5B30E1C.txt 2 -
+/wp-config.php_new 1 -
+/phpformbuilder/plugins/filemanager/dialog.php 2 -
+/.well-known/pki-validation/74D4EA4203CDA9233D91F2929EA4DED2.txt 2 -
+//xmlrqc.php 2 -
+/data/backupdata/dede_a~2.txt 2 -
+/dologin.action 2 -
+/.well-known/pki-validation/8924BD0F62BC42FAB84973885171CB47.txt 2 -
+//good.php 1 -
+/assets/kcfinder/upload.php 2 -
+//laravel/phpinfo.php 1 -
+/.well-known/pki-validation/34FF400A4104130FFF78118EC46BEA11.txt 2 -
+/utchiha.php 2 -
+/.well-known/pki-validation/64D2D5F87E398DD0ACB4CFFD4EC84748.txt 2 -
+/market/.env.production 2 -
+/wp-includes/SimplePie/Decode/HTML/index.php 1 http://simplesite.com
+/uploads/up.php 2 -
+/ALFA_DATA/ 2 -
+//utchiha.php 2 -
+//wp-2020.php 2 -
+/old/wp/ 2 -
+/.well-known/pki-validation/E6CEFA4B75DCEE5F2790DDCA8ADC048D.txt 2 -
+/.well-known/pki-validation/D09F9D1A3D671ED867202E2C538CAC1C.txt 2 -
+/.well-known/pki-validation/5A22E67829126FF967F441E972FAC27F.txt 2 -
+/wp-includes/wp-class.php 4 http://simplesite.com
+/wp-admin/rss.php 2 http://caldonbiotech.com//wp-admin/rss.php
+/mooicpfz.php 2 www.google.com
+/wxo.php 2 -
+/public/_ignition/health-check/ 10 -
+/wp-includes/images/xit-3x.gif 2 caldonbiotech.com
+/DKIZ.php 2 -
+/wp-admin.php 1 -
+/backup 7 -
+/wp-content/themes/seotheme/db.php 62 www.google.com
+/ALFA_DATA/alfacgiapi/ups.php 2 -
+/img/ 2 -
+/wp-content/plugins/fighter/fk.php 2 -
+/old/div/ 2 -
+/wp-config.phpd 2 -
+/ALFA_DATA/alfacgiapi/perl.alfa 3 www.google.com
+/.well-known/pki-validation/820A4D77BBD4513DE0BE619F0533792B.txt 2 -
+/app/config/parameters.yml 2 -
+/.well-known/pki-validation/EAA97561C32C80B5B7A45C5A33A224A3.txt 2 -
+/.env.production 2 -
+/.well-known/pki-validation/75A669545A373C2DC4EBC768BB7DBB47.txt 2 -
+/wp-content/themes/spikes-black/include/lang_upload.php 2 https://www.google.com/search
+/old/temp/ 2 -
+/cron/.env.production 2 -
+/%24%7B%28%23_memberAccess%5B%22allowStaticMethodAccess%22%5D%3Dtrue%2C%23a%3D@java.lang.Runtime@getRuntime%28%29.exec%28%27cat%20/etc/passwd%27%29.getInputStream%28%29%2C%23b%3Dnew%20java.io.InputStreamReader%28%23a%29%2C%23c%3Dnew%20%20java.io.BufferedRe 2 -
+/srx.php 2 -
+/wp-content/themes/pridmag/sz.php 4 http://simplesite.com
+/wp-content/wp__config.php 2 http://simplesite.com
+/dev/info.php 1 -
+//image/screenshot_1.php 2 -
+/wsoyanzorng.php 4 www.google.com
+//up-kon.php 2 -
+/shop/.env.staging 2 -
+/.well-known/pki-validation/3B6894F8A4CA0E3E3689525C7E8F98AE.txt 2 -
+/.well-known/pki-validation/B31406BFA59BEBBB8EC5D35E7F1F6481.txt 2 -
+/temp/ 8 -
+/current/info.php 1 -
+/product/.env.production 2 -
+/data/admin/allowurl.txt 2 -
+/moon.php 2 http://simplesite.com
+/app/.env.staging 2 -
+/debug/default/view 4 -
+/.well-known/pki-validation/72DC974AD59C8F16826A934700120F44.txt 2 -
+//mininew.php 2 -
+/test/.env.local 2 -
+/.well-known/pki-validation/C00F9AF7B5986178623F647D081BAEA1.txt 2 -
+/magmi/conf/magmi.ini 2 -
+/wp-content/plugins/background-image-cropper/ups.php 2 http://simplesite.com
+//hehe.php 2 -
+/service/.env.local 2 -
+/Ynjnl/wp-blog.php 2 http://simplesite.com
+//baindex.php 2 -
+/backend/info.php 1 -
+/laravel/core/.env.local 2 -
+/wp-content/uploads/2020/update.php 4 http://simplesite.com
+//wp-info.php 2 -
+/wp-includes/assets/pi.php 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/%5C%22 1 http://www.google.com/url
+/assets/admin/js/tinymce/plugins/filemanager/dialog.php 2 -
+//1.php 2 -
+/wp-content/king.php 4 www.google.com
+/.env.dist 2 -
+//xlt.php 2 -
+//wp-content/upload.php 2 -
+/info.php 8 -
+/.well-known/pki-validation/A6B412AE596CDFDC19A3CC081877E163.txt 2 -
+/.well-known/pki-validation/0AA547A62F14929D9087C135D4291430.txt 2 -
+/.well-known/pki-validation/586BF33659F91A665B4E49B1021B1B8B.txt 2 -
+/.well-known/pki-validation/54785D4D57CBCE1BB847EB752722A05F.txt 2 -
+/kyc/.env.staging 2 -
+/wp-config.phpn 2 -
+/.well-known/pki-validation/8338712C6686C5410E00736089087614.txt 2 -
+//current/info.php 1 -
+/demo 2 -
+/index.php/Home/Index/index.html 3 -
+/.msmtprc 2 -
+/screenshot_1.php 2 -
+/.well-known/pki-validation/FD57AD3A0656A8564201395C8917E85E.txt 2 -
+/admin/controller/extension/wpm.php 2 -
+/.well-known/pki-validation/036A5166AC5CE03D59B558C07DC92BFF.txt 2 -
+/old-index.php 4 -
+/.well-known/pki-validation/5DCAFEA71DC06253696B433E8E629336.txt 2 -
+/old/ 9 -
+/wp-cc.php 2 -
+//xleet.php 2 -
+/.well-known/pki-validation/BE2A7F416896B41A7AB7851180606FB0.txt 2 -
+//api/info.php 1 -
+/.well-known/pki-validation/CB7870FB82B7CEE3C8B357682CB77C66.txt 2 -
+/.well-known/pki-validation/C0F8AA9258A812B61ADAF06AF34409C9.txt 2 -
+/assets/js/kcfinder/upload.php 2 -
+/xampp/phpinfo 2 -
+/lara/phpinfo.php 1 -
+//admin.php 2 -
+/wp-content/themes/patior/ 2 http://caldonbiotech.com/wp-content/themes/patior/index.php
+/shop/.env.local 2 -
+//4price.php 2 -
+/.well-known/pki-validation/7F1FFA30EE9EE3A78038D8279DA05D9C.txt 2 -
+/.docker/daemon.json 1 -
+/.well-known/pki-validation/E87C8B3618C80D15F6929743D58BE7DB.txt 2 -
+/.well-known/pki-validation/45DBFA0B26A57BE32610900CC66922D7.txt 2 -
+/.well-known/pki-validation/07B5F4CD7B785B7A42960D4445C18AD2.txt 2 -
+/$%7BClass.forName(%22com.opensymphony.webwork.ServletActionContext%22).getMethod(%22getResponse%22,null).invoke(null,null).setHeader(%22X-Status%22,%22ok%22)%7D/ 2 -
+/kcfinder/upload.php 2 -
+/development/.env.staging 2 -
+/.well-known/pki-validation/4725B619EF780E8C43D3DEC7F853CAE6.txt 2 -
+/test/.env.staging 2 -
+/old_phpinfo.php 2 -
+/wp/wp/ 2 -
+//pi.php 2 -
+/index.php 1 caldonbiotech.com
+/crm/phpinfo.php 1 -
+//xml.php 2 -
+/.well-known/pki-validation/3D32698AD25A5EA71BBC343CD99B4A9F.txt 2 -
+/phpinfo 5 -
+/public/.env.production 2 -
+/.well-known/pki-validation/2DE346E3986AC11F2FD73053130F58C1.txt 2 -
+//3index.php 2 -
+/2018/ 2 -
+/services/.env.production 2 -
+/pin/create/button/ 2 -
+/wp-content/plugins/spam-master/doc.php 2 http://simplesite.com
+//develop/info.php 1 -
+//XxX.php 2 -
+/develop/info.php 1 -
+/admin.php 10 -
+/i.php 2 -
+/.well-known/pki-validation/DEC547200D56F099833FB7B676BAF96A.txt 2 -
+/test.php 2 -
+/old/oldsite/ 2 -
+/admin/uploads/ 2 -
+/chart/php-ofc-library/ofc_upload_image.php 2 -
+/.well-known/pki-validation/FAA042B04E05EB307FF331AE81F3A1E2.txt 2 -
+/wp-includes/css/dist/editor/fxp.php 2 http://simplesite.com
+/.well-known/pki-validation/42FE7C91B610386E5CDC5FEF3EC22822.txt 2 -
+/2017/ 2 -
+/help/phpinfo.php 1 -
+/phpdebugbar 2 -
+/PNJOZ/wp-blog.php 2 http://simplesite.com
+/0z.php 4 -
+/wp-includes/shell20211028.php 4 www.google.com
+/wp-content/themes/seotheme/auto_seo.php 4 caldonbiotech.com
+/.well-known/pki-validation/A34B40D6C5BC65CC913129FC7353F5D0.txt 2 -
+/lock360.php 2 -
+/.well-known/pki-validation/FFE829656364F46C6E041AF485F3F34E.txt 2 -
+/back/ 2 -
+/robots.txt 4 -
+/.well-known/pki-validation/34C4817EAAD1C487754518C08D98B83C.txt 2 -
+/lufix.php 2 -
+/.well-known/pki-validation/DD2157D012477F0A64A68308267EBC10.txt 2 -
+/wp-2018.php 2 -
+/up.php 4 -
+/shop/.env.production 2 -
+/.well-known/pki-validation/4B2BA51E31A0941041D0FF1DCD41FEA0.txt 2 -
+/index.js 1 -
+/service/.env.staging 2 -
+/test/wp-admin/setup-config.php 1 -
+/.well-known/pki-validation/50120C74CD60132DAF0B5208DB3D84CB.txt 2 -
+/small.php 4 -
+/wp/wp-content/plugins/seoplugin/db.php 2 -
+/.well-known/pki-validation/BBDB00B87DE8156066A9C81452F3705A.txt 2 -
+/wp-admin/moon.php 3 http://simplesite.com
+/.well-known/atomlib.php 2 http://simplesite.com
+/helper/info.php 1 -
+//screenshot_1.php 2 -
+/.well-known/pki-validation/F581810DDE8F0D3B6C2CD7C8EBE95CD8.txt 2 -
+/marketing/.env.staging 2 -
+/current/.env.production 2 -
+/.well-known/pki-validation/8238720AD347D192880D15B8FA4DD3C2.txt 2 -
+/.well-known/pki-validation/F15722036323213449BA2E44932D6DC3.txt 2 -
+/.well-known/pki-validation/0DF5A01D9279963743A371D19F6BB7C8.txt 2 -
+/old/backup/ 2 -
+/wp-content/plugins/user-verification/assets/front/js/scripts-otp.js 1 caldonbiotech.com
+/.well-known/pki-validation/86BF651E61A905E2D263CF6D5D97C418.txt 2 -
+/wp-content/themes/bolster-theme/include/lang_upload.php 2 https://www.google.com/search
+/alfacgiapi/perl.alfa 3 www.google.com
+//lara/info.php 1 -
+/wordpress/wp-admin/setup-config.php 1 -
+/.git/config 4 -
+/wp-content/plugins/angwp/__%20UPDATES.txt 4 https://www.google.com/search
+/wp-content/plugins/ubh/o.php 2 caldonbiotech.com
+/wp-content/plugins/super-interactive-maps/css/sim-wp-admin.css 2 https://www.google.com/search
+/backend/phpinfo.php 1 -
+/info.json 1 -
+/stg/.env.local 2 -
+/wp-content/themes/theme-deejay/include/lang_upload.php 2 https://www.google.com/search
+/wp/wp-content/themes/seotheme/db.php 2 -
+/s/638313e22353e2538313e2239313/_/ 2 -
+/wp-admin/style.php 4 -
+/cron/.env.staging 2 -
+/.env.production.local 2 -
+/wp-config.php_bak 2 -
+//haxor.php 2 -
+/backend/.env.production 2 -
+/.well-known/pki-validation/6F1D681438AFED89827B7BFC5BD8F7CA.txt 2 -
+/blog/wp-admin/setup-config.php 1 -
+/1337.php 2 -
+/.well-known/pki-validation/E74A16187983E8421E24FC17A50DD3A7.txt 2 -
+/wp-content/cong.php 2 http://simplesite.com
+//wp-god.php 2 -
+/wp-config.html 2 -
+/current/phpinfo.php 1 -
+//crypted.php 2 -
+/.well-known/pki-validation/E9A04F4667DBFABD1C8F4776582527B7.txt 1 -
+/c.php 2 -
+/js/kcfinder/upload.php 2 -
+/.env.sample.php 2 -
+/.well-known/pki-validation/F940A7F2186A47CD6DD59FE633A6D1AB.txt 2 -
+/wp-content/themes/statfort/include/lang_upload.php 2 https://www.google.com/search
+/.well-known/pki-validation/FAC8AFFDC6480C498D7944894B2FC2C4.txt 2 -
+/wso.php 2 -
+/wp-admin/wp-admin.php 1 -
+/p-images.php 2 caldonbiotech.com
+/wp-content/fw.php 2 -
+/wp-content/plugins/x/vim/hehehe.php 2 http://simplesite.com
+//upload.php 4 -
+//xl.php 4 -
+/wp-content/plugins/superlogoshowcase-wp/css/sls-wp-admin.css 2 https://www.google.com/search
+/.well-known/pki-validation/173E18CDBAAE278CA43DD73A2F72CE42.txt 2 -
+/production/.env.local 2 -
+/.well-known/pki-validation/9F9F8EE050B9B41DCA1FD7059CD2FCC5.txt 2 -
+/sites/all/modules/civicrm/packages/OpenFlashChart/php-ofc-library/ofc_upload_image.php 2 -
+/wp-content/themes/pridmag/fi.php 2 http://simplesite.com
+/.well-known/pki-validation/705E70C5B76153B6270B38F17CDDA658.txt 2 -
+/config/secrets.yml 2 -
+/wsa.php 2 -
+/.well-known/pki-validation/EDEA09129F33B5EEF35A9D580F471ABC.txt 2 -
+/.well-known/pki-validation/72A7D7216FC7595033D920BE04C8A677.txt 2 -
+/.well-known/pki-validation/F79B8E44A8C8AFA64B007DF23BE8EA53.txt 2 -
+/.X1-unix/ 2 -
+/wp-content/content.php 4 http://simplesite.com
+/staging/.env.local 2 -
+/wp-2020.php 2 -
+/.well-known/pki-validation/0F50D279B7A8B0ABCD9845A6C3BFC43D.txt 2 -
+/development/iinfo.php 1 -
+/new-index.php 2 -
+/xwxx.php 2 -
+/shell20211028.php 4 http://simplesite.com
+/kyc/.env.local 2 -
+/wp-content/plugins/wpwhatsmyrankvideoregular-unlimited/php-ofc-library/ofc_upload_image.php 2 -
+/services/phpinfo.php 1 -
+/wp-content/plugins/superstorefinder-wp/ssf-wp-admin/pages/import.php 2 www.google.com
+/.envrc 2 -
+/wp-content/themes/alera/alpha.php 1 -
+/wp-content/wp-readme.php 2 http://simplesite.com
+/.well-known/pki-validation/5EF267E9FC638307C9BFF05C168021A7.txt 2 -
+/prod/.env.local 2 -
+/crm/info.php 1 -
+//0z.php 2 -
+/wp-content/991176.php 2 http://simplesite.com
+/wp-imag.php 2 caldonbiotech.com
+/laravel/.env.staging 2 -
+/.well-known/pki-validation/486F0C7FCD07FF6D6855B5BBFE9CFBFC.txt 2 -
+/.well-known/pki-validation/B9AFD8DD1E4E6154567426E1A96B8ACA.txt 2 -
+//wp_logx.php 2 -
+/.well-known/pki-validation/EB113E33145B179A17126AA2C06628F1.txt 2 -
+/wp-includes/wp-includes.php 2 -
+/.env.prod 2 -
+/portal/.env.production 2 -
+/wp-config_good 2 -
+/wp-admin/priv8.php 2 http://caldonbiotech.com//wp-admin/priv8.php
+/marijuana.php 2 -
+/public_html/.env.production 2 -
+/.well-known/pki-validation/B7BCBF8EC40C7426E6D85C5EE322E354.txt 2 -
+/wordpress/old/ 2 -
+//backend/phpinfo.php 1 -
+/wp-content/themes/seotheme/bd.php 4 http://simplesite.com
+/.well-known/pki-validation/FCC242C4F38BB9FD51951EB9B4305DB0.txt 2 -
+/images/vuln.php 2 -
+/.well-known/pki-validation/E9D5850C8E47FEF93F2567DBFFA08DBF.txt 2 -
+/orders/3 2 -
+/wp 9 -
+/wp-admin/wsoyanzorng.php 1 -
+/wp-instance.php 2 -
+/.well-known/pki-validation/07F1C47655F14D7B40B8557FEE781F1B.txt 2 -
+/wp-content/plugins/ip-logger/chart/ofc_upload_image.php 2 -
+/1index.php 8 www.google.com
+/new/temp/ 4 -
+/.DS_Store 2 -
+/app/.env.local 2 -
+/filemanager/filemanager/dialog.php 2 -
+/.well-known/pki-validation/2E21F10459CD82DC0870E88829139BC3.txt 2 -
+/wp-content/plugins/formcraft/file-upload/server/php/ 2 www.google.com
+/new/div/ 4 -
+/wp-config.php_bk 2 -
+/wp-config-backup 2 -
+/.well-known/pki-validation/112D79ED4130D839BDCF1C27986250B6.txt 2 -
+/4.php 2 -
+/wp-admin/doc.php 2 http://simplesite.com
+/wp-admin/fx.php 2 http://caldonbiotech.com//wp-admin/fx.php
+/ELISA/infectious/hsv2_igm12.pdf 1 -
+/filemanager/dialog.php 2 -
+/helper/phpinfo.php 1 -
+/assets/scripts/filemanager/dialog.php 2 -
+/api/search 2 -
+/new/wp/ 4 -
+/wp-content/plugins/scripts-organizer/plugins/meta-box/readme.txt 4 https://www.google.com/search
+//new-index.php 2 -
+/wp-admin/css/colors/blue/blue.php 2 -
+/wp-config-good 2 -
+/wp-content/themes/soundblast/include/lang_upload.php 2 https://www.google.com/search
+/crm/.env.staging 2 -
+/wordpress/wp-admin/install.php 1 -
+/.well-known/pki-validation/0954A39B13A0D22B262C8DE5EE064D71.txt 2 -
+/.well-known/pki-validation/8DFF4C8BAAB82F36A08C117DAD124AF4.txt 2 -
+/xmlrqc.php 2 -
+/assets/images/ 2 -
+/index.json 1 -
+/wordpress/wordpress/ 2 -
+/wp-admin/xleet.php 2 http://caldonbiotech.com//wp-admin/xleet.php
+//3x.php 2 -
+/priv8.php 2 -
+/server/config.json 1 -
+/wp-admin/css/colors/blue/wp-crons.php 1 -
+/wp-config.php_backup 2 -
+/wp-content/plugins/wpgateway/css/style.css 2 https://www.google.com/search
+/prod/.env.production 2 -
+/client/.env.production 2 -
+/.well-known/pki-validation/35532E41A71471A1BC63E0A25C4DDAF7.txt 2 -
+//server/phpinfo.php 1 -
+/.well-known/pki-validation/D4B875F38509160F205EAD2EDEDAB5F5.txt 2 -
+/.well-known/pki-validation/060D455E2F0C9E3C3B73794C77F1F1F3.txt 2 -
+/wp-config.txt 2 -
+/.well-known/pki-validation/BC8CC2914366712D2196A08AC2150ECC.txt 2 -
+//backup/phpinfo.php 1 -
+/wp-includes/user-handler.php 2 -
+/.well-known/pki-validation/8FB74E2FE456080360295D4255403109.txt 2 -
+/.well-known/pki-validation/5823B0297A99CB274A512B21BEA31C75.txt 2 -
+/marketing/.env.production 2 -
+/backup/ 8 -
+/google.php 2 -
+/assets/plugins/kcfinder/upload.php 2 -
+/wp-config.php__olds 2 -
+//api/phpinfo.php 1 -
+/.well-known/pki-validation/06CA7ECF83F4AFB295166296126B0EF1.txt 2 -
+/old/back/ 2 -
+/server/.env.local 2 -
+/wp-content/wso112233.php 2 http://simplesite.com
+/.well-known/pki-validation/7DE3864DAFF1CFDC627103C54862EB15.txt 2 -
+/wp-includes/wp-readme.php 2 http://simplesite.com
+/wp-config_backup 2 -
+/wp-content/plugins/dzs-zoomsounds/admin/admin.css 2 https://www.google.com/search
+/spaces/viewdefaultdecorator.action 4 -
+/dev/.env.local 2 -
+/wp-content/plugins/gutenberg/zaz.php 2 http://simplesite.com
+/bk 7 -
+//wp-content/plugins//masterx/wpx.php 2 -
+/secrets.yml 2 -
+/new/.env.production 2 -
+//about.php 2 -
+/.well-known/pki-validation/E911DF80B476E6EDD90B3DF7DD103044.txt 2 -
+//wso.php 2 -
+/wp-content/plugins/ait-csv-import-export/changelog.txt 4 https://www.google.com/search
+/inputs.php 4 caldonbiotech.com
+/wp-content/plugins/dos2unix/dos2unix.php 6 -
+/uploads/xleet.php 2 -
+/web/.env.local 2 -
+/backup/.env.production 2 -
+/.well-known/pki-validation/A636334004E4A3A64D476FD3CA397543.txt 2 -
+/xleet.php 2 -
+//wp_wrong_datlib.php 2 -
+//wp-content/plugins/fighter/fk.php 2 -
+/wp-config.php_old2018 2 -
+/.well-known/pki-validation/99A6FD9E7ACA6D9E128E20FABA859AE4.txt 2 -
+/foMeaJ/wp-blog.php 2 http://simplesite.com
+/wp-includes/css/css.php 2 www.google.com
+/default.php 2 http://simplesite.com
+/wp-content/themes/kingclub-theme/include/lang_upload.php 2 https://www.google.com/search
+/4price.php 2 -
+/.well-known/pki-validation/0A09615AB9095585302C9271F09916D4.txt 2 -
+/wp-admin/js/widgets/content.php 3 http://simplesite.com
+/wp-config.php_original 2 -
+/.well-known/pki-validation/68A0AB39947A1887967F2C8355366A0F.txt 2 -
+/telescope/requests 2 -
+/cless-smtp.php 4 http://simplesite.com
+/.well-known/pki-validation/583204C7A57F543B6B2645DDFF11DE45.txt 2 -
+/qa/.env.local 2 -
+/991176.php 4 http://simplesite.com
+/wp-config.local.php 2 -
+/wp/wp-admin/css/colors/blue/blue.php 2 -
+/.well-known/pki-validation/7DCD7056E4E2EC0CD518DF129B29CF6D.txt 2 -
+/.well-known/pki-validation/C1BCD3317A781238D218C4C4B2D98F07.txt 2 -
+/modules/mod_ariimageslidersa/mod_ariimageslidersa.php 2 -
+/.well-known/pki-validation/4BAD399695557DAED17A1846E192C408.txt 2 -
+/wp-content/plugins/linkpreview/db.php 2 www.google.com
+/qa/.env.production 2 -
+/magmi-importer/conf/magmi.ini 2 -
+/modules/mod_simplefileuploadv1.3/elements/ 2 -
+/up/ 2 -
+/wpx.php 2 -
+/laravel/.env.local 2 -
+/installer.php 2 -
+/.well-known/pki-validation/61247FD04D183360A2DAB3C752394D89.txt 2 -
+//payout.php 2 -
+/.well-known/pki-validation/4065E22676A26B58B3FF42FC4416B279.txt 2 -
+/wp-content/themes/westand/include/lang_upload.php 2 https://www.google.com/search
+/xl.php 4 -
+/.well-known/pki-validation/45492C03A60EF212BC225F627776873A.txt 2 -
+/services/.env.local 2 -
+/.well-known/pki-validation/A013D4D5D41CDD2FB35E321D500D6882.txt 2 -
+/wp-content/plugins/ccx/ 2 www.google.com
+/php-ofc-library/ofc_upload_image.php 2 -
+/asdf.php 2 -
+/backup/phpinfo.php 1 -
+/wp-includes/blocks/tag-cloud/ 2 http://caldonbiotech.com/wp-includes/blocks/tag-cloud/index.php
+/.well-known/pki-validation/9A2261720C7F41374ADA73924DC843CD.txt 2 -
+/public/pn.php 2 -
+/admin/filemanager/dialog.php 2 -
+/server-status 1 -
+/.well-known/pki-validation/31245019E51CDDCFACF8743F12A46679.txt 2 -
+/.well-known/pki-validation/48B3F4ED7718B4F1C499F6B1373A83E5.txt 2 -
+/staging/.env.staging 2 -
+/wp-easy.php 2 -
+//uploads/xleet.php 2 -
+/lara/info.php 1 -
+/wp-config.php_ 2 -
+//wp-content/plugins/easybusy/wp-blog.php 2 -
+/x.php 2 -
+/.well-known/pki-validation/25E227B11569513935BCE5ACD48DF755.txt 2 -
+/.well-known/pki-validation/FE1C1C3FE4596914EBDFF31749505695.txt 2 -
+/sitemap.php 2 -
+/laravel/core/.env.production 2 -
+/wp-admin/network/trike.php 1 http://simplesite.com
+//info.php 1 -
+/public_html/.env.local 2 -
+/wp-content/plugins/core-stab/ 2 -
+/.well-known/pki-validation/80CFC7D8C32D7B77CAAE71772538BB28.txt 2 -
+/new/backup/ 4 -
+/.well-known/pki-validation/FF0744B810545806E0D982CD29478CDE.txt 2 -
+/.env.docker.dev 2 -
+//ALFA_DATA/alfacgiapi/ups.php 2 -
+/help/info.php 1 -
+/maintenances 2 -
+//priv8.php 2 -
+//wpx.php 2 -
+/wp/xmlrpc.php 22 -
+/%20-%20.env 2 -
+/.well-known/pki-validation/37CDE5F55E7E700C24EA6D06C697E38E.txt 2 -
+/.well-known/pki-validation/0960A1194ACB83E8DCAE38DF64C8E416.txt 2 -
+/humans.txt 6 -
+/stg/.env.staging 2 -
+/wp-config.php______ 2 -
+/xlt.php 2 -
+/wp-config.conf 2 -
+/baindex.php 2 -
+/// 1 -
+/prod/.env.staging 2 -
+/style.php 8 -
+/01.php 2 -
+//wxo.php 2 -
+/up-kon.php 2 -
+/images/ 2 -
+/wp-content/plugins/background-image-cropper/content-post.php 10 http://simplesite.com
+//wp.php 2 -
+/abruzi.php4 4 www.google.com
+/wp-content/plugins/background-image-cropper/doc.php 4 http://simplesite.com
+/.env.test.local 2 -
+/owa/auth/logon.aspx 55 -
+/.well-known/pki-validation/B24410ACF80997EA2418B45C979F2583.txt 2 -
+/ 258 -
+/wp-config.phpb 2 -
+/3index.php 4 -
+//alfa.php 2 -
+/.well-known/pki-validation/A85CE56813453707A2B98592FD2F4E64.txt 2 -
+/project/.env.production 2 -
+/wp-config.php1 2 -
+/.well-known/pki-validation/90B9EA193C492ACC04B169A6D8667810.txt 2 -
+/xltavrat.php 2 http://simplesite.com
+/dev/phpinfo.php 1 -
+/ELISA/infectious/helicobacter_pylori_iga12.pdf 1 -
+/.well-known/pki-validation/7681F8DB8228B6D8955A6A0B0911591B.txt 2 -
+/.well-known/pki-validation/D2EB2608A57471D11A038A2F9AA0C83F.txt 2 -
+/wp-content/plugins/all-in-one-wp-migration/lib/model/export/module.php 2 -
+/data/backupdata/dede_a~3.txt 4 -
+/components/com_jnews/includes/openflashchart/tmp-upload-images/255test.php 2 -
+/new/oldsite/ 4 -
+/.well-known/pki-validation/E0BA86FBE5BAD3AAC0D45EA225E40486.txt 2 -
+/wp-content/themes/club-theme/include/lang_upload.php 2 https://www.google.com/search
+/tinymce/filemanager/dialog.php 2 -
+/.well-known/pki-validation/2BDDCBF9C56E1A3E74A569219476D251.txt 2 -
+/wp-content/themes/content.php 2 http://simplesite.com
+/.well-known/pki-validation/78BA3E341297FEE55C2F89E8F9A47693.txt 2 -
+/wp-admin/patior/ 1 http://caldonbiotech.com/wp-admin/patior/index.php
+/website/.env.production 2 -
+/api/.env.production 2 -
+/xmrlpcs.php 2 -
+/wp-content/plugins/core-engine/ 2 -
+/production/.env.production 2 -
+//wp-includes/1index.php 2 -
+//wp-content/themes/alera/alpha.php 1 -
+/wp-config.inc 2 -
+/wp-config%20-%20Copy.php 2 -
+/wp-content/plugins/seo-spy-google-wordpress-plugin/ofc/php-ofc-library/ofc_upload_image.php 2 -
+/3x.php 2 -
+/.well-known/pki-validation/87694799AB38DF5F8736DDA1AA78B116.txt 2 -
+/public/lock360.php 2 -
+/wp-admin/css/colors/coffee/wp-crons.php 1 -
+/.lanproxy/config.json 1 -
+//server/info.php 1 -
+/.well-known/pki-validation/AA5D2E1427ECE44DEC8A6070C45583D5.txt 2 -
+/user.action 3 -
+//backup/info.php 1 -
+/.config/gatsby/config.json 1 -
+//shell.php 2 -
+/.well-known/pki-validation/938F2825B38898CB0FF40B49130BF5A3.txt 2 -
+/wordpress/wp-commentin.php 2 -
+/wp-content/fr.php 2 http://simplesite.com
+/assets/filemanager/dialog.php 2 -
+/config/config.json 1 -
+//help/info.php 1 -
+/wp-config.php_orig 2 -
+/v2/_catalog 2 -
+/storage/.env.production 2 -
+/6.php 2 -
+/.well-known/pki-validation/CCA0E05D49DE09ECDCA6090284D744C5.txt 2 -
+/wp-content/plugins/wp-slimstat-ex/lib/ofc/php-ofc-library/ofc_upload_image.php 2 -
+/.well-known/pki-validation/D6BA7EDB9BA139E3AB337A1B0426BBFC.txt 2 -
+/.well-known/pki-validation/80604C473C7822A3012AC67B9968FF4C.txt 2 -
+/wp-content/themes/footysquare/include/lang_upload.php 2 https://www.google.com/search
+//wp-2021.php 2 -
+/wp-content/upload.php 2 -
+//wp-22.php 2 -
+/server/.env.staging 2 -
+/wp-config.php_old2020 2 -
+/oldsite/ 2 -
+/js/envConfig.js 1 -
+/haxor.php 2 -
+/wp-content/themes/statfort-new/include/lang_upload.php 2 https://www.google.com/search
+/ads.txt 8 -
+/new/xmlrpc.php 1 -
+/wp-includes/block-supports/ 2 caldonbiotech.com
+/jwjngwzo.php 2 www.google.com
+/.env.dev 2 -
+/development/.env.production 2 -
+/.well-known/pki-validation/05174A6BB91FCEBA34885A6B1C7EFB58.txt 2 -
+/.well-known/pki-validation/6446B738CC79B92EF46F83689169B980.txt 2 -
+//404.php 2 -
+/.well-known/pki-validation/413FFB8E02182A9BFE7A115B17A18F61.txt 2 -
+/wp-content/plugins/armember/js/arm_widgets_js.js 2 https://www.google.com/search
+//phpinfo 1 -
+//2index.php 4 -
+/wp-config.good 2 -
+/data/backupdata/dede_a~4.txt 6 -
+/blog/ 10 -
+//develop/phpinfo.php 1 -
+/public/index.php 3 -
+/wordpress/backup/ 2 -
+/.well-known/pki-validation/6B805F354437531DA7FAF125F4385E69.txt 2 -
+/marketing/.env.local 2 -
+/demo/.env.local 2 -
+/.well-known/pki-validation/6C2E4206D18C53B31219C550C6C68E88.txt 2 -
+/.well-known/pki-validation/FA54C36CA48EFC8FD5E1B4078E888051.txt 2 -
+//wp-includes/customize/class-wp-customize-nav-menu.php 2 -
+/wp-content/plugins/apikey/apikey.php 2 www.google.com
+/storage/.env.local 2 -
+/old/wordpress/ 2 -
+/site/wp-commentin.php 2 -
+/util/login.aspx 4 -
+/1.php 2 -
+/alfa.php 4 -
+/upload.php 4 -
+/wp-admin/wp-coomments-post.php7 1 http://simplesite.com
+/.well-known/pki-validation/E57258A07ED07A100CB6C2AAAF17D70B.txt 2 -
+/js/config.js 1 -
+/wp-content/plugins/dsp_dating/wpdating-gallery/lib/server/php/ 2 https://www.google.com/search
+/user/.env.staging 2 -
+/XxX.php 2 -
+/.well-known/pki-validation/3C35704B7A24D44DB3E62480F237EB15.txt 2 -
+/.well-known/pki-validation/F87531C4DD5892BECEF7DAF3CDE876FC.txt 2 -
+/wp-config.phporiginal 2 -
+/502.shtml 58 -
+/development/.env.local 2 -
+/public/wso112233.php 2 -
+/assets/admin/tinymce/plugins/filemanager/dialog.php 2 -
+/project/.env.local 2 -
+/copy.env 2 -
+/beta/.env.staging 2 -
+//google.php 2 -
+/ofc/php-ofc-library/ofc_upload_image.php 2 -
+/.well-known/pki-validation/C04B9BDD2EBF6BE2E48EACEA0AC86DCE.txt 2 -
+/devmode.action 1 -
+//srx.php 2 -
+//services/phpinfo.php 1 -
+//admin/controller/extension/wpm.php 2 -
+//wp-content/themes/seotheme/mar.php 4 -
+/ELISA/infectious/hsv2_igg12.pdf 1 -
+/!.env 1 -
+/xampp/.env.production 2 -
+/assets/js/fileupload/server/php/ 1 -
+/wp-includes/blocks/update.php 4 http://simplesite.com
+/wp-content/themes/faith-theme/include/lang_upload.php 2 https://www.google.com/search
+/config/config.js 1 -
+/website/.env.local 2 -
+/.well-known/pki-validation/64D81783245AE859E57A2D8DCDB942B5.txt 2 -
+/wp-admin/css/colors/light/wp-crons.php 1 -
+/.well-known/pki-validation/83F206190988145566032C23D0E44EAB.txt 2 -
+//crm/phpinfo.php 1 -
+/wordpress/2018/ 2 -
+/.well-known/pki-validation/0CC31F60B66103ECAB3CE6737ABB89FF.txt 2 -
+/ups.php 2 -
+/wp_mnax.php 2 http://simplesite.com
+/wp-content/x.php 2 www.google.com
+/index.action 12 -
+/typo3conf/ext/hi_surveystats/res/php-ofc-library/ofc_upload_image.php 1 -
+//c.php 2 -
+/xampp/.env.staging 2 -
+/wp-json/oembed/1.0/%5C%22https:%5C/%5C/caldonbiotech.com%5C/aldolase-control-msds%5C/%5C%22 1 http://www.google.com/url
+/wp-content/plugins/tatsu/changelog.md 4 https://www.google.com/search
+/include/dialog/select_images.php 2 -
+/wp-admin/css/colors/ocean/wp-crons.php 1 -
+//small.php 2 -
+/wp-content/plugins/cach/coment/ 2 http://caldonbiotech.com/wp-content/plugins/cach/coment/index.php
+/.well-known/pki-validation/2F40766876BE5CF38E01A45EE18588BC.txt 2 -
+/wp-admin/css/colors/modern/wp-crons.php 1 -
+/wp-config-samsples.php 3 http://simplesite.com
+/.well-known/pki-validation/32507361143779162D31E6570F6ED8FE.txt 2 -
+//dev/info.php 1 -
+/bc 7 -
+/infos.php 1 -
+/.well-known/pki-validation/88CA5510BCDCC5F4A67C02089B4D607B.txt 2 -
+//1h6j5.php 1 -
+/wp-config.ORG 2 -
+/wp-content/plugins/sid/wp-info.php 2 http://simplesite.com
+/upload/ 2 -
+/wp-content/plugins/ultra-cache/ 2 -
+/.well-known/pki-validation/4E16C4257DD85C9D5668CC7EC9AB4D75.txt 2 -
+/demo/.env.production 2 -
+/laravel/phpinfo.php 1 -
+/.cordova/config.json 1 -
+/.well-known/pki-validation/DAAB87FE2689DD31091F24145D6C7D5B.txt 2 -
+/local.php 2 http://simplesite.com
+/wp-content/plugins/ubh/up.php 2 http://simplesite.com
+/.well-known/pki-validation/2AE52B391B59CF83B06286054E951836.txt 2 -
+/old/blog/ 2 -
+/wp-config.phptmp 2 -
+/content.php 4 http://simplesite.com
+/wp/wp-content/plugins/seoplugin/mar.php 2 -
+/wp-content/shell20211028.php 8 http://simplesite.com
+/vim/patior/ 4 http://caldonbiotech.com/vim/patior/index.php
+/server.js 1 -
+/.well-known/pki-validation/ECC6BD0AEA6BA90395C452D82071FB42.txt 2 -
+/mad.php 2 -
+/.well-known/pki-validation/7A198132EC3917BDDC9146599B90EA78.txt 2 -
+/wp-config.dump 2 -
+/public/.env.local 2 -
+/.well-known/pki-validation/89398990D999426911F308C145EE56E3.txt 2 -
+/edit.php 2 http://simplesite.com
+/wp-content/plugins/patior/ 2 http://caldonbiotech.com/wp-content/plugins/patior/index.php
+/wp-config.cfg 2 -
+/live/.env.staging 2 -
+/ouzknmxy.php 2 www.google.com
+/wp-content/themes/listingo/js/listingo_callbacks.js 2 https://www.google.com/search
+/wp-content/plugins/wp-seo-spy-google/ofc/php-ofc-library/ofc_upload_image.php 2 -
+/.well-known/pki-validation/9B031FFF1B7D50E4F2590EFB0AF5BBDB.txt 2 -
+/wp-content/uploads/wp_live_chat/abruzi.php 4 www.google.com
+/.well-known/pki-validation/868C54A17A4D930109E1C0716DA57E6C.txt 2 -
+/market/.env.staging 2 -
+/wp-content/plugins/wp-user-extra-fields/js/wpuef-configurator.js 2 https://www.google.com/search
+/auto_seo.php 4 caldonbiotech.com
+/.well-known/pki-validation/4D8E87F9985AA0CE5AEE78E2AC8B991E.txt 2 -
+/.well-known/pki-validation/9C771A5CAD810CD00D6293FBBDC3C610.txt 2 -
+/.well-known/pki-validation/FAC96DD2D6BD63BE6E27907B23F5D8BC.txt 2 -
+/wp-admin/classwithtostring.php 2 http://simplesite.com
+/services/.env.staging 2 -
+//old-index.php 2 -
+/_profiler/phpinfo 3 -
+/wp-22.php 2 -
+/laravel/.env.production 2 -
+/xxxss 2 -
+//xampp/phpinfo.php 1 -
+/wp-content/plugins/classic-editor/i.php 2 caldonbiotech.com
+/wp-config-backup1.txt 2 -
+//images/vuln.php 2 -
+/wp-config.php_old 2 -
+/.well-known/pki-validation/B1FA7CBFF07492E19C3CB7F20FF57AAA.txt 2 -
+/wp-content/plugins/wp-freeform/wawe.php 23 http://simplesite.com
+//01.php 2 -
+/_ignition/health-check/ 9 -
+/.aws/credentials 2 -
+/wp-content/plugins/wpzip/wpzip.php 12 -
+/api/.env.local 2 -
+/.well-known/pki-validation/88B70A08E24A61ACF7581D26DE6B8FF1.txt 2 -
+/wp-admin/wso112233.php 1 http://simplesite.com
+/assets/plugins/elfinder/elfinder.html 2 -
+/wp-admin/css/colors/ectoplasm/wp-crons.php 1 -
+/wordpress/back/ 2 -
+//wp-x.php 2 -
+/storage/.env.staging 2 -
+/css/ 2 -
+/public_html/.env.staging 2 -
+/uploads/ 2 -
+/wp-content/plugins/seoplugins/ 2 http://caldonbiotech.com/wp-content/plugins/seoplugins/index.php
+/var/cache/mage--2/ 2 -
+/wp/wp-commentin.php 2 -
+/qa/.env.staging 2 -
+/.well-known/pki-validation/D8CD239A9EAC4CDFEB6EC43CC18487C1.txt 2 -
+/backup/wp-admin/setup-config.php 1 -
+/wp-content/plugins/wp-freeform/style.php 2 http://simplesite.com
+/.well-known/pki-validation/70713D41D1CA7D3F2150C678162289F1.txt 2 -
+/.well-known/pki-validation/71527D2203ECF07E73D55C1EC9156570.txt 2 -
+/live/.env.local 2 -
+/.well-known/pki-validation/F617E4B1C6D0A628D0C51ED01194023C.txt 2 -
+/.well-known/pki-validation/ACF40540CAE0C17451BAE7BAEA89A54B.txt 2 -
+/.well-known/pki-validation/478C54F9049DBAD7DC2C8068A7918CFA.txt 2 -
+/.environment 2 -
+/wp-content/plugins/wordfence-old/modules/login-security/views/options/option-code.php 2 http://simplesite.com
+/wp-config.phpc 2 -
+/readme.php 2 -
+/.well-known/pki-validation/EE21A790A2C4D6ED907728DB0E681D97.txt 2 -
+/admin/php-ofc-library/ofc_upload_image.php 2 -
+/wordpress/oldsite/ 2 -
+//wp-blog.php 2 -
+/magento_version 4 -
+/wp-content/plugins/seo-watcher/ofc/php-ofc-library/ofc_upload_image.php 2 -
+/main 7 -
+/app/config.yml 2 -
+/wp/wp-json/wp/v2/users 3 -
+/wp-includes/1index.php 2 -
+/assets/tinymce/plugins/filemanager/dialog.php 2 -
+/.well-known/pki-validation/761B0BDA22D129CDE785A88AD3C4C83B.txt 2 -
+//wp-2022.php 2 -
+/.vscode/sftp.json 1 -
+/kyc/.env.production 2 -
+/.well-known/pki-validation/47F90ADE2FC3305010EACF0574C652A2.txt 2 -
+/wp-2022.php 2 -
+/.well-known/pki-validation/5702705D321AAD6A4783EFE02BA659BA.txt 2 -
+/Deadcode1975xxxxxxxxxxxxxxxxxxxxxxxxxxxx.php 2 -
+/about.php 4 -
+/plus/mon.php 2 -
+/.env.development.local 2 -
+/wp-content/plugins/wpputty/wpputty.php 13 -
+/.well-known/pki-validation/C36FB1185F92B7AF8B09CCB20C056EEA.txt 2 -
+/xx.php 4 -
+/.well-known/pki-validation/F78B55DE7AD410C655F4F9611EB4EF1D.txt 2 -
+/app/.env.production 2 -
+//wp-2019.php 2 -
+/website/.env.staging 2 -
+/wp-content/plugins/linkpreview/ 4 http://caldonbiotech.com/wp-content/plugins/linkpreview/index.php
+/blog/wp-admin/install.php 1 -
+/cgi-bin/cgi-bin.php 4 -
+/.well-known/pki-validation/93DA58DFE33F1FFCB75914D6CD25FD21.txt 2 -
+/wp-config.data 2 -
+/app/etc/local.xml 2 -
+/usersfiles/ 2 -
+/wp-config.phpnew 2 -
+/BLOG/ 1 -
+/atomlib.php 4 http://simplesite.com
+/admin/.env 6 -
+/wordpress/div/ 2 -
+/.well-known/pki-validation/BF444BAEACCB9BCF0A2393693F40123D.txt 2 -
+/project/.env.staging 2 -
+/media-admin.php 2 -
+/wp-info.php 11 -
+/php.php 2 -
+//lock360.php 2 -
+//services/info.php 1 -
+/wp-readme.php 4 http://simplesite.com
+/beta/.env.production 2 -
+/wp-content/themes/seotheme/mar.php 24 -
+//DKIZ.php 2 -
+/.well-known/pki-validation/A34E723469C5C7428CCBEF7A6A97756F.txt 2 -
+//laravel/info.php 1 -
+/wp-configbak 2 -
+/new/old/ 4 -
+/public/.env.staging 2 -
+/.well-known/pki-validation/37A63E311DF815245744FB8AB27A7CCC.txt 2 -
+/wp-includes/wsoyanzorng.php 10 -
+/.well-known/pki-validation/D288995335EF945935C6AD688393186D.txt 2 -
+/server/info.php 1 -
+/wp-admin/evidence-family.php 1 http://simplesite.com
+/assets/plugins/filemanager/dialog.php 2 -
+//xwxx.php 2 -
+/demo/.env.staging 2 -
+/wp-content/plugins/wp-pinterest-automatic/changelog 4 https://www.google.com/search
+/.well-known/pki-validation/96D2581D550400B608BC2997CAEE678E.txt 2 -
+/-%20Copy.env 2 -
+/wp-content/plugins/gutenipsum/doc.php 2 http://simplesite.com
+/api/phpinfo.php 1 -
+/components/com_jnews/includes/openflashchart/php-ofc-library/ofc_upload_image.php 2 -
+/wp_mna.php 2 http://simplesite.com
+/wp-content/plugins/woocommerce-upload-files/js/wcuf-admin-menu.js 2 https://www.google.com/search
+//lufix.php 2 -
+/wp-content/themes/choyu/doc.php 2 http://simplesite.com
+/wp-content/plugins/seoplugins/mar.php 17 -
+/.well-known/pki-validation/9C01254A2F243AA913886FA13824A541.txt 2 -
+/user/.env.local 2 -
+/.well-known/pki-validation/56CC931B0966080283B244F14DB52AA3.txt 2 -
+/joobi/inc/openflashchart/php-ofc-library/ofc_upload_image.php 2 -
+/wp-content/plugins/e-signature/page-template/default/style.css 2 https://www.google.com/search
+/wp-content/themes/pridmag/byps.php 6 http://simplesite.com
+/wp-admin/js/patior/ 1 http://caldonbiotech.com/wp-admin/js/patior/index.php
+/wp/blog/ 2 -
+/.well-known/pki-validation/BB112B4424FD121317B5CC5C97F170A0.txt 2 -
+/.well-known/pki-validation/028382C33A1720CB6D30A4E20984D422.txt 2 -
+/.well-known/pki-validation/DA23FF547CD719013C83CF035CBA750C.txt 2 -
+//wp-content/themes/wp-pridmag/init.php 2 -
+//help/phpinfo.php 1 -
+/C.php 2 -
+/.well-known/pki-validation/66EBB2039C2688CA18F6AAD05BB879B0.txt 2 -
+/mininew.php 2 -
+/wp-2019.php 2 -
+//x.php 2 -
+/1h6j5.php 2 -
+/config.env 2 -
+/.well-known/pki-validation/2A8504177522B320E4E5D6317852C758.txt 2 -
+//service/info.php 1 -
+/wp/installer.php 2 -
+/wikindex.php 4 -
+/.well-known/pki-validation/81F12CC125149A4DF5E682B1EED130DC.txt 2 -
+/wp-content/plugins/wp-automatic/css/wp-automatic.css 2 https://www.google.com/search
+/wp-content/themes/workreap/style.css 2 https://www.google.com/search
+/wp-config-backup.php 2 -
+//up.php 2 -
+/wp-config.php_old2019 2 -
+/3.php 2 -
+/javax.faces.resource/dynamiccontent.properties.xhtml 3 -
+//current/phpinfo.php 1 -
+/blog/wp-commentin.php 2 -
+//media-admin.php 2 -
+/config.js 1 -
+/staging/.env.production 2 -
+/.well-known/pki-validation/5144FFD5AF61873A980E231A76B36AC5.txt 2 -
+/wp-content/themes/greyd_suite/style.css 2 https://www.google.com/search
+/wp-reset.php 2 -
+/old/.env.staging 2 -
+/.s3cfg 2 -
+/mini.php 2 -
+/admin/controller/extension/extension/ 2 -
+/%21.env 1 -
+/admin/.env.local 2 -
+/wp/ 12 -
+/laravel/info.php 1 -
+/old 7 -
+/.well-known/pki-validation/7D8D2CFF12ADA23F5CD8807ACB2D8987.txt 2 -
+//wp-content/plugins/seoplugins/mar.php 4 -
+/new/.env.local 2 -
+/.well-known/pki-validation/BD492E122691475A57FAE80BBFEF0AEC.txt 2 -
+/wp-config.phpa 2 -
+/wp-content/plugins/wp-engine-module/wp-engine.php 2 www.google.com
+/.well-known/pki-validation/6160CB9824B697E31D3E596B50DD7220.txt 2 -
+/dev/.env.production 2 -
+/_wpeprivate/config.json 1 -
+/.well-known/pki-validation/0A4C19C893DC2EB3058E1A7BD1F097EE.txt 2 -
+/UserFiles/ 2 -
+/new/wp-json/wp/v2/users 3 -
+/web/.env.production 2 -
+/beta/.env.local 2 -
+/.well-known/pki-validation/2DF762FB30A9370A7A16119395195EB6.txt 2 -
+/.well-known/pki-validation/4F07D1305D4CDFEDB08CD95952BC09F3.txt 2 -
+/.well-known/pki-validation/18DAED25579841D91B8C3DB2775134D5.txt 2 -
+//wikindex.php 4 -
+/market/.env.local 2 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 260
+192.185.52.186 522 522 1024 20230131235811
+142.93.48.245 18 18 0 20230126044328
+20.245.185.110 5 7 16367 20230123202910
+141.98.252.168 5 5 114633 20230115035046
+183.197.254.254 4 4 47226 20230107093246
+186.234.80.236 3 3 28902 20230119210935
+80.76.51.210 3 5 16367 20230131215051
+3.99.170.78 3 3 22927 20230125094924
+20.199.46.72 3 5 16367 20230113191119
+20.85.124.139 3 3 260 20230110013040
+23.236.216.1 2 2 27754 20230121223708
+109.207.130.51 2 2 35086 20230121223528
+45.158.185.52 2 2 30324 20230121223514
+45.138.16.66 2 2 0 20230121000258
+54.212.238.17 2 2 174 20230118223546
+180.126.176.207 2 2 24908 20230101145824
+64.137.95.160 2 2 26518 20230121223636
+45.158.185.180 2 2 35138 20230121223559
+183.199.219.53 2 2 23732 20230105164509
+192.241.112.247 2 2 28452 20230121223625
+23.178.112.202 2 2 174 20230118223546
+23.236.216.47 2 2 28694 20230121223633
+183.199.219.111 2 2 23656 20230105232327
+149.57.16.30 2 2 45861 20230104142623
+23.236.216.133 2 2 32464 20230121223524
+121.52.152.226 1 1 206 20230114234411
+41.46.33.250 1 1 206 20230128185745
+197.207.210.198 1 1 206 20230128185938
+154.95.36.175 1 1 14863 20230121223608
+114.218.104.224 1 1 206 20230128190046
+31.43.4.228 1 1 206 20230128185709
+194.31.162.184 0 1 58366 
+183.197.254.54 1 1 11784 20230107093243
+64.145.93.159 1 1 22931 20230131094735
+182.48.73.40 1 1 206 20230107091331
+45.32.111.84 1 1 22925 20230112101500
+13.38.64.212 1 1 464 20230111221821
+103.62.92.102 1 1 206 20230114234946
+45.11.200.13 1 1 206 20230114092642
+5.27.1.136 1 1 206 20230107092236
+123.231.85.16 1 1 206 20230114234517
+39.52.41.214 1 1 206 20230114234513
+91.224.44.21 1 1 206 20230114093432
+45.192.146.194 0 1 90107 
+88.245.192.57 1 1 206 20230114093115
+37.208.134.191 1 1 206 20230114093121
+176.14.164.19 1 1 206 20230107091245
+196.77.136.132 1 1 206 20230107091637
+190.200.165.115 1 1 206 20230107092310
+45.154.84.117 2 2 29508 20230121223623
+103.100.235.159 1 1 206 20230114235202
+184.154.139.50 0 3 365157 
+103.124.111.119 1 1 206 20230114235446
+103.133.214.139 2 2 0 20230102180506
+59.29.243.48 1 1 206 20230128190058
+5.188.86.227 1 1 260 20230106014012
+78.172.20.27 1 1 206 20230128185446
+105.66.134.142 1 1 206 20230114093548
+146.212.126.174 1 1 206 20230114234357
+183.198.166.13 2 2 23638 20230105232334
+41.111.64.149 1 1 206 20230107091729
+102.159.233.4 1 1 206 20230114093220
+109.177.228.46 1 1 206 20230114234241
+200.59.188.171 1 1 206 20230114092640
+51.252.94.125 1 1 206 20230114093646
+96.126.100.78 1 1 540 20230125011931
+144.168.149.35 2 2 35932 20230121223630
+35.84.39.104 2 2 115962 20230124113951
+103.57.133.197 1 1 206 20230114093009
+23.236.216.48 2 3 91166 20230121223602
+14.63.221.211 1 1 78852 20230110091338
+41.103.254.41 1 1 206 20230128185710
+45.15.129.103 2 2 41596 20230121223516
+41.200.36.45 1 1 206 20230114093204
+190.199.139.13 1 1 206 20230114093303
+94.203.39.183 1 1 206 20230114235341
+188.3.219.179 2 2 412 20230128185840
+78.180.39.68 1 1 206 20230114234914
+78.190.40.172 1 1 206 20230107092028
+171.247.189.11 1 1 206 20230114234351
+78.188.240.57 1 1 206 20230114092527
+79.98.112.10 1 1 206 20230114092658
+14.191.63.64 1 1 206 20230114234906
+99.79.195.34 2 2 0 20230123101529
+213.24.133.5 1 1 206 20230107092136
+103.132.183.30 1 1 206 20230114235159
+103.230.209.84 1 1 206 20230114234427
+156.215.90.164 1 1 206 20230128185945
+88.231.3.44 1 1 206 20230107092446
+5.154.254.122 0 1 58366 
+220.181.51.120 0 1 34633 
+123.253.233.211 1 1 206 20230114092725
+183.198.225.218 1 1 11780 20230105150602
+41.223.109.60 1 1 206 20230114234638
+185.249.227.73 1 1 540 20230120071912
+177.222.113.46 1 1 206 20230128185923
+116.179.33.144 0 1 117284 
+196.221.168.7 1 1 206 20230128185521
+103.97.162.227 1 1 206 20230114235105
+154.126.70.109 1 1 206 20230114093406
+41.45.21.149 1 1 206 20230114093427
+41.101.93.5 1 1 206 20230114093158
+209.126.77.66 1 1 0 20230129114321
+183.198.225.187 2 2 23746 20230105150208
+183.198.225.240 1 1 22929 20230105212852
+202.165.85.6 1 1 206 20230114235303
+104.28.219.242 1 1 206 20230128185532
+175.176.24.214 1 1 206 20230107091151
+188.6.135.201 1 1 206 20230107092124
+196.188.35.129 1 1 206 20230107092603
+131.161.153.58 1 1 206 20230114093642
+94.232.184.6 1 1 206 20230114234245
+77.47.203.247 1 1 206 20230128185502
+88.230.159.163 1 1 206 20230114234959
+27.3.121.125 1 1 206 20230114092628
+110.227.157.155 1 1 206 20230114234815
+5.157.130.251 2 2 25340 20230121223706
+187.214.58.174 1 1 206 20230114234323
+218.32.96.145 1 1 206 20230114093608
+171.5.229.42 1 1 206 20230128185630
+45.192.141.55 2 2 44902 20230121223542
+165.16.28.51 1 1 206 20230107091156
+183.199.219.152 2 2 23680 20230105232339
+51.68.11.223 2 2 1142 20230105052702
+197.156.86.177 1 1 206 20230114092824
+112.134.203.194 1 1 206 20230114234551
+183.197.255.143 2 2 23746 20230105113717
+198.105.111.184 2 2 36980 20230121223518
+110.54.217.1 1 1 206 20230128185658
+124.50.249.232 1 1 206 20230114092633
+45.166.92.21 1 1 206 20230128190416
+41.109.224.59 1 1 206 20230107091114
+106.213.86.107 1 1 206 20230114235120
+77.115.174.157 1 1 206 20230107092204
+187.204.50.88 1 1 206 20230114092804
+184.22.149.85 1 1 206 20230128185815
+181.115.60.76 1 1 206 20230128185432
+41.253.50.7 1 1 206 20230114093623
+113.123.254.95 1 1 206 20230128185344
+183.197.10.114 2 2 23560 20230105150607
+144.168.149.31 2 2 26562 20230121223637
+66.42.224.229 2 2 115962 20230116135927
+94.254.238.48 1 1 206 20230107091402
+146.190.169.85 1 1 0 20230124003521
+91.207.107.182 1 1 206 20230128185841
+180.74.233.84 1 1 206 20230114234012
+45.154.12.98 1 1 571 20230103160032
+88.135.80.124 1 1 206 20230114093544
+176.235.151.170 1 1 206 20230107092536
+205.253.124.16 1 1 206 20230114234154
+4.224.26.107 1 1 260 20230112102158
+160.177.196.107 1 1 206 20230128190002
+23.229.110.201 2 2 39478 20230121223530
+126.27.120.15 1 1 206 20230114235109
+183.197.254.66 1 1 11779 20230107093246
+31.47.0.212 1 1 206 20230128190114
+154.92.114.4 2 2 32038 20230121223534
+46.172.137.159 1 1 206 20230114093739
+154.85.101.170 2 2 29044 20230121223512
+165.232.163.168 1 1 540 20230119184428
+1.47.3.240 1 1 206 20230114234932
+176.59.145.4 1 1 206 20230114092453
+27.4.29.125 1 1 206 20230107092140
+45.65.233.114 1 1 206 20230114093104
+190.185.144.199 1 1 206 20230107091846
+14.187.101.129 1 1 206 20230128190129
+52.15.77.30 2 2 174 20230118223546
+41.103.173.139 1 1 206 20230107091848
+124.29.216.131 1 1 206 20230114235121
+183.198.166.8 2 2 23688 20230105232318
+221.231.28.209 1 1 11784 20230101150446
+171.235.93.229 1 1 206 20230114235331
+23.236.170.150 0 1 58366 
+64.43.90.117 0 1 58366 
+95.164.232.69 2 2 44204 20230121223610
+113.191.170.95 1 1 206 20230128185951
+103.113.208.33 1 1 206 20230114092656
+103.171.212.218 1 1 206 20230114093725
+91.246.195.156 0 1 58366 
+154.194.10.188 2 2 32430 20230121223522
+187.114.1.171 1 1 206 20230107091106
+5.157.131.221 1 1 17414 20230121223520
+79.140.150.137 1 1 206 20230128190126
+185.187.76.185 1 1 206 20230128185633
+217.164.57.67 1 1 206 20230107092516
+8.41.37.237 2 2 5952 20230116112618
+85.146.123.214 1 1 206 20230107092542
+198.20.67.203 0 6 710985 
+200.150.182.198 1 1 206 20230128185731
+38.52.221.100 1 1 206 20230114092713
+8.21.110.16 1 1 2976 20230111051533
+41.69.74.69 1 1 206 20230114235335
+193.194.127.149 1 1 206 20230114092858
+200.10.38.91 0 1 58366 
+156.238.10.3 0 1 58366 
+23.236.216.56 2 2 26286 20230121223552
+45.177.105.40 1 1 206 20230128185655
+45.186.201.210 1 1 206 20230128185742
+223.206.157.18 1 1 206 20230128185506
+192.252.220.92 2 2 115962 20230114075140
+183.197.254.252 1 1 22932 20230105212923
+212.58.103.62 1 1 206 20230128185427
+109.93.85.118 1 1 206 20230107091516
+66.94.99.113 1 1 0 20230104141746
+103.206.82.109 1 1 206 20230107091032
+189.41.7.206 1 1 206 20230107092117
+49.49.243.228 1 1 206 20230128190024
+176.109.232.115 1 1 206 20230114234501
+107.152.192.97 2 2 26596 20230121223628
+180.126.176.116 1 1 11779 20230101150617
+142.44.193.80 1 1 22953 20230108115640
+195.3.134.222 1 1 206 20230107092226
+138.128.68.13 2 2 38192 20230121223538
+182.177.223.93 1 1 206 20230107092057
+37.34.224.86 1 1 206 20230114234835
+180.75.232.2 1 1 206 20230114093408
+49.69.183.76 2 2 23744 20230101145927
+116.97.52.249 1 1 206 20230107091422
+20.235.109.26 2 2 0 20230101132014
+191.107.163.181 1 1 206 20230114092524
+185.242.95.124 2 2 30696 20230121223555
+171.248.244.147 1 1 206 20230107091036
+45.64.161.206 1 1 206 20230128190252
+91.246.192.230 2 2 36344 20230121223532
+154.95.36.29 2 2 35118 20230121223548
+45.192.134.181 2 2 30314 20230121223509
+102.45.12.248 1 1 206 20230114093131
+39.32.108.140 1 1 206 20230114092706
+95.217.39.30 0 1 2732 
+45.87.243.42 2 2 26602 20230121223632
+39.44.238.12 1 1 206 20230107092315
+116.179.33.83 0 1 128637 
+186.28.29.156 1 1 206 20230128185746
+181.160.196.64 1 1 206 20230114093651
+184.154.76.20 0 6 509408 
+20.124.15.165 2 2 0 20230106132259
+59.99.1.73 1 1 206 20230114234403
+154.182.74.19 1 1 206 20230114092806
+23.236.168.199 2 2 40658 20230121223526
+194.44.36.178 1 1 206 20230128190411
+154.95.36.10 2 2 31042 20230121223545
+37.35.67.255 1 1 206 20230128190406
+5.157.130.115 2 2 26644 20230121223704
+173.249.56.171 0 2 5464 
+195.189.248.115 1 1 206 20230128185649
+103.176.125.149 1 1 206 20230128185342
+104.144.26.118 2 2 43324 20230121223536
+49.69.183.176 2 2 23730 20230101163954
+49.37.54.224 1 1 206 20230114233946
+42.112.231.13 1 1 206 20230128190248
+91.246.194.225 0 1 58366 
+179.0.104.173 1 1 206 20230128190127
+31.134.214.46 1 1 206 20230107092046
+183.197.95.161 1 1 11780 20230105150606
+27.123.255.245 1 1 206 20230114093521
+63.155.44.120 1 1 206 20230107091731
+88.236.70.144 1 1 206 20230114093306
+202.165.32.142 1 1 206 20230114093036
+180.75.253.115 1 1 206 20230128185808
+116.71.150.176 1 1 206 20230107091424
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20230101 22 22 95945 16
+20230102 17 17 0 11
+20230103 17 17 571 10
+20230104 23 23 45861 13
+20230105 46 46 295451 27
+20230106 17 17 260 13
+20230107 52 52 42351 48
+20230108 21 21 114656 12
+20230109 13 13 0 9
+20230110 20 20 79112 14
+20230111 16 16 3440 11
+20230112 15 15 23185 12
+20230113 20 22 16367 10
+20230114 95 95 131412 87
+20230115 16 16 22930 11
+20230116 18 18 121914 9
+20230117 20 23 280554 13
+20230118 38 38 1546 13
+20230119 19 19 29442 11
+20230120 15 15 540 12
+20230121 87 104 2246878 45
+20230122 19 21 74258 10
+20230123 27 29 16367 13
+20230124 22 23 118694 17
+20230125 18 18 23467 13
+20230126 35 35 0 11
+20230127 13 16 365157 9
+20230128 64 65 11384 49
+20230129 20 20 0 13
+20230130 11 11 0 8
+20230131 25 31 676025 14
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 37
+30mn-1h 61
+0s-30s 445
+5mn-15mn 8
+15mn-30mn 10
+2mn-5mn 2
+30s-2mn 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 71
+/wp-cron.php 506 0 314 314
+/xmlrpc.php 151 31106 150 150
+/index.php 27 387618 19 19
+/ 20 383386 14 14
+/wp-content/ 10 0 5 5
+/feed/ 9 48180 5 2
+/.well-known/acme-challenge/GwDg5awi7Tns4JcgZpqbqhmaROe9_XdExIfKcMNgn7E 6 522 3 3
+/contact/ 6 347886 3 3
+/wp-json/wp/v2/users 5 1922 4 4
+/wp-json/wp/v2/users/ 4 2284 1 4
+/home 3 0 3 3
+/client-testimonials/ 2 29508 1 1
+/wp-content/index.php 2 0 1 1
+/.well-known/acme-challenge/EIGSJ5_RBM8NE_-I8VEF0SBOOV2L0OQG 2 128 0 0
+/wp-includes/class.wp-dependencies.php 2 0 1 0
+/news/ 2 28452 1 1
+/author/admin/ 2 28694 1 1
+/aldolase-control-package-insert/ 2 35118 1 1
+/package-insert-3/ 2 32800 1 1
+/olympus-b/ 2 38192 1 1
+/wp-config.php 2 0 1 0
+/aldolase-reagent-package-insert/ 2 41596 1 1
+/faq/ 2 44204 1 1
+/about-us/ 2 30314 1 1
+/.well-known/acme-challenge/-DVUE4O3YFCGLG3HNFBO9LQO1TXJBDYF 2 128 0 0
+/sample-page/ 2 27754 1 1
+/aldolase-reagent-pack-msds/ 2 44902 1 1
+/wp-includes/version.php 2 0 0 0
+/2016/05/ 2 26562 1 1
+/2016/05/12/ 2 26596 1 1
+//wp-json/wp/v2/users/ 1 260 0 1
+/wp-admin/install.php 2 1080 2 2
+/wp-includes/pomo/translations.php 2 0 0 0
+/au-600/ 1 17414 1 1
+/au-400/ 2 36980 1 1
+/wp-includes/functions.wp-scripts.php 2 0 0 0
+/sputolysin-stat-pack/ 2 35138 1 1
+/aldolase-control-msds/ 2 26286 1 1
+/.well-known/acme-challenge/CYYS61UPQFAVNVS35VS97I3E7K3JKT8N 2 128 0 0
+/wp-load.php 2 0 1 1
+/cobas-mira/ 2 39478 1 1
+/.well-known/acme-challenge/7_OZWV0FFZE1EBUD3IX202SZ5-_EWCOY 2 128 0 0
+/olympus-au-400-600-640-2700-5400/ 2 43324 1 1
+/au-800/ 2 32430 1 1
+/.well-known/acme-challenge/U-RNWGUCRIEZLG9QRDU-TFSWYLAAY4YM 2 128 0 0
+/bayer-advia-1650/ 2 40658 1 1
+/wp-includes/compat.php 2 0 0 0
+/significance-of-testing-aldolase/ 2 29044 1 1
+/category/research/ 2 26602 1 1
+/sputolysin-product-highlight/ 2 30696 1 1
+/au-2700/ 2 32464 1 1
+/hitachi-717-aldolase/ 2 32038 1 1
+/msds/ 1 14863 1 1
+/2016/ 2 26518 1 1
+/dt_gallery/hospital/ 2 26644 1 1
+/dt_gallery/ 2 25340 1 1
+/aldolase-liquid-control-product-highlight/ 2 31042 1 1
+/.well-known/acme-challenge/4WKNT2VUSHGP1_Q7JZ1CU5N4B-UCYJQN 2 128 0 0
+/wp-includes/class-wp.php 2 0 0 1
+/2016/05/12/recent-study-finds-that-the-reduced-aldolase-level-is-an-indication-of-colorectal-cancer/ 2 35932 1 1
+/cgi-sys/500.html 1 464 1 1
+/wp-includes/cron.php 2 0 0 0
+/.well-known/acme-challenge/YL569UB48MOWSS5I06WJZE-67_I95RYD 2 128 0 0
+/aldolase-reagent-pack-highlights/ 2 30324 1 1
+// 1 14321 0 0
+//wp-admin/install.php 1 540 1 1
+/dimension-rxl/ 2 36344 1 1
+/wp-includes/load.php 2 0 0 0
+/wp-includes/post-thumbnail-template.php 2 0 0 0
+/beckman-cx-7/ 2 35086 1 1
+/.well-known/acme-challenge/OIB5CKYOXFJU15DN435SL7K-JV99WCH5 2 128 0 0
+END_SIDER

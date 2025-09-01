@@ -1,0 +1,823 @@
+Return-Path: <response@na.netsuite.com>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id GCeED7ibUWMtgg4A7/vpDg
+	(envelope-from <response@na.netsuite.com>)
+	for <rvairavan@caldonbiotech.com>; Thu, 20 Oct 2022 14:04:24 -0500
+Return-path: <response@na.netsuite.com>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Thu, 20 Oct 2022 14:04:24 -0500
+Received: from mail02.na.netsuite.com ([129.145.20.53]:35028)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <response@na.netsuite.com>)
+	id 1olaq7-0040rj-7I
+	for rvairavan@caldonbiotech.com;
+	Thu, 20 Oct 2022 14:04:24 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dk2016; d=na.netsuite.com;
+ h=Message-ID:List-Unsubscribe:From:Reply-To:To:Subject:Date:MIME-Version:
+ Content-Type; i=netsuite@na.netsuite.com;
+ bh=3jHUmoBaAauuNbEhHRupzhNiH4iBu4lyBYoX4RrIpro=;
+ b=d+EN/xBMcP8r6ozORy9BgePjQNwjn5jL3p9jUBdTnFf9XMKBa9xiOK5su3CLAoqK0q08vOUoAY+1
+   Dm+HFFBCYs7qIRBEyFnFER98XRT25g7B0e5ZQAl7QRXQINe17w11EVg4sxxnT/W8iLgbJlzdR9dl
+   XDNKkMYncnbmbliDYPY=
+Received: from [10.34.26.226] (10.34.140.5) by mail02.na.netsuite.com id ha6dqm2tlo86 for <rvairavan@caldonbiotech.com>; Thu, 20 Oct 2022 15:04:11 -0400 (envelope-from <response@na.netsuite.com>)
+Message-ID: <381b901c15534327a5411fb653c09e85@1439730185>
+X-Binding: 1439730185
+X-elqSiteID: 1439730185
+X-elqPod: 0xF1B94DB93BE5675EF0A64610BCE5945D8F0CC1F9D072032A60E02D51CEF3F9E5
+X-cid: 9491-23047
+List-Unsubscribe: =?utf-8?q?=3Cmailto=3Aspamproc=40fbl=2Een25=2Ecom=3Fsubject=3DListUnsub=5F1439730185=5F38?=
+ =?utf-8?q?1b901c15534327a5411fb653c09e85=3E=2C?=
+ =?utf-8?q?_=3Chttp=3A=2F=2Fapp=2Eoracle=2Enetsuite=2Ecom=2Fe=2Fu=3Fs=3D1439730185&elq=3D381b901c?=
+ =?utf-8?q?15534327a5411fb653c09e85&t=3D17=3E?=
+From: Oracle NetSuite <netsuite@na.netsuite.com>
+Reply-To: Oracle NetSuite <netsuite@na.netsuite.com>
+To: rvairavan@caldonbiotech.com
+Subject: The Hidden Costs of QuickBooks
+Date: Thu, 20 Oct 2022 15:04:11 -0400
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=-vWWJldt7F2i/GdsuVAoIHw=="
+X-Spam-Status: No, score=2.8
+X-Spam-Score: 28
+X-Spam-Bar: ++
+X-Spam-Flag: NO
+
+--=-vWWJldt7F2i/GdsuVAoIHw==
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+Content-Id: <e6d2308b-4452-4081-817d-b64a4b509cba>
+
+DQoNClZpZXcgT25saW5lIDxodHRwOi8vYXBwLm9yYWNsZS5uZXRzdWl0ZS5jb20vZS9lcz9z
+PTE0Mzk3MzAxODUmZT0yMTAzNjYwJmVscVRyYWNrSWQ9ZTE4MWMyZjhjZTM2NDUxYmFiMGZh
+NzM2MDNhNmExMTkmZWxxPTM4MWI5MDFjMTU1MzQzMjdhNTQxMWZiNjUzYzA5ZTg1JmVscWFp
+ZD0yMzA0NyZlbHFhdD0xPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgIA0KDQoNCg0KDQoiT3JhY2xlIE5ldFN1aXRlIiA8aHR0cHM6Ly93d3cubmV0
+c3VpdGUuY29tLz9lbHFUcmFja0lkPTE0NjBjOWEzMzA5MjRkYzE4ZTk1YjU3MmM3NTAzMjcy
+JmVscT0zODFiOTAxYzE1NTM0MzI3YTU0MTFmYjY1M2MwOWU4NSZlbHFhaWQ9MjMwNDcmZWxx
+YXQ9MSZlbHFDYW1wYWlnbklkPTk0OTE+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgDQpCVVNJTkVTUyBHVUlERQ0KDQpUaGUgSGlkZGVuIENvc3RzIG9mIFF1aWNr
+Qm9va3MNCg0KV2h5IENvbXBhbmllcyBTd2l0Y2ggRnJvbSBRdWlja0Jvb2tzIHRvIE5ldFN1
+aXRlDQoNCkdldCBZb3VyIENvcHkgPGh0dHBzOi8vZ28ubmV0c3VpdGUuY29tL0xQPTE0MjY0
+P2NhbXBhaWduSWQ9OTQ5MSZlbHFDYW1wYWlnbk5hbWU9RW1haWxfSG9yaXpfSGlkZGVuQ29z
+dHNRQl8xMDIyJm5zQ2FtcGFpZ25Db2RlPUVtYWlsX0hvcml6X0hpZGRlbkNvc3RzUUJfMTAy
+MiZyZWdzb3VyY2U9ZW0mZWxxVHJhY2tJZD1mMGFjMTYyY2IyZjE0YTgzYTU5YWI5YzRiYTAz
+Njk4MyZlbHE9MzgxYjkwMWMxNTUzNDMyN2E1NDExZmI2NTNjMDllODUmZWxxYWlkPTIzMDQ3
+JmVscWF0PTEmZWxxQ2FtcGFpZ25JZD05NDkxPiAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgIA0KDQpBcyB5b3VyIGNvbXBhbnkgc3RhcnRzIHRvIGdy
+b3csIHRoZSBjb3N0cyB0aGF0IGNvbWUgd2l0aCB1c2luZyBhbiBlbnRyeS1sZXZlbCBhY2Nv
+dW50aW5nIHN5c3RlbSBjYW4gc2t5cm9ja2V0Lg0KVGFrZSBhIGxvb2sgPGh0dHBzOi8vZ28u
+bmV0c3VpdGUuY29tL0xQPTE0MjY0P2NhbXBhaWduSWQ9OTQ5MSZlbHFDYW1wYWlnbk5hbWU9
+RW1haWxfSG9yaXpfSGlkZGVuQ29zdHNRQl8xMDIyJm5zQ2FtcGFpZ25Db2RlPUVtYWlsX0hv
+cml6X0hpZGRlbkNvc3RzUUJfMTAyMiZyZWdzb3VyY2U9ZW0mZWxxVHJhY2tJZD1mMzRkY2Vk
+ZGQ5Yzk0OTc4OTM0N2Q5MTVjZjY3MGMyNiZlbHE9MzgxYjkwMWMxNTUzNDMyN2E1NDExZmI2
+NTNjMDllODUmZWxxYWlkPTIzMDQ3JmVscWF0PTEmZWxxQ2FtcGFpZ25JZD05NDkxPiBhdCB0
+aGlzIHNob3J0IGd1aWRlIHRvIGxlYXJuIGhvdyBRdWlja0Jvb2tzIGhvbGRzIGJ1c2luZXNz
+ZXMgYmFjayBhbmQgd2h5IG1vdmluZyB0byBhIHVuaWZpZWQgc3VpdGUgb2YgYXBwbGljYXRp
+b25zIGVuYWJsZXMgeW91IHRvIGRvIG1vcmUgd2l0aCBsZXNzLg0KDQpHZXQgWW91ciBDb3B5
+IDxodHRwczovL2dvLm5ldHN1aXRlLmNvbS9MUD0xNDI2ND9jYW1wYWlnbklkPTk0OTEmZWxx
+Q2FtcGFpZ25OYW1lPUVtYWlsX0hvcml6X0hpZGRlbkNvc3RzUUJfMTAyMiZuc0NhbXBhaWdu
+Q29kZT1FbWFpbF9Ib3Jpel9IaWRkZW5Db3N0c1FCXzEwMjImcmVnc291cmNlPWVtJmVscVRy
+YWNrSWQ9ODMyZjQ5MjdjZjIxNDIzMTg3MGZjNjQzNTMwOTI4ZDMmZWxxPTM4MWI5MDFjMTU1
+MzQzMjdhNTQxMWZiNjUzYzA5ZTg1JmVscWFpZD0yMzA0NyZlbHFhdD0xJmVscUNhbXBhaWdu
+SWQ9OTQ5MT4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQoNClRy
+dXN0ZWQgYnk6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiJUMyIgICAiTG92ZXNh
+YyIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCg0KDQoNCg0KIk9yYWNsZSBOZXRT
+dWl0ZSIgPGh0dHBzOi8vd3d3Lm5ldHN1aXRlLmNvbS8/ZWxxVHJhY2tJZD01ZjIwYjdkMWEx
+MmI0YWYyYTg4MjdiNGFiZmY2MDBlZSZlbHE9MzgxYjkwMWMxNTUzNDMyN2E1NDExZmI2NTNj
+MDllODUmZWxxYWlkPTIzMDQ3JmVscWF0PTEmZWxxQ2FtcGFpZ25JZD05NDkxPiAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCjIzMDAgT3JhY2xlIFdheQ0KQXVzdGlu
+LCBUWCA3ODc0MQ0KVW5pdGVkIFN0YXRlcw0KKzEgNzM3Ljg2Ny4xMDAwIDx0ZWw6KzE3Mzc4
+NjcxMDAwPg0KDQpGb2xsb3cgTmV0U3VpdGUgb24gc29jaWFsIG1lZGlhIQ0KDQoiRmFjZWJv
+b2siICA8aHR0cDovL3d3dy5mYWNlYm9vay5jb20vTmV0U3VpdGU/ZWxxVHJhY2tJZD04NmM5
+YTAwN2E5ZjE0YzgxOWNiZjgwNzNiNGNiNmNmZSZlbHE9MzgxYjkwMWMxNTUzNDMyN2E1NDEx
+ZmI2NTNjMDllODUmZWxxYWlkPTIzMDQ3JmVscWF0PTEmZWxxQ2FtcGFpZ25JZD05NDkxPiAi
+TGlua2VkSW4iICA8aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2NvbXBhbnkvbmV0c3VpdGU/
+ZWxxVHJhY2tJZD1jYzBjNWVmZTEzOGY0NDFjOWFhZjg3MGRkMzQ2YTUwNyZlbHE9MzgxYjkw
+MWMxNTUzNDMyN2E1NDExZmI2NTNjMDllODUmZWxxYWlkPTIzMDQ3JmVscWF0PTEmZWxxQ2Ft
+cGFpZ25JZD05NDkxPiAiVHdpdHRlciIgIDxodHRwOi8vd3d3LnR3aXR0ZXIuY29tL05ldFN1
+aXRlP2VscVRyYWNrSWQ9ZDI5MTU2Y2Q5ZTQ5NGQ2MmE5NDE0MTRlM2YyNDI5ZjgmZWxxPTM4
+MWI5MDFjMTU1MzQzMjdhNTQxMWZiNjUzYzA5ZTg1JmVscWFpZD0yMzA0NyZlbHFhdD0xJmVs
+cUNhbXBhaWduSWQ9OTQ5MT4gIkluc3RhZ3JhbSIgPGh0dHA6Ly93d3cuaW5zdGFncmFtLmNv
+bS9vcmFjbGVuZXRzdWl0ZT9lbHFUcmFja0lkPTczNDlmZDI2ZmM1NTRmYjY4YzNmMzNiNDY3
+MjhhYTIzJmVscT0zODFiOTAxYzE1NTM0MzI3YTU0MTFmYjY1M2MwOWU4NSZlbHFhaWQ9MjMw
+NDcmZWxxYXQ9MSZlbHFDYW1wYWlnbklkPTk0OTE+ICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgIA0KwqkgT3JhY2xlLCBhbmQvb3IgaXRzIGFmZmlsaWF0ZXMuIDxodHRw
+czovL3d3dy5vcmFjbGUuY29tL2xlZ2FsL2NvcHlyaWdodC5odG1sP2VscVRyYWNrSWQ9NGUw
+NTUwMzIzM2UxNGQ3YTkwODIyNDNjN2UxNGI4ZWUmZWxxPTM4MWI5MDFjMTU1MzQzMjdhNTQx
+MWZiNjUzYzA5ZTg1JmVscWFpZD0yMzA0NyZlbHFhdD0xJmVscUNhbXBhaWduSWQ9OTQ5MT4N
+ClRlcm1zIG9mIFVzZSBhbmQgUHJpdmFjeSA8aHR0cHM6Ly93d3cub3JhY2xlLmNvbS9sZWdh
+bC9wcml2YWN5L2luZGV4Lmh0bWw/ZWxxVHJhY2tJZD0zMzc4ZDU1OTJhZDc0NGYzYjQyZDI0
+YTY3OGIzOTMxOCZlbHE9MzgxYjkwMWMxNTUzNDMyN2E1NDExZmI2NTNjMDllODUmZWxxYWlk
+PTIzMDQ3JmVscWF0PTEmZWxxQ2FtcGFpZ25JZD05NDkxPiB8IENvbnRhY3QgVXMgPGh0dHBz
+Oi8vd3d3Lm9yYWNsZS5jb20vY29ycG9yYXRlL2NvbnRhY3QvZ2xvYmFsLmh0bWw/ZWxxVHJh
+Y2tJZD05MTJiZTAwZjExMjc0MDdjYjc0OGJiNDBlOTdiODY1NiZlbHE9MzgxYjkwMWMxNTUz
+NDMyN2E1NDExZmI2NTNjMDllODUmZWxxYWlkPTIzMDQ3JmVscWF0PTEmZWxxQ2FtcGFpZ25J
+ZD05NDkxPg0KQ29kZSBvZiBDb25kdWN0IDxodHRwczovL3d3dy5vcmFjbGUuY29tL2NvcnBv
+cmF0ZS9ldmVudC1jb2RlLW9mLWNvbmR1Y3QuaHRtbD9lbHFUcmFja0lkPTIyOTVhNGI2Y2Ji
+MjRjNzBhMDhhMmQ4ODZjZjBjM2U2JmVscT0zODFiOTAxYzE1NTM0MzI3YTU0MTFmYjY1M2Mw
+OWU4NSZlbHFhaWQ9MjMwNDcmZWxxYXQ9MSZlbHFDYW1wYWlnbklkPTk0OTE+IHwgTWFuYWdl
+IEVtYWlsIFByZWZlcmVuY2VzIDxodHRwczovL2dvLm5ldHN1aXRlLmNvbS9TdWJzY3JpcHRp
+b25DZW50ZXI/ZWxxVHJhY2tJZD1kZDY0YTU4MTY3NTg0YTcwODc5MmYwNTRlZmNhZDljMCZl
+bHE9MzgxYjkwMWMxNTUzNDMyN2E1NDExZmI2NTNjMDllODUmZWxxYWlkPTIzMDQ3JmVscWF0
+PTEmZWxxQ2FtcGFpZ25JZD05NDkxPiB8IFVuc3Vic2NyaWJlIGZyb20gQWxsIDxodHRwczov
+L2dvLm5ldHN1aXRlLmNvbS9TdWJzY3JpcHRpb25DZW50ZXI/ZWxxVHJhY2tJZD1lNDcyMTlm
+ODlkYjc0ODVkYjFmMGVhODZjMjE2MTYyOSZlbHE9MzgxYjkwMWMxNTUzNDMyN2E1NDExZmI2
+NTNjMDllODUmZWxxYWlkPTIzMDQ3JmVscWF0PTEmZWxxQ2FtcGFpZ25JZD05NDkxPg0KDQo=
+
+--=-vWWJldt7F2i/GdsuVAoIHw==
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+Content-Id: <467b2f08-7a3e-4091-8155-c5c36f4aeaf2>
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+
+
+    <meta property="og:title" content="The Hidden Costs of QuickBooks">
+    <meta property="og:description" content="Take a look at this short guide to learn how QuickBooks holds businesses back and why moving to a unified suite of applications enables you to do more with less.">
+    <meta property="og:image" content="https://nlcorp.app.netsuite.com/core/media/media.nl?id=347820114&c=NLCORP&h=x_YFQvKCbgo_7MroLtt1rnzsF-NJj3_TuFbLuxzaKALKxpkw">
+    <meta property="og:site_name" content="NetSuite">
+
+    <meta property="article:publisher" content="https://www.facebook.com/NetSuite">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@NetSuite">
+    <meta name="twitter:url" content="http://www.netsuite.com">
+    <meta name="twitter:title" content="The Hidden Costs of QuickBooks">
+
+    <meta name="twitter:description" content="Take a look at this short guide to learn how QuickBooks holds businesses back and why moving to a unified suite of applications enables you to do more with less.">
+    <meta name="twitter:image" content="https://nlcorp.app.netsuite.com/core/media/media.nl?id=347820114&c=NLCORP&h=x_YFQvKCbgo_7MroLtt1rnzsF-NJj3_TuFbLuxzaKALKxpkw">
+
+    <title>The Hidden Costs of QuickBooks</title>
+
+    <!--[if mso]>
+    <style>
+
+      * {
+      font-family: sans-serif;
+      }
+    </style>
+    <![endif]-->
+
+    <!--[if !mso]><!-->
+    <link href='http://images.oracle.netsuite.com/Web/OracleAmericaIncInternal/{0fa4c338-3f7d-4da0-8fb4-9c524872edc7}_OracleSans-Eloqua.css' rel='stylesheet' type='text/css'>
+    <link href='https://nlcorp.app.netsuite.com/c.NLCORP/portal/common/form/landing_pages/css/OracleSans.css' rel='stylesheet' type='text/css'>
+    <!--<![endif]-->
+
+    <style>
+
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        #MessageViewBody,
+        #MessageWebViewDiv {
+            width: 100% !important;
+        }
+
+        
+table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        th {
+            font-weight: normal;
+        }
+
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            
+-ms-interpolation-mode: bicubic;
+        }
+
+        a[x-apple-data-detectors],
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+     
+   .im {
+            color: inherit !important;
+        }
+
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+
+        img.g-img+div {
+            display: none !important;
+        }
+
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+
+        .button-td-primary:hover,
+        .button-a-primary:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+  
+      }
+
+
+        /* Media Queries */
+
+        @media screen and (max-device-width: 768px) { 
+
+            .email-comp-logo {
+                padding-right: 5px !important;
+            }
+
+            .email-comp-logo img {
+
+            }
+
+            .email-cat {
+                padding-right: 5px !important;
+            }
+
+            .email-cat p { 
+
+            }
+
+            .email-title {
+                padding-right: 5px !important;
+            }
+
+            
+.email-title p { 
+
+            }
+            
+            .email-subtitle {
+                padding-right: 5px !important;
+            }
+
+            .email-subtitle p {
+
+            }
+
+            .header-mob {
+                background-image: url('https://nlcorp.app.netsuite.com/core/media/media.nl?id=347820217&c=NLCORP&h=VfewutoAE8qR72gnQDnAm265ic5OLRZeyIbeRupqI3AviaLm') !important;
+                background-size: cover !important;
+                background-repeat: no-repeat 
+!important;
+                background-position: center center !important;
+                background-color: #312d2a !important;
+            }
+
+        }
+
+        @media screen and (max-width: 595px) {
+            .email-container {
+                width: 100% !important;
+                margin: auto !important;
+            }
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                
+max-width: 100% !important;
+                direction: ltr !important;
+            }
+            .stack-column-center {
+                text-align: center !important;
+                height: auto !important;
+            }
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+     
+       table.center-on-narrow {
+                display: inline-block !important;
+            }
+            .desktop-only {
+                display: none !important;
+            }
+            .trusted-sec {
+                width: 100% !important;
+                box-sizing: border-box;
+            }
+            .trust-left,
+            .trust-right {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                text-align: center 
+!important;
+            }
+            .trust-left {
+                padding: 0 0 15px !important;
+            }
+            .feedback-sec {
+                width: 100% !important;
+            }
+            .footer-tr {
+                padding-top: 0 !important;
+            }
+            .left-footer td,
+            .right-footer td {
+                text-align: center !important;
+                padding-left: 30px !important;
+                padding-right: 30px !important;
+                
+font-size: 15px !important;
+                line-height: 1.75 !important;
+            }
+            .left-footer td font,
+            .right-footer td font {
+                font-size: 15px !important;
+                line-height: 1.75 !important;
+            }
+            .left-footer td a,
+            .right-footer td a {
+                color: #fff !important;
+            }
+
+            .top-right-thumb {
+                padding: 15px 10px 15px 10px !important;
+            }
+
+         
+   .top-right-thumb img {
+                max-width: 100% !important;
+                height: auto !important;                    
+            }
+
+            .email-comp-logo {
+                padding-right: 5px !important;
+            }
+
+            .email-comp-logo img {
+
+            }
+
+            .email-cat {
+                padding-right: 5px !important;
+            }
+
+            .email-cat p { 
+
+            }
+
+            .email-title {
+                padding-right: 5px 
+!important;
+            }
+
+            .email-title p { 
+
+            }
+            
+            .email-subtitle {
+                padding-right: 5px !important;
+            }
+
+            .email-subtitle p {
+
+            }
+
+            .header-mob {
+                background-image: url('https://nlcorp.app.netsuite.com/core/media/media.nl?id=347820217&c=NLCORP&h=VfewutoAE8qR72gnQDnAm265ic5OLRZeyIbeRupqI3AviaLm') !important;
+                background-size: cover !important;
+            
+    background-repeat: no-repeat !important;
+                background-position: center center !important;
+                background-repeat: repeat !important;
+                background-color: #312d2a !important;
+            }
+
+        }
+
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u~div .email-container {
+                min-width: 320px !important;
+            }
+        }
+
+        @media only screen and (min-device-width: 375px) 
+and (max-device-width: 413px) {
+            u~div .email-container {
+                min-width: 375px !important;
+            }
+        }
+
+        @media only screen and (min-device-width: 414px) {
+            u~div .email-container {
+                min-width: 414px !important;
+            }
+        }
+
+        @media screen and (max-width: 575px) { 
+
+            .email-title p { 
+                font-size: 20px !important;
+                line-height: 24px !important;
+            }
+
+  
+          .email-cat p { 
+                font-size: 12px !important;
+            }
+
+            .email-subtitle p {
+                font-size: 14px !important;
+                line-height: 16px !important;
+            }
+
+            .em-cta p a {
+                font-size: 12px !important;
+            }
+            
+        }
+
+        @media screen and (max-width: 425px) { 
+
+            .top-right-thumb {
+                padding: 15px 10px 15px 10px !important;
+            }
+
+       
+ }
+
+        @media screen and (max-width: 320px) { 
+
+            .email-title p {
+                font-size: 13px !important;
+                line-height: 15px !important;
+            }
+
+        }
+    </style>
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+  
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #dadee0; font-family: 'Oracle Sans', sans-serif;"><div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    Still on QuickBooks? The damage may be greater than you think&#8230;
+</div><!-- Email Header (Redwood) - Start -->
+<center style="width: 100%;">
+    <!--[if mso | IE]>
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%"">
+        <tr>
+            <td>
+                <![endif]--><!-- Email Body : BEGIN -->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="email-container" style="margin: auto;" width="600">
+                    <tbody>
+                        <tr>
+                            <td style="padding: 0; color: #ffffff;">
+
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" style="font-family: 'Oracle Sans', Arial, sans-serif; font-size: 12px; line-height: 1; color: #666666; padding: 15px 30px;">
+
+                                                <a data-targettype="sysaction" href="http://app.oracle.netsuite.com/e/es?s=1439730185&e=2103660&elqTrackId=e181c2f8ce36451bab0fa73603a6a119&elq=381b901c15534327a5411fb653c09e85&elqaid=23047&elqat=1" style="color: #00b5ef; text-decoration: underline !important;" target="_blank">View Online</a><!--&nbsp;<a href="http://oracle.netsuite.com/SubscriptionCenter?elqTrackId=a6df4506191646e391b8221359f71c43">List-Unsubscribe</a>-->
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- Footer Section - End -->
+                    </tbody>
+                </table>
+                <!-- Email Body : END --><!--[if mso | IE]>
+            </td>
+        </tr>
+    </table>
+    <![endif]-->
+</center>
+
+<!-- Email Header (Redwood) - End -->
+
+
+  
+  
+    <center style="width: 100%; background-color: #dadee0;">
+      <!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #dadee0;">
+        <tr>
+          <td>
+            <![endif]-->
+            <!-- Email Body : BEGIN -->
+
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto;" class="email-container">
+              
+              <!-- Top Background Strip - Start -->
+                <tr>
+                <td style="line-height: 0px;">
+
+                  <img src="https://nlcorp.app.netsuite.com/core/media/media.nl?id=339095175&c=NLCORP&h=9Pf4Azjh8fW68nQQK2bC7OGkFpAtSTzFagiHeC6F6kObbFXX" style="width: 100%; min-height: 12px !important; margin:0; padding:0;">
+                </td>
+                </tr>
+                <!-- Top Background Strip - End -->
+              
+              
+              <!-- Header Section - Start -->
+              <tr>
+
+                <td style="padding: 0; background-color: #312d2b;" class="header-mob">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="header-mob">
+                    <tr>
+
+                      <th valign="bottom" width="66%" class="header-mob" style="background-color: #312d2b; background-image: url('https://nlcorp.app.netsuite.com/core/media/media.nl?id=347820217&c=NLCORP&h=VfewutoAE8qR72gnQDnAm265ic5OLRZeyIbeRupqI3AviaLm'); background-size:cover; background-repeat: no-repeat;background-position:center; background-size: 100%; padding: 0; text-align: left;">
+                          <!--[if gte mso 9]>
+
+                            <v:rect xmlns_v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; background-color:#312d2b;">
+                            <v:fill type="frame" src="https://nlcorp.app.netsuite.com/core/media/media.nl?id=347820217&c=NLCORP&h=VfewutoAE8qR72gnQDnAm265ic5OLRZeyIbeRupqI3AviaLm" />
+                            <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                            <![endif]-->
+                      
+                            <div>
+                              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                  <td style="padding: 30px 30px 15px; text-align: left; line-height: 1;" class="email-comp-logo">
+
+                                    <a href="https://www.netsuite.com/?elqTrackId=1460c9a330924dc18e95b572c7503272&elq=381b901c15534327a5411fb653c09e85&elqaid=23047&elqat=1&elqCampaignId=9491" style="display: block;" target="_blank"><img src="https://nlcorp.app.netsuite.com/c.NLCORP/portal/common/form/landing_pages/img/logos/logo-oracle_netsuite_transparent_white_2x.png" width="200" height="" alt="Oracle NetSuite" border="0" style="width: 100%; max-width: 200px; height: auto;"></a>
+
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="font-family: 'Oracle Sans Bold', 'Oracle Sans', sans-serif; font-size: 14px; mso-line-height-rule:exactly;line-height: 1; color: #ffffff; padding: 110px 30px 10px 30px; valign:bottom; text-align: center;">
+                                    <p style="margin: 0;">BUSINESS GUIDE</p>
+                                  </td>
+
+                                </tr>
+                                <tr>
+                                  <td style="font-family: 'Oracle Sans Bold', 'Oracle Sans', sans-serif; font-size: 29px; font-weight: bold; line-height: 1.15; color: #ffffff; padding: 0 30px 8px; text-align: center;">
+                                    <p style="margin: 0; line-height: 35px; font-family: 'Oracle Sans Bold', 'Oracle Sans', sans-serif; font-weight: bold;">The Hidden Costs of QuickBooks</p>
+
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="font-size: 17px; line-height: 1.15; color: #ffffff; padding: 0 30px 15px; text-align: center;">
+                                    <p style="margin: 0; font-family: 'Oracle Sans', sans-serif; line-height: 21px;">Why Companies Switch From QuickBooks to NetSuite</p>
+                                  </td>
+                                </tr>
+
+                                <tr>
+                                  <td valign="top" style="color: #ffffff; padding: 0 0 30px 0; text-align: center;">
+
+                                    <!-- CTA Button - Start -->
+                                    <table border="0" cellspacing="0" cellpadding="0" align="center">
+                                        <tr>
+                                            <td align="center" style="border-radius: 7px; padding: 0;" bgcolor="#e35d5d">
+
+                                                <a href="https://go.netsuite.com/LP=14264?campaignId=9491&elqCampaignName=Email_Horiz_HiddenCostsQB_1022&nsCampaignCode=Email_Horiz_HiddenCostsQB_1022&regsource=em&elqTrackId=f0ac162cb2f14a83a59ab9c4ba036983&elq=381b901c15534327a5411fb653c09e85&elqaid=23047&elqat=1&elqCampaignId=9491" target="_blank" bgcolor="#ee644f" style="max-width: 100%; font-size: 16px; font-family: 'Oracle Sans', sans-serif; font-weight: bold; color: #ffffff; text-decoration: none; 
+text-decoration: none; border-radius: 7px; padding: 12px 15px; border: 1px solid #e35d5d; display: inline-block; text-align: center; box-sizing: border-box;">Get Your Copy</a>
+                                            </td>
+                                        </tr>
+                                     </table>
+                                    <!-- CTA Button - End -->
+    
+                                  </td>
+                                </tr>
+                              </table>
+
+                            </div>
+                            <!--[if gte mso 9]>
+                          </v:textbox>
+                        </v:rect>
+                        <![endif]-->
+                      </th>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- Header Section - End -->
+              <!-- Content Section - Start -->
+              <tr>
+                <td style="background-color: #f1f2f2;">
+
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f1f2f2;">
+                    <tr>
+                      <td style="padding: 30px 30px 0; font-family: 'Oracle Sans', sans-serif; font-size: 14px; line-height: 20px; color: #312d2a; background-color: #f1f2f2;">
+                        <p style="margin: 0 0 15px; font-family: 'Oracle Sans', sans-serif;">As
+ your company starts to grow, the costs that come with using an entry-level accounting system can skyrocket.</p>
+                        <p style="margin: 0 0 15px; font-family: 'Oracle Sans', sans-serif;">
+<a href="https://go.netsuite.com/LP=14264?campaignId=9491&elqCampaignName=Email_Horiz_HiddenCostsQB_1022&nsCampaignCode=Email_Horiz_HiddenCostsQB_1022&regsource=em&elqTrackId=f34dceddd9c949789347d915cf670c26&elq=381b901c15534327a5411fb653c09e85&elqaid=23047&elqat=1&elqCampaignId=9491" target="_blank" style="text-decoration: none; color: #427e96; font-weight: bold;">Take a look</a>
+ at this short guide to learn how QuickBooks holds businesses back and why moving to a unified suite of applications enables you to do more with less.</p>
+                        
+                        
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 30px; background-color: #f1f2f2;">
+
+                        <!-- CTA Button - Start -->
+
+                            <table border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                    <td align="center" style="border-radius: 7px; padding: 0;" bgcolor="#e35d5d">
+
+                                        <a href="https://go.netsuite.com/LP=14264?campaignId=9491&elqCampaignName=Email_Horiz_HiddenCostsQB_1022&nsCampaignCode=Email_Horiz_HiddenCostsQB_1022&regsource=em&elqTrackId=832f4927cf214231870fc643530928d3&elq=381b901c15534327a5411fb653c09e85&elqaid=23047&elqat=1&elqCampaignId=9491" target="_blank" bgcolor="#ee644f" style="max-width: 100%; font-size: 16px; font-family: 'Oracle Sans', sans-serif; font-weight: bold; color: #ffffff; text-decoration: none; 
+text-decoration: none; border-radius: 7px; padding: 12px 15px; border: 1px solid #e35d5d; display: inline-block; text-align: center; box-sizing: border-box;">Get Your Copy</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- CTA Button - End -->
+
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- Content Section - End -->
+              <!-- Trusted By Section - Start -->
+              <tr>
+                <td align="center" style="padding: 35px 30px; background-color: #ffffff;">
+                  <table width="500" border="0" cellspacing="0" cellpadding="0" align="center" class="trusted-sec">
+                    <tbody>
+                      <tr>
+
+                        <td style="font-family:'Oracle Sans', Arial, sans-serif; font-size: 16px; line-height: 20px; color:#666666; text-align: center; padding-bottom: 20px;">
+                          <strong>Trusted by:</strong>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="text-align: center; width: 100%;">
+    
+                            <img alt="T3" class="trust-logo" src="https://6262239.app.netsuite.com/c.6262239/portal/common/form/eloqua/img/logos/logo-T3-email.png" style="display: inline-block; max-width: 100%; padding: 10px 0; vertical-align: middle;" />
+ &nbsp;&nbsp;&nbsp;&nbsp; <img alt="Lovesac" class="trust-logo" src="https://6262239.app.netsuite.com/c.6262239/portal/common/form/eloqua/img/logos/logo-Lovesac-email-dark-mode.png" style="display: inline-block; max-width: 100%; padding: 10px 0; vertical-align: middle;" />
+ <!--&nbsp;&nbsp;&nbsp;&nbsp; <img alt="Mystery Ranch" class="trust-logo" src="https://6262239.app.netsuite.com/c.6262239/portal/common/form/eloqua/img/logos/logo-mystery-ranch-email.png" style="display: inline-block; max-width: 100%; padding: 10px 0; vertical-align: middle;" />-->
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <!-- Trusted By Section - End -->
+
+              
+              <!-- Bottom Background Strip - Start -->
+                <tr>
+                <td style="line-height: 0px;">
+                  <img src="https://nlcorp.app.netsuite.com/core/media/media.nl?id=339095175&c=NLCORP&h=9Pf4Azjh8fW68nQQK2bC7OGkFpAtSTzFagiHeC6F6kObbFXX" style="width: 100%; min-height: 12px !important; margin:0; padding:0;">
+                </td>
+                </tr>
+                <!-- Bottom Background Strip - End -->
+              
+            </table>
+
+            <!-- Email Body : END -->
+            <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      <![endif]-->
+    </center>
+  
+
+<!-- Email Footer (Redwood) - Start -->
+<center style="width: 100%;"><!--[if mso | IE]>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%"">
+		<tr>
+			<td>
+				<![endif]--><!-- Email Body : BEGIN -->
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="email-container" style="margin: auto;" width="600">
+	
+<tbody>
+		<tr>
+			<td style="padding: 0; background-color: #312d2a; color: #ffffff;">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tbody>
+					<tr><!-- Footer Section (Left) - Start -->
+						<th class="stack-column-center left-footer" style="height: auto;" valign="top" width="50%">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td style="padding: 40px 5px 15px 30px; text-align: left; line-height: 1;">
+<a href="https://www.netsuite.com/?elqTrackId=5f20b7d1a12b4af2a8827b4abff600ee&elq=381b901c15534327a5411fb653c09e85&elqaid=23047&elqat=1&elqCampaignId=9491" style="display: inline-block;" target="_blank"><img alt="Oracle NetSuite" border="0" height="" src="https://nlcorp.app.netsuite.com/c.NLCORP/portal/common/form/landing_pages/img/logos/logo-oracle_netsuite_transparent_white_2x.png" style="width: 100%; max-width: 200px; height: auto;" width="200" /> </a></td>
+								</tr>
+								<tr>
+									
+<td style="padding: 10px 5px 40px 30px; text-align: left; line-height: 16px; font-family: 'Oracle Sans', Arial, sans-serif; font-size: 12px; color: #ffffff;">
+									<p style="margin: 0; color: #fff;"><a style="text-decoration: none !important; color: #fff;">2300 Oracle Way</a></p>
+
+									<p style="margin: 0; color: #fff;"><a style="text-decoration: none !important; color: #fff;">Austin, TX 78741</a></p>
+
+									<p style="margin: 0; color: #fff;">
+<a style="text-decoration: none !important; color: #fff;">United States</a></p>
+
+									<p style="margin: 0; color: #fff;"><a href="tel:+17378671000" style="text-decoration: none !important; color: #fff;">+1 737.867.1000</a></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</th>
+						<!-- Footer Section (Left) - End --><!-- Footer Section (Right) - Start -->
+						<th class="stack-column-center right-footer" style="height: auto;" valign="top" width="50%">
+						
+<table bgcolor="#312d2a" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td class="footer-tr" style="padding: 40px 30px 2px 5px; text-align: right; font-family:'Oracle Sans', Arial, sans-serif; font-size: 14px; line-height: 18px;">
+									<p style="margin: 0 auto;"><strong style="color: #ffffff;">Follow NetSuite on social media!</strong></p>
+									</td>
+								</tr>
+								<tr>
+									
+<td bgcolor="#312d2a" style="padding: 3px 30px 3px 30px; text-align: right; line-height: 36px; box-sizing: border-box; font-size: 0;"><a href="http://www.facebook.com/NetSuite?elqTrackId=86c9a007a9f14c819cbf8073b4cb6cfe&elq=381b901c15534327a5411fb653c09e85&elqaid=23047&elqat=1&elqCampaignId=9491" style="text-decoration: none; display: inline-block; height: 100%; line-height: 1; vertical-align: middle; font-size: 14px;" target="_blank">
+<img alt="Facebook" src="https://nlcorp.app.netsuite.com/core/media/media.nl?id=172410741&c=NLCORP&h=13ffdb524506ad942d63" style="height: auto; display: inline-block; max-height: 25px;" />&nbsp; </a>
+ <a href="https://www.linkedin.com/company/netsuite?elqTrackId=cc0c5efe138f441c9aaf870dd346a507&elq=381b901c15534327a5411fb653c09e85&elqaid=23047&elqat=1&elqCampaignId=9491" style="text-decoration: none; display: inline-block; height: 100%; line-height: 1; vertical-align: middle; font-size: 14px;" target="_blank"> <img alt="LinkedIn" src="https://nlcorp.app.netsuite.com/core/media/media.nl?id=172410746&c=NLCORP&h=86591caac6e1f9278927" style="height: auto; display: inline-block; max-height: 25px;" />&nbsp;
+ </a> <a href="http://www.twitter.com/NetSuite?elqTrackId=d29156cd9e494d62a941414e3f2429f8&elq=381b901c15534327a5411fb653c09e85&elqaid=23047&elqat=1&elqCampaignId=9491" style="text-decoration: none; display: inline-block; height: 100%; line-height: 1; vertical-align: middle; font-size: 14px;" target="_blank"> <img alt="Twitter" src="https://nlcorp.app.netsuite.com/core/media/media.nl?id=172410848&c=NLCORP&h=beee08d0f3848b4593ce" style="height: auto; display: inline-block; max-height: 25px;" />&nbsp; </a>
+ <a href="http://www.instagram.com/oraclenetsuite?elqTrackId=7349fd26fc554fb68c3f33b46728aa23&elq=381b901c15534327a5411fb653c09e85&elqaid=23047&elqat=1&elqCampaignId=9491" style="text-decoration: none; display: inline-block; height: 100%; line-height: 1; vertical-align: middle; font-size: 14px;" target="_blank"> <img alt="Instagram" src="https://nlcorp.app.netsuite.com/core/media/media.nl?id=172410951&c=NLCORP&h=df8f350ec691865fc710" style="height: auto; display: inline-block; max-height: 25px;" /> </a>
+</td>
+								</tr>
+								<tr>
+									<td bgcolor="#312d2a" style="padding: 2px 30px 40px 5px; text-align: right; font-family: 'Oracle Sans', Arial, sans-serif; font-size: 11px; line-height: 16px; color: #ffffff;">
+									<p style="margin: 0;"><a href="https://www.oracle.com/legal/copyright.html?elqTrackId=4e05503233e14d7a9082243c7e14b8ee&elq=381b901c15534327a5411fb653c09e85&elqaid=23047&elqat=1&elqCampaignId=9491" style="text-decoration: underline; color: #ffffff;" target="_blank">&copy;
+ Oracle, and/or its affiliates.</a><br />
+									<a href="https://www.oracle.com/legal/privacy/index.html?elqTrackId=3378d5592ad744f3b42d24a678b39318&elq=381b901c15534327a5411fb653c09e85&elqaid=23047&elqat=1&elqCampaignId=9491" style="text-decoration: underline; color: #ffffff;" target="_blank">Terms of Use and Privacy</a>
+ | <a href="https://www.oracle.com/corporate/contact/global.html?elqTrackId=912be00f1127407cb748bb40e97b8656&elq=381b901c15534327a5411fb653c09e85&elqaid=23047&elqat=1&elqCampaignId=9491" style="text-decoration: underline; color: #ffffff;" target="_blank">Contact Us</a><br />
+									
+<a href="https://www.oracle.com/corporate/event-code-of-conduct.html?elqTrackId=2295a4b6cbb24c70a08a2d886cf0c3e6&elq=381b901c15534327a5411fb653c09e85&elqaid=23047&elqat=1&elqCampaignId=9491" style="text-decoration: underline; color: #ffffff;" target="_blank">Code of Conduct</a>
+ | <a data-targetname="Subscription Center - 2017 (oracle.netsuite.com)" data-targettype="landingpage" href="https://go.netsuite.com/SubscriptionCenter?elqTrackId=dd64a58167584a708792f054efcad9c0&elq=381b901c15534327a5411fb653c09e85&elqaid=23047&elqat=1&elqCampaignId=9491" style="text-decoration: underline; color: #ffffff;" target="_blank">Manage Email Preferences</a>
+ | <a data-targetname="Subscription Center - 2017 (oracle.netsuite.com)" data-targettype="landingpage" href="https://go.netsuite.com/SubscriptionCenter?elqTrackId=e47219f89db7485db1f0ea86c2161629&elq=381b901c15534327a5411fb653c09e85&elqaid=23047&elqat=1&elqCampaignId=9491" style="text-decoration: underline; color: #ffffff;" target="_blank">Unsubscribe from All</a></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</th>
+						<!-- Footer Section (Right) - End -->
+					</tr>
+				
+</tbody>
+			</table>
+			</td>
+		</tr>
+		<!-- Footer Section - End --><!-- Clear Spacer : BEGIN -->
+		<tr>
+			<td height="40" style="font-size: 0px; line-height: 0px;">&nbsp;</td>
+		</tr>
+		<!-- Clear Spacer : END -->
+	</tbody>
+</table>
+<!-- Email Body : END --><!--[if mso | IE]>
+			</td>
+		</tr>
+	</table>
+	<![endif]--></center>
+<!-- Email Footer (Redwood) - End -->
+
+
+<img src='https://s1439730185.t.en25.com/e/FooterImages/FooterImage1?elq=381b901c15534327a5411fb653c09e85&siteid=1439730185' alt="" border=0 width=1px height=1px></body></html>
+--=-vWWJldt7F2i/GdsuVAoIHw==--

@@ -1,0 +1,246 @@
+Return-Path: <andrew.griffin@docusign.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id AF1FJmlFaWNFGwkA7/vpDg
+	(envelope-from <andrew.griffin@docusign.com>); Mon, 07 Nov 2022 11:50:33 -0600
+Return-path: <andrew.griffin@docusign.com>
+Envelope-to: gloria@caldonbiotech.com
+Delivery-date: Mon, 07 Nov 2022 11:50:33 -0600
+Received: from mail-vk1-f180.google.com ([209.85.221.180]:33767)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.95)
+	(envelope-from <andrew.griffin@docusign.com>)
+	id 1os6GX-003Cc6-91
+	for gloria@caldonbiotech.com;
+	Mon, 07 Nov 2022 11:50:33 -0600
+Received: by mail-vk1-f180.google.com with SMTP id i15so7240596vka.0
+        for <gloria@caldonbiotech.com>; Mon, 07 Nov 2022 09:50:27 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=docusign.com; s=google;
+        h=to:subject:message-id:date:mime-version:from:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=viS8uifpw6qAAKYIziMupb1kK0JaG3T+BP0mnr+aQoo=;
+        b=gNe3noqhSPRCl8Rv7Otu0QDdLWP8MW1xZdkKxMmKCz7UXU+Z4o+Jk+JcuyFfG2tq2f
+         7LILwE9X6C/Sf7Q3FoAhj0XvYy0Xz+eC2B5aI0/7YXtOA3a4d1xEIH6+400NnORCQ9ws
+         YOMJdITPSLc/LS+dIU8l92HOP7Wt7pGr2XIbO56hJpurrIGw16QtE9suGyIZceN5np9b
+         MH/uNVdZ9ydJ3jG2gHgpJfkNwPBqdidBoHxQPvAykaSJytyf1nkccbWUbz8ZZMisq1c3
+         rUKd2LQ0ByHWR612P90WhT9En3tgshEGRJ2XSO9Eud/gpxkFBPqsTj0Wah1MtC/ZW6Zi
+         leoA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:subject:message-id:date:mime-version:from:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=viS8uifpw6qAAKYIziMupb1kK0JaG3T+BP0mnr+aQoo=;
+        b=pPHLEjP/+WuY/1Bo2JpBUzVOMU0h0Xj/5/M/N8rRiKFDk3xK8kT7B7ut4TNyd48O31
+         2yA/zwEh/4ZnHQpBlXkIGf6G4ObRfMBbG0Yv23EKGKiEB6BSGOJaUrG1jFI7kFArN3f5
+         pLoipyxAYtwlUFTR5IfYeLXQoBdtUbR16bZTISxvMJUmXID1zjoMwejfmt+5JNFvZx7f
+         GOTPj4HlFDPW8pyhIJ2xtOKj6WlHYCOg8L2b7oL96yh3DkhmU9zdTGgCGQY6vKYTRmS5
+         zZBOdz+Qfe2Vaa4fxurwkEaNYWsMGKUZJ/7kFv9Hoa0zcdGkCU5Pcoq6Wzo+DJxCMWRj
+         GDRA==
+X-Gm-Message-State: ACrzQf15ym4MWiOM/sK4iJYrExanO/HX02SkROAEqpux6DUz+GzCFnEo
+	oVItWyxVTDXdfB+7UUmtzcTHVYKhqZzflCLZ0kkT+//8Y/k=
+X-Google-Smtp-Source: AMsMyM41UhqYggsCYwSxIHPAe3RSFmezEjXeoy2nSAiLdzZ4kr31iO6Z1YfO0wGZWrtTALpknUcrR9lu1cdd2X8vrJo=
+X-Received: by 2002:ac5:c254:0:b0:3b8:26be:f5c0 with SMTP id
+ n20-20020ac5c254000000b003b826bef5c0mr8862769vkk.17.1667843421397; Mon, 07
+ Nov 2022 09:50:21 -0800 (PST)
+Received: from 193155701165 named unknown by gmailapi.google.com with
+ HTTPREST; Mon, 7 Nov 2022 09:50:20 -0800
+From: Andrew Griffin <andrew.griffin@docusign.com>
+Mime-Version: 1.0
+X-OUTREACH-SENT: true
+Date: Mon, 7 Nov 2022 09:50:20 -0800
+Message-ID: <CAHa+e30SWOAMFeQW0gAK-gYENJ90reAAzhRX6L+9f09y_DM+eA@mail.gmail.com>
+Subject: Follow Up Request
+To: Gloria Milich <gloria@caldonbiotech.com>
+Content-Type: multipart/related; boundary="000000000000ac93d305ece50efb"
+X-Spam-Status: No, score=-0.6
+X-Spam-Score: -5
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+--000000000000ac93d305ece50efb
+Content-Type: multipart/alternative; boundary="000000000000ac93d205ece50efa"
+
+--000000000000ac93d205ece50efa
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Gloria,
+
+I know you are probably busy and don=E2=80=99t have time for a demo so I in=
+cluded a
+video below on how easy it is to sign & send with DocuSign. I am out of the
+office Tuesday, but happy to schedule a quick call at a later time.
+
+<https://share.vidyard.com/watch/Ln1Fa1GjbpbsmvLh6D2e9M?vyetoken=3D26d42b70=
+-6904-435a-8a78-9b0e24e1ab10&vydata=3D%7B%22_om_id%22%3A161650800%2C%22_op_=
+id%22%3A43308788%7D>
+Check out this quick video:
+https://share.vidyard.com/watch/Ln1Fa1GjbpbsmvLh6D2e9M?
+<https://share.vidyard.com/watch/Ln1Fa1GjbpbsmvLh6D2e9M?vyetoken=3D26d42b70=
+-6904-435a-8a78-9b0e24e1ab10&vydata=3D%7B%22_om_id%22%3A161650800%2C%22_op_=
+id%22%3A43308788%7D>
+
+Best,
+Andrew
+
+
+*Put time on my calendar **here!*
+<https://click.docusign.com/c/andrew-griffin>
+
+*Andrew Griffin*| Account Executive =E2=80=93 Healthcare & Life Sciences |
+* 253-797-5990 | **docusign.com* <http://docusign.com/>
+*999 3rd Ave #1800, Seattle, WA 98104*
+
+*Our understanding is you are located in the United States or Canada. If
+this is incorrect, please accept my apology and let me know and I will
+update our system. If you would like to unsubscribe from future DocuSign
+marketing emails please reply to me or *click here
+<http://esign.docusign.com/global-unsubscribe>
+
+
+If you'd like me to stop sending you emails, please click here
+<https://click.docusign.com/api/mailings/unsubscribe/PMRGSZBCHIYTMMJWGUYDQM=
+BQFQRG64THEI5CEODGGFTGKMDBGUWTANDCMEWTCMLFGYWTSNBQMEWTAMTDHFQTMOBXMMZTGYRCF=
+QRHMZLSONUW63RCHIRDIIRMEJZWSZZCHIRES2DHKUYGENS2HFVFE4SWFVIDEVLKGZVXK5BQG43W=
+6YTCKFATOTZVJY4FK2CDKZPUQV2VHURH2=3D=3D=3D>
+
+--000000000000ac93d205ece50efa
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div><span style=3D"font-family:Calibri,sans-serif;font-size:13px">Gloria,<=
+/span></div><br><div id=3D"docs-internal-guid-15635935-7fff-5596-c284-f2342=
+c0f48b4"><div dir=3D"ltr"><span><span style=3D"font-family:Calibri,sans-ser=
+if;font-size:13px">I know you are probably busy and don=E2=80=99t have time=
+ for a demo so I included a video below on how easy it is to sign &amp; sen=
+d with DocuSign. I am out of the office Tuesday, but happy to schedule a qu=
+ick call at a later time.</span></span></div><div dir=3D"ltr"><span><span s=
+tyle=3D"font-family:Calibri,sans-serif;font-size:13px">=C2=A0</span></span>=
+</div><div dir=3D"ltr"><a href=3D"https://share.vidyard.com/watch/Ln1Fa1Gjb=
+pbsmvLh6D2e9M?vyetoken=3D26d42b70-6904-435a-8a78-9b0e24e1ab10&amp;vydata=3D=
+%7B%22_om_id%22%3A161650800%2C%22_op_id%22%3A43308788%7D" target=3D"_blank"=
+ rel=3D"noopener noreferrer"><span><img src=3D"https://lh3.googleuserconten=
+t.com/wMDDf_fV_QoSm1PEGS0ZHjSUcocm01vHnuXpeDMIfyV56ljWisTR4BJY2JpAxJlLmM9Rn=
+utryoHUGNfAJnz_CeUnUFfRM8v80LiO3yNOPKuAZl-CHUq2YJzACGKblEgy7BIoElaa" width=
+=3D"480" height=3D"270" style=3D"margin-left: 0px; margin-top: 0px"></span>=
+</a></div><div dir=3D"ltr"><span><span style=3D"font-family:Calibri,sans-se=
+rif;font-size:13px">Check out this quick video:=C2=A0</span></span><a href=
+=3D"https://share.vidyard.com/watch/Ln1Fa1GjbpbsmvLh6D2e9M?vyetoken=3D26d42=
+b70-6904-435a-8a78-9b0e24e1ab10&amp;vydata=3D%7B%22_om_id%22%3A161650800%2C=
+%22_op_id%22%3A43308788%7D" target=3D"_blank" rel=3D"noopener noreferrer"><=
+span><span style=3D"font-family:Calibri,sans-serif;font-size:13px">https://=
+share.vidyard.com/watch/Ln1Fa1GjbpbsmvLh6D2e9M?</span></span></a></div><div=
+ dir=3D"ltr"><span style=3D"font-family:Calibri,sans-serif;font-size:13px">=
+=C2=A0</span></div><div dir=3D"ltr"><span><span style=3D"font-family:Calibr=
+i,sans-serif;font-size:13px">Best,</span></span></div><div dir=3D"ltr"><spa=
+n><span style=3D"font-family:Calibri,sans-serif;font-size:13px">Andrew</spa=
+n></span></div></div><br><div><br></div><div class=3D"outreach-signature"><=
+div><span style=3D"font-family:Calibri,sans-serif;font-size:13px"><strong>P=
+ut time on my calendar=C2=A0</strong></span><a rel=3D"noopener noreferrer" =
+target=3D"_blank" href=3D"https://click.docusign.com/c/andrew-griffin"><spa=
+n style=3D"font-family:Calibri,sans-serif;font-size:13px"><strong>here!</st=
+rong></span></a></div><br><div><span style=3D"font-family:Calibri,sans-seri=
+f;font-size:13px"><strong>Andrew Griffin</strong></span><span style=3D"colo=
+r:rgb(104,106,108);font-family:Calibri,sans-serif;font-size:13px">| Account=
+ Executive =E2=80=93 Healthcare &amp; Life Sciences |</span><span style=3D"=
+color:rgb(104,106,108);font-family:Calibri,sans-serif;font-size:12pt">=C2=
+=A0</span></div><div><span style=3D"color:rgb(104,106,108);font-family:Cali=
+bri,sans-serif;font-size:13px"><strong>=C2=A0253-797-5990 |=C2=A0</strong><=
+/span><a rel=3D"noopener noreferrer" target=3D"_blank" href=3D"http://docus=
+ign.com/"><span style=3D"color:rgb(5,99,193);font-family:Calibri,sans-serif=
+;font-size:13px"><strong>docusign.com</strong></span></a><span style=3D"col=
+or:rgb(5,99,193);font-family:Calibri,sans-serif;font-size:13px"><strong>=C2=
+=A0</strong></span></div><div><span style=3D"color:gray;font-family:Calibri=
+,sans-serif;font-size:13px"><strong>999 3rd Ave #1800, Seattle, WA 98104</s=
+trong></span></div><div><img height=3D"21" width=3D"96" src=3D"cid:NwQc4HbK=
+NXsGRqbx3omv8kptwGR--PEFzoDpyjMUucc" style=3D"width: 96px; height: 21px"><s=
+pan style=3D"font-family:Calibri,sans-serif;font-size:13px">=C2=A0</span></=
+div><div><span style=3D"color:black;font-family:Calibri,sans-serif;font-siz=
+e:8pt"><em>Our understanding is you are located in the United States or Can=
+ada.=C2=A0If this is incorrect, please accept my apology and let me know an=
+d I will update our system. If you would like to unsubscribe from future Do=
+cuSign marketing emails=C2=A0please reply to me or=C2=A0</em></span><a rel=
+=3D"noopener noreferrer" target=3D"_blank" href=3D"http://esign.docusign.co=
+m/global-unsubscribe"><span style=3D"color:rgb(149,79,114);font-family:Cali=
+bri,sans-serif;font-size:8pt">click=C2=A0here</span></a></div><br><br></div=
+><div class=3D"outreach-signature outreach-unsubscribe" style=3D"font-size:=
+10px;color:#999">If you&#39;d like me to stop sending you emails, please <a=
+ href=3D"https://click.docusign.com/api/mailings/unsubscribe/PMRGSZBCHIYTMM=
+JWGUYDQMBQFQRG64THEI5CEODGGFTGKMDBGUWTANDCMEWTCMLFGYWTSNBQMEWTAMTDHFQTMOBXM=
+MZTGYRCFQRHMZLSONUW63RCHIRDIIRMEJZWSZZCHIRES2DHKUYGENS2HFVFE4SWFVIDEVLKGZVX=
+K5BQG43W6YTCKFATOTZVJY4FK2CDKZPUQV2VHURH2=3D=3D=3D">click here</a></div><im=
+g src=3D"https://click.docusign.com/api/mailings/opened/PMRGSZBCHIYTMMJWGUY=
+DQMBQFQRG64THEI5CEODGGFTGKMDBGUWTANDCMEWTCMLFGYWTSNBQMEWTAMTDHFQTMOBXMMZTGY=
+RCFQRHMZLSONUW63RCHIRDIIRMEJZWSZZCHIRGWZLJNIZUE6CKOJXTCOLNKVYG6V3OPJHWM4JRN=
+Q3WISCCJRTWOM2VOR4XUT2VOBGGMSCRHURH2=3D=3D=3D.gif" alt=3D"" width=3D"1" hei=
+ght=3D"1">
+
+--000000000000ac93d205ece50efa--
+--000000000000ac93d305ece50efb
+Content-Type: binary/octet-stream; 
+	name=NwQc4HbKNXsGRqbx3omv8kptwGR--PEFzoDpyjMUucc
+Content-Disposition: inline; 
+	filename=NwQc4HbKNXsGRqbx3omv8kptwGR--PEFzoDpyjMUucc
+Content-Transfer-Encoding: base64
+Content-ID: <NwQc4HbKNXsGRqbx3omv8kptwGR--PEFzoDpyjMUucc>
+X-Attachment-Id: da4efdfe63f1f3f0_0.0.1
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsK
+CwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/wAALCAAnALMBAREA/8QAHwAAAQUBAQEB
+AQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1Fh
+ByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZ
+WmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/9oACAEBAAA/APhf4e+OPjb8V/GWl+E/
+C/jnxbqXiDUpWS0tv+EhuE8xgm/77zbOi9z2r3XUP2WP23tBtWvz/wAJtKIfm22fi3zpv+AIlzvr
+q/2Vv+CmHxC+E/jW38J/GS/vfEHhn7R9jurjVIz/AGlpT52F3f7zqmPnR/n/AJV+xlhfQ31lDdW0
+qz20qK8U0b7ldW5DVc30b6KN9G+jfRvo31+Kf7Sn7bnxW/aU+NFz4B+F2q6npXh2TUn0zStO0OUw
+3OqNv2edLKPmw33sZ2In4mluP+CXf7TFhYt4ii1zT7nWlXz3tYNem+27v7gfZsL/APA63f2Hf27v
+iD8NfjFp3wv+K2q6hq+iXt9/ZLtrTu15pN3v2IC7/Pt3/IyP0/SvR/27vg9+1B4w/aN1rUfhanjD
+/hEZbS0WL+x9c+y229Yk37U85P48/rX6b6HHNDounpc7jcpAnm7vvb9nP49a0N9G+jdu6Ub6Z5yr
+/eo8+L+9X8+n/BO//k9j4X/9hGb/ANJpq/oO2V+Pv/BZj4T6b4Z+I3gvx1plrFbS+I7Wa01DYv8A
+rZrbZsdv9vY4T/tnXrXwj/bqi+Bn/BOLwT4i1CP+2vFqTXHh7SrGVz+/aF32O/8AsJDs/wDHPWvn
+z4c6R+19+3Yuo+KdN8aajp+gw3Dokx1R9LsN+eUhSH7+z6f8Dqz4f/au/aJ/YR+K9t4Y+Ks2oeJt
+DGxptO1S5+0i4thx51ncnv1/H74r79/ac/bk8M/Bf9nTS/iHoLRa7e+KI0Hhy1J+WV3j3+Y+OiIP
+vf7XyV+dHgOx/a//AG32v/FGieKtZGlRzuq3Q1c6XYq/eKFEPbI/Oug+Cv7bnxk/ZN+Nq/D741Xm
+oatoMN0lpqVrrEvn3NijH5LmGY/fTa2/+66VJ+19+1N8WPCH7auv+GfD/wAQ9d0vwymp2CW+n2V3
+shELwwPhP9/efzr9hPE0zWvh3VJom8uSK0mdX/usEOK/If8A4Jz/ALS/xW+LH7VmkeGPF/j/AF3x
+DoNxY3xlsr663xuUhcp+tfNGt6f41/Yd/agN3JY+V4g8O6lJcWL3cb/Z723beiun95HR6/Qb4b/8
+FofAGrQxReNPBeseGrnH72bTHS8h/wDZH/Svbfhjp/7Kn7VniG/8U+G9G8KeJ/FDyreXck1p5WoK
+/aR0fD9vvV8Tf8FIP2nviz8K/wBqvXvD3hLx/rfh3RYrGxkisLG42Qq7woXr6C/4KGft1a18BvDP
+hzwT4HuhD431nTFvbzVZFVnsbZsxqUB/5au4f/c2Zr5b+F/wW/bY+IHh23+Jvh7xP4iUzp9ps/t/
+iLy5rtMZ3pC77Nr/AO39/HeuF179uT9oDXvjJZW+seL9a8K3SajaWGoaLbu9tDHMjokuYf4Nx3Fk
+969Y/wCChX7UnxX+FX7XniPRPDXjvXdH8N2UdhMmm2d2UhG+2jdx/wAC+f8AOs34kXX7Zf7Sfh28
++KVnZ+JNI8EOputP0zRdR+yFLbHDJCrpLN8n8ePmrrP2Af20PiH8QfEF98IPGGvXOvXGr2jvoup6
+hITdW80I3vbvMPn2PGj/ADv9x6+6dG+F/wAULHS7a3TxW9usabQjSIT/ALxxnr1/Gvx7/wCCdf8A
+yex8L/8AsIzf+k01f0Hb6/JH/gtJ8SrDVvG3gHwPaTpNe6Rb3OoXyo2TF53lqiP/AMAjdv8AgdfJ
+fx28Kap4O+AXwCtL9Ghg1DSdS1mFW7vNedf+/KQ1+0n7Btjp1j+yD8KF03b9mbRI3fb/AM9n+eb/
+AMib6+QP+C3Frpp8N/Cm6faurfa7+JD/AB+Tsh3/APj2yvhz406hrFz+zT+zzFeyStp8Vlrf2Ld/
+2EHr9mf+Cf8AZ6bZ/sb/AArXT0VYH0kTPt/57M7mY/8AfZevQfHXgf4Ya9q4u/GWh+FL7U2hVPO1
+q3tpJtmf9vnbX4s/twJDH/wUB8QrabRbLqul+V5P3NnkW23ZX7p+Lplj8La27fcWxmP/AI49fhh/
+wTJ8QWnhP9rKy13UpvK0zT9G1S8uZ1RnKQpbO7vtT2r9O9H+PH7M/wC25rEHgPfp3jvUfs73UNjq
+ekTI6Kn32SR402N/uNXn3xG/4I8/Bnxas03hq81vwVeP90W1z9stk/4BL8//AI/X5f8AxK8H+MP2
+I/2krjTLTV0/4SPwvdw3VrqVl8qSoyI6cf7aP86e5r0P/gp5rP8AwkH7Vl7q2zyft2h6Tc7f7m+1
+R6s/8FMrOa3/AGtHm1FGk0+bRNImhA/ih+zIjbP+Bo9fuH4F1TStY8F6De6LNDPo1xYwyWckP3Gi
+2Ls2+2MV+Gv7b2qaNq//AAUE8R3GhtG1out2ENw8X3HuUSFJv/Hw9Wv+CoipJ+3N4rjb50eHTUf/
+AMBYa/cnwzZw2Ph/S7e3iSGCK0iRI1/gXZX4T/sRqIv+CinhFVXag8Q6ltT/ALY3NfvjX823w50v
+4r/CTxzpfizwz4X8QafrumSu9pc/2JNJsd02H5GT+4/6179efto/tl65C1lHceJUab5N9n4WVJv+
+A4hrov2b/wDgm98UPj148j8VfF611Pw/4cmuPtWozay+NS1RuPlVD86bs/ff07193ft2fsa2v7RX
+wd0rSvC0Nvpvibwqm/QExshaHYiPZ7/4EdUTb/tIPevz++C/7Y3xq/YP0q6+HHiLwLJe6baSu9tY
+67DLbSWjOcv5Myj54nf5u/U4NZ2oeG/jv/wU4+L1hql1ocml6Da/6Ml9JavFpulW5k3Ptdv9a/8A
+482B6V97/tVfsB6Z8Sv2YvCngXwQFtdc8DRY0N7kbRd/J++hkf8Ah84/Pv8A74FfCPwb/bC+N/7C
+el3Hw81nwWZtOt5XeDTvEVpNC9q7nL+TKmNyMx39++Kp+G/hT8Yv+ClHx7g8U+JdMudL0GaRIL3W
+vsjQ2Gn2aZ/c227778Pxz87/AD123/BTz9knxH4N+Kw+IfhXRrq68G3ljZws+nQs/wDZctvAkKo+
+z7ibI0YP9ar+GP20v2n/ANp7wqnwl8OaLaSXmo2/9n33iC2sJoZvIK7Heabfsi+U/M+yuf8A+Cav
+wr8Rab+1tpkOv+GNStNJfTNSs7ia8sZYYXRrZ0xudO9VvjV+x/8AGP8AYq+Lo8ZfDy21XUNAsrx7
+nSPEOjwm5a2h7RXSAfLhCUfeNj10/wDw9++PKaX/AGa3hvwz/aW3Z9t/sy587/f2edsrnfgJ+yR8
+V/20PjI3jr4i2upaf4bvbxb3WNc1aA232tFx+5tkx/cGwY+RF+lO/wCCn3w58Sax+11r0uj+GdUv
+9Oj03To4pLLT5Zo/ktkGzcq198ftlfsS6f8AtVfD3w5faffW+gePNGslWyvLzmGeJ1G62mz833vu
+v/Bz618W+Dv2T/23vBdifA3h7UNW0Hw1MzIXtfEcUdjEj/fKbX3ov+4K+Zvib8I7j4I/tQL4Gm1R
+Nc1DS9WsEuLyND+9mfyXfr/tvXun/BSjwD4q179tbxRf6Z4b1jUbJk03bc2unyzI5S1hB+dEr9tN
+I+XR7Hd8rfZ0/wDQa/D39jj4e+KdL/b+8K6lc+GdYtdPTX9QdrmbTpkhVfLuf4ilfujRRRRVS8sb
+e8j2XMEU8f8AdmQPU8cYhUKg2ov8NSVUvLG3vV2XEEUyf3Zk31NHEsEaoqqiL91VpzLmobe1itxi
+CKKNG+95abf5VZorO/sWza5897G2ef8A57GFd/51o0V8E/8ABRr9iTxP8e77TvG3gC+8vxVY2ZtL
+zSZLr7Ml/apIXRkcnaroZW+994Ef3Rn4j039ur9p34J6fB8NbrVbVb2xhS1tmv7a3vLqBB8iL5u4
+q/8AwPfXrP7Gf7BXxB+JnxgsPi58WpIxp8N+dXK3F5Hc3OqXnmb18wIWVE3/ADHv2r9dqfRRX//Z
+--000000000000ac93d305ece50efb--

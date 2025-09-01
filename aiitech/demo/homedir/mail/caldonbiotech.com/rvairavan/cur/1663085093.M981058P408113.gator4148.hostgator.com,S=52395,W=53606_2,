@@ -1,0 +1,1211 @@
+Return-Path: <mail.ihtwdyebzpicjufivtslh@messaging.aacc.org>
+Delivered-To: rvairavan@caldonbiotech.com
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id eFceOiWqIGMxOgYA7/vpDg
+	(envelope-from <mail.ihtwdyebzpicjufivtslh@messaging.aacc.org>)
+	for <rvairavan@caldonbiotech.com>; Tue, 13 Sep 2022 11:04:53 -0500
+Return-path: <mail.ihtwdyebzpicjufivtslh@messaging.aacc.org>
+Envelope-to: rvairavan@caldonbiotech.com
+Delivery-date: Tue, 13 Sep 2022 11:04:53 -0500
+Received: from mta32-144.msgfocus.com ([162.212.32.144]:36279)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <mail.ihtwdyebzpicjufivtslh@messaging.aacc.org>)
+	id 1oY8P7-001u7H-0I
+	for rvairavan@caldonbiotech.com;
+	Tue, 13 Sep 2022 11:04:53 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=msgf; d=msgfocus.com;
+ h=Subject:Message-ID:Reply-To:To:List-Unsubscribe:From:Date:MIME-Version:
+ Content-Type;
+ bh=y5fimbna9V/mywNqz3O0evQ9kYEhkqf9LUCg2ZPCpWU=;
+ b=PBpfI1vr1XI8KJL1KBBX5s47W9DSK7/rsIesAuRuE4jfmGmvgvFGL2ZuEOwHE2zwMpUL9Auw6SBE
+   jRc41o7grfKZH7hmpwDJigvQWsNeZ3iIt2rnCQ0W4FkWRLFEt9jIBtKs239SicYhGTyJtooEmO5T
+   L5k98/3YUqFIX1UVbe4=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=aacc.org; s=amf-dkim; t=1663085080;
+	bh=y5fimbna9V/mywNqz3O0evQ9kYEhkqf9LUCg2ZPCpWU=;
+	h=Subject:Message-ID:Reply-To:To:List-Unsubscribe:From:Date:
+	 MIME-Version:Content-Type;
+	b=ZrG+w40UuaiwoN9IMeWj9snnDzQp9MXmRIodhG7fdC/VD4ctW1AV7wYBWLQ1C0imF
+	 Qg0xMO6ng4xEH1yHfI3i2p75VUlqHsghEh/oyFVk/79dLQaF+dy2lHw/iZAdYNPua7
+	 11nXzAUg58W0vzLz997EKeYHpIApcz8NO2PJgBWU=
+Subject: New Guidance on POCT for Non-Laboratorians
+Message-ID: <1OEW1-7cFXonhrQ-bjs0-1uRlEWWsAFDHO6wEi9@messaging.aacc.org>
+Reply-To: "AACC - American Association for Clinical Chemistry"
+ <eservices@aacc.org>
+To: rvairavan@caldonbiotech.com
+List-Unsubscribe:
+ <mailto:mail.ihtwdyebzpicjufivtslh@messaging.aacc.org?subject=Unsubscribe>
+From: "AACC - American Association for Clinical Chemistry"
+ <eservices@aacc.org>
+Date: Tue, 13 Sep 2022 17:04:40 +0100
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="--13B950549C6ABCB1736AC71291F1C"
+X-Virtual-MTA: mta32-144
+X-Spam-Status: No, score=1.9
+X-Spam-Score: 19
+X-Spam-Bar: +
+X-Spam-Flag: NO
+
+
+----13B950549C6ABCB1736AC71291F1C
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+AACC
+This message was intended for: "rvairavan@caldonbiotech.com"::<mailto:rvair=
+avan@caldonbiotech.com>
+American Association For Clinical Chemistry
+900 Seventh Street, NW Suite 400 | Washington DC 20001
+202.857.0717 | Fax: 202.887.5093 | www.aacc.org
+https://messaging.aacc.org/c/1MVvyzuCurQLxsBqcSNYDZRepwNm
+
+Manage your e-communications or unsubscribe
+https://messaging.aacc.org/c/1MVvyOGHE7IfXsplQKrtteducmrJ=
+
+----13B950549C6ABCB1736AC71291F1C
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta name=3D"viewport" content=3D"width=3D320">
+<title></title>
+<style>
+/*  - - - - MOBILE FRIENDLY + MISC FIXES*/
+body {
+	width: 100% !important;
+	margin: 0 auto;
+	padding: 0;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+}
+a {color:#005a84;}
+* {	/* disable Font Boosting on Android. */
+	max-height: 999999em;
+	-webkit-text-size-adjust: none;
+}
+table td {
+	border-collapse: collapse;
+}
+#outlook a {
+	padding: 0;
+} /* Force Outlook to provide a "view in browser" header link. */
+.ExternalClass * {
+	line-height: 120%;
+} /* Fix for outlook.com changing the line-height */
+/*	Gmail and Outlook do not support "display: none;"										*/
+/*	To hide an element, use these styles inline:											*/
+/*		style=3D"display: block; width: 0; max-height: 0; overflow: hidden; dis=
+play: none;"	*/
+/*	Use class=3D"show" to reveal the hidden element on mobile devices.						=
+*/
+a[x-apple-data-detectors] {
+	color: inherit !important;
+	text-decoration: none !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	line-height: inherit !important;
+}
+a[href^=3D"tel"], a[href^=3D"sms"] {
+	color: inherit;
+	cursor: default;
+	text-decoration: none;
+}
+@media(max-width: 640px) {
+.fluid100 {
+	width: 100% !important;
+	height: auto !important;
+	margin: 0px auto !important;
+	padding: 0 !important;
+}
+*[class].fluid94 {
+	width: 94% !important;
+	height: auto !important;
+	text-align: left !important;
+	padding: 14px 3% 14px 3% !important;
+}
+*[class].padTextLR {
+	padding-left: 14px !important;
+	padding-right: 14px !important;
+}
+*[class].padBottom15 {
+	padding-bottom: 16px !important;
+}
+*[class].padBottom6 {
+	padding-bottom: 16px !important;
+}
+*[class].wrapText {
+	float: left !important;
+}
+*[class].fluid50 {
+	width: 50% !important;
+	height: auto !important;
+	margin: 0px auto !important;
+	padding: 5px 5px !important;
+}
+*[class].fluid4Group {
+	margin: 0 auto !important;
+	width: 100% !important;
+	text-align: center !important;
+}
+*[class].fluid4 {
+	margin: 0 auto !important;
+	padding: 20px 10px 0px 10px !important;
+	width: 165px !important;
+}
+*[class].fluid4Btn {
+	width: 165px !important;
+}
+*[class].size4img {
+	width: 165px !important;
+	height: auto !important;
+}
+*[class].mobileoff {
+	display: none !important;
+	width: 0 !important;
+}
+*[class].shadow {
+	width: 300px !important;
+	background-color: #cccccc !important;
+}
+*[class].shadow img {
+	width: 300px !important;
+	height: auto !important;
+}
+*[class].hero {
+	width: 300px !important;
+	background-color: #cccccc !important;
+}
+*[class].hero img {
+	width: 300px !important;
+	height: auto !important;
+}
+*[class].twocola {
+	margin: 0 auto !important;
+	padding: 0px 0px 14px 0px !important;
+	width: 280px !important;
+	display: block !important;
+}
+*[class].twocola img {
+	margin: 0 auto !important;
+	padding: 10px 0px 0px 0px !important;
+	width: 280px !important;
+	height: auto !important;
+}
+*[class].twocolb {
+	margin: 0 auto !important;
+	padding: 10px 10px 14px 10px !important;
+	display: block !important;
+}
+*[class].prdcta {
+	margin: 0 auto !important;
+	padding: 0px 0px 14px 10px !important;
+	width: 280px !important;
+	display: block !important;
+}
+*[class].prdcta img {
+	margin: 0 auto !important;
+	padding: 10px 0px 0px 0px !important;
+	width: 280px !important;
+	height: auto !important;
+}
+*[class].prdctb {
+	margin: 0 auto !important;
+	padding: 0px 0px 14px 10px !important;
+	display: block !important;
+}
+*[class].fourbyfour {
+	width: 300px !important;
+	margin: 0px auto !important;
+	padding: 10px !important;
+	background-color: #ffffff;
+}
+*[class].fourbtn {
+	padding-bottom: 10px !important;
+}
+*[class].footer280 {
+	margin: 0 auto !important;
+	padding: 0px 10px !important;
+	width: 90% !important;
+}
+*[class].socialGroup255 {
+	margin: 0 auto !important;
+	width: 90% !important;
+	text-align: center !important;
+}
+*[class].socialicon {
+	margin: 0 auto !important;
+	padding-top: 20px !important;
+	width: 60px !important;
+}
+table.socialGroup255 td {
+	padding: 0!important;
+}
+*[class].block {
+	display: block !important;
+}
+.centerblock, .centerblock td {
+	width: auto;
+	text-align: center;
+	display: block !important;
+}
+.centerblock img {
+	margin: 0 auto;
+}
+.fullwidth-block {
+	width: 100%;
+	display: block;
+}
+img {
+	width: auto;
+	max-width: 100%;
+}
+}
+</style>
+<style type=3D"text/css">
+@media only screen and (max-width:599px) {
+.amf__mb-none { display: none !important; }=20
+.amf__dt-none,.amf__dt-none-img {display: block !important; max-height: non=
+e !important; overflow: visible !important;}
+table.amf__dt-none {display:table !important;}
+tr.amf__dt-none {display:table-row !important;}
+th.amf__dt-none,td.amf__dt-none {display:table-cell !important;}
+.amf__dt-none {float: none !important; width: auto !important;}
+.amf__dt-none-img {height: auto !important; width: 100% !important;}
+}
+</style></head>
+<body>
+<!--Click Tracking Fix-->
+<table width=3D"640" border=3D"0" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"fluid100" style=3D"width:640px; margin:0px auto;">
+<tr>
+                                <td height=3D"10" style=3D"font-size: 1px;l=
+ine-height: 1px;border-collapse: collapse;mso-line-height-rule: exactly;">&=
+nbsp;</td>
+                            </tr>
+<tr>
+<td style=3D"color: #666666;font-size: 11px;padding:5px 0;text-align: cente=
+r;font-family: Arial, sans-serif;"><div style=3D"text-align:center"><span s=
+tyle=3D"font-size:12px">Education News Update - September 13, 2022</span></=
+div>
+</td>
+</tr>
+<tr>
+                                <td height=3D"10" style=3D"font-size: 1px;l=
+ine-height: 1px;border-collapse: collapse;mso-line-height-rule: exactly;">&=
+nbsp;</td>
+                            </tr>
+			</table>
+<a href=3D"https://messaging.aacc.org/q/1e5ItJmhvvLS54LT6LBX9nYY/sfd" targe=
+t=3D"_blank"><img src=3D"https://messaging.aacc.org/t/1uRlEWWsAFDHO6wEi9.pn=
+g" alt=3D""></a>
+<table width=3D"100%" border=3D"0" class=3D"fluid100" cellspacing=3D"0" cel=
+lpadding=3D"0" style=3D"width:100%; margin:0px auto;">
+=09
+			<tr>
+			<td bgcolor=3D"#cccccc">
+		<!-- Start header  -->
+		<table width=3D"640"  bgcolor=3D"#ffffff" border=3D"0" align=3D"center" c=
+ellpadding=3D"0" cellspacing=3D"0" class=3D"fluid100" style=3D"width:640px;=
+ margin:0px auto;" >
+=09=09=09
+				<tr>
+					<td colspan=3D"5" bgcolor=3D"#CCCCCC">
+<table class=3D"deviceWidth" width=3D"640" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" align=3D"center">
+=09=09=09=09=09
+<tr>
+                                <td height=3D"10" style=3D"font-size: 1px;l=
+ine-height: 1px;border-collapse: collapse;mso-line-height-rule: exactly;">&=
+nbsp;</td>
+                            </tr>
+						<tr>
+							<td align=3D"center" style=3D"FONT-SIZE: 11px; COLOR:#000; font-fami=
+ly: Arial;padding:15px 0;"><a href=3D"https://messaging.aacc.org/q/1thNDpdL=
+VvzNIWpnVZYcWdDl/wv">View this email online</a>.</td>
+						</tr>
+=09=09=09=09=09
+					</table>
+</td>
+				</tr>
+				<tr>
+					<td class=3D"fullwidth-block" align=3D"left" valign=3D"top" width=3D"3=
+90px"><table class=3D"fluid100"  border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0">
+							<tr>
+								<td><a href=3D"https://messaging.aacc.org/c/1MVvnMUXCJTb5BavUOM6hO4=
+1KS92"><img src=3D"http://msgfocus.com/files/amf_highroad_solution/project_=
+210/EDU_email_offerings/email-header-logo.png" alt=3D"AACC"></a></td>
+							</tr>
+						</table></td>
+					<td align=3D"right" valign=3D"top" class=3D"fullwidth-block" width=3D"=
+250" ><table  width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" >
+							<tr>
+								<td align=3D"right" style=3D"background-color:#b11f24;height:65px;p=
+adding: 0 10px;" bgcolor=3D"#b11f24"><a href=3D"mailto:education@aacc.org">=
+<img src=3D"http://msgfocus.com/files/amf_highroad_solution/project_210/EDU=
+_email_offerings/envelope-white.png" /></a>=C2=A0=C2=A0<a href=3D"https://m=
+essaging.aacc.org/c/1MVvo272MpKFvAYryGpB72qhxHNp"><img src=3D"http://msgfoc=
+us.com/files/amf_highroad_solution/project_210/EDU_email_offerings/linkedin=
+_icon_special.png" /></a>=C2=A0=C2=A0<a href=3D"https://messaging.aacc.org/=
+c/1MVvohj7W5C9VAMncy35WgMxkxrM"><img src=3D"http://msgfocus.com/files/amf_h=
+ighroad_solution/project_210/EDU_email_offerings/youtube_icon_special.png" =
+/></a>=C2=A0=C2=A0<a href=3D"https://messaging.aacc.org/c/1MVvowvd5LtElAAiQ=
+pGALv8N7n69"><img src=3D"http://msgfocus.com/files/amf_highroad_solution/pr=
+oject_210/EDU_email_offerings/twitter-bird_icon_special.png" /></a>=C2=A0=
+=C2=A0<a href=3D"https://messaging.aacc.org/c/1MVvoLHifrl8LAoeuhk5AJv2UcKw"=
+><img src=3D"http://msgfocus.com/files/amf_highroad_solution/project_210/ED=
+U_email_offerings/FB_icon_special.png" /></a></td>
+							</tr>
+							<tr>
+								<td align=3D"right" style=3D"padding:0px 10px 0 10px;color:#808284;=
+font-size:18px;    font-family: Arial, Helvetica, sans-serif;height:40px;">=
+September 13, 2022</td>
+							</tr>
+						</table></td>
+				</tr>
+=09=09=09
+		</table>
+		<!-- end header -->=20
+		<!-- start spacer -->
+		<table class=3D"fluid100" width=3D"640" align=3D"center" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"width:640px; margin:0px auto;">
+			<tr>
+				<td><table class=3D"fluid100" width=3D"100%" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0">
+						<tr>
+							<td style=3D"height:20px;background:#ffffff;"></td>
+						</tr>
+					</table></td>
+			</tr>
+		</table>
+		<!-- end spacer -->=20
+		<!-- start block 1 -->
+		<table class=3D"fluid100" width=3D"640" align=3D"center" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"width:640px; margin:0px auto;background-color:=
+#fff;">
+			<tr>
+			<td>
+		<table class=3D"fluid100" width=3D"100%" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0">
+			<tr>
+					<td bgcolor=3D"" style=3D"background:#818286;background-color:#81ada8;=
+background-color:rgb(129,173,168);color:#fff;font-family:Arial, Helvetica, =
+sans-serif;font-size:22px;font-weight:100;padding:5px;"><strong>AACC Specia=
+lty Conferences</strong></td>
+				</tr>
+		</table>
+			</td>
+			</tr>
+		<tr>
+			<td><table width=3D"100%" class=3D"fluid100" bgcolor=3D"#e6e7e9" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"background-color:#e6e7e=
+9; background-color:rgb(230,231,233);">
+					<tr>
+						<td><table class=3D"fluid100" width=3D"640" align=3D"center" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+								<tr>
+									<td width=3D"16">&nbsp;</td>
+									<td width=3D"130" align=3D"left" valign=3D"top" class=3D"block" st=
+yle=3D"padding-top:16px; padding-right:0px; padding-bottom:14px; padding-le=
+ft:0px;"><table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" class=3D=
+"fluid100">
+											<tr>
+												<td><a href=3D"https://messaging.aacc.org/c/1MVvp0Tnp7cDbAca88X=
+ApXRiH2oT"><img src=3D"http://messaging.aacc.org/i/amf_highroad_solution/pr=
+oject_756/INTLCPOCT_130x130.png?size=3D130x0&amp;w=3DBFEKoBJ_Cf2HWoLebLfEUj=
+uWLYCc" width=3D"130" alt=3D" 28th AACC Int&#39;l CPOCT Conference" style=
+=3D"border:none; display:block;"></a></td>
+											</tr>
+										</table></td>
+									<td width=3D"16" class=3D"mobileoff">&nbsp;</td>
+									<td class=3D"block" align=3D"left" valign=3D"top" style=3D"padding=
+-top:10px; padding-right:0px; padding-bottom:16px; padding-left:0px;"><tabl=
+e width=3D"100%" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"width:100%;" class=3D"fluid100">
+=09=09=09=09=09=09=09=09=09=09=09
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:600; font-size:22px; mso-=
+line-height-rule:exactly; line-height:26px; padding-top:4px; padding-right:=
+14px; padding-bottom:5px; padding-left:0px; letter-spacing:0px;">Internatio=
+nal CPOCT Symposium</td>
+												</tr>
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color: #98272a;font=
+-family:Arial, Helvetica, sans-serif;font-weight: bold;font-size:18px;mso-l=
+ine-height-rule:exactly;line-height:26px;padding-top:4px;padding-right:14px=
+;padding-bottom:5px;padding-left:0px;letter-spacing:0px;"><span style=3D"co=
+lor:#000000"><em>Meeting Evolving Patient Needs Using Point-of-Care Testing=
+</em></span></td>
+												</tr>
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:15px; m=
+so-line-height-rule:exactly; line-height:22px; padding-top:0px; padding-rig=
+ht:14px; padding-bottom:0px; padding-left:0px; letter-spacing:0px;"><strong=
+>September 21- 23 | Montreal, QC, Canada</strong><br />
+<span style=3D"color:#a52a2a"><strong>It's not too late to register!</stron=
+g></span><br />
+Hurry, the<a href=3D"https://messaging.aacc.org/c/1MVvpg5syN47BA05M0B5fcdyt=
+S3g"> 28th AACC International Critical and Point-of-Care Testing (CPOCT) Sy=
+mposium</a> is only a week away. The event promises to deliver stimulating =
+discussions on the latest science and cutting-edge technological advances t=
+hrough a keynote lecture, scientific sessions, panel discussions, and inter=
+active poster receptions.</td>
+												</tr>
+												<tr>
+													<td align=3D"left"><a href=3D"https://messaging.aacc.org/c/1MV=
+vpvhxIsVC1zO1pSeA4qzOgHHD" style=3D"color: #141416;font-family:Arial, Helve=
+tica, sans-serif;font-weight:bold;font-size:13px;mso-line-height-rule:exact=
+ly;line-height:26px;padding-top:4px;padding-right:14px;padding-bottom:5px;p=
+adding-left:0px;letter-spacing:1px;text-decoration: none;" id=3D"ASM_More" =
+name=3D"ASM_More"><img src=3D"http://msgfocus.com/files/amf_highroad_soluti=
+on/workspace_32/arrow_right_dark2.png" alt=3D"Learn more Int&#39;l CPOCT">M=
+ORE</a></td>
+												</tr>
+=09=09=09=09=09=09=09=09=09=09=09
+										</table></td>
+									<td width=3D"16">&nbsp;</td>
+								</tr>
+							</table></td>
+					</tr>
+				</table><table width=3D"100%" class=3D"fluid100" bgcolor=3D"#e6e7e9" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"background-color:#e=
+6e7e9; background-color:rgb(230,231,233);">
+					<tr>
+						<td><table class=3D"fluid100" width=3D"640" align=3D"center" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+								<tr>
+									<td width=3D"16">&nbsp;</td>
+									<td width=3D"130" align=3D"left" valign=3D"top" class=3D"block" st=
+yle=3D"padding-top:16px; padding-right:0px; padding-bottom:14px; padding-le=
+ft:0px;"><table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" class=3D=
+"fluid100">
+											<tr>
+												<td><a href=3D"https://messaging.aacc.org/c/1MVvpZFI1OEARzpSHBv=
+zITijQn0n"><img src=3D"http://messaging.aacc.org/i/amf_highroad_solution/pr=
+oject_756/AACCME_130x130.png?size=3D130x0&amp;w=3DBbkLyyQhzwcttClAhEwjbwZrZ=
+utc" width=3D"130" alt=3D"Dr. Raina Speaker at AACC Middle East " style=3D"=
+border:none; display:block;"></a></td>
+											</tr>
+										</table></td>
+									<td width=3D"16" class=3D"mobileoff">&nbsp;</td>
+									<td class=3D"block" align=3D"left" valign=3D"top" style=3D"padding=
+-top:10px; padding-right:0px; padding-bottom:16px; padding-left:0px;"><tabl=
+e width=3D"100%" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"width:100%;" class=3D"fluid100">
+=09=09=09=09=09=09=09=09=09=09=09
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:600; font-size:22px; mso-=
+line-height-rule:exactly; line-height:26px; padding-top:4px; padding-right:=
+14px; padding-bottom:5px; padding-left:0px; letter-spacing:0px;">Registrati=
+on Opens Soon =E2=80=93 AACC Middle East</td>
+												</tr>
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color: #98272a;font=
+-family:Arial, Helvetica, sans-serif;font-weight: bold;font-size:18px;mso-l=
+ine-height-rule:exactly;line-height:26px;padding-top:4px;padding-right:14px=
+;padding-bottom:5px;padding-left:0px;letter-spacing:0px;"><span style=3D"fo=
+nt-family:Arial,Helvetica,sans-serif"><strong>November 5-6, 2022, Grand Hya=
+tt Dubai, UAE</strong></span></td>
+												</tr>
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:15px; m=
+so-line-height-rule:exactly; line-height:22px; padding-top:0px; padding-rig=
+ht:14px; padding-bottom:0px; padding-left:0px; letter-spacing:0px;"><span s=
+tyle=3D"font-family:Arial,Helvetica,sans-serif">This 2-day conference will =
+include emerging topics relevant to the Middle East, while the exposition w=
+ill highlight the latest advances in mobile health, molecular diagnostics, =
+mass spectrometry, next-generation sequencing, point-of-care, automation an=
+d more. For more information, visit <a href=3D"https://messaging.aacc.org/c=
+/1MVvqeRNbuw5hzdOlt94y7EzDcEK">aaccme.com</a>.</span></td>
+												</tr>
+												<tr>
+													<td align=3D"left"><a href=3D"https://messaging.aacc.org/c/1MV=
+vqu3SlanzHz1JZkMznm0Pq2j7" style=3D"color: #141416;font-family:Arial, Helve=
+tica, sans-serif;font-weight:bold;font-size:13px;mso-line-height-rule:exact=
+ly;line-height:26px;padding-top:4px;padding-right:14px;padding-bottom:5px;p=
+adding-left:0px;letter-spacing:1px;text-decoration: none;" id=3D"ASM_More" =
+name=3D"ASM_More"><img src=3D"http://msgfocus.com/files/amf_highroad_soluti=
+on/workspace_32/arrow_right_dark2.png" alt=3D"AACC Middle East">MORE</a></t=
+d>
+												</tr>
+=09=09=09=09=09=09=09=09=09=09=09
+										</table></td>
+									<td width=3D"16">&nbsp;</td>
+								</tr>
+							</table></td>
+					</tr>
+				</table></td>
+		</tr>
+	</table><table class=3D"fluid100" width=3D"640" align=3D"center" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"width:640px; margin:0px auto;background=
+-color:#fff;">
+			<tr>
+			<td>
+		<table class=3D"fluid100" width=3D"100%" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0">
+			<tr>
+					<td bgcolor=3D"" style=3D"background:#818286;background-color:#e2a856;=
+background-color:rgb(226,168,86);color:#fff;font-family:Arial, Helvetica, s=
+ans-serif;font-size:22px;font-weight:100;padding:5px;"><strong>POCT Resourc=
+es</strong></td>
+				</tr>
+		</table>
+			</td>
+			</tr>
+		<tr>
+			<td><table width=3D"100%" class=3D"fluid100" bgcolor=3D"#e6e7e9" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"background-color:#e6e7e=
+9; background-color:rgb(230,231,233);">
+					<tr>
+						<td><table class=3D"fluid100" width=3D"640" align=3D"center" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+								<tr>
+									<td width=3D"16">&nbsp;</td>
+									<td width=3D"130" align=3D"left" valign=3D"top" class=3D"block" st=
+yle=3D"padding-top:16px; padding-right:0px; padding-bottom:14px; padding-le=
+ft:0px;"><table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" class=3D=
+"fluid100">
+											<tr>
+												<td><a href=3D"https://messaging.aacc.org/c/1MVvqJfXuQf47yPFDcq=
+4cAn5cRXu"><img src=3D"http://messaging.aacc.org/i/amf_highroad_solution/pr=
+oject_756/SightDX_130x130.png?size=3D130x0&amp;w=3DBuktP_0zfKtmoU4zWERk0A0J=
+tnVo" width=3D"130" alt=3D"POCT How-to Guide" style=3D"border:none; display=
+:block;"></a></td>
+											</tr>
+										</table></td>
+									<td width=3D"16" class=3D"mobileoff">&nbsp;</td>
+									<td class=3D"block" align=3D"left" valign=3D"top" style=3D"padding=
+-top:10px; padding-right:0px; padding-bottom:16px; padding-left:0px;"><tabl=
+e width=3D"100%" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"width:100%;" class=3D"fluid100">
+=09=09=09=09=09=09=09=09=09=09=09
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:600; font-size:22px; mso-=
+line-height-rule:exactly; line-height:26px; padding-top:4px; padding-right:=
+14px; padding-bottom:5px; padding-left:0px; letter-spacing:0px;">New Guidan=
+ce on POCT for Non-Laboratorians</td>
+												</tr>
+												<tr>
+														<td height=3D"4"></td>
+													</tr>
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:15px; m=
+so-line-height-rule:exactly; line-height:22px; padding-top:0px; padding-rig=
+ht:14px; padding-bottom:0px; padding-left:0px; letter-spacing:0px;">The ben=
+efits of point-of-care testing (POCT) are clear: better patient satisfactio=
+n, enhanced continuity of care, and faster, more effective treatment. Howev=
+er, this inherent ease-of-use and portability mean many users are not highl=
+y trained laboratory professionals. Now a <a href=3D"https://messaging.aacc=
+.org/c/1MVvqYs2Ew6yxyDBh43z1OJkZHBR">new guidance from AACC</a>, supported =
+by Sight Diagnostics, offers practical advice from AACC laboratory medicine=
+ experts to help overcome barriers and ensure high quality, reliable patien=
+t care. Download the guide now!</td>
+												</tr>
+												<tr>
+													<td align=3D"left"><a href=3D"https://messaging.aacc.org/c/1MV=
+vrdE7ObY2XyrwUVH3R35AMxge" style=3D"color: #141416;font-family:Arial, Helve=
+tica, sans-serif;font-weight:bold;font-size:13px;mso-line-height-rule:exact=
+ly;line-height:26px;padding-top:4px;padding-right:14px;padding-bottom:5px;p=
+adding-left:0px;letter-spacing:1px;text-decoration: none;" id=3D"ASM_More" =
+name=3D"ASM_More"><img src=3D"http://msgfocus.com/files/amf_highroad_soluti=
+on/workspace_32/arrow_right_dark2.png" alt=3D"POCT Testing">MORE</a></td>
+												</tr>
+=09=09=09=09=09=09=09=09=09=09=09
+										</table></td>
+									<td width=3D"16">&nbsp;</td>
+								</tr>
+							</table></td>
+					</tr>
+				</table></td>
+		</tr>
+	</table><table class=3D"fluid100" width=3D"640" align=3D"center" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"width:640px; margin:0px auto;background=
+-color:#fff;">
+			<tr>
+			<td>
+		<table class=3D"fluid100" width=3D"100%" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0">
+			<tr>
+					<td bgcolor=3D"" style=3D"background:#818286;background-color:#818286;=
+background-color:rgb(129,130,134);color:#fff;font-family:Arial, Helvetica, =
+sans-serif;font-size:22px;font-weight:100;padding:5px;"><strong>AACC Digita=
+l Offerings</strong></td>
+				</tr>
+		</table>
+			</td>
+			</tr>
+		<tr>
+			<td><table width=3D"100%" class=3D"fluid100" bgcolor=3D"#e6e7e9" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"background-color:#e6e7e=
+9; background-color:rgb(230,231,233);">
+					<tr>
+						<td><table class=3D"fluid100" width=3D"640" align=3D"center" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+								<tr>
+									<td width=3D"16">&nbsp;</td>
+									<td width=3D"130" align=3D"left" valign=3D"top" class=3D"block" st=
+yle=3D"padding-top:16px; padding-right:0px; padding-bottom:14px; padding-le=
+ft:0px;"><table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" class=3D=
+"fluid100">
+											<tr>
+												<td><a href=3D"https://messaging.aacc.org/c/1MVvrsQcXRPxnyfsyNk=
+yGhrQzmUB"><img src=3D"http://messaging.aacc.org/i/amf_highroad_solution/pr=
+oject_756/Insturmentwebinar_130x130.png?size=3D130x0&amp;w=3DBlzzLpyzuvezRz=
+kY3tXPb_dVhQuE" width=3D"130" alt=3D"Microscope Image" style=3D"border:none=
+; display:block;"></a></td>
+											</tr>
+										</table></td>
+									<td width=3D"16" class=3D"mobileoff">&nbsp;</td>
+									<td class=3D"block" align=3D"left" valign=3D"top" style=3D"padding=
+-top:10px; padding-right:0px; padding-bottom:16px; padding-left:0px;"><tabl=
+e width=3D"100%" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"width:100%;" class=3D"fluid100">
+=09=09=09=09=09=09=09=09=09=09=09
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:600; font-size:22px; mso-=
+line-height-rule:exactly; line-height:26px; padding-top:4px; padding-right:=
+14px; padding-bottom:5px; padding-left:0px; letter-spacing:0px;">Measuremen=
+t Uncertainty, From Theory to Practice</td>
+												</tr>
+												<tr>
+														<td height=3D"4"></td>
+													</tr>
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:15px; m=
+so-line-height-rule:exactly; line-height:22px; padding-top:0px; padding-rig=
+ht:14px; padding-bottom:0px; padding-left:0px; letter-spacing:0px;"><span s=
+tyle=3D"color:#a52a2a"><strong>Free Webinar | September 14 | 11:30 AM ET</s=
+trong></span><br />
+Measurement Uncertainty (MU) characterizes the dispersion of the quantity v=
+alues being attributed to a measurand, and is an accreditation requirement =
+for many medical laboratories worldwide. This webinar will provide an overv=
+iew of how to calculate and apply MU in the medical laboratory for quality =
+assurance and interpretation of patient results. <a href=3D"https://messagi=
+ng.aacc.org/c/1MVvrI2i7xH1Ny3ocEY3vvO6mcyY">Register now!</a></td>
+												</tr>
+												<tr>
+													<td align=3D"left"><a href=3D"https://messaging.aacc.org/c/1MV=
+vrXenhdywdxRjQwBykKam92dl" style=3D"color: #141416;font-family:Arial, Helve=
+tica, sans-serif;font-weight:bold;font-size:13px;mso-line-height-rule:exact=
+ly;line-height:26px;padding-top:4px;padding-right:14px;padding-bottom:5px;p=
+adding-left:0px;letter-spacing:1px;text-decoration: none;" id=3D"ASM_More" =
+name=3D"ASM_More"><img src=3D"http://msgfocus.com/files/amf_highroad_soluti=
+on/workspace_32/arrow_right_dark2.png" alt=3D"Webinar">MORE</a></td>
+												</tr>
+=09=09=09=09=09=09=09=09=09=09=09
+										</table></td>
+									<td width=3D"16">&nbsp;</td>
+								</tr>
+							</table></td>
+					</tr>
+				</table><table width=3D"100%" class=3D"fluid100" bgcolor=3D"#e6e7e9" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"background-color:#e=
+6e7e9; background-color:rgb(230,231,233);">
+					<tr>
+						<td><table class=3D"fluid100" width=3D"640" align=3D"center" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+								<tr>
+									<td width=3D"16">&nbsp;</td>
+									<td width=3D"130" align=3D"left" valign=3D"top" class=3D"block" st=
+yle=3D"padding-top:16px; padding-right:0px; padding-bottom:14px; padding-le=
+ft:0px;"><table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" class=3D=
+"fluid100">
+											<tr>
+												<td><a href=3D"https://messaging.aacc.org/c/1MVvscqsqTq0DxFfuof=
+39YwBVRRI"><img src=3D"http://messaging.aacc.org/i/amf_highroad_solution/pr=
+oject_756/OCT5webinar_130x130.png?size=3D130x0&amp;w=3DBeBmZhVOtVxN_bxio2x8=
+Nd6meaDE" width=3D"130" alt=3D"Molecular Testing Image" style=3D"border:non=
+e; display:block;"></a></td>
+											</tr>
+										</table></td>
+									<td width=3D"16" class=3D"mobileoff">&nbsp;</td>
+									<td class=3D"block" align=3D"left" valign=3D"top" style=3D"padding=
+-top:10px; padding-right:0px; padding-bottom:16px; padding-left:0px;"><tabl=
+e width=3D"100%" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"width:100%;" class=3D"fluid100">
+=09=09=09=09=09=09=09=09=09=09=09
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:600; font-size:22px; mso-=
+line-height-rule:exactly; line-height:26px; padding-top:4px; padding-right:=
+14px; padding-bottom:5px; padding-left:0px; letter-spacing:0px;">Know Thy L=
+ab Neighbor: Opportunities in Clinical Microbiology to Interface with Other=
+ Laboratory Disciplines</td>
+												</tr>
+												<tr>
+														<td height=3D"4"></td>
+													</tr>
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:15px; m=
+so-line-height-rule:exactly; line-height:22px; padding-top:0px; padding-rig=
+ht:14px; padding-bottom:0px; padding-left:0px; letter-spacing:0px;"><span s=
+tyle=3D"color:#a52a2a"><strong>Free Webinar | October 5 | 1 PM ET</strong><=
+/span><br />
+Collaborative approaches can help develop the quality and efficiency of the=
+ clinical microbiology laboratory with the goal of improving patient outcom=
+es. The webinar will utilize real world examples to demonstrate collaborati=
+ve strategies. It will also discuss how to capture data on the impact of th=
+ese efforts and the importance of this approach in demonstrating the value =
+of the laboratory. <a href=3D"https://messaging.aacc.org/c/1MVvsGOCKf8Ztxh6=
+M7w2Orf7vxas">Register now!</a></td>
+												</tr>
+												<tr>
+													<td align=3D"left"><a href=3D"https://messaging.aacc.org/c/1MV=
+vsW0HTV0tTx52pZ9xDFBnimOP" style=3D"color: #141416;font-family:Arial, Helve=
+tica, sans-serif;font-weight:bold;font-size:13px;mso-line-height-rule:exact=
+ly;line-height:26px;padding-top:4px;padding-right:14px;padding-bottom:5px;p=
+adding-left:0px;letter-spacing:1px;text-decoration: none;" id=3D"ASM_More" =
+name=3D"ASM_More"><img src=3D"http://msgfocus.com/files/amf_highroad_soluti=
+on/workspace_32/arrow_right_dark2.png" alt=3D"Webinar">MORE</a></td>
+												</tr>
+=09=09=09=09=09=09=09=09=09=09=09
+										</table></td>
+									<td width=3D"16">&nbsp;</td>
+								</tr>
+							</table></td>
+					</tr>
+				</table><table width=3D"100%" class=3D"fluid100" bgcolor=3D"#e6e7e9" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"background-color:#e=
+6e7e9; background-color:rgb(230,231,233);">
+					<tr>
+						<td><table class=3D"fluid100" width=3D"640" align=3D"center" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+								<tr>
+									<td width=3D"16">&nbsp;</td>
+									<td width=3D"130" align=3D"left" valign=3D"top" class=3D"block" st=
+yle=3D"padding-top:16px; padding-right:0px; padding-bottom:14px; padding-le=
+ft:0px;"><table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" class=3D=
+"fluid100">
+											<tr>
+												<td><a href=3D"https://messaging.aacc.org/c/1MVvtbcN3ARYjwSY3QN=
+2sTXD5ctc"><img src=3D"http://messaging.aacc.org/i/amf_highroad_solution/pr=
+oject_756/Oct6_130x130.png?size=3D130x0&amp;w=3DBTpeQDVbuw9dsCrH6rYOlxwN85g=
+M" width=3D"130" alt=3D"Molecular Testing Image" style=3D"border:none; disp=
+lay:block;"></a></td>
+											</tr>
+										</table></td>
+									<td width=3D"16" class=3D"mobileoff">&nbsp;</td>
+									<td class=3D"block" align=3D"left" valign=3D"top" style=3D"padding=
+-top:10px; padding-right:0px; padding-bottom:16px; padding-left:0px;"><tabl=
+e width=3D"100%" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"width:100%;" class=3D"fluid100">
+=09=09=09=09=09=09=09=09=09=09=09
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:600; font-size:22px; mso-=
+line-height-rule:exactly; line-height:26px; padding-top:4px; padding-right:=
+14px; padding-bottom:5px; padding-left:0px; letter-spacing:0px;">Applying D=
+ata Analytics in the Lab<br></td>
+												</tr>
+												<tr>
+														<td height=3D"4"></td>
+													</tr>
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:15px; m=
+so-line-height-rule:exactly; line-height:22px; padding-top:0px; padding-rig=
+ht:14px; padding-bottom:0px; padding-left:0px; letter-spacing:0px;"><span s=
+tyle=3D"color:#a52a2a"><strong>Free Webinar | October 6 | 1 PM ET</strong><=
+/span><br />
+Dr. Daniel Holmes will provide examples of data analytics applications in l=
+aboratory medicine to demonstrate how laboratory data can be leveraged to i=
+mprove healthcare delivery and operations. Data sources as well as data ana=
+lytic tools and their applications will be covered. <a href=3D"https://mess=
+aging.aacc.org/c/1MVvtqoSdgJsJwGTHIqxi8jSS27z">Register now!</a></td>
+												</tr>
+												<tr>
+													<td align=3D"left"><a href=3D"https://messaging.aacc.org/c/1MV=
+vtFAXmWAX9wuPlA427mG8ERLW" style=3D"color: #141416;font-family:Arial, Helve=
+tica, sans-serif;font-weight:bold;font-size:13px;mso-line-height-rule:exact=
+ly;line-height:26px;padding-top:4px;padding-right:14px;padding-bottom:5px;p=
+adding-left:0px;letter-spacing:1px;text-decoration: none;" id=3D"ASM_More" =
+name=3D"ASM_More"><img src=3D"http://msgfocus.com/files/amf_highroad_soluti=
+on/workspace_32/arrow_right_dark2.png" alt=3D"Webinar">MORE</a></td>
+												</tr>
+=09=09=09=09=09=09=09=09=09=09=09
+										</table></td>
+									<td width=3D"16">&nbsp;</td>
+								</tr>
+							</table></td>
+					</tr>
+				</table><table width=3D"100%" class=3D"fluid100" bgcolor=3D"#e6e7e9" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"background-color:#e=
+6e7e9; background-color:rgb(230,231,233);">
+					<tr>
+						<td><table class=3D"fluid100" width=3D"640" align=3D"center" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+								<tr>
+									<td width=3D"16">&nbsp;</td>
+									<td width=3D"130" align=3D"left" valign=3D"top" class=3D"block" st=
+yle=3D"padding-top:16px; padding-right:0px; padding-bottom:14px; padding-le=
+ft:0px;"><table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" class=3D=
+"fluid100">
+											<tr>
+												<td><a href=3D"https://messaging.aacc.org/c/1MVvtUN2wCsrzwiKZrH=
+wWB2orHqj"><img src=3D"http://messaging.aacc.org/i/amf_highroad_solution/pr=
+oject_756/OCT26webinar_130x130.png?size=3D130x0&amp;w=3DBGNGfEJo0babr5_eaVP=
+1LnQS4EmI" width=3D"130" alt=3D"Molecular Testing Image" style=3D"border:no=
+ne; display:block;"></a></td>
+											</tr>
+										</table></td>
+									<td width=3D"16" class=3D"mobileoff">&nbsp;</td>
+									<td class=3D"block" align=3D"left" valign=3D"top" style=3D"padding=
+-top:10px; padding-right:0px; padding-bottom:16px; padding-left:0px;"><tabl=
+e width=3D"100%" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"width:100%;" class=3D"fluid100">
+=09=09=09=09=09=09=09=09=09=09=09
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:600; font-size:22px; mso-=
+line-height-rule:exactly; line-height:26px; padding-top:4px; padding-right:=
+14px; padding-bottom:5px; padding-left:0px; letter-spacing:0px;">Best Pract=
+ices to Recover From an Out-Of-Control Event =E2=80=93 A Systematic Approac=
+h</td>
+												</tr>
+												<tr>
+														<td height=3D"4"></td>
+													</tr>
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:15px; m=
+so-line-height-rule:exactly; line-height:22px; padding-top:0px; padding-rig=
+ht:14px; padding-bottom:0px; padding-left:0px; letter-spacing:0px;"><span s=
+tyle=3D"color:#a52a2a"><strong>Free Webinar | October 26 | 11:30 AM ET</str=
+ong></span><br />
+This webinar will discuss the systematic steps to recover from an out-of-co=
+ntrol event and will provide insights on how to evaluate the potential impa=
+ct of the error on patient care.&nbsp;<a href=3D"https://messaging.aacc.org=
+/c/1MVvu9Z7GijVZw6GDjl1LPoEex4G">Register now!</a></td>
+												</tr>
+												<tr>
+													<td align=3D"left"><a href=3D"https://messaging.aacc.org/c/1MV=
+vupbcPYbqpvUChaYwB3KU1mJ3" style=3D"color: #141416;font-family:Arial, Helve=
+tica, sans-serif;font-weight:bold;font-size:13px;mso-line-height-rule:exact=
+ly;line-height:26px;padding-top:4px;padding-right:14px;padding-bottom:5px;p=
+adding-left:0px;letter-spacing:1px;text-decoration: none;" id=3D"ASM_More" =
+name=3D"ASM_More"><img src=3D"http://msgfocus.com/files/amf_highroad_soluti=
+on/workspace_32/arrow_right_dark2.png" alt=3D"Webinar">MORE</a></td>
+												</tr>
+=09=09=09=09=09=09=09=09=09=09=09
+										</table></td>
+									<td width=3D"16">&nbsp;</td>
+								</tr>
+							</table></td>
+					</tr>
+				</table></td>
+		</tr>
+	</table><table class=3D"fluid100" width=3D"640" align=3D"center" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"width:640px; margin:0px auto;background=
+-color:#fff;">
+			<tr>
+			<td>
+		<table class=3D"fluid100" width=3D"100%" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0">
+			<tr>
+					<td bgcolor=3D"" style=3D"background:#818286;background-color:#e2a856;=
+background-color:rgb(226,168,86);color:#fff;font-family:Arial, Helvetica, s=
+ans-serif;font-size:22px;font-weight:100;padding:5px;"><strong>2022 AACC An=
+nual Scientific Meeting & Clinical Lab Expo</strong></td>
+				</tr>
+		</table>
+			</td>
+			</tr>
+		<tr>
+			<td><table width=3D"100%" class=3D"fluid100" bgcolor=3D"#e6e7e9" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"background-color:#e6e7e=
+9; background-color:rgb(230,231,233);">
+					<tr>
+						<td><table class=3D"fluid100" width=3D"640" align=3D"center" cellpadd=
+ing=3D"0" cellspacing=3D"0">
+								<tr>
+									<td width=3D"16">&nbsp;</td>
+									<td width=3D"130" align=3D"left" valign=3D"top" class=3D"block" st=
+yle=3D"padding-top:16px; padding-right:0px; padding-bottom:14px; padding-le=
+ft:0px;"><table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" class=3D=
+"fluid100">
+											<tr>
+												<td><a href=3D"https://messaging.aacc.org/c/1MVvuEnhZE2UPvIxV2C=
+1qi79Ocnq"><img src=3D"http://messaging.aacc.org/i/amf_highroad_solution/pr=
+oject_756/SessionRecord_130x130.png?size=3D130x0&amp;w=3DBAoufHBjmP-VwBi7F5=
+CJbUJ9ApPw" width=3D"130" alt=3D"Digital Pass Select - 2022 AACC" style=3D"=
+border:none; display:block;"></a></td>
+											</tr>
+										</table></td>
+									<td width=3D"16" class=3D"mobileoff">&nbsp;</td>
+									<td class=3D"block" align=3D"left" valign=3D"top" style=3D"padding=
+-top:10px; padding-right:0px; padding-bottom:16px; padding-left:0px;"><tabl=
+e width=3D"100%" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"width:100%;" class=3D"fluid100">
+=09=09=09=09=09=09=09=09=09=09=09
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:600; font-size:22px; mso-=
+line-height-rule:exactly; line-height:26px; padding-top:4px; padding-right:=
+14px; padding-bottom:5px; padding-left:0px; letter-spacing:0px;">2022 AACC =
+Session Recordings =E2=80=93 Now Available</td>
+												</tr>
+												<tr>
+														<td height=3D"4"></td>
+													</tr>
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:15px; m=
+so-line-height-rule:exactly; line-height:22px; padding-top:0px; padding-rig=
+ht:14px; padding-bottom:0px; padding-left:0px; letter-spacing:0px;">The 202=
+2 AACC Annual Scientific Meeting conference <a href=3D"https://messaging.aa=
+cc.org/c/1MVvuTzn9jUpfvwtyUfwfwtpB21N">recordings are now available</a> and=
+ complimentary for all AACC members who purchased full conference registrat=
+ion. If you did not purchase full conference registration, recordings are a=
+vailable for purchase. 2022 AACC Session Recordings include more than 150 h=
+ours of the conference's Plenaries, Scientific Sessions, and Special Sessio=
+ns covering the entire breadth of advancements in laboratory medicine. &nbs=
+p;Streaming content is available for an unlimited number of times through J=
+uly 31, 2023.&nbsp;</td>
+												</tr>
+												<tr>
+													<td align=3D"left"><a href=3D"https://messaging.aacc.org/c/1MV=
+vvnXxsFDo5v8kQDwvTZbVaHkx" style=3D"color: #141416;font-family:Arial, Helve=
+tica, sans-serif;font-weight:bold;font-size:13px;mso-line-height-rule:exact=
+ly;line-height:26px;padding-top:4px;padding-right:14px;padding-bottom:5px;p=
+adding-left:0px;letter-spacing:1px;text-decoration: none;" id=3D"ASM_More" =
+name=3D"ASM_More"><img src=3D"http://msgfocus.com/files/amf_highroad_soluti=
+on/workspace_32/arrow_right_dark2.png" alt=3D"Learn More">MORE</a></td>
+												</tr>
+=09=09=09=09=09=09=09=09=09=09=09
+										</table></td>
+									<td width=3D"16">&nbsp;</td>
+								</tr>
+							</table></td>
+					</tr>
+				</table></td>
+		</tr>
+	</table><table class=3D"fluid100" width=3D"640" align=3D"center" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"width:640px; margin:0px auto;background=
+-color:#fff;">
+			<tr>
+			<td>
+		<table class=3D"fluid100" width=3D"100%" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0">
+			<tr>
+				</tr>
+		</table>
+			</td>
+			</tr>
+		<tr>
+			<td></td>
+		</tr>
+	</table><table class=3D"fluid100" width=3D"640" align=3D"center" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"width:640px; margin:0px auto;background=
+-color:#fff;">
+		<tr>
+			<td><table class=3D"fluid100"  width=3D"100%" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0">
+					<tr>
+						<td bgcolor=3D"" style=3D"background:#e2a856;background-color:#8c857b=
+;background-color:rgb(140,133,123);color:#fff;font-family:Arial, Helvetica,=
+ sans-serif;font-size:22px;font-weight:100;padding:5px;"><strong>Certificat=
+e Programs</strong></td>
+					</tr>
+				</table></td>
+		</tr>
+		<tr>
+			<td><table width=3D"100%" class=3D"fluid100" bgcolor=3D"#ffffff" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"background-color:#fffff=
+f; background-color:rgb(255,255,255);">
+					<tr>
+						<td><table class=3D"fluid100" width=3D"640" align=3D"center" cellpadd=
+ing=3D"0" cellspacing=3D"0" >
+								<tr>
+									<td width=3D"16">&nbsp;</td>
+									<td width=3D"130" align=3D"left" valign=3D"top" class=3D"block" st=
+yle=3D"padding-top:16px; padding-right:0px; padding-bottom:14px; padding-le=
+ft:0px;" ><table align=3D"left" cellpadding=3D"0" cellspacing=3D"0" class=
+=3D"fluid100" >
+											<tr>
+												<td><a href=3D"https://messaging.aacc.org/c/1MVvvD9CCluSvuWguva=
+0JdyaXwYU"><img src=3D"http://messaging.aacc.org/i/amf_highroad_solution/pr=
+oject_756/In_the_lab_130x150.jpg?size=3D130x0&amp;w=3DBEKjlhXLT2-wergFZPyo7=
+wmN2qf4" width=3D"130" alt=3D"Ceritifcate Program" style=3D"border:none; di=
+splay:block;"></a></td>
+											</tr>
+											<tr>
+											</tr>
+										</table></td>
+									<td width=3D"16" class=3D"mobileoff">&nbsp;</td>
+									<td class=3D"block" align=3D"left" valign=3D"top" style=3D"padding=
+-top:10px; padding-right:0px; padding-bottom:16px; padding-left:0px;"><tabl=
+e width=3D"100%" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"width:100%;" class=3D"fluid100" >
+=09=09=09=09=09=09=09=09=09=09=09
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:600; font-size:22px; mso-=
+line-height-rule:exactly; line-height:26px; padding-top:4px; padding-right:=
+14px; padding-bottom:5px; padding-left:0px; letter-spacing:0px;">Train Your=
+ Whole Lab & Save!</td>
+												</tr>
+												<tr>
+													<td align=3D"left" valign=3D"top" style=3D"color:#333333; font=
+-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:15px; m=
+so-line-height-rule:exactly; line-height:22px; padding-top:0px; padding-rig=
+ht:14px; padding-bottom:0px; padding-left:0px; letter-spacing:0px;"><span s=
+tyle=3D"font-family:Arial,Helvetica,sans-serif">Access self-paced career de=
+velopment for your entire lab. Work with us to get a customized pricing pac=
+kage to ensure your staff is at the top of their careers.=C2=A0</span><span=
+ style=3D"font-family:Arial,Helvetica,sans-serif"><strong><a href=3D"https:=
+//messaging.aacc.org/c/1MVvvSlHM1mmVuKc8mNvyrUqKmDh">Learn more</a></strong=
+></span><a href=3D"https://messaging.aacc.org/c/1MVvw7xMVHdRluy7Mer0nGgGxch=
+E"><span style=3D"font-family:Arial,Helvetica,sans-serif">.</span></a></td>
+												</tr>
+												<tr>
+													<td align=3D"left"><a href=3D"https://messaging.aacc.org/c/1MV=
+vwmJS5n5lLum3q64vcUCWk1W1" style=3D" color: #a7a9ac; font-family:Arial, Hel=
+vetica, sans-serif; font-weight:bold; font-size:13px; mso-line-height-rule:=
+exactly; line-height:26px; padding-top:4px; padding-right:14px; padding-bot=
+tom:5px; padding-left:0px; letter-spacing:1px;text-decoration: none;"><img =
+src=3D"http://msgfocus.com/files/amf_highroad_solution/project_210/EDU_emai=
+l_offerings/arrow.png" alt=3D"Link to AACC Certificate Programs"> MORE</a><=
+/td>
+												</tr>
+=09=09=09=09=09=09=09=09=09=09=09
+										</table></td>
+									<td width=3D"16">&nbsp;</td>
+								</tr>
+							</table></td>
+					</tr>
+				</table></td>
+		</tr>
+	</table><table class=3D"fluid100" width=3D"640" align=3D"center" cellpaddi=
+ng=3D"0" cellspacing=3D"0" style=3D"width:640px; margin:0px auto;background=
+-color:#fff;">
+			<tr>
+			<td>
+		<table class=3D"fluid100"  width=3D"100%" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0">
+			<tr>
+				</tr>
+		</table>
+			</td>
+			</tr>
+		<tr>
+			<td></td>
+		</tr>
+	</table>
+		<!-- end block1 -->=20
+		<!-- start block 2 -->
+	<!-- end block 2 -->=20
+	<!-- start block 3 -->
+	<!-- end block 3 -->=20
+	<!-- block 4 -->
+	<!-- end block 4 -->
+	<!-- footer -->
+	<table width=3D"640" class=3D"fluid100"  border=3D"0" align=3D"center" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"width:640px; margin:0px auto;">
+=09=09
+			<tr>
+				<td><table width=3D"100%" class=3D"fluid100"  border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0">
+=09=09=09=09=09=09
+							<tr>
+								<td align=3D"right" class=3D"footer" style=3D"color:#ffffff;    bac=
+kground-color: #B12025;padding:14px; font-family:Arial, Helvetica, sans-ser=
+if; font-weight:normal; font-size:12px; mso-line-height-rule:exactly; line-=
+height:14px;  letter-spacing:0px;"><p><span style=3D"font-family:Arial,Helv=
+etica,sans-serif"><a href=3D"https://messaging.aacc.org/c/1MVvwBVXf2WQbu9Z3=
+XI028Zc6RAo" style=3D"color:#ffffff;    background-color: #B12025; font-fam=
+ily:Arial, Helvetica, sans-serif; font-weight:normal; font-size:13px; paddi=
+ng:0 5px; mso-line-height-rule:exactly; line-height:23px; text-decoration: =
+none;  letter-spacing:0px;" target=3D"_blank">aacc.org</a>=C2=A0| <a href=
+=3D"https://messaging.aacc.org/c/1MVvwR82oIOkBtXUHPluRnlrTHeL" style=3D"col=
+or:#ffffff;    background-color: #B12025; font-family:Arial, Helvetica, san=
+s-serif; font-weight:normal; font-size:13px; padding:0 5px; mso-line-height=
+-rule:exactly; line-height:23px; text-decoration: none;  letter-spacing:0px=
+;" target=3D"_blank">Join/Renew</a>=C2=A0|=C2=A0<a href=3D"https://messagin=
+g.aacc.org/c/1MVvx6k7yoFP1tLQlGYZGBHHGwT8" style=3D"color:#ffffff;    backg=
+round-color: #B12025; font-family:Arial, Helvetica, sans-serif; font-weight=
+:normal; font-size:13px; padding:0 5px; mso-line-height-rule:exactly; line-=
+height:23px; text-decoration: none;  letter-spacing:0px;" target=3D"_blank"=
+>Meetings</a>=C2=A0|=C2=A0<a href=3D"https://messaging.aacc.org/c/1MVvxlwcI=
+4xjrtzLZyCuvQ3Xtmxv" style=3D"color:#ffffff;    background-color: #B12025; =
+font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:13p=
+x; padding:0 5px; mso-line-height-rule:exactly; line-height:23px; text-deco=
+ration: none;  letter-spacing:0px;" target=3D"_blank">Artery</a>=C2=A0|<a h=
+ref=3D"https://messaging.aacc.org/c/1MVvxAIhRKoNRtnHDqfZl4qdgcbS" style=3D"=
+color:#ffffff;    background-color: #B12025; font-family:Arial, Helvetica, =
+sans-serif; font-weight:normal; font-size:13px; padding:0 5px; mso-line-hei=
+ght-rule:exactly; line-height:23px; text-decoration: none;  letter-spacing:=
+0px;" target=3D"_blank">Education</a></span></p>
+</td>
+							</tr>
+=09=09=09=09=09=09
+					</table></td>
+			</tr>
+=09=09
+	</table>
+	<!--20px gutter-->
+	<table width=3D"640" class=3D"fluid100" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" style=3D"width:640px; margin:0px auto;">
+=09=09
+			<tr>
+				<td height=3D"30" align=3D"center" style=3D""></td>
+			</tr>
+=09=09
+	</table>
+	<!--20px gutter-->
+		</td>
+		</tr>
+=09=09
+</table>
+<html dir=3D"ltr">
+    <head>
+        <title></title>
+    <style type=3D"text/css">
+@media only screen and (max-width:599px) {
+.amf__mb-none { display: none !important; }=20
+.amf__dt-none,.amf__dt-none-img {display: block !important; max-height: non=
+e !important; overflow: visible !important;}
+table.amf__dt-none {display:table !important;}
+tr.amf__dt-none {display:table-row !important;}
+th.amf__dt-none,td.amf__dt-none {display:table-cell !important;}
+.amf__dt-none {float: none !important; width: auto !important;}
+.amf__dt-none-img {height: auto !important; width: 100% !important;}
+}
+</style></head>
+    <body>=09=09=09=09=09
+<p><font size=3D"1" face=3D"Verdana, Arial, Helvetica, sans-serif" color=3D=
+"#999999">
+						This message was intended for: <a href=3D"mailto:rvairavan@caldonbiot=
+ech.com">rvairavan@caldonbiotech.com</a>
+							<br />
+        American Association For Clinical Chemistry<br />
+        900 Seventh Street, NW Suite 400 | Washington DC 20001&nbsp;<br />
+        202.857.0717   | Fax: 202.887.5093 | <a href=3D"https://messaging.a=
+acc.org/c/1MVvy56sb67MHsZyV9wYZx8IPRuC">www.aacc.org</a>
+							<br />
+							<br />
+							<a href=3D"https://messaging.aacc.org/c/1MVvykixkLZh7sNuz1atOLuYCH8Z=
+">Manage your e-communications or unsubscribe</a></font>
+					</p>
+    <!--[if lt mso 12]><img src=3D"https://messaging.aacc.org/r/1uRlEWWsAFD=
+HO6wEi9.png?c=3D1" alt=3D""><![endif]--><![if gt mso 11]><img src=3D"https:=
+//messaging.aacc.org/r/1uRlEWWsAFDHO6wEi9.png" alt=3D""><![endif]>
+</body>
+</html></body>
+</html>=
+
+----13B950549C6ABCB1736AC71291F1C--

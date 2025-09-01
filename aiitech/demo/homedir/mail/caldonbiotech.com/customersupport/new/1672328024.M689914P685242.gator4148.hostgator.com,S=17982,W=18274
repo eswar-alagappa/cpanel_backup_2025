@@ -1,0 +1,292 @@
+Return-Path: <bounces+19969c40-878e-11ed-9538-5254007783b8_vt1@sender9.zohocrm.com>
+Received: from gator4148.hostgator.com
+	by gator4148.hostgator.com with LMTP
+	id yHT5KFizrWO6dAoA7/vpDg
+	(envelope-from <bounces+19969c40-878e-11ed-9538-5254007783b8_vt1@sender9.zohocrm.com>); Thu, 29 Dec 2022 09:33:44 -0600
+Return-path: <bounces+19969c40-878e-11ed-9538-5254007783b8_vt1@sender9.zohocrm.com>
+Envelope-to: customersupport@caldonbiotech.com
+Delivery-date: Thu, 29 Dec 2022 09:33:44 -0600
+Received: from sendera177.zohocrm.com ([135.84.80.177]:40098)
+	by gator4148.hostgator.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <bounces+19969c40-878e-11ed-9538-5254007783b8_vt1@sender9.zohocrm.com>)
+	id 1pAuuf-002yTF-GO
+	for customersupport@caldonbiotech.com;
+	Thu, 29 Dec 2022 09:33:44 -0600
+ARC-Seal: i=1; a=rsa-sha256; t=1672328011; cv=none; 
+	d=zohomail360.com; s=zohoarc; 
+	b=IW7fN7UlWo1Skwl6UMbDWcvn6VN9ZynlIpAu8oywjnWw3OPDevOQqESQT2siM1Td84SUFZlAm1fZlsR5HNl8OYE4wsffaZt7Hs6h9sbf+lNsIgcsrG2uWsVFoZJ3O90x1sxP0Wehh4bDM+BFhGUF8BJMz0LOl1B2wL+EknwtdxQ=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=zohomail360.com; s=zohoarc; 
+	t=1672328011; h=Content-Type:Date:From:MIME-Version:Message-ID:Subject:To; 
+	bh=wB8DtnvCcVow2Fuzby9lmx9+L5LZxKFHfcZ37pE9938=; 
+	b=RoENGelc0CbluN6kwoMxtwW5ujnV1SpLa93I+ykez0LG2TbS6VOv3CO1l3/rm/uDS8tgqgzCeXH0Ry7d4h678LOwd8QWIa8UuzelS8+2GImYWlb9TJNWLIJpv0Gl27X0abrqa9Ele2fjlPqpvZsLnJwM/nLlI7nRnGLtukc8bD8=
+ARC-Authentication-Results: i=1; mx.zohomail360.com;
+	dkim=pass  header.i=bishopknightllc.com;
+	spf=pass  smtp.mailfrom=bounces+19969c40-878e-11ed-9538-5254007783b8_vt1@sender9.zohocrm.com;
+	dmarc=pass header.from=<sara@bishopknightllc.com>
+Received: from [10.37.37.228] (10.37.37.228 [10.37.37.228]) by mx.zohomail.com
+	with SMTPS id 167232799199637.150639833065384; Thu, 29 Dec 2022 07:33:11 -0800 (PST)
+DKIM-Signature: a=rsa-sha256; b=LLqMKIvST67XAuhGrlHpgGEWscRjKgoMgTG9MLzl+40ITT5o/rppxp0taIhxL14vK5ZmwD5stwW7BRpbpdif/99gXuPzrJa637rVtClJ8msWk+ONG+8FrQku2HQiG9jIxGLQ7MVQ4fwHneyMTlzXeE1J09V8COJhkXDD16z9hxk=; c=relaxed/relaxed; s=1231711; d=sender9.zohocrm.com; v=1; bh=wB8DtnvCcVow2Fuzby9lmx9+L5LZxKFHfcZ37pE9938=; h=date:from:reply-to:to:cc:message-id:subject:mime-version:content-type:date:from:reply-to:to:cc:message-id:subject;
+Date: Thu, 29 Dec 2022 07:33:11 -0800 (PST)
+From: Sara Clark <sara@bishopknightllc.com>
+To: customersupport@caldonbiotech.com
+Message-ID: <2d6f.327230a.m1.19969c40-878e-11ed-9538-5254007783b8.1855e840c04@sender9.zohocrm.com>
+Subject: Re: Exit Strategy
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_7287679_383758669.1672327991935"
+X-ZCORGID: 254a87c491734edfa198b54de21f84b4075cdb96025db9de219da53e706e6148
+Original-Envelope-Id: 2d6f.327230a.m1.19969c40-878e-11ed-9538-5254007783b8.1855e840c04
+X-Report-Abuse: <mailto:abuse+2d6f.327230a.m1.19969c40-878e-11ed-9538-5254007783b8.1855e840c04@zeptomail.com>
+TM-MAIL-JID: 2d6f.327230a.m1.19969c40-878e-11ed-9538-5254007783b8.1855e840c04
+X-JID: 2d6f.327230a.m1.19969c40-878e-11ed-9538-5254007783b8.1855e840c04
+X-App-Message-ID: 2d6f.327230a.m1.19969c40-878e-11ed-9538-5254007783b8.1855e840c04
+X-ZohoMailClient: External
+X-Spam-Status: No, score=-0.3
+X-Spam-Score: -2
+X-Spam-Bar: /
+X-Spam-Flag: NO
+
+------=_Part_7287679_383758669.1672327991935
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello, I would like to introduce myself and my company, a nationwide merger=
+s &amp; acquisitions advisory firm. We cover all industries such as medical=
+, pest control, manufacturing, hotels, etc. We pride ourselves on our knowl=
+edge of the industries we work in.We offer a no charge confidential valuati=
+on of your company based on some basic operational and financial informatio=
+n, determine a marketing price and locate a qualified buyer. We pre-screen,=
+ pre-qualify and require a fully executed NDA and Buyer&#39;s Profile befor=
+e sharing any detailed information with them.If you are considering an exit=
+ strategy now or in the next 1-3 years, I would appreciate the opportunity =
+to speak to you further.Thank you and have a great day! Sara MedleyBishopKn=
+ight LLCPresident and Strategic Advisor Direct 310-986-3321Cell 310-345-820=
+6Office  951-956-3806 Sara@bishopknightllc.comwww.BishopKnightLLC.com      =
+             Website
+
+------=_Part_7287679_383758669.1672327991935
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><table cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"width:100%;border:0px;font-family:Arial, Helvetica, sans=
+-serif;color:rgb(17, 17, 17);font-size:13px;border-collapse:collapse;letter=
+-spacing:normal;text-rendering: optimizeLegibility;background-color:rgb(240=
+, 240, 240);">
+<tbody><tr>
+<td align=3D"center" style=3D"border:0px;padding-top:10px;padding-bottom:20=
+px;"><br>
+
+<table cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=3D"min-width=
+:600px;max-width:600px;width:600px;border:0px;border-collapse:collapse;tabl=
+e-layout:fixed;background-color:rgb(255, 255, 255);">
+<tbody><tr>
+<td valign=3D"top" width=3D"600" style=3D"width:600px;border:0px;min-height=
+:570px;word-wrap:break-word;word-break:break-word;">
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"min-width:100%;max-widt=
+h:100%;table-layout:fixed;border:0px;border-collapse:collapse;" width=3D"10=
+0%">
+<tbody><tr>
+<td valign=3D"top" style=3D"border:0px;">
+<table title=3D"" cellspacing=3D"0" cellpadding=3D"0" style=3D"text-renderi=
+ng: optimizeLegibility;font-size:13px;letter-spacing:normal;font-family:Ari=
+al, Helvetica, sans-serif;min-width:100%;max-width:100%;table-layout:fixed;=
+border:0px;border-collapse:collapse;background-color:rgba(0, 0, 0, 0)" widt=
+h=3D"100%">
+<tbody><tr>
+<td style=3D"word-wrap:break-word;word-break:break-word;border:0px;padding:=
+6px 30px;border-top:0px none rgb(17, 17, 17);border-bottom:0px none rgb(17,=
+ 17, 17) ;font-family:Arial, Helvetica, sans-serif">
+<div style=3D"" align=3D"center">
+<div style=3D"padding: 0px; margin: 0px; text-align: left"><font style=3D"p=
+adding: 0px; margin: 0px" size=3D"2"><span style=3D"font-size: 12.8px; padd=
+ing: 0px; margin: 0px"><span style=3D"font-size: 13px; padding: 0px; margin=
+: 0px"><span style=3D"font-family: georgia, times new roman, times, serif, =
+sans-serif; padding: 0px; margin: 0px">
+<font style=3D"padding: 0px; margin: 0px" size=3D"3" face=3D"Georgia,Times =
+New Roman,Times,serif">Hello,</font></span></span></span></font></div><div =
+style=3D"text-align: left"><font style=3D"padding: 0px; margin: 0px" size=
+=3D"3" face=3D"Georgia,Times New Roman,Times,serif">
+</font></div><div style=3D"padding: 0px; margin: 0px; text-align: left"><di=
+v style=3D"font-size: 12pt; padding: 0px; margin: 0px"><div style=3D"paddin=
+g: 0px; margin: 0px"><div style=3D"padding: 0px; margin: 0px"><font size=3D=
+"3" face=3D"Georgia,Times New Roman,Times,serif"><span style=3D"padding: 0p=
+x; margin: 0px"><span style=3D"font-size: 12pt; padding: 0px; margin: 0px">=
+<div style=3D"padding: 0px; margin: 0px"><div style=3D"padding: 0px; margin=
+: 0px"><font style=3D"padding: 0px; margin: 0px"><span style=3D"padding: 0p=
+x; margin: 0px"><span style=3D"font-size: 10pt; padding: 0px; margin: 0px">=
+</span></span></font><div style=3D"padding: 0px; margin: 0px"><div style=3D=
+"font-size: 12pt; padding: 0px; margin: 0px"><div style=3D"padding: 0px; ma=
+rgin: 0px"><div style=3D"font-size: 12pt; padding: 0px; margin: 0px"><div s=
+tyle=3D"padding: 0px; margin: 0px"><div style=3D"font-size: 12pt; padding: =
+0px; margin: 0px"><div style=3D"padding: 0px; margin: 0px"><div style=3D"fo=
+nt-size: 12pt; padding: 0px; margin: 0px"><div style=3D"padding: 0px; margi=
+n: 0px"><div style=3D"padding: 0px; margin: 0px"><div style=3D"padding: 0px=
+; margin: 0px"><div style=3D"padding: 0px; margin: 0px"><div style=3D"paddi=
+ng: 0px; margin: 0px"><font style=3D"padding: 0px; margin: 0px"><span style=
+=3D"padding: 0px; margin: 0px"><span style=3D"font-size: 16px; padding: 0px=
+; margin: 0px"><br style=3D"padding: 0px; margin: 0px"></span></span></font=
+></div><div style=3D"padding: 0px; margin: 0px"><font style=3D"padding: 0px=
+; margin: 0px"><span style=3D"padding: 0px; margin: 0px"><span style=3D"fon=
+t-size: 16px; padding: 0px; margin: 0px">I
+would like to introduce myself and my company, a nationwide mergers
+& acquisitions advisory firm. We cover all industries such as
+medical, pest control, manufacturing, hotels, etc. We pride ourselves
+on our knowledge of the industries we work in.</span><span style=3D"font-si=
+ze: 16px; padding: 0px; margin: 0px"><br style=3D"padding: 0px; margin: 0px=
+"></span></span></font></div><div style=3D"padding: 0px; margin: 0px"><font=
+ style=3D"padding: 0px; margin: 0px"><span style=3D"padding: 0px; margin: 0=
+px"><span style=3D"font-size: 16px; padding: 0px; margin: 0px"><br style=3D=
+"padding: 0px; margin: 0px"></span></span></font></div><div style=3D"paddin=
+g: 0px; margin: 0px"><font style=3D"padding: 0px; margin: 0px"><span style=
+=3D"padding: 0px; margin: 0px"><span style=3D"font-size: 16px; padding: 0px=
+; margin: 0px">We
+offer a no charge confidential valuation of your company based on
+some basic operational and financial information, determine a marketing
+price and locate a qualified buyer. We pre-screen, pre-qualify and
+require a fully executed NDA and Buyer's Profile before sharing any
+detailed information with them.</span><span style=3D"font-size: 16px; paddi=
+ng: 0px; margin: 0px"><br style=3D"padding: 0px; margin: 0px"></span></span=
+></font></div><div style=3D"padding: 0px; margin: 0px"><font style=3D"paddi=
+ng: 0px; margin: 0px"><span style=3D"padding: 0px; margin: 0px"><span style=
+=3D"font-size: 16px; padding: 0px; margin: 0px"><br style=3D"padding: 0px; =
+margin: 0px"></span></span></font></div><div style=3D"padding: 0px; margin:=
+ 0px"><font style=3D"padding: 0px; margin: 0px"><span style=3D"padding: 0px=
+; margin: 0px"><span style=3D"font-size: 16px; padding: 0px; margin: 0px">I=
+f
+you are considering an exit strategy now or in the next 1-3 years, I
+would appreciate the opportunity to speak to you further.</span><span style=
+=3D"font-size: 16px; padding: 0px; margin: 0px"><br style=3D"padding: 0px; =
+margin: 0px"></span></span></font></div><div style=3D"padding: 0px; margin:=
+ 0px"><font style=3D"padding: 0px; margin: 0px"><span style=3D"padding: 0px=
+; margin: 0px"><span style=3D"font-size: 16px; padding: 0px; margin: 0px"><=
+br style=3D"padding: 0px; margin: 0px"></span></span></font></div><div styl=
+e=3D"padding: 0px; margin: 0px"><font style=3D"padding: 0px; margin: 0px"><=
+span style=3D"padding: 0px; margin: 0px"><span style=3D"font-size: 16px; pa=
+dding: 0px; margin: 0px">Thank you and have a great day!</span><span style=
+=3D"font-size: 16px; padding: 0px; margin: 0px"><br style=3D"padding: 0px; =
+margin: 0px"></span></span></font></div><div style=3D"padding: 0px; margin:=
+ 0px"><font style=3D"padding: 0px; margin: 0px"><span style=3D"padding: 0px=
+; margin: 0px"><span style=3D"font-size: 16px; padding: 0px; margin: 0px"><=
+br style=3D"padding: 0px; margin: 0px"></span></span></font></div></div></d=
+iv></div></div></div></div></div></div></div></div></div></div>
+<div style=3D"padding: 0px; margin: 0px"><b style=3D"padding: 0px; margin: =
+0px"><span style=3D"padding: 0px; margin: 0px"><span style=3D"background-co=
+lor: rgb(255, 255, 255); padding: 0px; margin: 0px"><span style=3D"font-siz=
+e: 18.6667px; padding: 0px; margin: 0px"><i style=3D"padding: 0px; margin: =
+0px"><span style=3D"color: rgb(153, 51, 255); padding: 0px; margin: 0px">Sa=
+ra Medley</span></i></span></span></span></b><span style=3D"color: rgb(153,=
+ 0, 152); padding: 0px; margin: 0px"><br style=3D"padding: 0px; margin: 0px=
+"></span></div><div style=3D"padding: 0px; margin: 0px"><i style=3D"padding=
+: 0px; margin: 0px"><b style=3D"padding: 0px; margin: 0px"><span style=3D"p=
+adding: 0px; margin: 0px"><span style=3D"font-size: 16px; padding: 0px; mar=
+gin: 0px"><span style=3D"background-color: rgb(255, 255, 255); padding: 0px=
+; margin: 0px"><span style=3D"color: rgb(0, 0, 0); padding: 0px; margin: 0p=
+x">BishopKnight LLC</span></span></span></span></b></i><br style=3D"padding=
+: 0px; margin: 0px"></div><div style=3D"padding: 0px; margin: 0px"><i style=
+=3D"padding: 0px; margin: 0px"><b style=3D"padding: 0px; margin: 0px"><span=
+ style=3D"padding: 0px; margin: 0px"><span style=3D"background-color: rgb(2=
+55, 255, 255); padding: 0px; margin: 0px"><span style=3D"color: rgb(0, 0, 0=
+); padding: 0px; margin: 0px"><span style=3D"font-size: 13px; padding: 0px;=
+ margin: 0px">President and Strategic Advisor </span></span></span></span><=
+/b></i><br style=3D"padding: 0px; margin: 0px"></div><div style=3D"padding:=
+ 0px; margin: 0px"><i style=3D"padding: 0px; margin: 0px"><b style=3D"paddi=
+ng: 0px; margin: 0px"><span style=3D"padding: 0px; margin: 0px"><span style=
+=3D"background-color: rgb(255, 255, 255); padding: 0px; margin: 0px"><span =
+style=3D"color: rgb(0, 0, 0); padding: 0px; margin: 0px"><span style=3D"fon=
+t-size: 13px; padding: 0px; margin: 0px">Direct 310-986-3321</span></span><=
+/span></span></b></i><br style=3D"padding: 0px; margin: 0px"></div><div sty=
+le=3D"padding: 0px; margin: 0px"><i style=3D"padding: 0px; margin: 0px"><b =
+style=3D"padding: 0px; margin: 0px"><span style=3D"padding: 0px; margin: 0p=
+x"><span style=3D"background-color: rgb(255, 255, 255); padding: 0px; margi=
+n: 0px"><span style=3D"color: rgb(0, 0, 0); padding: 0px; margin: 0px"><spa=
+n style=3D"font-size: 13px; padding: 0px; margin: 0px">Cell 310-345-8206</s=
+pan></span></span></span></b></i><br style=3D"padding: 0px; margin: 0px"></=
+div><div style=3D"padding: 0px; margin: 0px"><i style=3D"padding: 0px; marg=
+in: 0px"><b style=3D"padding: 0px; margin: 0px"><span style=3D"padding: 0px=
+; margin: 0px"><span style=3D"background-color: rgb(255, 255, 255); padding=
+: 0px; margin: 0px"><span style=3D"color: rgb(0, 0, 0); padding: 0px; margi=
+n: 0px"><span style=3D"font-size: 13px; padding: 0px; margin: 0px">Office&n=
+bsp;
+<font style=3D"padding: 0px; margin: 0px"><i style=3D"padding: 0px; margin:=
+ 0px"><b style=3D"padding: 0px; margin: 0px"><span style=3D"padding: 0px; m=
+argin: 0px"><span style=3D"padding: 0px; margin: 0px"><span style=3D"paddin=
+g: 0px; margin: 0px"><span style=3D"padding: 0px; margin: 0px">951-956-3806=
+</span></span></span></span></b></i></font>
+</span></span></span></span></b></i><br style=3D"padding: 0px; margin: 0px"=
+></div><div style=3D"padding: 0px; margin: 0px"><b style=3D"padding: 0px; m=
+argin: 0px"><span style=3D"padding: 0px; margin: 0px"><span style=3D"backgr=
+ound-color: rgb(255, 255, 255); padding: 0px; margin: 0px"><span style=3D"c=
+olor: rgb(0, 0, 0); padding: 0px; margin: 0px"><span style=3D"font-size: 13=
+px; padding: 0px; margin: 0px"><a href=3D"mailto:Sara@bishopknightllc.com" =
+target=3D"_blank" rel=3D"noopener noreferrer" style=3D"text-decoration: non=
+e; padding: 0px; margin: 0px"><i style=3D"padding: 0px; margin: 0px">Sara@b=
+ishopknightllc.com</i></a></span></span></span></span></b><br style=3D"padd=
+ing: 0px; margin: 0px"></div><div style=3D"padding: 0px; margin: 0px"><i st=
+yle=3D"padding: 0px; margin: 0px"><b style=3D"padding: 0px; margin: 0px"><s=
+pan style=3D"padding: 0px; margin: 0px"><span style=3D"background-color: rg=
+b(255, 255, 255); padding: 0px; margin: 0px"><span style=3D"color: rgb(0, 0=
+, 0); padding: 0px; margin: 0px"><span style=3D"font-size: 13px; padding: 0=
+px; margin: 0px">www.BishopKnightLLC.com</span></span></span></span></b></i=
+></div></div></div></span></span></font></div></div></div></div>
+<font style=3D"" size=3D"2"></font></div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"border:0px;">
+<table title=3D"" align=3D"center" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"min-width:100%;max-width:100%;table-layout:fixed;border:0px;border-col=
+lapse:collapse;background-color:rgba(0, 0, 0, 0);" width=3D"100%">
+<tbody><tr>
+<td align=3D"center" style=3D"border:0px;padding:6px 30px;border-top:0px no=
+ne rgb(17, 17, 17);border-bottom:0px none rgb(17, 17, 17)">
+<table cellspacing=3D"0" cellpadding=3D"0" style=3D"table-layout:fixed;bord=
+er:0px;border-collapse:collapse;" align=3D"center">
+<tbody><tr><td>
+<a class=3D"" href=3D"https://sender9.zohoinsights.com/ck1/2d6f.327230a/199=
+69c40-878e-11ed-9538-5254007783b8/26c6d9b135406f83c42ddafd035b7bd590d252a9/=
+1?e=3DMXHa7isJuKHF7kN1%2Fi6j8lt77Bg81AW1UahxKsIP7ZY%3D" style=3D"text-decor=
+ation:none;" target=3D"_blank">
+<table cellspacing=3D"0" cellpadding=3D"0" align=3D"center" style=3D"text-r=
+endering: optimizeLegibility;font-size:13px;letter-spacing:normal;font-fami=
+ly:Arial;background-color:rgb(217, 217, 217);color:rgb(67, 67, 67);border-r=
+adius:6px;border-width:0px;border-style:none;border-color:currentcolor">
+<tbody><tr>
+<td align=3D"center" style=3D"word-wrap:break-word;word-break:break-word;bo=
+rder:0px;padding:7px 20px;font-size:13.3333px;font-weight:400;font-style:no=
+rmal;text-decoration:none">
+<p style=3D"padding:0px;margin:0px">
+<a class=3D"" href=3D"https://sender9.zohoinsights.com/ck1/2d6f.327230a/199=
+69c40-878e-11ed-9538-5254007783b8/26c6d9b135406f83c42ddafd035b7bd590d252a9/=
+1?e=3DMXHa7isJuKHF7kN1%2Fi6j8lt77Bg81AW1UahxKsIP7ZY%3D" style=3D"text-decor=
+ation:none;color:rgb(67, 67, 67);" target=3D"_blank"><font style=3D"" face=
+=3D"Arial,Helvetica,sans-serif">Website</font></a>
+</p>
+
+</td>
+</tr>
+</tbody></table>
+</a>
+</td></tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr></tbody>
+</table>
+</td>
+</tr></tbody>
+</table>
+
+<img src=3D"https://sender9.zohoinsights.com/ocimage/2d6f.327230a/mk19969c4=
+0-878e-11ed-9538-5254007783b8_hk99038604a726964f0acab8799302895ca3ccdec8d53=
+d2c43c1e572d355686b2d.gif" height=3D"1" width=3D"1" alt=3D""></body></html>
+------=_Part_7287679_383758669.1672327991935--

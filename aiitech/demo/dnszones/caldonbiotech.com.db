@@ -1,0 +1,38 @@
+; cPanel first:11.70.0.66 (update_time):1674102948 Cpanel::ZoneFile::VERSION:1.3 hostname:gator4148.hostgator.com latest:102.0.26
+; Zone file for caldonbiotech.com
+$TTL 14400
+caldonbiotech.com.	86400	IN	SOA	ns8295.hostgator.com.	root.gator4148.hostgator.com.	(
+						2023011901 ;Serial Number
+						86400 ;refresh
+						7200 ;retry
+						3600000 ;expire
+						86400	)
+caldonbiotech.com.	86400	IN	NS	ns8295.hostgator.com.
+caldonbiotech.com.	86400	IN	NS	ns8296.hostgator.com.
+caldonbiotech.com.	14400	IN	A	192.185.52.186
+localhost	14400	IN	A	127.0.0.1
+caldonbiotech.com.	14400	IN	MX	0	mail.caldonbiotech.com.
+mail	14400	IN	A	192.185.52.186
+www	14400	IN	CNAME	caldonbiotech.com.
+ftp	14400	IN	CNAME	caldonbiotech.com.
+cpanel	14400	IN	CNAME	caldonbiotech.com.
+webmail	14400	IN	CNAME	caldonbiotech.com.
+caldonbiotech.com.	14400	IN	TXT	"v=spf1 a mx include:websitewelcome.com ~all"
+_carddavs._tcp	14400	IN	SRV	0	0	2080	gator4148.hostgator.com.
+_carddavs._tcp	14400	IN	TXT	path=/
+webdisk	14400	IN	A	192.185.52.186
+autoconfig	14400	IN	A	192.185.52.186
+_carddav._tcp	14400	IN	SRV	0	0	2079	gator4148.hostgator.com.
+_carddav._tcp	14400	IN	TXT	path=/
+cpcalendars	14400	IN	A	192.185.52.186
+_caldav._tcp	14400	IN	SRV	0	0	2079	gator4148.hostgator.com.
+_caldav._tcp	14400	IN	TXT	path=/
+autodiscover	14400	IN	A	192.185.52.186
+whm	14400	IN	A	192.185.52.186
+cpcontacts	14400	IN	A	192.185.52.186
+_autodiscover._tcp	14400	IN	SRV	0	0	443	cpanelemaildiscovery.cpanel.net.
+_caldavs._tcp	14400	IN	SRV	0	0	2080	gator4148.hostgator.com.
+_caldavs._tcp	14400	IN	TXT	path=/
+default._domainkey	14400	IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1Eru1BmTy5SCD2kgV2VddT1QhsgzkMSXqPrmX2TCN+VE/khcR9BaPWi4LZ8UzEXO9VRgSWmLRTW45YTb5UVIhSS5cmungbddJId+fzqLg6jizkcFgc6/7PSom4GbosCAeLXJle+RYafTblYt+dUbrnOVmE9yKMzP6gNNrAKPxu4CZqbdZVfBHSoukwR51IElj" V2cePJZWwlzfyDJDQXSlBey9VwPjaTvQ8H3vMiWAXAFymyXVCtG9HNPGHgwWnG6hEd0JXl8aLlbePtMFLY00p6rafFPMLqwCStmgu0PKj9doLqpTT0pGoFRvoAf5S+Hbnrhcn17M4C37kT2xKRShwIDAQAB\;
+_cpanel-dcv-test-record	14400	IN	TXT	_cpanel-dcv-test-record=B09RkHgGxHjtJNVyZggdzgohdpTmD8uWyoxBNr4ZJ42BbvpURWHg8HDrww9Pn04z
+_acme-challenge	14400	IN	TXT	B4umEMwbOJcbx7N4kaYtGSHMqiEW_ToLiocjqsGA84E
