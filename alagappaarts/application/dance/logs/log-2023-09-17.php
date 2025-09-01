@@ -1,0 +1,30 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2023-09-17 01:04:07 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 01:04:10 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 01:05:37 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 01:26:02 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 02:07:26 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 02:48:16 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 02:52:22 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 02:54:40 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 02:54:47 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 02:54:50 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 02:54:54 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 02:55:04 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 02:55:04 --> Severity: Notice --> Undefined offset: 0 /home/appaarts/public_html/application/dance/views/course.php 199
+ERROR - 2023-09-17 03:47:16 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 03:47:24 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 04:34:18 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 07:44:18 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 09:31:02 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 09:37:47 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 10:37:21 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 11:07:22 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 13:10:25 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 13:58:34 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 14:33:29 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 14:57:51 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 17:45:27 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 23:50:11 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-09-17 23:50:15 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97

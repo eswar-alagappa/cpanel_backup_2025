@@ -1,0 +1,3258 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	padding:0;
+	margin:0;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	background:#d0a94b url(../images/bg.gif) repeat-x;
+}
+.loginPage, .popup {
+	width:100%;
+	background:#D0A94A url(../images/login-bg.jpg) repeat-x;
+	display:block;
+	overflow:hidden;
+}
+.wrapper {
+	width:1000px;
+	margin:0 auto;
+}
+.loginHeader {
+	width:1000px;
+	padding:0 10px;
+	display:block;
+	overflow:hidden;
+	padding-bottom:19px;
+}
+.logo {
+	float:left;
+}
+.logoImg {
+	width:140px;
+	height:60px;
+	background:url(../images/sprite-img.png) no-repeat;
+}
+a img {
+	border:none;
+}
+.loginContent {
+	width:1000px;
+	padding:30px 0;
+}
+.loginFormOuter {
+	width:505px;
+	margin:0 auto;
+	border-top:solid 1px #6d190f;
+	border-left:solid 1px #6d190f;
+	border-right:solid 1px #6d190f;
+	border-bottom:solid 3px #ac8b3b;
+	margin-bottom:35px;
+}
+.loginFormTitle {
+	width:505px;
+	background:url(../images/login-title-bg.gif) repeat-x;
+	padding:12px 0;
+	text-align:center;
+	color:#e8c97e;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.loginForm {
+	width:475px;
+	background:#fad989 url(../images/login-inner-bg.gif) repeat-x;
+	padding:30px 0 30px 30px;
+}
+.loginFormRightBg {
+	background:url(../images/login-right-bg.gif) no-repeat right 10px;
+}
+.loginForm label {
+	color:#260000;
+	font-weight:bold;
+	margin-bottom:3px;
+	clear:both;
+	display:block;
+}
+.loginForm input {
+	width:330px;
+	border:solid 1px #322d1f;
+	background-color:#fef9eb;
+	padding:4px;
+	margin-bottom:13px;
+}
+.loginForm input.loginBtn {
+	width:111px;
+	height:33px;
+	background:url(../images/sprite-img.png) no-repeat 0 -65px;
+	color:#ffedc1;
+	font-size:14px;
+	text-transform:uppercase;
+	border:none;
+	margin:0;
+	clear:both;
+	display:block;
+	cursor:pointer;
+}
+.footerOuter {
+	width:100%;
+	background-color:#ca9f43;
+}
+.footer {
+	width:980px;
+	margin:0 auto;
+	padding:15px 10px;
+	color:#461d14;
+	font-size:11px;
+	display:block;
+	overflow:hidden;
+}
+.footerLeft {
+	float:left;
+}
+.footerRight {
+	float:right;
+}
+.footerRight a {
+	text-decoration:none;
+	color:#461d14;
+}
+.footerRight a:hover {
+	text-decoration:underline;
+}
+/**/
+
+.header {
+	width:1000px;
+	padding:0 10px;
+	display:block;
+}
+.headerTop {
+	width:1000px;
+	display:block;
+	padding-bottom:15px;
+}
+.headerBottom {
+	width:1000px;
+	padding:11px 0;
+	display:block;
+	overflow:hidden;
+}
+.menu {
+	float:right;
+	padding-top:18px;
+}
+.menu ul {
+	padding:0;
+	margin:0;
+}
+.menu ul li {
+	list-style-type:none;
+	float:left;
+	background:url(../images/menu-line-bg.png) no-repeat right 10px;
+	text-transform:uppercase;
+}
+.menu ul li.last {
+	background:none;
+}
+.menu ul li a {
+	color: #FFEAA9;
+	display: block;
+	font-weight: bold;
+	margin-left: 5px;
+	margin-right: 4px;
+	overflow: hidden;
+	padding: 6px 6px;
+	text-decoration: none;
+}
+.menu ul li a:hover {
+	background:url(../images/menu-hover-bg.gif) repeat-x;
+	color:#260000;
+}
+.menu ul li a.active {
+	background:url(../images/menu-hover-bg.gif) repeat-x;
+	color:#260000;
+}
+/*menu*/
+
+
+/*drop down*/
+
+#nav {
+	padding:0;
+	margin:0;
+	height:51px;
+	z-index:500;
+	float:right;
+}
+#nav li.top {
+	display:block;
+	float:left;
+	height:32px;
+}
+#nav li.top_link a {
+	display:block;
+	color:#4a0301;
+	text-decoration:none;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding:19px 29px;
+	cursor:pointer;
+}
+#nav li.top_link a:hover {
+	color:#ffc856;
+	height: 40px;
+}
+#nav li:hover a.top_link {
+	background:url(../images/menu-hover-bg.gif) repeat-x;
+	color:#3d0601;
+	text-decoration:none;
+}
+/* Default list styling */
+
+#nav li:hover {
+	position:relative;
+	z-index:2000000;
+}
+.menu ul li ul {
+}
+.menu ul li ul li {
+	text-shadow:none;
+	border-bottom:solid 1px #af8247;
+	padding:0 !important;
+	width:150px;
+	display:block;
+	overflow:hidden;
+}
+#nav li:hover ul.sub {
+	left:5px;
+	top:25px;
+	white-space:nowrap;
+	width:160px;
+	height:auto;
+	text-shadow:none;
+	z-index:300;
+	background: #dfbb67;
+}
+#nav li:hover ul.sub li {
+	display:block;
+	position:relative;
+	float:left;
+	width:160px;
+	font-weight:normal;
+}
+#nav li:hover ul.sub li a {
+	display:block;
+	font-weight:normal;
+	text-transform:uppercase;
+
+	color:#4a0301;
+	text-decoration:none;
+	padding:6px 0 6px 18px;
+	margin:0;
+}
+#nav li:hover ul.sub li a:hover {
+	color:#4b0100;
+	background:url(../images/hover-bg.jpg) repeat-x;
+	font-weight:normal;
+	text-shadow:none !important;
+	border:none;
+}
+#nav li:hover li:hover ul, #nav li:hover li:hover li:hover ul, #nav li:hover li:hover li:hover li:hover ul, #nav li:hover li:hover li:hover li:hover li:hover ul {
+	left:182px;
+	top:0px;
+	white-space:nowrap;
+	width:167px;
+	z-index:400;
+	height:auto;
+	border-left:none !important;
+}
+
+
+#nav ul, #nav li:hover ul ul, #nav li:hover li:hover ul ul, #nav li:hover li:hover li:hover ul ul, #nav li:hover li:hover li:hover li:hover ul ul {
+	position:absolute;
+	left:-9999px;
+	top:-9999px;
+	width:0;
+	height:0;
+	margin:0;
+	padding:0;
+	list-style:none;
+	border-left:none !important;
+}
+/*drop down*/
+
+/*menu*/
+
+
+.admiTitle {
+	float:left;
+	font-size:20px;
+	color:#eed7a0;
+}
+.menuBottom {
+	float:right;
+	padding-top:8px;
+}
+.menuBottom ul {
+	padding:0;
+	margin:0;
+}
+.menuBottom ul li {
+	list-style-type:none;
+	float:left;
+	text-transform:uppercase;
+	font-size:11px;
+	margin-top: 5px
+}
+.menuBottom ul li a {
+	text-decoration:none;
+	color:#fce5b0;
+	padding:0 19px 0 28px;
+	border-right:solid 1px #c7ac85;
+}
+.menuBottom ul li a:hover {
+	text-decoration:underline;
+}
+.menuBottom ul li a.active {
+	text-decoration: underline;
+	color:#fff;
+}
+.menuBottom ul li.homeIcon {
+	background:url(../images/sprite-img.png) no-repeat 10px -100px;
+}
+.menuBottom ul li.loginviewnav {
+	background:url(../images/log-view-icon.png) no-repeat 7px;
+}
+.menuBottom ul li.loginviewIcon {
+	background:url(../images/menu-active.png) repeat-x;
+	margin:0;
+	list-style-type:none;
+	float:left;
+	text-transform:uppercase;
+	font-size:11px;
+	padding:5px 0;
+}
+.menuBottom ul li.loginviewIcon a {
+	background:url(../images/loge-view-icon-1.png) no-repeat 6px 1px;
+	text-decoration:none;
+	color:#2a0000;
+	padding:0 19px 0 28px;
+}
+.menuBottom ul li.dashboardIcon {
+	background:url(../images/menu-active.png) repeat-x;
+	margin:0;
+	list-style-type:none;
+	float:left;
+	text-transform:uppercase;
+	font-size:11px;
+	padding:5px 0;
+}
+.menuBottom ul li.dashboardIcon a {
+	background:url(../images/dashboardicon.png) no-repeat 11px 2px;
+	text-decoration:none;
+	color:#2a0000;
+	padding:0 19px 0 28px;
+}
+.menuBottom ul li.profileIcon {
+	background:url(../images/menu-active.png) repeat-x;
+	margin:0;
+	list-style-type:none;
+	float:left;
+	text-transform:uppercase;
+	font-size:11px;
+	padding:5px 0;
+}
+.menuBottom ul li.profileIcon a {
+	background:url(../images/profileicon.png) no-repeat 11px 2px;
+	text-decoration:none;
+	color:#2a0000;
+	padding:0 19px 0 28px;
+}
+.menuBottom ul li.dashboardnav {
+	background:url(../images/sprite-img.png) no-repeat 7px -233px;
+}
+.menuBottom ul li.profilenav {
+	background:url(../images/sprite-img.png) no-repeat 10px -118px;
+}
+.menuBottom ul li.logoutIcon {
+	background:url(../images/sprite-img.png) no-repeat 10px -136px;
+}
+.menuBottom ul li a.end {
+	border-right:none;
+}
+/**/
+
+.content {
+	width:1000px;
+	padding-bottom:35px;
+	display:block;
+	overflow:hidden;
+	min-height:500px;
+}
+.topNav {
+	width:1000px;
+	border-bottom:none;
+	padding:8px 0;
+	display:block;
+	overflow:hidden;
+	margin-top: 10px;
+}
+.topNav ul {
+	padding:0;
+	margin:0;
+	display:none;
+}
+.topNav ul li {
+	list-style-type:none;
+	float:left;
+	font-size:10px;
+	text-transform:uppercase;
+}
+.topNav ul li a {
+	text-decoration:none;
+	color:#000;
+	padding:0 14px 0 7px;
+	display:block;
+	background:url(../images/nav-bg.gif) no-repeat right center;
+}
+.topNav ul li.first {
+	text-decoration:none;
+	color:#000;
+	padding:0 14px 0 7px;
+	display:block;
+	background:url(../images/nav-bg.gif) no-repeat right center;
+}
+.topNav ul li a.last {
+	background:none;
+}
+.topNav ul li a:hover {
+	text-decoration:underline;
+}
+h2 {
+	padding:0;
+	margin:0 0 10px 0;
+	color:#600505;
+	text-transform:uppercase;
+	display:block;
+	overflow:hidden;
+}
+h2 span {
+	float:left;
+}
+h2 a {
+	float:left;
+	background:url(../images/left-add-bg.png) left no-repeat;
+	color:#FFF;
+	text-align: center;
+	text-decoration: none;
+	height:24px;
+	padding:0 0 0 32px;
+	font-weight:bold;
+	font-size:13px;
+	line-height:22px;
+}
+.studentViewContent {
+	width:980px;
+	padding:10px 10px
+}
+.searchBox {
+	width:956px;
+	background-color:#fada8d;
+	padding:8px 12px;
+	display:block;
+	margin-bottom:6px;
+	overflow:hidden;
+	border:solid 1px #a37608;
+}
+.searchBox label {
+	width:129px;
+	padding:4px 7px 3px 0;
+	display:block;
+	overflow:hidden;
+	float:left;
+	color:#260000;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+.searchBox input {
+	width:236px;
+	border:solid 1px #a17812;
+	background-color:#f2e9d3;
+	padding:3px;
+	height:16px;
+	float:left;
+	margin-right:35px;
+}
+.mR10 {
+	margin-right:10px !important;
+}
+.searchBox input.goBtn {
+	width:37px;
+	color:#FFF;
+	text-transform:uppercase;
+	height:24px;
+	background-color:#644110;
+	border:solid 1px #dfb54f;
+	cursor:pointer;
+	margin:0;
+}
+.studentList {
+	width:982px;
+}
+.studentNameTitle {
+	width:962px;
+	background-color:#600505;
+	padding:8px 10px;
+	display:block;
+	margin-bottom:8px;
+	overflow:hidden;
+}
+.studentNameTitle ul {
+	padding:0;
+	margin:0;
+}
+.studentNameTitle ul li {
+	float:left;
+	list-style-type:none;
+	font-weight:bold;
+	font:Arial, Helvetica, sans-serif;
+}
+.studentNameTitle ul li a {
+	text-decoration:none;
+	padding:3px 12px 0 13px;
+	color:#fed573;
+	display:block;
+	overflow:hidden;
+}
+.studentNameTitle ul li a.allBtn {
+	display:block;
+	color:#2D1800;
+	padding:2px 13px;
+	border-left: 1px solid #A5863B;
+	border-right: 1px solid #A5863B;
+	border-top: 1px solid #A5863B;
+	overflow:hidden;
+	background:url(../images/pagination-bg.gif) repeat-x;
+}
+.studentNameTitle ul li.arrowBg {
+	background:url(../images/arrow-bg.png) no-repeat center bottom;
+	height:25px;
+}
+.studentNameTitle ul li a:hover {
+	text-decoration:underline;
+}
+.studentNameTitle ul li .last {
+	background:none;
+}
+.studentListInner {
+	width:982px;
+}
+.studentListInner table {
+	width:982px;
+}
+.studentListInner table th {
+	background: #F9D384;
+	color: #2d1800;
+	font-size: 12px;
+	font-weight:bold;
+	padding:4px 0 4px 8px;
+	text-align: left;
+	text-transform: uppercase;
+}
+.studentListInner table tr.altRows td {
+	background-color:#f1f1f1;
+}
+.studentListInner table tr {
+	background-color: #FBF3DB;
+	font-size:11px;
+}
+.studentListInner table tr:hover td {
+	background-color:#fdebc9;
+}
+.studentListInner table tr td {
+	border-right: 1px solid #e1e1e1;
+	padding:4px 0 4px 8px;
+	text-align: left;
+}
+.paginationContent {
+	margin:8px 5px 10px 0;
+	padding:0;
+	display:block;
+	overflow:hidden;
+	width:982px;
+}
+.pagination {
+	float: right;
+}
+.pagination ul {
+	padding:0;
+	margin:0;
+}
+.pagination ul li {
+	background-color: none;
+	border: 1px solid #A5863B;
+	color: #a5863b;
+	float: left;
+	font-size: 11px;
+	list-style-type: none;
+	margin-right: 5px;
+}
+.pagination ul li a.prevBtn {
+	background:none;
+	background:url(../images/prev-btn.gif) no-repeat top;
+	width:25px;
+	height:20px;
+	display:block;
+	overflow:hidden;
+}
+.pagination ul li a.prevBtn:hover {
+	background-position:center;
+}
+.pagination ul li a.Inactive {
+	background:url(../images/prev-btn.gif) no-repeat bottom;
+}
+.pagination ul li a.Inactive:hover {
+	background:url(../images/prev-btn.gif) no-repeat bottom;
+}
+.pagination ul li a.nextBtn {
+	background:none;
+	background:url(../images/next-btn.gif) no-repeat top;
+	width:25px;
+	display:block;
+	overflow:hidden;
+	height:20px;
+}
+.pagination ul li a.lastInactive{
+	background:url(../images/next-btn.gif) no-repeat scroll center bottom transparent;
+	width:25px;
+	height:20px;
+}
+.pagination ul li.nextInactive a:hover{
+	background:none !important;
+}
+.pagination ul li.nextInactive{
+	 border: 1px solid #F3CF7D;
+	background:none !important;
+}
+.pagination ul li a.nextBtn:hover {
+	background-position: center;
+}
+.pagination ul li.prev a {
+	background:none;
+	color:#666;
+}
+.pagination ul li.prev a:hover {
+	background:none !important;
+	color:#666 !important;
+	cursor:default;
+}
+.pagination ul li.prevInactive {
+	background: none;
+	border: 1px solid #F3CF7D;
+	color: #F3CF7D !important;
+	cursor: default;
+}
+.pagination ul li.prevInactive a {
+	color:#CCC;
+	text-transform:uppercase;
+}
+.pagination ul li.prevInactive a:hover {
+	background:none !important;
+	color:#CCC !important;
+}
+.pagination ul li.prev, .next a {
+	color:#2d2410;
+	text-decoration:none;
+}
+.pagination ul li.prevlink a:hover {
+	color:#fff;
+	text-decoration:none;
+	background:#790707;
+}
+.pagination ul li.prev a:hover {
+	color:#fff;
+	text-decoration:none;
+	background:#790707;
+}
+.pagination ul li.next a:hover {
+	color:#fff;
+	text-decoration:none;
+	background:#790707;
+}
+.pagination ul li span {
+	color:#2b2310;
+	padding:0;
+	font-size:10px;
+}
+.pagination ul li span.next {
+	color:#666;
+	font-weight:bold;
+	font-size:10px;
+	padding:0;
+}
+.pagination ul li a {
+	color: #A5863B;
+	display: block;
+	margin: 0;
+	overflow: hidden;
+	padding: 3px 6px;
+	text-decoration: none;
+}
+.pagination ul li a.active {
+	background-color: #fbf0cf;
+	color: #2d2415;
+	padding: 3px 6px;
+}
+.pagination ul li a:hover {
+	color: #a5863b;
+	background-color:#f8cf74;
+}
+.pagination ul li a.p0 {
+	padding:0;
+}
+.paginationLeft {
+	float:left;
+	color:#2b2310;
+}
+/*Registration*/
+
+.registrationContent {
+	width:980px;
+	padding:10px 10px
+}
+.registrationForm {
+	width:890px;
+	display:block;
+	overflow:hidden;
+	margin:0 auto;
+	background-color:#FFF !important;
+	padding:25px;
+	border-bottom:solid 5px #AC8B3B;
+	background:url(../images/form-outer-bg.png) no-repeat center top;
+}
+.registrationForm ul {
+	padding:0;
+	margin:0 auto;
+	width:675px;
+}
+.registrationForm ul h3 {
+	padding:0;
+	margin-bottom:12px;
+	clear:both;
+	color:#600505;
+	border-bottom:solid 1px #666;
+	width:640px;
+}
+.registrationForm legend {
+	padding:0 6px;
+	font-size:14px;
+	font-weight:bold;
+	color:#600505;
+}
+.registrationForm fieldset {
+	padding:15px;
+	width:90%;
+	margin:0 auto;
+	clear:both;
+	margin-bottom:18px;
+}
+.registrationForm ul li {
+	list-style-type:none;
+	width:317px;
+	float:left;
+	display:block;
+	overflow:hidden;
+	margin:0 20px 15px 0;
+}
+.registrationForm ul li span {
+	font-weight:bold;
+	margin:0 0 4px 6px;
+	display:block;
+	overflow:hidden;
+}
+.registrationForm ul li select {
+	float:left;
+	margin-right:5px;
+}
+.registrationForm ul li label {
+	width:296px;
+	padding-top:2px;
+	display:block;
+	overflow:hidden;
+	padding-bottom:3px;
+}
+.registrationForm ul li input {
+	border:solid 1px #bdbdbd;
+	width:300px;
+}
+.registrationForm ul li input.radiobtn {
+	border:solid 1px #bdbdbd;
+	width:20px;
+	margin:5px 0;
+	border:none;
+}
+.registrationForm ul li input.verification {
+	width:60px;
+	float:left;
+	margin-right:7px;
+}
+.registrationForm ul li.button {
+	clear:both;
+}
+.registrationForm ul li textarea {
+	width:300px;
+	border: 1px solid #BDBDBD;
+}
+.registrationForm ul li input.submitBtn {
+	width:100px;
+	height:32px;
+	background:url(../images/sprite-img.png) no-repeat 0 -155px;
+	border:none;
+	color:#ffeec4;
+	text-transform:uppercase;
+	font-size:13px;
+	margin-right:10px;
+	cursor:pointer;
+}
+.registrationForm ul li input.backBtn {
+	background: url(../images/sprite-img.png) no-repeat 0 -155px;
+	border: medium none;
+	color: #FFEEC4;
+	cursor: pointer;
+	font-size: 13px;
+	height: 32px;
+	margin-right: 10px;
+	text-transform: uppercase;
+	width: 100px;
+}
+.registrationForm ul li a {
+	text-decoration:none;
+}
+.registrationForm ul li input.resetBtn {
+	width:100px;
+	height:32px;
+	background:url(../images/sprite-img.png) no-repeat 0 -195px;
+	border:none;
+	color:#f2f2f1;
+	text-transform:uppercase;
+	font-size:13px;
+	cursor:pointer;
+}
+.w300 {
+	width:300px;
+}
+.w200 {
+	width:200px !important;
+}
+.registrationForm ul li.selectProgram input {
+	width:auto !important;
+}
+/*Registration*/
+/*students registration style begins*/
+.registrationFormStudents {
+	padding:0;
+	margin:0 auto;
+	width:675px;
+}
+.registrationFormStudents ul {
+	padding:0;
+	margin:0 10px 0 0;
+	width:320px;
+	float:left;
+}
+.registrationFormStudents a img {
+	border: medium none;
+	margin: -6px 0 0;
+}
+/*Registration*/
+/*dashboard*/
+
+.dashboardContent {
+	width:980px;
+	display:block;
+	overflow:hidden;
+	padding-top:40px;
+}
+.dashboardDetails {
+	width:320px;
+	border-right:solid 1px #600505;
+	border-left:solid 1px #600505;
+	border-bottom:solid 4px #a4812e;
+	display:block;
+	overflow:hidden;
+	margin-right:6px;
+	float:left;
+}
+.mR0 {
+	margin-right:0 ;
+}
+.dashboardDetailsTitle {
+	background-color:#600505;
+	text-align:center;
+	font-weight:bold;
+	padding:11px 0;
+	font-size:14px;
+	text-transform:uppercase;
+	color:#fff0cd;
+}
+.dashboardDetailsInner {
+	background-color:#f2dea5;
+	padding:15px 45px;
+}
+.dashboardDetailsInner ul {
+	padding:0;
+	margin:0;
+}
+.dashboardDetailsInner ul li {
+	list-style-type:none;
+	color:#220000;
+	line-height:22px;
+}
+.dashboardDetailsInner ul li span {
+	float:left;
+	width:170px;
+}
+/*dashboard*/
+
+/*Student wise detailed Report*/
+
+.studentDetailedReport {
+	width:980px;
+	padding:10px 10px
+}
+.detailedReportContent {
+	width:980px;
+	border-top:#4c0203 8px solid;
+}
+.detailedReportContentTitle {
+	width:940px;
+	display:block;
+	overflow:hidden;
+	padding:10px 20px;
+	background-color:#fbe69f;
+}
+.detailedReportContentTitle ul {
+	padding:0;
+	margin:0 15px 0 0;
+	float:left;
+}
+.detailedReportContentTitle ul li {
+	list-style-type:none;
+	line-height:22px;
+	font-weight:bold;
+}
+.bRNone {
+	border-right:none !important;
+}
+.detailedReportContentTitle ul li span {
+	width:150px;
+	float:left;
+	color:#250000;
+	text-transform:uppercase;
+}
+.detailedReportContentBottom {
+	width:940px;
+	padding:20px;
+	background-color:#fff5d7;
+}
+.detailedReportContentBottom h3 {
+	padding:0;
+	margin:0;
+	color:#FFF;
+}
+.detailedReportContentBottom table {
+	width:940px;
+	margin-bottom:20px;
+	border:solid 1px #b48d2f;
+}
+.detailedReportContentBottom table th {
+	background: #f9d384;
+	color: #2d1800;
+	font-size: 12px;
+	font-weight:normal;
+	padding:4px 0 4px 5px;
+	text-align: left;
+	text-transform: uppercase;
+	border-right:solid 1px #b48d2f;
+}
+.detailedReportContentBottom table tr.altRows td {
+	background-color:#fbf3db;
+}
+.detailedReportContentBottom table tr {
+	background-color: #FFFFFF;
+	font-size:11px;
+}
+.detailedReportContentBottom table tr td.title {
+	background-color:#f1bd5b;
+	text-transform:uppercase;
+	font-weight:bold;
+	border-right:none;
+}
+.detailedReportContentBottom table tr:hover td.title {
+	background-color:#f1bd5b !important;
+}
+.detailedReportContentBottom table tr:hover td {
+	background-color:#fdebc9;
+}
+.detailedReportContentBottom table tr td {
+	border-right: 1px solid #f4e9c8;
+	padding:4px 0 4px 8px;
+	text-align: left;
+}
+/*Student wise detailed Report*/.addProgramForm {
+	width:890px;
+	display:block;
+	overflow:hidden;
+	margin:0 auto;
+	padding:25px;
+	border-bottom: 5px solid #AC8B3B;
+	background:#fff url(../images/form-outer-bg.png) no-repeat top center;
+}
+.addProgramForm ul {
+	padding:0;
+	margin:0 auto;
+	width:445px;
+	display:block;
+	overflow:hidden;
+}
+.addProgramForm ul li {
+	list-style-type:none;
+	margin-bottom: 20px;
+	display:block;
+	overflow:hidden;
+}
+.addProgramForm ul li img {
+	/*float:left;*/
+}
+.addProgramForm ul li select {
+	float:left;
+	margin-right:5px;
+	border: 1px solid #BDBDBD;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	width: 230px;
+}
+.addProgramForm ul li label {
+	width:192px;
+	float:left;
+	padding-top:0;
+}
+.addProgramForm ul li a {
+	text-decoration:none;
+}
+.addProgramForm ul li input {
+	border:solid 1px #bdbdbd;
+	width:230px;
+}
+.addProgramForm ul li input.radiobtn {
+	border: medium none;
+	margin: 5px 0;
+	width: 20px;
+}
+.addProgramForm ul li textarea {
+	height:61px;
+	width:230px;
+	border:solid 1px #bdbdbd;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+.addProgramForm ul li input.saveBtn {
+	background: url(../images/sprite-img.png) no-repeat 0 -155px;
+	border: medium none;
+	color: #FFEEC4;
+	cursor: pointer;
+	font-size: 13px;
+	height: 32px;
+	margin-right: 10px;
+	text-transform: uppercase;
+	width: 100px;
+	float:left;
+}
+.addProgramForm ul li input.cancelBtn {
+	width:100px;
+	height:32px;
+	background:url(../images/sprite-img.png) no-repeat 0 -195px;
+	border:none;
+	color:#f2f2f1;
+	text-transform:uppercase;
+	font-size:13px;
+	cursor:pointer;
+}
+.addProgramForm ul li.btn {
+	clear: both;
+padding-left: 193px;
+}
+.addProgramForm ul li span {
+	float:left;
+}
+.addProgramForm ul li span input.radiobtn {
+	border:none;
+	width:20px;
+}
+/*Vignesh*/
+/* */
+.updateNameLink {
+	font-size:11px;
+	font-weight:bold;
+	color:#790707;
+}
+.updateNameLink:hover {
+	font-size:11px;
+	font-weight:bold;
+	color:#790707;
+	text-decoration:none;
+}
+.p0 {
+	padding-top:0 !important;
+}
+
+.addProgramForm ul li a {
+	text-decoration:none;
+}
+.w800 {
+	width:800px !important;
+}
+.addProgramForm ul li input.stock {
+	border:solid 1px #bdbdbd;
+	width:154px;
+	float:left;
+	margin-right:25px;
+}
+.addProgramForm ul li label.w75 {
+	width:75px;
+}
+.quantity {
+	width:40px !important;
+	float:left;
+	margin-right:35px;
+}
+.fL {
+	float:left;
+}
+.addProgramForm ul li label.w90 {
+	width:90px;
+}
+.loginForm a {
+	text-decoration:none;
+}
+.studentDetailedReport h2 {
+	padding:0;
+	margin:0 0 10px 0;
+	color:#FFF;
+	text-transform:uppercase;
+	display:block;
+	overflow:hidden;
+}
+.searchBox select {
+	width:236px;
+	border:solid 1px #a17812;
+	background-color:#f2e9d3;
+	padding:3px;
+	height:24px;
+	float:left;
+	margin-right:35px;
+}
+.searchBox label.statusTxt {
+	color: #260000;
+	display: block;
+	float: left;
+	font-weight: bold;
+	overflow: hidden;
+	padding: 4px 7px 3px 0;
+	text-transform: uppercase;
+	width: 65px;
+}
+.searchBox label.questionTxt {
+	color: #260000;
+	display: block;
+	float: left;
+	font-weight: bold;
+	overflow: hidden;
+	padding: 4px 7px 3px 0;
+	text-transform: uppercase;
+	width: 125px;
+}
+.registrationForm ul li label.viewStudent {
+	width:320px;
+	display:block;
+	overflow:hidden;
+	padding-bottom:5px;
+	font-weight:normal;
+}
+.centreApproval {
+	width:890px;
+	display:block;
+	overflow:hidden;
+	margin:0 auto;
+	padding:25px;
+	background:#fff url(../images/form-outer-bg.png) no-repeat top center;
+	border-bottom: 5px solid #AC8B3B;
+}
+.centreApproval ul {
+	padding:0;
+	margin:0 auto;
+	width:550px;
+	display:block;
+	overflow:hidden;
+}
+.centreApproval ul li {
+	list-style-type:none;
+	margin-bottom: 20px;
+	display:block;
+	overflow:hidden;
+}
+.centreApproval ul li img {
+	float:left;
+}
+.centreApproval ul li select {
+	float:left;
+	margin-right:5px;
+}
+.centreApproval ul li label {
+	width:240px;
+	float:left;
+}
+.centreApproval ul li a {
+	text-decoration:none;
+}
+.centreApproval ul li input {
+	border:solid 1px #bdbdbd;
+	width:230px;
+}
+.centreApproval ul li textarea {
+	height:61px;
+	width:230px;
+	border:solid 1px #bdbdbd;
+}
+.centreApproval ul li input.saveBtn {
+	background: url(../images/sprite-img.png) no-repeat 0 -155px;
+	border: medium none;
+	color: #FFEEC4;
+	cursor: pointer;
+	font-size: 13px;
+	height: 32px;
+	margin-right: 10px;
+	text-transform: uppercase;
+	width: 100px;
+}
+.centreApproval ul li input.cancelBtn {
+	width:100px;
+	height:32px;
+	background:url(../images/sprite-img.png) no-repeat 0 -195px;
+	border:none;
+	color:#f2f2f1;
+	text-transform:uppercase;
+	font-size:13px;
+	cursor:pointer;
+}
+.centreApproval ul li.btn {
+	padding-left:182px;
+	clear:both;
+}
+.centreApproval ul li span {
+	float:left;
+}
+.centreApproval ul li span input.radiobtn {
+	border:none;
+	width:20px;
+}
+.addProgramForm ul li label.w169 {
+	width:169px;
+}
+/*Vignesh*/
+.dashboardDetailsInner span.title {
+	font-weight:bold;
+	text-transform:uppercase;
+	float:left;
+}
+.dashboardDetailsInner ul li input.saveBtn {
+	background: url(../images/sprite-img.png) no-repeat 0 -155px;
+	border: medium none;
+	color: #FFEEC4;
+	cursor: pointer;
+	font-size: 13px;
+	height: 32px;
+	text-transform: uppercase;
+	width: 100px;
+	margin: 10px 0 0 150px;
+}
+.dashboardDetailsInner ul li a {
+	text-decoration:none;
+}
+.dashboardTitleOuter {
+	display:block;
+	overflow:hidden;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding-bottom:15px;
+	margin-bottom:15px;
+	border-bottom:dotted 1px #600505;
+}
+.dashboardTitleLeft {
+	float:left;
+}
+.dashboardTitleRight {
+	float:right;
+}
+.dashboardDetailsInner ul.fL {
+	float:left;
+}
+.w305 {
+	width: 425px;
+}
+.dashboardDetailsInner ul li span.w320 {
+	width:320px;
+}
+.w275 {
+	width: 394px;
+}
+.w136 {
+	width:136px !important;
+}
+.w65 {
+	width:65px !important;
+}
+.topNav ul li.last {
+	font-weight:bold;
+}
+.registrationFormCentre {
+	width:890px;
+	display:block;
+	overflow:hidden;
+	margin:0 auto;
+	background-color:#FFF !important;
+	padding:25px;
+	border-bottom:solid 5px #AC8B3B;
+	background:url(../images/form-outer-bg.png) no-repeat center top;
+}
+.registrationFormCentre ul {
+	padding:0;
+	margin:0 10px 0 30px;
+	width:320px;
+	float:left;
+}
+.registrationFormCentre ul h3 {
+	padding:0;
+	margin-bottom:12px;
+	clear:both;
+	color:#600505;
+	border-bottom:solid 1px #666;
+	width:640px;
+}
+.registrationFormCentre legend {
+	padding:0 6px;
+	font-size:14px;
+	font-weight:bold;
+	color:#600505;
+}
+.registrationFormCentre fieldset {
+	padding-top:12px;
+	width:90%;
+	margin:0 auto;
+	clear:both;
+	margin-bottom:18px;
+}
+.registrationFormCentre ul li {
+	list-style-type:none;
+	width:317px;
+	float:left;
+	display:block;
+	overflow:hidden;
+	margin:0 20px 15px 0;
+}
+.registrationFormCentre ul li select {
+	float:left;
+	margin-right:5px;
+}
+.registrationFormCentre ul li label {
+	width:315px;
+	display:block;
+	overflow:hidden;
+	padding-bottom:5px;
+}
+.registrationFormCentre ul li input {
+	border:solid 1px #bdbdbd;
+	width:300px;
+}
+.registrationFormCentre ul li input.radiobtn {
+	border:solid 1px #bdbdbd;
+	width:20px;
+	margin:0;
+	border:none;
+}
+.registrationFormCentre ul li input.verification {
+	width:60px;
+	float:left;
+	margin-right:7px;
+}
+.registrationFormCentre ul li.button {
+	clear:both;
+}
+.registrationFormCentre ul li textarea {
+	width:300px;
+	border: 1px solid #BDBDBD;
+}
+.registrationFormCentre ul li input.submitBtn {
+	width:100px;
+	height:32px;
+	background:url(../images/sprite-img.png) no-repeat 0 -155px;
+	border:none;
+	color:#ffeec4;
+	text-transform:uppercase;
+	font-size:13px;
+	margin-right:10px;
+	cursor:pointer;
+}
+.registrationFormCentre ul li input.backBtn {
+	background: url(../images/sprite-img.png) no-repeat 0 -155px;
+	border: medium none;
+	color: #FFEEC4;
+	cursor: pointer;
+	font-size: 13px;
+	height: 32px;
+	margin-right: 10px;
+	text-transform: uppercase;
+	width: 100px;
+}
+.registrationFormCentre ul li a {
+	text-decoration:none;
+}
+.registrationFormCentre ul li input.resetBtn {
+	width:100px;
+	height:32px;
+	background:url(../images/sprite-img.png) no-repeat 0 -195px;
+	border:none;
+	color:#f2f2f1;
+	text-transform:uppercase;
+	font-size:13px;
+	cursor:pointer;
+}
+.searchBox label.paymentTxt {
+	color: #260000;
+	display: block;
+	float: left;
+	font-weight: bold;
+	overflow: hidden;
+	padding: 4px 7px 3px 0;
+	text-transform: uppercase;
+	width:125px;
+}
+.addFieldOuter {
+	float:right;
+}
+.approvaldashboardDetails {
+	width:237px;
+	border-right:solid 1px #600505;
+	border-left:solid 1px #600505;
+	border-bottom:solid 4px #a4812e;
+	display:block;
+	overflow:hidden;
+	margin-right:6px;
+	float:left;
+}
+.approvaldashboardDetailsInner {
+	background-color:#f2dea5;
+	padding:10px;
+}
+.approvaldashboardDetailsInner ul {
+	padding:0;
+	margin:0;
+}
+.approvaldashboardDetailsInner ul li {
+	list-style-type:none;
+	color:#220000;
+	line-height:22px;
+}
+.approvaldashboardDetailsInner ul li span {
+	float:left;
+	width:170px;
+}
+.question fieldset {
+	padding-top:12px;
+	width:97% !important;
+	margin:0 auto;
+	clear:both;
+	margin-bottom:18px;
+}
+.w90p {
+	width:90% !important;
+}
+.addProgramForm ul li.anwsers {
+	list-style-type:none;
+	margin-bottom: 10px;
+	display:block;
+	overflow:hidden;
+	color:#600505;
+}
+.addProgramForm ul li label.answerOption {
+	float: left;
+	padding-left: 18px;
+	width: 163px;
+}
+*+html .headerBottom {
+	width:1000px;
+	padding:5px 0 11px 0;
+	display:block;
+	overflow:hidden;
+}
+*+html .menuBottom {
+	float:right;
+	padding-top:0;
+}
+h2 span.questionSearch {
+	float:right;
+}
+h2 span.questionSearch label {
+	color: #260000;
+	display: block;
+	float: left;
+	font-size:12px;
+	font-weight: bold;
+	overflow: hidden;
+	padding: 4px 7px 3px 0;
+	text-transform: uppercase;
+	width:125px;
+}
+h2 span.questionSearch select {
+	background-color: #F2E9D3;
+	border: 1px solid #A17812;
+	float: left;
+	height: 24px;
+	text-transform: capitalize;
+	margin-right: 35px;
+	padding: 3px;
+	width: 236px;
+}
+table.questionDetails {
+	clear:both;
+}
+table.questionDetails tr td {
+	text-align:left;
+	vertical-align:top;
+}
+.multipleChoice {
+	width:90%;
+	padding:15px 15px;
+	
+}
+.multipleChoice span {
+	font-weight:bold;
+	padding-top:2px;
+	color:#000;
+	margin-bottom:10px;
+	display:block;
+	overflow:hidden;
+}
+.multipleChoice ul {
+	padding:0;
+	margin:0;
+	width:95%;
+}
+.multipleChoice ul li {
+	list-style-type:none;
+	margin-bottom:10px;
+}
+.multipleChoice ul li span.option {
+	width:45px;
+	background-color:#d9d9d9;
+	color:#000;
+	font-weight:bold;
+	height: 20px;
+	padding-top: 3px;
+	float:left;
+	text-align:center;
+}
+.multipleChoice ul li textarea {
+	width:350px;
+	border:solid 1px #b2b2b2;
+	float:left;
+	height:68px;
+	padding:2px 0 0 2px;
+}
+.multipleChoice ul li span.correctAnswer {
+	height:48px;
+	width:145px;
+	float:left;
+	background-color:#f2f2f2;
+	text-align:center;
+	padding-top:25px;
+}
+.pL45 {
+	padding-left:45px;
+}
+.multipleChoice ul li span.titleQuestion {
+	width:350px;
+	padding:0;
+	margin:0;
+	float:left;
+}
+.multipleChoice ul li span.titlecorrectAnswer {
+	width:125px;
+	padding:0 0 0 20px;
+	margin:0;
+}
+.multipleChoice ul li input {
+	width:530px;
+}
+.multipleChoice ul li textarea.answerBox {
+	width:190px;
+	border:solid 1px #b2b2b2;
+	float:left;
+	height:70px;
+	margin:0 0 0 20px;
+}
+.multipleChoice ul li textarea.enterQuestion {
+	width:550px;
+}
+.w125 {
+	width:125px !important;
+}
+.h71 {
+	height:71px;
+}
+.registrationFormStudents ul.experience {
+	width:675px !important;
+}
+h2 strong {
+	float:right;
+}
+h2 strong a {
+	color:#600505;
+	background:none;
+	text-decoration:underline;
+}
+h2 strong a:hover {
+	color:#fff;
+	background:none;
+	text-decoration:underline;
+}
+h2 a.editprofile {
+	float:left;
+	background:url(../images/left-add-bg.png) left no-repeat;
+	color:#FFF;
+	text-align: center;
+	text-decoration: none;
+	height:24px;
+	padding:0 0 0 32px;
+	font-weight:bold;
+	font-size:13px;
+	line-height:22px;
+}
+.mB8 {
+	margin-bottom:8px !important;
+}
+.question legend {
+	color: #600505;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 6px;
+}
+.addProgramForm ul li input.date {
+	border: 1px solid #BDBDBD;
+	float: left;
+	width: 110px;
+}
+
+.date2 {
+	float: left;
+	margin-right: 35px;
+	width: 40px !important;
+}
+.mR15 {
+	margin-right:20px !important;
+}
+.w660 {
+	width: 668px !important;
+}
+.addProgramForm ul li span.titleSub {
+	color:#333;
+	font-style:italic;
+}
+.addProgramForm ul li input.assignBtn {
+	background: url(../images/sprite-img.png) no-repeat 0 -376px;
+	border: medium none;
+	color: #FFEEC4;
+	cursor: pointer;
+	font-size: 13px;
+	height: 32px;
+	margin-right: 10px;
+	text-transform: uppercase;
+	width: 145px;
+}
+.onlineExamContentTitle ul li a {
+	text-decoration:underline;
+	color: #250000;
+}
+.onlineExamContentTitle ul li a:hover {
+	text-decoration:none;
+}
+/*kk*/
+.approvalStudentForm {
+	width:942px;
+	display:block;
+	overflow:hidden;
+}
+.approvalStudentForm ul {
+	padding:0;
+	margin:0 10px 0 30px;
+	width:320px;
+	float:left;
+}
+.approvalStudentForm ul h3 {
+	padding:0;
+	margin-bottom:12px;
+	clear:both;
+	color:#600505;
+	border-bottom:solid 1px #666;
+	width:640px;
+}
+.approvalStudentForm legend {
+	padding:0 6px;
+	font-size:14px;
+	font-weight:bold;
+	color:#600505;
+}
+.approvalStudentForm fieldset {
+	padding-top:12px;
+	clear:both;
+	margin-bottom:18px;
+	background:#fff;
+}
+.approvalStudentForm ul li {
+	list-style-type:none;
+	width:317px;
+	float:left;
+	display:block;
+	overflow:hidden;
+	margin:0 20px 15px 0;
+}
+.approvalStudentForm ul li label {
+	padding:0 10px 5px 0;
+	vertical-align:top;
+}
+.approvalStudentForm ul li input {
+	border:solid 1px #bdbdbd;
+	width:220px;
+}
+.approvalStudentForm ul li textarea {
+	border:solid 1px #bdbdbd;
+	width:220px;
+}
+.approvalStudentForm ul li.button {
+	clear:both;
+}
+.approvalStudentForm ul li input.submitBtn {
+	width:100px;
+	height:32px;
+	background:url(../images/sprite-img.png) no-repeat 0 -155px;
+	border:none;
+	color:#ffeec4;
+	text-transform:uppercase;
+	font-size:13px;
+	margin-right:10px;
+	cursor:pointer;
+}
+.approvalStudentForm ul li a {
+	text-decoration:none;
+}
+.approvalStudentForm ul li input.resetBtn {
+	width:100px;
+	height:32px;
+	background:url(../images/sprite-img.png) no-repeat 0 -195px;
+	border:none;
+	color:#f2f2f1;
+	text-transform:uppercase;
+	font-size:13px;
+	cursor:pointer;
+}
+.onlineExamContentTitle {
+	background-color: #FBE69F;
+	display: block;
+	margin: 0;
+	overflow: hidden;
+	padding: 10px 20px;
+	width: 900px;
+}
+.onlineExamContentTitle ul {
+	padding:0;
+	margin:0 15px 0 0;
+	float:left;
+}
+.onlineExamContentTitle ul li {
+	list-style-type:none;
+	line-height:22px;
+	font-weight:bold;
+}
+.onlineExamContentTitle ul li span {
+	width:150px;
+	float:left;
+	color:#250000;
+	text-transform:uppercase;
+}
+.onlineExamContent {
+	width:941px;
+	border-top:#4c0203 8px solid;
+}
+.onlineexammark fieldset {
+	padding-top:12px;
+	width:98% !important;
+	margin:0;
+	clear:both;
+	margin-bottom:18px;
+}
+.onlineexammark legend {
+	color: #600505;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 6px;
+}
+.w100p {
+	width:100% !important;
+}
+.w800 {
+	width: 832px !important;
+	margin:0 10px;
+}
+
+.addProgramForm ul li.marksobtained input {
+	border:solid 1px #bdbdbd;
+	width:40px;
+}
+.addProgramForm ul li.marksobtained label {
+	width:113px;
+	float:left;
+	padding-top:3px;
+}
+.shortAnswerQuestions {
+	width:99%;
+	padding:15px;
+}
+.shortAnswerQuestions table tr td.none {
+	padding:0;
+}
+.shortAnswerQuestions table tr th {
+	padding:0 15px 0 0;
+}
+.shortAnswerQuestions table tr td {
+	padding:0 15px 15px 0;
+	vertical-align:top;
+}
+.shortAnswerQuestions table tr td span {
+	font-weight:bold;
+	padding-top:2px;
+	color:#000;
+	margin-bottom:10px;
+	display:block;
+	overflow:hidden;
+}
+.shortAnswerQuestions table tr td span.option {
+	width:45px;
+	background-color:#d9d9d9;
+	color:#000;
+	font-weight:bold;
+	height: 20px;
+	padding-top: 3px;
+	float:left;
+	text-align:center;
+}
+.shortAnswerQuestions table tr td input {
+	width:200px;
+	border:solid 1px #b2b2b2;
+	height:68px;
+	padding:2px 0 0 2px;
+}
+.shortAnswerQuestions table tr td input.marks {
+	width:50px;
+	border:solid 1px #b2b2b2;
+	height:20px;
+	padding:2px 0 0 2px;
+}
+.shortAnswerQuestions table tr td textarea {
+	width:200px;
+	border:solid 1px #b2b2b2;
+	height:68px;
+	padding:2px 0 0 2px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.addProgramForm ul li textarea.longanswer {
+	height:100px;
+	width:730px;
+	border:solid 1px #bdbdbd;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+.addProgramForm ul li input.marks {
+	width:50px;
+	border:solid 1px #b2b2b2;
+	height:20px;
+	padding:2px 0 0 2px;
+}
+.addProgramForm ul li.marksobtained label.subtotal {
+	float: left;
+	padding-top: 3px;
+	width: 75px;
+}
+.addProgramForm ul li.button {
+	clear:both;
+}
+.addProgramForm ul li input.submitBtn {
+	width:100px;
+	height:32px;
+	background:url(../images/sprite-img.png) no-repeat 0 -155px;
+	border:none;
+	color:#ffeec4;
+	text-transform:uppercase;
+	font-size:13px;
+	margin-right:10px;
+	cursor:pointer;
+}
+.addProgramForm ul li input.resetBtn {
+	width:100px;
+	height:32px;
+	background:url(../images/sprite-img.png) no-repeat 0 -195px;
+	border:none;
+	color:#f2f2f1;
+	text-transform:uppercase;
+	font-size:13px;
+	cursor:pointer;
+}
+.shortAnswerQuestions table tr td textarea.none {
+	width:200px;
+	border:solid 1px #b2b2b2;
+	height:68px;
+	padding:2px 0 0 2px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	overflow:hidden;
+}
+.searchBoxInner {
+	width:956px;
+	padding:0;
+	display:block;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+.searchBox select.studentListing {
+	background-color: #F2E9D3;
+	border: 1px solid #A17812;
+	float: left;
+	height: 24px;
+	margin-right: 35px;
+	padding: 3px;
+	width: 243px;
+}
+
+.approvalStudentForm ul li select {
+	border:solid 1px #bdbdbd;
+	width:220px;
+}
+/**/
+
+.registrationForm fieldset.w100 {
+	width:100% !important;
+}
+.registrationForm ul li input.checkbox {
+	width:14px;
+	float:left;
+}
+.registrationForm ul li.program {
+	margin: 0 20px 3px 0;
+}
+.w100 {
+	width:100px !important;
+}
+.registrationForm ul li input.cancelBtn {
+	
+	width:100px;
+	height:32px;
+	background:url(../images/sprite-img.png) no-repeat 0 -195px;
+	border:none;
+	color:#f2f2f1;
+	text-transform:uppercase;
+	font-size:13px;
+	cursor:pointer;
+}
+/**/
+
+.w350 {
+	width:350px !important;
+}
+.searchBoxInnerStudentTop {
+	padding:0;
+	display:block;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+.searchBoxInnerStudentTop a {
+	text-decoration:none;
+	color:#260000;
+	padding:0;
+}
+.searchBoxInnerStudentTop a.disabled {
+	color:#CCC;
+	cursor:default;
+}
+.searchBoxInnerStudent {
+	padding:0;
+	display:block;
+	margin-bottom:10px;
+	overflow:hidden;
+}
+.searchBoxInnerStudent a {
+	text-decoration:none;
+	color:#260000;
+	padding:0 18px;
+}
+.searchBoxInnerStudent input.submitBtn {
+	background: url("../images/sprite-img.png") no-repeat scroll 0 -155px transparent;
+	border: medium none;
+	color: #FFEEC4;
+	cursor: pointer;
+	font-size: 13px;
+	height: 32px;
+	margin-right: 10px;
+	text-transform: uppercase;
+	width: 100px;
+	text-decoration:none;
+}
+.searchBoxInnerStudent span {
+	display: block;
+	float: left;
+	margin-top: 8px;
+	border-left:solid 1px #260000;
+}
+.searchBoxInnerStudentTop input {
+	background-color: #F2E9D3;
+	border: 1px solid #A17812;
+	float: left;
+	height: 16px;
+	margin-right:10px;
+	padding: 3px;
+	width: 236px;
+}
+.downloadFieldOuter {
+	float:right;
+}
+.downloadFieldOuter a {
+	float:left;
+	background:url(../images/left-download-bg.png) left no-repeat;
+	color:#FFF;
+	text-align: center;
+	text-decoration: none;
+	height:24px;
+	padding:0 0 0 32px;
+	font-weight:bold;
+	font-size:13px;
+	line-height:22px;
+	margin-left:10px;
+}
+.searchBoxInnerStudentTop a img {
+	float:left;
+	margin-right:6px;
+}
+.searchBoxInnerStudentTop span {
+	float:left;
+	margin:0 10px;
+}
+.dn { display:none;}
+
+.addProgramForm fieldset {
+    clear: both;
+    margin: 0 auto 18px;
+    padding-top: 12px;
+    width: 90%;
+}
+
+.addProgramForm legend {
+    color: #600505;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 6px;
+}
+
+
+.vendartable
+{
+width:400px;
+}
+.vendartable th
+{
+padding:10px 18px;
+}
+.vendartable td
+{
+padding:10px 18px;
+}
+.tar
+{
+text-align:right !important;
+}
+
+
+
+.viewby {
+	width:956px;
+	background-color:#fada8d;
+	padding:8px 12px;
+	display:block;
+	margin-bottom:6px;
+	overflow:hidden;
+	border:solid 1px #a37608;
+}
+.downloadWordOuter{float:right;}
+.downloadWordOuter a {
+float:left;
+background:url(../images/left-word-bg.png) left no-repeat;
+color:#FFF;
+text-align: center;
+text-decoration: none;
+height:24px;
+padding:0 0 0 32px;
+font-weight:bold;
+font-size:13px;
+line-height:22px;
+margin-left:10px;
+}
+.downloadExcelOuter{float:right;}
+.downloadExcelOuter a {
+float:left;
+background:url(../images/left-xls-bg.png) left no-repeat;
+color:#FFF;
+text-align: center;
+text-decoration: none;
+height:24px;
+padding:0 0 0 32px;
+font-weight:bold;
+font-size:13px;
+line-height:22px;
+margin-left:10px;
+}
+.searchBox select.studentListingnew {
+	background-color: #F2E9D3;
+	border: 1px solid #A17812;
+	float: left;
+	height: 24px;
+	margin-right: 35px;
+	padding: 3px;
+	width: 243px;
+}
+a.addFilter:hover{
+	cursor:pointer;
+}
+a.clearAll:hover{
+	cursor:pointer;
+}
+a.deleteSelection:hover{
+	cursor:pointer;
+}
+
+.searchMenu {
+	 height: 17px;
+    padding: 2px 0 0 5px !important;
+	cursor: pointer;
+	border:1px solid #A37608;
+	
+}
+.searchBoxInnernew {
+	display:none;
+}
+.searchBoxInnernew a {
+  display:block;
+}
+.addProgramForm ul li strong.titleSub1 {
+	color:#333;
+	font-style:italic;
+	display:inline;
+	font-weight:normal;
+	font-size:11px;
+}
+.addProgramForm ul li input.time {
+	border: 1px solid #BDBDBD;
+	width: 70px;
+}
+.addProgramForm ul li select.course {
+	float:left;
+	margin-right:5px;
+	border: 1px solid #BDBDBD;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	width: 150px;
+}
+
+
+
+
+
+.onlineExamMarkOuter {
+	width:635px;
+}
+.onlineExamMarkOuter table {
+	width:635px;
+	margin-bottom:20px;
+	border:solid 1px #999;
+}
+.onlineExamMarkOuter table th {
+	color: #000;
+	font-size: 12px;
+	font-weight:bold;
+	padding:4px 0 4px 5px;
+	text-align: left;
+	text-transform: uppercase;
+	border-right:solid 1px #999;
+	border-bottom:solid 1px #999;
+}
+.onlineExamMarkOuter table tr.altRows td {
+	background-color:#fbf3db;
+}
+.onlineExamMarkOuter table tr {
+	background-color: #FFFFFF;
+	font-size:11px;
+}
+.onlineExamMarkOuter table tr td.title {
+	background-color:#f1bd5b;
+	text-transform:uppercase;
+	font-weight:bold;
+	border-right:none;
+}
+.onlineExamMarkOuter table tr:hover td.title {
+	background-color:#f1bd5b !important;
+}
+
+.onlineExamMarkOuter table tr td {
+	border-right: 1px solid #999;
+	padding:4px 0 4px 8px;
+	text-align: left;
+}
+.addProgramForm ul li.marksobtained {
+	float:right;
+	width:134px;
+}
+
+.addProgramForm ul.addquestion {
+	padding:0;
+	margin:0 auto;
+	width:800px;
+	display:block;
+	overflow:hidden;
+}
+
+.editquestion fieldset {
+    clear: both;
+    margin: 0 auto 18px;
+    padding-top: 12px;
+    width: 97% !important;
+}
+.addProgramForm ul.reassignexam {
+	margin: 0 0 0 11px !important;
+    width: 436px !important;
+}
+.reassignexam fieldset {
+    clear: both;
+    margin: 0 auto 18px;
+    padding-top: 12px;
+    width: 71% !important;
+}
+.addProgramForm ul li input.reassignBtn {
+    background: url(../images/sprite-img.png) no-repeat scroll 0 -375px transparent;
+    border: medium none;
+    color: #FFEEC4;
+    cursor: pointer;
+    font-size: 13px;
+    height: 33px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    width: 137px;
+}
+.addProgramForm ul.w350 {
+    margin:0;
+    padding: 0;
+    width: 350px;
+	float:left;
+}
+.onlineExamMarkOuter table.w850 {
+    border: 1px solid #999;
+    margin-bottom: 20px;
+    width: 856px;
+}
+.onlineExamMarkOuter.w850 {
+	 width: 856px;
+}
+.year
+{
+	padding:3px 5px ;
+}
+
+.mR10
+{
+	margin-right:10px;
+}
+.w600
+{
+	width:600px !important;
+}
+
+.onlineExamContentTitle ul.w350 {
+	
+	width:350px
+}
+
+
+.viewMaterial {
+clear:both;
+}
+
+.viewMaterial table {
+    border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	border-left: 1px solid #999999;
+    margin-bottom: 20px;
+    width: 700px;
+}
+.viewMaterial table tr td.bb
+{
+	border-bottom: 1px solid #999999;
+}
+
+
+.viewMaterial table tr {
+    background-color: #FFFFFF;
+    font-size: 11px;
+	
+
+}
+
+.viewMaterial table th {
+    border-bottom: 1px solid #999999;
+    border-right: 1px solid #999999;
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    padding:10px 18px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.viewMaterial table tr td {
+    border-right: 1px solid #999999;
+    padding:10px 18px;
+    text-align: left;
+		border-bottom: 1px solid #999999;
+}
+.h39
+{
+	height:39px;
+}
+
+
+.fr{
+	float:right !important;
+}
+.addProgramForm ul li span.pL10 {
+    float: left;
+	padding-left:12px;
+}
+.addProgramForm ul li.paymentbtn {
+    clear: both;
+    padding-left: 240px;
+}
+.addProgramForm ul.w380 {
+    margin:0 auto;
+    padding: 0;
+    width: 600px;
+
+}
+.w210 {
+
+    height: 38px;
+    /*margin-bottom: 12px;*/
+    width: 200px !important;
+}
+.w220 {
+
+    height: 20px;
+    width: 203px !important;
+}
+.programfee fieldset {
+    clear: both;
+    margin:0;
+    padding-top: 12px;
+    width: 75% !important;
+}
+
+
+.addProgramForm ul li span.w200 {
+    float: left;
+	width:250px !important;
+}
+.sendannounceOuter {
+    float: right;
+}
+.sendannounceOuter a {
+    background: url("../images/send-announcement-icon.png") no-repeat scroll left center transparent;
+    color: #FFFFFF;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 22px;
+    margin-left: 10px;
+    padding: 0 0 0 32px;
+    text-align: center;
+    text-decoration: none;
+}
+.sendAnnouncementOuter{
+	width:890px;
+	display:block;
+	overflow:hidden;
+	margin:0 auto;
+	padding:25px;
+	border-bottom: 5px solid #AC8B3B;
+	background:#fff url(../images/form-outer-bg.png) no-repeat top center;
+}
+.sendAnnouncement fieldset {
+    clear: both;
+    margin: 0 18px 18px 0;
+    padding-top: 12px;
+    width: 75% !important;
+}
+
+.addProgramForm ul li.announcementbtn {
+    clear: both;
+    padding-left: 190px;
+}
+
+/**/
+
+.w105 {
+	width:105px !important ;
+}
+.h65
+{
+	height:65px;
+}
+
+
+.w97p
+{
+width:97% !important;
+}
+
+
+.addMoreBtn {
+float: right;
+}
+.addMoreBtn a {
+background: url("../images/left-add-bg.png") no-repeat scroll left center transparent;
+color: #FFFFFF;
+float: left;
+font-size: 13px;
+font-weight: bold;
+height: 24px;
+line-height: 22px;
+padding: 0 0 0 32px;
+text-align: center;
+text-decoration: none;
+}
+
+/**/
+
+/*My Work*/
+div.error{
+	color:#F00;
+	font-size:11px;
+	padding:0 0 0 192px;
+}
+
+.status div.error{
+	float:left;
+}
+.durationyear div.error{
+	float:left;
+	padding:0;
+}
+.durationmonth div.error{
+	float:left;
+	padding:0;
+}
+.graceyear div.error{
+	float:left;
+	padding:0;
+}
+.gracemonth div.error{
+	float:left;
+	padding:0;
+}
+li.programlist div.error{
+	clear:both;
+}
+.statusnew div.error{
+	float:left;
+	clear:both;
+}
+.programfee-status div.error{
+	clear:both;
+	padding-left:196px !important;
+}
+.checkboxpgm div.error{
+	padding:0;
+}
+#prgm-fee div.error{
+	padding-left:11px;
+}
+#frmCentreadd div.error{
+	padding:0;
+}
+#studentForm div.error{
+	padding:0;
+}
+#frmLogin div.error{
+	padding:0;
+	margin-top:-10px;
+}
+#questionform div.error{
+	padding:0;
+}
+#assign-exam div.error{
+	clear:both;
+	padding:0;
+}
+.adminresponsibility div.error{
+	padding:0;
+}
+.multipleanswers div.error{
+	font-weight:normal;
+	width:150px;
+}
+.status1 div.error{
+	padding:0;
+}
+.studentstatus div.error{
+	clear:both;
+}
+li.dropdownprogramlist div.error{
+	clear:both;
+	padding-left:192px !important;
+}
+table.coursefee div.error{
+	padding:10px 0 0 10px;
+}
+strong.star{
+	float:none;
+	color:#F00;
+}
+.durationyear{
+	float:left;
+	width:125px;
+}
+.durationmonth{
+	float:left;
+	width:125px;
+}
+.graceyear{
+	float:left;
+	width:125px;
+}
+.gracemonth{
+	float:left;
+	width:125px;
+}
+
+
+/*My Work*/
+/*Deepika*/
+
+.loginForm span.admininderror{
+	color:#F00;
+	padding:0;
+	margin:0;
+}
+/*.studentViewContent p span{
+	color:#F00;
+	padding:0 0 0 325px; 
+	font-size:21px;
+}*/
+.addProgramForm ul li span.description{
+	width:250px;
+}
+.addProgramForm ul li a.cancelBtn {
+	 background: url("../images/sprite-img.png") no-repeat scroll 0 -195px transparent;
+    border: medium none;
+    color: #F2F2F1;
+    cursor: pointer;
+    display: block;
+    font-size: 13px;
+    height: 17px;
+    overflow: hidden;
+    padding: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 85px;
+}
+.addProgramForm ul li a.saveBtn {
+	background: url(../images/sprite-img.png) no-repeat 0 -155px;
+	border: medium none;
+	color: #FFEEC4;
+	cursor: pointer;
+	font-size: 13px;
+	height: 28px;
+	margin-right: 10px;
+	text-transform: uppercase;
+	width: 103px;
+	float:left;
+	padding-top:9px;
+	text-align:center;
+}
+span.adminquestionTypeError{
+	color:#F00;
+	padding:0 0 0 237px;
+}
+.programfee td {
+	padding-bottom:10px;
+}
+div.courseFee{
+	margin:0 0 12px 0;
+	
+	height:40px;
+}
+div.courseFee input{
+	float: left !important;
+}
+.errorSelectBox
+{clear:both;
+color:#F00;}
+.inputBox div.error{
+	clear:both;
+	padding-left:0 !important;
+	}
+.selectBox{
+	width:205px;
+	float:left;
+}
+.inputBox{
+	width:210px;
+	float:left;
+}
+
+.selectBox div.error{
+		clear:both;
+		padding-left:0 !important;
+}
+.deleteCourse img:hover {
+	cursor:pointer;
+}
+span.addCourse a:hover,span.addMore a:hover{
+	cursor:pointer;
+}
+input.fl{
+	float:left;
+}
+.addProgramForm ul li label.error {
+float:none;
+padding-left:5px;
+color:#F00;
+}
+.registrationForm ul li a.cancelBtn {
+	 background: url("../images/sprite-img.png") no-repeat scroll 0 -195px transparent;
+    border: medium none;
+    color: #F2F2F1;
+    cursor: pointer;
+    display: block;
+    font-size: 13px;
+    height: 17px;
+    overflow: hidden;
+    padding: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 85px;
+}
+div.errorContainer{
+	clear:both;
+}
+div.errorContainer label{
+	color: #260000;
+    display: block;
+    float: left;
+	font-weight:normal;
+	width:auto;
+	text-transform:lowercase;}
+.registrationForm ul li a.backBtn {
+	 background: url("../images/sprite-img.png") no-repeat scroll 0 -154px transparent;
+    border: medium none;
+    color: #F2F2F1;
+    cursor: pointer;
+    display: block;
+    font-size: 13px;
+    height: 17px;
+    overflow: hidden;
+    padding: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 85px;
+}
+/*deepika 28/10/2011 */
+#frmCentreApproval ul li label.error {
+padding :0 ;
+color:#F00;
+text-transform:none;
+}
+#frmStudentsearch div.errorContainer label {
+	color:#F00;
+	text-transform:none;
+}
+
+.w700
+{
+	width:700px !important;
+}
+.customError
+{
+	clear:both;
+	color:#F00;
+	padding:0 0 5px;
+}
+.vendartable th.pl0,.vendartable td.pl0
+{
+	padding-left:0px;
+}
+table.dynamicfields div.error 
+{
+	padding:0;
+}
+
+div.adminError{
+color:#F00;
+text-align:center;
+margin:0 0 10px 0;
+}
+.addMore a
+{
+	color:#600505;
+	font-weight:bold;
+	text-decoration:underline;
+}
+div.adminSuccess{
+color:#007500;
+text-align:center;
+margin:0 0 10px 0;
+font-weight:bold;
+}
+.wAuto
+{
+	 width:auto !important;
+}label.error{
+color:#F00  !important;
+}
+.searchBox input.viewAll
+{
+background-color: #600505;
+color: #FFFFFF;
+cursor: pointer;
+height: 24px;
+margin: 0;
+text-transform: uppercase;
+width: 180px;
+margin:10px 0 0 0;
+float:right;
+}
+span.addCourse a{
+	color:#600505;
+	font-weight: bold;
+    text-decoration: underline;
+}
+.flNone
+{
+	float:none !important;	
+}
+div.dynamicfields div.matchthefollowing
+{
+	display:block;
+	overflow:hidden;
+	padding-bottom:5px;
+}
+
+.addProgramForm ul li a.addField img
+{
+	padding-right:5px;
+	
+}
+.addProgramForm ul li a.addField label
+{
+	padding:2px 0 0 0;
+	cursor:pointer;
+}
+div.dynamicfields div .fl
+{
+	float:left;
+}
+
+.w90p li img
+{
+float:none !important;
+}
+#frmCheckPayment div.error {
+padding: 0;
+}
+
+li.paidamount div.error {
+padding-left: 12px !important;
+}
+li.paidondatepick div.error, li.creditondatepick div.error, li.checkdatepick div.error {
+clear: both;
+padding-left: 204px !important;
+}
+.addProgramForm ul li label.rdlList
+{
+	cursor:pointer;
+	   margin: 0 10px 0 0;
+    width: auto;
+}
+.registrationForm ul li input.chklist
+{
+width:auto;
+}
+.addProgramForm ul li a.addField label {
+cursor: pointer;
+padding: 2px 5px 0;
+width: auto;
+}
+
+.paymentTable table {
+	width:775px;
+}
+.paymentTable table th {
+	background: #F9D384;
+	color: #2d1800;
+	font-size: 12px;
+	font-weight:bold;
+	padding:4px 0 4px 8px;
+	text-align: left;
+	text-transform: uppercase;
+}
+.paymentTable table tr.altRows td {
+	background-color:#f1f1f1;
+}
+.paymentTable table tr {
+	background-color: #FBF3DB;
+	font-size:11px;
+}
+.paymentTable table tr:hover td {
+	background-color:#fdebc9;
+}
+.paymentTable table tr td {
+	border-right: 1px solid #e1e1e1;
+	padding:4px 0 4px 8px;
+	text-align: left;
+}
+.calendarImg{
+	
+    left: 113px;
+    margin: 2px;
+    position: relative;
+    top: -36px;
+    vertical-align: middle;
+	}
+.noPaymentd{
+	color:#f00;
+	 font-size: 15px;
+    padding: 0 0 0 250px;
+	}
+.onlineexamdetails{
+	margin:0 !important}
+.noRecord{
+	padding-left:390px;
+	color:#F00;
+	font-size:14px;
+	
+	}
+.subjectiveAnswer
+{
+	border: 2px solid #D3D3D3;
+    display: block;
+    height: 150px;
+    overflow-y: scroll;
+    width: 750px;
+	background:	#EFEFEF;
+	
+}
+.adminSuccess
+{
+	border:solid 1px #99cc00;
+	padding:15px 65px;
+	display:block;
+	overflow:hidden;
+	color:#333;
+	background:#ffffcc url(../images/success-icon.gif) no-repeat 20px 10px ;
+	margin-bottom:25px;
+}
+
+.adminError
+{
+	border:solid 1px #ff6633;
+	padding:15px 65px;
+	display:block;
+	overflow:hidden;
+	color:#333;
+	background:#ffcccc url(../images/error-icon.gif) no-repeat 20px 10px ;
+	margin-bottom:25px;
+}
+.warning
+{
+	border:solid 1px #ffcc00;
+	padding:15px 65px;
+	display:block;
+	overflow:hidden;
+	color:#333;
+	background:#ffe9ad url(../images/warning-icon.gif) no-repeat 20px 10px ;
+	margin-bottom:25px;
+}
+
+.adminError span, .adminSuccess  span, .warning span, .information span
+{
+	font-size:14px;
+	font-weight:bold;
+	margin-right:10px;
+	
+}
+
+.information
+{
+	border:solid 1px #4d8fcb;
+	padding:15px 65px;
+	display:block;
+	overflow:hidden;
+	color:#333;
+	background:#d1e4f3 url(../images/information-icon.gif) no-repeat 20px 10px ;
+	margin-bottom:25px;
+}
+ul.modules{
+		float:left;
+		width:166px;
+		height:145px;
+		
+}
+ul.modules li{
+	margin-bottom:0 !important;
+}
+ul.modules li input{
+		width:auto !important;
+}
+#adminform ul li span{
+	float:none;
+}
+#frmStock-material div.error{
+	padding:0;
+}
+/*li div.dynamicfields{
+	width:680px;
+}
+li div.dynamicfields div{
+	width:680px;
+	float:left;
+}*/
+/*nov-1*/
+#frmDispatchMaterial li.error{
+	color:red;
+}
+#frmDispatchMaterial li.dispatchcost li.error{
+	padding-left:192px;
+}
+#frmSendAnnouncement tr.centerdisplay div.error{
+	float:left;
+	margin-top:-14px;
+	font-weight:100;
+}
+#frmSendAnnouncement tr.studentdisplay div.error{
+	float:left;
+	margin-top:-14px;
+	font-weight:100;
+}
+#frmSendAnnouncement div.error{
+	padding-left:0px;
+}
+#frmSendAnnouncement li.replyMessage div.error{
+	padding-left:192px;
+}
+.reassignexam div.error{
+	padding:0 !important;
+	clear:both;
+}
+#publishResult div.error{
+	padding:0 !important;
+}
+.externalmarkError div.error{
+	clear:both;
+}
+.approvalStudentForm ul li input.radiobtn {
+	border:none;
+	width:20px;
+}
+.approvalStudentForm ul li div.status
+{
+	float:left;
+}
+
+ul.student li{
+	margin-bottom:0 !important;
+	
+}
+ul.student li input{
+		width:auto !important;
+}
+ul.studentSelectAll li input{
+	width:13px;
+}
+ul.studentSelectAll li{
+	margin-bottom:0 !important;
+}
+#frmSendAnnouncement div.error{
+	padding-left:0px;
+}
+ul.student li label{
+	width:auto;
+}
+#frmDispatchMaterial li.error{
+	color:red;
+}
+#frmDispatchMaterial li.dispatchcost li.error{
+	padding-left:192px;
+}
+#frmSendAnnouncement tr.centerdisplay div.error{
+	float:left;
+	margin-top:-14px;
+	font-weight:100;
+}
+#frmSendAnnouncement tr.studentdisplay div.error{
+	float:left;
+	margin-top:-14px;
+	font-weight:100;
+}
+#frmSendAnnouncement div.error{
+	padding-left:0px;
+}
+#frmSendAnnouncement li.replyMessage div.error{
+	padding-left:192px;
+}
+div.validateError
+{
+	color:#F00;
+	padding:0 0 0 190px;
+}
+.fromDate img{
+	float:left;
+	margin-right:6px;
+}
+.toDate img{
+	float:left;
+	margin-right:6px;
+}
+#frmStudentreport label.error {
+	font-weight:normal;
+	font-size:12px;
+	text-transform: capitalize;
+}
+.viewby ul
+{
+	 float: left;
+    margin: 0 10px 0 0;
+    padding: 0;
+    width: 850px;
+	}
+.viewby ul li
+{
+	  display: block;
+    float: left;
+    list-style-type: none;
+    margin: 0 20px 15px 0;
+    overflow: hidden;
+    width: 830px;
+}
+.viewby ul li label{
+	float:left;
+   display: block;
+    font-weight: bold;
+    overflow: hidden;
+    padding-bottom: 3px;
+    padding-top: 8px;
+    text-align: center;
+    width: 250px;
+}
+.viewby ul li a.newSearch{
+	float:right;
+	
+	width:105px;
+	height:24px;
+	}
+.downloadbtn{
+		float:right;
+}
+.exceldownloadBtn
+{
+	  background: url("../images/excel-download.jpg") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    height: 25px;
+    width: 250px;
+}
+.worddownloadBtn
+{    background: url("../images/word-download.jpg") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    height: 25px;
+    width: 229px;
+}
+.fromDate label.error
+{
+	width:0px !important;
+}
+.toDate label.error
+{
+	width:0px !important;
+}
+.fromDate input.error{
+	border: 1px solid #F00;
+}
+.toDate input.error{
+	border:  1px solid  #F00;
+}
+
+/*Deepika-0317*/
+.approvalStudentForm ul li input#datepicker {
+	width : 150px;
+}
+.tapMenu
+{
+	margin:0 0 20px 104px;
+	padding:0;
+	border-bottom:solid 2px #600505;
+	display:block;
+	overflow:hidden;
+	width:708px;
+}
+.tapMenu ul
+{
+	margin:0;
+	padding:0;
+}
+.tapMenu ul li
+{
+	list-style:none;
+	width:auto;
+	margin:0 3px 0 0;
+	background:url(../images/tap-menu-left-bg.gif) no-repeat left 0;
+	padding:0;
+	float:left;
+}
+
+.tapMenu ul li:hover
+{
+
+	background:url(../images/tap-menu-left-active-bg.gif) no-repeat left 0;
+	color:#fff;
+}
+
+.tapMenu ul li a:hover
+{ 
+	background:url(../images/tap-menu-right-active-bg.gif) no-repeat right 0;
+	color:#fff;
+}
+
+
+.tapMenu ul li.activebtn 
+{
+	background:url(../images/tap-menu-left-active-bg.gif) no-repeat left 0;
+	
+	color:#fff;
+}
+
+.tapMenu ul li.activebtn a 
+{
+	background:url(../images/tap-menu-right-active-bg.gif) no-repeat right 0;
+	color:#fff;
+}
+.tapMenu ul li a
+{
+	color:#fdecd6;
+	background:url(../images/tap-menu-right-bg.gif) no-repeat right 0;
+	display:block;
+	padding:10px 15px;
+	text-decoration:none;
+}
+.tabelView{
+	width:100% !important;
+}
+.fasttrackStream
+{
+	min-height:125px;
+}
+.gradeUpdate{
+	/*  margin: 0 !important;*/
+    width: 850px !important;
+}
+.gradeUpdate li {
+	width: 336px !important;
+}
+
+#frmCCUpdates div.error {
+	padding:0;
+	font-size:12px;
+}
+
+/*Deepika- 0710*/
+span.fillQuestionpanel{
+float : none ; 
+}
+span.fillQuestionpanel label {
+	float: left !important;
+    padding-top: 6px !important;
+    width: 121px !important;
+
+}
+#fill-blank textarea {
+	float: none !important;
+	width:  529px !important;
+}
+
+/*Deepika - 07272012*/
+.menu_body{
+	display:none;
+}
+.fillupAnswer
+{
+	border: 2px solid #D3D3D3;
+    display: block;
+    height: 50px;
+    overflow-y: scroll;
+    width: 750px;
+	background:	#EFEFEF;
+	
+}
+
+.questionTopTitle
+{
+	width:940px;
+	display:block;
+	overflow:hidden;
+}
+
+.questionTopTitle ul
+{
+	padding:0;
+	margin:0 0 0 60px;
+}
+
+.questionTopTitle ul li
+{
+	list-style-type:none;
+	float:left;
+	font-weight:bold;
+	text-transform:uppercase;
+	width:350px;
+}
+
+.questionTopTitle ul li.correctAnswerTitle
+{
+	width:120px !important;
+}
+input.matchAnswer 
+{
+	width:30px !important;
+}

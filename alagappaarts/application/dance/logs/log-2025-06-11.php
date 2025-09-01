@@ -1,0 +1,119 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2025-06-11 00:03:13 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 00:26:47 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 00:54:00 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 01:49:24 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 01:49:43 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 01:49:44 --> Severity: Warning --> Missing argument 1 for Home::registration(), called in /home/appaarts/public_html/application/dance/controllers/Home.php on line 699 and defined /home/appaarts/public_html/application/dance/controllers/Home.php 445
+ERROR - 2025-06-11 01:49:44 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:02:22 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:13:28 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:20:17 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:34:48 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:34:49 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:34:54 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:34:57 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:35:16 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:35:18 --> Query error: Data too long for column 'zip' at row 1 - Invalid query: INSERT INTO `center_academy` (`name`, `center_user_id`, `email`, `address`, `website`, `contact`, `alternate_contact`, `city`, `state`, `country`, `zip`, `no_of_arangetram`, `no_of_establishment` , `status`, `created_by`, `updated_by`, `created_at`) VALUES ('gDoTFCWNZPGqq', 15031, 'lukyoung50@gmail.com', 'mlIyqEKHDaGGMz', 'tYpycMlymuIDep', '2536356803', '4710026356', 'pAnUBmTqGhP', 'jiFIQMivt', 'nFRRRAVMXIX', 'lgQMuVDWsRKydLh', 'okFMuvqCDSzsoXd', 'VdehNAEaGnVRH', 0, 'User', 'User', '2025-06-11 02:35:18')
+ERROR - 2025-06-11 02:35:20 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:35:22 --> Severity: Warning --> Missing argument 1 for Home::registration(), called in /home/appaarts/public_html/application/dance/controllers/Home.php on line 699 and defined /home/appaarts/public_html/application/dance/controllers/Home.php 445
+ERROR - 2025-06-11 02:35:22 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:35:27 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:35:29 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:35:30 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:35:35 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:35:37 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:35:48 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 02:41:12 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 03:38:18 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 03:45:28 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 04:28:34 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 04:28:34 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 04:39:16 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 05:44:08 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 06:34:59 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 07:08:59 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 07:24:51 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 07:42:29 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 07:43:47 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 08:04:02 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 08:30:53 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 09:00:45 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 09:21:34 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 09:23:03 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 09:25:15 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 09:31:10 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 09:55:16 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 09:55:25 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 10:03:30 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 10:03:30 --> Severity: Notice --> Undefined offset: 0 /home/appaarts/public_html/application/dance/views/course.php 202
+ERROR - 2025-06-11 10:03:36 --> Severity: Notice --> Undefined property: stdClass::$su /home/appaarts/public_html/application/dance/controllers/admin/Login.php 78
+ERROR - 2025-06-11 10:03:36 --> Severity: Notice --> Undefined property: stdClass::$su /home/appaarts/public_html/application/dance/controllers/admin/Login.php 87
+ERROR - 2025-06-11 10:50:37 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 11:05:08 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 12:04:27 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 12:41:05 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 13:11:51 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 13:55:35 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 14:22:53 --> Severity: Notice --> Undefined offset: 0 /home/appaarts/public_html/application/dance/models/home/Home_model.php 34
+ERROR - 2025-06-11 14:22:53 --> Severity: Notice --> Trying to get property of non-object /home/appaarts/public_html/application/dance/controllers/Home.php 709
+ERROR - 2025-06-11 14:22:53 --> Severity: Notice --> Trying to get property of non-object /home/appaarts/public_html/application/dance/controllers/Home.php 710
+ERROR - 2025-06-11 14:22:53 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 14:40:22 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 14:50:39 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:15:27 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:23:58 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:24:00 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:24:04 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:24:06 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:24:08 --> Severity: Notice --> Undefined variable: data /home/appaarts/public_html/application/dance/controllers/Student.php 1400
+ERROR - 2025-06-11 15:24:08 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:24:19 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:24:22 --> Query error: Incorrect integer value: 'EHkSPxjQe' for column 'no_of_arangetram' at row 1 - Invalid query: INSERT INTO `center_academy` (`name`, `center_user_id`, `email`, `address`, `website`, `contact`, `alternate_contact`, `city`, `state`, `country`, `zip`, `no_of_arangetram`, `no_of_establishment` , `status`, `created_by`, `updated_by`, `created_at`) VALUES ('ZgQOhiRkX', 15032, 'dawnverbrugge954874@yahoo.com', 'CfbiHWsKdUJ', 'oFAFzFuNIE', '7525084195', '5616125372', 'jNVhlHTkQSn', 'McWhsOIlc', 'ZguQvUvgGQ', 'VTcITACd', 'EHkSPxjQe', 'ikGWjOlGxFqc', 0, 'User', 'User', '2025-06-11 15:24:22')
+ERROR - 2025-06-11 15:24:23 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:24:25 --> Severity: Warning --> Missing argument 1 for Home::registration(), called in /home/appaarts/public_html/application/dance/controllers/Home.php on line 699 and defined /home/appaarts/public_html/application/dance/controllers/Home.php 445
+ERROR - 2025-06-11 15:24:25 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:24:28 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:24:30 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:24:31 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:24:34 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:24:36 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:24:51 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:25:59 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:52:44 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:52:48 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:52:51 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:52:53 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:52:55 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 15:52:58 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 16:08:00 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 16:39:19 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 16:48:54 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 16:49:01 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 16:55:44 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 16:58:59 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 16:59:00 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 17:07:21 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 17:07:57 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 17:25:14 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 17:25:44 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 17:33:43 --> Severity: Notice --> Undefined offset: 0 /home/appaarts/public_html/application/dance/models/home/Home_model.php 34
+ERROR - 2025-06-11 17:33:43 --> Severity: Notice --> Trying to get property of non-object /home/appaarts/public_html/application/dance/controllers/Home.php 709
+ERROR - 2025-06-11 17:33:43 --> Severity: Notice --> Trying to get property of non-object /home/appaarts/public_html/application/dance/controllers/Home.php 710
+ERROR - 2025-06-11 17:33:43 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 17:37:48 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 17:48:40 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 18:13:20 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 18:55:41 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 18:58:16 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 19:01:01 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 19:31:06 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 20:16:08 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 21:05:21 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 21:32:58 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 21:33:07 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 22:05:29 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 22:40:39 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 22:54:56 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104
+ERROR - 2025-06-11 23:46:46 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 104

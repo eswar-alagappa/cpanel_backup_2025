@@ -1,0 +1,212 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+/**
+ *
+ * This is login authentication
+ *
+ * @package	CodeIgniter
+ * @category	Controller
+ * @author		Swamykannan.M
+ * @link		
+ *
+ */
+
+
+class Payment extends CI_Controller {
+		
+	public  $SiteMainTitle							= 'Alagappa';
+	public  $ErrorMessage 							= '';
+	public  $ErrorMessages 							= '';
+	public  $ErrorMessageanotherUser 				= '';
+	
+	public function __construct()
+	{	
+			parent::__construct();
+			$this->load->library('session');
+			$this->load->model('admin/Payment_model');
+			$this->load->library('form_validation');
+			$this->output->set_header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+			$this->output->set_header("Cache-Control: no-store, no-cache, must-revalidate");
+			$this->output->set_header("Cache-Control: post-check=0, pre-check=0", false);
+			$this->output->set_header("Pragma: no-cache");
+	}	
+
+	
+	public function index()
+	{	
+		if($this->session->userdata('admin_logged_in') == False)
+		{
+			redirect(base_url().'music/admin/login/', 'refresh');
+		}
+		$post_set = $_POST;
+		if (($this->input->server('REQUEST_METHOD') == 'POST') && empty($arg) && (!empty($_POST['search']) && $_POST['search']=='Go') ) {
+			//echo '<pre>';print_r($_POST);die;
+			$program_id 	= $_POST['program'];
+			$center_id		= $_POST['center'];
+			$payments 		= $this->Payment_model->paymentList($program_id,$center_id);
+			
+		}else{
+			$payments = $this->Payment_model->paymentList('','');	
+		}
+		
+		$this->load->model('admin/Student_model');
+		$programList 	= $this->Student_model->getListactiveState('programs');
+		$centers 		= $this->Student_model->getListactiveState('center_academy');
+		
+		$data = array(
+				'ErrorMessages'					=> $this->ErrorMessages,
+				'ErrorMessage'					=> '',
+				'ErrorMessageanotherUser' 		=> $this->ErrorMessageanotherUser,
+				'SiteTitle' 					=> $this->SiteMainTitle.'- Admin Panel Payment Check',
+				'SiteMainTitle' 				=> $this->SiteMainTitle,
+				'payments'						=> $payments,				
+				'programList'					=> $programList,
+				'centers'						=> $centers,
+				'post_set'						=> $post_set
+		);
+		$this->load->view('admin/header',$data);
+		$this->load->view('admin/sidebar');
+		$this->load->view('admin/payment/payment_list',$data);
+		$this->load->view('admin/footer');
+	}
+	
+	public function common_mail($user_data,$content,$subject,$cc)
+	{
+		$data = array(
+			'name'		=> $user_data['firstname'].' '.$user_data['lastname'],
+			'content' 	=> $content
+		);
+
+		$this->load->helper(array('email'));
+		$this->load->library(array('email'));
+		$this->email->set_mailtype("html");
+		//$data['sender_mail'] = 'thenmozhi@sanjaytechnologies.org';
+		//$mail = 'sk@sanjaytechnologies.net';
+		$this->load->library('email');
+		$config = array (
+		  'mailtype' => 'html',
+		  'charset'  => 'utf-8',
+		  'priority' => '1'
+		   );
+		$this->email->initialize($config);
+		$this->email->from( CUSTOMER_EMAIL, 'Customer Support' );
+		$this->email->to($user_data['email'] );
+		if( isset($cc) && !empty($cc) && $cc==true){
+			$this->email->cc(CUSTOMER_EMAIL);
+		}
+		//$this->email->bcc();
+		$this->email->subject($subject);
+
+		$message=$this->load->view('common_mail',$data,TRUE);
+		//echo $message;die;
+		$this->email->message($message);
+		$resultMail = $this->email->send();
+		return ((isset($resultMail) && !empty($resultMail) && $resultMail==1) ? true : false);
+	}
+		
+	public function add_check_pay( $user_id)
+	{
+		if($this->session->userdata('admin_logged_in') == False)
+		{
+			redirect(base_url().'music/admin/login/', 'refresh');
+		}
+		if(isset($user_id) && !empty($user_id))
+		{
+			$payData = $this->Payment_model->getJoinRecord($user_id);
+			
+			$post_set = $_POST;
+			
+			if (($this->input->server('REQUEST_METHOD') == 'POST') && empty($arg) && (!empty($_POST['submit']) && $_POST['submit']=='Submit') ) {
+				$this->form_validation->set_rules('pay_option', 'Pay option', 'trim|required|min_length[1]');
+				$this->form_validation->set_rules('check_received', 'Check Received', 'trim|required');
+				$this->form_validation->set_rules('check_number', 'Check number', 'trim|required|min_length[3]');
+				$this->form_validation->set_rules('check_date', 'Check Date', 'trim|required');
+				$this->form_validation->set_rules('check_amount', 'Check Amount', 'trim|required|min_length[2]');
+				$this->form_validation->set_rules('bank_name', 'Bank and Branch name', 'trim|required|min_length[3]');
+				$this->form_validation->set_rules('credited_on', 'Credited On', 'trim|required');
+				$this->form_validation->set_rules('comments', 'Comments', 'trim|required|min_length[3]');
+				
+				if($this->form_validation->run() 			== FALSE)
+				{
+					$post_set		 					= $_POST;
+					$this->ErrorMessages		 		= validation_errors();
+				}else{ 
+					//echo '<pre>';print_r($_POST);die;
+					$set_payment_data = array(	
+							'student_id'							=> $user_id,
+							'program_id'							=> addslashes(trim( $this->input->post('program_id') )),
+							'payment_mode'							=> 'check',
+							'payment_option' 		 	 			=> addslashes(trim( $this->input->post('pay_option') )),
+							'paid_on' 		 	 					=> addslashes(trim( $this->input->post('check_received') )),
+							'check_no' 		 	 					=> addslashes(trim( $this->input->post('check_number') )),
+							'check_date' 		 	 				=> addslashes(trim( $this->input->post('check_date') )),
+							'amount' 		 	 					=> addslashes(trim( $this->input->post('check_amount') )),
+							'bank_branch' 		 	 				=> addslashes(trim( $this->input->post('bank_name') )),
+							'credited_on' 		 	 				=> addslashes(trim( $this->input->post('credited_on') )),
+							'comments' 		 	 					=> addslashes(trim( $this->input->post('comments') )),
+							'status'								=> 'Done',//addslashes(trim( $this->input->post('status') )),
+							'created_by'							=> 'Super Admin',
+							'updated_by'							=> 'Super Admin',
+							'created_at'							=> date('Y-m-d H:i:s'),
+							'updated_at'							=> date('Y-m-d H:i:s'),
+							);
+					$check = $this->Payment_model->save('payment',$set_payment_data);
+					if( isset($check) && !empty($check)){
+						
+						$checkNo 	= addslashes(trim( $this->input->post('check_number') ));
+						$checkAmt 	= addslashes(trim( $this->input->post('check_amount') ));
+						$bankName 	= addslashes(trim( $this->input->post('bank_name') ));
+						$checkDate 	= addslashes(trim( $this->input->post('check_date') ));
+						
+						$content = 'Payment has updated in APPA database. Please verify your check details 
+						<br> Check Number : '.$checkNo.'
+						<br> Check Amount : '.$checkAmt.'
+						<br> Bank name : '.$bankName.'
+						<br> Check Date : '.$checkDate.' ';
+						$subject = 'Payment Updated in APAA!';
+						$user_data = array(
+							'firstname'	=> $payData->firstname,
+							'lastname'	=> $payData->lastname,
+							'email'		=> $payData->email
+						);
+						$this->common_mail($user_data,$content,$subject,false);
+						
+						$this->session->set_flashdata('SucMessage', 'Successfully created');
+						redirect(base_url().'music/admin/payment/index'); 
+					}
+					
+				}
+				
+			}
+			
+			$this->load->model('admin/Student_model');
+			$programList 		= $this->Student_model->getConnectedDataList('programs','user_program','program_id','user_id',$user_id);
+			
+			$statusArray = array('Pending'=>'Pending','Done'=>'Done','Processing'=>'Processing','Transaction Failed'=>'Transaction Failed');
+			//echo '<pre>';print_r($programList);die;
+			$data = array(
+				'ErrorMessages'					=> $this->ErrorMessages,
+				'ErrorMessage'					=> '',
+				'ErrorMessageanotherUser' 		=> $this->ErrorMessageanotherUser,
+				'SiteTitle' 					=> $this->SiteMainTitle.'- Admin Panel Add Payment Check',
+				'SiteMainTitle' 				=> $this->SiteMainTitle,
+				'programList'					=> $programList,
+				'post_set'						=> $post_set,
+				'statusArray'					=> $statusArray,
+				'arg'							=> $user_id,
+				'payData'						=> $payData,
+			);
+			$this->load->view('admin/header',$data);
+			$this->load->view('admin/sidebar');
+			$this->load->view('admin/payment/payment_add',$data);
+			$this->load->view('admin/footer');
+		}
+		
+	}
+	
+	
+	
+	
+	
+}
+

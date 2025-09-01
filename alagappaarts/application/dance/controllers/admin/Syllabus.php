@@ -1,0 +1,1637 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+/**
+ *
+ * This is login authentication
+ *
+ * @package	CodeIgniter
+ * @category	Controller
+ * @author		Swamykannan.M
+ * @link		
+ *
+ */
+
+
+class Syllabus extends CI_Controller {
+	public $skey 	= 'Alagappaarts2017';	
+	public  $SiteMainTitle							= 'Alagappa';
+	public  $ErrorMessage 							= '';
+	public  $ErrorMessages 							= '';
+	public  $ErrorMessageanotherUser 				= '';
+	
+	public function __construct()
+	{	
+			parent::__construct();
+			$this->load->library('session');
+			$this->load->model('admin/Syllabus_model');
+			$this->load->library('form_validation');
+			$this->output->set_header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+			$this->output->set_header("Cache-Control: no-store, no-cache, must-revalidate");
+			$this->output->set_header("Cache-Control: post-check=0, pre-check=0", false);
+			$this->output->set_header("Pragma: no-cache");
+			
+			$this->load->helper(array('form', 'url'));
+	}	
+
+	
+	public function bulk_sms()
+	{	
+		if($this->session->userdata('admin_logged_in') == False)
+		{
+			redirect(base_url().'dance/admin/login/', 'refresh');
+		}
+		$listData = $this->Student_model->fetchStudent(2);
+		//die;		
+		for($i = 0;$i < count($listData); $i++){
+		//for($i = 0;$i < 1; $i++){
+			$user_id = $listData[$i]->user_id;
+			
+			/*$userData = array(
+				'password' => addslashes(trim( $this->encode($this->randomPassword()) )),
+			);
+			$check = $this->Student_model->update( 'users', 'user_id',$userData,$user_id );
+			*/
+			$uname = $listData[$i]->username;
+			$pass = $this->decode($listData[$i]->password);
+			$login = base_url().'dance/login';
+			
+			$content = '
+			<p>Greetings from APAA.</p>
+			<p>We would like to inform you that, recently there were some technical
+				issues in our website and now the problem has been fixed. As a precaution,
+				the password has been reset to all. Your account could be accessed through
+				the new password given below.</p>
+			<p>Username : '.$uname.'</p><p>Password : '.$pass.' </p>
+			<p>Go to the below mentioned URL and login your account to check your
+				personalized details such as Profile, online exam schedules, exam results,
+				fees payment, etc.</p>
+				<p><a target="_blank" href="'.$login.'">'.$login.'</a></p>
+			';
+			
+			$subject = 'APAA-New login info';
+			$user_data = array(
+				'firstname'	=> addslashes(trim( $listData[$i]->firstname )),
+				'lastname'	=> addslashes(trim( $listData[$i]->lastname )),
+				'email'		=> addslashes(trim( $listData[$i]->email ))
+			);
+			//echo '<pre>content->';print_r($content);
+			//echo '<pre>user_data->';print_r($user_data);
+			$this->common_mail($user_data,$content,$subject,false);
+			
+		}//die;
+		$this->session->set_flashdata('SucMessage', 'Mail Sent Successfully');
+		redirect(base_url().'dance/admin/students/index'); 
+	}
+	
+	public function assign_exam_list()
+	{	
+		if($this->session->userdata('admin_logged_in') == False)
+		{
+			redirect(base_url().'dance/admin/login/', 'refresh');
+		}
+		$listData = $this->Student_model->getAssignExamList();
+		//echo '<pre>listdata->';print_r($listData);die;
+		$data = array(
+				'ErrorMessages'					=> $this->ErrorMessages,
+				'ErrorMessage'					=> '',
+				'ErrorMessageanotherUser' 		=> $this->ErrorMessageanotherUser,
+				'SiteTitle' 					=> $this->SiteMainTitle.'- Admin Panel Students',
+				'SiteMainTitle' 				=> $this->SiteMainTitle,
+				'listData'						=> $listData,
+		);
+		$this->load->view('admin/header',$data);
+		$this->load->view('admin/sidebar');
+		$this->load->view('admin/students/assignExam_list',$data);
+		$this->load->view('admin/footer');		
+	}
+	
+	public function exam_attend_fail_list()
+	{	
+		if($this->session->userdata('admin_logged_in') == False)
+		{
+			redirect(base_url().'dance/admin/login/', 'refresh');
+		}
+		$listData = $this->Student_model->getExamAttendFailList();
+		
+	
+		$data = array(
+				'ErrorMessages'					=> $this->ErrorMessages,
+				'ErrorMessage'					=> '',
+				'ErrorMessageanotherUser' 		=> $this->ErrorMessageanotherUser,
+				'SiteTitle' 					=> $this->SiteMainTitle.'- Admin Panel Students',
+				'SiteMainTitle' 				=> $this->SiteMainTitle,
+				'listData'						=> $listData,
+		);
+		
+		$data['failed_list'] = $this->Student_model->dbQuery("SELECT er.*,c.course_code, up.firstname, up.lastname, u.*, ae.* FROM assign_exam ae LEFT JOIN quiz_result qr ON qr.assign_exam_id = ae.id LEFT JOIN users u ON u.user_id = ae.student_id LEFT JOIN user_profiles up ON up.user_id = ae.student_id LEFT JOIN courses c ON c.course_id = ae.course_id LEFT JOIN error_event er on er.rid = qr.rid WHERE ae.exam_status = '".Processing."' AND qr.score_ind = '' AND qr.status = 0 ");
+		
+		$this->load->view('admin/header',$data);
+		$this->load->view('admin/sidebar');
+		$this->load->view('admin/students/Exam_attend_fail_list',$data);
+		$this->load->view('admin/footer');		
+	}
+	
+	
+	public function index()
+	{	
+		if($this->session->userdata('admin_logged_in') == False)
+		{
+			redirect(base_url().'dance/admin/login/', 'refresh');
+		}
+		$post_set = $_POST;
+		if (($this->input->server('REQUEST_METHOD') == 'POST') && empty($arg) && (!empty($_POST['search']) && $_POST['search']=='Go') ) {
+			//echo '<pre>';print_r($_POST);die;
+			$program_id = $_POST['program'];
+			$center_id	= $_POST['center'];
+			$status		= $_POST['status'];
+			$listData 		= $this->Syllabus_model->getList('students',$program_id,$center_id,$status);
+			
+		}else{
+			$listData 		= $this->Syllabus_model->getList('students','','','');
+		}
+		//echo '<pre>';print_r($listData);die;
+		
+		$programList 	= $this->Syllabus_model->getListactiveState('programs');
+		$centers 		= $this->Syllabus_model->getListactiveState('center_academy');
+		$status 		= array('1'=>'Active','2'=>'In Active','waiting'=>'Waiting for Approval');
+		
+		$data = array(
+				'ErrorMessages'					=> $this->ErrorMessages,
+				'ErrorMessage'					=> '',
+				'ErrorMessageanotherUser' 		=> $this->ErrorMessageanotherUser,
+				'SiteTitle' 					=> $this->SiteMainTitle.'- Admin Panel Syllabus',
+				'SiteMainTitle' 				=> $this->SiteMainTitle,
+				'listData'						=> $listData,
+				'programList'					=> $programList,
+				'centers'						=> $centers,
+				'status'						=> $status,
+				'post_set'						=> $post_set
+		);
+		$this->load->view('admin/header',$data);
+		$this->load->view('admin/sidebar');
+		$this->load->view('admin/syllabus/list',$data);
+		$this->load->view('admin/footer');
+	}
+	
+	
+	public function uniqueUsername( $str )
+	{
+		$check = $this->Syllabus_model->checkUsername($str);
+		if( !empty($check))
+		{	
+			$this->form_validation->set_message('uniqueUsername', 'The %s field has unique. please enter another username ');
+			return false;				
+		}else{
+			return true;
+		}
+	}
+	
+	public function uniqueUpdateUsername( $str )
+	{
+		$user_id = $this->uri->segment(4);
+		if( isset($user_id) && !empty($user_id))
+		{
+			$check = $this->Syllabus_model->checkEditUsername($str,$user_id);
+			//echo '<pre>';print_r($check);
+			if( !empty($check))
+			{	
+				$this->form_validation->set_message('uniqueUpdateUsername', 'The %s field has unique. please enter another username ');
+				return false;				
+			}else{
+				return true;
+			}
+		}else{
+			return true;
+		}
+	}
+	
+	
+	public function removesyllabus( $arg )
+	{
+		
+		$getRes = $this->Syllabus_model->issyllabusDelete('syllabus_program', 'syllabus_program_id',$arg);
+		
+		if($getRes==true)
+		{
+			
+			$this->session->set_flashdata('SucMessage', 'Successfully deleted');
+			redirect(base_url().'dance/admin/syllabus/syllabus_list'); 
+		}
+		else
+		{
+			$this->session->set_flashdata('SucMessage', 'Invalid Details');
+			redirect(base_url().'dance/admin/syllabus/syllabus_list'); 
+		}
+		
+	}
+	
+    public function updatesyllabus( $id = null)
+    {
+        if($this->session->userdata('admin_logged_in') == False)
+		{
+			redirect(base_url().'dance/admin/login/', 'refresh');
+		}
+		
+		$post_set = $_POST;
+		
+		
+		if( isset($id) && !empty($id))
+		{
+			if (($this->input->server('REQUEST_METHOD') == 'POST') && !empty($id) && (!empty($_POST['update']) && $_POST['update']=='Update') ) 
+			{
+				$this->form_validation->set_rules('program_id', 'Program', 'trim|required|min_length[1]');
+				
+				
+				if($this->form_validation->run() 			== FALSE)
+				{
+					$post_set		 					= $_POST;
+					$this->ErrorMessages		 		= validation_errors();
+				}else{ 
+				    
+				   
+				    
+				    $type = trim( $this->input->post('type') );
+				    if($type == 'Video'){
+				        $set_syllabusProgram = array(						
+							'video_title' 		 	 						=> addslashes(trim( $this->input->post('video_title') )),
+							'path' 		 	 							=> addslashes(trim( $this->input->post('video_url') )),
+							'video_desc' 		 	 					=> addslashes(trim( $this->input->post('video_desc') )),
+							'syllabus_content'                           => $this->input->post('syllabus_content'),
+                            'key_aspects'                               => $this->input->post('key_aspects'),
+                            'guidelines'                                 => $this->input->post('guidelines'),
+							'updated_by'									=> '1',
+							'updated_at'									=> date('Y-m-d H:i:s'),
+				    	);
+				    }
+				    if($type == 'Pdf'){
+				        
+				        if(!empty($_FILES['files']['name'])){
+				            
+				            $_FILES['file']['name'] = $_FILES['files']['name'];
+                              $_FILES['file']['type'] = $_FILES['files']['type'];
+                              $_FILES['file']['tmp_name'] = $_FILES['files']['tmp_name'];
+                              $_FILES['file']['error'] = $_FILES['files']['error'];
+                              $_FILES['file']['size'] = $_FILES['files']['size'];
+
+                              // Set preference
+                              $config['upload_path'] = $_SERVER['DOCUMENT_ROOT'].'/syllabuspdf/'; 
+                              $config['allowed_types'] = 'pdf';
+                              //$config['max_size'] = '5000'; // max_size in kb
+                              $config['file_name'] = $_FILES['files']['name'];
+                     
+                              //Load upload library
+                              $this->load->library('upload',$config); 
+                              $this->upload->initialize($config);
+                     
+                              // File upload
+                              if($this->upload->do_upload('file')){
+                                // Get data about the file
+                                $uploadpdfData = $this->upload->data();
+                                $filename = $uploadpdfData['file_name'];
+                                
+                                $set_syllabusProgram = array(	
+        							'pdf_title' 		 	 							=> addslashes(trim( $this->input->post('pdf_title') )),
+        							'path' 		 	 								=> addslashes(trim( $filename )),
+        							'syllabus_content'                           => $this->input->post('syllabus_content'),
+                                    'key_aspects'                               => $this->input->post('key_aspects'),
+                                    'guidelines'                                 => $this->input->post('guidelines'),
+        							'updated_by'									=> '1',
+        							'updated_at'									=> date('Y-m-d H:i:s'),
+        				    	);
+				    	
+                              }
+                              
+				        }else{
+    				        $set_syllabusProgram = array(	
+    							'pdf_title' 		 	 							=> addslashes(trim( $this->input->post('pdf_title') )),
+    							'path' 		 	 								=> addslashes(trim( $this->input->post('hiddenfiles') )),
+    							'syllabus_content'                           => $this->input->post('syllabus_content'),
+                                'key_aspects'                               => $this->input->post('key_aspects'),
+                                'guidelines'                                 => $this->input->post('guidelines'),
+    							'updated_by'									=> '1',
+    							'updated_at'									=> date('Y-m-d H:i:s'),
+    				    	);
+				        }
+				    }
+				//	echo '<pre>$set_syllabusProgram->'; print_r($set_syllabusProgram);
+					// echo '<pre>'; print_r($_POST);die; 
+					$check = $this->Syllabus_model->update( 'syllabus_program', 'syllabus_program_id',$set_syllabusProgram,$id );
+					if( $check )
+					{
+					    $this->session->set_flashdata('SucMessage', 'Updated Successfully');
+						redirect(base_url().'dance/admin/syllabus/syllabus_list'); 
+					}else{
+					    $this->session->set_flashdata('SucMessage', 'Invalid Details');
+						redirect(base_url().'dance/admin/syllabus/updatesyllabus/'.$id); 
+					}
+					/*if($check){
+					    
+							//$this->Syllabus_model->update( 'student_profiles', 'user_profile_id',$set_user_data,$id );
+							
+						if( isset( $_POST['program_id'])){
+							$user_program_data = array();
+							$stream = $_POST['stream'];
+							
+							$cntPgm = count($_POST['program_id']);
+							
+							$checkUserPgm = $this->Syllabus_model->getDoubleCondition('student_syllabus_program','user_id',$id,'program_id',$_POST['program_id'][$cntPgm-1]);
+							if( isset($checkUserPgm) && !empty($checkUserPgm))
+							{
+								$user_program_data = array(
+									'user_id'			=> $id,
+									'program_id'		=> $_POST['program_id'][$cntPgm-1],
+									'center_id'			=> addslashes(trim( $this->input->post('center_id') )),
+									'is_fasttrack'		=> ((isset($stream) && !empty($stream) && in_array($_POST['program_id'][$cntPgm-1],$stream)) ? 'Y' : 'N'),
+								);
+								$this->Syllabus_model->update( 'student_syllabus_program', 'user_program_id',$user_program_data,$checkUserPgm->user_program_id );
+								//echo '<pre>test->';print_r($_POST);
+								//echo '<pre>';print_r($checkUserPgm->user_program_id);
+								//die;
+							}
+							else
+							{ 
+								$user_program_data = array(
+									'user_id'			=> $id,
+									'program_id'		=> $_POST['program_id'][$cntPgm-1],
+									'center_id'			=> addslashes(trim( $this->input->post('center_id') )),
+									'is_fasttrack'		=> ((isset($stream) && !empty($stream) && in_array($_POST['program_id'][$cntPgm-1],$stream)) ? 'Y' : 'N'),
+									'enrollment_date'	=> date('Y-m-d H:i:s'),
+								);
+								$this->Syllabus_model->save('student_syllabus_program',$user_program_data);
+							}
+							
+							
+						}
+					
+						$another_check = $this->Syllabus_model->Another_update('student_profiles','user_id',$id, $set_userprofile_data);
+						
+						
+						$uname = addslashes(trim( $this->input->post('username') ));
+						$pass = $this->Syllabus_model->getCondition('students','username',$uname);
+						if( isset($pass->is_publish_mail) && $pass->is_publish_mail == 0 ){ 
+						
+							$pass = ((isset($pass->password) && !empty($pass->password)) ? $this->decode($pass->password) : '');
+							$content = 'Greetings from APAA! Your request for registering as APAA Dance Student has been successfully completed. The APAA customer support team has verified your Requested Profile. See below Your Username and Password <br>Username : '.$uname.'<br>Password : '.$pass.'';
+							$subject = 'APAA User Credentials';
+							$user_data = array(
+								'firstname'	=> addslashes(trim( $this->input->post('first_name') )),
+								'lastname'	=> addslashes(trim( $this->input->post('last_name') )),
+								'email'		=> addslashes(trim( $this->input->post('email') ))
+							);
+							$this->common_mail($user_data,$content,$subject,false);
+							
+							$mail_update_data = array(
+								'is_publish_mail' => 1
+							);
+							$this->Syllabus_model->update( 'students', 'user_id',$mail_update_data,$id );
+							
+						}
+						
+						$this->session->set_flashdata('SucMessage', 'Updated Successfully');
+						redirect(base_url().'dance/admin/syllabus/index'); 
+					}else{
+						$this->session->set_flashdata('SucMessage', 'Invalid Details');
+						redirect(base_url().'dance/admin/syllabus/index'); 
+					}*/
+				}
+			}
+			
+			$programs = $this->Syllabus_model->getListactiveState('programs');
+		
+			$selectedValues = $this->Syllabus_model->getSelectedcolumn('syllabus_program','syllabus_program_id', $id);
+			
+			//echo '<pre>';print_r($programs);die;
+			$data = array(
+					'ErrorMessages'					=> $this->ErrorMessages,
+					'ErrorMessage'					=> '',
+					'ErrorMessageanotherUser' 		=> $this->ErrorMessageanotherUser,
+					'SiteTitle' 					=> $this->SiteMainTitle.'- Admin Panel syllabus',
+					'SiteMainTitle' 				=> $this->SiteMainTitle,
+					'selectedValues'				=> $selectedValues,	
+					'arg'							=> $id,
+					'programList'						=> $programs,
+					'post_set'						=> $post_set
+			);
+			$this->load->view('admin/header',$data);
+			$this->load->view('admin/sidebar');
+			$this->load->view('admin/syllabus/editsyllabus',$data);
+			$this->load->view('admin/footer');
+			
+		}
+    }
+	
+	public function addsyllabus()
+	{
+	    
+	    if($this->session->userdata('admin_logged_in') == False)
+		{
+			redirect(base_url().'dance/admin/login/', 'refresh');
+		}
+		
+		$post_set = $_POST;
+		
+			if (($this->input->server('REQUEST_METHOD') == 'POST') && empty($arg) && (!empty($_POST['submit']) && $_POST['submit']=='Submit') ) 
+			{
+			    
+			    $this->form_validation->set_rules('program_id', 'Program', 'trim|required|min_length[1]');
+			    //$this->form_validation->set_rules('video_title[]', "Video Url", "trim|required");
+			    //$this->form_validation->set_rules('video_url[]', "Video Url", "trim|required");
+			    //$this->form_validation->set_rules('pdf_file[]', 'Document PDF', 'trim|required');
+			    
+			    	if($this->form_validation->run() 			== FALSE)
+				{
+					$post_set		 					= $_POST;
+					$this->ErrorMessages		 		= validation_errors();
+				}else{
+				    
+				    $uploadedFile = array();
+				    $countfiles = count($_FILES['files']['name']);
+				    
+				    if( $countfiles > 0)
+				    {
+				        for($i=0;$i<$countfiles;$i++){
+                     
+                            if(!empty($_FILES['files']['name'][$i])){
+                     
+                              // Define new $_FILES array - $_FILES['file']
+                              $_FILES['file']['name'] = $_FILES['files']['name'][$i];
+                              $_FILES['file']['type'] = $_FILES['files']['type'][$i];
+                              $_FILES['file']['tmp_name'] = $_FILES['files']['tmp_name'][$i];
+                              $_FILES['file']['error'] = $_FILES['files']['error'][$i];
+                              $_FILES['file']['size'] = $_FILES['files']['size'][$i];
+
+                              // Set preference
+                              $config['upload_path'] = $_SERVER['DOCUMENT_ROOT'].'/syllabuspdf/'; 
+                              $config['allowed_types'] = 'pdf';
+                              //$config['max_size'] = '5000'; // max_size in kb
+                              $config['file_name'] = $_FILES['files']['name'][$i];
+                     
+                              //Load upload library
+                              $this->load->library('upload',$config); 
+                              $this->upload->initialize($config);
+                     
+                              // File upload
+                              if($this->upload->do_upload('file')){
+                                // Get data about the file
+                                $uploadpdfData = $this->upload->data();
+                                $filename = $uploadpdfData['file_name'];
+
+                                // Initialize array
+                                $uploadedFile[] = $filename;
+                                
+                        
+                              }else{
+                                  $test =  $this->upload->display_errors();
+                                  // echo '<pre>$test->';print_r($test);
+                              }
+                            }
+                     
+                          }
+				    }
+                    //echo '<pre>$post->';print_r($_POST);
+                   // echo '<pre>$uploadedFile->';print_r($uploadedFile);die;      
+                         
+				     $filesCount = count($_POST['video_url']);
+                    for($i = 0; $i < $filesCount; $i++){
+                        
+                        $uploadData[$i]['program_id']   = $_POST['program_id']; 
+                        $uploadData[$i]['type']         = 'Video';
+                        $uploadData[$i]['video_title']  = $_POST['video_title'][$i]; 
+                        $uploadData[$i]['path']         = $_POST['video_url'][$i]; 
+                        $uploadData[$i]['video_desc']   = $_POST['video_desc'][$i];
+                        
+                        $uploadData[$i]['syllabus_content']   = $_POST['syllabus_content'];
+                        $uploadData[$i]['key_aspects']  = $_POST['key_aspects'];
+                        $uploadData[$i]['guidelines']   = $_POST['guidelines'];
+                        
+                        $uploadData[$i]['created_at']   = date('Y-m-d H:i:s');
+                        $uploadData[$i]['updated_at']   = date('Y-m-d H:i:s');
+                        $uploadData[$i]['created_by']   = '1';
+                        $uploadData[$i]['updated_by']   = '1';
+                    }
+                    
+                    //echo '<pre>';print_r($uploadData);die;
+				    $res = $this->Syllabus_model->Bulkinsert('syllabus_program',$uploadData);
+				    if($res != false){
+					
+					$uploadPdfData =array();
+					
+					for($i = 0; $i < count($uploadedFile); $i++){
+                        
+                        $uploadPdfData[$i]['program_id']        = $_POST['program_id']; 
+                        $uploadPdfData[$i]['type']              = 'Pdf';
+                        $uploadPdfData[$i]['pdf_title']            = $_POST['pdf_title'][$i]; 
+                        $uploadPdfData[$i]['path']              = $uploadedFile[$i]; 
+                        
+                        $uploadPdfData[$i]['syllabus_content']     = $_POST['syllabus_content'];
+                        $uploadPdfData[$i]['key_aspects']          = $_POST['key_aspects'];
+                        $uploadPdfData[$i]['guidelines']           = $_POST['guidelines'];
+                        
+                        $uploadPdfData[$i]['created_at']        = date('Y-m-d H:i:s');
+                        $uploadPdfData[$i]['updated_at']        = date('Y-m-d H:i:s');
+                        $uploadPdfData[$i]['created_by']        = '1';
+                        $uploadPdfData[$i]['updated_by']        = '1';
+                    }
+                    
+                    if( count($uploadPdfData) > 0){
+                        $this->Syllabus_model->Bulkinsert('syllabus_program',$uploadPdfData);
+                    }
+                        
+					$this->session->set_flashdata('message', 'Syllabus Added Successfully.');
+					
+    					redirect(base_url()."dance/admin/syllabus/syllabus_list");
+    				}else{
+    					$this->session->set_flashdata('message', 'Something went wrong, please try again.');
+    					redirect("admin/syllabus/addsyllabus");
+    				}
+					
+				}
+			}
+			
+			$programList = $this->Syllabus_model->getListProgram('programs');
+	        $data = array(
+					'ErrorMessages'					=> $this->ErrorMessages,
+					'ErrorMessage'					=> '',
+					'ErrorMessageanotherUser' 		=> $this->ErrorMessageanotherUser,
+					'SiteTitle' 					=> $this->SiteMainTitle.'- Admin Panel Syllabus',
+					'SiteMainTitle' 				=> $this->SiteMainTitle,
+					'programList'					=> $programList
+			);
+			
+            $this->load->view('admin/header',$data);
+            $this->load->view('admin/sidebar');
+            $this->load->view('admin/syllabus/addsyllabus',$data);
+            $this->load->view('admin/footer');
+            
+	}
+	
+	public function syllabus_list()
+	{
+	  
+	        $syllabusList = $this->Syllabus_model->getLists('syllabus_program');
+	        
+	        $data = array(
+					'ErrorMessages'					=> $this->ErrorMessages,
+					'ErrorMessage'					=> '',
+					'ErrorMessageanotherUser' 		=> $this->ErrorMessageanotherUser,
+					'SiteTitle' 					=> $this->SiteMainTitle.'- Admin Panel Syllabus',
+					'SiteMainTitle' 				=> $this->SiteMainTitle,
+					'syllabusList'					=> $syllabusList
+			);
+			
+            $this->load->view('admin/header',$data);
+            $this->load->view('admin/sidebar');
+            $this->load->view('admin/syllabus/syllabus_list',$data);
+            $this->load->view('admin/footer');
+			
+	}
+	
+	public function add()
+	{	
+		if($this->session->userdata('admin_logged_in') == False)
+		{
+			redirect(base_url().'dance/admin/login/', 'refresh');
+		}
+		
+		$post_set = $_POST;
+		
+			if (($this->input->server('REQUEST_METHOD') == 'POST') && empty($arg) && (!empty($_POST['submit']) && $_POST['submit']=='Submit') ) 
+			{
+				$this->form_validation->set_rules('first_name', 'Firstname', 'trim|required|min_length[3]');
+				$this->form_validation->set_rules('address', 'Address', 'trim|required|min_length[3]');
+				$this->form_validation->set_rules('last_name', 'Lastname', 'trim|required|min_length[1]');
+				$this->form_validation->set_rules('city', 'City', 'trim|required|min_length[2]');		
+				$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[3]|callback_uniqueUsername');
+				$this->form_validation->set_rules('state', 'State', 'trim|required|min_length[2]');
+				$this->form_validation->set_rules('dob', 'Date of birth', 'trim|required');
+				$this->form_validation->set_rules('country', 'Country', 'trim|required|min_length[2]');			
+				$this->form_validation->set_rules('age', 'Age', 'trim|required|min_length[1]');
+				$this->form_validation->set_rules('zip', 'Zipcode', 'trim|required|min_length[2]');
+				$this->form_validation->set_rules('gender', 'Gender', 'trim|required');
+				$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+				$this->form_validation->set_rules('contact', 'Contact', 'trim|required|min_length[10]');
+				$this->form_validation->set_rules('program_id[]', 'Program', 'trim|required|min_length[1]');
+				$this->form_validation->set_rules('center_id', 'Center', 'trim|required|min_length[1]');
+				//$this->form_validation->set_rules('exp_bharatanatyam', 'Experience of bharatanatyam', 'trim|required|min_length[1]');
+				//$this->form_validation->set_rules('name_of_guru', 'Name of guru', 'trim|required|min_length[3]');
+				
+				if($this->form_validation->run() 			== FALSE)
+				{
+					$post_set		 					= $_POST;
+					$this->ErrorMessages		 		= validation_errors();
+				}else{
+					//echo '<pre>';print_r($_POST);die;
+					
+					$set_userprofile_data = array(						
+							'firstname' 		 	 						=> addslashes(trim( $this->input->post('first_name') )),
+							'lastname' 		 	 							=> addslashes(trim( $this->input->post('last_name') )),
+							'address' 		 	 							=> addslashes(trim( $this->input->post('address') )),
+							'city' 		 	 								=> addslashes(trim( $this->input->post('city') )),
+							'state' 		 	 							=> addslashes(trim( $this->input->post('state') )),
+							'dob' 		 	 								=> addslashes(trim( $this->input->post('dob') )),
+							'country' 		 	 							=> addslashes(trim( $this->input->post('country') )),
+							'age' 		 	 								=> addslashes(trim( $this->input->post('age') )),
+							'zip' 		 	 								=> addslashes(trim( $this->input->post('zip') )),
+							'gender' 		 	 							=> addslashes(trim( $this->input->post('gender') )),
+							'phone' 		 	 							=> addslashes(trim( $this->input->post('contact') )),
+							'alternate_phone' 		 	 					=> addslashes(trim( $this->input->post('alternate_contact') )),
+							//'program_id' 		 	 						=> addslashes(trim( $this->input->post('program_id') )),
+							'stream' 		 	 							=> addslashes(trim( $this->input->post('stream') )),
+							'center_id' 		 	 						=> addslashes(trim( $this->input->post('center_id') )),
+							
+							'created_by'									=> 'Super Admin',
+							'updated_by'									=> 'Super Admin',
+							'created_at'									=> date('Y-m-d H:i:s'),
+					);
+					
+					$set_user_data = array(						
+							'username' 		 	 					=> addslashes(trim( $this->input->post('username') )),
+							'email' 		 	 					=> addslashes(trim( $this->input->post('email') )),
+							'mobile' 		 	 					=> addslashes(trim( $this->input->post('contact') )),
+							'password' 		 	 					=> addslashes(trim( $this->encode($this->randomPassword()) )),	
+							'user_role_id'							=> 2,
+							'status'								=> 1,
+							'is_publish_mail'						=> '0',
+							'created_by'							=> 'Super Admin',
+							'updated_by'							=> 'Super Admin',
+							'created_at'							=> date('Y-m-d H:i:s'),
+							'updated_at'							=> date('Y-m-d H:i:s'),
+							
+				     );
+					 //echo '<pre>';print_r($set_user_data);
+					 //echo '<pre>';print_r($set_userprofile_data);
+					 //die;
+					$check = $this->Syllabus_model->save('students',$set_user_data);
+					if( isset($check) && !empty($check)){
+						$another_check = $this->Syllabus_model->Another_save('student_profiles',$check,'user_id',$set_userprofile_data);
+						
+						if( isset( $_POST['program_id'])){
+							$user_program_data = array();
+							$stream = $_POST['stream'];
+							foreach( $_POST['program_id'] as $pgm)
+							{
+								$user_program_data[] = array(
+									'user_id'			=> $check,
+									'program_id'		=> $pgm,
+									'center_id'			=> addslashes(trim( $this->input->post('center_id') )),
+									'is_fasttrack'		=> ((isset($stream) && !empty($stream) && in_array($pgm,$stream)) ? 'Y' : 'N'),
+									'enrollment_date'	=> date('Y-m-d H:i:s'),
+								);
+							}
+							$this->Syllabus_model->batchInsert('student_syllabus_program',$user_program_data);
+						}
+					
+						$uname = addslashes(trim( $this->input->post('username') ));
+						$pass = $this->Syllabus_model->getCondition('students','username',$uname);
+						$pass = ((isset($pass->password) && !empty($pass->password)) ? $this->decode($pass->password) : '');
+						$syllabuslogin = base_url().'dance/syllabuslogin'; 
+						$content = '
+						<p>Greetings from APAA.</p>
+						<p>Please find below your Username and password to access your account.</p>
+						<p>Username : '.$uname.'</p><p>Password : '.$pass.' </p>
+						<p>Go to the below mentioned URL and login your account to check the  video content and Ebook of your bharatanatyam programme.</p>
+						<p><a target="_blank" href="'.$syllabuslogin.'">'.$syllabuslogin.'</a></p>
+						';
+						
+						$subject = 'APAA-New login info';
+						$user_data = array(
+							'firstname'	=> addslashes(trim( $this->input->post('first_name') )),
+							'lastname'	=> addslashes(trim( $this->input->post('last_name') )),
+							'email'		=> addslashes(trim( $this->input->post('email') ))
+						);
+						$this->common_mail($user_data,$content,$subject,true);
+						
+						
+						$this->session->set_flashdata('SucMessage', 'Successfully created');
+						redirect(base_url().'dance/admin/syllabus/index'); 
+					}else{
+						$this->session->set_flashdata('SucMessage', 'Invalid Details');
+						redirect(base_url().'dance/admin/syllabus/index'); 
+					}
+				}
+			}
+			$programs = $this->Syllabus_model->getListactiveState('programs');
+			
+			$sreatm = array();
+			if( isset($programs) && !empty($programs))
+			{
+				foreach($programs as $pgm)
+				{
+					$sreatm[$pgm->program_id]='Fast Track';
+				}
+			}
+			//$sreatm = array('1'=>'Fast Track','2'=>'Fast Track','3'=>'Fast Track','4'=>'Fast Track','5'=>'Fast Track');
+			
+			$centers = $this->Syllabus_model->getListactiveState('center_academy');
+			$data = array(
+					'ErrorMessages'					=> $this->ErrorMessages,
+					'ErrorMessage'					=> '',
+					'ErrorMessageanotherUser' 		=> $this->ErrorMessageanotherUser,
+					'SiteTitle' 					=> $this->SiteMainTitle.'- Admin Panel Syllabus',
+					'SiteMainTitle' 				=> $this->SiteMainTitle,
+					'programs'						=> $programs,
+					'sreatm'						=> $sreatm,
+					'centers'						=> $centers,
+					'post_set'						=> $post_set
+			);
+			$this->load->view('admin/header',$data);
+			$this->load->view('admin/sidebar');
+			$this->load->view('admin/syllabus/add',$data);
+			$this->load->view('admin/footer');
+		
+	}
+	
+	
+	public function common_mail($user_data,$content,$subject,$cc)
+	{
+		if( isset($user_data['email']) && !empty($user_data['email']) && isset($user_data['firstname']) && !empty($user_data['firstname']) && isset($user_data['lastname']) && !empty($user_data['lastname']) )
+		{
+			$data = array(
+				'name'		=> $user_data['firstname'].' '.$user_data['lastname'],
+				'content' 	=> $content
+			);			
+					
+			$this->load->helper(array('email'));
+			$this->load->library(array('email'));
+			$this->email->set_mailtype("html");
+			//$data['sender_mail'] = 'thenmozhi@sanjaytechnologies.org';
+			//$mail = 'sk@sanjaytechnologies.net';
+			$this->load->library('email');
+			$config = array (
+			  'mailtype' => 'html',
+			  'charset'  => 'utf-8',
+			  'priority' => '1'
+			   );
+			$this->email->initialize($config);
+			$this->email->from( CUSTOMER_EMAIL, 'Customer Support' ); //CUSTOMER_EMAIL
+			//$this->email->to('hari@sanjaytechnologies.net');
+			$this->email->to($user_data['email'] );
+			if( isset($cc) && !empty($cc) && $cc==true)
+			{
+				$this->email->cc(CUSTOMER_EMAIL);
+			}
+			if( $subject == 'Assigning Exam from APAA!'){
+				$this->email->bcc('krithiga@alagappaarts.com');
+			}
+			//$this->email->bcc();
+			$this->email->subject($subject);
+
+			$message=$this->load->view('common_mail',$data,TRUE);
+			//echo $message;die;
+			$this->email->message($message);
+			$resultMail = $this->email->send();
+			return ((isset($resultMail) && !empty($resultMail) && $resultMail==1) ? true : false);
+		}
+	}
+    
+	public function update($id=null)
+	{
+		if($this->session->userdata('admin_logged_in') == False)
+		{
+			redirect(base_url().'dance/admin/login/', 'refresh');
+		}
+		
+		$post_set = $_POST;
+		
+		
+		if( isset($id) && !empty($id))
+		{
+			if (($this->input->server('REQUEST_METHOD') == 'POST') && !empty($id) && (!empty($_POST['update']) && $_POST['update']=='Update') ) 
+			{
+				$this->form_validation->set_rules('first_name', 'Firstname', 'trim|required|min_length[3]');
+				$this->form_validation->set_rules('address', 'Address', 'trim|required|min_length[3]');
+				$this->form_validation->set_rules('last_name', 'Lastname', 'trim|required|min_length[1]');
+				$this->form_validation->set_rules('city', 'City', 'trim|required|min_length[2]');		
+				$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[3]|callback_uniqueUpdateUsername');
+				$this->form_validation->set_rules('state', 'State', 'trim|required|min_length[2]');
+				$this->form_validation->set_rules('dob', 'Date of birth', 'trim|required');
+				$this->form_validation->set_rules('country', 'Country', 'trim|required|min_length[2]');			
+				$this->form_validation->set_rules('age', 'Age', 'trim|required|min_length[1]');
+				$this->form_validation->set_rules('zip', 'Zipcode', 'trim|required|min_length[2]');
+				$this->form_validation->set_rules('gender', 'Gender', 'trim|required');
+				$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+				$this->form_validation->set_rules('contact', 'Contact', 'trim|required|min_length[10]');
+				$this->form_validation->set_rules('program_id[]', 'Program', 'trim|required|min_length[1]');
+				$this->form_validation->set_rules('center_id', 'Center', 'trim|required|min_length[1]');
+				//$this->form_validation->set_rules('exp_bharatanatyam', 'Experience of bharatanatyam', 'trim|required|min_length[1]');
+				//$this->form_validation->set_rules('name_of_guru', 'Name of guru', 'trim|required|min_length[3]');
+				
+				if($this->form_validation->run() 			== FALSE)
+				{
+					$post_set		 					= $_POST;
+					$this->ErrorMessages		 		= validation_errors();
+				}else{ //echo '<pre>'; print_r($_POST);die;
+				
+					$set_userprofile_data = array(						
+							'firstname' 		 	 						=> addslashes(trim( $this->input->post('first_name') )),
+							'lastname' 		 	 							=> addslashes(trim( $this->input->post('last_name') )),
+							'address' 		 	 							=> addslashes(trim( $this->input->post('address') )),
+							'city' 		 	 								=> addslashes(trim( $this->input->post('city') )),
+							'state' 		 	 							=> addslashes(trim( $this->input->post('state') )),
+							'dob' 		 	 								=> addslashes(trim( $this->input->post('dob') )),
+							'country' 		 	 							=> addslashes(trim( $this->input->post('country') )),
+							'age' 		 	 								=> addslashes(trim( $this->input->post('age') )),
+							'zip' 		 	 								=> addslashes(trim( $this->input->post('zip') )),
+							'gender' 		 	 							=> addslashes(trim( $this->input->post('gender') )),
+							'phone' 		 	 							=> addslashes(trim( $this->input->post('contact') )),
+							'alternate_phone' 		 	 					=> addslashes(trim( $this->input->post('alternate_contact') )),
+							//'program_id' 		 	 						=> addslashes(trim( $this->input->post('program_id') )),
+							'stream' 		 	 							=> addslashes(trim( $this->input->post('stream') )),
+							'center_id' 		 	 						=> addslashes(trim( $this->input->post('center_id') )),
+						
+							//'created_by'									=> 'Super Admin',
+							'updated_by'									=> 'Super Admin',
+							'updated_at'									=> date('Y-m-d H:i:s'),
+					);
+					
+					$set_user_data = array(						
+							'username' 		 	 					=> addslashes(trim( $this->input->post('username') )),
+							'email' 		 	 					=> addslashes(trim( $this->input->post('email') )),
+							'mobile' 		 	 					=> addslashes(trim( $this->input->post('contact') )),
+							//'password' 		 	 				=> addslashes(trim( md5($this->randomPassword()) )),	
+							'user_role_id'							=> 2,
+							'status'								=> 1,
+							//'created_by'							=> 'Super Admin',
+							'updated_by'							=> 'Super Admin',
+							'updated_at'							=> date('Y-m-d H:i:s'),
+							
+				     );
+					 
+					 //echo '<pre>';print_r($set_userprofile_data);
+					  //echo '<pre>';print_r($set_user_data);
+					  //die;
+					$check = $this->Syllabus_model->update( 'students', 'user_id',$set_user_data,$id );
+					if($check){
+					    
+							//$this->Syllabus_model->update( 'student_profiles', 'user_profile_id',$set_user_data,$id );
+							
+						if( isset( $_POST['program_id'])){
+							$user_program_data = array();
+							$stream = $_POST['stream'];
+							
+							$cntPgm = count($_POST['program_id']);
+							
+							$checkUserPgm = $this->Syllabus_model->getDoubleCondition('student_syllabus_program','user_id',$id,'program_id',$_POST['program_id'][$cntPgm-1]);
+							if( isset($checkUserPgm) && !empty($checkUserPgm))
+							{
+								$user_program_data = array(
+									'user_id'			=> $id,
+									'program_id'		=> $_POST['program_id'][$cntPgm-1],
+									'center_id'			=> addslashes(trim( $this->input->post('center_id') )),
+									'is_fasttrack'		=> ((isset($stream) && !empty($stream) && in_array($_POST['program_id'][$cntPgm-1],$stream)) ? 'Y' : 'N'),
+								);
+								$this->Syllabus_model->update( 'student_syllabus_program', 'user_program_id',$user_program_data,$checkUserPgm->user_program_id );
+								//echo '<pre>test->';print_r($_POST);
+								//echo '<pre>';print_r($checkUserPgm->user_program_id);
+								//die;
+							}
+							else
+							{ 
+								$user_program_data = array(
+									'user_id'			=> $id,
+									'program_id'		=> $_POST['program_id'][$cntPgm-1],
+									'center_id'			=> addslashes(trim( $this->input->post('center_id') )),
+									'is_fasttrack'		=> ((isset($stream) && !empty($stream) && in_array($_POST['program_id'][$cntPgm-1],$stream)) ? 'Y' : 'N'),
+									'enrollment_date'	=> date('Y-m-d H:i:s'),
+								);
+								$this->Syllabus_model->save('student_syllabus_program',$user_program_data);
+							}
+							
+							/*foreach( $_POST['program_id'] as $pgm)
+							{
+								$user_program_data[] = array(
+									'user_id'			=> $id,
+									'program_id'		=> $pgm,
+									'center_id'			=> addslashes(trim( $this->input->post('center_id') )),
+									'is_fasttrack'		=> ((isset($stream) && !empty($stream) && in_array($pgm,$stream)) ? 'Y' : 'N'),
+									'enrollment_date'	=> date('Y-m-d H:i:s'),
+								);
+							}
+							$this->Student_model->batchUpdate('user_program',$user_program_data,'user_id', $id);*/
+						}
+					
+						$another_check = $this->Syllabus_model->Another_update('student_profiles','user_id',$id, $set_userprofile_data);
+						
+						
+						$uname = addslashes(trim( $this->input->post('username') ));
+						$pass = $this->Syllabus_model->getCondition('students','username',$uname);
+						if( isset($pass->is_publish_mail) && $pass->is_publish_mail == 0 ){ 
+						
+							$pass = ((isset($pass->password) && !empty($pass->password)) ? $this->decode($pass->password) : '');
+							$content = 'Greetings from APAA! Please find below your Username and password to access your account. 
+							 <br>Username : '.$uname.'<br>Password : '.$pass.'<br>Go to the below mentioned URL and login your account to access the Practical
+Video content and Ebook of your Bharathanatyam programme.<br>https://alagappaarts.com/dance/syllabuslogin';
+							$subject = 'APAA User Credentials';
+							$user_data = array(
+								'firstname'	=> addslashes(trim( $this->input->post('first_name') )),
+								'lastname'	=> addslashes(trim( $this->input->post('last_name') )),
+								'email'		=> addslashes(trim( $this->input->post('email') ))
+							);
+							$this->common_mail($user_data,$content,$subject,false);
+							
+							$mail_update_data = array(
+								'is_publish_mail' => 1
+							);
+							$this->Syllabus_model->update( 'students', 'user_id',$mail_update_data,$id );
+							
+						}
+						
+						$this->session->set_flashdata('SucMessage', 'Updated Successfully');
+						redirect(base_url().'dance/admin/syllabus/index'); 
+					}else{
+						$this->session->set_flashdata('SucMessage', 'Invalid Details');
+						redirect(base_url().'dance/admin/syllabus/index'); 
+					}
+				}
+			}
+			
+			$programs = $this->Syllabus_model->getListactiveState('programs');
+			//$sreatm = array('Fast Track'=>'Fast Track','Noraml'=>'Noraml');
+			//$sreatm = array('1'=>'Fast Track','2'=>'Fast Track','3'=>'Fast Track','4'=>'Fast Track','5'=>'Fast Track');
+			$sreatm = array();
+			if( isset($programs) && !empty($programs))
+			{
+				foreach($programs as $pgm)
+				{
+					$sreatm[$pgm->program_id]='Fast Track';
+				}
+			}
+			$centers = $this->Syllabus_model->getListactiveState('center_academy');
+			$selectedValues = $this->Syllabus_model->getSelected('user_id', $id);
+			$selectListedValuesArray = $this->Syllabus_model->getSelectedFromUserpgmList('student_syllabus_program','user_id', $id);
+			$selectedPgmList = $selectedStreamList = array();
+			if( isset($selectListedValuesArray) && !empty($selectListedValuesArray))
+			{
+				foreach($selectListedValuesArray as $selected){
+					$selectedPgmList[] = $selected->program_id;
+					$selectedStreamList[] = (($selected->is_fasttrack == 'Y') ? $selected->program_id : '');
+				}
+			}
+			//echo '<pre>';print_r($selectListedValuesArray);die;
+			$data = array(
+					'ErrorMessages'					=> $this->ErrorMessages,
+					'ErrorMessage'					=> '',
+					'ErrorMessageanotherUser' 		=> $this->ErrorMessageanotherUser,
+					'SiteTitle' 					=> $this->SiteMainTitle.'- Admin Panel syllabus',
+					'SiteMainTitle' 				=> $this->SiteMainTitle,
+					'selectedValues'				=> $selectedValues,	
+					'selectedPgmList'				=> $selectedPgmList,
+					'selectedStreamList'			=> $selectedStreamList,
+					'arg'							=> $id,
+					'programs'						=> $programs,
+					'sreatm'						=> $sreatm,
+					'centers'						=> $centers,
+					'post_set'						=> $post_set
+			);
+			$this->load->view('admin/header',$data);
+			$this->load->view('admin/sidebar');
+			$this->load->view('admin/syllabus/edit',$data);
+			$this->load->view('admin/footer');
+			
+		}
+		
+	}	
+	
+	public function result_exam($id=null)
+	{
+		if($this->session->userdata('admin_logged_in') == False)
+		{
+			redirect(base_url().'dance/admin/login/', 'refresh');
+		}		
+		$post_set = $_POST;
+		
+		if( isset($id) && !empty($id))
+		{
+			
+			if (($this->input->server('REQUEST_METHOD') == 'POST') && !empty($id) && (!empty($_POST['submit']) && $_POST['submit']=='Submit') ) {
+				$_POST['result'] 	= array_filter($_POST['result']);
+				$_POST['grade'] 	= array_filter($_POST['grade']);
+				//echo '<pre>post';print_r($_POST);die;
+				$this->form_validation->set_rules('program_id', 'Program Id', 'trim|required|min_length[1]');
+				$this->form_validation->set_rules('result[]', 'Result', 'trim|required|min_length[1]');
+				$this->form_validation->set_rules('grade[]', 'Grade', 'trim|required|min_length[1]');
+				
+				if($this->form_validation->run() 			== FALSE)
+				{
+					$post_set		 					= $_POST;
+					$this->ErrorMessages		 		= validation_errors();
+				}else{
+					
+					if( isset($_POST['is_eligible']) && !empty($_POST['is_eligible']) && $_POST['is_eligible']==1 && isset($_POST['result']) && !empty($_POST['result']) && count($_POST['result']) >0 && isset($_POST['grade']) && !empty($_POST['grade']) && count($_POST['grade']) >0  ){
+						
+							$getUserIDs = $this->Student_model->getCondition('assign_exam','id',$_POST['aeId'][0]);
+							$user_id = $getUserIDs->student_id;
+
+							if( isset($_POST['aeId']) && !empty($_POST['aeId']) && count($_POST['aeId'])>0 ){
+							$cnt = count($_POST['aeId']);
+							for($i=0;$i<$cnt;$i++){
+							$assignExamData[] = array(
+							'score' => addslashes(trim( $_POST['score'][$i])),
+							'result' => addslashes(trim( $_POST['result'][$i])),
+							'exam_status' 	=> 'Completed',
+							'grade' => addslashes(trim( $_POST['grade'][$i])),
+							'publish' 		=> 'Y',
+							'id'	=> addslashes(trim( $_POST['aeId'][$i]))
+							);
+							}
+							}
+							//echo '<pre>post->';print_r($_POST);
+							//echo '<pre>assignExamData->';print_r($assignExamData);die;
+							$check = $this->Student_model->myupdatebatch('assign_exam',$assignExamData,'id');
+
+							if( isset($check) && !empty($check))
+							{
+								$userdetail = $this->Student_model->getConnectedDataList('users','user_profiles','user_id','user_id',$user_id);
+								if(isset($assignExamData) && !empty($assignExamData)){
+								$table = '<table>';
+								foreach($assignExamData as $assign){
+								$table .= '<tr><td>Score</td><td>'.$assign['score'].'</td></tr>';
+								$table .= '<tr><td>Result</td><td>'.$assign['result'].'</td></tr>';
+								$table .= '<tr><td>Grade</td><td>'.$assign['grade'].'</td></tr>';
+								}
+								$table .= '</table>';
+								}
+								$content = 'Result of Exam from APPA. See below <br>'.$table;
+								$subject = 'Result of Exam from APAA!';
+								$user_data = array(
+								'firstname'	=> $userdetail[0]->firstname,
+								'lastname'	=> $userdetail[0]->lastname,
+								'email'		=> $userdetail[0]->email
+								);
+								//echo '<pre>content->';print_r($content);die;
+								$this->common_mail($user_data,$content,$subject,false);
+
+								$this->session->set_flashdata('SucMessage', 'Added Successfully');
+								redirect(base_url().'dance/admin/students/index'); 
+							}else{
+								$this->session->set_flashdata('ErrMessage', 'Invalid Details');
+								redirect(base_url().'dance/admin/students/result_exam/'.$id);
+							}
+					
+					}else{
+						$this->session->set_flashdata('ErrMessage', 'Invalid Details');
+						redirect(base_url().'dance/admin/students/result_exam/'.$id);
+					}
+				}
+				
+			}
+			
+			$getDefaultPgmArray = $this->Student_model->getSelectedFromUserpgmList('user_program','user_id',$id);
+			rsort($getDefaultPgmArray);
+			$defaultProgram_id = $getDefaultPgmArray[0]->program_id;
+			
+			$program_id = ((isset($_POST['program_id']) && !empty($_POST['program_id'])) ? $_POST['program_id'] : $defaultProgram_id);
+			$ExamScore   	= $this->Student_model->ExamScore($id,$program_id);
+			//echo '<pre>';print_r($ExamScore);
+			$programList 	= $this->Student_model->getConnectedDataList('programs','user_program','program_id','user_id',$id);
+			$enroll_detail 	= $this->Student_model->getMultiTableRecord('users','user_program','programs','center_academy','user_profiles','user_id',$id,'','');
+			$getPaid = $this->Student_model->getPaidDate('payment',$id,1);
+			//$ExamScore   	= $this->Student_model->ExamScore($id,'');
+			//echo '<pre>enroll_detail->';print_r($enroll_detail);die;
+			$resultArray = array(25=>'Pass',26=>'Fail',27=>'Unpublished',48=>'Admin reassign');
+			$gradeArray = array(28=>'A+',29=>'A',30=>'A-',31=>'B+',32=>'B',33=>'B-',34=>'O',42=>'C+',43=>'C',44=>'C-',45=>'D+',46=>'D',47=>'D-');
+			$regulationList = array('1'=>'Theory','2'=>'Practical','3'=>'Project','4'=>'Allied I','5'=>'Allied II');
+			
+			$selectedPgm = $selectedCourse = array();
+			if( isset($_POST['program_id']) && !empty($_POST['program_id']))
+			{
+				$selectedCourse = $this->Student_model->getSelected_List('courses','program_id',$_POST['program_id']);
+			}
+			//echo '<pre>';print_r($ExamScore);die;
+			$data = array(
+					'ErrorMessages'					=> $this->ErrorMessages,
+					'ErrorMessage'					=> '',
+					'ErrorMessageanotherUser' 		=> $this->ErrorMessageanotherUser,
+					'SiteTitle' 					=> $this->SiteMainTitle.'- Admin Panel Students Assign Exam',
+					'SiteMainTitle' 				=> $this->SiteMainTitle,
+					//'selectedValues'				=> $selectedValues,					
+					'arg'							=> $id,
+					'programList'					=> ((isset($programList) && !empty($programList)) ? $programList : ''),
+					'enroll_detail'					=> $enroll_detail,
+					'ExamScore'						=> $ExamScore,
+					'selectedCourse'				=> $selectedCourse,
+					'resultArray'					=> $resultArray,
+					'gradeArray'					=> $gradeArray,
+					'regulationList'				=> $regulationList,
+					'post_set'						=> $post_set,
+					'defaultProgram_id'				=> $defaultProgram_id,
+					'getPaid'						=> $getPaid,
+			);
+			
+			$this->load->view('admin/header',$data);
+			$this->load->view('admin/sidebar');
+			$this->load->view('admin/students/result_exam',$data);
+			$this->load->view('admin/footer');
+		}
+	}
+	
+	
+	public function course_completion($arg)
+	{
+		if($this->session->userdata('admin_logged_in') == False)
+		{
+			redirect(base_url().'dance/admin/login/', 'refresh');
+		}
+		$post_set = $_POST;
+		if(isset($arg) && !empty($arg))
+		{
+			
+			if (($this->input->server('REQUEST_METHOD') == 'POST') && !empty($arg) && (!empty($_POST['submit']) && trim($_POST['submit']) =='Submit') ) {
+				//echo '<pre>post->';print_r($_POST);die;
+				
+				$this->form_validation->set_rules('program_id', 'Program Id', 'trim|required|min_length[1]');
+				$this->form_validation->set_rules('graduation_status', 'Graduation Status', 'trim|required');
+				$graduation_status = trim($this->input->post('graduation_status'));
+				if( isset($graduation_status) && !empty($graduation_status) && $graduation_status == 'Y')
+				{ 
+					$this->form_validation->set_rules('graduate_date', 'Graduate Date', 'trim|required');
+					$this->form_validation->set_rules('grade', 'Grade', 'trim|required|min_length[1]');
+				}
+				
+				if($this->form_validation->run() 			== FALSE)
+				{
+					$post_set		 					= $_POST;
+					$this->ErrorMessages		 		= validation_errors();
+				}else{
+					//echo '<pre>post->';print_r($_POST);die;
+					if( isset($_POST['is_eligible']) && !empty($_POST['is_eligible']) && $_POST['is_eligible']==1){
+						
+						$user_program_id = addslashes(trim( $this->input->post('user_program_id') ));
+						$graduation_data = array(
+							'completion_date' 				=> addslashes(trim( $this->input->post('graduate_date') )),
+							'graduation_status_comments' 	=> addslashes(trim( $this->input->post('comment') )),
+							'graduation_status' 			=> addslashes(trim( $this->input->post('graduation_status') )),
+							'grade' 						=> addslashes(trim( $this->input->post('grade') )),
+						);
+						//echo '<pre>course_dara->';print_r($graduation_data); echo $user_program_id;die;
+						$check = $this->Student_model->update('user_program','user_program_id',$graduation_data,$user_program_id);
+						
+						if( isset($check) && !empty($check))
+						{
+							$this->session->set_flashdata('SucMessage', 'Added Successfully');
+							redirect(base_url().'dance/admin/students/index'); 
+						}else{
+							$this->session->set_flashdata('SucMessage', 'Invalid Details');
+							redirect(base_url().'dance/admin/students/course_completion/'.$arg);
+						}
+						
+					}else{
+						$this->session->set_flashdata('SucMessage', 'Invalid Details');
+						redirect(base_url().'dance/admin/students/course_completion/'.$arg);
+					}
+					
+				}
+				
+				
+			}
+			
+			$getDefaultPgmArray = $this->Student_model->getSelectedFromUserpgmList('user_program','user_id',$arg);
+			rsort($getDefaultPgmArray);
+			$defaultProgram_id = $getDefaultPgmArray[0]->program_id;
+			
+			$programList 	= $this->Student_model->getConnectedDataList('programs','user_program','program_id','user_id',$arg);
+			$program_id = ((isset($_POST['program_id']) && !empty($_POST['program_id'])) ? $_POST['program_id'] : $defaultProgram_id);
+			
+			$enroll_detail 	= $this->Student_model->getMultiTableRecord('users','user_program','programs','center_academy','user_profiles','user_id',$arg,'program_id',$program_id);
+			
+			$getPaid = $this->Student_model->getPaidDate('payment',$arg,1);
+			
+			$ExamScore   	= $this->Student_model->ExamScore($arg,$program_id);
+			$paymentList   	= $this->Student_model->PaymentList($arg,$program_id);
+			$gradeArray = array(28=>'A+',29=>'A',30=>'A-',31=>'B+',32=>'B',33=>'B-',34=>'O',42=>'C+',43=>'C',44=>'C-',45=>'D+',46=>'D',47=>'D-');
+			
+			$selectedPgm = $selectedCourse = array();
+			if( isset($_POST['program_id']) && !empty($_POST['program_id']))
+			{
+				$selectedCourse = $this->Student_model->getSelected_List('courses','program_id',$_POST['program_id']);
+			}
+			//echo '<pre>';print_r($enroll_detail);die;
+			$data = array(
+					'ErrorMessages'					=> $this->ErrorMessages,
+					'ErrorMessage'					=> '',
+					'ErrorMessageanotherUser' 		=> $this->ErrorMessageanotherUser,
+					'SiteTitle' 					=> $this->SiteMainTitle.'- Admin Panel Students Assign Exam',
+					'SiteMainTitle' 				=> $this->SiteMainTitle,
+					//'selectedValues'				=> $selectedValues,					
+					'arg'							=> $arg,
+					'programList'					=> ((isset($programList) && !empty($programList)) ? $programList : ''),
+					'enroll_detail'					=> $enroll_detail,
+					'ExamScore'						=> $ExamScore,
+					'selectedCourse'				=> $selectedCourse,
+					//'resultArray'					=> $resultArray,
+					'paymentList'					=> ((isset($paymentList) && !empty($paymentList)) ? $paymentList : ''),
+					'gradeArray'					=> $gradeArray,
+					//'regulationList'				=> $regulationList,
+					'post_set'						=> $post_set,
+					'defaultProgram_id'				=> $defaultProgram_id,
+					'getPaid'						=> $getPaid,
+			);
+			
+			$this->load->view('admin/header',$data);
+			$this->load->view('admin/sidebar');
+			$this->load->view('admin/students/course_completion',$data);
+			$this->load->view('admin/footer');
+		}
+	}
+	
+	
+	public function assign_exam($id=null)
+	{
+		if($this->session->userdata('admin_logged_in') == False)
+		{
+			redirect(base_url().'dance/admin/login/', 'refresh');
+		}
+		
+		$post_set = $_POST;
+		
+		if( isset($id) && !empty($id))
+		{
+			if (($this->input->server('REQUEST_METHOD') == 'POST') && !empty($id) && (!empty($_POST['submit']) && $_POST['submit']=='Submit') ) 
+			{
+				$this->form_validation->set_rules('program_id', 'Program Id', 'trim|required|min_length[1]');
+				$this->form_validation->set_rules('course_code[]', 'Course Code', 'trim|required|min_length[1]');
+				$this->form_validation->set_rules('from_schedule[]', 'From Schedule', 'trim|required');
+				$this->form_validation->set_rules('to_schedule[]', 'To Schedule', 'trim|required');
+				
+				if($this->form_validation->run() 			== FALSE)
+				{
+					$post_set		 					= $_POST;
+					$this->ErrorMessages		 		= validation_errors();
+				}else{
+					
+					$program_id 	= trim($_POST['program_id']);
+					$fee 			= trim($_POST['hidden_total_fee']);
+					$paymentChk = $this->Student_model->getSelected_table('payment','student_id',$id,'program_id',$program_id);
+					
+					if( isset($paymentChk->amount) && !empty($paymentChk->amount) && $paymentChk->amount >= $fee)
+					{ 
+						$courseCode = $_POST['course_code'];
+						$quizResult = $this->Student_model->getSelected_table_array('quiz_result','uid',$id,'quid',$courseCode); 
+						
+						
+						if( isset($quizResult) && !empty($quizResult) && count($quizResult) >0) 
+						{
+							$this->session->set_flashdata('SucMessage', 'Already Student was written this Exam. Please check it.');
+							redirect(base_url().'dance/admin/students/assign_exam/'.$id);
+						}
+						else
+						{
+							$check = $this->Student_model->assignExam('assign_exam',$id,$_POST);
+							if( isset($check) && !empty($check))
+							{
+								$userdetail = $this->Student_model->getConnectedDataList('users','user_profiles','user_id','user_id',$id);
+								$cnt = count($_POST['from_schedule']);
+								$pgmCode = $dates = '';
+								for($i=0;$i<$cnt;$i++){
+									$programs = $this->Student_model->getConnectedDataList('programs','courses','program_id','course_id',$_POST['course_code'][$i]);
+									//$examDate .= 'Date Between '.$_POST['from_schedule'][$i].' to '.$_POST['to_schedule'][$i].' for '.$programs[0]->course_code.' <br>';
+									$pgmCode .= $programs[0]->course_code.',';
+									$dates .= date('d-M-Y',strtotime($_POST['from_schedule'][$i])).' and '.date('d-M-Y',strtotime($_POST['to_schedule'][$i])).',';
+								}
+								
+								$examDate .= 'This is to notify you in advance the date and time of the '.rtrim($pgmCode,',').' online
+													examination. Kindly log in with the same username and password and access
+													the examination anytime during the scheduled dates of '.rtrim($dates,',').' . Please take online sample test to get familiar with the format. <br/>
+												<p style="margin-top: 12px; font-size:14px; color:red;"><b>PLEASE READ CAREFULLY BEFORE TAKING ON LINE EXAMINATIONS </b><br/></p>
+												<p>(Make certain that you have received the Username & Password from APAA) </p>
+												<p style="margin-left: 40px;">	1. Log in to: http: alagappaarts.com/dance/registration/students-log-in/<br/><br/>
+																				2. Enter your username and password<br/><br/>
+																				3. Online exam page will open<br/><br/>
+																				4. You will see the exam schedule box<br/><br/>
+																				5. Click on to CEB 01/02 icon (or) ADB01/02 icon<br/><br/>
+																				6. You will see an instruction page.<br/><br/>
+																				7. Click on to start test icon<br/><br/>
+																				8. Start your exams, when you finish first question click on to next icon to
+																				move on to the next question<br/><br/>
+																				9. On completion of exam click complete icon<br/><br/>
+																				10. You will get a message “successful”<br/></p>
+												<p style="margin-left: 40px; margin-top:10px; color:red;"> DO NOT DO while taking the online exam : </p>
+												<p style="margin-left: 40px; margin-top:10px; color:red;"> 1. Don’t Right click in mouse <br/><br/>
+																										2. Do not press F5 button in keyboard <br/><br/>
+																										3. Don’t click Refresh button in browser <br/><br/>
+																										4. Do not click Back button and forward in browsers <br/><br/>
+																										5. Dont Copy and Paste: <br/>
+																										Even if a question expects an essay answer, don’t copy and
+																										paste. Doing so is very likely to also copy bogus HTML code that will break your browser. Thus, compose your answer by your
+																										own. <br/> <br/>
+																										6. Dont press the following keys: <br/> </p><br/>
+												<div style="width:100%;color:red; ">
+												<div style="float:left;width:50%; ">
+												<b style="margin-left: 40px;margin-top: 20px;">> F5 Button</b><br>
+												<b style="margin-left: 40px;margin-top: 20px;">> CTRL + R</b><br>
+												<b style="margin-left: 40px;margin-top: 20px;">> CTRL + F5</b><br>
+												<b style="margin-left: 40px;margin-top: 20px;">> Command + R</b><br>
+												<b style="margin-left: 40px;margin-top: 20px;">> CTRL/Command  + A</b><br>
+												<b style="margin-left: 40px;margin-top: 20px;">> CTRL/Command  + S</b><br>
+												</div>                                                 
+												<div style="float:right;width:50%;">
+												<b style="margin-left: 40px;margin-top: 20px;">> CTRL/Command  + N</b><br>
+												<b style="margin-left: 40px;margin-top: 20px;">> CTRL/Command  + C</b><br>
+												<b style="margin-left: 40px;margin-top: 20px;">> CTRL/Command  + V</b><br>
+												<b style="margin-left: 40px;margin-top: 20px;">> CTRL/Command  + X</b><br>
+												<b style="margin-left: 40px;margin-top: 20px;">> CTRL/Command  + J</b><br>
+												<b style="margin-left: 40px;margin-top: 20px;">> CTRL/Command  + W</b><br>
+												</div></div>
+												<p style="margin-left: 40px; margin-top:18%; color:red;">Do not use multiple tabs, close other tabs before starting the online exam.</p>
+												<p style="margin-left: 40px;font-weight: 600;text-align: justify;margin-bottom:20px; color:red;">Once You started the online exam dont log-out or close the browser, if you are doing this, your exam will not be submitted.</p>
+												<p style="margin-left: 40px;font-weight: 600;text-align: justify;margin-bottom:20px; color:red;">If your not following the above instruction while writing online exam your exam will be failed.</p>
+											 ';
+								$content = '<p>Greetings from APAA.</p>'.$examDate;		
+
+								$subject = 'Assigning Exam from APAA!';
+								$user_data = array(
+									'firstname'	=> $userdetail[0]->firstname,
+									'lastname'	=> $userdetail[0]->lastname,
+									'email'		=> $userdetail[0]->email
+								);
+								
+								
+								$this->common_mail($user_data,$content,$subject,true);
+								
+								$this->session->set_flashdata('SucMessage', 'Exam assigned Successfully');
+								redirect(base_url().'dance/admin/students/index'); 
+							}
+							else
+							{
+								$this->session->set_flashdata('SucMessage', 'Invalid Details');
+								redirect(base_url().'dance/admin/students/assign_exam/'.$id);
+							}
+						}
+					}else
+					{
+							$this->session->set_flashdata('SucMessage', 'Payment Not Yet Completed. Please consult With the Related Student');
+							redirect(base_url().'dance/admin/students/assign_exam/'.$id);
+					}
+				}
+				
+			}
+			
+			
+			$getDefaultPgmArray = $this->Student_model->getSelectedFromUserpgmList('user_program','user_id',$id);
+			rsort($getDefaultPgmArray);
+			$defaultProgram_id = $getDefaultPgmArray[0]->program_id;
+			
+			$programList 	= $this->Student_model->getConnectedDataList('programs','user_program','program_id','user_id',$id);
+			$enroll_detail 	= $this->Student_model->getMultiTableRecord('users','user_program','programs','center_academy','user_profiles','user_id',$id,'','');
+			
+			$getPaid = $this->Student_model->getPaidDate('payment',$id,1);
+			
+			$paymentList   	= $this->Student_model->PaymentList($id,$defaultProgram_id);
+			$selectedPgm = $selectedCourse = array();
+			if( isset($_POST['program_id']) && !empty($_POST['program_id']))
+			{
+				$selectedCourse = $this->Student_model->getSelected_List('courses','program_id',$_POST['program_id']);
+			}
+			
+			$pendingExam = $this->Student_model->PendingExam($id);
+			//echo '<pre>PendingExam->';print_r($pendingExam);die;
+			
+			$data = array(
+					'ErrorMessages'					=> $this->ErrorMessages,
+					'ErrorMessage'					=> '',
+					'ErrorMessageanotherUser' 		=> $this->ErrorMessageanotherUser,
+					'SiteTitle' 					=> $this->SiteMainTitle.'- Admin Panel Students Assign Exam',
+					'SiteMainTitle' 				=> $this->SiteMainTitle,
+					//'selectedValues'				=> $selectedValues,					
+					'arg'							=> $id,
+					'programList'					=> $programList,
+					'enroll_detail'					=> $enroll_detail,
+					'paymentList'					=> ((isset($paymentList) && !empty($paymentList)) ? $paymentList : ''),
+					'selectedCourse'				=> $selectedCourse,
+					//'sreatm'						=> $sreatm,
+					//'centers'						=> $centers,
+					'post_set'						=> $post_set,
+					'defaultProgram_id'				=> $defaultProgram_id,
+					'getPaid'						=> $getPaid,
+					'pendingExam'					=> $pendingExam,
+			);
+			
+			$this->load->view('admin/header',$data);
+			$this->load->view('admin/sidebar');
+			$this->load->view('admin/students/assign_exam',$data);
+			$this->load->view('admin/footer');
+		}
+	}
+	
+	
+	public function ajaxCourseCompletion()
+	{
+		if( isset($_POST['program_id']) && !empty($_POST['program_id']) && isset($_POST['user_id']) && !empty($_POST['user_id']) ){
+			$program_id = trim($_POST['program_id']);
+			$id = trim($_POST['user_id']);
+			$ExamScore   	= $this->Student_model->ExamScore($id,$program_id);
+			$paymentList   	= $this->Student_model->PaymentList($id,$program_id);
+			$getRes = array_merge( array('exam'=>$ExamScore), array('payment'=>$paymentList));
+			echo json_encode($getRes);
+		}
+	}
+	
+	public function ajaxResultExam()
+	{
+		if( isset($_POST['program_id']) && !empty($_POST['program_id']) && isset($_POST['user_id']) && !empty($_POST['user_id']) ){
+			$program_id = trim($_POST['program_id']);
+			$id = trim($_POST['user_id']);
+			$getRes = $this->Student_model->ExamScore($id,$program_id);
+			echo json_encode($getRes);
+		}
+	}
+	
+	public function ajaxPgm()
+	{
+		if( isset($_POST['type']) && !empty($_POST['type']) && isset($_POST['field_id']) && !empty($_POST['field_id']) && isset($_POST['field_val']) && !empty($_POST['field_val']) ){
+			$table = trim($_POST['type']);
+			$field_id = trim($_POST['field_id']);
+			$field_val = trim($_POST['field_val']);
+			$id = trim($_POST['user_id']);
+			$ExamScore   	= $this->Student_model->getPgmFee($id,$field_val);
+			$paymentList   	= $this->Student_model->PaymentList($id,$field_val);
+			$course = $this->Student_model->getSelected_List($table,$field_id,$field_val);
+			$getRes = array_merge(array('exam'=>$ExamScore), array('payment'=>$paymentList),array('course'=>$course));
+			echo json_encode($getRes);
+		}
+	}
+	
+	
+	public function view( $arg )
+	{
+		$selectedValues = $this->Syllabus_model->getSelected('user_id', $arg); //echo '<pre>';print_r($selectedValues);die;
+		$data = array(
+			'ErrorMessages'					=> $this->ErrorMessages,
+			'ErrorMessage'					=> '',
+			'ErrorMessageanotherUser' 		=> $this->ErrorMessageanotherUser,
+			'SiteTitle' 					=> $this->SiteMainTitle.'- Admin Panel syllabus',
+			'SiteMainTitle' 				=> $this->SiteMainTitle,
+			'selectedValues'				=> $selectedValues,					
+			);
+		$this->load->view('admin/header',$data);
+		$this->load->view('admin/sidebar');
+		$this->load->view('admin/syllabus/view',$data);
+		$this->load->view('admin/footer');
+	}
+	
+	public function reset_password( $arg )
+	{
+		if($this->session->userdata('admin_logged_in') == False)
+		{
+			redirect(base_url().'dance/admin/login/', 'refresh');
+		}
+		
+		if(isset($arg) && !empty($arg))
+		{
+				$user_data = $this->Student_model->getSelected('user_id',$arg);
+				//echo '<pre>';print_r($user_data);die;
+				if( $user_data->status ==1)
+				{
+					/* Mail sent */
+					$data = array(
+						'name'		=> $user_data->firstname.' '.$user_data->lastname,
+						'username' 	=> $user_data->username,
+						'password'	=> $this->decode($user_data->password)
+					);
+					
+					$this->load->helper(array('email'));
+					$this->load->library(array('email'));
+					$this->email->set_mailtype("html");
+					//$data['sender_mail'] = 'thenmozhi@sanjaytechnologies.org';
+					//$mail = 'sk@sanjaytechnologies.net';
+					$this->load->library('email');
+					$config = array (
+					  'mailtype' => 'html',
+					  'charset'  => 'utf-8',
+					  'priority' => '1'
+					   );
+					$this->email->initialize($config);
+					$this->email->from( CUSTOMER_EMAIL, 'Customer Support' );
+					$this->email->to( $user_data->email );
+					//$this->email->cc('sk@sanjaytechnologies.net');
+					//$this->email->bcc();
+					$this->email->subject('APAA User Credentials');
+					
+					$message=$this->load->view('forgetpassword_mail',$data,TRUE);
+					//echo $message;die;
+					$this->email->message($message);
+					$this->email->send();
+					/* end of mail */
+					
+					$this->session->set_flashdata('SucMessage', 'Successfully Send Mail');
+					redirect(base_url().'dance/admin/students/index');
+				}
+		}
+		
+	}
+	
+	public function status( $arg )
+	{
+		if($this->session->userdata('admin_logged_in') == False)
+		{
+			redirect(base_url().'dance/admin/login/', 'refresh');
+		}
+		if(isset($arg) && !empty($arg))
+		{
+			$getRes = $this->Student_model->changeStatus('users', 'user_id', 'status', $arg);
+			
+			if($getRes == true)
+			{
+				$this->session->set_flashdata('SucMessage', 'Successfully Changed status');
+				redirect(base_url().'dance/admin/students/index'); 
+			}
+			else{
+				$this->session->set_flashdata('SucMessage', 'Invalid Details Enter username');
+				redirect(base_url().'dance/admin/students/index'); 
+			}
+		}
+		
+	}
+	
+	public function remove( $arg )
+	{
+		
+		$getRes = $this->Student_model->isDelete('users', 'user_id',$arg);
+		
+		if($getRes==true)
+		{
+			//$this->Student_model->remove('user_profiles', 'user_id',$arg);
+			//$this->Student_model->remove('user_program', 'user_id',$arg);
+			$this->session->set_flashdata('SucMessage', 'Successfully deleted');
+			redirect(base_url().'dance/admin/students/index'); 
+		}
+		else
+		{
+			$this->session->set_flashdata('SucMessage', 'Invalid Details');
+			redirect(base_url().'dance/admin/students/index'); 
+		}
+		
+	}
+	
+	public function remove_assign_exam( $arg )
+	{
+		
+		print_r($arg);
+		$result = $this->Student_model->dbQuery('SELECT * FROM quiz_result where assign_exam_id ='.$arg.'');
+		print_r($result[0]['rid']);
+	
+		if(!empty($result[0]['rid']))
+		{
+			$this->Student_model->delete_Data('assign_exam', array('id'=>$arg));
+			$this->Student_model->delete_Data('quiz_result', array('rid'=>$result[0]['rid']));
+			$this->session->set_flashdata('SucMessage', 'Successfully deleted');
+			redirect(base_url().'dance/admin/students/assign_exam_list');	
+		}		
+		else
+		{
+			$this->Student_model->delete_Data('assign_exam', array('id'=>$arg));
+			$this->session->set_flashdata('SucMessage', 'Successfully deleted');
+			redirect(base_url().'dance/admin/students/assign_exam_list'); 
+		}
+		
+	}
+	
+	public  function encode($value){ 
+		
+	    if(!$value){return false;}
+        $text = $value;
+        $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB);
+        $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
+        $crypttext = mcrypt_encrypt(MCRYPT_RIJNDAEL_256, $this->skey, $text, MCRYPT_MODE_ECB, $iv);
+        return trim($this->safe_b64encode($crypttext)); 
+    }
+	
+	 public function decode($value){
+		
+        if(!$value){return false;}
+        $crypttext = $this->safe_b64decode($value); 
+        $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB);
+        $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
+        $decrypttext = mcrypt_decrypt(MCRYPT_RIJNDAEL_256, $this->skey, $crypttext, MCRYPT_MODE_ECB, $iv);
+        return trim($decrypttext);
+    }
+	
+	public  function safe_b64encode($string) {
+	
+        $data = base64_encode($string);
+        $data = str_replace(array('+','/','='),array('-','_',''),$data);
+        return $data;
+    }
+ 
+	public function safe_b64decode($string) {
+        $data = str_replace(array('-','_'),array('+','/'),$string);
+        $mod4 = strlen($data) % 4;
+        if ($mod4) {
+            $data .= substr('====', $mod4);
+        }
+        return base64_decode($data);
+    }
+	function randomPassword() {
+		$alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+		$pass = array(); //remember to declare $pass as an array
+		$alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+		for ($i = 0; $i < 8; $i++) {
+			$n = rand(0, $alphaLength);
+			$pass[] = $alphabet[$n];
+		}
+		return implode($pass); //turn the array into a string
+	}
+	
+	
+}
+

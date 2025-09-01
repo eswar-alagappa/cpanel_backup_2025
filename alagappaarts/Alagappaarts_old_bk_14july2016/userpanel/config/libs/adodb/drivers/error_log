@@ -1,0 +1,7 @@
+[31-Oct-2012 09:03:34] PHP Fatal error:  Class 'ADODB_pdo_base' not found in /home/alagappa/public_html/userpanel/config/libs/adodb/drivers/adodb-pdo_oci.inc.php on line 13
+[31-Oct-2012 09:03:35] PHP Fatal error:  Class 'ADODB_pdo' not found in /home/alagappa/public_html/userpanel/config/libs/adodb/drivers/adodb-pdo_pgsql.inc.php on line 12
+[31-Oct-2012 09:03:35] PHP Parse error:  syntax error, unexpected T_VAR in /home/alagappa/public_html/userpanel/config/libs/adodb/drivers/adodb-mssql.inc.php.bak on line 170
+[31-Oct-2012 09:03:35] PHP Fatal error:  Class 'ADODB_pdo' not found in /home/alagappa/public_html/userpanel/config/libs/adodb/drivers/adodb-pdo_mssql.inc.php on line 13
+[31-Oct-2012 09:03:35] PHP Fatal error:  Class 'ADODB_pdo' not found in /home/alagappa/public_html/userpanel/config/libs/adodb/drivers/adodb-pdo_mysql.inc.php on line 13
+[31-Oct-2012 09:03:35] PHP Warning:  require_once(ADODB_DIR/drivers/adodb-sybase.inc.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/alagappa/public_html/userpanel/config/libs/adodb/drivers/adodb-sybase_ase.inc.php on line 14
+[31-Oct-2012 09:03:35] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'ADODB_DIR/drivers/adodb-sybase.inc.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/alagappa/public_html/userpanel/config/libs/adodb/drivers/adodb-sybase_ase.inc.php on line 14

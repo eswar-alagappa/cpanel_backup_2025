@@ -1,0 +1,342 @@
+<?php include("../config/config.inc.php"); 
+include("../config/classes/loginmaster.class.php");
+$roleid = $_SESSION[studentinfo][role_id];
+$userid = $_SESSION[studentinfo][user_id];
+$username = $_SESSION[studentinfo][first_name];
+$arrlogin = array('role_id'=> $roleid ,'user_id'=>$userid);
+$loginmaster = new loginmaster();
+$student  = $loginmaster->isstudent($arrlogin);
+if(!$student)
+{
+	header('location:index.php?msg=Enter username password');
+}
+else{
+include("../config/classes/keywordmaster.class.php");
+include("../config/classes/onlineexam.class.php");
+include('studentheader.php');
+$onlineexam = new onlineexam();
+$studentEmail = $onlineexam->getstudentemail($_SESSION[studentinfo][user_id]);
+
+?>
+<script type="text/javascript" >
+	function disableF5(e) { if ((e.which || e.keyCode) == 116) e.preventDefault(); };
+$(document).bind("keydown", disableF5);
+function btnradioselected(rdlName)
+{
+	//alert("dd");
+	
+	
+	var periods = $('#timer').countdown('getTimes');
+	var currentseconds = $.countdown.periodsToSeconds(periods);
+	
+	if ($("input:radio[@name='"+rdlName+"']:checked").val()) {
+			 
+		
+		var answer = $("input:radio[@name='"+rdlName+"']:checked").val();
+	///	alert(answer);
+		changequestion(answer,'NEXT',currentseconds);
+	}
+	
+
+}
+function skipanswer(isskip)
+{
+	var periods = $('#timer').countdown('getTimes');
+	var currentseconds = $.countdown.periodsToSeconds(periods);
+	
+	changequestion(null,isskip,currentseconds);
+}
+function backquestion(isback)
+{
+	var periods = $('#timer').countdown('getTimes');
+	var currentseconds = $.countdown.periodsToSeconds(periods);
+	
+	changequestion(null,isback,currentseconds);
+}
+function changequestion(answer,option,seconds)
+		{$(".onlineExamsBottom").html('<div class="ajax-loader"><img src="../web/images/ajax-loader.gif" /></div>');
+			
+		if(!seconds)
+		{
+			seconds = 0;
+		}
+			$.ajax({
+					 type: "POST",
+					 url: "temp-question.php",
+					 data:{selected:answer,option:option,seconds:seconds},
+					 success: function(result){
+					//alert(result);	 
+					$(".dynamicInfo").html(result);
+					 }
+				 });
+		
+		
+		}
+function changematchquestion(answer,questionid,valueanswered,option,seconds)
+		{
+		$(".onlineExamsBottom").html('<div class="ajax-loader"><img src="../web/images/ajax-loader.gif" /></div>');
+			
+			$.ajax({
+					 type: "POST",
+					 url: "temp-question.php",
+					  data:{matchanswer:answer,answeredvalue:valueanswered,matchquestionid:questionid,option:option,seconds:seconds},
+					 success: function(result){
+					//alert(result);	 
+					$(".dynamicInfo").html(result);
+					 }
+				 });
+		
+		
+		}
+function subjectiveanswer(txtanswer)
+{
+	 
+	var periods = $('#timer').countdown('getTimes');
+	var currentseconds = $.countdown.periodsToSeconds(periods);
+	var subjectiveanswer = CKEDITOR.instances['txtAnswer'].getData();
+	changequestion($.trim(subjectiveanswer),'NEXT',currentseconds);
+}
+function fillAnswer(txtanswer)
+{
+	
+	var periods = $('#timer').countdown('getTimes');
+	var currentseconds = $.countdown.periodsToSeconds(periods);
+	
+	var fillanswer = $("input:text[@name='"+txtanswer+"']").val();
+	
+	 var characterReg = /^[a-zA-Z0-9() ,]+$/;
+	if(fillanswer &&   characterReg.test(fillanswer))
+	changequestion($.trim(fillanswer),'NEXT',currentseconds);
+	else {  $('.error').remove();$('.part2Content').append("<div class='error fillerror'> Please Enter only  alphabets and numbers  </div>");}
+}
+function matchthefollowing(txtCorrectanswer)
+{
+	
+	var periods = $('#timer').countdown('getTimes');
+	var flag = false ;
+	var currentseconds = $.countdown.periodsToSeconds(periods);
+	$('.dynamicfields input.matchAnswer').each(function() {
+		if( $(this).val() == '' || isNaN($(this).val()))
+		flag = true ;
+	});
+	if(!flag){
+	$('.dynamicfields input.matchAnswer').each(function() {
+		 valueanswered = 	$(this).prev().val() ;
+		answer = $(this).val() ;
+		questionid= $(this).attr('id'); 
+	//alert($matchanswer);
+	  
+		 
+	 changematchquestion(answer,questionid,valueanswered,'NEXT',currentseconds);
+	
+	//alert($(this).val());
+	//alert($(this).attr('id'));
+      // changematchquestion(txtCorrectanswer);
+    });
+	}	 else { $('.error').remove();$('#match').append("<div class='error'> Please enter all the filed with valid number</div>");}
+}
+$(document).ready(function() {
+$(document).keydown(function(e) {
+	//alert(e.keyCode)
+var element = e.target.nodeName.toLowerCase();
+if (e.keyCode === 8) {
+		if (element != 'input' && element != 'textarea') {
+        return false;
+    }
+}else if (e.keyCode === 13) {
+	 return false;
+} else if (e.keyCode === 116) {
+	 return false;
+}
+});
+ $(document).bind("contextmenu",function(e){
+              return false;
+       });
+	$('input[name$="questAnswer"]').live ('click',function(){
+			if($('input[name$="questAnswer"]:checked').length != 0 ){
+			$('.nextd').hide();
+			$('.next').show();
+			}
+	})
+	$('input[name$="questAnswer"]').live ('keyup',function( ){
+			if($.trim($(this).val())){
+				$('.nextd').hide();
+			$('.next').show();
+		}
+	})
+	$('.matchAnswer').live ('keyup',function(){
+		var flag = 0;
+		$('.matchAnswer').each(function(){
+			if(!$.trim($(this).val())){
+			flag = 1;
+				}
+			})
+		//	alert(flag);
+			if(flag == 0){
+				$('.nextd').hide();
+			$('.next').show();
+			}
+		})
+			
+	$("#btnStartTest").click(function(){
+		changequestion(null);
+		});
+	
+});
+</script>
+<script type='text/javascript'>
+function getckeditor()
+{
+	if (CKEDITOR.instances['txtAnswer']) {
+delete CKEDITOR.instances['txtAnswer'];
+	}	
+CKEDITOR.replace( 'txtAnswer',
+{
+height: '200',
+resize_enabled : 'false',
+resize_maxHeight : '200',
+resize_maxWidth : '450',
+resize_minHeight: '200',
+resize_minWidth: '450',
+toolbar :
+[
+[ 'Styles','Format' ],
+['Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', ]
+],
+width:'800',
+removePlugins : 'contextmenu' 
+}
+);
+
+
+}
+</script>
+<div class="headerBottom">
+
+      <div class="admiTitle">Welcome  <?php  echo $_SESSION[studentinfo][first_name]; ?></div>
+      	
+
+      <div class="menuBottom">
+       <ul>
+          <li class="homeIcon"><a href="http://alagappaarts.com">website Home</a></li>
+            <li class="dashboardIconinacive"><a href="dashboard.php">dashboard</a></li>
+          <li class="profilenav"><a href="student_profile_students.php">Profile</a></li> 
+          <li class="logoutIcon "><a class="end" href="logout.php">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+  <?php
+  echo "<noscript>
+<div class='content'>
+<div class='contentOuter'>
+<div style='height: 300px' >
+<br/><p style='color: red;font-size: 20px;font-weight: normal;'><b>Please enable Javascript in your browser to take up the exam</b></p>
+<br/><br/>
+</div>
+</div>
+</div>
+</noscript>
+";
+  ?>
+ 
+  <?php 
+  if(isset($_SESSION['userexaminfo']))
+  {
+	 
+	  $courseid = $_SESSION['userexaminfo']['course_id'];
+	  $coursecode = $onlineexam->getcoursecodebyid( $courseid);
+  }
+  
+ /* if( $_SESSION[ 'uniqueTestKeyShown' ] != "YES" ){
+	 
+	 if(!$_SESSION[ 'uniqueTestKey' ])
+		  {
+			  header("location:online_exam_instruction.php");
+		  }
+$_SESSION[ 'uniqueTestKeyShown' ] = "YES";
+
+?>
+   
+	  
+       <div class="content">
+    <div class="topNav">
+      <ul>
+      <li><a  href="dashboard.php">dashboard</a></li>
+        <li class="last"> &nbsp; Online Exams </li>
+             
+      </ul>
+    </div>
+    <div class="contentOuter">
+    <h2 id='appendTimer'>Online Exams <?php echo ' - '.$coursecode; ?>
+   
+    
+    </h2>
+    
+      <div class="contentInner">
+        
+	  
+<div class="dynamicInfo">
+    <div class="onlineExamsOuter">
+    <?php 
+	$arrMail = array('student_name'=>$username,'email_id'=>$studentEmail, 'unique_key'=>$_SESSION['uniqueTestKey']);
+	$sendUniqueKey = $onlineexam->mailUniqueKey($arrMail);
+	
+	echo"<h3><img src='../web/images/Important-icon.gif' width='26' height='26' /><span>Important Message</span></h3>
+      <div class='examsBottom'>
+      <div class='examsBottomTop'>
+      Your Unique exam Key is: 
+      <span>{$_SESSION[ 'uniqueTestKey' ]}</span>
+      <input name='btnStartTest' value='' type='button' class='startTestBtn' id='btnStartTest' />
+      </div>
+      If a communications error occurs during this session, or you need to resume the assessment, you can return to the login page, enter this Unique exam Key to continue incomplete exam, and begin where you left off.
+      </div>";
+	?>
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    <?php
+	}
+	
+	else if($_SESSION[ 'uniqueTestKeyShown' ]=='YES'){*/
+		$examdetails = $_SESSION['userexaminfo'];
+		$diffseconds = $examdetails['examduration'] - $examdetails['currenttiming'];
+			$remainingsecond = $examdetails['examduration'] - $diffseconds;
+		echo " <div class='content'>
+    <div class='topNav'>
+      <ul>
+      <li><a  href='dashboard.php'>dashboard</a></li>
+        <li class='last'> &nbsp; Online Exams</li>
+             
+      </ul>
+    </div>
+    <div class='contentOuter'>
+    <h2 id='appendTimer'>Online Exams - {$coursecode}</h2>
+	
+      <div class='contentInner'>
+      
+	  
+	<script type='text/javascript'>$(document).ready(function() { changequestion(0,'CONTINUE',$remainingsecond); });</script>
+       <div class='dynamicInfo'>
+  <div class='ajax-loader'><img src='../web/images/ajax-loader.gif' /></div>
+
+      </div>
+      </div>
+    </div>
+    </div>";
+
+
+
+/*}
+else
+{
+	header("location:online_exam_instruction.php");
+}*/
+	?>
+    
+<?php 
+
+include('studentfooter.php');
+}
+?>

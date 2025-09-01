@@ -1,0 +1,33 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2025-01-18 01:51:11 --> Severity: Notice --> Undefined variable: data /home/appaarts/public_html/application/dance/controllers/Student.php 1400
+ERROR - 2025-01-18 01:51:11 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 01:51:16 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 01:51:21 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 01:51:26 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 01:51:30 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 01:51:34 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 01:51:37 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 01:51:40 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 01:51:45 --> Severity: Warning --> Missing argument 1 for Home::registration(), called in /home/appaarts/public_html/application/dance/controllers/Home.php on line 699 and defined /home/appaarts/public_html/application/dance/controllers/Home.php 445
+ERROR - 2025-01-18 01:51:45 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 04:24:40 --> Severity: Notice --> Undefined variable: data /home/appaarts/public_html/application/dance/controllers/Student.php 1400
+ERROR - 2025-01-18 04:24:40 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 07:11:17 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 07:11:21 --> Query error: Incorrect string value: '\xD1\x81\xD0\xBA\xD0\xB0...' for column 'located_at' at row 1 - Invalid query: INSERT INTO `center_director` (`center_academy_id`, `name`, `email`, `dob`, `address`, `state`, `country`, `zip`, `special_qualification`, `experience_bharathanatiyam` , `master_name`, `events_performance` , `located_at`, `award_title` , `other_relevant_info`, `ballets_choreographed` , `created_by`, `updated_by`, `created_at`) VALUES (11435, 'IyannaAveno', 'lacock_almaras77@biebel54.dynainbox.com', '1970-01-01', 'Arcatao', 'El Salvador', 'El Salvador', '123322', '', '', 'IyannaAveno', '', 'скачать mobilepokerclub', 'скачать mobilepokerclub', 'mobilepokerclub на деньги \r\n<a href=\\\"https://t.me/s/mobilepokerclub_game\\\">mobilepokerclub</a>', 'mobilepokerclub на деньги \r\n<a href=\\\"https://t.me/s/mobilepokerclub_game\\\">mobilepokerclub</a>', 'User', 'User', '2025-01-18 07:11:21')
+ERROR - 2025-01-18 08:23:17 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 08:23:22 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 09:04:31 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 10:02:46 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 10:02:51 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 11:19:47 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 14:16:37 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 14:18:46 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 14:34:29 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 14:44:00 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 14:53:27 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 19:15:34 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 19:33:14 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 19:33:17 --> Query error: Incorrect string value: '\xD0\x90\xD0\xBB\xD1\x8C...' for column 'located_at' at row 1 - Invalid query: INSERT INTO `center_director` (`center_academy_id`, `name`, `email`, `dob`, `address`, `state`, `country`, `zip`, `special_qualification`, `experience_bharathanatiyam` , `master_name`, `events_performance` , `located_at`, `award_title` , `other_relevant_info`, `ballets_choreographed` , `created_by`, `updated_by`, `created_at`) VALUES (11438, 'TerryPoobe', 'cohacachi1987@op.pl', '1970-01-01', 'Stirling', 'United Kingdom', 'United Kingdom', '153441', '', '', 'TerryPoobe', '', 'Альткоин обменник', 'Альткоин обменник', '<a href=https://alt-coins.cc/>Altcoin обменник</a> - Alt coin bestchange, Альт коин обменник', '<a href=https://alt-coins.cc/>Altcoin обменник</a> - Alt coin bestchange, Альт коин обменник', 'User', 'User', '2025-01-18 19:33:17')
+ERROR - 2025-01-18 20:21:53 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101
+ERROR - 2025-01-18 22:26:00 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 101

@@ -1,0 +1,1242 @@
+<?php
+/**
+ *
+ * This is users detail of vanderlande
+ *
+ * @package	CodeIgniter
+ * @category	Model
+ * @author		Swamykannan M
+ * @link		
+ *
+ */
+
+class Student_model extends CI_Model
+{
+
+function __construct()
+    {
+        parent::__construct();
+		//date_default_timezone_set('America/New_York');
+		//$this->load->library('session'); 
+		$this->load->database();
+		
+    }
+    
+	public function getPaidDate($table,$id,$program_id)
+	{
+		$this->db->select('*');
+		$this->db->from($table.' t');
+		$this->db->where('t.student_id',$id);
+		$this->db->where('t.program_id',$program_id);
+		$query = $this->db->get();
+		$queryVal = $query->result();
+		return ( isset($queryVal[0]) && !empty($queryVal[0]) ? $queryVal[0] : false);
+	}
+	
+	public function examTaken($user_id,$program_id)
+	{
+		$this->db->select('ae.*,c.course_code');
+		$this->db->from('assign_exam ae');
+		$this->db->join('courses c','c.course_id = ae.course_id','left');
+		$this->db->join('users u','u.user_id = ae.student_id','left');
+		$this->db->where('u.status',1);
+		$this->db->where('u.user_id',$user_id);
+		$this->db->where('ae.program_id',$program_id);
+		$this->db->where_in('ae.result',array('Pass','Fail','Admin reassign'));
+		$this->db->order_by('ae.id','DESC');
+		$query = $this->db->get();
+		//echo $this->db->last_query();die;
+		$queryVal = $query->result();
+		return  $queryVal;
+	}
+	
+   public function getListactiveState($table)
+	{
+		$this->db->select('*');
+		$this->db->from($table);
+		$this->db->where('status', 1);
+		$query = $this->db->get();
+		$queryVal = $query->result();
+		return $queryVal;
+	}
+	
+	
+	public function save($table,$data)
+	{
+		$this->db->insert($table, $data);
+        $insert_id = $this->db->insert_id(); 
+		return ((isset($insert_id) && !empty($insert_id)) ? $insert_id : false);
+	}
+	
+	public function Another_save( $table, $id, $relevant_id, $data)
+	{
+		$this->db->set($relevant_id, $id);
+		$this->db->insert($table, $data);
+        $insert_id = $this->db->insert_id(); 
+		return ((isset($id) && !empty($id)) ? $id : false);
+	}
+	
+	public function getData( $table, $table2, $field, $user_id)
+	{
+		//$this->db->select('u.*,up.*,cd.address as caddress,cd.name as cname,cd.city as ccity,cd.state as cstate, cd.country as ccountry,cd.zip as czip,ca.contact as ccontact');
+		$this->db->select('u.*,up.*,cd.*,ca.*,ca.address as caddress,ca.name as cname,ca.city as ccity,ca.state as cstate, ca.country as ccountry,ca.zip as czip,ca.contact as ccontact, up.dob as user_dob,up.city as ucity, up.state as ustate, up.country as ucountry, up.zip as uzip, u.email as uemail, up.address as uaddress');
+		$this->db->from($table.' u');
+		$this->db->join($table2.' up','up.'.$field.' = u.'.$field.'','left');
+		$this->db->join('center_director cd','cd.center_director_id = up.center_id','left');
+		$this->db->join('center_academy ca','ca.center_academy_id = up.center_id','left');
+		$this->db->where('u.'.$field, $user_id);
+		$this->db->where('u.status', 1);		
+		$query = $this->db->get();
+		//echo $this->db->last_query();die;
+		$queryVal = $query->result();
+		return (!empty($queryVal[0]) ? $queryVal[0] : false);
+	}
+	
+	public function update($table, $updateField, $data,$arg)
+	{
+		$this->db->where($updateField, $arg);
+		$this->db->update($table, $data);
+		return ((isset($arg) && !empty($arg)) ? $arg : false);
+	}
+	
+	public function getConnectedDataList($table1,$table2,$joinField,$conditionField,$arg)
+	{
+		$this->db->select('*');
+		$this->db->from($table1.' t1');
+		$this->db->join($table2.' t2','t2.'.$joinField.' = t1.'.$joinField.'','left');
+		$this->db->where('t2.'.$conditionField, $arg);
+		$query = $this->db->get(); 
+		$queryVal = $query->result();
+		return $queryVal;
+	}
+	
+	public function checkPassword($pass, $user_id)
+	{
+		$this->db->select('*');
+		$this->db->from('users u');
+		//$this->db->join('user_profiles up','up.user_id = u.user_id','left');
+		$this->db->where('u.password', $pass);
+		$this->db->where('u.user_id', $user_id);
+		$this->db->where('u.status', 1);
+		$this->db->where_in('u.user_role_id', '2');
+		$query = $this->db->get();
+		//echo $this->db->last_query();die;
+		$queryVal = $query->result();
+		return (!empty($queryVal[0]) ? $queryVal[0] : false);
+	}
+	
+	public function checkUsername( $uname )
+	{
+		$this->db->select('*');
+		$this->db->from('users u');
+		//$this->db->join('user_profiles up','up.user_id = u.user_id','left');
+		$this->db->where('u.username', $uname);
+		$this->db->where_in('u.user_role_id', array('2','3'));
+		$query = $this->db->get();
+		//echo $this->db->last_query();die;
+		$queryVal = $query->result();
+		return (!empty($queryVal[0]) ? $queryVal[0] : false);
+	}
+	
+	
+	public function getPaymentData( $user_id,$program_id=null)
+	{
+		$this->db->select('u.created_at as dateofjoining,u.*,up.*,p.*,pf.*,ca.name as centerName,pay.amount as paidAmt,upgm.*,pay.*,pay.status as paymentStatus');
+		$this->db->from('users u');
+		$this->db->join('user_profiles up','up.user_id = u.user_id','left');
+		$this->db->join('user_program upgm','upgm.user_id = u.user_id','left');
+		$this->db->join('programs p','p.program_id = upgm.program_id','left');
+		$this->db->join('program_fees pf','pf.program_id = upgm.program_id','left');
+		$this->db->join('center_academy ca','ca.center_academy_id = up.center_id','left');
+		$this->db->join('payment pay','pay.program_id = p.program_id AND pay.student_id='.$user_id.'','left');
+		$this->db->where('up.user_id', $user_id);
+		if( isset($program_id) && !empty($program_id)){
+			$this->db->where('upgm.program_id', $program_id);
+		}
+		$this->db->order_by('upgm.user_program_id','desc');
+		//$this->db->where('pay.student_id', $user_id);
+		$query = $this->db->get();
+		//echo $this->db->last_query();die;
+		$queryVal = $query->result();
+		return $queryVal;
+	}
+	
+	public function PaymentList( $user_id,$program_id)
+	{
+		$this->db->select('pay.status as paymentStatus, pay.*,p.*');
+		$this->db->from('payment pay');
+		$this->db->join('programs p','p.program_id = pay.program_id','left');
+		$this->db->where('pay.student_id', $user_id);
+		if( $program_id != ''){
+			$this->db->where('pay.program_id', $program_id);
+		}
+		//$this->db->group_by('pay.program_id');
+		$query = $this->db->get();
+		//echo $this->db->last_query();die;
+		$queryVal = $query->result();
+		return $queryVal;
+	}
+	
+	public function getConditionalRecord( $table, $fieldName, $fieldVal)
+	{
+		$this->db->select('*');
+		$this->db->from($table.' t');
+		$this->db->where('t.'.$fieldName, $fieldVal);
+		$query = $this->db->get();
+		$queryVal = $query->result();
+		return $queryVal;
+	}
+	
+	
+	public function getSelected($table, $selected_field, $id)
+	{
+		if( !empty($table) && !empty($selected_field) && !empty($id) )
+		{
+			$this->db->select('*');
+			$this->db->from($table);
+			$this->db->where($selected_field, $id);
+			$query = $this->db->get();
+
+			$queryVal = $query->result();
+			return $queryVal[0];
+		}
+		return false;
+	}
+	
+	public function ExamScore($user_id)
+	{
+		/*$this->db->select('c.course_code,c.regulation_id,qr.score,ae.id,ae.result as aeResult,ae.grade as aeGrade, ae.score as aeScore,c.program_id,ae.exam_startdate');
+		$this->db->from('quiz_result qr');		
+		$this->db->join('quiz q','q.quid = qr.quid','left');
+		$this->db->join('assign_exam ae','ae.course_id = q.course_id','left');
+		$this->db->join('courses c','c.course_id = q.course_id','left');
+		$this->db->where('ae.student_id',$user_id);*/
+		
+		$this->db->select('c.course_code,c.regulation_id,qr.score,ae.id,ae.result as aeResult,ae.grade as aeGrade, ae.score as aeScore,c.program_id,ae.exam_startdate');
+		$this->db->from('quiz_result qr');		
+		//$this->db->join('quiz q','q.quid = qr.quid','left');
+		$this->db->join('assign_exam ae','ae.course_id = qr.quid','left');
+		$this->db->join('courses c','c.course_id = qr.quid','left');
+		$this->db->where('qr.uid',$user_id);
+		$this->db->where('ae.score !=',0);
+		$this->db->where('ae.result !=','Unpublished');
+		$this->db->where('ae.student_id',$user_id);
+		$this->db->group_by('qr.rid');
+		
+		//$this->db->where('ae.exam_status','Processing');
+		$query = $this->db->get();
+		//echo $this->db->last_query();die;
+		$queryVal = $query->result();
+		return (!empty($queryVal) ? $queryVal : false);
+	}
+	
+	public function getQuestion()
+	{
+		$this->db->select('*');
+		$this->db->from('questions q');
+		$this->db->join('question_course qc','qc.question_id = q.question_id','left');
+		$this->db->join('multiple_choice_answer mca','mca.question_id = q.question_id','left');
+		$this->db->where('q.status', 1);
+		$this->db->where('qc.course_id', 32);
+		$query = $this->db->get();
+		$queryVal = $query->result();
+		//echo '<pre>';print_r($queryVal);die;
+		return $queryVal;
+	}
+	
+	public function getQuidFromQuiz( $course_id )
+	{
+		$this->db->select('*');
+		$this->db->from('quiz q');
+		$this->db->where('q.course_id', $course_id);
+		$query = $this->db->get();
+		$queryVal = $query->result(); //echo $this->db->last_query();
+		//echo '<pre>123->';print_r($queryVal);die;
+		return ((isset($queryVal) && !empty($queryVal)) ? $queryVal[0] : '');
+	}
+	
+	public function getExamWithID( $user_id,$course_id=null )
+	{
+		$duedate = date('Y-m-d');
+		$this->db->select('*');
+		$this->db->from('assign_exam ae');
+		$this->db->join('courses c','c.course_id = ae.course_id','left');
+		$this->db->join('quiz q','q.course_id = ae.course_id','left');
+		$this->db->where('c.status', 1);
+		if( isset($course_id) && !empty($course_id)){
+			$this->db->where('ae.course_id',$course_id);
+		}
+		$this->db->where('ae.student_id',$user_id);
+		$this->db->where('ae.exam_date_starttime <=', DATE($duedate));
+		$this->db->where('ae.exam_date_endtime >=', DATE($duedate));
+		$this->db->where("(ae.exam_status  = 'Assigned' OR ae.exam_status  = 'Reassigned') ");
+		$query = $this->db->get();
+		$queryVal = $query->result(); //echo $this->db->last_query();
+		//echo '<pre>123->';print_r($queryVal);die;
+		return $queryVal;
+	}
+	
+	public function getExamSchedule( $user_id )
+	{
+		$duedate = date('Y-m-d');
+		$this->db->select('*');
+		$this->db->from('assign_exam ae');
+		$this->db->join('courses c','c.course_id = ae.course_id','left');
+		//$this->db->join('multiple_choice_answer mca','mca.question_id = q.question_id','left');
+		$this->db->where('c.status', 1);
+		$this->db->where('ae.student_id',$user_id);
+		$this->db->where('ae.exam_date_starttime <=', DATE($duedate));
+		$this->db->where('ae.exam_date_endtime >=', DATE($duedate));
+		$this->db->where("(ae.exam_status  = 'Assigned' OR ae.exam_status  = 'Reassigned') ");
+		$query = $this->db->get();
+		$queryVal = $query->result();
+		//echo $this->db->last_query();
+		//echo '<pre>';print_r($queryVal);die;
+		return $queryVal;
+	}
+	
+	public function getCourseCollection( $user_id )
+	{
+		$this->db->select('*');
+		$this->db->from('assign_exam ae');
+		$this->db->join('courses c','c.course_id = ae.course_id','left');
+		//$this->db->join('multiple_choice_answer mca','mca.question_id = q.question_id','left');
+		$this->db->where('c.status', 1);
+		$this->db->where('ae.student_id',$user_id);
+		$this->db->group_by('ae.course_id');
+		$query = $this->db->get();
+		$queryVal = $query->result();
+		//echo '<pre>';print_r($queryVal);die;
+		$courseArray = array();
+		if( isset($queryVal) && !empty($queryVal))
+		{
+			foreach($queryVal as $quer){
+				$courseArray[$quer->course_id] = $quer->course_id;
+			}
+		}
+		return $courseArray;
+	}
+	
+	public function checkWriteExamAlready( $user_id, $qid)
+	{
+		
+		$this->db->select('*');
+		$this->db->from('quiz_result qr');
+		$this->db->join('courses c','c.course_id = qr.quid','left');
+		$this->db->where('qr.uid', $user_id);
+		if( isset($qid) && !empty($qid)){
+			$this->db->where('qr.quid',$qid);
+		}
+		//$this->db->where('qr.score_ind','');
+		$query = $this->db->get();
+		$existqueryVal = $query->result();  
+		if( isset($existqueryVal) && !empty($existqueryVal)){
+			return ((isset($existqueryVal) && !empty($existqueryVal)) ? $existqueryVal : '');
+		}
+		else if( empty($existqueryVal)){ 
+			
+			$courseArray = $this->getCourseCollection( $user_id );
+			
+			$this->db->select('qr.*,c.course_id');
+			$this->db->from('quiz_result qr');
+			$this->db->join('courses c','c.course_id = qr.quid','left');
+			$this->db->where('qr.uid', $user_id);
+			$this->db->where('qr.quid !=', 0);
+			//$this->db->where('qr.quid !=',$qid);
+			$query = $this->db->get();
+			//echo $this->db->last_query();
+			$nonexistqueryVal = $query->result(); 
+			if( isset($nonexistqueryVal) && !empty($nonexistqueryVal)){
+				$nonAttendExam = array();
+				$kk = 0;
+				foreach($nonexistqueryVal as $non){
+					if( $non->score_ind !='' && $non->status==1){
+						unset( $courseArray[$non->course_id]);
+						unset($nonexistqueryVal[$kk]);
+					}
+					if( $non->score_ind =='' && $non->status==0){
+						$nonAttendExam[$non->quid] = $non;
+						$nonexistqueryVal[$kk];
+					}
+					$kk++;
+				}
+				return ((isset($nonAttendExam) && !empty($nonAttendExam)) ? $nonAttendExam : '');
+				/*if( isset($nonAttendExam) && !empty($nonAttendExam) && array_key_exists($qid, $nonAttendExam)) {
+					echo 'aaaaaa';die;
+				}
+				echo '<pre>nonAttendExam->';print_r($nonAttendExam);
+				echo '<pre>nonexistqueryVal->';print_r($nonexistqueryVal);
+				echo '<pre>courseArray->';print_r($courseArray); echo $qid; die;*/
+				
+				//return ((isset($nonexistqueryVal) && !empty($nonexistqueryVal)) ? $nonexistqueryVal : '');
+			}else{
+				return false;
+			}
+		}else{
+			return false;
+		}
+		
+	}
+	
+	
+	/* Exam Process*/
+	
+	function update_time($id,$qtime){
+	 $institute_id = 1;
+		$rid=$this->input->cookie('rid', TRUE);
+		$query = $this->db->query("select quiz_result.* from quiz_result where rid='$rid' and institute_id = '$institute_id'");
+		$row=$query->row_array();
+		$time_spent_ind=explode(",",$row['time_spent_ind']);
+		foreach($time_spent_ind as $key => $val){
+		if($key==$id){
+		$time_spent_ind[$key]+=$qtime;
+		}
+		}
+		$time_spent_ind=implode(",",$time_spent_ind);
+		$this->db->query("update quiz_result set time_spent_ind='$time_spent_ind' where institute_id = '$institute_id' and rid='$rid' ");
+	}
+	
+	// update answer
+	 function update_answer($id,$oid){
+	 $institute_id = 1;
+		
+		$rid=$this->input->cookie('rid', TRUE);
+		$query = $this->db->query("select quiz_result.* from quiz_result where rid='$rid' and institute_id = '$institute_id'");
+		$row=$query->row_array();
+		$oids=explode(",",$row['oids']);
+		foreach($oids as $key => $val){
+		if($key==$id){
+		$oids[$key]=$oid;
+		}
+		}
+		$oids=implode(",",$oids);
+		$this->db->query("update quiz_result set oids='$oids' where rid='$rid' and institute_id = '$institute_id'");
+	  
+	 
+	 }
+ 
+ //update fillups
+ function update_fillups(){
+		 $rid=$this->input->cookie('rid', TRUE);
+		 $q_type=$this->input->post("q_type");
+		 $qid=$this->input->post("q_id");
+		 $optn_value_user=$this->input->post("optn_value_user");
+		 $user_id = $this->session->userdata('site_user_id');
+		 $insert_data = array(
+				'student_id' => ((isset($user_id) && !empty($user_id)) ? $user_id : ''),
+				'q_id'	=>	$qid,
+				'r_id'	=>	$rid,
+				'essay_cont'	=>	$optn_value_user,
+				'q_type'	=>	$q_type,
+				'essay_score'	=>	'0'
+				);
+				$this->db->where('q_id',$qid);
+				$this->db->where('r_id',$rid);
+			$query=$this->db->get('essay_qsn');
+			//print_r($query->num_rows()); exit;
+			if($query->num_rows()==0){
+			$this->db->insert('essay_qsn', $insert_data);
+			}else{
+				$data_user1 = array(
+			   'essay_cont' => $optn_value_user
+			);
+				$this->db->where('r_id',$rid);
+				$this->db->where('q_id',$qid);
+				$this->db->update('essay_qsn', $data_user1);
+				
+			} 
+
+	}
+ 
+	public function sample_quiz_verify()
+	{
+		$institute_id = 1;
+		$id = 1;
+		$query = $this->db-> query("select quiz.* from quiz where quid='$id' and institute_id = '$institute_id'");
+		$row=$query->row_array();
+		$quid=$row['quid'];
+		$userdata=$this->session->userdata('site_logged_in');
+		$uid=$this->session->userdata('site_user_id');//$userdata['id'];
+		$gid=$userdata['gid'];
+		//echo '<pre>123->';print_r($row);die;
+		// check quiz start time
+			if($row['start_time'] >= time()){
+			return "Quiz is not available yet!";
+			}
+		// check quiz end time
+			if($row['end_time'] <= time()){ //echo 'b';die;
+			return "Exam not available. Available time has been passed  ";
+			}
+		// check maximum attempts
+		$query = $this->db->query("select quiz_result.* from quiz_result where uid='$uid' and quid='$quid' and institute_id = '$institute_id'");
+		$attempted=$query -> num_rows();
+			if($attempted >= $row['max_attempts']){
+			return "You have been reached maximum attempts available for this Exam";
+			}
+		// valid ip address 
+		$ip_address=$row['ip_address'];
+			if($ip_address !=""){
+			$ip_address=explode(",",$ip_address);
+			$myip=$_SERVER['REMOTE_ADDR'];
+			if(!in_array($myip,$ip_address)){
+			return "Permission declined for your IP Address '".$myip."'";
+
+			}
+			}
+		// check if user have sufficient credit
+		
+			if($row['qselect']=="0"){
+			$assignqids=$row['qids_static'];
+			$qids=array();
+			$category_names=array();
+			$qids_range=array();
+			$rng=array();
+
+			$query = $this->db->query("SELECT qbank.*,question_category.* FROM qbank JOIN question_category ON qbank.cid = question_category.cid where  qbank.institute_id = '$institute_id' and qid in ($assignqids) ORDER BY FIELD(qbank.qid, $assignqids ) ");
+			$qidarrArray=$query->result_array();
+				//echo '<pre>';print_r($qidarr);die;
+				$qidarr = $questionArray1 = $questionArray2 = $questionArray3 = $questionArray4 = $multipleQuest = $fillinQuest = $matchQuest = $essayQuest = array();
+				if( isset($qidarrArray) && !empty($qidarrArray))
+				{
+					foreach($qidarrArray as $assign)
+					{
+						if( $assign['q_type'] == 0){
+							$questionArray1[] = $assign;
+						}else if( $assign['q_type'] == 2){
+							$questionArray2[] = $assign;
+						}else if( $assign['q_type'] == 5){
+							$questionArray3[] = $assign;
+						}else if( $assign['q_type'] == 4){
+							$questionArray4[] = $assign;
+						}
+					}
+				}
+
+				$count = count($questionArray1);
+				$count1 = count($questionArray2);
+				$count2 = count($questionArray4);
+				$multipleQuest 	= array_slice($questionArray1, 0,$count);
+				$fillinQuest 	= array_slice($questionArray2, 0,$count1);
+				$essayQuest 	= array_slice($questionArray4, 0,$count2);
+				shuffle($multipleQuest);shuffle($fillinQuest);shuffle($essayQuest);
+				$multipleQuest1 = array_slice($multipleQuest, 0,40);
+				$fillinQuest1 	= array_slice($fillinQuest, 0,20);
+				$matchQuest 	= array_slice($questionArray3, 0,count($questionArray3));
+				$essayQuest1	= array_slice($essayQuest, 0,6);
+				shuffle($multipleQuest1);shuffle($fillinQuest1);shuffle($matchQuest);shuffle($essayQuest1);
+	
+				
+				$qidarr = array_merge($multipleQuest1,$fillinQuest1,$matchQuest,$essayQuest1);
+
+				//echo '<pre>';print_r($qidarr);die;
+				foreach($qidarr as $key => $qid){
+				$qids[]=$qid['qid'];
+				$category_names[]=$qid['category_name'];
+				}
+			$rngarr=array();
+			$cateselected=array();
+				foreach($category_names as $key => $cval){
+				if(in_array($cval,$cateselected)){
+				$rngarr[$cval]+=1;
+				}else{
+				$cateselected[]=$cval;
+				$rngarr[$cval]=1;
+				}
+				}
+			$category_names=array();
+			$ii=0;
+				foreach($rngarr as $rk => $rval){
+				$category_names[]=$rk;
+				$rng[]=$ii."-".($ii+$rval-1);
+				$ii+=$rval;
+				}
+			$qids_range=$rng;
+
+			}
+		
+		
+		$time_Spent_ind=array();
+		$roids=array();
+			for($x=1; $x <=count($qids); $x++){
+			$time_Spent_ind[]="0";
+			$roids[]="0";
+			}
+		$time_Spent_ind=implode(",",$time_Spent_ind);
+		$qids=implode(",",$qids);
+		$roids=implode(",",$roids);
+		$category_names=implode(",",$category_names);
+		$qids_range=implode(",",$qids_range);
+		$photo="";
+			if($this->session->flashdata('photoname')){
+			$photo=$this->session->flashdata('photoname');
+			}
+			$insert_data = array(
+			'uid' => $uid,
+			'quid' => 0,
+			'oids' => $roids,
+			'qids' => $qids,
+			'category_name' => $category_names,
+			'qids_range' => $qids_range,
+			'start_time' => time(),
+			'last_response' => time(),
+			'time_spent' => '0',
+			'time_spent_ind' => $time_Spent_ind,
+			'institute_id' => $institute_id,
+			'photo'=>$photo
+			);
+
+		
+			//echo '<pre>';print_r($insert_data);die;
+			if($this->db->insert('quiz_result',$insert_data)){
+				$rid=$this->db->insert_id();
+				$cookie = array(
+				'name'   => 'rid',
+				'value'  => $rid,
+				'expire' => '86500'
+				);
+
+				$this->input->set_cookie($cookie);
+				return $rid;
+			}else{
+				return '0';
+			}
+	}
+	
+	public function quiz_verify($id,$assign_exam_id)
+	{
+	
+		$user_id = $this->session->userdata('site_user_id');
+		$institute_id = 1;
+		/*if($this->input->cookie('rid', TRUE)){ 
+			//check if there is any test already started
+			$rid=$this->input->cookie('rid', TRUE);
+			$query = $this -> db -> query("select quiz_result.* from quiz_result where rid='$rid' and institute_id ='$institute_id'");
+			$row=$query->row_array(); //echo '<pre>abc->';print_r($row);die;
+				if( isset($row) && !empty($row))
+				{
+					$time_spent=$row['time_spent'];
+					$quid=$row['quid'];
+					$query = $this -> db -> query("select quiz.* from quiz where quid='$quid' and institute_id ='$institute_id'");
+					$row=$query->row_array();
+					$start_time=$row['start_time'];
+					$end_time=$row['end_time'];
+					$duration=$row['duration'];
+					// check quiz end time
+						if($end_time <= time()){ //echo 'a';die;
+						return "Exam not available. Available time has been passed  ";
+						}
+						if($time_spent >= ($duration * 60 )){
+						return "Time over";
+						}
+					return "1";
+				}else{
+					return "Please Clear Your cookies, Or open in New Browser";
+				}
+		}else{ */
+		// check for new test attempt
+		//echo "select quiz.* from quiz where quid='$id' and institute_id = '$institute_id'";
+		
+		//$query = $this->db-> query("select quiz.* from quiz where quid='$id' and institute_id = '$institute_id'");
+		
+		$query = $this->db->query("select q.* from quiz as q JOIN assign_exam as ae ON ae.course_id=q.course_id where q.course_id='$id' and student_id='$user_id'");
+		$row=$query->row_array(); 
+		$quid=$row['course_id'];
+		$userdata=$this->session->userdata('site_logged_in');
+		$uid=$this->session->userdata('site_user_id');//$userdata['id'];
+		$gid=$userdata['gid'];
+		//echo '<pre>123->';print_r($row);die;
+		
+			if($row['start_time'] >= time()){
+			return "Quiz is not available yet!";
+			}
+		// check quiz end time
+			else if($row['end_time'] <= time()){ //echo 'b';die;
+			return "Exam not available. Available time has been passed  ";
+			} 
+		// check maximum attempts
+		$query = $this->db->query("select quiz_result.* from quiz_result where uid='$uid' and quid='$quid' and institute_id = '$institute_id'");
+		$attempted=$query -> num_rows();
+			if($attempted >= $row['max_attempts']){
+			return "You have been reached maximum attempts available for this Exam";
+			} 
+		// valid ip address 
+		$ip_address=$row['ip_address'];
+			if($ip_address !=""){
+			$ip_address=explode(",",$ip_address);
+			$myip=$_SERVER['REMOTE_ADDR'];
+			if(!in_array($myip,$ip_address)){
+			return "Permission declined for your IP Address '".$myip."'";
+
+			}
+			} 
+		// check if user have sufficient credit
+		
+			if($row['qselect']=="0"){
+			$assignqids=$row['qids_static'];
+			$qids=array();
+			$category_names=array();
+			$qids_range=array();
+			$rng=array();
+			
+
+
+			/*$query = $this -> db -> query("SELECT qbank.*,assign_exam.* FROM qbank JOIN assign_exam ON qbank.course_id = assign_exam.course_id where assign_exam.course_id !=0 and qbank.institute_id = '$institute_id' and qid in ($assignqids) ORDER BY FIELD(qbank.qid, $assignqids ) ");*/
+			
+			$query = $this->db->query("SELECT qbank.*,assign_exam.* FROM qbank JOIN assign_exam ON qbank.course_id = assign_exam.course_id where assign_exam.course_id !=0 and qbank.institute_id = '$institute_id' and qid in ($assignqids) and assign_exam.student_id='$user_id' GROUP BY qbank.qid ");
+			$qidarrArray=$query->result_array();
+				//echo '<pre>qidarr->';print_r($qidarrArray);die;
+				$qidarr = $questionArray1 = $questionArray2 = $questionArray3 = $questionArray4 = $multipleQuest = $fillinQuest = $matchQuest = $essayQuest = array();
+				if( isset($qidarrArray) && !empty($qidarrArray))
+				{
+					foreach($qidarrArray as $assign)
+					{
+						if( $assign['q_type'] == 0){
+							$questionArray1[] = $assign;
+						}else if( $assign['q_type'] == 2){
+							$questionArray2[] = $assign;
+						}else if( $assign['q_type'] == 5){
+							$questionArray3[] = $assign;
+						}else if( $assign['q_type'] == 4){
+							$questionArray4[] = $assign;
+						}
+					}
+				} 
+				
+						
+				$program_id = ((isset($qidarrArray[0]['program_id']) && !empty($qidarrArray[0]['program_id'])) ? $qidarrArray[0]['program_id'] : '');
+				
+				$essayQnLimit = ((isset($program_id) && !empty($program_id) && $program_id==1) ? 6 :
+								 (isset($program_id) && !empty($program_id) && $program_id==3) ? 8 :
+								((isset($program_id) && !empty($program_id) && $program_id==2) ? 8 : 6));
+				//echo '<pre>qidarrArray->';print_r($qidarrArray);die;
+				
+				$count  = count($questionArray1);
+				$count1 = count($questionArray2);
+				$count2 = count($questionArray4);
+				$multipleQuest 	= array_slice($questionArray1, 0,$count);
+				$fillinQuest 	= array_slice($questionArray2, 0,$count1);
+				$essayQuest 	= array_slice($questionArray4, 0,$count2);
+				shuffle($multipleQuest);shuffle($fillinQuest);shuffle($essayQuest);
+				
+				$multipleQuest1 	= array_slice($multipleQuest, 0,40); 
+				$fillinQuest1 	= array_slice($fillinQuest, 0,20);
+				$matchQuest 	= array_slice($questionArray3, 0,count($questionArray3));
+				$essayQuest1 	= array_slice($essayQuest, 0,$essayQnLimit);
+				shuffle($multipleQuest1);shuffle($fillinQuest1);shuffle($matchQuest);shuffle($essayQuest1);
+				
+				$qidarr = array_merge($multipleQuest1,$fillinQuest1,$matchQuest,$essayQuest1);
+				//echo '<pre>';print_r($qidarr);die;
+				foreach($qidarr as $key => $qid){
+				$qids[]=$qid['qid'];
+				$category_names[] = ((isset($qid['category_name']) && !empty($qid['category_name'])) ? $qid['category_name'] : '');
+				}
+			$rngarr=array();
+			$cateselected=array();
+				foreach($category_names as $key => $cval){
+				if(in_array($cval,$cateselected)){
+				$rngarr[$cval]+=1;
+				}else{
+				$cateselected[]=$cval;
+				$rngarr[$cval]=1;
+				}
+				}
+			$category_names=array();
+			$ii=0;
+				foreach($rngarr as $rk => $rval){
+				$category_names[]=$rk;
+				$rng[]=$ii."-".($ii+$rval-1);
+				$ii+=$rval;
+				}
+			$qids_range=$rng;
+
+			}
+
+
+		$time_Spent_ind=array();
+		$roids=array();
+			for($x=1; $x <=count($qids); $x++){
+			$time_Spent_ind[]="0";
+			$roids[]="0";
+			}
+		$time_Spent_ind=implode(",",$time_Spent_ind);
+		$qids=implode(",",$qids);
+		$roids=implode(",",$roids);
+		$category_names=implode(",",$category_names);
+		$qids_range = implode(",",$qids_range);
+		
+		$photo="";
+			if($this->session->flashdata('photoname')){
+			$photo=$this->session->flashdata('photoname');
+			}
+			$insert_data = array(
+			'uid' => $uid,
+			'quid' => $quid,
+			'assign_exam_id'	=> $assign_exam_id,
+			'oids' => $roids,
+			'qids' => $qids,
+			'category_name' => $category_names,
+			'qids_range' => $qids_range,
+			'start_time' => time(),
+			'last_response' => time(),
+			'time_spent' => '0',
+			'time_spent_ind' => $time_Spent_ind,
+			'institute_id' => $institute_id,
+			'photo'=>$photo
+			);
+		//echo '<pre>insert_data->';print_r($insert_data );die;
+			if($this->db->insert('quiz_result',$insert_data)){
+			$rid=$this->db->insert_id();
+			/*$cookie = array(
+			'name'   => 'rid',
+			'value'  => $rid,
+			'expire' => '86500'
+			);
+			$this->input->set_cookie($cookie);*/
+			$_SESSION['session_rid'] = $rid;
+			return "1";
+			}
+		//}
+	}
+	
+	public function quiz_detail($id)
+	 {
+		$institute_id = 1;//1;
+	 
+	   $query = $this->db->query("select quiz.* from quiz where course_id='$id' and institute_id = '$institute_id' ");
+
+	   if($query -> num_rows() >= 1)
+	   {
+		 return $query->row();
+	   }
+	   else
+	   {
+		 return false;
+	   }
+	 }
+	 
+	  function get_user_answer($rid){
+		 $this->db->where('r_id',$rid);
+		 $query = $this->db->get("essay_qsn");
+		 return $query->result_array();		 
+	 }
+	 
+	 function get_question($rid){
+	 $institute_id = 1;
+		
+		$query = $this->db->query("select quiz_result.* from quiz_result where rid='$rid' and institute_id='$institute_id'");
+		$row=$query->row_array();
+		if( isset($row) && !empty($row))
+		{
+		$qids=$row['qids'];
+		//echo $rid;
+		//echo '<br>'.$institute_id;
+		//echo '<pre>123->';print_r($row);die;
+		$query = $this->db->query("SELECT * FROM  `qbank` JOIN question_category ON qbank.cid = question_category.cid WHERE qbank.qid IN ( $qids ) and qbank.institute_id ='$institute_id'  ORDER BY FIELD(qid, $qids )");
+		$questions=$query->result_array();
+		$query = $this->db->query("SELECT * FROM  q_options WHERE qid IN ( $qids )  and institute_id = '$institute_id'");
+		$options=$query->result_array();
+		$dataarr=array($questions,$options);
+		return $dataarr;
+		}else{
+			return false;
+		}
+	  }
+	  
+	   function get_time_info($rid){
+			$institute_id = 1;
+
+			$current_time=time();
+			$this->db->query("update quiz_result set time_spent=($current_time-start_time) where rid='$rid' and institute_id = '$institute_id' ");
+
+			$query = $this->db->query("select quiz_result.* from quiz_result where rid='$rid' and institute_id ='$institute_id'");
+			return $query->row_array();
+		}
+		
+		function get_quiz_data($id){
+			$institute_id = 1;
+			$query = $this->db->query("select quiz.* from quiz where quid='$id' and institute_id = '$institute_id'");
+			return $query->row_array();
+		}
+		
+		public function Online_Exam_Processing_status( $updateField, $date, $status, $id,$user_id)
+		{
+			$data = array(
+				 $updateField 		=> $date,
+				'exam_status'		=> $status
+			);
+			$this->db->where('id', $id);
+			$this->db->where('student_id', $user_id);
+			$this->db->update('assign_exam', $data);
+			if($this->db->affected_rows() == '1'){
+				return TRUE;
+			}else{
+				return FALSE;
+			}
+		}
+			
+		public function getExam( $user_id)
+		{
+			$duedate = date('Y-m-d');
+			$this->db->select('*');
+			$this->db->from('quiz q');
+			$this->db->join('courses c','c.course_id = q.course_id','left');
+			$this->db->join('assign_exam ae','ae.course_id = q.course_id','left');
+			$this->db->where('ae.student_id ', $user_id);
+			$this->db->where('c.status', 1);
+			$this->db->where('ae.exam_status ', 'Assigned');
+			$this->db->where('ae.exam_date_starttime <=', DATE($duedate));
+			$this->db->where('ae.exam_date_endtime >=', DATE($duedate));
+			$query = $this->db->get();
+			$queryVal = $query->result();
+			return ((isset($queryVal) && !empty($queryVal)) ? $queryVal[0] : '');
+		}
+		
+		public function checkAlreadyEssayQn( $user_id, $rid,$qid)
+		{
+			$this->db->select('*');
+			$this->db->from('essay_qsn eq');
+			$this->db->where('eq.student_id ', $user_id);
+			$this->db->where('eq.r_id ', $rid);
+			$this->db->where('eq.q_id ', $qid);
+			$query = $this->db->get();
+			$queryVal = $query->result();
+			if( isset($queryVal) && !empty($queryVal)){
+				return true;
+			}else{
+				return false;
+			}
+		}
+		
+			function quiz_submit($id){
+
+				$institute_id =1;
+
+				// result id
+				if( isset($_SESSION['session_rid']) && !empty($_SESSION['session_rid'])){
+					$rid= $_SESSION['session_rid'];
+					//$rid=$this->input->cookie('rid', TRUE);
+					$this->db->where('rid',$rid);
+					$query=$this->db->get('quiz_result');
+					$result=$query->row_array();
+					$r_qids=$result['qids'];
+					$fillups=array();	
+					$match_options=array();
+					$question_option_val[]=array();
+					$ans_val[]=array();	
+					$noq=$_POST['noq'];
+					$essay_question="0";
+					$oids=array();
+					for($x=0; $x<=$noq; $x++){
+						if(($_POST['q_type'.$x])=="0"){
+							if($_POST['answers'.$x]){
+								$oids[$x]=$_POST['answers'.$x];
+							}else{
+								$oids[$x]=0;
+							}
+						}
+						if(($_POST['q_type'.$x])=="1"){
+							if($_POST['answers'.$x]){
+								$oids[$x]=implode("-",$_POST['answers'.$x]);
+							}else{
+								$oids[$x]=0;
+							}
+						}
+
+						if(($_POST['q_type'.$x])=="2" || ($_POST['q_type'.$x])=="3"){
+							$r_qids_q=explode(",",$r_qids);
+							if(isset($_POST['answers'.$x])){
+							$user_id = $this->session->userdata('site_user_id');
+							$data_user = array(
+							'student_id' => ((isset($user_id) && !empty($user_id)) ? $user_id : ''),
+							'r_id' => $rid ,
+							'q_id' => $r_qids_q[$x] ,
+							'essay_cont' => $_POST['answers'.$x] ,
+							'q_type' => $_POST['q_type'.$x]
+							);
+							$this->db->where('q_id',$r_qids_q[$x]);
+							$this->db->where('r_id',$rid);
+							$query=$this->db->get('essay_qsn');
+							if($query->num_rows()==0){
+							$this->db->insert('essay_qsn', $data_user);
+							}else{
+							$data_user1 = array(
+							'essay_cont' => $_POST['answers'.$x] 
+							);
+							$this->db->where('r_id',$rid);
+							$this->db->where('q_id',$r_qids_q[$x]);
+							$this->db->update('essay_qsn', $data_user1);
+
+							} 
+							$oids[$x]=0;//$_POST['fill_blank'.$x];
+							$fillups[]=$_POST['answers'.$x];
+							}else{
+							$oids[$x]=0;
+							} 
+						}
+
+						if(($_POST['q_type'.$x])=="4"){
+							$r_qids_q = explode(",",$r_qids); 
+							if($_POST['answers'.$x]){
+							$oids[$x]="0";
+							//echo $_POST['answers'.$x];
+							$user_id = $this->session->userdata('site_user_id');
+							$checkAlreadyAdded = $this->checkAlreadyEssayQn($user_id,$rid,$r_qids_q[$x]);
+							if( $checkAlreadyAdded == false){
+							$data = array(
+							'student_id' => ((isset($user_id) && !empty($user_id)) ? $user_id : ''),
+							'r_id' => $rid ,
+							'q_id' => $r_qids_q[$x] ,
+							'essay_cont' => $_POST['answers'.$x],
+							'q_type' => $_POST['q_type'.$x]
+							);
+							//echo '<pre>';print_r($data);
+							$this->db->insert('essay_qsn', $data); 
+							}
+							$essay_question="1";
+							}else{
+							$oids[$x]=0;
+							}
+						}
+
+						if(($_POST['q_type'.$x])=="5"){
+						//print_r($_POST['answers'.$x]);
+						//echo count($_POST['answers'.$x])."<br>";
+						if($_POST['answers'.$x]){
+						$chek_att="0";
+							foreach($_POST['answers'.$x] as $vlll){
+								if($vlll!=""){
+									$chek_att="1";
+								}
+							}
+							if($chek_att=="1"){
+								$oids[$x]= 0;//implode("-",$_POST['question_option'.$x]);
+								$_POST['question_option_val'.$x];
+								$_POST['answers'.$x];
+
+								$no_match_answer=count($_POST['question_option_val'.$x]);
+								for($x1=0; $x1<$no_match_answer; $x1++){
+								//echo $question_option_val[$x1];
+
+								$match_options[]=$_POST['question_option_val'.$x][$x1]."=".$_POST['answers'.$x][$x1];
+								}
+
+								$r_qids_q=explode(",",$r_qids);
+								$user_id = $this->session->userdata('site_user_id');
+								$data = array(
+								'student_id' => ((isset($user_id) && !empty($user_id)) ? $user_id : ''),
+								'r_id' => $rid ,
+								'q_id' => $r_qids_q[$x] ,
+								'essay_cont' => implode(",",$match_options) ,
+								'q_type' => $_POST['q_type'.$x]
+								);
+								//echo '<pre>qtype5 data->';print_r($data);
+								$this->db->insert('essay_qsn', $data); 
+							}else{
+								$oids[$x]=0;
+							}
+						}
+						}
+					} //die;
+
+					//  implode array of selected option ids
+					$oid=implode(",",$oids);
+
+					// fetch quiz detail
+					$query = $this->db->query("select quiz.* from quiz where quid='$id' and institute_id = '$institute_id'");
+					$quiz=$query->row_array(); 
+					$correct_score=explode(",",$quiz['correct_score']);
+					$incorrect_score=explode(",",$quiz['incorrect_score']);
+					$min_percentage=$quiz['pass_percentage'];
+					// fetch options score
+					$oid_r=str_replace('-',',',$oid);
+					$query = $this->db->query("SELECT q_options.*, qbank.* FROM  q_options, qbank WHERE q_options.oid IN ( $oid_r ) and q_options.qid=qbank.qid order by field(q_options.qid,$r_qids) ");
+					$options=$query->result_array(); 
+					$flip_r_qids=array_flip(explode(",",$r_qids));
+
+					$score=0;
+					// calculate score
+					$fill=0;
+					$match_column=0;
+					$score_ind=array();
+					$fliped_oidr=array();
+					foreach(explode(",",$r_qids) as $xord => $xvord){
+						$score_ind[$xord]=0;
+						$fliped_oidr[$xvord]=$xord;
+					}
+
+					foreach($options as $value){
+						if(!isset($pre_qid)){
+							$score_ind_i=0;
+						}else{
+							if($pre_qid != $value['qid']){
+								$score_ind[$fliped_oidr[$oid_pre_qid]]=$score_ind_i;
+								$score_ind_i=0;
+							}
+						}
+						if($value['q_type']=="0"|| $value['q_type']=="1"){
+
+							if($value['score'] > "0"){ 
+								if(isset($correct_score[$flip_r_qids[$value['qid']]])){
+									$score+=$value['score'] * $correct_score[$flip_r_qids[$value['qid']]];
+									$score_ind_i+=$value['score'] * $correct_score[$flip_r_qids[$value['qid']]];
+								}else{ 
+									$score+=$value['score'] * $correct_score['0'];
+									$score_ind_i+=$value['score'] * $correct_score['0'];
+								}
+
+							}else{ 
+								if(isset($incorrect_score[$flip_r_qids[$value['qid']]])){
+									$score+=$incorrect_score[$flip_r_qids[$value['qid']]];
+									$score_ind_i+=$incorrect_score[$flip_r_qids[$value['qid']]];
+								}else{
+									$score+=$incorrect_score['0'];
+									$score_ind_i+=$incorrect_score['0'];
+								}
+							}
+						}
+
+
+						if($value['q_type']=="5"){
+
+						//echo "<br>".$match_options[$match_column]."---".$value['option_value'];
+						if(in_array($value['option_value'],$match_options)){
+
+						if(isset($correct_score[$flip_r_qids[$value['qid']]])){
+						$score+=$value['score'] * $correct_score[$flip_r_qids[$value['qid']]];
+						$score_ind_i+='';//$value['score'] * $correct_score[$flip_r_qids[$value['qid']]];
+						}else{
+						$score+=$value['score'] * $correct_score['0'];
+						$score_ind_i+='';//$value['score'] * $correct_score['0'];
+						}
+						}else{
+						if(isset($incorrect_score[$flip_r_qids[$value['qid']]])){
+						$score+=$incorrect_score[$flip_r_qids[$value['qid']]]/count($match_options);
+						$score_ind_i+='';//$incorrect_score[$flip_r_qids[$value['qid']]]/count($match_options);
+						}else{
+						$score+=$incorrect_score['0']/count($match_options);
+						$score_ind_i+='';//$incorrect_score['0']/count($match_options);
+						}
+						//$score+=$incorrect_score/count($match_options);	
+						}
+						$match_column+=1;
+
+						//exit;
+						}
+
+						$pre_qid=$value['qid'];
+						$oid_pre_qid=$value['qid'];
+
+					}
+					$score_ind[$fliped_oidr[$value['qid']]]=$score_ind_i;
+
+					// calculate percentage
+					$query = $this->db->query("select quiz_result.* from quiz_result where rid='$rid' and institute_id = '$institute_id'");
+					$qr=$query->row_array();
+					//( obtained score /(number of question * correct score) )*100
+					if(count($correct_score) >= "2"){
+						$percentage=($score / (	array_sum($correct_score) ))* 100;
+					}else{
+						//$percentage=($score / (count(explode(",",$qr['qids'])) * 	$correct_score['0'] ))* 100;
+						$percentage=($score / (100 * 	$correct_score['0'] ))* 100;
+					}
+					// user pass or fail
+					if($percentage >= $min_percentage){
+						$q_result="1";
+					}else{
+						$q_result="0";
+					}
+					$time_spent=time()-$qr['start_time'];
+					$score_ind=implode(",",$score_ind);
+					if($essay_question >="1"){
+						$q_result="2";
+					}
+					$insert_data = array(
+					'oids'=>$oid,
+					'end_time'=>time(),
+					'score'=>$score,
+					'percentage'=>$percentage,
+					'q_result'=>$q_result,
+					'time_spent'=>$time_spent,
+					'essay_ques'=>$essay_question,
+					'score_ind'=>$score_ind,
+					'status' => '1'
+					);
+					//echo '<pre>123->';print_r($insert_data);die;
+					$this->db->where('institute_id', $institute_id);
+					$this->db->where('rid', $rid);
+					log_message('error','Submit Question ->'.print_r( json_encode($insert_data),TRUE));
+					//echo '<pre>insert_data->';print_r($insert_data);die;
+					if($this->db->update('quiz_result',$insert_data)){
+
+						if($this->config->item('allow_result_email')){
+							$this->load->library('email');
+							$query = $this->db->query("select quiz_result.*,users.*,quiz.* from quiz_result, users, quiz where users.id=quiz_result.uid and quiz.quid=quiz_result.quid and quiz_result.rid='$rid'");
+							$qrr=$query->row_array();
+							if($this->config->item('protocol')=="smtp"){
+							$config['protocol'] = 'smtp';
+							$config['smtp_host'] = $this->config->item('smtp_hostname');
+							$config['smtp_user'] = $this->config->item('smtp_username');
+							$config['smtp_pass'] = $this->config->item('smtp_password');
+							$config['smtp_port'] = $this->config->item('smtp_port');
+							$config['smtp_timeout'] = $this->config->item('smtp_timeout');
+							$config['mailtype'] = $this->config->item('smtp_mailtype');
+							$config['starttls']  = $this->config->item('starttls');
+
+							$this->email->initialize($config);
+							}
+							$toemail=$qrr['email'];
+							$fromemail=$this->config->item('fromemail');
+							$fromname=$this->config->item('fromname');
+							$subject=$this->config->item('result_subject');
+							$message=$this->config->item('result_message');
+
+							$subject=str_replace('[username]',$qrr['username'],$subject);
+							$subject=str_replace('[email]',$qrr['email'],$subject);
+							$subject=str_replace('[first_name]',$qrr['first_name'],$subject);
+							$subject=str_replace('[last_name]',$qrr['last_name'],$subject);
+							$subject=str_replace('[quiz_name]',$qrr['quiz_name'],$subject);
+							$subject=str_replace('[score_obtained]',$qrr['score'],$subject);
+							$subject=str_replace('[percentage_obtained]',$qrr['percentage'],$subject);
+							$subject=str_replace('[current_date]',date('Y-M-d H:i:s',time()),$subject);
+							if($qrr['status']=="1"){
+							$rstatus="Passed";
+							}else{
+							$rstatus="Failed";
+							}
+							$subject=str_replace('[result_status]',$rstatus,$subject);
+
+							$message=str_replace('[username]',$qrr['username'],$message);
+							$message=str_replace('[email]',$qrr['email'],$message);
+							$message=str_replace('[first_name]',$qrr['first_name'],$message);
+							$message=str_replace('[last_name]',$qrr['last_name'],$message);
+							$message=str_replace('[quiz_name]',$qrr['quiz_name'],$message);
+							$message=str_replace('[score_obtained]',$qrr['score'],$message);
+							$message=str_replace('[percentage_obtained]',$qrr['percentage'],$message);
+							$message=str_replace('[current_date]',date('Y-M-d H:i:s',time()),$message);
+							$message=str_replace('[result_status]',$rstatus,$message);
+
+							$this->email->to($toemail);
+							$this->email->from($fromemail, $fromname);
+							$this->email->subject($subject);
+							$this->email->message($message);
+							if(!$this->email->send()){
+							//print_r($this->email->print_debugger());
+
+							}
+						}
+						delete_cookie("rid");
+						return "<center>Exam submitted successfully. Please wait for the result</center>";
+
+					}else{
+
+					return "Unable to submit quiz";
+					}
+				}else{
+					return "Unable to submit quiz";
+				}
+			}
+	
+	
+	
+    
+}    

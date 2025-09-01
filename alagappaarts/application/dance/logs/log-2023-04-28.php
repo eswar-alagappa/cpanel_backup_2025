@@ -1,0 +1,69 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2023-04-28 01:00:44 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 01:32:05 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 02:08:10 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 02:25:22 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 02:38:11 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 03:40:07 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 03:57:32 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 05:10:29 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 07:56:11 --> Severity: Notice --> Undefined property: stdClass::$su /home/appaarts/public_html/application/dance/controllers/admin/Login.php 78
+ERROR - 2023-04-28 07:56:11 --> Severity: Notice --> Undefined property: stdClass::$su /home/appaarts/public_html/application/dance/controllers/admin/Login.php 87
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined variable: group_list /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 17
+ERROR - 2023-04-28 07:56:39 --> Severity: Warning --> Invalid argument supplied for foreach() /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 17
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 07:56:39 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2023-04-28 10:16:23 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 10:16:32 --> Severity: Warning --> Missing argument 1 for Home::registration(), called in /home/appaarts/public_html/application/dance/controllers/Home.php on line 698 and defined /home/appaarts/public_html/application/dance/controllers/Home.php 445
+ERROR - 2023-04-28 10:16:32 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 10:16:34 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 10:16:36 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 10:16:42 --> Query error: Field 'username' doesn't have a default value - Invalid query: INSERT INTO `users` (`email`, `mobile`, `password`, `user_role_id`, `status`, `created_by`, `updated_by`, `created_at`) VALUES ('p.01@madlen.weblogausa.site', '85334354676', '6-8qXZiKZvyvHe1VyHuvcnjX4T0ox3U8OC2pHn_VxqA', 3, 0, 'User', 'User', '2023-04-28 10:16:42')
+ERROR - 2023-04-28 10:16:44 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 10:16:45 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 10:16:47 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 11:44:56 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 11:45:13 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 11:45:14 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 11:45:15 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 11:45:50 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 18:56:41 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 19:02:41 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 19:02:41 --> Severity: Notice --> Undefined offset: 0 /home/appaarts/public_html/application/dance/views/course.php 199
+ERROR - 2023-04-28 19:37:56 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 21:09:06 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 21:34:46 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 21:56:43 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 21:59:13 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 22:33:40 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97
+ERROR - 2023-04-28 22:33:46 --> Query error: Field 'username' doesn't have a default value - Invalid query: INSERT INTO `users` (`email`, `mobile`, `password`, `user_role_id`, `status`, `created_by`, `updated_by`, `created_at`) VALUES ('sir.maxbo@yandex.ru', '82156565242', 'Ajzx-T3NYY7QShkQh1wIfBfaTsG0GIG8va3KEzehs6k', 3, 0, 'User', 'User', '2023-04-28 22:33:46')
+ERROR - 2023-04-28 22:36:24 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 97

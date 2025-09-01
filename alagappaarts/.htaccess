@@ -1,0 +1,86 @@
+
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^index\.php$ - [L]
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^newdance(.*)$ dance/$1 [R=301,NC,L]
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^newmusic(.*)$ music/$1 [R=301,NC,L]
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^newvaasthu(.*)$ vaasthu/$1 [R=301,NC,L]
+
+#RewriteRule ^music/admin(.*)$ /Musicpanel/admin/$1 [R=301,NC,L]
+#RewriteRule ^music/student(.*)$ /Musicpanel/student/$1 [R=301,NC,L]
+#RewriteRule ^music/center(.*)$ /Musicpanel/center/$1 [R=301,NC,L]
+#RewriteCond %{THE_REQUEST} //
+#RewriteRule ^ $0 [R=302]
+
+# add a trailing slash to /wp-admin
+#RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
+
+#RewriteCond %{REQUEST_FILENAME} -f [OR]
+#RewriteCond %{REQUEST_FILENAME} -d
+#RewriteRule ^ - [L]
+#RewriteRule ^([_0-9a-zA-Z-]+/)?(wp-(content|admin|includes).*) $2 [L]
+#RewriteRule ^([_0-9a-zA-Z-]+/)?(.*\.php)$ $2 [L]
+#RewriteRule . index.php [L]
+
+RewriteCond %{HTTPS} off
+# First rewrite to HTTPS:
+# Don't put www. here. If it is already there it will be included, if not
+# the subsequent rule will catch it.
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Now, rewrite any request to the wrong domain to use www.
+# [NC] is a case-insensitive match
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php5_module>
+   php_flag asp_tags Off
+   php_flag display_errors On
+   php_value max_execution_time 30
+   php_value max_input_time 300
+   php_value max_input_vars 1000
+   php_value memory_limit 1024M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php56"
+   php_value upload_max_filesize 100M
+   php_value post_max_size 60M
+   php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+   php_flag asp_tags Off
+   php_flag display_errors On
+   php_value max_execution_time 30
+   php_value max_input_time 300
+   php_value max_input_vars 1000
+   php_value memory_limit 1024M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php56"
+   php_value upload_max_filesize 100M
+   php_value post_max_size 60M
+   php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php55” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-php .php .php5 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

@@ -1,0 +1,74 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2024-01-14 01:22:18 --> Severity: Notice --> Undefined property: stdClass::$su /home/appaarts/public_html/application/dance/controllers/admin/Login.php 78
+ERROR - 2024-01-14 01:22:18 --> Severity: Notice --> Undefined property: stdClass::$su /home/appaarts/public_html/application/dance/controllers/admin/Login.php 87
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined variable: group_list /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 17
+ERROR - 2024-01-14 01:22:46 --> Severity: Warning --> Invalid argument supplied for foreach() /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 17
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 01:22:46 --> Severity: Notice --> Undefined index: su /home/appaarts/public_html/application/dance/views/admin/quiz/result_list_all.php 113
+ERROR - 2024-01-14 02:13:44 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 03:28:48 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 03:28:56 --> Query error: Data too long for column 'ballets_choreographed' at row 1 - Invalid query: INSERT INTO `center_director` (`center_academy_id`, `name`, `email`, `dob`, `address`, `state`, `country`, `zip`, `special_qualification`, `experience_bharathanatiyam` , `master_name`, `events_performance` , `located_at`, `award_title` , `other_relevant_info`, `ballets_choreographed` , `created_by`, `updated_by`, `created_at`) VALUES (8784, 'DieplyleW', 'megaboommegaboom@yandex.com', '1970-01-01', 'Amsterdam', 'Netherlands', 'Netherlands', '155343', '', '', 'DieplyleW', '', 'A new massive attack', 'A new massive attack', 'Hello, explorers! Ready to witness unfiltered, eye-opening combat? Join our Telegram channel for exclusive footage that will shift your perspective. \r\nThis is unique content that won\\\'t be shown on TV. \r\n \r\nLink to Channel: HOT INSIDE UNCENSORED \r\nhttps://t.me/+PhiArK2oSvU4N2Iy', 'Hello, explorers! Ready to witness unfiltered, eye-opening combat? Join our Telegram channel for exclusive footage that will shift your perspective. \r\nThis is unique content that won\\\'t be shown on TV. \r\n \r\nLink to Channel: HOT INSIDE UNCENSORED \r\nhttps://t.me/+PhiArK2oSvU4N2Iy', 'User', 'User', '2024-01-14 03:28:56')
+ERROR - 2024-01-14 03:46:53 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 04:03:59 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 04:04:02 --> Query error: Incorrect string value: '\xD0\xB2\xD0\xB7\xD0\xB3...' for column 'located_at' at row 1 - Invalid query: INSERT INTO `center_director` (`center_academy_id`, `name`, `email`, `dob`, `address`, `state`, `country`, `zip`, `special_qualification`, `experience_bharathanatiyam` , `master_name`, `events_performance` , `located_at`, `award_title` , `other_relevant_info`, `ballets_choreographed` , `created_by`, `updated_by`, `created_at`) VALUES (8785, 'DanielJap', 'james52evans82as@rambler.ru', '1970-01-01', 'Cheltenham', 'Australia', 'Australia', '132512', '', '', 'DanielJap', '', 'взгляните на сайте здесь', 'взгляните на сайте здесь', 'читать https://pizdeishn.net/gruppa/84-vzroslye-igry.html', 'читать https://pizdeishn.net/gruppa/84-vzroslye-igry.html', 'User', 'User', '2024-01-14 04:04:02')
+ERROR - 2024-01-14 05:01:26 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 05:07:31 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 05:07:54 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 05:14:40 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 05:19:51 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 05:20:24 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 05:20:25 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 05:23:05 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 05:23:38 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 05:24:01 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 05:24:26 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 05:32:58 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 05:33:39 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 06:42:49 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 09:05:21 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 09:05:32 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 09:05:51 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 10:21:05 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 10:29:19 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 13:16:57 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 15:19:56 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 15:20:00 --> Query error: Incorrect string value: '\xD0\xA0\xD0\xB0\xD0\xB1...' for column 'located_at' at row 1 - Invalid query: INSERT INTO `center_director` (`center_academy_id`, `name`, `email`, `dob`, `address`, `state`, `country`, `zip`, `special_qualification`, `experience_bharathanatiyam` , `master_name`, `events_performance` , `located_at`, `award_title` , `other_relevant_info`, `ballets_choreographed` , `created_by`, `updated_by`, `created_at`) VALUES (8787, 'JeffreyFainc', 'anatoliyjqkud@rambler.ru', '1970-01-01', 'Tashkent', 'Uzbekistan', 'Uzbekistan', '125133', '', '', 'JeffreyFainc', '', 'Работа закладчиком', 'Работа закладчиком', '<a href=https://deliveryjob.org>Ищу работу закладчиком</a> - Ищу работу курьером, Работа курьером', '<a href=https://deliveryjob.org>Ищу работу закладчиком</a> - Ищу работу курьером, Работа курьером', 'User', 'User', '2024-01-14 15:20:00')
+ERROR - 2024-01-14 18:00:10 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 18:00:13 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 18:00:13 --> Severity: Notice --> Undefined variable: image /home/appaarts/public_html/application/dance/views/student/registration.php 186
+ERROR - 2024-01-14 18:05:43 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 18:36:38 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 18:36:38 --> Severity: Notice --> Undefined variable: image /home/appaarts/public_html/application/dance/views/student/registration.php 186
+ERROR - 2024-01-14 19:25:25 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 23:02:51 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 23:03:26 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99
+ERROR - 2024-01-14 23:22:35 --> Severity: Notice --> Undefined variable: leftbannerImg1 /home/appaarts/public_html/application/dance/views/left_banner.php 99

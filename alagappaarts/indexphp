@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+<link rel="shortcut icon" type="image/x-icon" href="images/alagappaarts.png" />
+    <meta charset="UTF-8" />
+    <title>
+    Alagappa Arts    </title>
+   
+    <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+
+    
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+
+<meta name="generator" content="WordPress 4.3.1" />
+    </head>
+
+    <body class="landingBg clearfix">
+   <div class="wrapperOuter"><style>
+#main-footer{
+	float:right;
+	font-family: Arial,Helvetica,sans-serif;
+}
+#main-footer a{
+	color:#fff;
+	text-decoration:none;
+	font-size:12px;
+}
+</style>
+<?php $root = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST']; ?>
+<div class="wrapper">
+       	<div class="logo"><a href="<?php echo $root ?>"><img src="images/logo.png" width="178" height="63" alt="Alagappa Performing Arts Academy"></a></div>
+        <div class="sections">
+        	<a href="<?php echo $root.'/newdance' ?>" target="_blank" class="float-shadow"><img src="images/dance.png" width="274" height="427" border="0" alt="Dance"></a>
+        	<a href="<?php echo $root.'/newmusic' ?>" target="_blank" class="float-shadow"><img src="images/music.png" width="274" height="427" border="0" alt="Music"></a>
+            <a href="<?php echo $root.'/newvaasthu' ?>" target="_blank" class="float-shadow"><img src="images/vaasthu.png" width="274" height="427" border="0" alt="Vaasthu"></a>
+        </div>
+		
+		<div id="main-footer">
+			<a target="_blank" href="http://sanjaytechnologies.org/" >Developed by Sanjay Technologies</a>
+		</div>
+      </div>
+      
+      
+      
+      
+
+		
+</div>

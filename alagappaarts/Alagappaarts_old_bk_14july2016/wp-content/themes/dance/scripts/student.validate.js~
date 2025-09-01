@@ -1,0 +1,136 @@
+$(document).ready(function(){
+  $.validator.addMethod("DateFormat", function(value,element) {
+        return value.match(/^(0[1-9]|1[012])[- //.](0[1-9]|[12][0-9]|3[01])[- //.](19|20)\d\d$/);
+            },
+                "Please enter a date in the format mm/dd/yyyy"
+            );
+$("#studentForm").validate({
+	
+  rules: {
+txtFname:{
+		required: true	
+		},
+/*txtLname:{
+		required: true	
+		},*/
+txtAge:{
+		required: true	
+		},
+txtMobile:{
+		required: true
+		},	
+txtEmail:{
+		required: true,
+		email:true
+		},
+txtCity:{
+		required: true
+		},
+txtState:{
+		required: true
+		},
+txtCountry:{
+		required: true
+		},
+txtZip:{
+		required: true
+		},	
+
+rdgender:{
+		required: true
+		},
+ddlProgram:{
+		required:true
+	},
+ddlCenter:{
+		required: true
+		},	
+txtExpBha:{
+		required: true
+	   },	
+txtguruname:{
+		required: true
+		},
+txtMark:{
+	required:true
+},
+ddlcourse:{
+	required:true
+},
+/*uploadphoto:{
+	required:true
+},*/
+txtAddress:{
+	 required:true
+},
+/*txtSpecqualification:{
+	required:true
+},*/
+txtEnrollmentid:{
+		required: true	
+		},
+defaultReal:{
+		required: true	
+		}
+	 },
+ messages:{
+		txtFname : "Enter the First name",
+		/*txtLname : "Enter the Last name",*/
+		txtAge:"Enter age",
+		txtEmail : "Enter Email ID",
+		txtMobile : "Enter contact number",
+		txtAddress: "Enter your address",
+		txtCity	:" Enter your city",
+		txtState	:" Enter your state",
+		txtCountry	:" Enter your country",
+		txtZip	:" Enter the zipcode",
+		rdgender : "Select the gender",
+		ddlProgram:"Select the program",
+		ddlCenter : "Select the center",
+		txtExpBha : "Enter the bharathanatyam experience",
+		txtguruname : "Enter your guru name",
+		uploadphoto:"upload the video",
+		ddlcourse:"Select the course", 
+		txtSpecqualification:"Enter your academic background",
+		txtEnrollmentid:"Enter Reference Code",
+		defaultReal:"Enter the captcha "
+ },
+errorElement: 'div',
+errorPlacement: function(error, element) { 
+if (element.is(":input") )
+{ 
+if((element).attr("name")=="rdgender")
+	{
+		error.appendTo( ".studentgender" );
+	} 
+else if((element).attr("name")=="txtdob")
+	{
+		error.appendTo( ".studentdate");
+	} 
+else if((element).attr("name")=="defaultReal")
+{
+	error.appendTo( ".captcha");
+}
+else
+error.insertAfter( element );
+}
+}
+});
+
+/*$("input[name$='rdstatus']").click(function(){
+var radio_value = $(this).val();
+if(radio_value=='10') {
+$("#studentForm .referenceCode").show();
+}
+else  if(radio_value=='11' || radio_value=='12' ) 
+{
+$("#studentForm .referenceCode").css('display','none');
+}
+});
+$('#frmStudentApproval').validate({
+	rules:{
+		txtEnrollmentid:{required:true }},
+messages:{
+		txtEnrollmentid : "Enter Reference Code"}
+});*/
+});

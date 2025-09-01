@@ -1,0 +1,382 @@
+/* http://keith-wood.name/realPerson.html
+
+   Real Person Form Submission for jQuery v1.0.1.
+
+   Written by Keith Wood (kwood{at}iinet.com.au) June 2009.
+
+   Dual licensed under the GPL (http://dev.jquery.com/browser/trunk/jquery/GPL-LICENSE.txt) and 
+
+   MIT (http://dev.jquery.com/browser/trunk/jquery/MIT-LICENSE.txt) licenses. 
+
+   Please attribute the author if you use it. */
+
+// Create Base64 Object
+var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var t="";var n,r,i,s,o,u,a;var f=0;e=Base64._utf8_encode(e);while(f<e.length){n=e.charCodeAt(f++);r=e.charCodeAt(f++);i=e.charCodeAt(f++);s=n>>2;o=(n&3)<<4|r>>4;u=(r&15)<<2|i>>6;a=i&63;if(isNaN(r)){u=a=64}else if(isNaN(i)){a=64}t=t+this._keyStr.charAt(s)+this._keyStr.charAt(o)+this._keyStr.charAt(u)+this._keyStr.charAt(a)}return t},decode:function(e){var t="";var n,r,i;var s,o,u,a;var f=0;e=e.replace(/[^A-Za-z0-9\+\/\=]/g,"");while(f<e.length){s=this._keyStr.indexOf(e.charAt(f++));o=this._keyStr.indexOf(e.charAt(f++));u=this._keyStr.indexOf(e.charAt(f++));a=this._keyStr.indexOf(e.charAt(f++));n=s<<2|o>>4;r=(o&15)<<4|u>>2;i=(u&3)<<6|a;t=t+String.fromCharCode(n);if(u!=64){t=t+String.fromCharCode(r)}if(a!=64){t=t+String.fromCharCode(i)}}t=Base64._utf8_decode(t);return t},_utf8_encode:function(e){e=e.replace(/\r\n/g,"\n");var t="";for(var n=0;n<e.length;n++){var r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r)}else if(r>127&&r<2048){t+=String.fromCharCode(r>>6|192);t+=String.fromCharCode(r&63|128)}else{t+=String.fromCharCode(r>>12|224);t+=String.fromCharCode(r>>6&63|128);t+=String.fromCharCode(r&63|128)}}return t},_utf8_decode:function(e){var t="";var n=0;var r=c1=c2=0;while(n<e.length){r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r);n++}else if(r>191&&r<224){c2=e.charCodeAt(n+1);t+=String.fromCharCode((r&31)<<6|c2&63);n+=2}else{c2=e.charCodeAt(n+1);c3=e.charCodeAt(n+2);t+=String.fromCharCode((r&15)<<12|(c2&63)<<6|c3&63);n+=3}}return t}}
+
+// Define the string
+var string = 'Hello World!';
+
+// Encode the String
+var encodedString = Base64.encode(string);
+//console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+
+//alert(encodedString);
+
+(function($) { // Hide scope, no $ conflict
+
+
+
+var PROP_NAME = 'realPerson';
+
+
+
+/* Real person manager. */
+
+function RealPerson() {
+
+	this._defaults = {
+
+		length: 6, // Number of characters to use
+
+		includeNumbers: false, // True to use numbers as well as letters
+
+		regenerate: '', // Instruction text to regenerate
+
+		hashName: '{n}Hash' // Name of the hash value field to compare with,
+
+			// use {n} to substitute with the original field name
+
+	};
+
+}
+
+
+
+var CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+
+var DOTS = [
+
+	['   *   ', '  * *  ', '  * *  ', ' *   * ', ' ***** ', '*     *', '*     *'],
+
+	['****** ', '*     *', '*     *', '****** ', '*     *', '*     *', '****** '],
+
+	[' ***** ', '*     *', '*      ', '*      ', '*      ', '*     *', ' ***** '],
+
+	['****** ', '*     *', '*     *', '*     *', '*     *', '*     *', '****** '],
+
+	['*******', '*      ', '*      ', '****   ', '*      ', '*      ', '*******'],
+
+	['*******', '*      ', '*      ', '****   ', '*      ', '*      ', '*      '],
+
+	[' ***** ', '*     *', '*      ', '*      ', '*   ***', '*     *', ' ***** '],
+
+	['*     *', '*     *', '*     *', '*******', '*     *', '*     *', '*     *'],
+
+	['*******', '   *   ', '   *   ', '   *   ', '   *   ', '   *   ', '*******'],
+
+	['      *', '      *', '      *', '      *', '      *', '*     *', ' ***** '],
+
+	['*     *', '*   ** ', '* **   ', '**     ', '* **   ', '*   ** ', '*     *'],
+
+	['*      ', '*      ', '*      ', '*      ', '*      ', '*      ', '*******'],
+
+	['*     *', '**   **', '* * * *', '*  *  *', '*     *', '*     *', '*     *'],
+
+	['*     *', '**    *', '* *   *', '*  *  *', '*   * *', '*    **', '*     *'],
+
+	[' ***** ', '*     *', '*     *', '*     *', '*     *', '*     *', ' ***** '],
+
+	['****** ', '*     *', '*     *', '****** ', '*      ', '*      ', '*      '],
+
+
+	[' ***** ', '*     *', '*     *', '*     *', '*   * *', '*    * ', ' **** *'],
+
+	['****** ', '*     *', '*     *', '****** ', '*   *  ', '*    * ', '*     *'],
+
+	[' ***** ', '*     *', '*      ', ' ***** ', '      *', '*     *', ' ***** '],
+
+	['*******', '   *   ', '   *   ', '   *   ', '   *   ', '   *   ', '   *   '],
+
+	['*     *', '*     *', '*     *', '*     *', '*     *', '*     *', ' ***** '],
+
+	['*     *', '*     *', ' *   * ', ' *   * ', '  * *  ', '  * *  ', '   *   '],
+
+	['*     *', '*     *', '*     *', '*  *  *', '* * * *', '**   **', '*     *'],
+
+	['*     *', ' *   * ', '  * *  ', '   *   ', '  * *  ', ' *   * ', '*     *'],
+
+	['*     *', ' *   * ', '  * *  ', '   *   ', '   *   ', '   *   ', '   *   '],
+
+	['*******', '     * ', '    *  ', '   *   ', '  *    ', ' *     ', '*******'],
+
+	['  ***  ', ' *   * ', '*     *', '*     *', '*     *', ' *   * ', '  ***  '],
+
+	['   *   ', '  **   ', ' * *   ', '   *   ', '   *   ', '   *   ', '*******'],
+
+	[' ***** ', '*     *', '      *', '     * ', '   **  ', ' **    ', '*******'],
+
+	[' ***** ', '*     *', '      *', '    ** ', '      *', '*     *', ' ***** '],
+
+	['    *  ', '   **  ', '  * *  ', ' *  *  ', '*******', '    *  ', '    *  '],
+
+	['*******', '*      ', '****** ', '      *', '      *', '*     *', ' ***** '],
+
+	['  **** ', ' *     ', '*      ', '****** ', '*     *', '*     *', ' ***** '],
+
+	['*******', '     * ', '    *  ', '   *   ', '  *    ', ' *     ', '*      '],
+
+	[' ***** ', '*     *', '*     *', ' ***** ', '*     *', '*     *', ' ***** '],
+
+	[' ***** ', '*     *', '*     *', ' ******', '      *', '     * ', ' ****  ']];
+
+
+
+$.extend(RealPerson.prototype, {
+
+	/* Class name added to elements to indicate already configured with real person. */
+
+	markerClassName: 'hasRealPerson',
+
+
+
+	/* Override the default settings for all real person instances.
+
+	   @param  settings  (object) the new settings to use as defaults
+
+	   @return  (RealPerson) this object */
+
+	setDefaults: function(settings) {
+
+		$.extend(this._defaults, settings || {});
+
+		return this;
+
+	},
+
+
+
+	/* Attach the real person functionality to an input field.
+
+	   @param  target    (element) the control to affect
+
+	   @param  settings  (object) the custom options for this instance */
+
+	_attachRealPerson: function(target, settings) {
+
+		target = $(target);
+
+		if (target.hasClass(this.markerClassName)) {
+
+			return;
+
+		}
+
+		target.addClass(this.markerClassName);
+
+		var inst = {settings: $.extend({}, this._defaults)};
+
+		$.data(target[0], PROP_NAME, inst);
+
+		this._changeRealPerson(target, settings);
+
+	},
+
+
+
+	/* Reconfigure the settings for a real person control.
+
+	   @param  target    (element) the control to affect
+
+	   @param  settings  (object) the new options for this instance or
+
+	                     (string) an individual property name
+
+	   @param  value     (any) the individual property value (omit if settings is an object) */
+
+	_changeRealPerson: function(target, settings, value) {
+
+		target = $(target);
+
+		if (!target.hasClass(this.markerClassName)) {
+
+			return;
+
+		}
+
+		settings = settings || {};
+
+		if (typeof settings == 'string') {
+
+			var name = settings;
+
+			settings = {};
+
+			settings[name] = value;
+
+		}
+
+		var inst = $.data(target[0], PROP_NAME);
+
+		$.extend(inst.settings, settings);
+
+		
+
+		target.nextAll('.realperson-challenge,.realperson-hash').remove().end().
+
+			after(this._generateHTML(target, inst));
+
+	},
+
+
+
+	/* Generate the additional content for this control.
+
+	   @param  target  (jQuery) the input field
+
+	   @param  inst    (object) the current instance settings
+
+	   @return  (string) the additional content */
+
+	_generateHTML: function(target, inst) {
+
+		var text = '';
+
+		for (var i = 0; i < inst.settings.length; i++) {
+
+			text += CHARS.charAt(Math.floor(Math.random() *
+
+				(inst.settings.includeNumbers ? 36 : 26)));
+
+		}
+
+		var html = '<div class="realperson-challenge"><div class="realperson-text">';
+
+		html += text;
+
+		/*for (var i = 0; i < DOTS[0].length; i++) {
+
+			for (var j = 0; j < text.length; j++) {
+
+				html += DOTS[CHARS.indexOf(text.charAt(j))][i].replace(/ /g, '&nbsp;') +
+
+					'&nbsp;&nbsp;';
+
+			}
+
+			html += '<br>';
+
+		}*/
+
+		html += '</div><div class="realperson-regen"><img src="http://alagappaarts.com/dance/wp-content/themes/dance/images/refresh-icon.png" />' + inst.settings.regenerate +
+			'</div></div><input type="hidden" class="realperson-hash" name="' +
+			inst.settings.hashName.replace(/\{n\}/, target.attr('name')) +
+			'" value="' + this._hash(text) + '">';
+
+		return html;
+
+	},
+
+
+
+	/* Remove the real person functionality from a control.
+
+	   @param  target  (element) the control to affect */
+
+	_destroyRealPerson: function(target) {
+
+		target = $(target);
+
+		if (!target.hasClass(this.markerClassName)) {
+
+			return;
+
+		}
+
+		target.removeClass(this.markerClassName).
+
+			prevAll('.realperson-challenge,.realperson-hash').remove();
+
+		$.removeData(target[0], PROP_NAME);
+
+	},
+
+
+
+	/* Compute a hash value for the given text.
+
+	   @param  value  (string) the text to hash
+
+	   @return  the corresponding hash value */
+
+	_hash: function(value) {
+
+		//var hash = 5381;
+		
+		var hash=value;
+		/*base encode
+		var hash = Base64.encode(value);*/
+
+/*		for (var i = 0; i < value.length; i++) {
+
+			hash = ((hash << 5) + hash) + value.charCodeAt(i);
+
+		}*/
+
+		return hash;
+
+	}
+
+});
+
+
+
+/* Attach the real person functionality to a jQuery selection.
+
+   @param  command  (string) the command to run (optional, default 'attach')
+
+   @param  options  (object) the new settings to use for these instances (optional)
+
+   @return  (jQuery) for chaining further calls */
+
+$.fn.realperson = function(options) {
+
+	var otherArgs = Array.prototype.slice.call(arguments, 1);
+
+	return this.each(function() {
+
+		if (typeof options == 'string') {
+
+			$.realperson['_' + options + 'RealPerson'].
+
+				apply($.realperson, [this].concat(otherArgs));
+
+		}
+
+		else {
+
+			$.realperson._attachRealPerson(this, options || {});
+
+		}
+
+	});
+
+};
+
+
+
+/* Initialise the real person functionality. */
+
+$.realperson = new RealPerson(); // singleton instance
+
+
+
+$('.realperson-challenge').live('click', function() {
+
+	$(".hasRealPerson").realperson('change');
+
+});
+
+
+
+})(jQuery);
+

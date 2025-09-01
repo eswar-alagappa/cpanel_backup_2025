@@ -1,0 +1,304 @@
+<?php
+/**
+ *
+ * This is users detail of vanderlande
+ *
+ * @package	CodeIgniter
+ * @category	Model
+ * @author		Swamykannan M
+ * @link		
+ *
+ */
+
+class Master_model extends CI_Model
+{
+
+function __construct()
+    {
+        parent::__construct();
+		//date_default_timezone_set('America/New_York');
+		$this->load->library('session'); 
+		$this->load->database();
+		
+    }
+    
+	public function checkAssignedExam()
+	{
+		$curDate = date('Y-m-d');
+		$this->db->select('count(*) as assignedExamCnt');
+		$this->db->from('assign_exam ae');
+		//$this->db->join('quiz_result qr','qr.assign_exam_id = ae.id','left');
+		//$this->db->where('DATE(ae.exam_date_starttime) >=', $curDate);
+		//$this->db->where('DATE(ae.exam_date_endtime) <=', $curDate);
+		
+		$this->db->where("(DATE(ae.exam_date_starttime)  >= '".$curDate."' OR DATE(ae.exam_date_endtime) >= '".$curDate."') ");
+		
+		$this->db->where("(ae.exam_status  = 'Assigned' OR ae.exam_status  = 'Reassigned') ");
+		//$this->db->group_by('ae.student_id');
+		
+		$query = $this->db->get(); 
+		$assignedExam = $query->result();
+		//echo '<pre>Assigned->';print_r($assignedExam);die;
+		
+		
+		$this->db->select('count(*) as assignedExamExpireCnt');
+		$this->db->from('assign_exam ae');
+		$this->db->join('quiz_result qr','qr.assign_exam_id = ae.id','left');
+		$this->db->where('DATE(ae.exam_date_endtime) <=', $curDate);
+		$this->db->where('ae.exam_status', 'Processing');
+		$this->db->where('qr.score_ind', '');
+		$this->db->where('qr.status', 0);
+		//$this->db->group_by('ae.student_id');
+		$query = $this->db->get(); 
+		$assignedExamExpire = $query->result(); 
+		
+		$this->db->select('count(*) as waitingResultCnt');
+		$this->db->from('assign_exam ae');
+		$this->db->join('quiz_result qr','qr.assign_exam_id = ae.id','left');
+		//$this->db->where('DATE(ae.exam_date_endtime) >', $curDate);
+		$this->db->where('ae.exam_status', 'Processing');
+		$this->db->where('qr.score_ind !=', '');
+		$this->db->where('qr.status !=', 0);
+		//$this->db->group_by('ae.student_id');
+		
+		$query = $this->db->get(); 
+		$WaitingResult = $query->result(); 
+		
+		$resultofAssignedExamProcess = array($assignedExam[0]->assignedExamCnt, $assignedExamExpire[0]->assignedExamExpireCnt, $WaitingResult[0]->waitingResultCnt);
+		return $resultofAssignedExamProcess;
+	}
+	
+	public function getfeedbackCnt()
+	{
+		$this->db->select('count(*) as feedbackCnt');
+		$this->db->from('feedback f');
+		$query = $this->db->get(); 
+		$totalFeedback = $query->result();
+		
+		$this->db->select('count(*) as readFeedbackCnt');
+		$this->db->from('feedback f');
+		$this->db->where('f.status', 'read');
+		$query = $this->db->get(); 
+		$readFeedback = $query->result();
+		
+		$this->db->select('count(*) as unreadFeedbackCnt');
+		$this->db->from('feedback f');
+		$this->db->where('f.status', 'unread');
+		$query = $this->db->get(); 
+		$unreadFeedback = $query->result();
+		
+		$this->db->select('count(*) as repliedFeedbackCnt');
+		$this->db->from('feedback f');
+		$this->db->where('f.replied_by', 1);
+		$query = $this->db->get(); 
+		$repliedFeedback = $query->result();
+		
+		$queryVal = array($totalFeedback[0]->feedbackCnt, $readFeedback[0]->readFeedbackCnt, $unreadFeedback[0]->unreadFeedbackCnt,
+		$repliedFeedback[0]->repliedFeedbackCnt);
+		return $queryVal;
+	}
+	
+	public function getConnectedList()
+	{
+			$this->db->select('*');
+			$this->db->from('courses c');
+			$this->db->join('programs p','p.program_id = c.program_id','left');
+			$this->db->join('program_fees pf','pf.program_id = c.program_id','left');
+			
+			$query = $this->db->get();
+
+			$queryVal = $query->result();
+			
+			return array($queryVal[0]);
+	}
+	
+	public function getList($table)
+	{
+			$this->db->select('*');
+			$this->db->from($table.' p');
+			//$this->db->join('fb_activity_images ai','ai.fb_activity_id = a.fb_activity_id','left');
+			$this->db->where('p.status ', '1');
+			$query = $this->db->get();
+
+			$queryVal = $query->result();
+			return $queryVal;
+	}
+	
+	public function save($table,$data)
+	{
+		$this->db->insert($table, $data);
+        $insert_id = $this->db->insert_id(); 
+		return ((isset($insert_id) && !empty($insert_id)) ? $insert_id : false);
+	}
+	
+	public function save_multi($table,$data)
+	{
+		$this->db->insert_batch($table, $data);
+        $insert_id = $this->db->insert_id(); 
+		return ((isset($insert_id) && !empty($insert_id)) ? $insert_id : false);
+	}
+	
+	public function Another_save( $table, $id, $data)
+	{
+		
+		
+		$this->db->insert_batch($table, $data);
+		return ((isset($id) && !empty($id)) ? $id : false);
+	}
+	
+	public function update($table, $updateField, $data,$arg)
+	{
+		$this->db->where($updateField, $arg);
+		$this->db->update($table, $data);
+		return ((isset($arg) && !empty($arg)) ? $arg : false);
+	}
+	
+	public function Another_update( $table, $updateField, $id, $data )
+	{
+		if(isset($id) && !empty($id)){
+			$this->db->where_in($updateField, $id);
+			$this->db->delete($table);
+			
+			
+			$this->db->insert_batch($table, $data);
+			return ((isset($id) && !empty($id)) ? $id : false);
+		
+		}
+	}
+	
+	public function changeStatus( $table, $changeField, $statusField, $category_id )
+	{
+		$this->db->select( array($statusField,$changeField));
+		$this->db->from($table);
+		$this->db->where($changeField, $category_id);
+		$query = $this->db->get();
+		$queryVal = $query->result();
+		if( !empty($queryVal[0])){
+			$status = ($queryVal[0]->$statusField == 0 ? 1 : 0);
+			$this->db->set($statusField,$status);
+			$this->db->where($changeField, $queryVal[0]->$changeField);
+			$this->db->update($table); 
+			
+			return true;
+		}
+		return false;
+	}
+	
+	public function remove($table, $changeField, $category_id)
+	{
+		$this->db->select( array($changeField));
+		$this->db->from($table);
+		$this->db->where($changeField, $category_id);
+		$query = $this->db->get();
+		$queryVal = $query->result();
+		if( !empty($queryVal[0])){
+			
+			$this->db->where_in($changeField, $category_id);
+    		$this->db->delete($table);
+			
+			return true;
+		}
+		return false;
+	}
+	
+	public function getSelected($table, $selected_field, $id)
+	{
+		if( !empty($table) && !empty($selected_field) && !empty($id) )
+		{
+			$this->db->select('*');
+			$this->db->from($table);
+			$this->db->where($selected_field, $id);
+			$query = $this->db->get();
+
+			$queryVal = $query->result();
+			return $queryVal[0];
+		}
+		return false;
+	}
+	
+	public function getJointSelected($table, $joinTable, $selected_field,$selected_joinfield, $id)
+	{
+		if( !empty($table) && !empty($selected_field) && !empty($id) )
+		{
+			$this->db->select('p.name as tname,p.program_desc as pdesc ,t.*');
+			$this->db->from($table.' t');
+			$this->db->join($joinTable.' p','p.'.$selected_joinfield.' = t.'.$selected_joinfield.'','left');
+			$this->db->where('t.'.$selected_field, $id);
+			$query = $this->db->get();
+
+			$queryVal = $query->result();
+			return $queryVal[0];
+		}
+		return false;
+	}
+	
+	public function getSelected_List($table, $selected_field, $id)
+	{
+		if( !empty($table) && !empty($selected_field) && !empty($id) )
+		{
+			$this->db->select('*');
+			$this->db->from($table);
+			$this->db->where($selected_field, $id);
+			$query = $this->db->get();
+
+			$queryVal = $query->result();
+			return $queryVal;
+		}
+		return false;
+	}
+	
+    public function saveUserAccount($data,$profile)
+	{
+		$this->db->insert('fb_users', $data);
+        $uid = $this->db->insert_id(); 
+		$profileuseridData = array(
+			'user_id' => $uid
+		);
+		$profileData = array_merge($profileuseridData,$profile);
+		$this->db->insert('fb_user_profiles', $profileData);
+		$profileuid = $this->db->insert_id(); 
+		return ((isset($profileuid) && !empty($profileuid)) ? true : false);
+	}
+    
+	public function userLoginChk($data)
+	{
+		$this->db->select('*');
+		$this->db->from('users u');
+		$this->db->join('user_role upr','upr.user_role_id = u.user_role_id','left');
+		$this->db->where('u.username', $data['username']);
+		$this->db->where('u.password', md5($data['password']));
+		$this->db->where('u.status', 1);
+		$this->db->where_in('u.user_role_id', array('1','2','7'));
+		$query = $this->db->get();
+		//echo $this->db->last_query();die;
+		$queryVal = $query->result();
+		return $queryVal[0];
+	}
+	
+	public function getUserRole()
+	{
+		$this->db->select( array('fb_user_role_id','user_role_name'));
+		$this->db->from('fb_user_roles');
+		$this->db->where('fb_user_role_id !=', 1);
+		$query = $this->db->get();
+		$queryVal = $query->result();
+		return $queryVal;
+	}
+	
+	public function getUserData()
+	{
+		$this->db->select( '*' );
+		$this->db->from('fb_users u');
+		$this->db->join('fb_user_profiles up','up.user_id = u.user_id','right');
+		$this->db->join('fb_user_roles ur','ur.fb_user_role_id = u.fb_user_role_id','right');
+		$this->db->where('u.fb_user_role_id !=', 1);
+		$this->db->order_by('u.user_id','desc');
+		$query = $this->db->get();
+		//echo $this->db->last_query();die;
+		$queryVal = $query->result();
+		return $queryVal;
+	}
+	
+	
+    
+}    

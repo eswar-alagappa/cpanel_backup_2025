@@ -1,0 +1,1119 @@
+/*
+
+Theme Name: APAA - Music
+
+Author: InQ team
+
+
+
+*/
+
+
+
+body {
+	padding:0;
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+a img {
+	border:none;
+	outline:0;
+}
+.wrapper {
+	width:1000px;
+	margin:0 auto;
+}
+/*Music */
+
+
+
+.musicBg {
+	background:#170000 url('../images/music-bg.jpg') repeat-x;
+}
+.musicHeader {
+	width:960px;
+	background:url('../images/music-header-bg.jpg') no-repeat 0 0;
+	display:block;
+	overflow:hidden;
+	padding:0 20px 0 20px;
+}
+.musicLogo {
+	width:186px;
+	height:76px;
+	background:url('../images/sprite-bg.png') no-repeat left -151px;
+	float:left;
+	margin-top:5px;
+}
+.musicHeaderLeft {
+	float:right;
+	padding-top:10px;
+	width:760px;
+	display:block;
+	overflow:hidden;
+}
+.enquiry {
+	float:right;
+	color:#fee7b1;
+	font-size:18px;
+	text-transform:uppercase;
+	margin-bottom:8px;
+	width:280px;
+}
+.enquiryLeft {
+	float:left;
+	padding:3px 6px 0 0;
+}
+.enquiryRight {
+	float:right;
+	line-height:15px;
+}
+.enquiryLeft img {
+	float:left;
+}
+.enquiry span {
+	font-size:10px;
+	color:#ddad7a;
+}
+.menu {
+	float:right;
+	width:760px;
+}
+.menu ul {
+	background: url('../images/music-menu-bg.gif') no-repeat left center #3E0400;
+	font-size: 12px;
+	height: 42px;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 760px;
+}
+.menu ul li.last {
+	background:none;
+}
+.menu ul li {
+	float:left;
+	font-size:12px;
+	text-transform:uppercase;
+	list-style:none;
+	background:url('../images/menu-line-bg.gif') no-repeat right center;
+	padding:0 6px;
+	font-weight:bold;
+}
+.menu ul li ul {
+	font-size: 12px;
+	height: 42px;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 150px;
+}
+.menu ul li ul li {
+	padding:0;
+}
+.menu ul li.last {
+	background:none;
+}
+.menu ul li a {
+	color:#cf9b73;
+	display:block;
+	text-decoration:none;
+	display:block;
+	float:left;
+	padding:13px 9px 13px 10px;
+	text-decoration:none;
+}
+.menu ul li a:hover {
+	color:#fff;
+	text-decoration:none;
+	background:url('../images/music-menu-hover-bg.jpg') repeat-x bottom #d75e0f;
+	text-decoration:none;
+}
+.menu ul li a.active {
+	color:#fff;
+	background:url('../images/music-menu-hover-bg.gif') repeat-x;
+	text-decoration:none;
+}
+.menu ul li.current-menu-ancestor > a {
+	color: #fff;
+	background:url('../images/music-menu-hover-bg.jpg') repeat-x #d75e0f bottom;
+}
+.menu ul li.current-menu-item > a {
+	color: #fff;
+	background:url('../images/music-menu-hover-bg.jpg') repeat-x #d75e0f bottom;
+}
+.menu ul li.current_page_item > a:hover, .menu ul li.current-menu-ancestor > a:hover, .menu ul li.current-menu-item > a:hover, .menu ul li.current-menu-parent > a:hover {
+	color: #fff;
+}
+#menu-main-menu ul {
+	margin-top:-1px;
+}
+#menu-main-menu ul ul {
+	margin-top: 0px;
+left: 100%;
+}
+/*#menu-main-menu ul ul li, #menu-main-menu ul ul li a{width:170px;}*/
+.menu ul li:hover {
+	position:relative;
+}
+.menu ul li:hover ul.sub-menu {
+	left:6px;
+	top:40px;
+	white-space:nowrap;
+	height:auto;
+	z-index:10000;
+	background:#D05300;
+	border:none;
+}
+.menu ul li:hover ul.sub-menu ul {
+	display:none;
+	z-index:10000;
+}
+.menu ul li:hover ul.sub-menu li:hover ul {
+	display:block;
+}
+.menu ul li:hover ul.sub-menu li {
+	display:block;
+	position:relative;
+	float:left !important;
+	font-weight:normal;
+	border-bottom:1px solid #963300;
+	background:#D05300;
+	padding:0;
+	clear:both;
+	color:#fff;
+}
+.menu ul li:hover ul.sub-menu li a {
+	display:block;
+	font-size:12px;
+	color: #fff;
+	text-decoration:none;
+	width:165px;
+	padding:7px 11px;
+}
+.menu ul li:hover ul.sub-menu li a:hover, .menu ul li:hover ul.sub-menu li.current-page-ancestor > a{
+	background:url('../images/music-menu-hover-bg.jpg') repeat-x #d75e0f bottom;
+	color: #fff;
+}
+
+
+
+.menu ul li:hover li:hover ul li a {
+	min-width:165px;
+}
+.menu ul li:hover li:hover ul, .menu ul li:hover li:hover li:hover ul, .menu ul li:hover li:hover li:hover li:hover ul, .menu ul li:hover li:hover li:hover li:hover li:hover ul {
+	left:187px;
+	top:0px;
+	white-space:nowrap;
+	z-index:1000000;
+	height:auto;
+}
+.menu ul ul, .menu ul li:hover ul ul, .menu ul li:hover li:hover ul ul, .menu ul li:hover li:hover li:hover ul ul, .menu ul li:hover li:hover li:hover li:hover ul ul {
+	position:absolute;
+	left:-9999px;
+	top:-9999px;
+	height:0;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+/*menu end*/
+
+
+
+
+
+
+
+
+
+a img {
+	border:0;
+}
+/* Default list styling */
+
+
+
+
+
+
+
+.homeMusicBanner {
+	width:1000px;
+}
+.homeMusicBanner img {
+	display:block;
+}
+.musicIndexContent {
+	width:950px;
+	padding:10px 15px 25px 35px;
+	background:url('../images/music-index-content-bg.jpg') no-repeat center top;
+	display:block;
+	overflow:hidden;
+}
+.musicIndexContentOuter {
+	width:1000px;
+	background:url('../images/music-index-content-bg-outer.jpg') repeat-y;
+}
+.welcomeContent {
+	width:360px;
+	padding:0 20px 0 0;
+	background:url('../images/content-line-bg.gif') no-repeat right top;
+	float:left;
+}
+.welcomeContent h3 {
+	font-size:18px;
+	padding: 0 0 10px 0;
+	margin:0;
+	color:#FFF;
+	font-weight:normal;
+}
+.welcomeContent p {
+	padding: 0 0 12px 0;
+	margin:0;
+	color:#FFD4A5;
+	text-align:justify;
+}
+.welcomeContent h3 span {
+	color:#ffaa48;
+	font-size:23px;
+}
+h3 {
+	font-size:18px;
+	padding:0 0 20px 0;
+	margin:0;
+	color:#FFF;
+	text-transform:uppercase;
+	font-weight:normal;
+}
+h3 span {
+	color:#ffaa48;
+}
+.academicContent {
+	width:280px;
+	padding:10px 20px 25px;
+	background:url('../images/content-line-bg.gif') no-repeat right top;
+	float:left;
+}
+.academicContent ul {
+	padding:0;
+	margin:0;
+}
+.academicContent ul li {
+	list-style-type:none;
+	background:url('../images/bullets-img-bg.gif') no-repeat left center;
+	padding-left:9px;
+	color:#dfd0bc;
+	line-height:20px;
+}
+.academicContent ul li a {
+	color:#FFD4A5;
+	text-decoration:none;
+}
+.academicContent ul li a:hover {
+	color:#FFD4A5;
+	text-decoration:underline;
+}
+.videoGallery {
+	width:210px;
+	float:left;
+	padding-left:20px;
+}
+.videoGallery img {
+	border:solid 9px #7f2f05;
+}
+.musicFooter {
+	width:960px;
+	background:#250000;
+	padding:15px 20px;
+	color:#e2a04e;
+	display:block;
+	overflow:hidden;
+	font-size:11px;
+	border-top:#7d1a09 solid 1px;
+}
+.musicFooterLeft {
+	float:left;
+}
+.musicFooterLeftInLeft {
+	float:left;
+}
+.musicFooterLeftInRight {
+	float:left;
+	padding:0 0 0 10px;
+}
+.musicFooterLeftInRight img {
+	padding-left:10px;
+}
+.musicFooterRight {
+	float:right;
+}
+.musicFooterRight a {
+	text-decoration:none;
+	color:#e2a04e;
+}
+.musicFooterRight a:hover {
+	text-decoration:none;
+	color:#ffdcb0;
+}
+/*Music innre*/
+
+
+
+.musicInnerContentOuter {
+	background:url('../images/music-outter-content-bg.jpg') repeat-y;
+}
+.musicInnerContent {
+	width:1000px;
+	display:block;
+	overflow:hidden;
+	background:url('../images/music-inner-content-bg.jpg') no-repeat top center;
+}
+.musicInnerBanner {
+	width:630px;
+	background:url('../images/banner-bg.jpg') no-repeat;
+	height:133px;
+	color:#e6bf6b;
+	font-size:35px;
+	text-transform:uppercase;
+	text-align:right;
+	padding:68px 76px 0 0;
+	font-family:"Zurich Cn BT";
+}
+.musicInnerContentLeft {
+	float:left;
+	width:229px;
+	padding:17px 0 0 41px;
+}
+.musicInnerContentRight {
+	float:right;
+	width:730px;
+}
+.musicApaaContent {
+	padding:0 25px 19px 25px;
+	width:660px;
+}
+.musicApaaContent span {
+	display:block;
+	overflow:hidden;
+	font-weight:bold;
+	padding-bottom:8px;
+	color:#FFD4A5;
+}
+.musicApaaContent ul {
+	padding:0;
+	margin:0 0 15px 0;
+}
+.musicApaaContent ul li {
+	list-style-type:none;
+	padding-left:8px;
+	line-height:18px;
+	background:url('../images/bullets-img3.gif') no-repeat left 8px;
+	color:#FFD4A5;
+	font-weight:bold;
+}
+.musicApaaContent ul li span {
+	display:block;
+	overflow:hidden;
+	width:230px;
+	float:left;
+	padding:0;
+	margin:0;
+}
+.musicApaaContent p {
+	padding:0 0 11px 0;
+	margin:0;
+	color:#FFD4A5;
+	text-align:justify;
+	line-height:19px;
+}
+.musicApaaContent img {
+	float:left;
+	/*padding:0 20px 10px 0;*/
+}
+.musicLeftMenu {
+	width:229px;
+	margin-bottom:18px;
+}
+.curveOuter {
+	width:229px;
+	margin-bottom:18px;
+}
+.curveTop {
+	width:207px;
+	background:url('../images/music-right-menu-bg.png') no-repeat top;
+	height:8px;
+}
+.curveCenter {
+	width:175px;
+	background:url('../images/music-right-bg.png') repeat-y;
+	padding:6px 16px;
+}
+.musicMemberLogin {
+	width:175px;
+	background:url('../images/music-right-bg.png') repeat-y;
+	padding:6px 16px;
+}
+.musicLeftMenuContent {
+	width:175px;
+	background:url('../images/music-right-bg.png') repeat-y;
+	padding:6px 16px;
+}
+.innerVideoGallery {
+	width:207px;
+	background:url('../images/music-right-bg.png') repeat-y;
+	padding-top:6px;
+}
+.pLeft {
+	padding-left:16px;
+}
+.innerVideoGallery img {
+	padding:0 0 8px 10px;
+}
+.pBottom8 {
+	padding-bottom:8px;
+}
+.musicLeftMenuContent ul {
+	padding:0;
+	margin:0;
+}
+.musicLeftMenuContent ul li {
+	list-style-type:none;
+	line-height:17px;
+	background:url('../images/menu-left-line-bg.gif') repeat-x bottom;
+}
+.musicLeftMenuContent ul li.current_page_item, .musicLeftMenuContent ul li.current_page_ancestor {
+	background-color: #530803;
+	color: #FFFFFF;
+}
+.musicLeftMenuContent ul li a {
+	padding:8px 16px;
+	text-decoration:none;
+	color:#ffd4a5;
+	background:url('../images/bullets-img4.gif') no-repeat 6px center;
+	display:block;
+	text-transform:uppercase;
+}
+.musicLeftMenuContent ul li a:hover {
+	background-color:#ca7e18;
+	color:#fff;
+}
+.musicLeftMenuContent ul li a.activeBtn {
+	background-color:#530803;
+	color:#fff;
+}
+.curveBottom {
+	width:207px;
+	background:url('../images/music-right-menu-bg.png') no-repeat bottom;
+	height:8px;
+}
+.musicMemberLogin input {
+	width:166px;
+	background:url('../images/sprite-bg.png') no-repeat -13px -85px;
+	font-size:10px;
+	border:none;
+	padding:7px 5px;
+	text-transform:uppercase;
+	color:#7c693d;
+	margin-bottom:2px;
+}
+.musicMemberLogin input.loginBtn {
+	background:url('../images/sprite-bg.png') no-repeat -13px -241px;
+	width:68px;
+	height:25px;
+	color:#f3d99d;
+	text-transform:uppercase;
+	display:block;
+	cursor:pointer;
+}
+/*Music innre*/
+
+
+
+
+
+
+
+/*Music end*/
+
+
+
+/*vk*/
+
+
+
+.universityBgImg {
+	float:left;
+	padding:18px 18px 11px 24px;
+	margin:0;
+	background:url('../images/university-bg.png') no-repeat;
+}
+h2 {
+	clear: both;
+	color: #2D1800;
+	font-size: 21px;
+	font-weight: bold;
+	margin: 0 0 3px;
+	padding: 0;
+	text-transform: capitalize;
+}
+.registerBtn {
+	float:right;
+	margin-bottom:10px;
+}
+.registerFormOuter {
+	width:657px;
+	clear:both;
+	display: block;
+	overflow: hidden;
+}
+.registerFormTitle {
+	width:657px;
+}
+.registerFormTitleLeftBg {
+	float:left;
+	background:url('../images/registe-title-left-bg.png') no-repeat left;
+	height:43px;
+	width:14px;
+}
+.registerFormTitleRightBg {
+	float:left;
+	background:url('../images/registe-title-left-bg.png') no-repeat right;
+	height:43px;
+	width:14px;
+}
+.registerFormTitleBg {
+	background:url('../images/registe-title-bg.gif') repeat-x;
+	color:#f4d08e;
+	text-align:center;
+	padding:14px 0;
+	float:left;
+	width:626px;
+	text-transform:uppercase;
+}
+.registerForm {
+	width:537px;
+	display:block;
+	overflow:hidden;
+	background-color:#daac57;
+	padding:20px 60px;
+	clear:both;
+	border-bottom:solid 7px #250000;
+}
+.loginForm {
+	width:537px;
+	display:block;
+	overflow:hidden;
+	padding:20px 60px;
+	clear:both;
+	border-bottom:solid 7px #250000;
+	background:url('../images/login-bg.gif') repeat-x;
+	font-size:13px;
+}
+.loginFormInner {
+	background:url('../images/students-login-bg.gif') no-repeat right 0;
+	width:390px;
+	margin:0 auto;
+}
+.loginFormInner label {
+	color:#190000;
+	font-weight:bold;
+	display:block;
+	overflow:hidden;
+}
+.loginFormInner input {
+	background-color:#e2bb67;
+	border:solid 1px #b58c35;
+	width:245px;
+	margin-bottom:14px;
+}
+.mb8 {
+	margin-bottom:8px !important;
+}
+.loginFormInner input.checkbox {
+	border:none;
+	background-color:#daac57;
+	width:13px;
+	float:left;
+}
+.loginFormInner span {
+	color:#250000;
+	padding:2px 0 0 5px;
+	font-weight:normal;
+	margin-bottom:25px;
+}
+.loginFormInner input.loginBtn {
+	border:none;
+	background-color:none;
+	background:url('../images/Logi-btn-bg.png') no-repeat;
+	width:100px;
+	color:#ffeec4;
+	font-size:14px;
+	height:32px;
+	margin:10px 0 0 150px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.ourCenter {
+	width:660px;
+}
+.ourCenterContent {
+	width:630px;
+}
+.ourCenterTitle {
+	width:620px;
+	background-color:#250000;
+	color:#ffe6b0;
+	font-weight:bold;
+	padding:8px 0 8px 10px;
+}
+.ourCenterInner {
+	width:630px;
+	color:#250000;
+	background:#e1ae4e url('../images/our-center-bg.gif') repeat-x;
+}
+.ourCenterInner p{color:#250000 !important; padding: 13px 0 11px 20px;
+line-height: 25px;}
+.ourCenterInner ul {
+	padding:8px;
+	margin:0;
+	/*background:url('../images/our-center-right-bg.jpg') no-repeat right bottom;*/
+}
+.ourCenterInner ul li {
+	list-style-type:none;
+	color:#250000;
+	background:url('../images/our-center-bullet-bg.png') no-repeat left center;
+	font-weight:bold;
+	line-height:21px;
+	margin: 5px 0 0 14px;
+}
+.objective {
+	width:660px;
+}
+.objective ul {
+	padding:0;
+	margin:0;
+}
+.objective ul li {
+	list-style-type:none;
+	background:url('../images/objective-bullet-bg.png') no-repeat left 1px;
+	padding:0 0 11px 15px;
+	font-size:14px;
+	font-weight:normal;
+}
+.management {
+	width:660px;
+	background:url('../images/management-border-bottom-bg.png') no-repeat bottom;
+	padding-bottom:15px;
+	margin-bottom:15px;
+	overflow:hidden;
+}
+.management h2 {
+	padding:0;
+	margin:0 0 5px 0;
+	color:#260300;
+	font-size:17px;
+	line-height: 16px;
+}
+.bGn {
+	background:none;
+}
+.management h2 span {
+	font-size:14px;
+	font-style:italic;
+	font-weight:normal;
+	color:#fff3e5;
+}
+.pB70 {
+	padding-bottom:70px !important;
+}
+.managementImg {
+	background:url('../images/management-bg.png') no-repeat;
+	padding:7px 6px;
+	width:145px;
+	float:left;
+	margin:0 8px 0 0;
+}
+.instrumentsInner {
+	width:660px;
+}
+.instrumentsLeft {
+	float:left;
+	width:474px;
+	background:url('../images/instruments-bg.png') no-repeat right top;
+	padding:8px;
+}
+.instrumentsLeft h3 {
+	padding:0;
+	margin:0 0 7px 0;
+	color:#260300;
+}
+.instrumentsRight {
+	float:right;
+	width:170px;
+}
+.heritage {
+	width:660px;
+}
+h4 {
+	color: #260300;
+	font-size: 17px;
+	line-height: 16px;
+	margin: 0 0 5px;
+	padding: 0;
+}
+.heritage h3 {
+	color:#260300;
+	padding:0;
+	margin:0 0 6px 0;
+	font-size:18px;
+}
+.heritageImg {
+	background:url('../images/heritage-bg.png') no-repeat;
+	padding:18px 23px;
+	width:307px;
+	margin:0 7px 8px 0;
+	float:left;
+}
+.musicApaaform {
+	padding:0 35px 19px 35px;
+	width:660px;
+}
+.festivals {
+	width:660px;
+	background:url('../images/management-border-bottom-bg.png') no-repeat bottom;
+	padding-bottom:15px;
+	margin-bottom:15px;
+	display:block;
+	overflow:hidden;
+}
+.festivals h2 {
+	padding:0;
+	margin:0 0 5px 0;
+	color:#260300;
+	font-size:17px;
+	line-height: 16px;
+	clear:none;
+}
+.festivals h2 span {
+	font-size:14px;
+	color:#260300;
+	padding:0;
+}
+.festivalsImg {
+	background:url('../images/heritage-bg.png') no-repeat;
+	padding:18px 23px;
+	width:307px;
+	margin:0 7px 8px 0;
+	float:left;
+	display:block;
+	overflow:hidden;
+}
+.feesStructureOuter {
+	width:660px;
+}
+.navi {
+	background:url('../images/registe-title-bg.gif') repeat-x;
+	color:#f4d08e;
+	padding:7px 0;
+	float:left;
+	width:629px;
+}
+/**/
+
+
+
+.navi ul {
+	padding:0;
+	margin:0;
+}
+.navi ul li {
+	list-style-type:none;
+	float:left;
+	background:none;
+	padding:0;
+	margin:0;
+	margin-right:12px;
+	text-transform:uppercase;
+}
+.navi ul li a.last {
+	background:none;
+}
+.navi ul li a {
+	display:block;
+	float:left;
+	font-weight:bold;
+	height:29px;
+	text-decoration:none;
+	font-size:12px;
+	color:#949494;
+	cursor:pointer;
+	background:url('../images/fees-menu-line.gif') no-repeat right center;
+}
+.navi ul li a:hover {
+	background:url('../images/menu-left-bg.gif') no-repeat left top;
+	display:block;
+	text-decoration:none;
+	color:#2b0300;
+}
+.navi ul li span {
+	display:block;
+	float:left;
+	text-decoration:none;
+	font-weight:bold;
+	padding:6px 17px 2px 17px;
+	height:23px;
+	width:auto;
+}
+.navi ul li span a {
+	text-decoration:none;
+	color:#949494;
+}
+.navi ul li a span:hover {
+	display:block;
+	float:left;
+	color:#2b0300;
+	text-decoration:none;
+	font-weight:bold;
+	padding:6px 17px 2px 17px;
+	background:url('../images/menu-right-bg.gif') no-repeat right top;
+}
+.navi ul li.ui-tabs-selected {
+	background:url('../images/menu-left-bg.gif') no-repeat left top;
+	display:block;
+	float:left;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:11px;
+	color:#2b0300;
+}
+.navi ul li.ui-tabs-selected a span {
+	display:block;
+	float:left;
+	color:#2b0300;
+	text-decoration:none;
+	font-weight:bold;
+	padding:6px 17px 2px 17px;
+	background:url('../images/menu-right-bg.gif') no-repeat right top;
+}
+/**/
+
+
+
+.feesStructure {
+	width:622px;
+	display:block;
+	overflow:hidden;
+	background-color:#daac57;
+	padding:18px;
+	clear:both;
+	min-height: 300px;
+	border-bottom:solid 7px #250000;
+}
+.feesStructureTop {
+	width:622px;
+	color:#343434;
+	font-weight:bold;
+	margin-bottom:10px;
+	display:block;
+	overflow:hidden;
+}
+.feesStructureTopLeft {
+	float:left;
+}
+.feesStructureTopRight {
+	float:right;
+}
+.feesStructure table {
+	width: 620px;
+}
+.feesStructure table tr {
+	background-color: #ffe2a1;
+}
+.feesStructure table th {
+	background-color:#ffe2a1;
+	color: #2D1800;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 9px 0 9px 8px;
+	background:url('../images/fees-structure-th-bg.gif') repeat-x;
+	text-align: left;
+	border-right:#fdf9ed 1px solid;
+	text-transform: uppercase;
+}
+.feesStructure table tr.altRows td {
+	background-color: #ffda8e;
+}
+.festivalsImg a {
+	color: #FFFFFF;
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+	text-decoration: underline;
+	margin:7px 0;
+}
+.feesStructure table tr td {
+	border-right: 1px solid #deb54c;
+	padding: 7px 7px 7px 8px;
+	text-align: left;
+}
+.ui-tabs-hide {
+	display: none;
+}
+.contactUsContent {
+	padding:0 35px 19px 35px;
+	width:660px;
+	display:block;
+	overflow:hidden;
+	background:url('../images/contact-us-top-bg.jpg') no-repeat 36px 42px;
+}
+.contactUsContentTop {
+	width:660px;
+	padding:5px 0 60px 0;
+	position:relative;
+	height:170px;
+}
+.contactUsTopLeftOuter {
+	width:200px;
+	position:absolute;
+	left:4px;
+	top:39px;
+}
+.contactUsTopLeft {
+	width:162px;
+	background-color:#ffdb97;
+	padding:4px 15px;
+}
+.contactUsTopLeft span {
+	font-weight:bold;
+	color:#3a0800;
+	display:block;
+	overflow:hidden;
+	margin-bottom:5px;
+	text-transform: uppercase;
+}
+.contactUsTopLeftTopBg {
+	background:url('../images/contact-us-top-bg.png') no-repeat;
+	width:195px;
+	height:12px;
+}
+.contactUsTopLeftBottomBg {
+	background:url('../images/contact-us-bottom-bg.png') no-repeat;
+	width:195px;
+	height:45px;
+}
+.contactUsTopRightOuter {
+	width:224px;
+	position:absolute;
+	left:356px;
+	top:50px;
+}
+.contactUsTopRight {
+	width:194px;
+	background-color:#ffdb97;
+	padding:4px 15px;
+}
+.contactUsTopRight a {
+	font-size:11px;
+	color:#4a0e00;
+	text-decoration:underline;
+}
+.contactUsTopRight a:hover {
+	text-decoration:none;
+}
+.contactUsTopRight span {
+	font-weight:bold;
+	color:#3a0800;
+	display:block;
+	overflow:hidden;
+	margin-bottom:5px;
+	text-transform: uppercase;
+}
+.contactUsTopRightTopBg {
+	background:url('../images/contact-us-top-right-bg.png') no-repeat;
+	width:224px;
+	height:12px;
+}
+.contactUsTopRightBottomBg {
+	background:url('../images/contact-us-bottom-right-bg.png') no-repeat;
+	width:224px;
+	height:45px;
+}
+.contactUsForm {
+	width:600px;
+	display:block;
+	overflow:hidden;
+	padding:20px 30px;
+	clear:both;
+	border-bottom:solid 7px #250000;
+	background:#be8333 url('../images/contact-us-form-bg.gif') repeat-x;
+	font-size:13px;
+}
+.contactUsFormInner {
+	width:280px;
+	margin:0 20px 0 0;
+	float:left;
+}
+.ourCenterInner strong {
+	font-weight:bold;
+	padding:8px 0 0 10px;
+	display:block;
+}
+.musicApaaContent p.fs16 {
+	font-size:14px;
+	text-align:justify;
+}
+.menu ul li.menu-item:hover a {
+	background:#D05300;
+	color: #FFFFFF;
+	text-decoration:none;
+}
+#TB_caption {
+	color: #2D1800;
+	float: none !important;
+	font-size: 18px;
+	text-align: center;
+}
+#TB_secondLine {
+	text-align: left;
+}
+.musicApaaContent p.programSummary {
+	color:#2D1800;
+}
+
+.musicApaaContent dl.gallery-item{float:left;
+}
+
+.musicApaaContent dl.gallery-item dt.gallery-icon a{
+	border:5px solid #f8dc97;	
+	display:block; overflow:hidden;     margin: 0 20px 14px 0;
+}
+
+.musicApaaContent dd.gallery-caption {
+    color: #572505;
+    display: block;
+	margin: 10px 0 0 0;
+    text-align: center;
+	font-weight:bold; text-transform:uppercase;
+}
+
+
+
+.loginForm input.registerBtn {
+    background: rgba(0, 0, 0, 0) url("../images/button-bg.png") no-repeat scroll 0 0;
+    border: medium none;
+    clear: both;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 31px;
+    margin: 0 0 21px;
+    padding: 0;
+    text-transform: uppercase;
+    width: 110px;
+}

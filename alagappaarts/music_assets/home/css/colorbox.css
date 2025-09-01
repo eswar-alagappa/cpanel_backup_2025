@@ -1,0 +1,254 @@
+/*
+    ColorBox Core Style
+    The following rules are the styles that are consistant between themes.
+    Avoid changing this area to maintain compatability with future versions of ColorBox.
+*/
+body{
+	margin:0;
+	padding:0;
+}
+
+a img
+{
+	border:none;
+}
+
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative; overflow:visible; }
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadedContent iframe{display:block; width:100%; height:100%; border:0;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+
+/* 
+    ColorBox example user style
+    The following rules are ordered and tabbed in a way that represents the
+    order/nesting of the generated HTML, so that the structure easier to understand.
+*/
+#cboxOverlay{background:#000;}
+
+#colorbox{}
+    #cboxTopLeft{width:14px; height:14px; background:url(../images/controls.png) 0 0 no-repeat; display:none;}
+    #cboxTopCenter{height:14px; background:url(../images/border.png) top left repeat-x; display:none;}
+    #cboxTopRight{width:14px; height:14px; background:url(../images/controls.png) -36px 0 no-repeat; display:none;}
+    #cboxBottomLeft{width:14px; height:43px; background:url(../images/controls.png) 0 -32px no-repeat; display:none;}
+    #cboxBottomCenter{height:43px; background:url(../images/border.png) bottom left repeat-x; display:none;}
+    #cboxBottomRight{width:14px; height:43px; background:url(../images/controls.png) -36px -32px no-repeat; display:none;}
+    #cboxMiddleLeft{width:14px; background:url(../images/controls.png) -175px 0 repeat-y; display:none;}
+    #cboxMiddleRight{width:14px; background:url(../images/controls.png) -211px 0 repeat-y; display:none;}
+    #cboxContent{background:#8E6922;}
+        #cboxLoadedContent{margin-bottom:5px;}
+        #cboxLoadingOverlay{background:url(../images/loading.gif) center center no-repeat;}
+        #cboxLoadingGraphic{background:url(../images/loading.gif) center center no-repeat;}
+        #cboxTitle{position:absolute; bottom:-25px; left:0; text-align:center; width:100%; font-weight:bold; color:#7C7C7C;}
+        #cboxCurrent{position:absolute; bottom:-25px; left:58px; font-weight:bold; color:#7C7C7C;}
+        
+        #cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{position:absolute; bottom:-29px; background:url(../images/controls.png) 0px 0px no-repeat; width:23px; height:23px; text-indent:-9999px;}
+        #cboxPrevious{left:0px; background-position: -51px -25px;}
+        #cboxPrevious.hover{background-position:-51px 0px;}
+        #cboxNext{left:27px; background-position:-75px -25px;}
+        #cboxNext.hover{background-position:-75px 0px;}
+        #cboxClose{ right: 5px;
+    top: 4px; background-position:-100px -25px;}
+        #cboxClose.hover{background-position:-100px 0px;}
+        
+        .cboxSlideshow_on #cboxSlideshow{background-position:-125px 0px; right:27px;}
+        .cboxSlideshow_on #cboxSlideshow.hover{background-position:-150px 0px;}
+        .cboxSlideshow_off #cboxSlideshow{background-position:-150px -25px; right:27px;}
+        .cboxSlideshow_off #cboxSlideshow.hover{background-position:-125px 0px;}
+		
+	.confirmation{
+		width:380px;
+		color:#151515;
+		font-size:12px;
+		font-weight:bold;
+		font-family:Verdana, Geneva, sans-serif;
+		border:solid 3px #8e6922;
+	}
+
+	.confirmationTitle
+	{
+		width:350px;
+		padding:5px 15px;
+		background-color:#8e6922;
+		color:#fff;
+		font-size:18px;
+		display:block;
+		overflow:hidden;
+		
+	}
+	
+	.confirmationTitleLeft
+	{
+		float:left;
+
+	
+	}
+	
+	.confirmationCloceBtn
+	{
+		float:right;
+		padding-top:10px 0;
+	}
+
+.confirmationContent
+{
+	width:380px;
+	background-color:#fada8d;
+	padding-top:20px;
+}
+
+.confirmationContentTop
+{
+	width:285px;
+	background:url(../images/delete-bg.png) no-repeat left 3px;
+	padding:10px 0 30px 55px;
+	margin:0 20px;
+}
+.confirmationContentBottom
+{
+	width:340px;
+	text-align:right;
+	padding:20px;
+	background:url(../images/confirmation-bottom-bg.gif) repeat-x;
+}
+
+.confirmationContentBottom input.yesBtn {
+    background: url(../images/sprite-img.png) no-repeat 0 -253px ;
+    border: medium none;
+    color: #FFEEC4;
+    cursor: pointer;
+    font-size: 13px;
+    height: 29px;
+    text-transform: uppercase;
+    width: 79px;
+}
+
+.confirmationContentBottom input.noBtn {
+    background: url(../images/sprite-img.png) no-repeat 0 -287px ;
+    border: medium none;
+    color: #FFEEC4;
+    cursor: pointer;
+    font-size: 13px;
+    height: 29px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    width: 79px;
+	margin-left:7px;
+}
+
+
+/**/
+
+.coursefeeForm
+{
+	display:block;
+	overflow:hidden;
+	margin:0 auto;	
+	padding:25px;
+	font-family:Verdana, Geneva, sans-serif;
+	/*background:#fff;
+    border: 2px solid #8E6922;*/
+
+}
+
+h3
+{
+	padding:0;
+	margin:0 0 10px 0;
+	color:#fff;
+	font-size:16px;
+	text-transform:uppercase;
+	display:block;
+	overflow:hidden;
+	
+}
+
+
+
+.coursefeeForm ul
+{
+	padding:0;
+	margin:0 auto;
+	width:300px;
+	display:block;
+	overflow:hidden;
+}
+
+.coursefeeForm ul li
+{
+	 list-style-type:none;
+	  margin-bottom: 20px;
+	  display:block;
+	  overflow:hidden;
+	  color:#F9D384;
+}
+
+
+.coursefeeForm ul li img
+{
+	float:left;
+}
+.coursefeeForm ul li select
+{
+	float:left;
+	margin-right:5px;
+}
+
+.coursefeeForm ul li label
+{
+	width:181px;
+	float:left;
+	padding-top:4px;
+
+	
+}
+.coursefeeForm ul li a
+{
+	text-decoration:none;
+}
+.coursefeeForm ul li input
+{
+	border:solid 1px #bdbdbd;
+	width:230px;
+}
+
+.coursefeeForm ul li textarea
+{
+	height:61px;
+	width:230px;
+	border:solid 1px #bdbdbd;
+}
+
+.coursefeeForm ul li input.saveBtn {
+    background: url(../images/sprite-img.png) no-repeat 0 -155px ;
+    border: medium none;
+    color: #FFEEC4;
+    cursor: pointer;
+    font-size: 13px;
+    height: 32px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    width: 100px;
+}
+
+.coursefeeForm ul li input.cancelBtn
+{
+	width:100px;
+	height:32px;
+	background:url(../images/sprite-img.png) no-repeat 0 -195px;
+	border:none;
+	color:#f2f2f1;
+	text-transform:uppercase;
+	font-size:13px;
+	cursor:pointer;
+}
+
+.coursefeeForm ul li span
+{
+	float:left;
+}
+/**/

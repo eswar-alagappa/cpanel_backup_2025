@@ -1,0 +1,277 @@
+<?php
+/**
+ *
+ * This is users detail of vanderlande
+ *
+ * @package	CodeIgniter
+ * @category	Model
+ * @link		
+ *
+ */
+
+class Center_model extends CI_Model
+{
+
+function __construct()
+    {
+        parent::__construct();
+		//date_default_timezone_set('America/New_York');
+		$this->load->library('session'); 
+		$this->load->database();
+	
+    }
+    
+	public function getCenterCnt()
+	{
+		$this->db->select('count(*) as centerCnt');
+		$this->db->from('center_academy ca');
+		$query = $this->db->get(); 
+		$totalCenter = $query->result();
+		
+		$this->db->select('count(*) as approvedcenterCnt');
+		$this->db->from('center_academy ca');
+		$this->db->where('ca.status', 1);
+		$query = $this->db->get(); 
+		$approvedCenter = $query->result();
+		
+		$this->db->select('count(*) as waiting');
+		$this->db->from('center_academy ca');
+		$this->db->where('ca.status', 0);
+		$query = $this->db->get(); 
+		$waitingCenter = $query->result();
+		
+		$queryVal = array($totalCenter[0]->centerCnt, $approvedCenter[0]->approvedcenterCnt, $waitingCenter[0]->waiting);
+		return $queryVal;
+	}
+	
+	public function getList($table)
+	{
+			$this->db->select('p.name as academyname,p.username,p.center_user_id,p.email as academymail,cd.name as directorname,p.center_academy_id,p.status,p.created_at,p.updated_at');
+			$this->db->from($table.' p');
+			$this->db->join('center_director cd','cd.center_academy_id = p.center_academy_id','left');
+			//$this->db->where('p.status',1);
+			$query = $this->db->get();
+
+			$queryVal = $query->result();
+			return $queryVal;
+	}
+	
+	public function save($table,$data)
+	{
+		$this->db->insert($table, $data);
+        $insert_id = $this->db->insert_id(); 
+		return ((isset($insert_id) && !empty($insert_id)) ? $insert_id : false);
+	}
+	
+	public function Another_save( $table, $id, $data)
+	{
+		$this->db->set('center_academy_id', $id);
+		$this->db->insert($table, $data);
+        $insert_id = $this->db->insert_id(); 
+		return ((isset($id) && !empty($id)) ? $id : false);
+	}
+	
+	public function update($table, $updateField, $data,$arg)
+	{
+		$this->db->where($updateField, $arg);
+		$this->db->update($table, $data);
+		return ((isset($arg) && !empty($arg)) ? $arg : false);
+	}
+	
+	public function Another_update( $table, $updateField, $id, $data )
+	{
+		if(isset($id) && !empty($id)){
+			$this->db->where_in($updateField, $id);
+			$this->db->update($table, $data);
+			return ((isset($id) && !empty($id)) ? $id : false);
+		
+		}
+	}
+	
+	public function changeStatus( $table, $changeField, $statusField, $category_id )
+	{
+		$this->db->select( array($statusField,$changeField));
+		$this->db->from($table);
+		$this->db->where($changeField, $category_id);
+		$query = $this->db->get();
+		$queryVal = $query->result();
+		if( !empty($queryVal[0])){
+			$status = ($queryVal[0]->$statusField == 0 ? 1 : 0);
+			$this->db->set($statusField,$status);
+			$this->db->where($changeField, $queryVal[0]->$changeField);
+			$this->db->update($table); 
+			
+			return true;
+		}
+		return false;
+	}
+	
+	public function delete_status($table, $changeField, $category_id)
+	{
+		$this->db->select( array($changeField));
+		$this->db->from($table);
+		$this->db->where($changeField, $category_id);
+		$query = $this->db->get();
+		$queryVal = $query->result();
+		if( !empty($queryVal[0])){
+			
+			$data = array(
+				'is_delete'	=> 1,
+				'status'	=> 0,
+				'updated_by'=> 1,
+				'updated_at'=> date('Y-m-d H:i:s')
+			);
+			$this->db->where_in($changeField, $category_id);
+			$this->db->update($table, $data);
+			
+			//$this->db->where_in($changeField, $category_id);
+    		//$this->db->delete($table);
+			
+			return true;
+		}
+		return false;
+	}
+	
+	public function remove($table, $changeField, $category_id)
+	{
+		$this->db->select( array($changeField));
+		$this->db->from($table);
+		$this->db->where($changeField, $category_id);
+		$query = $this->db->get();
+		$queryVal = $query->result();
+		if( !empty($queryVal[0])){
+			
+			$this->db->where_in($changeField, $category_id);
+    		$this->db->delete($table);
+			
+			return true;
+		}
+		return false;
+	}
+	
+	public function getSelected($selected_field, $id)
+	{
+		if( !empty($selected_field) && !empty($id) )
+		{
+			$this->db->select('p.center_academy_id,u.user_id,u.username,u.password,p.name as academyname,p.email as academyemail, p.address as academyaddress, p.website, p.contact,p.alternate_contact,
+			p.city as acity, p.state as astate,p.country as acountry,p.zip as azip,p.no_of_arangetram,p.no_of_establishment,cd.name as cdname,cd.email as cdemail,
+			cd.dob as cddob, cd.address as cdaddress, cd.state as cdstate, cd.city as cdcity, cd.country as cdcountry, cd.zip as cdzip,cd.special_qualification,
+			cd.experience_music,cd.master_name,cd.events_performance, cd.located_at,cd.award_title,cd.other_relevant_info,cd.ballets_choreographed as ballets_choreographed,p.username as username,p.center_user_id');
+			$this->db->from('center_academy p');
+			$this->db->join('center_director cd','cd.center_academy_id = p.center_academy_id','left');
+			$this->db->join('users u','u.username = p.username','left');
+			$this->db->where('p.'.$selected_field, $id);
+			$query = $this->db->get();
+
+			$queryVal = $query->result();
+			return $queryVal[0];
+		}
+		return false;
+	}
+	
+	public function getSelected1($selected_field, $id)
+	{
+		if( !empty($selected_field) && !empty($id) )
+		{
+			$this->db->select('u.*,u.email as uemail,u.username as uname,u.password as upass,p.email as cemail,p.center_academy_id as acid');
+			$this->db->from('center_academy p');
+		    $this->db->join('users u','u.username = p.username','left');
+		    $this->db->join('center_director cd','cd.center_academy_id = p.center_academy_id','left');
+			$this->db->where('p.'.$selected_field, $id);
+			$query = $this->db->get();
+
+			$queryVal = $query->result();
+			return $queryVal[0];
+		}
+		return false;
+	}
+	
+	public function tableCheck($table, $fieldOne,$valOne, $fieldTwo, $valTwo)
+	{
+		$this->db->select('*');
+		$this->db->from($table);
+		$this->db->where($fieldOne, $valOne);
+		$this->db->where($fieldTwo, $valTwo);
+		$query = $this->db->get();
+		$queryVal = $query->result();
+		if( !empty($queryVal))
+		{
+			return $queryVal[0]->user_id;
+		}else{
+			return false;
+		}
+	}
+	
+	
+	public function checkUsername( $uname )
+	{
+		$this->db->select('*');
+		$this->db->from('users u');
+		$this->db->where('u.username', $uname);
+		$this->db->where_in('u.user_role_id', array('2','3'));
+		$query = $this->db->get();
+		//echo $this->db->last_query();die;
+		$queryVal = $query->result();
+		return (!empty($queryVal[0]) ? $queryVal[0] : false);
+	}
+	
+	public function checkEditUsername( $uname,$user_id )
+	{
+		$this->db->select('*');
+		$this->db->from('users u');
+		$this->db->where('u.username', $uname);
+		$this->db->where('u.user_id !=', $user_id);
+		$this->db->where_in('u.user_role_id', array('2','3'));
+		$query = $this->db->get();
+		//echo $this->db->last_query();die;
+		$queryVal = $query->result();
+		return (!empty($queryVal[0]) ? $queryVal[0] : false);
+	}
+	
+	
+	public function getUserId($table,$field,$id)
+	{
+		$this->db->select('u.*');
+		$this->db->from($table.' t');
+		$this->db->join('users u','u.username = t.username','left');
+		$this->db->where('t.'.$field, $id);
+		$query = $this->db->get();
+		//echo $this->db->last_query();die;
+		$queryVal = $query->result();
+		return (!empty($queryVal[0]) ? $queryVal[0] : false);
+	}
+	
+	public function findandremove( $table1, $table2, $field, $arg)
+	{
+		$this->db->select('t.*');
+		$this->db->from($table1.' t');
+		$this->db->where('t.'.$field, $arg);
+		$query = $this->db->get();
+		//echo $this->db->last_query();die;
+		$queryVal = $query->result();
+		if( !empty($queryVal))
+		{
+			$username = $queryVal[0]->username;
+			$this->db->where_in('username', $username);
+    		$this->db->delete($table2);
+			return true;
+			
+		}else{
+			return false;
+		}
+		//return (!empty($queryVal[0]) ? $queryVal[0] : false);
+	}
+	
+	function getPassword($uname)
+	{
+		$this->db->select('u.password');
+		$this->db->from('users u');
+		$this->db->where('u.username', $uname);
+		$query = $this->db->get();
+		//echo $this->db->last_query();die;
+		$queryVal = $query->result();
+		//echo '<pre>queryVal->';print_r($queryVal);die;
+		return ((isset($queryVal) && !empty($queryVal)) ? $queryVal[0] : '');
+	}
+    
+}    
